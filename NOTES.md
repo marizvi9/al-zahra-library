@@ -55,12 +55,17 @@ Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC)
 - [ ] **Librarian review:** typos left as recorded (e.g. "Fall of a Center of Decent"), books
       with no sub-category number (partial call numbers), and the copies set to 1.
 - [ ] **Your own ideas** — still to be added.
-- [ ] **Connect Vercel to GitHub** so the Vercel copy updates on every push
-      (`vercel git connect`). Until then, redeploy it with `vercel deploy --prod`.
 
 ## How to update
 
 - Data changed? `npm run clean-data`, then `npm run covers` (cached; quick after the first run).
 - Preview locally: `npm run dev` → http://localhost:3000
-- Publish: commit and push to `main`; GitHub Pages rebuilds automatically.
-  Vercel: `vercel deploy --prod` (or automatic once connected to GitHub).
+- Publish: merge or push to `main`. Two GitHub Actions workflows run:
+  - `.github/workflows/vercel.yml` → **Vercel production** deploy (same setup as hello-site)
+  - `.github/workflows/deploy.yml` → **GitHub Pages** deploy
+- Pull requests get a **Vercel preview** deploy and a comment with the preview link.
+  (Preview links ask for a Vercel login — Vercel protects previews by default.)
+- Secrets used (Settings → Secrets and variables → Actions): `VERCEL_TOKEN`,
+  `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`.
+- Don't also turn on Vercel's own GitHub connection (`vercel git connect`) —
+  that would deploy every change twice.
