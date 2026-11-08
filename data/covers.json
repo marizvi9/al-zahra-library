@@ -1,0 +1,3444 @@
+{
+ "1": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL20899908W",
+  "matchedTitle": "Jesus, Prophet of Islam",
+  "matchedAuthor": "Muhammad 'Ata ur-Rahim, Ahmad Thomson",
+  "images": [
+   {
+    "src": "/covers/1-1.webp",
+    "width": 356,
+    "height": 500
+   }
+  ]
+ },
+ "4": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL5859124W",
+  "matchedTitle": "Prophets",
+  "matchedAuthor": "Alia N. Athar",
+  "images": [
+   {
+    "src": "/covers/4-1.webp",
+    "width": 322,
+    "height": 500
+   }
+  ]
+ },
+ "8": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL977930W",
+  "matchedTitle": "Muhammad",
+  "matchedAuthor": "Martin Lings",
+  "images": [
+   {
+    "src": "/covers/8-1.webp",
+    "width": 333,
+    "height": 500
+   }
+  ]
+ },
+ "9": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=AiELnwEACAAJ&dq=intitle:%22The+Message%22+inauthor:subhani&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Message",
+  "matchedAuthor": "Ayatullah Ja'far Subhani",
+  "images": [
+   {
+    "src": "/covers/9-1.webp",
+    "width": 300,
+    "height": 370
+   }
+  ]
+ },
+ "10": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL4331545W",
+  "matchedTitle": "The seerah of prophet Muhammad (PBUH)",
+  "matchedAuthor": "B. Salem Foad",
+  "images": [
+   {
+    "src": "/covers/10-1.webp",
+    "width": 328,
+    "height": 500
+   }
+  ]
+ },
+ "14": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL582351W",
+  "matchedTitle": "Muhammad",
+  "matchedAuthor": "Seyyed Hossein Nasr",
+  "images": [
+   {
+    "src": "/covers/14-1.webp",
+    "width": 313,
+    "height": 475
+   }
+  ]
+ },
+ "16": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=NpurAgAAQBAJ&dq=intitle:%22Muhammad+is+the+Last+Prophet%22+inauthor:rizvi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Muhammad is the Last Prophet",
+  "matchedAuthor": "Sayyid Saeed Akhtar Rizvi",
+  "images": [
+   {
+    "src": "/covers/16-1.webp",
+    "width": 504,
+    "height": 780
+   }
+  ]
+ },
+ "17": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL8657039W",
+  "matchedTitle": "The Life of Muhammad (Hadith & Seerah)",
+  "matchedAuthor": "Tahia Al-Ismail",
+  "images": [
+   {
+    "src": "/covers/17-1.webp",
+    "width": 328,
+    "height": 475
+   }
+  ]
+ },
+ "19": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=NQsDF5ievSMC&dq=intitle:%22The+Messenger+of+Allah%22+inauthor:ghazi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Messenger of Allah: Makkah Period",
+  "matchedAuthor": "Abidullah Ghazi, Tasneema K. Ghazi",
+  "images": [
+   {
+    "src": "/covers/19-1.webp",
+    "width": 520,
+    "height": 693
+   }
+  ]
+ },
+ "21": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL4805928W",
+  "matchedTitle": "Khadija-tul-Kubra (the wife of the prophet Muhammed) may Allah be pleased with her",
+  "matchedAuthor": "Syed A. A. Razwy",
+  "images": [
+   {
+    "src": "/covers/21-1.webp",
+    "width": 305,
+    "height": 500
+   }
+  ]
+ },
+ "22": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=ZV7dDwAAQBAJ&dq=intitle:%22Ammar+Yasir%22+inauthor:sharafuddin&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Ammar Yasir: The Distinguished Companion of the Holy Prophet (s.a.w.w.)",
+  "matchedAuthor": "Sadruddin Sharafuddin",
+  "images": [
+   {
+    "src": "/covers/22-1.webp",
+    "width": 515,
+    "height": 780
+   }
+  ]
+ },
+ "24": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=-B_JjgEACAAJ&dq=intitle:%22Fatima+the+Gracious%22+inauthor:ordoni&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Fatima the Gracious",
+  "matchedAuthor": "Abu Muhammad Ordoni",
+  "images": [
+   {
+    "src": "/covers/24-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "27": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=m_6AswEACAAJ&dq=intitle:%22Polarization+Around+the+Character+of+Ali+ibn+Abi+Talib%22+inauthor:mutahhari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Polarization Around the Character of 'ali Ibn Abi Talib",
+  "matchedAuthor": "Ayatullah Murtadha Mutahhari",
+  "images": [
+   {
+    "src": "/covers/27-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "30": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL156849W",
+  "matchedTitle": "Ali the Magnificent",
+  "matchedAuthor": "Yousuf N. Lalljee",
+  "images": [
+   {
+    "src": "/covers/30-1.webp",
+    "width": 386,
+    "height": 500
+   }
+  ]
+ },
+ "37": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=JBbL0AEACAAJ&dq=intitle:%22Who+is+Abbas%3F%22+inauthor:shahba&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Who Is Abbas?",
+  "matchedAuthor": "Jerrmein Abu Shahba",
+  "images": [
+   {
+    "src": "/covers/37-1.webp",
+    "width": 300,
+    "height": 464
+   }
+  ]
+ },
+ "38": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=6txKjwEACAAJ&dq=intitle:%22Al-Abbas%22+inauthor:shahin&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Al-Abbas",
+  "matchedAuthor": "Badr Badr Shahin",
+  "images": [
+   {
+    "src": "/covers/38-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "41": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=hJBmswEACAAJ&dq=intitle:%22The+Life+of+Imam+Musa+Bin+Ja%27far+Al-Kazim%22+inauthor:qarashi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Life of Imam Musa Bin Ja'far Al-Kazim",
+  "matchedAuthor": "Baqir Sharif Al-qarashi",
+  "images": [
+   {
+    "src": "/covers/41-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "49": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=adintAEACAAJ&dq=intitle:%22The+Shiites+Under+Attack%22+inauthor:chirri&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Shiites Under Attack",
+  "matchedAuthor": "Muhammad Jawad Chirri",
+  "images": [
+   {
+    "src": "/covers/49-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "50": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=kNf_jgEACAAJ&dq=intitle:%22A+Strife-Free+Dialogue%22+inauthor:imad&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "A Strife-Free Dialogue (a Step Towards Understanding)",
+  "matchedAuthor": "Isam Al-imad",
+  "images": [
+   {
+    "src": "/covers/50-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "59": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=8tnDoQEACAAJ&dq=intitle:%22Spurious+Arguments+About+the+Shia+Islam%22+inauthor:tabrizi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Spurious Arguments about the Shia",
+  "matchedAuthor": "Abu Talib At-tabrizi",
+  "images": [
+   {
+    "src": "/covers/59-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "60": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=YEvhoQEACAAJ&dq=intitle:%22Ghadir%22+inauthor:khimjee&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Ghadir",
+  "matchedAuthor": "Ayatullah Sayyid Muhammad Baqir As-sadr Khimjee, Dr Sachedina-Sayyid Muhammad Rizvi-Huse",
+  "images": [
+   {
+    "src": "/covers/60-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "64": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=PTcNmwEACAAJ&dq=intitle:%22Principles+of+the+Shi%27ite+Creed%22+inauthor:amini&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Principles of the Shi'ite Creed",
+  "matchedAuthor": "Ibrāhīm Amīnī",
+  "images": [
+   {
+    "src": "/covers/64-1.webp",
+    "width": 300,
+    "height": 464
+   }
+  ]
+ },
+ "65": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=_R3hjgEACAAJ&dq=intitle:%22The+Faith+of+Shi%27a+Islam%22+inauthor:muzaffar&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Faith of Shi'a Islam",
+  "matchedAuthor": "Muhammad Rida Al Muzaffar - XKP",
+  "images": [
+   {
+    "src": "/covers/65-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "66": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL24439297W",
+  "matchedTitle": "The missing link",
+  "matchedAuthor": "Harun Abdullah",
+  "images": [
+   {
+    "src": "/covers/66-1.webp",
+    "width": 301,
+    "height": 500
+   }
+  ]
+ },
+ "72": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=zK5TjwEACAAJ&dq=intitle:%22Shi%27ite+Islam%22+inauthor:vittor&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Shi'ite Islam: Orthodoxy Or Heterodoxy? Second Amended and Amplified Edition",
+  "matchedAuthor": "Luis Alberto Vittor",
+  "images": [
+   {
+    "src": "/covers/72-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "73": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=42w1MQAACAAJ&dq=intitle:%22Textbook+on+Shi%27a+Islam%22+inauthor:rizvi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Textbook on Shi'A Islam",
+  "matchedAuthor": "Syed Rizvi",
+  "images": [
+   {
+    "src": "/covers/73-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "74": {
+  "source": "Google Books",
+  "sourceUrl": "https://play.google.com/store/books/details?id=53F-EAAAQBAJ&source=gbs_api",
+  "matchedTitle": "DISCOVERING SHI‘I ISLAM",
+  "matchedAuthor": "Mohammad Ali Shomali",
+  "images": [
+   {
+    "src": "/covers/74-1.webp",
+    "width": 520,
+    "height": 380
+   }
+  ]
+ },
+ "77": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=-U0UtAEACAAJ&dq=intitle:%22A+Shi%27ite+Anthology%22+inauthor:tabatabai&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "A Shi'ite Anthology",
+  "matchedAuthor": "Allamah Sayyid Muhammad Husayn Tabatabai",
+  "images": [
+   {
+    "src": "/covers/77-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "79": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=D109tAEACAAJ&dq=intitle:%22The+%27Saqifa%27%22+inauthor:mudhafar&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Saqifa",
+  "matchedAuthor": "Mohammad Reza Al-Mudhafar",
+  "images": [
+   {
+    "src": "/covers/79-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "89": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL27073409W",
+  "matchedTitle": "Mawdudi",
+  "matchedAuthor": "Ahmad, Khurshid., Zafar I. Ansari",
+  "images": [
+   {
+    "src": "/covers/89-1.webp",
+    "width": 128,
+    "height": 179
+   }
+  ]
+ },
+ "90": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=5rR6QgAACAAJ&dq=intitle:%22Al-Wahid+al-Behbahani%22+inauthor:abiri&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "al-wahid al-behbahani man of intellect",
+  "matchedAuthor": "abbas al-abiri",
+  "images": [
+   {
+    "src": "/covers/90-1.webp",
+    "width": 300,
+    "height": 375
+   }
+  ]
+ },
+ "92": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=mA-0jgEACAAJ&dq=intitle:%22The+Sufferings+of+Amirol+Mominin+Ali+ibn+Abi+Talib%22+inauthor:massoudi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Sufferings of Amirol Mo'minin Ali Ibn ABI Talib (A.S.)",
+  "matchedAuthor": "Majid Massoudi - XKP",
+  "images": [
+   {
+    "src": "/covers/92-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "111": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=DQGEcgAACAAJ&dq=intitle:%22In+the+Path+of+the+Holy+Prophet%22&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "In the Path of the Holy Prophet: Classic Traditions for Contemplation",
+  "matchedAuthor": "Yahiya Emerick",
+  "images": [
+   {
+    "src": "/covers/111-1.webp",
+    "width": 300,
+    "height": 457
+   }
+  ]
+ },
+ "116": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=Ya-1jgEACAAJ&dq=intitle:%22The+Life+of+Muhammad+the+Prophet+Peace+be+Upon+Him%22+inauthor:rizvi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Life of Muhammad the Prophet",
+  "matchedAuthor": "Allamah Sayyid Sa'eed Akhtar Rizvi",
+  "images": [
+   {
+    "src": "/covers/116-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "117": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL38065733W",
+  "matchedTitle": "Imam Khomeini's Last Will and Testament",
+  "matchedAuthor": "Ruhullah Khomeini",
+  "images": [
+   {
+    "src": "/covers/117-1.webp",
+    "width": 310,
+    "height": 500
+   }
+  ]
+ },
+ "124": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=AMHeoQEACAAJ&dq=intitle:%22The+Unschooled+Prophet%22+inauthor:mutahhari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Unschooled Prophet",
+  "matchedAuthor": "Ayatullah Murtada Mutahhari",
+  "images": [
+   {
+    "src": "/covers/124-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "126": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL9148055W",
+  "matchedTitle": "Searching for Solace",
+  "matchedAuthor": "M.A. Sherif",
+  "images": [
+   {
+    "src": "/covers/126-1.webp",
+    "width": 312,
+    "height": 500
+   }
+  ]
+ },
+ "127": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL8001484W",
+  "matchedTitle": "The Travels of Ibn Battuta",
+  "matchedAuthor": "H. A. R. Gibb",
+  "images": [
+   {
+    "src": "/covers/127-1.webp",
+    "width": 128,
+    "height": 194
+   }
+  ]
+ },
+ "136": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL6205867W",
+  "matchedTitle": "Life of Muhammad",
+  "matchedAuthor": "Abdul Hameed Siddiqui",
+  "images": [
+   {
+    "src": "/covers/136-1.webp",
+    "width": 128,
+    "height": 195
+   }
+  ]
+ },
+ "137": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL6897493W",
+  "matchedTitle": "The voice of human justice",
+  "matchedAuthor": "George Jordac",
+  "images": [
+   {
+    "src": "/covers/137-1.webp",
+    "width": 331,
+    "height": 500
+   }
+  ]
+ },
+ "143": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL4989812W",
+  "matchedTitle": "Salman El-Farsi =",
+  "matchedAuthor": "A.A Razwy",
+  "images": [
+   {
+    "src": "/covers/143-1.webp",
+    "width": 128,
+    "height": 202
+   }
+  ]
+ },
+ "144": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=iWxazwEACAAJ&dq=intitle:%22A+Brief+History+of+The+Fourteen+Infallibles%22&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "A Brief History of the Fourteen Infallibles",
+  "matchedAuthor": "Wofis",
+  "images": [
+   {
+    "src": "/covers/144-1.webp",
+    "width": 300,
+    "height": 464
+   }
+  ]
+ },
+ "146": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=f17dDwAAQBAJ&dq=intitle:%22Bilal+of+Africa%22+inauthor:ashtiyani&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Bilal of Africa: and Other African Companions of the Holy Prophet",
+  "matchedAuthor": "Husayn Malika Ashtiyani",
+  "images": [
+   {
+    "src": "/covers/146-1.webp",
+    "width": 508,
+    "height": 780
+   }
+  ]
+ },
+ "148": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=Yk0s0QEACAAJ&dq=intitle:%22Candle+of+Hope%22+inauthor:shirazi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Candle of Hope: A Series of Lectures on the Awaited Savior Imam Al-Mahdi",
+  "matchedAuthor": "Ayatollah Sayed Mohammad Al-Shirazi",
+  "images": [
+   {
+    "src": "/covers/148-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "153": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL10223339W",
+  "matchedTitle": "Iqbal",
+  "matchedAuthor": "Muhammed Munawwar",
+  "images": [
+   {
+    "src": "/covers/153-1.webp",
+    "width": 319,
+    "height": 500
+   }
+  ]
+ },
+ "167": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=BDqtAgAAQBAJ&dq=intitle:%22The+Holy+Prophet%22+inauthor:rizvi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Holy Prophet",
+  "matchedAuthor": "Sayyid Saeed Akhtar Rizvi",
+  "images": [
+   {
+    "src": "/covers/167-1.webp",
+    "width": 520,
+    "height": 662
+   }
+  ]
+ },
+ "169": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=W7SjQgAACAAJ&dq=intitle:%22Ash-Sharif+ar-Radi%22+inauthor:nejad&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "ash-sharif ar-radi; the compiler of nahi al-balaghah",
+  "matchedAuthor": "muhammad ibrahim nejad",
+  "images": [
+   {
+    "src": "/covers/169-1.webp",
+    "width": 300,
+    "height": 375
+   }
+  ]
+ },
+ "174": {
+  "source": "Google Books",
+  "sourceUrl": "https://play.google.com/store/books/details?id=oEgwEAAAQBAJ&source=gbs_api",
+  "matchedTitle": "Hijab: The Dress of Modesty in Islam",
+  "matchedAuthor": "Sayyid Saeed Akhtar Rizvi",
+  "images": [
+   {
+    "src": "/covers/174-1.webp",
+    "width": 509,
+    "height": 780
+   }
+  ]
+ },
+ "177": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=FJ0ie6o-6fQC&dq=intitle:%22Islam+and+Evolution+of+Science%22+inauthor:saud&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Islam and Evolution of Science",
+  "matchedAuthor": "M. Saud",
+  "images": [
+   {
+    "src": "/covers/177-1.webp",
+    "width": 484,
+    "height": 780
+   }
+  ]
+ },
+ "181": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL8589012W",
+  "matchedTitle": "Metaphysics in Islamic Philosophy (Studies in Islamic philosophy and science)",
+  "matchedAuthor": "Fadiore Shehadi",
+  "images": [
+   {
+    "src": "/covers/181-1.webp",
+    "width": 500,
+    "height": 380
+   }
+  ]
+ },
+ "184": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL8710455W",
+  "matchedTitle": "Society and Economics in Islam",
+  "matchedAuthor": "Sayyid Mahmud Taleghani",
+  "images": [
+   {
+    "src": "/covers/184-1.webp",
+    "width": 128,
+    "height": 205
+   }
+  ]
+ },
+ "186": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL11376182W",
+  "matchedTitle": "Death and immortality",
+  "matchedAuthor": "Josef Pieper",
+  "images": [
+   {
+    "src": "/covers/186-1.webp",
+    "width": 303,
+    "height": 500
+   }
+  ]
+ },
+ "190": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=w7xyzwEACAAJ&dq=intitle:%22Al+Muraja%60at%22+inauthor:musawi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Al-Muraja'at: A Shi'i-Sunni Dialogue",
+  "matchedAuthor": "'Abd al-Husayn Sharaf al-Din al-Musawi",
+  "images": [
+   {
+    "src": "/covers/190-1.webp",
+    "width": 300,
+    "height": 478
+   }
+  ]
+ },
+ "191": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=FnnloQEACAAJ&dq=intitle:%22Peshawar+Nights%22+inauthor:shirazi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Peshawar Nights",
+  "matchedAuthor": "Sultanul Waizin Shirazi",
+  "images": [
+   {
+    "src": "/covers/191-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "192": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=xLuNswEACAAJ&dq=intitle:%22To+Be+With+the+Truthful%22+inauthor:samawi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "To Be with the Truthful",
+  "matchedAuthor": "Muhammad al-Tijani al-Samawi",
+  "images": [
+   {
+    "src": "/covers/192-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "193": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=3IL9ngEACAAJ&dq=intitle:%22Then+I+was+Guided%22+inauthor:samawi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Then I Was Guided",
+  "matchedAuthor": "Muhammad Al-tijani Al-samawi, Yasin Publications",
+  "images": [
+   {
+    "src": "/covers/193-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "194": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=fY_FjgEACAAJ&dq=intitle:%22Ask+Those+Who+Know%22+inauthor:samawi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Ask Those Who Know",
+  "matchedAuthor": "Sayed Muhammad Al Tijani Al Samawi - XKP",
+  "images": [
+   {
+    "src": "/covers/194-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "196": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=lmnjnQEACAAJ&dq=intitle:%22Journey+to+the+Unseen+World%22&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Journey to the Unseen World",
+  "matchedAuthor": "Ayatullah Najafi Quchani",
+  "images": [
+   {
+    "src": "/covers/196-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "200": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL8894770W",
+  "matchedTitle": "Towards Understanding Islam",
+  "matchedAuthor": "Sayyed Abul A'la Mawdudi",
+  "images": [
+   {
+    "src": "/covers/200-1.webp",
+    "width": 352,
+    "height": 500
+   }
+  ]
+ },
+ "203": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=y1ukzwEACAAJ&dq=intitle:%22Islamic+Beliefs%22+inauthor:khamenei&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Islamic Beliefs: Reclaiming the Narrative",
+  "matchedAuthor": "Ayatollah Sayyid Ali Khamenei",
+  "images": [
+   {
+    "src": "/covers/203-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "204": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL17192703W",
+  "matchedTitle": "When Power and Piety Collide",
+  "matchedAuthor": "Sayed Moustafa Al-Qazwini",
+  "images": [
+   {
+    "src": "/covers/204-1.webp",
+    "width": 348,
+    "height": 500
+   }
+  ]
+ },
+ "205": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=gbjkoQEACAAJ&dq=intitle:%22Shism+in+Sunnism%22+inauthor:yazdi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Shiism in Sunnism",
+  "matchedAuthor": "Sayyid Muhammad Ridha Mudarrisi Yazdi",
+  "images": [
+   {
+    "src": "/covers/205-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "206": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=uOpHzwEACAAJ&dq=intitle:%22Muhammad+in+the+Bible%22+inauthor:badawi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Muhammad in the Bible",
+  "matchedAuthor": "Jamal Badawi",
+  "images": [
+   {
+    "src": "/covers/206-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "207": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL4432888W",
+  "matchedTitle": "Islamic teachings",
+  "matchedAuthor": "Muḥammad Ḥusayn Ṭabāṭabāʼī",
+  "images": [
+   {
+    "src": "/covers/207-1.webp",
+    "width": 335,
+    "height": 475
+   }
+  ]
+ },
+ "208": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL26370015W",
+  "matchedTitle": "Introduction To Islam",
+  "matchedAuthor": "Muhammed Hamidullah",
+  "images": [
+   {
+    "src": "/covers/208-1.webp",
+    "width": 311,
+    "height": 500
+   }
+  ]
+ },
+ "209": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=PapTtAEACAAJ&dq=intitle:%22Islamic+Teachings+In+Brief%22+inauthor:tabatabai&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Islamic Teachings in Brief",
+  "matchedAuthor": "Allamah Sayyid Muhammad Husayn Tabatabai",
+  "images": [
+   {
+    "src": "/covers/209-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "211": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=31PEoQEACAAJ&dq=intitle:%22Spiritual+Sayings%22+inauthor:mutahhari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Spiritual Sayings",
+  "matchedAuthor": "Ayatullah Murtada Mutahhari",
+  "images": [
+   {
+    "src": "/covers/211-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "214": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL12086501W",
+  "matchedTitle": "The sacred foundations of justice in Islam",
+  "matchedAuthor": "M. Ali Lakhani",
+  "images": [
+   {
+    "src": "/covers/214-1.webp",
+    "width": 333,
+    "height": 500
+   }
+  ]
+ },
+ "217": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL8623607W",
+  "matchedTitle": "Islam in focus",
+  "matchedAuthor": "Hammudah Abdalati",
+  "images": [
+   {
+    "src": "/covers/217-1.webp",
+    "width": 128,
+    "height": 198
+   }
+  ]
+ },
+ "219": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=x5qrAgAAQBAJ&dq=intitle:%22Need+of+Religion%22+inauthor:rizvi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Need of Religion",
+  "matchedAuthor": "Sayyid Saeed Akhtar Rizvi",
+  "images": [
+   {
+    "src": "/covers/219-1.webp",
+    "width": 520,
+    "height": 717
+   }
+  ]
+ },
+ "228": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL8894875W",
+  "matchedTitle": "Myth of the Cross",
+  "matchedAuthor": "A. D. Ajijola",
+  "images": [
+   {
+    "src": "/covers/228-1.webp",
+    "width": 311,
+    "height": 475
+   }
+  ]
+ },
+ "230": {
+  "source": "Google Books",
+  "sourceUrl": "https://play.google.com/store/books/details?id=odD1aucJrjkC&source=gbs_api",
+  "matchedTitle": "Christ in Islam",
+  "matchedAuthor": "Ahmed Deedat",
+  "images": [
+   {
+    "src": "/covers/230-1.webp",
+    "width": 520,
+    "height": 673
+   }
+  ]
+ },
+ "236": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=D_Q-DwAAQBAJ&dq=intitle:%22Son+of+Man%22+inauthor:carrier&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "SON OF MAN: A Christian's Subversive Manifesto",
+  "matchedAuthor": "Henry Carrier",
+  "images": [
+   {
+    "src": "/covers/236-1.webp",
+    "width": 520,
+    "height": 780
+   }
+  ]
+ },
+ "238": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL3010941W",
+  "matchedTitle": "Daughters of another path",
+  "matchedAuthor": "Carol Anderson Anway",
+  "images": [
+   {
+    "src": "/covers/238-1.webp",
+    "width": 319,
+    "height": 475
+   }
+  ]
+ },
+ "239": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL4230233W",
+  "matchedTitle": "What the Bible says about Muhammad",
+  "matchedAuthor": "Ahmed Deedat",
+  "images": [
+   {
+    "src": "/covers/239-1.webp",
+    "width": 301,
+    "height": 475
+   }
+  ]
+ },
+ "240": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=F6G6jgEACAAJ&dq=intitle:%22Shared+Religious+Foundations+of+Education%22+inauthor:alavi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Shared Religious Foundations of Education: Islam & Christianity",
+  "matchedAuthor": "Hamid Reza Alavi",
+  "images": [
+   {
+    "src": "/covers/240-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "248": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=eQ10QgAACAAJ&dq=intitle:%22Imamate%22+inauthor:redhewi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Imamate: (the vicegerency [sic] of the Prophet \"s.a.\")",
+  "matchedAuthor": "sayyid sa'eed akhtar redhewi",
+  "images": [
+   {
+    "src": "/covers/248-1.webp",
+    "width": 300,
+    "height": 375
+   }
+  ]
+ },
+ "250": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=WI1pAAAACAAJ&dq=intitle:%22The+Origins+%26+Early+Development+of+Shi%27a+Islam%22+inauthor:jafri&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Origins and Early Development of Shi'a Islam",
+  "matchedAuthor": "Husain M. Jafri, S. H. Jafri",
+  "images": [
+   {
+    "src": "/covers/250-1.webp",
+    "width": 300,
+    "height": 466
+   }
+  ]
+ },
+ "252": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL17185004W",
+  "matchedTitle": "Inquiries About Shi'a Islam",
+  "matchedAuthor": "Moustafa Al-Qazwini",
+  "images": [
+   {
+    "src": "/covers/252-1.webp",
+    "width": 347,
+    "height": 500
+   }
+  ]
+ },
+ "253": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=XlSAQgAACAAJ&dq=intitle:%22The+Imamiya+Sect%22+inauthor:fadhli&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "the imamiya sect",
+  "matchedAuthor": "abdul hadi al-fadhli",
+  "images": [
+   {
+    "src": "/covers/253-1.webp",
+    "width": 300,
+    "height": 375
+   }
+  ]
+ },
+ "255": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=N-EtswEACAAJ&dq=intitle:%22Origin+of+Shia+Islam+and+its+Principles%22+inauthor:ghita&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Origin of Shi'ite Islam and It's Principles (Asl Ash-shi'ah Wa Usuluha)",
+  "matchedAuthor": "Allamah Sheikh Muhammad Hussein Kashifu Al-ghita",
+  "images": [
+   {
+    "src": "/covers/255-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "256": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=XHz9oQEACAAJ&dq=intitle:%22History+of+Shi%27ism%22+inauthor:muharrami&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "History of Shi'ism: From the Advent Ofislam Up to the End of Minor Occultation",
+  "matchedAuthor": "Ghulam-husayn Muharrami",
+  "images": [
+   {
+    "src": "/covers/256-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "272": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL582350W",
+  "matchedTitle": "Islam",
+  "matchedAuthor": "Seyyed Hossein Nasr",
+  "images": [
+   {
+    "src": "/covers/272-1.webp",
+    "width": 312,
+    "height": 475
+   }
+  ]
+ },
+ "279": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL20840013W",
+  "matchedTitle": "Answers to Non Muslims Common Questions About Islam -  -",
+  "matchedAuthor": "Dr.Zakir Naik",
+  "images": [
+   {
+    "src": "/covers/279-1.webp",
+    "width": 281,
+    "height": 500
+   }
+  ]
+ },
+ "280": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL9234388W",
+  "matchedTitle": "Punishment of Apostasy in Islam",
+  "matchedAuthor": "S.A. Rahman",
+  "images": [
+   {
+    "src": "/covers/280-1.webp",
+    "width": 128,
+    "height": 192
+   },
+   {
+    "src": "/covers/280-2.webp",
+    "width": 337,
+    "height": 500
+   }
+  ]
+ },
+ "284": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=qd4StAEACAAJ&dq=intitle:%22Me%E2%80%98raj%22+inauthor:kashani&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Me'raj: The Night Ascension",
+  "matchedAuthor": "Mullah Faidh Al Kashani",
+  "images": [
+   {
+    "src": "/covers/284-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "285": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=0L1zQgAACAAJ&dq=intitle:%22Istikhara%22+inauthor:haideri&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "istikhara",
+  "matchedAuthor": "muhammad baqir haideri",
+  "images": [
+   {
+    "src": "/covers/285-1.webp",
+    "width": 300,
+    "height": 375
+   }
+  ]
+ },
+ "287": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=mWGwoQEACAAJ&dq=intitle:%22Shi%27ism%22+inauthor:rizvi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Shi'ism: Imamate and Wilayat",
+  "matchedAuthor": "Sayyid Muhammad Rizvi",
+  "images": [
+   {
+    "src": "/covers/287-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "288": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL18694345W",
+  "matchedTitle": "Anecdotes of pious men",
+  "matchedAuthor": "Murtaz̤á Muṭahharī",
+  "images": [
+   {
+    "src": "/covers/288-1.webp",
+    "width": 344,
+    "height": 500
+   }
+  ]
+ },
+ "289": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=K-e-jgEACAAJ&dq=intitle:%22Journey+of+the+Unseen+World%22+inauthor:quchani&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Journey of the Unseen World (Rooh Ka Safar",
+  "matchedAuthor": "Ayatullah Najafi Quchani - XKP",
+  "images": [
+   {
+    "src": "/covers/289-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "291": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL13580873W",
+  "matchedTitle": "The duties of brotherhood in Islam",
+  "matchedAuthor": "al-Ghazzālī",
+  "images": [
+   {
+    "src": "/covers/291-1.webp",
+    "width": 128,
+    "height": 204
+   }
+  ]
+ },
+ "293": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL750241W",
+  "matchedTitle": "School of thought and actions",
+  "matchedAuthor": "ʻAlī Sharīʻatī, Cyrus Bakhtiar, Hasan Yusufi Ashkuri",
+  "images": [
+   {
+    "src": "/covers/293-1.webp",
+    "width": 322,
+    "height": 500
+   }
+  ]
+ },
+ "299": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL28176063W",
+  "matchedTitle": "The faith of Shia Islam",
+  "matchedAuthor": "Muḥammad Riḍā Muẓaffar",
+  "images": [
+   {
+    "src": "/covers/299-1.webp",
+    "width": 316,
+    "height": 500
+   }
+  ]
+ },
+ "301": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=E9YtswEACAAJ&dq=intitle:%22The+Revealer,+The+Messenger,+The+Message%22+inauthor:sadr&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Revealer, the Messenger, the Message",
+  "matchedAuthor": "Ayatullah Muhammad Baqir As-sadr",
+  "images": [
+   {
+    "src": "/covers/301-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "309": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=OrSRzwEACAAJ&dq=intitle:%2240+Spiritual+Rules+for+the+Journey+of+Life%22+inauthor:jafri&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "40 Spiritual Rules for the Journey of Life: From Al-Quran",
+  "matchedAuthor": "Syed Hasan Raza Jafri",
+  "images": [
+   {
+    "src": "/covers/309-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "311": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=xaC3jgEACAAJ&dq=intitle:%22Knowing+God%22+inauthor:lari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Knowing God",
+  "matchedAuthor": "Sayyid Mujtaba Musawi Lari",
+  "images": [
+   {
+    "src": "/covers/311-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "312": {
+  "source": "Google Books",
+  "sourceUrl": "https://play.google.com/store/books/details?id=7V9CDwAAQBAJ&source=gbs_api",
+  "matchedTitle": "Hunting for the word of God",
+  "matchedAuthor": "Sami Ameri",
+  "images": [
+   {
+    "src": "/covers/312-1.webp",
+    "width": 520,
+    "height": 674
+   }
+  ]
+ },
+ "313": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=FX4MogEACAAJ&dq=intitle:%22Iqtisaduna%22+inauthor:sadr&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Iqtisaduna Our Economics: Volume 1-",
+  "matchedAuthor": "Muhammad Baqir As-Sadr",
+  "images": [
+   {
+    "src": "/covers/313-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "316": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL2597576W",
+  "matchedTitle": "Elements of Islamic studies",
+  "matchedAuthor": "Sayyid Saʻīd Ak̲h̲tar Riz̤vī, Sayyid Said Akhtar Rizvi, Sved S. Rizvi",
+  "images": [
+   {
+    "src": "/covers/316-1.webp",
+    "width": 310,
+    "height": 475
+   }
+  ]
+ },
+ "318": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=7ZtBXwAACAAJ&dq=intitle:%22What+is+True+Success%3F%22&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "What Is True Success?: Explore Answers from the Teachings of 7th Century Saint Ali Bin Abu Talib. Excerpts from Peak of Eloquence (Nahjul-Balagha)",
+  "matchedAuthor": "Ali Bin Abu Talib, Syed Akhtar",
+  "images": [
+   {
+    "src": "/covers/318-1.webp",
+    "width": 300,
+    "height": 464
+   }
+  ]
+ },
+ "320": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL582350W",
+  "matchedTitle": "Islam",
+  "matchedAuthor": "Seyyed Hossein Nasr",
+  "images": [
+   {
+    "src": "/covers/320-1.webp",
+    "width": 312,
+    "height": 475
+   }
+  ]
+ },
+ "324": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL8313655W",
+  "matchedTitle": "Religion Vs. Religion",
+  "matchedAuthor": "ʻAlī Sharīʻatī",
+  "images": [
+   {
+    "src": "/covers/324-1.webp",
+    "width": 310,
+    "height": 475
+   }
+  ]
+ },
+ "325": {
+  "source": "Google Books",
+  "sourceUrl": "https://play.google.com/store/books/details?id=dGu6EQAAQBAJ&source=gbs_api",
+  "matchedTitle": "The Day of Judgement",
+  "matchedAuthor": "Sayyid Saeed Akhtar Rizvi",
+  "images": [
+   {
+    "src": "/covers/325-1.webp",
+    "width": 520,
+    "height": 738
+   }
+  ]
+ },
+ "327": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=Qa0H0QEACAAJ&dq=intitle:%22The+Qur%27an+In+Islam%22+inauthor:tabatabai&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Qur'an in Islam: Its Impact & Influence on the Life of Muslims",
+  "matchedAuthor": "Allama Sayyid Mh Tabatabai",
+  "images": [
+   {
+    "src": "/covers/327-1.webp",
+    "width": 300,
+    "height": 464
+   }
+  ]
+ },
+ "337": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=A-KbzgEACAAJ&dq=intitle:%22At-Tawhid+Or+Monotheism%22+inauthor:yazdi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "At-Tawhid Or Monotheism",
+  "matchedAuthor": "Muhammad Taqi Misbah Yazdi",
+  "images": [
+   {
+    "src": "/covers/337-1.webp",
+    "width": 300,
+    "height": 464
+   }
+  ]
+ },
+ "338": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL17185004W",
+  "matchedTitle": "Inquiries About Shi'a Islam",
+  "matchedAuthor": "Moustafa Al-Qazwini",
+  "images": [
+   {
+    "src": "/covers/338-1.webp",
+    "width": 347,
+    "height": 500
+   }
+  ]
+ },
+ "341": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=UzN4wgEACAAJ&dq=intitle:%22The+Foundations+of+Islamic+Doctrine%22+inauthor:lari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Foundations of Islamic Doctrine: God and his attributes",
+  "matchedAuthor": "Mujtabá Mūsavī Lārī",
+  "images": [
+   {
+    "src": "/covers/341-1.webp",
+    "width": 300,
+    "height": 417
+   }
+  ]
+ },
+ "343": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL63685W",
+  "matchedTitle": "The Reconstruction of Religious Thought in Islam",
+  "matchedAuthor": "Sir Muhammad Iqbal",
+  "images": [
+   {
+    "src": "/covers/343-1.webp",
+    "width": 128,
+    "height": 202
+   }
+  ]
+ },
+ "345": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=pQ8wswEACAAJ&dq=intitle:%22Eternal+Life%22+inauthor:mutahhari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Eternal Life (Life After Death)",
+  "matchedAuthor": "Ayatullah Murtadha Mutahhari",
+  "images": [
+   {
+    "src": "/covers/345-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "350": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL3726595W",
+  "matchedTitle": "Woman between Islam and western society",
+  "matchedAuthor": "Vahīduddīn K̲h̲ān",
+  "images": [
+   {
+    "src": "/covers/350-1.webp",
+    "width": 128,
+    "height": 208
+   }
+  ]
+ },
+ "353": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=s3sItAEACAAJ&dq=intitle:%22Light+Within+Me%22+inauthor:khumayni&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Light Within Me",
+  "matchedAuthor": "Ayatullah Murtadha Mutahhari, Allamah Sayyid Muhammad Husayn Tabatabai, Ayatullah Ruhullah Khumayni",
+  "images": [
+   {
+    "src": "/covers/353-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "356": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL577836W",
+  "matchedTitle": "Islam and revolution: writings and declarations",
+  "matchedAuthor": "Ruhollah Khomeini",
+  "images": [
+   {
+    "src": "/covers/356-1.webp",
+    "width": 128,
+    "height": 190
+   },
+   {
+    "src": "/covers/356-4.webp",
+    "width": 320,
+    "height": 475
+   }
+  ]
+ },
+ "358": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL14993744W",
+  "matchedTitle": "Islam Its Meaning and Message",
+  "matchedAuthor": "Ahmad.",
+  "images": [
+   {
+    "src": "/covers/358-1.webp",
+    "width": 291,
+    "height": 500
+   }
+  ]
+ },
+ "359": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL4861106W",
+  "matchedTitle": "Inquiries about Islam",
+  "matchedAuthor": "Mohamad Jawad Chirri",
+  "images": [
+   {
+    "src": "/covers/359-1.webp",
+    "width": 344,
+    "height": 500
+   }
+  ]
+ },
+ "361": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=hAqwjgEACAAJ&dq=intitle:%22The+Great+Muslim+Scientist+and+Philosopher-+Imam+Jafar+ibn+Mohammed+As-Sadiq%22&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Great Muslim Scientist and Philosopher Imam Jafar Ibn Mohammed As-Sadiq (as",
+  "matchedAuthor": "Imam Jaffer-As- Sadiq (As)",
+  "images": [
+   {
+    "src": "/covers/361-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "362": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=bQkt4mD-KeYC&dq=intitle:%22A+History+of+Islamic+Philosophy-+2nd+Edition%22+inauthor:fakhry&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "A History of Islamic Philosophy",
+  "matchedAuthor": "Majid Fakhry",
+  "images": [
+   {
+    "src": "/covers/362-1.webp",
+    "width": 507,
+    "height": 780
+   }
+  ]
+ },
+ "369": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=8nrFswEACAAJ&dq=intitle:%22Glimpses+of+The+Nahj+Al-Balaghah%22+inauthor:mutahhari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Glimpses of the Nahj Al-Balaghah",
+  "matchedAuthor": "Ayatullah Murtadha Mutahhari",
+  "images": [
+   {
+    "src": "/covers/369-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "375": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=i0aDQgAACAAJ&dq=intitle:%22The+Ahl+ul-Bayt%3B+Ethical+Role-Models%22+inauthor:sadr&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "the ahl ul-bayt; ethical role-models",
+  "matchedAuthor": "sayyid mahdi as-sadr",
+  "images": [
+   {
+    "src": "/covers/375-1.webp",
+    "width": 300,
+    "height": 375
+   }
+  ]
+ },
+ "377": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL3478978W",
+  "matchedTitle": "The Tao of Islam",
+  "matchedAuthor": "Sachiko Murata",
+  "images": [
+   {
+    "src": "/covers/377-1.webp",
+    "width": 128,
+    "height": 184
+   }
+  ]
+ },
+ "378": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL156850W",
+  "matchedTitle": "Know your Islam",
+  "matchedAuthor": "Yousuf N. Lalljee",
+  "images": [
+   {
+    "src": "/covers/378-1.webp",
+    "width": 310,
+    "height": 500
+   }
+  ]
+ },
+ "380": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL10568091W",
+  "matchedTitle": "Islamic revolution future path of the nations",
+  "matchedAuthor": "Masih Muhajeri",
+  "images": [
+   {
+    "src": "/covers/380-1.webp",
+    "width": 332,
+    "height": 500
+   }
+  ]
+ },
+ "381": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL3000035W",
+  "matchedTitle": "Allah in the West: Islamic movements in America and Europe",
+  "matchedAuthor": "Gilles Kepel",
+  "images": [
+   {
+    "src": "/covers/381-1.webp",
+    "width": 324,
+    "height": 475
+   }
+  ]
+ },
+ "382": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL4910628W",
+  "matchedTitle": "Ten decades of ulama's struggle",
+  "matchedAuthor": "ʻAqīqī Bakhshāyishī",
+  "images": [
+   {
+    "src": "/covers/382-1.webp",
+    "width": 332,
+    "height": 500
+   }
+  ]
+ },
+ "386": {
+  "source": "Google Books",
+  "sourceUrl": "https://play.google.com/store/books/details?id=o0QQEAAAQBAJ&source=gbs_api",
+  "matchedTitle": "Khums - An Islamic Tax",
+  "matchedAuthor": "Sayyid Muhammad Rizvi",
+  "images": [
+   {
+    "src": "/covers/386-1.webp",
+    "width": 520,
+    "height": 673
+   }
+  ]
+ },
+ "387": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=mzHhswEACAAJ&dq=intitle:%22Soaring+to+the+Only+Beloved%22+inauthor:abidin&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Soaring to the Only Beloved",
+  "matchedAuthor": "Abu Muhammad Zaynul Abidin",
+  "images": [
+   {
+    "src": "/covers/387-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "395": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL10549030W",
+  "matchedTitle": "Man and nature",
+  "matchedAuthor": "Seyyed Hossein Nasr",
+  "images": [
+   {
+    "src": "/covers/395-1.webp",
+    "width": 330,
+    "height": 500
+   }
+  ]
+ },
+ "398": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL8728127W",
+  "matchedTitle": "Society and History",
+  "matchedAuthor": "Murtaza Mutahhari",
+  "images": [
+   {
+    "src": "/covers/398-1.webp",
+    "width": 340,
+    "height": 500
+   }
+  ]
+ },
+ "399": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=5Vb7jgEACAAJ&dq=intitle:%22Martyrdom%22+inauthor:shariati&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Martyrdom: Arise and Bear Witness",
+  "matchedAuthor": "Ali Shariati",
+  "images": [
+   {
+    "src": "/covers/399-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "404": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL577787W",
+  "matchedTitle": "The practical laws of Islam: an abridged version of Taudhih-al-masaʼil",
+  "matchedAuthor": "Ruhollah Khomeini",
+  "images": [
+   {
+    "src": "/covers/404-1.webp",
+    "width": 316,
+    "height": 500
+   }
+  ]
+ },
+ "406": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=uo74jgEACAAJ&dq=intitle:%22The+Ritual+Ablutions+for+Women%22+inauthor:rizvi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Ritual Ablutions for Women",
+  "matchedAuthor": "Sayyid Muhammad Rizvi",
+  "images": [
+   {
+    "src": "/covers/406-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "408": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=UGoDjwEACAAJ&dq=intitle:%22Jihad-+the+Holy+War+of+Islam+and+its+Legitimacy+in+the+Quran%22+inauthor:mutahhari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Jihad the Holy War of Islam and Its Legitimacy in the Quran",
+  "matchedAuthor": "Ayatullah Murtadha Mutahhari",
+  "images": [
+   {
+    "src": "/covers/408-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "415": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL10214137W",
+  "matchedTitle": "Method of Salat (Islamic Pray Tutorial) along with Pictures",
+  "matchedAuthor": "Compiled by Sayyed Muhammad Qadi Mar'ashi",
+  "images": [
+   {
+    "src": "/covers/415-1.webp",
+    "width": 344,
+    "height": 500
+   }
+  ]
+ },
+ "421": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL13243323W",
+  "matchedTitle": "Islamic laws",
+  "matchedAuthor": "Syed Ali al Husaini Seestani",
+  "images": [
+   {
+    "src": "/covers/421-1.webp",
+    "width": 341,
+    "height": 500
+   }
+  ]
+ },
+ "422": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=M1e3tAEACAAJ&dq=intitle:%22A+short+history+of+%27Ilmul+Usul%22+inauthor:sadr&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "A Short History of 'Ilmul Usul",
+  "matchedAuthor": "Ayatullah Muhammad Baqir As-sadr",
+  "images": [
+   {
+    "src": "/covers/422-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "425": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL3026502W",
+  "matchedTitle": "Jurisprudence and its principles =",
+  "matchedAuthor": "Murtaz̤á Muṭahharī",
+  "images": [
+   {
+    "src": "/covers/425-1.webp",
+    "width": 309,
+    "height": 500
+   }
+  ]
+ },
+ "426": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL20868633W",
+  "matchedTitle": "Why women are accepting Islam",
+  "matchedAuthor": "Muḥammad Ḥanīf Shāhid",
+  "images": [
+   {
+    "src": "/covers/426-1.webp",
+    "width": 128,
+    "height": 192
+   }
+  ]
+ },
+ "428": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL1862546W",
+  "matchedTitle": "Mystical Islam",
+  "matchedAuthor": "Julian Baldick",
+  "images": [
+   {
+    "src": "/covers/428-1.webp",
+    "width": 128,
+    "height": 200
+   }
+  ]
+ },
+ "430": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL31543235W",
+  "matchedTitle": "SELECTIONS FROM SAADI'S GULISTAN (FARSI HERITAGE SERIES)",
+  "matchedAuthor": "Saʻdī.",
+  "images": [
+   {
+    "src": "/covers/430-1.webp",
+    "width": 128,
+    "height": 205
+   }
+  ]
+ },
+ "431": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=wxwoswEACAAJ&dq=intitle:%22The+Truth+As+It+Is%22+inauthor:hadi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Truth As It Is",
+  "matchedAuthor": "Jafar Al Hadi",
+  "images": [
+   {
+    "src": "/covers/431-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "434": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=M1d60gEACAAJ&dq=intitle:%22Payambar%22+inauthor:rahnema&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Payambar: The Messenger",
+  "matchedAuthor": "ZAINUL ABIDEEN. RAHNEMA",
+  "images": [
+   {
+    "src": "/covers/434-1.webp",
+    "width": 300,
+    "height": 452
+   }
+  ]
+ },
+ "435": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=M1d60gEACAAJ&dq=intitle:%22Payambar%22+inauthor:rahnema&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Payambar: The Messenger",
+  "matchedAuthor": "ZAINUL ABIDEEN. RAHNEMA",
+  "images": [
+   {
+    "src": "/covers/435-1.webp",
+    "width": 300,
+    "height": 452
+   }
+  ]
+ },
+ "436": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=Z36fzwEACAAJ&dq=intitle:%22Muhammad+the+Greatest%22+inauthor:deedat&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Muhammad the Greatest",
+  "matchedAuthor": "Ahmed Deedat",
+  "images": [
+   {
+    "src": "/covers/436-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "437": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL4432480W",
+  "matchedTitle": "Our philosophy",
+  "matchedAuthor": "Muḥammad Bāqir Ṣadr, Allama Muhammad, Baqir As-Sadr",
+  "images": [
+   {
+    "src": "/covers/437-1.webp",
+    "width": 128,
+    "height": 191
+   }
+  ]
+ },
+ "438": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL12036664W",
+  "matchedTitle": "Understanding Islamic sciences",
+  "matchedAuthor": "Murtaózā Muṭāhhāråı",
+  "images": [
+   {
+    "src": "/covers/438-1.webp",
+    "width": 348,
+    "height": 500
+   }
+  ]
+ },
+ "441": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL8728124W",
+  "matchedTitle": "Man and Universe",
+  "matchedAuthor": "Murtaza Mutahhari",
+  "images": [
+   {
+    "src": "/covers/441-1.webp",
+    "width": 344,
+    "height": 500
+   }
+  ]
+ },
+ "442": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL4898032W",
+  "matchedTitle": "Occultation of the Twelfth Imam",
+  "matchedAuthor": "Jassim M. Hussain",
+  "images": [
+   {
+    "src": "/covers/442-1.webp",
+    "width": 179,
+    "height": 281
+   }
+  ]
+ },
+ "445": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=czvSoQEACAAJ&dq=intitle:%22The+Role+of+Holy+Imams+in+the+Revival+of+Religion%22+inauthor:askari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Role of Holy Imams in the Revival of Religion",
+  "matchedAuthor": "Allamah Sayyed Murteza Askari",
+  "images": [
+   {
+    "src": "/covers/445-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "446": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=QPPUoQEACAAJ&dq=intitle:%22An+Inquiry+Concerning+Al-Mahdi%22+inauthor:sadr&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "An Inquiry Concerning Al-Mahdi",
+  "matchedAuthor": "Sayyid Mohammad Baqir As Sadr",
+  "images": [
+   {
+    "src": "/covers/446-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "447": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=NmTpswEACAAJ&dq=intitle:%22Al-Imam+Al-Mahdi+The+Just+Leader+of+Humanity%22+inauthor:amini&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Al-Imam Al-Mahdi the Just Leader of Humanity",
+  "matchedAuthor": "Ayatullah Ibrahim Amini",
+  "images": [
+   {
+    "src": "/covers/447-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "448": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL27958680W",
+  "matchedTitle": "Discussions concerning Al-Mahdi",
+  "matchedAuthor": "Luṭf Allāh ibn Muḥammad Javād Ṣāfī Gulpāygānī",
+  "images": [
+   {
+    "src": "/covers/448-1.webp",
+    "width": 330,
+    "height": 500
+   }
+  ]
+ },
+ "451": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=dbbkoQEACAAJ&dq=intitle:%22The+Awaited+Saviour%22+inauthor:mutahhari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Awaited Savior",
+  "matchedAuthor": "Ayatullah Baqir Al Sadr, Ayatullah Murtaza Mutahhari",
+  "images": [
+   {
+    "src": "/covers/451-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "458": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=5Vb7jgEACAAJ&dq=intitle:%22Martyrdom%22+inauthor:shariati&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Martyrdom: Arise and Bear Witness",
+  "matchedAuthor": "Ali Shariati",
+  "images": [
+   {
+    "src": "/covers/458-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "459": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL4269397W",
+  "matchedTitle": "God and his attributes: lessons on Islamic doctrine",
+  "matchedAuthor": "Mūsavī Lārī, Mujtabá.",
+  "images": [
+   {
+    "src": "/covers/459-1.webp",
+    "width": 341,
+    "height": 475
+   }
+  ]
+ },
+ "460": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL17077408W",
+  "matchedTitle": "Anthropology for Muslim Students",
+  "matchedAuthor": "Hamid Parsania",
+  "images": [
+   {
+    "src": "/covers/460-1.webp",
+    "width": 170,
+    "height": 262
+   }
+  ]
+ },
+ "465": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL3360912W",
+  "matchedTitle": "Patience in Islam",
+  "matchedAuthor": "Tallal Alie Turfe",
+  "images": [
+   {
+    "src": "/covers/465-1.webp",
+    "width": 128,
+    "height": 199
+   }
+  ]
+ },
+ "466": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=eWXooQEACAAJ&dq=intitle:%22Resurrection+Judgement+and+the+Hereafter%22+inauthor:lari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Resurrection Judgement and the Hereafter",
+  "matchedAuthor": "Sayyid Mujtaba Musavi Lari",
+  "images": [
+   {
+    "src": "/covers/466-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "467": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=jEmRtAEACAAJ&dq=intitle:%22Let%27s+Learn+About+Divine+Justice%22+inauthor:shirazi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Let's Learn about Divine Justice",
+  "matchedAuthor": "Ayatullah Naser Makarem Shirazi",
+  "images": [
+   {
+    "src": "/covers/467-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "468": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL9673363W",
+  "matchedTitle": "The Story of the Holy Kaaba and It's People",
+  "matchedAuthor": "Syed Muhammad Raza Shabbar",
+  "images": [
+   {
+    "src": "/covers/468-1.webp",
+    "width": 315,
+    "height": 500
+   }
+  ]
+ },
+ "473": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=9CDmjgEACAAJ&dq=intitle:%22Sexual+Ethics+In+Islam+and+in+the+Western+World%22+inauthor:mutahhari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Sexual Ethics in Islam and in the Western World",
+  "matchedAuthor": "Ayatullah Murtadha Mutahhari",
+  "images": [
+   {
+    "src": "/covers/473-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "474": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL3930579W",
+  "matchedTitle": "A witness to Genocide",
+  "matchedAuthor": "Roy Gutman",
+  "images": [
+   {
+    "src": "/covers/474-1.webp",
+    "width": 128,
+    "height": 195
+   }
+  ]
+ },
+ "477": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL8877573W",
+  "matchedTitle": "The Seal of the Prophets and his message",
+  "matchedAuthor": "Mujtaba Musavi Lari",
+  "images": [
+   {
+    "src": "/covers/477-1.webp",
+    "width": 325,
+    "height": 475
+   }
+  ]
+ },
+ "479": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL21380325W",
+  "matchedTitle": "Advice on Establishing an Islamic Home",
+  "matchedAuthor": "Sheikh Muhammad Salih al-Munajjid",
+  "images": [
+   {
+    "src": "/covers/479-1.webp",
+    "width": 338,
+    "height": 500
+   }
+  ]
+ },
+ "487": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL9219114W",
+  "matchedTitle": "Cultural Side of Islam",
+  "matchedAuthor": "M. Pickthall",
+  "images": [
+   {
+    "src": "/covers/487-1.webp",
+    "width": 400,
+    "height": 400
+   }
+  ]
+ },
+ "491": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL10261071W",
+  "matchedTitle": "Popular Dimensions of the Abbasid Revolution",
+  "matchedAuthor": "Robert Marin-Guzman",
+  "images": [
+   {
+    "src": "/covers/491-1.webp",
+    "width": 128,
+    "height": 202
+   }
+  ]
+ },
+ "492": {
+  "source": "Google Books",
+  "sourceUrl": "https://play.google.com/store/books/details?id=Fj0hBQAAQBAJ&source=gbs_api",
+  "matchedTitle": "The Crusades Through Arab Eyes",
+  "matchedAuthor": "Amin Maalouf",
+  "images": [
+   {
+    "src": "/covers/492-1.webp",
+    "width": 501,
+    "height": 780
+   }
+  ]
+ },
+ "498": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=N9LLjgEACAAJ&dq=intitle:%22Sulh+Al+Hasan-+The+Peace+Treaty+Of+Al+Hasan%22+inauthor:yasin&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Sulh Al-hasan: The Peace Treaty of Al-hasan",
+  "matchedAuthor": "Shaykh Radi Al -Yasin - XKP",
+  "images": [
+   {
+    "src": "/covers/498-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "509": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=Q7KwlAh4MZcC&dq=intitle:%22Islam+and+Nationalism%22+inauthor:naqavi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Islam and Nationalism",
+  "matchedAuthor": "Ali Muhammad Naqavi",
+  "images": [
+   {
+    "src": "/covers/509-1.webp",
+    "width": 503,
+    "height": 780
+   }
+  ]
+ },
+ "511": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=R2PYoQEACAAJ&dq=intitle:%22What+Do+You+Know+About+Islamic+Economics%3F%22+inauthor:sadr&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "What Do You Know about Islamic Economics?",
+  "matchedAuthor": "Ayatullah Muhammad Baqir As Sadr",
+  "images": [
+   {
+    "src": "/covers/511-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "513": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=QhN5zwEACAAJ&dq=intitle:%22Islam+Forbids+Intoxicants+and+Gambling%22+inauthor:siddiqi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Why Islam Forbids Intoxicants and Gambling",
+  "matchedAuthor": "MUHAMMAD IQBAL. SIDDIQI, Mustopha Olona Imran",
+  "images": [
+   {
+    "src": "/covers/513-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "515": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=dbbkoQEACAAJ&dq=intitle:%22The+Awaited+Savior%22+inauthor:sadr&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Awaited Savior",
+  "matchedAuthor": "Ayatullah Baqir Al Sadr, Ayatullah Murtaza Mutahhari",
+  "images": [
+   {
+    "src": "/covers/515-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "516": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=i_hEjwEACAAJ&dq=intitle:%22Youth+And+Spouse+Selection%22+inauthor:mazaheri&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Youth and Spouse Selection",
+  "matchedAuthor": "Ali Akbar Mazaheri",
+  "images": [
+   {
+    "src": "/covers/516-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "517": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=5nzmjgEACAAJ&dq=intitle:%22Imamate+and+Leadership%22+inauthor:lari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Imamate and Leadership",
+  "matchedAuthor": "Sayyid Mujtaba Musavi Lari",
+  "images": [
+   {
+    "src": "/covers/517-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "520": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=YaTcjgEACAAJ&dq=intitle:%22From+Marriage+to+Parenthood%22+inauthor:merali&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "From Marriage to Parenthood the Heavenly Path",
+  "matchedAuthor": "Abbas and Shaheen Merali",
+  "images": [
+   {
+    "src": "/covers/520-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "521": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=naupAgAAQBAJ&dq=intitle:%22Family+Life+of+Islam%22+inauthor:rizvi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Family Life of Islam",
+  "matchedAuthor": "Sayyid Saeed Akhtar Rizvi",
+  "images": [
+   {
+    "src": "/covers/521-1.webp",
+    "width": 520,
+    "height": 675
+   }
+  ]
+ },
+ "523": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL20948798W",
+  "matchedTitle": "Woman and her rights",
+  "matchedAuthor": "Allamah Murtaza Mutahheri",
+  "images": [
+   {
+    "src": "/covers/523-1.webp",
+    "width": 296,
+    "height": 500
+   }
+  ]
+ },
+ "525": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL9718162W",
+  "matchedTitle": "Family & Social Obligations in Islam",
+  "matchedAuthor": "Dr. Mazhar U. Kazi",
+  "images": [
+   {
+    "src": "/covers/525-1.webp",
+    "width": 290,
+    "height": 475
+   }
+  ]
+ },
+ "526": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=SfxXtwAACAAJ&dq=intitle:%22The+Codes+of+Training%22+inauthor:amini&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Codes of Training",
+  "matchedAuthor": "Ibrāhīm Amīnī",
+  "images": [
+   {
+    "src": "/covers/526-1.webp",
+    "width": 300,
+    "height": 464
+   }
+  ]
+ },
+ "527": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=PMjKjgEACAAJ&dq=intitle:%22Contemporary+Man+and+the+Social+Problem%22+inauthor:sadr&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Contemporary Man and the Social Problem",
+  "matchedAuthor": "Ayatullah Sayyid Muhammad Baqir As-sadr",
+  "images": [
+   {
+    "src": "/covers/527-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "531": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL13362759W",
+  "matchedTitle": "The family structure in Islam",
+  "matchedAuthor": "Hammudah 'Abd al-Ati",
+  "images": [
+   {
+    "src": "/covers/531-1.webp",
+    "width": 322,
+    "height": 500
+   }
+  ]
+ },
+ "536": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL8877572W",
+  "matchedTitle": "The Islamic Modest Dress",
+  "matchedAuthor": "M. Mutahhari",
+  "images": [
+   {
+    "src": "/covers/536-1.webp",
+    "width": 322,
+    "height": 500
+   }
+  ]
+ },
+ "538": {
+  "source": "Google Books",
+  "sourceUrl": "https://play.google.com/store/books/details?id=9uCqDwAAQBAJ&source=gbs_api",
+  "matchedTitle": "The Story of Karbala",
+  "matchedAuthor": "Ayatolla Ali Nazari Munfarid",
+  "images": [
+   {
+    "src": "/covers/538-1.webp",
+    "width": 507,
+    "height": 780
+   }
+  ]
+ },
+ "539": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=f0f1jgEACAAJ&dq=intitle:%22Ashura%22+inauthor:asifi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Ashura",
+  "matchedAuthor": "Shaykh Muhammad Mahdi Al-Asifi",
+  "images": [
+   {
+    "src": "/covers/539-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "543": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=ntqZzgEACAAJ&dq=intitle:%22Woman+in+Islam,+The+Mutahhari+Theology+Series%22+inauthor:mutahhari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Woman in Islam",
+  "matchedAuthor": "Murtada Mutahhari",
+  "images": [
+   {
+    "src": "/covers/543-1.webp",
+    "width": 300,
+    "height": 457
+   }
+  ]
+ },
+ "544": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=9Cx5QgAACAAJ&dq=intitle:%22Principles+of+Marriage+Family+Ethics%22+inauthor:amini&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "principles of marriage family ethics",
+  "matchedAuthor": "ibrahim amini",
+  "images": [
+   {
+    "src": "/covers/544-1.webp",
+    "width": 300,
+    "height": 375
+   }
+  ]
+ },
+ "546": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=loRpQgAACAAJ&dq=intitle:%22How+to+Bridge+the+Generation+Gap%22+inauthor:hakim&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "how to bridge? the generation gap",
+  "matchedAuthor": "sayyid mohammad taqi hakim",
+  "images": [
+   {
+    "src": "/covers/546-1.webp",
+    "width": 300,
+    "height": 375
+   }
+  ]
+ },
+ "548": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=qf_LoQEACAAJ&dq=intitle:%22The+Uprising+of+Ashura+and+Responses+to+Doubts%22+inauthor:ridwani&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Uprising of Ashura and Responses to Doubts",
+  "matchedAuthor": "Ali Asghar Ridwani",
+  "images": [
+   {
+    "src": "/covers/548-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "553": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL4422247W",
+  "matchedTitle": "The pious caliphs",
+  "matchedAuthor": "Majid Ali Khan",
+  "images": [
+   {
+    "src": "/covers/553-1.webp",
+    "width": 140,
+    "height": 200
+   }
+  ]
+ },
+ "555": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=V3rCjgEACAAJ&dq=intitle:%22War,+Peace,+%26+Non-Violence%22+inauthor:shirazi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "War, Peace and Non-Violence - An Islamic Perspective",
+  "matchedAuthor": "Imam Muhammad Shirazi - XKP",
+  "images": [
+   {
+    "src": "/covers/555-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "557": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL15827820W",
+  "matchedTitle": "Pity the Nation: Lebanon at War",
+  "matchedAuthor": "Robert Fisk",
+  "images": [
+   {
+    "src": "/covers/557-1.webp",
+    "width": 313,
+    "height": 500
+   }
+  ]
+ },
+ "562": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL10568091W",
+  "matchedTitle": "Islamic revolution future path of the nations",
+  "matchedAuthor": "Masih Muhajeri",
+  "images": [
+   {
+    "src": "/covers/562-1.webp",
+    "width": 332,
+    "height": 500
+   }
+  ]
+ },
+ "566": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL2027862W",
+  "matchedTitle": "Roots of the Islamic Revolution in Iran",
+  "matchedAuthor": "Hamid Algar",
+  "images": [
+   {
+    "src": "/covers/566-1.webp",
+    "width": 128,
+    "height": 187
+   }
+  ]
+ },
+ "567": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL716742W",
+  "matchedTitle": "Palestine Peace Not Apartheid",
+  "matchedAuthor": "Jimmy Carter",
+  "images": [
+   {
+    "src": "/covers/567-1.webp",
+    "width": 375,
+    "height": 500
+   }
+  ]
+ },
+ "569": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL17080487W",
+  "matchedTitle": "Islam Between East and West",
+  "matchedAuthor": "Alija Izetbegovic",
+  "images": [
+   {
+    "src": "/covers/569-1.webp",
+    "width": 339,
+    "height": 500
+   }
+  ]
+ },
+ "570": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=VUsHjwEACAAJ&dq=intitle:%22A+Probe+into+the+History+of+Hadith%22+inauthor:askari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "A Probe Into the History of Hadith",
+  "matchedAuthor": "Allamah Sayyid Murtadha Askari",
+  "images": [
+   {
+    "src": "/covers/570-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "571": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=qo-1jgEACAAJ&dq=intitle:%22Lady+Fatima+Masuma%22+inauthor:jaffer&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Lady Fatima Masuma (A) of Qum",
+  "matchedAuthor": "Masuma Jaffer - XKP",
+  "images": [
+   {
+    "src": "/covers/571-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "575": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=lVDYjgEACAAJ&dq=intitle:%22The+Sermon+of+Prophet+Muhammad%22+inauthor:majd&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Sermon of Prophet Muhammad(sawaw) at Ghadir",
+  "matchedAuthor": "Vahid Majd",
+  "images": [
+   {
+    "src": "/covers/575-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "579": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL582349W",
+  "matchedTitle": "A young Muslim's guide to the modern world",
+  "matchedAuthor": "Seyyed Hossein Nasr",
+  "images": [
+   {
+    "src": "/covers/579-1.webp",
+    "width": 316,
+    "height": 475
+   }
+  ]
+ },
+ "583": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL5917039W",
+  "matchedTitle": "Man and faith",
+  "matchedAuthor": "Murṭazá Muṭahharī",
+  "images": [
+   {
+    "src": "/covers/583-1.webp",
+    "width": 314,
+    "height": 500
+   }
+  ]
+ },
+ "594": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL582351W",
+  "matchedTitle": "Muhammad",
+  "matchedAuthor": "Seyyed Hossein Nasr",
+  "images": [
+   {
+    "src": "/covers/594-1.webp",
+    "width": 313,
+    "height": 475
+   }
+  ]
+ },
+ "597": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=jBrEtAEACAAJ&dq=intitle:%22Western+Civilization+Through+Muslim+Eyes%22+inauthor:lari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Western Civilization Through Muslim Eyes",
+  "matchedAuthor": "Sayyid Mujtaba Musavi Lari",
+  "images": [
+   {
+    "src": "/covers/597-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "598": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=HGDttAEACAAJ&dq=intitle:%22Muhammad+The+Messenger+Of+Allah+PT+1,2%22+inauthor:foundation&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Muhammad: The Messenger of Allah",
+  "matchedAuthor": "Al-balagh Foundation",
+  "images": [
+   {
+    "src": "/covers/598-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "599": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL5669135W",
+  "matchedTitle": "Stages of Islamic revolution",
+  "matchedAuthor": "Kalim Siddiqui",
+  "images": [
+   {
+    "src": "/covers/599-1.webp",
+    "width": 128,
+    "height": 190
+   }
+  ]
+ },
+ "602": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=WYfIjgEACAAJ&dq=intitle:%22Fascinating+Discourses+of+the+Fourteen+Infallibles%22&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Fascinating Discourses of the Fourteen Infallibles (A.s)",
+  "matchedAuthor": "Shaykh Mohammad Ishtihardi",
+  "images": [
+   {
+    "src": "/covers/602-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "603": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL8998860W",
+  "matchedTitle": "Modern Islamic Political Thought",
+  "matchedAuthor": "Hamid Enayat",
+  "images": [
+   {
+    "src": "/covers/603-1.webp",
+    "width": 348,
+    "height": 500
+   }
+  ]
+ },
+ "605": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL6205867W",
+  "matchedTitle": "Life of Muhammad",
+  "matchedAuthor": "Abdul Hameed Siddiqui",
+  "images": [
+   {
+    "src": "/covers/605-1.webp",
+    "width": 128,
+    "height": 195
+   }
+  ]
+ },
+ "607": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL982372W",
+  "matchedTitle": "Western Muslims and the future of Islam",
+  "matchedAuthor": "Tariq Ramadan",
+  "images": [
+   {
+    "src": "/covers/607-1.webp",
+    "width": 325,
+    "height": 500
+   }
+  ]
+ },
+ "608": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL5588259W",
+  "matchedTitle": "Occidentosis",
+  "matchedAuthor": "Jalāl Āl Aḥmad",
+  "images": [
+   {
+    "src": "/covers/608-1.webp",
+    "width": 128,
+    "height": 199
+   }
+  ]
+ },
+ "609": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL3788789W",
+  "matchedTitle": "The Spirit of Allah",
+  "matchedAuthor": "Amir Taheri",
+  "images": [
+   {
+    "src": "/covers/609-1.webp",
+    "width": 128,
+    "height": 194
+   }
+  ]
+ },
+ "611": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL582341W",
+  "matchedTitle": "Islam and the plight of modern man",
+  "matchedAuthor": "Seyyed Hossein Nasr",
+  "images": [
+   {
+    "src": "/covers/611-1.webp",
+    "width": 349,
+    "height": 500
+   }
+  ]
+ },
+ "615": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL9087799W",
+  "matchedTitle": "IBN Khaldun",
+  "matchedAuthor": "M.A. Enan",
+  "images": [
+   {
+    "src": "/covers/615-1.webp",
+    "width": 400,
+    "height": 400
+   }
+  ]
+ },
+ "616": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL27739748W",
+  "matchedTitle": "The narrative of awakening",
+  "matchedAuthor": "Hamid Ansari",
+  "images": [
+   {
+    "src": "/covers/616-1.webp",
+    "width": 254,
+    "height": 500
+   }
+  ]
+ },
+ "638": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL14981684W",
+  "matchedTitle": "Courage and consequence: My Life as a Conservative in the Fight",
+  "matchedAuthor": "Karl Rove",
+  "images": [
+   {
+    "src": "/covers/638-1.webp",
+    "width": 332,
+    "height": 500
+   }
+  ]
+ },
+ "646": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL1611682W",
+  "matchedTitle": "Arabic for English speaking students",
+  "matchedAuthor": "Muhammad Abdul-Rauf",
+  "images": [
+   {
+    "src": "/covers/646-1.webp",
+    "width": 128,
+    "height": 186
+   }
+  ]
+ },
+ "647": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL15389427W",
+  "matchedTitle": "Recipes from the herbal kitchen",
+  "matchedAuthor": "Prevention Health Books",
+  "images": [
+   {
+    "src": "/covers/647-1.webp",
+    "width": 312,
+    "height": 500
+   }
+  ]
+ },
+ "648": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL20681432W",
+  "matchedTitle": "Crashing the Party",
+  "matchedAuthor": "Ralph Nader",
+  "images": [
+   {
+    "src": "/covers/648-1.webp",
+    "width": 321,
+    "height": 500
+   }
+  ]
+ },
+ "650": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL1130702W",
+  "matchedTitle": "God in history",
+  "matchedAuthor": "Sherwood Eddy",
+  "images": [
+   {
+    "src": "/covers/650-1.webp",
+    "width": 333,
+    "height": 500
+   }
+  ]
+ },
+ "651": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=oEqkQgAACAAJ&dq=intitle:%22A+few+words+on+Knowing+Allah%22+inauthor:bahonar&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "a few words on knowing allah",
+  "matchedAuthor": "muhammad javad bahonar",
+  "images": [
+   {
+    "src": "/covers/651-1.webp",
+    "width": 300,
+    "height": 375
+   }
+  ]
+ },
+ "652": {
+  "source": "Google Books",
+  "sourceUrl": "https://play.google.com/store/books/details?id=odD1aucJrjkC&source=gbs_api",
+  "matchedTitle": "Christ in Islam",
+  "matchedAuthor": "Ahmed Deedat",
+  "images": [
+   {
+    "src": "/covers/652-1.webp",
+    "width": 520,
+    "height": 673
+   }
+  ]
+ },
+ "653": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL4230236W",
+  "matchedTitle": "Is the Bible God's Word",
+  "matchedAuthor": "Ahmed Deedat",
+  "images": [
+   {
+    "src": "/covers/653-1.webp",
+    "width": 316,
+    "height": 500
+   }
+  ]
+ },
+ "657": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=iWxazwEACAAJ&dq=intitle:%22A+Brief+History+of+The+Fourteen+Infallibles%22&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "A Brief History of the Fourteen Infallibles",
+  "matchedAuthor": "Wofis",
+  "images": [
+   {
+    "src": "/covers/657-1.webp",
+    "width": 300,
+    "height": 464
+   }
+  ]
+ },
+ "659": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL337784W",
+  "matchedTitle": "The philosophy of the teachings of Islam",
+  "matchedAuthor": "Mirza Ghulam Ahmad",
+  "images": [
+   {
+    "src": "/covers/659-1.webp",
+    "width": 309,
+    "height": 500
+   }
+  ]
+ },
+ "664": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL16606921W",
+  "matchedTitle": "Spiritual dimensions of psychology",
+  "matchedAuthor": "Inayat Khan",
+  "images": [
+   {
+    "src": "/covers/664-1.webp",
+    "width": 322,
+    "height": 500
+   }
+  ]
+ },
+ "665": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=LDICzwEACAAJ&dq=intitle:%22Self-Knowledge%22+inauthor:shomali&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Self-Knowledge",
+  "matchedAuthor": "Mohammad Ali Shomali",
+  "images": [
+   {
+    "src": "/covers/665-1.webp",
+    "width": 300,
+    "height": 464
+   }
+  ]
+ },
+ "668": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL750276W",
+  "matchedTitle": "Traditional psychoethics and personality paradigm",
+  "matchedAuthor": "Laleh Bakhtiar",
+  "images": [
+   {
+    "src": "/covers/668-1.webp",
+    "width": 313,
+    "height": 475
+   }
+  ]
+ },
+ "673": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL2648497W",
+  "matchedTitle": "Postmodernism and Islam",
+  "matchedAuthor": "Akbar S. Ahmed",
+  "images": [
+   {
+    "src": "/covers/673-1.webp",
+    "width": 128,
+    "height": 192
+   }
+  ]
+ },
+ "675": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL2894311W",
+  "matchedTitle": "Shi'a Islam",
+  "matchedAuthor": "Heinz Halm, Allison Brown",
+  "images": [
+   {
+    "src": "/covers/675-1.webp",
+    "width": 331,
+    "height": 500
+   }
+  ]
+ },
+ "676": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=fK23oQEACAAJ&dq=intitle:%22Empowerment+for+a+New+Golden+Age%22+inauthor:janjua&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Empowerment for a New Golden Age",
+  "matchedAuthor": "Mohammad Afzal Janjua",
+  "images": [
+   {
+    "src": "/covers/676-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "677": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL5286264W",
+  "matchedTitle": "What is to be done",
+  "matchedAuthor": "ʻAlī Sharīʻatī",
+  "images": [
+   {
+    "src": "/covers/677-1.webp",
+    "width": 289,
+    "height": 500
+   }
+  ]
+ },
+ "679": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL10103975W",
+  "matchedTitle": "The Psalms of Islam - English version",
+  "matchedAuthor": "Al-Sajjadiyya, Imam Zayn Al 'Abidin Al-Sahifat",
+  "images": [
+   {
+    "src": "/covers/679-1.webp",
+    "width": 333,
+    "height": 500
+   }
+  ]
+ },
+ "682": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL19189911W",
+  "matchedTitle": "Hajj in focus",
+  "matchedAuthor": "Zafarul-Islam Khan",
+  "images": [
+   {
+    "src": "/covers/682-1.webp",
+    "width": 296,
+    "height": 500
+   }
+  ]
+ },
+ "684": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=YCy8rQEACAAJ&dq=intitle:%22Al-Kafi%22+inauthor:razi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Al-Kafi: Volume 1 the Book of Divine Unity 2",
+  "matchedAuthor": "Ash-Shaykh Abu Jafar Muhammad Ibn Yaqub Ishaq Al-kulayni Ar-Razi",
+  "images": [
+   {
+    "src": "/covers/684-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "688": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=tCIljwEACAAJ&dq=intitle:%22Secrets+of+the+Hajj%22+inauthor:mazaheri&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Secrets of the Hajj",
+  "matchedAuthor": "Ayatullah Husayn Mazaheri",
+  "images": [
+   {
+    "src": "/covers/688-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "689": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL13504080W",
+  "matchedTitle": "The Lantern of the path",
+  "matchedAuthor": "Jaf'ar al Sādiq",
+  "images": [
+   {
+    "src": "/covers/689-1.webp",
+    "width": 306,
+    "height": 500
+   }
+  ]
+ },
+ "696": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL8445530W",
+  "matchedTitle": "One Country",
+  "matchedAuthor": "Ali Abunimah",
+  "images": [
+   {
+    "src": "/covers/696-1.webp",
+    "width": 128,
+    "height": 192
+   }
+  ]
+ },
+ "697": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL3085211W",
+  "matchedTitle": "They dare to speak out: people and institutions confront Israel's lobby",
+  "matchedAuthor": "Paul Findley",
+  "images": [
+   {
+    "src": "/covers/697-1.webp",
+    "width": 128,
+    "height": 203
+   }
+  ]
+ },
+ "705": {
+  "source": "Google Books",
+  "sourceUrl": "https://play.google.com/store/books/details?id=Fbn8DwAAQBAJ&source=gbs_api",
+  "matchedTitle": "Imām Ḥusayn - The Saviour of Islam",
+  "matchedAuthor": "Sayyid Muhammad Rizvi, Sayyid Saeed Akhtar Rizvi, Shaykh al-Mufid, Ayatullah Murtada Mutahhari",
+  "images": [
+   {
+    "src": "/covers/705-1.webp",
+    "width": 505,
+    "height": 780
+   }
+  ]
+ },
+ "713": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL3963081W",
+  "matchedTitle": "Islam and Gender",
+  "matchedAuthor": "Ziba Mir-Hosseini",
+  "images": [
+   {
+    "src": "/covers/713-1.webp",
+    "width": 312,
+    "height": 475
+   }
+  ]
+ },
+ "718": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL758568W",
+  "matchedTitle": "Qur'an",
+  "matchedAuthor": "Thomas Ballantine Irving",
+  "images": [
+   {
+    "src": "/covers/718-1.webp",
+    "width": 128,
+    "height": 192
+   }
+  ]
+ },
+ "721": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL24820327W",
+  "matchedTitle": "The Gospel of Barnabas",
+  "matchedAuthor": "Lonsdale Ragg",
+  "images": [
+   {
+    "src": "/covers/721-1.webp",
+    "width": 324,
+    "height": 500
+   }
+  ]
+ },
+ "725": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL10568091W",
+  "matchedTitle": "Islamic revolution future path of the nations",
+  "matchedAuthor": "Masih Muhajeri",
+  "images": [
+   {
+    "src": "/covers/725-1.webp",
+    "width": 332,
+    "height": 500
+   }
+  ]
+ },
+ "726": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL17078726W",
+  "matchedTitle": "A Short History of The Revivalist Movement in Islam",
+  "matchedAuthor": "Sayyid Abul A'la Mawdudi",
+  "images": [
+   {
+    "src": "/covers/726-1.webp",
+    "width": 341,
+    "height": 500
+   }
+  ]
+ },
+ "736": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=zBBshCdGbVwC&dq=intitle:%22Season+of+Migration+to+the+North%22+inauthor:salih&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Season of Migration to the North",
+  "matchedAuthor": "al-Ṭayyib Ṣāliḥ, Tayeb Salih",
+  "images": [
+   {
+    "src": "/covers/736-1.webp",
+    "width": 507,
+    "height": 780
+   }
+  ]
+ },
+ "738": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL6574753W",
+  "matchedTitle": "Islam",
+  "matchedAuthor": "Alfred Guillaume",
+  "images": [
+   {
+    "src": "/covers/738-1.webp",
+    "width": 352,
+    "height": 500
+   }
+  ]
+ },
+ "739": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL2935376W",
+  "matchedTitle": "Understanding Islam",
+  "matchedAuthor": "Thomas W. Lippman",
+  "images": [
+   {
+    "src": "/covers/739-1.webp",
+    "width": 329,
+    "height": 500
+   }
+  ]
+ },
+ "740": {
+  "source": "Google Books",
+  "sourceUrl": "https://play.google.com/store/books/details?id=WdwtqARotdsC&source=gbs_api",
+  "matchedTitle": "The Quran: with or Against the Bible?: A Topic-By-Topic Review for the Investigative Mind",
+  "matchedAuthor": "Ejaz Naqvi MD",
+  "images": [
+   {
+    "src": "/covers/740-1.webp",
+    "width": 519,
+    "height": 780
+   }
+  ]
+ },
+ "741": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL10214138W",
+  "matchedTitle": "The Islamic Family Structure",
+  "matchedAuthor": "Husayn Ansarian",
+  "images": [
+   {
+    "src": "/covers/741-1.webp",
+    "width": 128,
+    "height": 192
+   }
+  ]
+ },
+ "742": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=P6cLogEACAAJ&dq=intitle:%22A+Code+of+Ethics+for+Muslim+Men+and+Women%22+inauthor:masumi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "A Code of Ethics for Muslim Men AndWomen",
+  "matchedAuthor": "Sayyid Masud Masumi",
+  "images": [
+   {
+    "src": "/covers/742-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "745": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL3574128W",
+  "matchedTitle": "Islamic law in the contemporary world",
+  "matchedAuthor": "S. H. Amin",
+  "images": [
+   {
+    "src": "/covers/745-1.webp",
+    "width": 128,
+    "height": 186
+   }
+  ]
+ },
+ "746": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=FW7woAEACAAJ&dq=intitle:%22Islamic+Laws,+English+Version+of+Taudhihul+Masae%27l%22&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Islamic Laws English Version of Taudhihul Masae'l",
+  "matchedAuthor": "Syyid Ali Al Husaini Seestani",
+  "images": [
+   {
+    "src": "/covers/746-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "754": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=qk7ejgEACAAJ&dq=intitle:%22Women%27s+Issues+Made+Simple%22+inauthor:arastu&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Women's Issues Made Simple",
+  "matchedAuthor": "Batul Arastu - XKP",
+  "images": [
+   {
+    "src": "/covers/754-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "757": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL1809527W",
+  "matchedTitle": "The Succession to Muhammad",
+  "matchedAuthor": "Wilferd Madelung",
+  "images": [
+   {
+    "src": "/covers/757-1.webp",
+    "width": 336,
+    "height": 475
+   }
+  ]
+ },
+ "767": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=ClKsk_j7FPEC&dq=intitle:%22Music+and+its+Effects%22&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Music and Its Effects",
+  "matchedAuthor": "Ahmed H. Sheriff",
+  "images": [
+   {
+    "src": "/covers/767-1.webp",
+    "width": 520,
+    "height": 770
+   }
+  ]
+ },
+ "773": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL3913089W",
+  "matchedTitle": "The metaphysics of Tusi: treatise on the proof of a necessary [being], treatise on determinism and destiny, treatise on division of existents",
+  "matchedAuthor": "Naṣīr al-Dīn Muḥammad ibn Muḥammad Ṭūsī",
+  "images": [
+   {
+    "src": "/covers/773-1.webp",
+    "width": 309,
+    "height": 475
+   }
+  ]
+ },
+ "774": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL35275791W",
+  "matchedTitle": "Ethics and Spiritual Growth",
+  "matchedAuthor": "Sayyid Mujtaba Musawi Lari",
+  "images": [
+   {
+    "src": "/covers/774-1.webp",
+    "width": 315,
+    "height": 500
+   }
+  ]
+ },
+ "779": {
+  "source": "Google Books",
+  "sourceUrl": "https://play.google.com/store/books/details?id=qmPqAgAAQBAJ&source=gbs_api",
+  "matchedTitle": "Self-Building: An Islamic Guide for Spiritual Migration Towards Allah",
+  "matchedAuthor": "Ayatollah Ibrahim Amini",
+  "images": [
+   {
+    "src": "/covers/779-1.webp",
+    "width": 519,
+    "height": 780
+   }
+  ]
+ },
+ "780": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=X3VCtAEACAAJ&dq=intitle:%22Self-Recognition+for+Self-Improvement%22+inauthor:yazdi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Self-Recognition for Self-Improvement",
+  "matchedAuthor": "Ayatullah Muhammad Taqi Misbah Yazdi",
+  "images": [
+   {
+    "src": "/covers/780-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "784": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=UInfswEACAAJ&dq=intitle:%22Imamate+and+Infallibility+of+Imams+in+the+Quran%22+inauthor:kardan&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Imamate and Infallibility of Imams in the Qur?an",
+  "matchedAuthor": "Rida Kardan",
+  "images": [
+   {
+    "src": "/covers/784-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "785": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=hDvijgEACAAJ&dq=intitle:%22Hidden+Truths+in+God%27s+Word,+Some+New+Derivations+from+Quranic+Concepts%22+inauthor:lari&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Hidden Truths in God's Word",
+  "matchedAuthor": "Sayyid Mujtaba Musavi Lari - XKP",
+  "images": [
+   {
+    "src": "/covers/785-1.webp",
+    "width": 300,
+    "height": 389
+   }
+  ]
+ },
+ "790": {
+  "source": "Google Books",
+  "sourceUrl": "https://play.google.com/store/books/details?id=WdwtqARotdsC&source=gbs_api",
+  "matchedTitle": "The Quran: with or Against the Bible?: A Topic-By-Topic Review for the Investigative Mind",
+  "matchedAuthor": "Ejaz Naqvi MD",
+  "images": [
+   {
+    "src": "/covers/790-1.webp",
+    "width": 519,
+    "height": 780
+   }
+  ]
+ },
+ "799": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=mOxlQgAACAAJ&dq=intitle:%22Tuhaf+Al-Uqoul-+The+Masterpieces+of+the+Intellects%22+inauthor:harrani&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "tuhaf al-uqoul, the masterpieces of the intellects",
+  "matchedAuthor": "al-harrani",
+  "images": [
+   {
+    "src": "/covers/799-1.webp",
+    "width": 300,
+    "height": 375
+   }
+  ]
+ },
+ "800": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=i0aDQgAACAAJ&dq=intitle:%22The+Ahl+Ul-Bayt%3B+Ethical+Role-Models%22+inauthor:sadr&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "the ahl ul-bayt; ethical role-models",
+  "matchedAuthor": "sayyid mahdi as-sadr",
+  "images": [
+   {
+    "src": "/covers/800-1.webp",
+    "width": 300,
+    "height": 375
+   }
+  ]
+ },
+ "801": {
+  "source": "Open Library",
+  "sourceUrl": "https://openlibrary.org/works/OL13504080W",
+  "matchedTitle": "The Lantern of the path",
+  "matchedAuthor": "Jaf'ar al Sādiq",
+  "images": [
+   {
+    "src": "/covers/801-1.webp",
+    "width": 306,
+    "height": 500
+   }
+  ]
+ },
+ "802": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=1a24oQEACAAJ&dq=intitle:%22Al-Hadith+Al-Qudsi+A+Word+of+Allah%22+inauthor:shirazi&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "Al-hadith Al-qudsi",
+  "matchedAuthor": "Hassan Shirazi",
+  "images": [
+   {
+    "src": "/covers/802-1.webp",
+    "width": 300,
+    "height": 450
+   }
+  ]
+ },
+ "806": {
+  "source": "Google Books",
+  "sourceUrl": "http://books.google.com/books?id=XGYkAQAAIAAJ&dq=intitle:%22The+Spread+of+Islam+in+the+World+A+History+of+Peaceful+Preaching%22+inauthor:arnold&hl=&as_pt=BOOKS&source=gbs_api",
+  "matchedTitle": "The Spread of Islam in the World: A History of Peaceful Preaching",
+  "matchedAuthor": "Thomas Walker Arnold, Sir Thomas Walker Arnold",
+  "images": [
+   {
+    "src": "/covers/806-1.webp",
+    "width": 300,
+    "height": 463
+   }
+  ]
+ }
+}

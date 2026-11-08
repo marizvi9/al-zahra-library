@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.cache/
+.env*.local
+
+# Kept on this computer only (not published to GitHub):
+Al-Zahra_Library_Catalog.csv
+private/
