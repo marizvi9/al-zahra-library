@@ -1,0 +1,8 @@
+# Never upload these to Vercel (private, or rebuilt there anyway)
+Al-Zahra_Library_Catalog.csv
+private/
+.env*
+.cache/
+out/
+.next/
+node_modules/

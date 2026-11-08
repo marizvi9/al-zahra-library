@@ -2,9 +2,11 @@
 
 Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC).
 
-- **Live site:** https://marizvi9.github.io/al-zahra-library/ (GitHub Pages)
+- **Live site (Vercel):** https://al-zahra-library.vercel.app
+- **Live site (GitHub Pages):** https://marizvi9.github.io/al-zahra-library/
 - **Code:** https://github.com/marizvi9/al-zahra-library (public)
-- **Not deployed to Vercel** — GitHub Pages is the only live copy.
+- Share the short Vercel address above. The long one-off Vercel addresses
+  (`al-zahra-library-xxxx.vercel.app`) ask for a Vercel login — that's normal.
 
 ## What we've done
 
@@ -53,10 +55,12 @@ Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC)
 - [ ] **Librarian review:** typos left as recorded (e.g. "Fall of a Center of Decent"), books
       with no sub-category number (partial call numbers), and the copies set to 1.
 - [ ] **Your own ideas** — still to be added.
-- [ ] Decide whether to also deploy to Vercel (not done).
+- [ ] **Connect Vercel to GitHub** so the Vercel copy updates on every push
+      (`vercel git connect`). Until then, redeploy it with `vercel deploy --prod`.
 
 ## How to update
 
 - Data changed? `npm run clean-data`, then `npm run covers` (cached; quick after the first run).
 - Preview locally: `npm run dev` → http://localhost:3000
-- Publish: commit and push to `main`; GitHub rebuilds the live site automatically.
+- Publish: commit and push to `main`; GitHub Pages rebuilds automatically.
+  Vercel: `vercel deploy --prod` (or automatic once connected to GitHub).

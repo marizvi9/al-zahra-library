@@ -9,3 +9,4 @@ next-env.d.ts
 # Kept on this computer only (not published to GitHub):
 Al-Zahra_Library_Catalog.csv
 private/
+.vercel
