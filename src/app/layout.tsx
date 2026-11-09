@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import { Noto_Naskh_Arabic, Noto_Sans, Noto_Serif } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Disclaimer from "@/components/Disclaimer";
 import Intro from "@/components/Intro";
 import { introScript } from "@/lib/intro";
 import "./globals.css";
@@ -46,6 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div>{children}</div>
           </ViewTransition>
         </main>
+        <Disclaimer />
         <Footer />
       </body>
     </html>

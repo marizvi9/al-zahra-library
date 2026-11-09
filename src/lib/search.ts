@@ -29,7 +29,7 @@ export function normalize(text: string): string {
     .trim();
 }
 
-type Indexed = SearchRecord & { t: string; a: string; c: string };
+export type Indexed = SearchRecord & { t: string; a: string; c: string };
 
 export function buildIndex(records: SearchRecord[]): Indexed[] {
   return records.map((r) => ({
@@ -70,4 +70,18 @@ export function search(index: Indexed[], query: string, scope: SearchScope): Sea
   return scored
     .sort((x, y) => y.score - x.score || x.r.title.localeCompare(y.r.title))
     .map(({ r }) => r);
+}
+
+/**
+ * Quick suggestions while typing. Uses the normal search first; if nothing matches,
+ * it forgives partial words (so "ssan" still finds "Hassan").
+ */
+export function suggest(index: Indexed[], query: string, limit = 7): SearchRecord[] {
+  const words = normalize(query).split(" ").filter(Boolean);
+  if (words.join("").length < 2) return [];
+  const results = search(index, query, "all");
+  if (results.length > 0) return results.slice(0, limit);
+  return index
+    .filter((r) => words.every((w) => r.t.includes(w) || r.a.includes(w) || r.c.includes(w)))
+    .slice(0, limit);
 }
