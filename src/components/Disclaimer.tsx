@@ -1,4 +1,4 @@
-// The notice shown just above the footer on every page (home, browse,
+// The notice shown just above the footer on every page (home, explore,
 // search and every book page). It lives in the shared layout, so editing the
 // wording here changes it everywhere. It used to be inside the footer.
 export default function Disclaimer() {

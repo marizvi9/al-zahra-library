@@ -208,7 +208,7 @@ export type Shelf = {
 };
 
 export type ShelfSection = {
-  key: string; // used in the web address, e.g. /browse/300/#s50
+  key: string; // used in the web address, e.g. /explore/300/#s50
   heading: string;
   description?: string;
   href?: string;
@@ -285,25 +285,25 @@ export function allShelfSections(): ShelfSection[] {
       key: `shelf-${sh.slug}`,
       heading: sh.number ? `Shelf ${sh.number} — ${cats.map((c) => c.name).join(", ")}` : "No shelf number",
       description: sh.number ? cats.map((c) => c.description).filter(Boolean).join(" ") : "Books that have not been given a shelf number yet.",
-      href: `/browse/${sh.slug}/`,
+      href: `/explore/${sh.slug}/`,
       books: books.filter((b) => shelfOf(b) === sh.slug).sort(byTitle),
     };
   });
 }
 
 /**
- * Where a category (or one of its sub-categories) lives on the Browse page.
+ * Where a category (or one of its sub-categories) lives on the Explore page.
  * Used by links around the site and by the old /categories/ addresses.
  */
-export function browseHref(categorySlug: string, subSlug?: string): string {
+export function exploreHref(categorySlug: string, subSlug?: string): string {
   const list = books.filter((b) => b.categorySlug === categorySlug && (!subSlug || b.subCategorySlug === subSlug));
-  if (list.length === 0) return "/browse/";
+  if (list.length === 0) return "/explore/";
   const shelf = shelfOf(list[0]);
-  if (shelf === NO_SHELF) return `/browse/${NO_SHELF}/#${categorySlug}`;
-  if (!subSlug) return `/browse/${shelf}/`;
+  if (shelf === NO_SHELF) return `/explore/${NO_SHELF}/#${categorySlug}`;
+  if (!subSlug) return `/explore/${shelf}/`;
   // the section most of the sub-category's books are in
   const counts = new Map<string, number>();
   for (const b of list) counts.set(sectionKeyOf(b), (counts.get(sectionKeyOf(b)) ?? 0) + 1);
   const key = [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0];
-  return `/browse/${shelf}/#${key}`;
+  return `/explore/${shelf}/#${key}`;
 }

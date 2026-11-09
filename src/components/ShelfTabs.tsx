@@ -1,8 +1,8 @@
 "use client";
-// The row of tabs at the top of the Browse page: "All shelves", then one tab per
+// The row of tabs at the top of the Explore page: "All shelves", then one tab per
 // shelf in number order, each labelled with its number AND subject (e.g. 300 · Fiqh),
 // because every numbered shelf holds exactly one subject.
-// Each tab is a real link (/browse/, /browse/300/ …), so a shelf can be bookmarked or
+// Each tab is a real link (/explore/, /explore/300/ …), so a shelf can be bookmarked or
 // shared. On phones the row scrolls sideways and the current tab is scrolled into view.
 
 import { useEffect, useRef } from "react";
@@ -38,7 +38,7 @@ export default function ShelfTabs({ shelves, active }: Props) {
           return (
             <li key={t.slug || "all"}>
               <Link
-                href={t.slug ? `/browse/${t.slug}/` : "/browse/"}
+                href={t.slug ? `/explore/${t.slug}/` : "/explore/"}
                 ref={isActive ? ref : undefined}
                 className={`shelf-tab ${t.slug ? "" : "shelf-tab-all"} ${isActive ? "is-active" : ""}`}
                 aria-current={isActive ? "page" : undefined}

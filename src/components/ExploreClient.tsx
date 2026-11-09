@@ -1,10 +1,10 @@
 "use client";
-// The interactive part of the Browse page:
+// The interactive part of the Explore page:
 // - a filter box that narrows the books shown on this page as you type,
 // - a "Search this shelf" link that opens the full search page limited to the shelf,
 // - chips to show just one section (or one shelf, on "All shelves"),
 // - the books, grouped under section headings with their descriptions.
-// The chosen section is kept in the address (e.g. /browse/300/#s50), so it can be
+// The chosen section is kept in the address (e.g. /explore/300/#s50), so it can be
 // shared, and old category / sub-category links land on the right section.
 
 import { useEffect, useMemo, useState, type ReactNode } from "react";
@@ -12,7 +12,7 @@ import Link from "next/link";
 import BookList, { type BookListItem } from "./BookList";
 import { buildIndex, matchingSlugs, type SearchRecord } from "@/lib/search";
 
-export type BrowseSection = {
+export type ExploreSection = {
   key: string;
   heading: string;
   description?: string;
@@ -21,7 +21,7 @@ export type BrowseSection = {
 };
 
 type Props = {
-  sections: BrowseSection[];
+  sections: ExploreSection[];
   scope: string; // "this shelf" or "all shelves"
   chipLabel: string; // "Sections", "Shelves" or "Subjects"
   /** Category the "Search this shelf" link limits the search to. */
@@ -39,7 +39,7 @@ type Props = {
 type View = "cards" | "list";
 const VIEW_KEY = "azl-browse-view"; // remembers the visitor's choice on this device
 
-export default function BrowseClient({ sections, scope, chipLabel, searchCategory, chipsAreCategories, cards }: Props) {
+export default function ExploreClient({ sections, scope, chipLabel, searchCategory, chipsAreCategories, cards }: Props) {
   const [view, setView] = useState<View>("cards");
   useEffect(() => {
     try {

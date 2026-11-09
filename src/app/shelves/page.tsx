@@ -1,9 +1,9 @@
-// Old address: Shelves is now part of the Browse page at /browse/.
+// Old address: Shelves is now part of the Explore page at /explore/.
 import type { Metadata } from "next";
 import Redirect from "@/components/Redirect";
 
-export const metadata: Metadata = { title: "Browse", robots: { index: false } };
+export const metadata: Metadata = { title: "Explore", robots: { index: false } };
 
 export default function OldShelvesPage() {
-  return <Redirect to="/browse/" />;
+  return <Redirect to="/explore/" />;
 }

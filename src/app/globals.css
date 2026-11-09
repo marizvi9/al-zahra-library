@@ -1774,16 +1774,37 @@ button:active,
   font-weight: 600;
 }
 
-/* Browse: the how-to note at the top */
-.browse-intro {
-  margin: 4px 0 4px;
+/* Explore: the two-part guide at the top */
+.explore-intro {
+  margin: 4px 0 8px;
 }
-.browse-intro h1 {
-  margin-bottom: 0.2em;
+.explore-intro h1 {
+  margin-bottom: 0.3em;
 }
-.browse-intro .lede {
+.explore-guide {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 12px;
+}
+.explore-guide-part {
+  padding: 14px 18px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+}
+.explore-guide-part h2 {
+  font-size: 1.05rem;
+  margin: 0 0 6px;
+  color: var(--blue);
+}
+.explore-guide-part ul {
   margin: 0;
-  max-width: 68ch;
+  padding-left: 1.1em;
+  line-height: 1.55;
+}
+.explore-guide-part li + li {
+  margin-top: 4px;
 }
 .shelf-band h2 {
   font-size: clamp(1.5rem, 5vw, 2.1rem);

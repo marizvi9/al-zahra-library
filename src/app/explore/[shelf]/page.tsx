@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ShelfTabs from "@/components/ShelfTabs";
-import BrowseClient from "@/components/BrowseClient";
-import BrowseIntro from "@/components/BrowseIntro";
+import ExploreClient from "@/components/ExploreClient";
+import ExploreIntro from "@/components/ExploreIntro";
 import { categories, getShelf, shelfSections, shelves, toListItem } from "@/lib/catalog";
 
 type Props = { params: Promise<{ shelf: string }> };
@@ -40,18 +40,18 @@ export default async function ShelfPage({ params }: Props) {
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
-          { label: "Browse", href: "/browse/" },
+          { label: "Explore", href: "/explore/" },
           { label: shelf.number ? `Shelf ${shelf.number}` : "No shelf number" },
         ]}
       />
-      <BrowseIntro />
+      <ExploreIntro />
       <ShelfTabs shelves={shelves} active={shelf.slug} />
       <section className="page-head arch-band shelf-band" aria-labelledby="band-title">
         <p className="eyebrow">{shelf.number ? `Shelf ${shelf.number}` : "No shelf number"}</p>
         <h2 id="band-title">{shelf.categories.join(", ")}</h2>
         {description && <p className="lede">{description}</p>}
       </section>
-      <BrowseClient
+      <ExploreClient
         sections={sections}
         scope="this shelf"
         chipLabel={shelf.number ? "Sections" : "Subjects"}

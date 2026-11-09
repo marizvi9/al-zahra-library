@@ -139,7 +139,7 @@ export default function SearchClient({ records, categories }: Props) {
             </>
           ) : (
             <>
-              Try fewer words, check the spelling, or <Link href="/browse/">browse the shelves</Link>.
+              Try fewer words, check the spelling, or <Link href="/explore/">explore the shelves</Link>.
             </>
           )}
         </p>

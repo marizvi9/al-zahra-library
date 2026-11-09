@@ -14,7 +14,7 @@ export default function Header() {
         <nav aria-label="Main">
           <ul className="nav-list">
             <li>
-              <Link href="/browse/">Browse</Link>
+              <Link href="/explore/">Explore</Link>
             </li>
             <li>
               <Link href="/search/">Search</Link>

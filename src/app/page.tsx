@@ -5,7 +5,7 @@ import CategoryCard from "@/components/CategoryCard";
 import FeaturedSlider from "@/components/FeaturedSlider";
 import { withBase } from "@/lib/paths";
 import { featuredSlides } from "@/lib/featured";
-import { books, browseHref, featuredCategories, moreToExplore } from "@/lib/catalog";
+import { books, exploreHref, featuredCategories, moreToExplore } from "@/lib/catalog";
 
 export default function HomePage() {
   return (
@@ -43,8 +43,8 @@ export default function HomePage() {
       <section className="container section" aria-labelledby="featured-title">
         <div className="section-head">
           <h2 id="featured-title">Featured categories</h2>
-          <Link href="/browse/" className="see-all">
-            Browse all shelves
+          <Link href="/explore/" className="see-all">
+            Explore all shelves
           </Link>
         </div>
         <ul className="card-grid">
@@ -61,7 +61,7 @@ export default function HomePage() {
         <ul className="chip-list">
           {moreToExplore.map((c) => (
             <li key={c.slug}>
-              <Link href={browseHref(c.slug)} className="chip">
+              <Link href={exploreHref(c.slug)} className="chip">
                 {c.name} <span className="chip-count">{c.count}</span>
               </Link>
             </li>
