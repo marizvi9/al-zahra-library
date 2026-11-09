@@ -2,11 +2,12 @@
 // The cover viewer on each book page.
 // - Turns between images with a gentle 3D "flip the book over" animation.
 // - Swipe on phones, arrow keys on keyboards, or tap the thumbnails.
-// - Tap the cover to open a larger view.
+// - Tap the cover to open a larger, zoomable view (see ZoomViewer.tsx).
 // Animations are switched off for visitors who ask for reduced motion.
 
-import { useCallback, useEffect, useRef, useState, ViewTransition } from "react";
+import { useCallback, useRef, useState, ViewTransition } from "react";
 import ArchCover from "./ArchCover";
+import ZoomViewer from "./ZoomViewer";
 import type { CoverImage } from "@/lib/catalog";
 
 type Props = {
@@ -25,7 +26,6 @@ export default function CoverGallery({ slug, title, images, source }: Props) {
   const [leaving, setLeaving] = useState<{ index: number; dir: 1 | -1 } | null>(null);
   const [turnDir, setTurnDir] = useState<1 | -1 | null>(null); // direction of the last turn
   const [zoomed, setZoomed] = useState(false);
-  const dialogRef = useRef<HTMLDialogElement>(null);
   const swipeStart = useRef<number | null>(null);
   const total = images.length;
 
@@ -41,14 +41,6 @@ export default function CoverGallery({ slug, title, images, source }: Props) {
     },
     [index, total],
   );
-
-  // Open / close the larger view using the browser's built-in <dialog>.
-  useEffect(() => {
-    const d = dialogRef.current;
-    if (!d) return;
-    if (zoomed && !d.open) d.showModal();
-    if (!zoomed && d.open) d.close();
-  }, [zoomed]);
 
   const onKey = (e: React.KeyboardEvent) => {
     if (e.key === "ArrowRight") go(index + 1);
@@ -137,7 +129,7 @@ export default function CoverGallery({ slug, title, images, source }: Props) {
                   aria-current={i === index}
                   onClick={() => go(i)}
                 >
-                  <img src={img.src} alt="" loading="lazy" />
+                  <img src={img.thumb ?? img.src} alt="" loading="lazy" />
                 </button>
               </li>
             ))}
@@ -154,32 +146,16 @@ export default function CoverGallery({ slug, title, images, source }: Props) {
         </p>
       )}
 
-      <dialog
-        ref={dialogRef}
-        className="lightbox"
-        aria-label={`${labelFor(images, index)}: ${title}`}
+      <ZoomViewer
+        open={zoomed}
+        src={images[index].large ?? images[index].src}
+        previewSrc={images[index].src}
+        alt={`${labelFor(images, index)}: ${title}`}
+        caption={labelFor(images, index)}
         onClose={() => setZoomed(false)}
-        onKeyDown={onKey}
-        onClick={(e) => e.target === e.currentTarget && setZoomed(false)}
-      >
-        <img key={`zoom-${index}`} src={images[index].src} alt={`${labelFor(images, index)}: ${title}`} className="lightbox-img" />
-        <div className="lightbox-bar">
-          {total > 1 && (
-            <button type="button" className="round-btn" onClick={() => go(index - 1)} aria-label="Previous image">
-              ‹
-            </button>
-          )}
-          <span>{labelFor(images, index)}</span>
-          {total > 1 && (
-            <button type="button" className="round-btn" onClick={() => go(index + 1)} aria-label="Next image">
-              ›
-            </button>
-          )}
-          <button type="button" className="close-btn" onClick={() => setZoomed(false)}>
-            Close
-          </button>
-        </div>
-      </dialog>
+        onPrev={total > 1 ? () => go(index - 1) : undefined}
+        onNext={total > 1 ? () => go(index + 1) : undefined}
+      />
     </div>
   );
 }

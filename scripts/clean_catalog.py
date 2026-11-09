@@ -54,7 +54,8 @@ SUBCATEGORY_MERGES = {
 }
 
 # The French and Italian books (all had no category in the spreadsheet).
-LANGUAGE_CATEGORY = "French & Italian"
+# Each language is its own category. Keys are the titles exactly as typed in the
+# spreadsheet (before typo fixes), so correcting a title can't break the match.
 FOREIGN_LANGUAGE_TITLES = {
     "La Pratique des Claviers": "French",
     "Les Droits De La Memme En Islam": "French",
@@ -126,7 +127,7 @@ TYPO_FIXES = [
 # Values that mean "no author" rather than a real name.
 NOT_AN_AUTHOR = {"N/A", "n/a", "NA"}
 
-NO_CATEGORY = "Uncategorised"
+NO_CATEGORY = "Uncategorized"
 NO_SUBCATEGORY = "General"
 
 
@@ -194,13 +195,12 @@ def main() -> None:
             if fixed != r[4]:
                 log["category"].append(f"Row {row_no}: “{r[4]}” → “{fixed}”")
             cat = fixed
-        elif title in FOREIGN_LANGUAGE_TITLES:
-            cat = LANGUAGE_CATEGORY
-            sub = FOREIGN_LANGUAGE_TITLES[title]
-            log["language"].append(f"Row {row_no}: {title} → {cat} / {sub}")
+        elif re.sub(r"\s+", " ", r[0]).strip() in FOREIGN_LANGUAGE_TITLES:
+            cat = FOREIGN_LANGUAGE_TITLES[re.sub(r"\s+", " ", r[0]).strip()]
+            log["language"].append(f"Row {row_no}: {title} → {cat}")
         else:
             cat = NO_CATEGORY
-            log["uncategorised"].append(f"Row {row_no}: {title}" + (f" — {author}" if author else ""))
+            log["uncategorized"].append(f"Row {row_no}: {title}" + (f" — {author}" if author else ""))
 
         # --- sub-category ---
         if sub in SUBCATEGORY_MERGES:
@@ -305,8 +305,8 @@ def main() -> None:
     lines += section("Typos corrected", log["typos"])
     lines += section("No title in the spreadsheet (shown as “Title not recorded”)", log["no_title"])
     lines += section("Listed but marked “Not available”", log["not_available"])
-    lines += section(f"Moved to “{LANGUAGE_CATEGORY}”", log["language"])
-    lines += section("Still uncategorised", log["uncategorised"])
+    lines += section("Moved to the French / Italian categories", log["language"])
+    lines += section("Still uncategorized", log["uncategorized"])
     lines += section("Hidden from the website (marked removed)", log["removed"])
     lines += section("Other librarian notes (kept, not shown publicly)", log["notes"])
     lines += section("No author — publisher shown instead", log["no_author_publisher"])

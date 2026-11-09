@@ -3,6 +3,8 @@ import type { Metadata, Viewport } from "next";
 import { Noto_Naskh_Arabic, Noto_Sans, Noto_Serif } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Intro from "@/components/Intro";
+import { introScript } from "@/lib/intro";
 import "./globals.css";
 
 // Fonts are downloaded at build time and served with the site (no tracking).
@@ -11,8 +13,8 @@ const sans = Noto_Sans({ subsets: ["latin", "latin-ext"], variable: "--font-sans
 const arabic = Noto_Naskh_Arabic({ subsets: ["arabic"], variable: "--font-arabic", display: "swap" });
 
 export const metadata: Metadata = {
-  title: { default: "Al-Zahra Library", template: "%s · Al-Zahra Library" },
-  description: "Search and browse the book catalogue of the Al-Zahra Library at the Islamic Education Center.",
+  title: { default: "The Al-Zahra Library at IEC", template: "%s · The Al-Zahra Library at IEC" },
+  description: "Search and browse the book catalog of the Al-Zahra Library at the Islamic Education Center.",
 };
 
 export const viewport: Viewport = {
@@ -23,8 +25,17 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" dir="ltr" className={`${serif.variable} ${sans.variable} ${arabic.variable}`}>
+    <html
+      lang="en"
+      dir="ltr"
+      className={`${serif.variable} ${sans.variable} ${arabic.variable}`}
+      suppressHydrationWarning /* the intro script may add a class before React loads */
+    >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: introScript }} />
+      </head>
       <body>
+        <Intro />
         <a href="#main" className="skip-link">
           Skip to main content
         </a>

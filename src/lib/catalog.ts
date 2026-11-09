@@ -2,7 +2,7 @@
 // which is produced by scripts/clean_catalog.py from the original spreadsheet.
 import rawBooks from "@data/books.json";
 import rawCovers from "@data/covers.json";
-import { categoryDescriptions } from "./categoryInfo";
+import { categoryDescriptions, FEATURED_CATEGORIES, MORE_TO_EXPLORE } from "./categoryInfo";
 import { withBase } from "./paths";
 
 export type Book = {
@@ -29,7 +29,15 @@ export type Book = {
   sourceRow: number;
 };
 
-export type CoverImage = { src: string; width: number; height: number };
+export type CoverImage = {
+  src: string; // medium size, shown on the book page
+  width: number;
+  height: number;
+  thumb?: string; // tiny, for lists
+  large?: string; // biggest available, loaded only in the enlarged view
+  largeWidth?: number;
+  largeHeight?: number;
+};
 export type CoverInfo = {
   source: string;
   sourceUrl: string;
@@ -43,7 +51,15 @@ export type CoverInfo = {
 const covers: Record<string, CoverInfo> = Object.fromEntries(
   Object.entries(rawCovers as Record<string, CoverInfo>).map(([id, c]) => [
     id,
-    { ...c, images: c.images.map((img) => ({ ...img, src: withBase(img.src) })) },
+    { ...c, images: c.images.map((img) => ({
+        ...img,
+        src: withBase(img.src),
+        thumb: withBase(img.thumb ?? img.src),
+        large: withBase(img.large ?? img.src),
+        largeWidth: img.largeWidth ?? img.width,
+        largeHeight: img.largeHeight ?? img.height,
+      })),
+    },
   ]),
 );
 export const getCover = (id: number): CoverInfo | undefined => covers[String(id)];
@@ -119,10 +135,10 @@ function buildCategories(): Category[] {
     };
   });
 
-  // Numbered shelves first (100, 200 …), then the rest, "Uncategorised" last.
+  // Numbered shelves first (100, 200 …), then the rest, "Uncategorized" last.
   return categories.sort(
     (a, b) =>
-      Number(a.name === "Uncategorised") - Number(b.name === "Uncategorised") ||
+      Number(a.name === "Uncategorized") - Number(b.name === "Uncategorized") ||
       Number(a.number ?? 99999) - Number(b.number ?? 99999) ||
       collator.compare(a.name, b.name),
   );
@@ -130,10 +146,17 @@ function buildCategories(): Category[] {
 
 export const categories = buildCategories();
 
-export const featuredCategories = [...categories]
-  .filter((c) => c.number)
-  .sort((a, b) => b.count - a.count)
-  .slice(0, 6);
+/** Look up categories by name, in the given order. A typo in a name stops the build. */
+function pick(names: string[]): Category[] {
+  return names.map((name) => {
+    const c = categories.find((x) => x.name === name);
+    if (!c) throw new Error(`Home page lists a category that doesn't exist: "${name}"`);
+    return c;
+  });
+}
+
+export const featuredCategories = pick(FEATURED_CATEGORIES);
+export const moreToExplore = pick(MORE_TO_EXPLORE);
 
 export const getCategory = (slug: string) => categories.find((c) => c.slug === slug);
 
@@ -172,6 +195,69 @@ export const toListItem = (b: Book) => ({
   categorySlug: b.categorySlug,
   subCategory: b.subCategory,
   callNumber: b.callNumber,
-  thumb: getThumb(b.id)?.src,
+  thumb: getThumb(b.id)?.thumb,
   available: b.available,
 });
+
+// ---------- Shelves (Cat # = shelf, Sub Cat # = section on that shelf) ----------
+
+export type Shelf = {
+  slug: string; // "100", "200" … or "none"
+  number: string | null;
+  label: string; // "100" or "No shelf number"
+  categories: string[]; // categories kept on this shelf
+  count: number;
+};
+
+export type ShelfSection = { key: string; heading: string; books: Book[] };
+
+const NO_SHELF = "none";
+
+export const shelves: Shelf[] = (() => {
+  const byNo = new Map<string, Book[]>();
+  for (const b of books) {
+    const key = b.catNo ?? NO_SHELF;
+    if (!byNo.has(key)) byNo.set(key, []);
+    byNo.get(key)!.push(b);
+  }
+  return [...byNo.entries()]
+    .sort(([a], [b]) => (a === NO_SHELF ? 1 : b === NO_SHELF ? -1 : Number(a) - Number(b)))
+    .map(([key, list]) => ({
+      slug: key,
+      number: key === NO_SHELF ? null : key,
+      label: key === NO_SHELF ? "No number" : key,
+      categories: [...new Set(list.map((b) => b.category))],
+      count: list.length,
+    }));
+})();
+
+export const getShelf = (slug: string) => shelves.find((s) => s.slug === slug);
+
+/** Books on one shelf, grouped into sections by Sub Cat # (10, 20 …). */
+export function shelfSections(slug: string): ShelfSection[] {
+  const list = books
+    .filter((b) => (b.catNo ?? NO_SHELF) === slug)
+    .sort((a, b) => collator.compare(a.title, b.title));
+
+  // Books with no shelf number at all: group them by category instead.
+  if (slug === NO_SHELF) {
+    const cats = [...new Set(list.map((b) => b.category))].sort(collator.compare);
+    return cats.map((c) => ({ key: c, heading: c, books: list.filter((b) => b.category === c) }));
+  }
+
+  const sections = new Map<string, Book[]>();
+  for (const b of list) {
+    const key = b.subCatNo ?? "";
+    if (!sections.has(key)) sections.set(key, []);
+    sections.get(key)!.push(b);
+  }
+  return [...sections.entries()]
+    .sort(([a], [b]) => (a === "" ? 1 : b === "" ? -1 : Number(a) - Number(b)))
+    .map(([key, group]) => ({
+      key: key || "unnumbered",
+      heading: key
+        ? `${slug} · ${key} — ${[...new Set(group.map((b) => b.subCategory))].join(", ")}`
+        : "No section number recorded",
+      books: group,
+    }));
+}

@@ -18,7 +18,7 @@ Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC)
 - Restored lost letters (Kitāb, Mahdī, Faqīh) and corrected 117 obvious typos in titles,
   authors and publishers — including undoing an accidental find-and-replace that had turned
   "Da'wah" into "Interfaith Dialogue & Dawah".
-- New **French & Italian** category (6 books). **4 books remain Uncategorised.**
+- Separate **French** (5 books) and **Italian** (1 book) categories. **4 books remain Uncategorized.**
 - Missing author → publisher shown instead, or **Unknown**. Missing copy count → **1**
   (flagged `copiesAssumed` in the data). One row with no title shows "Title not recorded".
 - **9 books marked "removed"** are hidden. The "not seen on shelf" book shows **Not available**.
@@ -31,10 +31,15 @@ Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC)
 - Design: cream/white with small blue and gold accents, light girih pattern, arched shapes,
   Noto fonts (incl. Arabic), right-to-left support, mobile-first and keyboard accessible.
 - Smooth page transitions, covers that glide from lists into book pages, a 3D "turn the
-  book" cover gallery with swipe/arrow keys/zoom. Motion is reduced if the visitor asks.
+  book" cover gallery with swipe/arrow keys, and a full-screen viewer with pinch/scroll/click
+  zoom. Motion is reduced if the visitor asks.
+- Welcome intro (once per visit, skippable), **Shelves** tabs (one per Cat #, sections by
+  Sub Cat #), faint geometric pattern on the cream background.
 
 ### Cover art
 - **264 books have covers** (126 Open Library, 138 Google Books) via `scripts/fetch_covers.mjs`.
+  Each is saved in three sizes: a tiny list thumbnail, a page image, and (for 26 books where
+  the source has one) a large up-to-1400px version that loads only in the zoom view.
 - Every match was checked by hand; 18 wrong matches are listed in `data/covers-rejected.json`.
 - About 25 covers are generic XKP e-book designs — **kept until the real covers are added.**
 - Google Books uses an API key stored in `.env.local` (private, never committed).
@@ -47,10 +52,11 @@ Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC)
 
 - [ ] **Try the animations** on the live site (cover turning on *Punishment of Apostasy in
       Islam*, tap-to-enlarge, cover glide from lists) — only checked with still screenshots.
-- [ ] **Add the flower logo** — placeholder in `src/components/Header.tsx` (instructions inside).
+- [ ] **Add the logos** — replace `public/logos/al-zahra-logo.svg` and `public/logos/iec-logo.svg`
+      (keep the same names; PNG works too if you change the extension in `Header.tsx` and `Intro.tsx`).
 - [ ] **Replace the ~25 XKP covers** with photos of the library's own copies; photograph back
       covers too so the gallery has real backs to turn to. ~540 books still have no cover.
-- [ ] **Categorise the 4 uncategorised books** (two also appear elsewhere with a category).
+- [ ] **Categorize the 4 uncategorized books** (two also appear elsewhere with a category).
 - [ ] **Review the draft category descriptions** in `src/lib/categoryInfo.ts`.
 - [ ] **Librarian review:** typos left as recorded (e.g. "Fall of a Center of Decent"), books
       with no sub-category number (partial call numbers), and the copies set to 1.

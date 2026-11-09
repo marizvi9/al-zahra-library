@@ -2,10 +2,9 @@ import Link from "next/link";
 import Girih from "@/components/Girih";
 import SearchBox from "@/components/SearchBox";
 import CategoryCard from "@/components/CategoryCard";
-import { books, categories, featuredCategories } from "@/lib/catalog";
+import { books, featuredCategories, moreToExplore } from "@/lib/catalog";
 
 export default function HomePage() {
-  const others = categories.filter((c) => !featuredCategories.includes(c));
   return (
     <>
       <section className="hero" aria-labelledby="hero-title">
@@ -41,7 +40,7 @@ export default function HomePage() {
       <section className="container section" aria-labelledby="more-title">
         <h2 id="more-title">More to explore</h2>
         <ul className="chip-list">
-          {others.map((c) => (
+          {moreToExplore.map((c) => (
             <li key={c.slug}>
               <Link href={`/categories/${c.slug}/`} className="chip">
                 {c.name} <span className="chip-count">{c.count}</span>

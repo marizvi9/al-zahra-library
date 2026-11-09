@@ -8,7 +8,11 @@
    {
     "src": "/covers/1-1.webp",
     "width": 356,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/1-1-thumb.webp",
+    "large": "/covers/1-1.webp",
+    "largeWidth": 356,
+    "largeHeight": 500
    }
   ]
  },
@@ -21,7 +25,11 @@
    {
     "src": "/covers/4-1.webp",
     "width": 322,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/4-1-thumb.webp",
+    "large": "/covers/4-1.webp",
+    "largeWidth": 322,
+    "largeHeight": 500
    }
   ]
  },
@@ -34,7 +42,11 @@
    {
     "src": "/covers/8-1.webp",
     "width": 333,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/8-1-thumb.webp",
+    "large": "/covers/8-1.webp",
+    "largeWidth": 333,
+    "largeHeight": 500
    }
   ]
  },
@@ -47,7 +59,11 @@
    {
     "src": "/covers/9-1.webp",
     "width": 300,
-    "height": 370
+    "height": 370,
+    "thumb": "/covers/9-1-thumb.webp",
+    "large": "/covers/9-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 370
    }
   ]
  },
@@ -60,7 +76,11 @@
    {
     "src": "/covers/10-1.webp",
     "width": 328,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/10-1-thumb.webp",
+    "large": "/covers/10-1.webp",
+    "largeWidth": 328,
+    "largeHeight": 500
    }
   ]
  },
@@ -73,7 +93,11 @@
    {
     "src": "/covers/14-1.webp",
     "width": 313,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/14-1-thumb.webp",
+    "large": "/covers/14-1.webp",
+    "largeWidth": 313,
+    "largeHeight": 475
    }
   ]
  },
@@ -86,7 +110,11 @@
    {
     "src": "/covers/16-1.webp",
     "width": 504,
-    "height": 780
+    "height": 780,
+    "thumb": "/covers/16-1-thumb.webp",
+    "large": "/covers/16-1-lg.webp",
+    "largeWidth": 1357,
+    "largeHeight": 2100
    }
   ]
  },
@@ -99,7 +127,11 @@
    {
     "src": "/covers/17-1.webp",
     "width": 328,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/17-1-thumb.webp",
+    "large": "/covers/17-1.webp",
+    "largeWidth": 328,
+    "largeHeight": 475
    }
   ]
  },
@@ -112,7 +144,11 @@
    {
     "src": "/covers/19-1.webp",
     "width": 520,
-    "height": 693
+    "height": 694,
+    "thumb": "/covers/19-1-thumb.webp",
+    "large": "/covers/19-1-lg.webp",
+    "largeWidth": 1400,
+    "largeHeight": 1867
    }
   ]
  },
@@ -125,7 +161,11 @@
    {
     "src": "/covers/21-1.webp",
     "width": 305,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/21-1-thumb.webp",
+    "large": "/covers/21-1.webp",
+    "largeWidth": 305,
+    "largeHeight": 500
    }
   ]
  },
@@ -138,7 +178,11 @@
    {
     "src": "/covers/22-1.webp",
     "width": 515,
-    "height": 780
+    "height": 780,
+    "thumb": "/covers/22-1-thumb.webp",
+    "large": "/covers/22-1-lg.webp",
+    "largeWidth": 1387,
+    "largeHeight": 2100
    }
   ]
  },
@@ -151,7 +195,11 @@
    {
     "src": "/covers/24-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/24-1-thumb.webp",
+    "large": "/covers/24-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -164,7 +212,11 @@
    {
     "src": "/covers/27-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/27-1-thumb.webp",
+    "large": "/covers/27-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -177,7 +229,11 @@
    {
     "src": "/covers/30-1.webp",
     "width": 386,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/30-1-thumb.webp",
+    "large": "/covers/30-1.webp",
+    "largeWidth": 386,
+    "largeHeight": 500
    }
   ]
  },
@@ -190,7 +246,11 @@
    {
     "src": "/covers/37-1.webp",
     "width": 300,
-    "height": 464
+    "height": 464,
+    "thumb": "/covers/37-1-thumb.webp",
+    "large": "/covers/37-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 464
    }
   ]
  },
@@ -203,7 +263,11 @@
    {
     "src": "/covers/38-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/38-1-thumb.webp",
+    "large": "/covers/38-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -216,7 +280,11 @@
    {
     "src": "/covers/41-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/41-1-thumb.webp",
+    "large": "/covers/41-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -229,7 +297,11 @@
    {
     "src": "/covers/49-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/49-1-thumb.webp",
+    "large": "/covers/49-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -242,7 +314,11 @@
    {
     "src": "/covers/50-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/50-1-thumb.webp",
+    "large": "/covers/50-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -255,7 +331,11 @@
    {
     "src": "/covers/59-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/59-1-thumb.webp",
+    "large": "/covers/59-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -268,7 +348,11 @@
    {
     "src": "/covers/60-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/60-1-thumb.webp",
+    "large": "/covers/60-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -281,7 +365,11 @@
    {
     "src": "/covers/64-1.webp",
     "width": 300,
-    "height": 464
+    "height": 464,
+    "thumb": "/covers/64-1-thumb.webp",
+    "large": "/covers/64-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 464
    }
   ]
  },
@@ -294,7 +382,11 @@
    {
     "src": "/covers/65-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/65-1-thumb.webp",
+    "large": "/covers/65-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -307,7 +399,11 @@
    {
     "src": "/covers/66-1.webp",
     "width": 301,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/66-1-thumb.webp",
+    "large": "/covers/66-1.webp",
+    "largeWidth": 301,
+    "largeHeight": 500
    }
   ]
  },
@@ -320,7 +416,11 @@
    {
     "src": "/covers/72-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/72-1-thumb.webp",
+    "large": "/covers/72-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -333,7 +433,11 @@
    {
     "src": "/covers/73-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/73-1-thumb.webp",
+    "large": "/covers/73-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -346,7 +450,11 @@
    {
     "src": "/covers/74-1.webp",
     "width": 520,
-    "height": 380
+    "height": 380,
+    "thumb": "/covers/74-1-thumb.webp",
+    "large": "/covers/74-1-lg.webp",
+    "largeWidth": 1400,
+    "largeHeight": 1022
    }
   ]
  },
@@ -359,7 +467,11 @@
    {
     "src": "/covers/77-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/77-1-thumb.webp",
+    "large": "/covers/77-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -372,7 +484,11 @@
    {
     "src": "/covers/79-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/79-1-thumb.webp",
+    "large": "/covers/79-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -385,7 +501,11 @@
    {
     "src": "/covers/89-1.webp",
     "width": 128,
-    "height": 179
+    "height": 179,
+    "thumb": "/covers/89-1-thumb.webp",
+    "large": "/covers/89-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 179
    }
   ]
  },
@@ -398,7 +518,11 @@
    {
     "src": "/covers/90-1.webp",
     "width": 300,
-    "height": 375
+    "height": 375,
+    "thumb": "/covers/90-1-thumb.webp",
+    "large": "/covers/90-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 375
    }
   ]
  },
@@ -411,7 +535,11 @@
    {
     "src": "/covers/92-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/92-1-thumb.webp",
+    "large": "/covers/92-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -424,7 +552,11 @@
    {
     "src": "/covers/111-1.webp",
     "width": 300,
-    "height": 457
+    "height": 457,
+    "thumb": "/covers/111-1-thumb.webp",
+    "large": "/covers/111-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 457
    }
   ]
  },
@@ -437,7 +569,11 @@
    {
     "src": "/covers/116-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/116-1-thumb.webp",
+    "large": "/covers/116-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -450,7 +586,11 @@
    {
     "src": "/covers/117-1.webp",
     "width": 310,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/117-1-thumb.webp",
+    "large": "/covers/117-1.webp",
+    "largeWidth": 310,
+    "largeHeight": 500
    }
   ]
  },
@@ -463,7 +603,11 @@
    {
     "src": "/covers/124-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/124-1-thumb.webp",
+    "large": "/covers/124-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -476,7 +620,11 @@
    {
     "src": "/covers/126-1.webp",
     "width": 312,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/126-1-thumb.webp",
+    "large": "/covers/126-1.webp",
+    "largeWidth": 312,
+    "largeHeight": 500
    }
   ]
  },
@@ -489,7 +637,11 @@
    {
     "src": "/covers/127-1.webp",
     "width": 128,
-    "height": 194
+    "height": 194,
+    "thumb": "/covers/127-1-thumb.webp",
+    "large": "/covers/127-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 194
    }
   ]
  },
@@ -502,7 +654,11 @@
    {
     "src": "/covers/136-1.webp",
     "width": 128,
-    "height": 195
+    "height": 195,
+    "thumb": "/covers/136-1-thumb.webp",
+    "large": "/covers/136-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 195
    }
   ]
  },
@@ -515,7 +671,11 @@
    {
     "src": "/covers/137-1.webp",
     "width": 331,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/137-1-thumb.webp",
+    "large": "/covers/137-1.webp",
+    "largeWidth": 331,
+    "largeHeight": 500
    }
   ]
  },
@@ -528,7 +688,11 @@
    {
     "src": "/covers/143-1.webp",
     "width": 128,
-    "height": 202
+    "height": 202,
+    "thumb": "/covers/143-1-thumb.webp",
+    "large": "/covers/143-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 202
    }
   ]
  },
@@ -541,7 +705,11 @@
    {
     "src": "/covers/144-1.webp",
     "width": 300,
-    "height": 464
+    "height": 464,
+    "thumb": "/covers/144-1-thumb.webp",
+    "large": "/covers/144-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 464
    }
   ]
  },
@@ -554,7 +722,11 @@
    {
     "src": "/covers/146-1.webp",
     "width": 508,
-    "height": 780
+    "height": 780,
+    "thumb": "/covers/146-1-thumb.webp",
+    "large": "/covers/146-1-lg.webp",
+    "largeWidth": 1367,
+    "largeHeight": 2100
    }
   ]
  },
@@ -567,7 +739,11 @@
    {
     "src": "/covers/148-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/148-1-thumb.webp",
+    "large": "/covers/148-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -580,7 +756,11 @@
    {
     "src": "/covers/153-1.webp",
     "width": 319,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/153-1-thumb.webp",
+    "large": "/covers/153-1.webp",
+    "largeWidth": 319,
+    "largeHeight": 500
    }
   ]
  },
@@ -593,7 +773,11 @@
    {
     "src": "/covers/167-1.webp",
     "width": 520,
-    "height": 662
+    "height": 661,
+    "thumb": "/covers/167-1-thumb.webp",
+    "large": "/covers/167-1-lg.webp",
+    "largeWidth": 1400,
+    "largeHeight": 1781
    }
   ]
  },
@@ -606,7 +790,11 @@
    {
     "src": "/covers/169-1.webp",
     "width": 300,
-    "height": 375
+    "height": 375,
+    "thumb": "/covers/169-1-thumb.webp",
+    "large": "/covers/169-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 375
    }
   ]
  },
@@ -619,7 +807,11 @@
    {
     "src": "/covers/174-1.webp",
     "width": 509,
-    "height": 780
+    "height": 780,
+    "thumb": "/covers/174-1-thumb.webp",
+    "large": "/covers/174-1-lg.webp",
+    "largeWidth": 1371,
+    "largeHeight": 2100
    }
   ]
  },
@@ -632,7 +824,11 @@
    {
     "src": "/covers/177-1.webp",
     "width": 484,
-    "height": 780
+    "height": 780,
+    "thumb": "/covers/177-1-thumb.webp",
+    "large": "/covers/177-1-lg.webp",
+    "largeWidth": 1304,
+    "largeHeight": 2100
    }
   ]
  },
@@ -645,7 +841,11 @@
    {
     "src": "/covers/181-1.webp",
     "width": 500,
-    "height": 380
+    "height": 380,
+    "thumb": "/covers/181-1-thumb.webp",
+    "large": "/covers/181-1.webp",
+    "largeWidth": 500,
+    "largeHeight": 380
    }
   ]
  },
@@ -658,7 +858,11 @@
    {
     "src": "/covers/184-1.webp",
     "width": 128,
-    "height": 205
+    "height": 205,
+    "thumb": "/covers/184-1-thumb.webp",
+    "large": "/covers/184-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 205
    }
   ]
  },
@@ -671,7 +875,11 @@
    {
     "src": "/covers/186-1.webp",
     "width": 303,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/186-1-thumb.webp",
+    "large": "/covers/186-1.webp",
+    "largeWidth": 303,
+    "largeHeight": 500
    }
   ]
  },
@@ -684,7 +892,11 @@
    {
     "src": "/covers/190-1.webp",
     "width": 300,
-    "height": 478
+    "height": 478,
+    "thumb": "/covers/190-1-thumb.webp",
+    "large": "/covers/190-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 478
    }
   ]
  },
@@ -697,7 +909,11 @@
    {
     "src": "/covers/191-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/191-1-thumb.webp",
+    "large": "/covers/191-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -710,7 +926,11 @@
    {
     "src": "/covers/192-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/192-1-thumb.webp",
+    "large": "/covers/192-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -723,7 +943,11 @@
    {
     "src": "/covers/193-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/193-1-thumb.webp",
+    "large": "/covers/193-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -736,7 +960,11 @@
    {
     "src": "/covers/194-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/194-1-thumb.webp",
+    "large": "/covers/194-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -749,7 +977,11 @@
    {
     "src": "/covers/196-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/196-1-thumb.webp",
+    "large": "/covers/196-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -762,7 +994,11 @@
    {
     "src": "/covers/200-1.webp",
     "width": 352,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/200-1-thumb.webp",
+    "large": "/covers/200-1.webp",
+    "largeWidth": 352,
+    "largeHeight": 500
    }
   ]
  },
@@ -775,7 +1011,11 @@
    {
     "src": "/covers/203-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/203-1-thumb.webp",
+    "large": "/covers/203-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -788,7 +1028,11 @@
    {
     "src": "/covers/204-1.webp",
     "width": 348,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/204-1-thumb.webp",
+    "large": "/covers/204-1.webp",
+    "largeWidth": 348,
+    "largeHeight": 500
    }
   ]
  },
@@ -801,7 +1045,11 @@
    {
     "src": "/covers/205-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/205-1-thumb.webp",
+    "large": "/covers/205-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -814,7 +1062,11 @@
    {
     "src": "/covers/206-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/206-1-thumb.webp",
+    "large": "/covers/206-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -827,7 +1079,11 @@
    {
     "src": "/covers/207-1.webp",
     "width": 335,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/207-1-thumb.webp",
+    "large": "/covers/207-1.webp",
+    "largeWidth": 335,
+    "largeHeight": 475
    }
   ]
  },
@@ -840,7 +1096,11 @@
    {
     "src": "/covers/208-1.webp",
     "width": 311,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/208-1-thumb.webp",
+    "large": "/covers/208-1.webp",
+    "largeWidth": 311,
+    "largeHeight": 500
    }
   ]
  },
@@ -853,7 +1113,11 @@
    {
     "src": "/covers/209-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/209-1-thumb.webp",
+    "large": "/covers/209-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -866,7 +1130,11 @@
    {
     "src": "/covers/211-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/211-1-thumb.webp",
+    "large": "/covers/211-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -879,7 +1147,11 @@
    {
     "src": "/covers/214-1.webp",
     "width": 333,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/214-1-thumb.webp",
+    "large": "/covers/214-1.webp",
+    "largeWidth": 333,
+    "largeHeight": 500
    }
   ]
  },
@@ -892,7 +1164,11 @@
    {
     "src": "/covers/217-1.webp",
     "width": 128,
-    "height": 198
+    "height": 198,
+    "thumb": "/covers/217-1-thumb.webp",
+    "large": "/covers/217-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 198
    }
   ]
  },
@@ -905,7 +1181,11 @@
    {
     "src": "/covers/219-1.webp",
     "width": 520,
-    "height": 717
+    "height": 717,
+    "thumb": "/covers/219-1-thumb.webp",
+    "large": "/covers/219-1-lg.webp",
+    "largeWidth": 1400,
+    "largeHeight": 1931
    }
   ]
  },
@@ -918,7 +1198,11 @@
    {
     "src": "/covers/228-1.webp",
     "width": 311,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/228-1-thumb.webp",
+    "large": "/covers/228-1.webp",
+    "largeWidth": 311,
+    "largeHeight": 475
    }
   ]
  },
@@ -931,7 +1215,11 @@
    {
     "src": "/covers/230-1.webp",
     "width": 520,
-    "height": 673
+    "height": 673,
+    "thumb": "/covers/230-1-thumb.webp",
+    "large": "/covers/230-1-lg.webp",
+    "largeWidth": 1400,
+    "largeHeight": 1812
    }
   ]
  },
@@ -944,7 +1232,11 @@
    {
     "src": "/covers/236-1.webp",
     "width": 520,
-    "height": 780
+    "height": 780,
+    "thumb": "/covers/236-1-thumb.webp",
+    "large": "/covers/236-1-lg.webp",
+    "largeWidth": 1400,
+    "largeHeight": 2100
    }
   ]
  },
@@ -957,7 +1249,11 @@
    {
     "src": "/covers/238-1.webp",
     "width": 319,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/238-1-thumb.webp",
+    "large": "/covers/238-1.webp",
+    "largeWidth": 319,
+    "largeHeight": 475
    }
   ]
  },
@@ -970,7 +1266,11 @@
    {
     "src": "/covers/239-1.webp",
     "width": 301,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/239-1-thumb.webp",
+    "large": "/covers/239-1.webp",
+    "largeWidth": 301,
+    "largeHeight": 475
    }
   ]
  },
@@ -983,7 +1283,11 @@
    {
     "src": "/covers/240-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/240-1-thumb.webp",
+    "large": "/covers/240-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -996,7 +1300,11 @@
    {
     "src": "/covers/248-1.webp",
     "width": 300,
-    "height": 375
+    "height": 375,
+    "thumb": "/covers/248-1-thumb.webp",
+    "large": "/covers/248-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 375
    }
   ]
  },
@@ -1009,7 +1317,11 @@
    {
     "src": "/covers/250-1.webp",
     "width": 300,
-    "height": 466
+    "height": 466,
+    "thumb": "/covers/250-1-thumb.webp",
+    "large": "/covers/250-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 466
    }
   ]
  },
@@ -1022,7 +1334,11 @@
    {
     "src": "/covers/252-1.webp",
     "width": 347,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/252-1-thumb.webp",
+    "large": "/covers/252-1.webp",
+    "largeWidth": 347,
+    "largeHeight": 500
    }
   ]
  },
@@ -1035,7 +1351,11 @@
    {
     "src": "/covers/253-1.webp",
     "width": 300,
-    "height": 375
+    "height": 375,
+    "thumb": "/covers/253-1-thumb.webp",
+    "large": "/covers/253-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 375
    }
   ]
  },
@@ -1048,7 +1368,11 @@
    {
     "src": "/covers/255-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/255-1-thumb.webp",
+    "large": "/covers/255-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1061,7 +1385,11 @@
    {
     "src": "/covers/256-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/256-1-thumb.webp",
+    "large": "/covers/256-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -1074,7 +1402,11 @@
    {
     "src": "/covers/272-1.webp",
     "width": 312,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/272-1-thumb.webp",
+    "large": "/covers/272-1.webp",
+    "largeWidth": 312,
+    "largeHeight": 475
    }
   ]
  },
@@ -1087,7 +1419,11 @@
    {
     "src": "/covers/279-1.webp",
     "width": 281,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/279-1-thumb.webp",
+    "large": "/covers/279-1.webp",
+    "largeWidth": 281,
+    "largeHeight": 500
    }
   ]
  },
@@ -1100,12 +1436,20 @@
    {
     "src": "/covers/280-1.webp",
     "width": 128,
-    "height": 192
+    "height": 192,
+    "thumb": "/covers/280-1-thumb.webp",
+    "large": "/covers/280-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 192
    },
    {
     "src": "/covers/280-2.webp",
     "width": 337,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/280-2-thumb.webp",
+    "large": "/covers/280-2.webp",
+    "largeWidth": 337,
+    "largeHeight": 500
    }
   ]
  },
@@ -1118,7 +1462,11 @@
    {
     "src": "/covers/284-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/284-1-thumb.webp",
+    "large": "/covers/284-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1131,7 +1479,11 @@
    {
     "src": "/covers/285-1.webp",
     "width": 300,
-    "height": 375
+    "height": 375,
+    "thumb": "/covers/285-1-thumb.webp",
+    "large": "/covers/285-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 375
    }
   ]
  },
@@ -1144,7 +1496,11 @@
    {
     "src": "/covers/287-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/287-1-thumb.webp",
+    "large": "/covers/287-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -1157,7 +1513,11 @@
    {
     "src": "/covers/288-1.webp",
     "width": 344,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/288-1-thumb.webp",
+    "large": "/covers/288-1.webp",
+    "largeWidth": 344,
+    "largeHeight": 500
    }
   ]
  },
@@ -1170,7 +1530,11 @@
    {
     "src": "/covers/289-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/289-1-thumb.webp",
+    "large": "/covers/289-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1183,7 +1547,11 @@
    {
     "src": "/covers/291-1.webp",
     "width": 128,
-    "height": 204
+    "height": 204,
+    "thumb": "/covers/291-1-thumb.webp",
+    "large": "/covers/291-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 204
    }
   ]
  },
@@ -1196,7 +1564,11 @@
    {
     "src": "/covers/293-1.webp",
     "width": 322,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/293-1-thumb.webp",
+    "large": "/covers/293-1.webp",
+    "largeWidth": 322,
+    "largeHeight": 500
    }
   ]
  },
@@ -1209,7 +1581,11 @@
    {
     "src": "/covers/299-1.webp",
     "width": 316,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/299-1-thumb.webp",
+    "large": "/covers/299-1.webp",
+    "largeWidth": 316,
+    "largeHeight": 500
    }
   ]
  },
@@ -1222,7 +1598,11 @@
    {
     "src": "/covers/301-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/301-1-thumb.webp",
+    "large": "/covers/301-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1235,7 +1615,11 @@
    {
     "src": "/covers/309-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/309-1-thumb.webp",
+    "large": "/covers/309-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -1248,7 +1632,11 @@
    {
     "src": "/covers/311-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/311-1-thumb.webp",
+    "large": "/covers/311-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1261,7 +1649,11 @@
    {
     "src": "/covers/312-1.webp",
     "width": 520,
-    "height": 674
+    "height": 673,
+    "thumb": "/covers/312-1-thumb.webp",
+    "large": "/covers/312-1-lg.webp",
+    "largeWidth": 1400,
+    "largeHeight": 1814
    }
   ]
  },
@@ -1274,7 +1666,11 @@
    {
     "src": "/covers/313-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/313-1-thumb.webp",
+    "large": "/covers/313-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -1287,7 +1683,11 @@
    {
     "src": "/covers/316-1.webp",
     "width": 310,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/316-1-thumb.webp",
+    "large": "/covers/316-1.webp",
+    "largeWidth": 310,
+    "largeHeight": 475
    }
   ]
  },
@@ -1300,7 +1700,11 @@
    {
     "src": "/covers/318-1.webp",
     "width": 300,
-    "height": 464
+    "height": 464,
+    "thumb": "/covers/318-1-thumb.webp",
+    "large": "/covers/318-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 464
    }
   ]
  },
@@ -1313,7 +1717,11 @@
    {
     "src": "/covers/320-1.webp",
     "width": 312,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/320-1-thumb.webp",
+    "large": "/covers/320-1.webp",
+    "largeWidth": 312,
+    "largeHeight": 475
    }
   ]
  },
@@ -1326,7 +1734,11 @@
    {
     "src": "/covers/324-1.webp",
     "width": 310,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/324-1-thumb.webp",
+    "large": "/covers/324-1.webp",
+    "largeWidth": 310,
+    "largeHeight": 475
    }
   ]
  },
@@ -1339,7 +1751,11 @@
    {
     "src": "/covers/325-1.webp",
     "width": 520,
-    "height": 738
+    "height": 738,
+    "thumb": "/covers/325-1-thumb.webp",
+    "large": "/covers/325-1-lg.webp",
+    "largeWidth": 1400,
+    "largeHeight": 1986
    }
   ]
  },
@@ -1352,7 +1768,11 @@
    {
     "src": "/covers/327-1.webp",
     "width": 300,
-    "height": 464
+    "height": 464,
+    "thumb": "/covers/327-1-thumb.webp",
+    "large": "/covers/327-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 464
    }
   ]
  },
@@ -1365,7 +1785,11 @@
    {
     "src": "/covers/337-1.webp",
     "width": 300,
-    "height": 464
+    "height": 464,
+    "thumb": "/covers/337-1-thumb.webp",
+    "large": "/covers/337-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 464
    }
   ]
  },
@@ -1378,7 +1802,11 @@
    {
     "src": "/covers/338-1.webp",
     "width": 347,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/338-1-thumb.webp",
+    "large": "/covers/338-1.webp",
+    "largeWidth": 347,
+    "largeHeight": 500
    }
   ]
  },
@@ -1391,7 +1819,11 @@
    {
     "src": "/covers/341-1.webp",
     "width": 300,
-    "height": 417
+    "height": 417,
+    "thumb": "/covers/341-1-thumb.webp",
+    "large": "/covers/341-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 417
    }
   ]
  },
@@ -1404,7 +1836,11 @@
    {
     "src": "/covers/343-1.webp",
     "width": 128,
-    "height": 202
+    "height": 202,
+    "thumb": "/covers/343-1-thumb.webp",
+    "large": "/covers/343-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 202
    }
   ]
  },
@@ -1417,7 +1853,11 @@
    {
     "src": "/covers/345-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/345-1-thumb.webp",
+    "large": "/covers/345-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -1430,7 +1870,11 @@
    {
     "src": "/covers/350-1.webp",
     "width": 128,
-    "height": 208
+    "height": 208,
+    "thumb": "/covers/350-1-thumb.webp",
+    "large": "/covers/350-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 208
    }
   ]
  },
@@ -1443,7 +1887,11 @@
    {
     "src": "/covers/353-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/353-1-thumb.webp",
+    "large": "/covers/353-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1456,12 +1904,20 @@
    {
     "src": "/covers/356-1.webp",
     "width": 128,
-    "height": 190
+    "height": 190,
+    "thumb": "/covers/356-1-thumb.webp",
+    "large": "/covers/356-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 190
    },
    {
     "src": "/covers/356-4.webp",
     "width": 320,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/356-4-thumb.webp",
+    "large": "/covers/356-4.webp",
+    "largeWidth": 320,
+    "largeHeight": 475
    }
   ]
  },
@@ -1474,7 +1930,11 @@
    {
     "src": "/covers/358-1.webp",
     "width": 291,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/358-1-thumb.webp",
+    "large": "/covers/358-1.webp",
+    "largeWidth": 291,
+    "largeHeight": 500
    }
   ]
  },
@@ -1487,7 +1947,11 @@
    {
     "src": "/covers/359-1.webp",
     "width": 344,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/359-1-thumb.webp",
+    "large": "/covers/359-1.webp",
+    "largeWidth": 344,
+    "largeHeight": 500
    }
   ]
  },
@@ -1500,7 +1964,11 @@
    {
     "src": "/covers/361-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/361-1-thumb.webp",
+    "large": "/covers/361-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1513,7 +1981,11 @@
    {
     "src": "/covers/362-1.webp",
     "width": 507,
-    "height": 780
+    "height": 780,
+    "thumb": "/covers/362-1-thumb.webp",
+    "large": "/covers/362-1-lg.webp",
+    "largeWidth": 1365,
+    "largeHeight": 2100
    }
   ]
  },
@@ -1526,7 +1998,11 @@
    {
     "src": "/covers/369-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/369-1-thumb.webp",
+    "large": "/covers/369-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1539,7 +2015,11 @@
    {
     "src": "/covers/375-1.webp",
     "width": 300,
-    "height": 375
+    "height": 375,
+    "thumb": "/covers/375-1-thumb.webp",
+    "large": "/covers/375-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 375
    }
   ]
  },
@@ -1552,7 +2032,11 @@
    {
     "src": "/covers/377-1.webp",
     "width": 128,
-    "height": 184
+    "height": 184,
+    "thumb": "/covers/377-1-thumb.webp",
+    "large": "/covers/377-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 184
    }
   ]
  },
@@ -1565,7 +2049,11 @@
    {
     "src": "/covers/378-1.webp",
     "width": 310,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/378-1-thumb.webp",
+    "large": "/covers/378-1.webp",
+    "largeWidth": 310,
+    "largeHeight": 500
    }
   ]
  },
@@ -1578,7 +2066,11 @@
    {
     "src": "/covers/380-1.webp",
     "width": 332,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/380-1-thumb.webp",
+    "large": "/covers/380-1.webp",
+    "largeWidth": 332,
+    "largeHeight": 500
    }
   ]
  },
@@ -1591,7 +2083,11 @@
    {
     "src": "/covers/381-1.webp",
     "width": 324,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/381-1-thumb.webp",
+    "large": "/covers/381-1.webp",
+    "largeWidth": 324,
+    "largeHeight": 475
    }
   ]
  },
@@ -1604,7 +2100,11 @@
    {
     "src": "/covers/382-1.webp",
     "width": 332,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/382-1-thumb.webp",
+    "large": "/covers/382-1.webp",
+    "largeWidth": 332,
+    "largeHeight": 500
    }
   ]
  },
@@ -1617,7 +2117,11 @@
    {
     "src": "/covers/386-1.webp",
     "width": 520,
-    "height": 673
+    "height": 673,
+    "thumb": "/covers/386-1-thumb.webp",
+    "large": "/covers/386-1-lg.webp",
+    "largeWidth": 1400,
+    "largeHeight": 1812
    }
   ]
  },
@@ -1630,7 +2134,11 @@
    {
     "src": "/covers/387-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/387-1-thumb.webp",
+    "large": "/covers/387-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1643,7 +2151,11 @@
    {
     "src": "/covers/395-1.webp",
     "width": 330,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/395-1-thumb.webp",
+    "large": "/covers/395-1.webp",
+    "largeWidth": 330,
+    "largeHeight": 500
    }
   ]
  },
@@ -1656,7 +2168,11 @@
    {
     "src": "/covers/398-1.webp",
     "width": 340,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/398-1-thumb.webp",
+    "large": "/covers/398-1.webp",
+    "largeWidth": 340,
+    "largeHeight": 500
    }
   ]
  },
@@ -1669,7 +2185,11 @@
    {
     "src": "/covers/399-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/399-1-thumb.webp",
+    "large": "/covers/399-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1682,7 +2202,11 @@
    {
     "src": "/covers/404-1.webp",
     "width": 316,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/404-1-thumb.webp",
+    "large": "/covers/404-1.webp",
+    "largeWidth": 316,
+    "largeHeight": 500
    }
   ]
  },
@@ -1695,7 +2219,11 @@
    {
     "src": "/covers/406-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/406-1-thumb.webp",
+    "large": "/covers/406-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1708,7 +2236,11 @@
    {
     "src": "/covers/408-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/408-1-thumb.webp",
+    "large": "/covers/408-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1721,7 +2253,11 @@
    {
     "src": "/covers/415-1.webp",
     "width": 344,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/415-1-thumb.webp",
+    "large": "/covers/415-1.webp",
+    "largeWidth": 344,
+    "largeHeight": 500
    }
   ]
  },
@@ -1734,7 +2270,11 @@
    {
     "src": "/covers/421-1.webp",
     "width": 341,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/421-1-thumb.webp",
+    "large": "/covers/421-1.webp",
+    "largeWidth": 341,
+    "largeHeight": 500
    }
   ]
  },
@@ -1747,7 +2287,11 @@
    {
     "src": "/covers/422-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/422-1-thumb.webp",
+    "large": "/covers/422-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1760,7 +2304,11 @@
    {
     "src": "/covers/425-1.webp",
     "width": 309,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/425-1-thumb.webp",
+    "large": "/covers/425-1.webp",
+    "largeWidth": 309,
+    "largeHeight": 500
    }
   ]
  },
@@ -1773,7 +2321,11 @@
    {
     "src": "/covers/426-1.webp",
     "width": 128,
-    "height": 192
+    "height": 192,
+    "thumb": "/covers/426-1-thumb.webp",
+    "large": "/covers/426-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 192
    }
   ]
  },
@@ -1786,7 +2338,11 @@
    {
     "src": "/covers/428-1.webp",
     "width": 128,
-    "height": 200
+    "height": 200,
+    "thumb": "/covers/428-1-thumb.webp",
+    "large": "/covers/428-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 200
    }
   ]
  },
@@ -1799,7 +2355,11 @@
    {
     "src": "/covers/430-1.webp",
     "width": 128,
-    "height": 205
+    "height": 205,
+    "thumb": "/covers/430-1-thumb.webp",
+    "large": "/covers/430-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 205
    }
   ]
  },
@@ -1812,7 +2372,11 @@
    {
     "src": "/covers/431-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/431-1-thumb.webp",
+    "large": "/covers/431-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1825,7 +2389,11 @@
    {
     "src": "/covers/434-1.webp",
     "width": 300,
-    "height": 452
+    "height": 452,
+    "thumb": "/covers/434-1-thumb.webp",
+    "large": "/covers/434-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 452
    }
   ]
  },
@@ -1838,7 +2406,11 @@
    {
     "src": "/covers/435-1.webp",
     "width": 300,
-    "height": 452
+    "height": 452,
+    "thumb": "/covers/435-1-thumb.webp",
+    "large": "/covers/435-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 452
    }
   ]
  },
@@ -1851,7 +2423,11 @@
    {
     "src": "/covers/436-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/436-1-thumb.webp",
+    "large": "/covers/436-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -1864,7 +2440,11 @@
    {
     "src": "/covers/437-1.webp",
     "width": 128,
-    "height": 191
+    "height": 191,
+    "thumb": "/covers/437-1-thumb.webp",
+    "large": "/covers/437-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 191
    }
   ]
  },
@@ -1877,7 +2457,11 @@
    {
     "src": "/covers/438-1.webp",
     "width": 348,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/438-1-thumb.webp",
+    "large": "/covers/438-1.webp",
+    "largeWidth": 348,
+    "largeHeight": 500
    }
   ]
  },
@@ -1890,7 +2474,11 @@
    {
     "src": "/covers/441-1.webp",
     "width": 344,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/441-1-thumb.webp",
+    "large": "/covers/441-1.webp",
+    "largeWidth": 344,
+    "largeHeight": 500
    }
   ]
  },
@@ -1903,7 +2491,11 @@
    {
     "src": "/covers/442-1.webp",
     "width": 179,
-    "height": 281
+    "height": 281,
+    "thumb": "/covers/442-1-thumb.webp",
+    "large": "/covers/442-1.webp",
+    "largeWidth": 179,
+    "largeHeight": 281
    }
   ]
  },
@@ -1916,7 +2508,11 @@
    {
     "src": "/covers/445-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/445-1-thumb.webp",
+    "large": "/covers/445-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -1929,7 +2525,11 @@
    {
     "src": "/covers/446-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/446-1-thumb.webp",
+    "large": "/covers/446-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -1942,7 +2542,11 @@
    {
     "src": "/covers/447-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/447-1-thumb.webp",
+    "large": "/covers/447-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1955,7 +2559,11 @@
    {
     "src": "/covers/448-1.webp",
     "width": 330,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/448-1-thumb.webp",
+    "large": "/covers/448-1.webp",
+    "largeWidth": 330,
+    "largeHeight": 500
    }
   ]
  },
@@ -1968,7 +2576,11 @@
    {
     "src": "/covers/451-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/451-1-thumb.webp",
+    "large": "/covers/451-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -1981,7 +2593,11 @@
    {
     "src": "/covers/458-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/458-1-thumb.webp",
+    "large": "/covers/458-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -1994,7 +2610,11 @@
    {
     "src": "/covers/459-1.webp",
     "width": 341,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/459-1-thumb.webp",
+    "large": "/covers/459-1.webp",
+    "largeWidth": 341,
+    "largeHeight": 475
    }
   ]
  },
@@ -2007,7 +2627,11 @@
    {
     "src": "/covers/460-1.webp",
     "width": 170,
-    "height": 262
+    "height": 262,
+    "thumb": "/covers/460-1-thumb.webp",
+    "large": "/covers/460-1.webp",
+    "largeWidth": 170,
+    "largeHeight": 262
    }
   ]
  },
@@ -2020,7 +2644,11 @@
    {
     "src": "/covers/465-1.webp",
     "width": 128,
-    "height": 199
+    "height": 199,
+    "thumb": "/covers/465-1-thumb.webp",
+    "large": "/covers/465-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 199
    }
   ]
  },
@@ -2033,7 +2661,11 @@
    {
     "src": "/covers/466-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/466-1-thumb.webp",
+    "large": "/covers/466-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -2046,7 +2678,11 @@
    {
     "src": "/covers/467-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/467-1-thumb.webp",
+    "large": "/covers/467-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -2059,7 +2695,11 @@
    {
     "src": "/covers/468-1.webp",
     "width": 315,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/468-1-thumb.webp",
+    "large": "/covers/468-1.webp",
+    "largeWidth": 315,
+    "largeHeight": 500
    }
   ]
  },
@@ -2072,7 +2712,11 @@
    {
     "src": "/covers/473-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/473-1-thumb.webp",
+    "large": "/covers/473-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -2085,7 +2729,11 @@
    {
     "src": "/covers/474-1.webp",
     "width": 128,
-    "height": 195
+    "height": 195,
+    "thumb": "/covers/474-1-thumb.webp",
+    "large": "/covers/474-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 195
    }
   ]
  },
@@ -2098,7 +2746,11 @@
    {
     "src": "/covers/477-1.webp",
     "width": 325,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/477-1-thumb.webp",
+    "large": "/covers/477-1.webp",
+    "largeWidth": 325,
+    "largeHeight": 475
    }
   ]
  },
@@ -2111,7 +2763,11 @@
    {
     "src": "/covers/479-1.webp",
     "width": 338,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/479-1-thumb.webp",
+    "large": "/covers/479-1.webp",
+    "largeWidth": 338,
+    "largeHeight": 500
    }
   ]
  },
@@ -2124,7 +2780,11 @@
    {
     "src": "/covers/487-1.webp",
     "width": 400,
-    "height": 400
+    "height": 400,
+    "thumb": "/covers/487-1-thumb.webp",
+    "large": "/covers/487-1.webp",
+    "largeWidth": 400,
+    "largeHeight": 400
    }
   ]
  },
@@ -2137,7 +2797,11 @@
    {
     "src": "/covers/491-1.webp",
     "width": 128,
-    "height": 202
+    "height": 202,
+    "thumb": "/covers/491-1-thumb.webp",
+    "large": "/covers/491-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 202
    }
   ]
  },
@@ -2149,8 +2813,12 @@
   "images": [
    {
     "src": "/covers/492-1.webp",
-    "width": 501,
-    "height": 780
+    "width": 502,
+    "height": 780,
+    "thumb": "/covers/492-1-thumb.webp",
+    "large": "/covers/492-1-lg.webp",
+    "largeWidth": 1350,
+    "largeHeight": 2100
    }
   ]
  },
@@ -2163,7 +2831,11 @@
    {
     "src": "/covers/498-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/498-1-thumb.webp",
+    "large": "/covers/498-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -2176,7 +2848,11 @@
    {
     "src": "/covers/509-1.webp",
     "width": 503,
-    "height": 780
+    "height": 780,
+    "thumb": "/covers/509-1-thumb.webp",
+    "large": "/covers/509-1-lg.webp",
+    "largeWidth": 1354,
+    "largeHeight": 2100
    }
   ]
  },
@@ -2189,7 +2865,11 @@
    {
     "src": "/covers/511-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/511-1-thumb.webp",
+    "large": "/covers/511-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -2202,7 +2882,11 @@
    {
     "src": "/covers/513-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/513-1-thumb.webp",
+    "large": "/covers/513-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -2215,7 +2899,11 @@
    {
     "src": "/covers/515-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/515-1-thumb.webp",
+    "large": "/covers/515-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -2228,7 +2916,11 @@
    {
     "src": "/covers/516-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/516-1-thumb.webp",
+    "large": "/covers/516-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -2241,7 +2933,11 @@
    {
     "src": "/covers/517-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/517-1-thumb.webp",
+    "large": "/covers/517-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -2254,7 +2950,11 @@
    {
     "src": "/covers/520-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/520-1-thumb.webp",
+    "large": "/covers/520-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -2267,7 +2967,11 @@
    {
     "src": "/covers/521-1.webp",
     "width": 520,
-    "height": 675
+    "height": 675,
+    "thumb": "/covers/521-1-thumb.webp",
+    "large": "/covers/521-1-lg.webp",
+    "largeWidth": 1400,
+    "largeHeight": 1817
    }
   ]
  },
@@ -2280,7 +2984,11 @@
    {
     "src": "/covers/523-1.webp",
     "width": 296,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/523-1-thumb.webp",
+    "large": "/covers/523-1.webp",
+    "largeWidth": 296,
+    "largeHeight": 500
    }
   ]
  },
@@ -2293,7 +3001,11 @@
    {
     "src": "/covers/525-1.webp",
     "width": 290,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/525-1-thumb.webp",
+    "large": "/covers/525-1.webp",
+    "largeWidth": 290,
+    "largeHeight": 475
    }
   ]
  },
@@ -2306,7 +3018,11 @@
    {
     "src": "/covers/526-1.webp",
     "width": 300,
-    "height": 464
+    "height": 464,
+    "thumb": "/covers/526-1-thumb.webp",
+    "large": "/covers/526-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 464
    }
   ]
  },
@@ -2319,7 +3035,11 @@
    {
     "src": "/covers/527-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/527-1-thumb.webp",
+    "large": "/covers/527-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -2332,7 +3052,11 @@
    {
     "src": "/covers/531-1.webp",
     "width": 322,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/531-1-thumb.webp",
+    "large": "/covers/531-1.webp",
+    "largeWidth": 322,
+    "largeHeight": 500
    }
   ]
  },
@@ -2345,7 +3069,11 @@
    {
     "src": "/covers/536-1.webp",
     "width": 322,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/536-1-thumb.webp",
+    "large": "/covers/536-1.webp",
+    "largeWidth": 322,
+    "largeHeight": 500
    }
   ]
  },
@@ -2358,7 +3086,11 @@
    {
     "src": "/covers/538-1.webp",
     "width": 507,
-    "height": 780
+    "height": 780,
+    "thumb": "/covers/538-1-thumb.webp",
+    "large": "/covers/538-1-lg.webp",
+    "largeWidth": 1365,
+    "largeHeight": 2100
    }
   ]
  },
@@ -2371,7 +3103,11 @@
    {
     "src": "/covers/539-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/539-1-thumb.webp",
+    "large": "/covers/539-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -2384,7 +3120,11 @@
    {
     "src": "/covers/543-1.webp",
     "width": 300,
-    "height": 457
+    "height": 457,
+    "thumb": "/covers/543-1-thumb.webp",
+    "large": "/covers/543-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 457
    }
   ]
  },
@@ -2397,7 +3137,11 @@
    {
     "src": "/covers/544-1.webp",
     "width": 300,
-    "height": 375
+    "height": 375,
+    "thumb": "/covers/544-1-thumb.webp",
+    "large": "/covers/544-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 375
    }
   ]
  },
@@ -2410,7 +3154,11 @@
    {
     "src": "/covers/546-1.webp",
     "width": 300,
-    "height": 375
+    "height": 375,
+    "thumb": "/covers/546-1-thumb.webp",
+    "large": "/covers/546-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 375
    }
   ]
  },
@@ -2423,7 +3171,11 @@
    {
     "src": "/covers/548-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/548-1-thumb.webp",
+    "large": "/covers/548-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -2436,7 +3188,11 @@
    {
     "src": "/covers/553-1.webp",
     "width": 140,
-    "height": 200
+    "height": 200,
+    "thumb": "/covers/553-1-thumb.webp",
+    "large": "/covers/553-1.webp",
+    "largeWidth": 140,
+    "largeHeight": 200
    }
   ]
  },
@@ -2449,7 +3205,11 @@
    {
     "src": "/covers/555-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/555-1-thumb.webp",
+    "large": "/covers/555-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -2462,7 +3222,11 @@
    {
     "src": "/covers/557-1.webp",
     "width": 313,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/557-1-thumb.webp",
+    "large": "/covers/557-1.webp",
+    "largeWidth": 313,
+    "largeHeight": 500
    }
   ]
  },
@@ -2475,7 +3239,11 @@
    {
     "src": "/covers/562-1.webp",
     "width": 332,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/562-1-thumb.webp",
+    "large": "/covers/562-1.webp",
+    "largeWidth": 332,
+    "largeHeight": 500
    }
   ]
  },
@@ -2488,7 +3256,11 @@
    {
     "src": "/covers/566-1.webp",
     "width": 128,
-    "height": 187
+    "height": 187,
+    "thumb": "/covers/566-1-thumb.webp",
+    "large": "/covers/566-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 187
    }
   ]
  },
@@ -2501,7 +3273,11 @@
    {
     "src": "/covers/567-1.webp",
     "width": 375,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/567-1-thumb.webp",
+    "large": "/covers/567-1.webp",
+    "largeWidth": 375,
+    "largeHeight": 500
    }
   ]
  },
@@ -2514,7 +3290,11 @@
    {
     "src": "/covers/569-1.webp",
     "width": 339,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/569-1-thumb.webp",
+    "large": "/covers/569-1.webp",
+    "largeWidth": 339,
+    "largeHeight": 500
    }
   ]
  },
@@ -2527,7 +3307,11 @@
    {
     "src": "/covers/570-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/570-1-thumb.webp",
+    "large": "/covers/570-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -2540,7 +3324,11 @@
    {
     "src": "/covers/571-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/571-1-thumb.webp",
+    "large": "/covers/571-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -2553,7 +3341,11 @@
    {
     "src": "/covers/575-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/575-1-thumb.webp",
+    "large": "/covers/575-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -2566,7 +3358,11 @@
    {
     "src": "/covers/579-1.webp",
     "width": 316,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/579-1-thumb.webp",
+    "large": "/covers/579-1.webp",
+    "largeWidth": 316,
+    "largeHeight": 475
    }
   ]
  },
@@ -2579,7 +3375,11 @@
    {
     "src": "/covers/583-1.webp",
     "width": 314,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/583-1-thumb.webp",
+    "large": "/covers/583-1.webp",
+    "largeWidth": 314,
+    "largeHeight": 500
    }
   ]
  },
@@ -2592,7 +3392,11 @@
    {
     "src": "/covers/594-1.webp",
     "width": 313,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/594-1-thumb.webp",
+    "large": "/covers/594-1.webp",
+    "largeWidth": 313,
+    "largeHeight": 475
    }
   ]
  },
@@ -2605,7 +3409,11 @@
    {
     "src": "/covers/597-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/597-1-thumb.webp",
+    "large": "/covers/597-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -2618,7 +3426,11 @@
    {
     "src": "/covers/598-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/598-1-thumb.webp",
+    "large": "/covers/598-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -2631,7 +3443,11 @@
    {
     "src": "/covers/599-1.webp",
     "width": 128,
-    "height": 190
+    "height": 190,
+    "thumb": "/covers/599-1-thumb.webp",
+    "large": "/covers/599-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 190
    }
   ]
  },
@@ -2644,7 +3460,11 @@
    {
     "src": "/covers/602-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/602-1-thumb.webp",
+    "large": "/covers/602-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -2657,7 +3477,11 @@
    {
     "src": "/covers/603-1.webp",
     "width": 348,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/603-1-thumb.webp",
+    "large": "/covers/603-1.webp",
+    "largeWidth": 348,
+    "largeHeight": 500
    }
   ]
  },
@@ -2670,7 +3494,11 @@
    {
     "src": "/covers/605-1.webp",
     "width": 128,
-    "height": 195
+    "height": 195,
+    "thumb": "/covers/605-1-thumb.webp",
+    "large": "/covers/605-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 195
    }
   ]
  },
@@ -2683,7 +3511,11 @@
    {
     "src": "/covers/607-1.webp",
     "width": 325,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/607-1-thumb.webp",
+    "large": "/covers/607-1.webp",
+    "largeWidth": 325,
+    "largeHeight": 500
    }
   ]
  },
@@ -2696,7 +3528,11 @@
    {
     "src": "/covers/608-1.webp",
     "width": 128,
-    "height": 199
+    "height": 199,
+    "thumb": "/covers/608-1-thumb.webp",
+    "large": "/covers/608-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 199
    }
   ]
  },
@@ -2709,7 +3545,11 @@
    {
     "src": "/covers/609-1.webp",
     "width": 128,
-    "height": 194
+    "height": 194,
+    "thumb": "/covers/609-1-thumb.webp",
+    "large": "/covers/609-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 194
    }
   ]
  },
@@ -2722,7 +3562,11 @@
    {
     "src": "/covers/611-1.webp",
     "width": 349,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/611-1-thumb.webp",
+    "large": "/covers/611-1.webp",
+    "largeWidth": 349,
+    "largeHeight": 500
    }
   ]
  },
@@ -2735,7 +3579,11 @@
    {
     "src": "/covers/615-1.webp",
     "width": 400,
-    "height": 400
+    "height": 400,
+    "thumb": "/covers/615-1-thumb.webp",
+    "large": "/covers/615-1.webp",
+    "largeWidth": 400,
+    "largeHeight": 400
    }
   ]
  },
@@ -2748,7 +3596,11 @@
    {
     "src": "/covers/616-1.webp",
     "width": 254,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/616-1-thumb.webp",
+    "large": "/covers/616-1.webp",
+    "largeWidth": 254,
+    "largeHeight": 500
    }
   ]
  },
@@ -2761,7 +3613,11 @@
    {
     "src": "/covers/638-1.webp",
     "width": 332,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/638-1-thumb.webp",
+    "large": "/covers/638-1.webp",
+    "largeWidth": 332,
+    "largeHeight": 500
    }
   ]
  },
@@ -2774,7 +3630,11 @@
    {
     "src": "/covers/646-1.webp",
     "width": 128,
-    "height": 186
+    "height": 186,
+    "thumb": "/covers/646-1-thumb.webp",
+    "large": "/covers/646-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 186
    }
   ]
  },
@@ -2787,7 +3647,11 @@
    {
     "src": "/covers/647-1.webp",
     "width": 312,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/647-1-thumb.webp",
+    "large": "/covers/647-1.webp",
+    "largeWidth": 312,
+    "largeHeight": 500
    }
   ]
  },
@@ -2800,7 +3664,11 @@
    {
     "src": "/covers/648-1.webp",
     "width": 321,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/648-1-thumb.webp",
+    "large": "/covers/648-1.webp",
+    "largeWidth": 321,
+    "largeHeight": 500
    }
   ]
  },
@@ -2813,7 +3681,11 @@
    {
     "src": "/covers/650-1.webp",
     "width": 333,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/650-1-thumb.webp",
+    "large": "/covers/650-1.webp",
+    "largeWidth": 333,
+    "largeHeight": 500
    }
   ]
  },
@@ -2826,7 +3698,11 @@
    {
     "src": "/covers/651-1.webp",
     "width": 300,
-    "height": 375
+    "height": 375,
+    "thumb": "/covers/651-1-thumb.webp",
+    "large": "/covers/651-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 375
    }
   ]
  },
@@ -2839,7 +3715,11 @@
    {
     "src": "/covers/652-1.webp",
     "width": 520,
-    "height": 673
+    "height": 673,
+    "thumb": "/covers/652-1-thumb.webp",
+    "large": "/covers/652-1-lg.webp",
+    "largeWidth": 1400,
+    "largeHeight": 1812
    }
   ]
  },
@@ -2852,7 +3732,11 @@
    {
     "src": "/covers/653-1.webp",
     "width": 316,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/653-1-thumb.webp",
+    "large": "/covers/653-1.webp",
+    "largeWidth": 316,
+    "largeHeight": 500
    }
   ]
  },
@@ -2865,7 +3749,11 @@
    {
     "src": "/covers/657-1.webp",
     "width": 300,
-    "height": 464
+    "height": 464,
+    "thumb": "/covers/657-1-thumb.webp",
+    "large": "/covers/657-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 464
    }
   ]
  },
@@ -2878,7 +3766,11 @@
    {
     "src": "/covers/659-1.webp",
     "width": 309,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/659-1-thumb.webp",
+    "large": "/covers/659-1.webp",
+    "largeWidth": 309,
+    "largeHeight": 500
    }
   ]
  },
@@ -2891,7 +3783,11 @@
    {
     "src": "/covers/664-1.webp",
     "width": 322,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/664-1-thumb.webp",
+    "large": "/covers/664-1.webp",
+    "largeWidth": 322,
+    "largeHeight": 500
    }
   ]
  },
@@ -2904,7 +3800,11 @@
    {
     "src": "/covers/665-1.webp",
     "width": 300,
-    "height": 464
+    "height": 464,
+    "thumb": "/covers/665-1-thumb.webp",
+    "large": "/covers/665-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 464
    }
   ]
  },
@@ -2917,7 +3817,11 @@
    {
     "src": "/covers/668-1.webp",
     "width": 313,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/668-1-thumb.webp",
+    "large": "/covers/668-1.webp",
+    "largeWidth": 313,
+    "largeHeight": 475
    }
   ]
  },
@@ -2930,7 +3834,11 @@
    {
     "src": "/covers/673-1.webp",
     "width": 128,
-    "height": 192
+    "height": 192,
+    "thumb": "/covers/673-1-thumb.webp",
+    "large": "/covers/673-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 192
    }
   ]
  },
@@ -2943,7 +3851,11 @@
    {
     "src": "/covers/675-1.webp",
     "width": 331,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/675-1-thumb.webp",
+    "large": "/covers/675-1.webp",
+    "largeWidth": 331,
+    "largeHeight": 500
    }
   ]
  },
@@ -2956,7 +3868,11 @@
    {
     "src": "/covers/676-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/676-1-thumb.webp",
+    "large": "/covers/676-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -2969,7 +3885,11 @@
    {
     "src": "/covers/677-1.webp",
     "width": 289,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/677-1-thumb.webp",
+    "large": "/covers/677-1.webp",
+    "largeWidth": 289,
+    "largeHeight": 500
    }
   ]
  },
@@ -2982,7 +3902,11 @@
    {
     "src": "/covers/679-1.webp",
     "width": 333,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/679-1-thumb.webp",
+    "large": "/covers/679-1.webp",
+    "largeWidth": 333,
+    "largeHeight": 500
    }
   ]
  },
@@ -2995,7 +3919,11 @@
    {
     "src": "/covers/682-1.webp",
     "width": 296,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/682-1-thumb.webp",
+    "large": "/covers/682-1.webp",
+    "largeWidth": 296,
+    "largeHeight": 500
    }
   ]
  },
@@ -3008,7 +3936,11 @@
    {
     "src": "/covers/684-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/684-1-thumb.webp",
+    "large": "/covers/684-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -3021,7 +3953,11 @@
    {
     "src": "/covers/688-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/688-1-thumb.webp",
+    "large": "/covers/688-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -3034,7 +3970,11 @@
    {
     "src": "/covers/689-1.webp",
     "width": 306,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/689-1-thumb.webp",
+    "large": "/covers/689-1.webp",
+    "largeWidth": 306,
+    "largeHeight": 500
    }
   ]
  },
@@ -3047,7 +3987,11 @@
    {
     "src": "/covers/696-1.webp",
     "width": 128,
-    "height": 192
+    "height": 192,
+    "thumb": "/covers/696-1-thumb.webp",
+    "large": "/covers/696-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 192
    }
   ]
  },
@@ -3060,7 +4004,11 @@
    {
     "src": "/covers/697-1.webp",
     "width": 128,
-    "height": 203
+    "height": 203,
+    "thumb": "/covers/697-1-thumb.webp",
+    "large": "/covers/697-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 203
    }
   ]
  },
@@ -3072,8 +4020,12 @@
   "images": [
    {
     "src": "/covers/705-1.webp",
-    "width": 505,
-    "height": 780
+    "width": 506,
+    "height": 780,
+    "thumb": "/covers/705-1-thumb.webp",
+    "large": "/covers/705-1-lg.webp",
+    "largeWidth": 1361,
+    "largeHeight": 2100
    }
   ]
  },
@@ -3086,7 +4038,11 @@
    {
     "src": "/covers/713-1.webp",
     "width": 312,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/713-1-thumb.webp",
+    "large": "/covers/713-1.webp",
+    "largeWidth": 312,
+    "largeHeight": 475
    }
   ]
  },
@@ -3099,7 +4055,11 @@
    {
     "src": "/covers/718-1.webp",
     "width": 128,
-    "height": 192
+    "height": 192,
+    "thumb": "/covers/718-1-thumb.webp",
+    "large": "/covers/718-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 192
    }
   ]
  },
@@ -3112,7 +4072,11 @@
    {
     "src": "/covers/721-1.webp",
     "width": 324,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/721-1-thumb.webp",
+    "large": "/covers/721-1.webp",
+    "largeWidth": 324,
+    "largeHeight": 500
    }
   ]
  },
@@ -3125,7 +4089,11 @@
    {
     "src": "/covers/725-1.webp",
     "width": 332,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/725-1-thumb.webp",
+    "large": "/covers/725-1.webp",
+    "largeWidth": 332,
+    "largeHeight": 500
    }
   ]
  },
@@ -3138,7 +4106,11 @@
    {
     "src": "/covers/726-1.webp",
     "width": 341,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/726-1-thumb.webp",
+    "large": "/covers/726-1.webp",
+    "largeWidth": 341,
+    "largeHeight": 500
    }
   ]
  },
@@ -3151,7 +4123,11 @@
    {
     "src": "/covers/736-1.webp",
     "width": 507,
-    "height": 780
+    "height": 780,
+    "thumb": "/covers/736-1-thumb.webp",
+    "large": "/covers/736-1-lg.webp",
+    "largeWidth": 1365,
+    "largeHeight": 2100
    }
   ]
  },
@@ -3164,7 +4140,11 @@
    {
     "src": "/covers/738-1.webp",
     "width": 352,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/738-1-thumb.webp",
+    "large": "/covers/738-1.webp",
+    "largeWidth": 352,
+    "largeHeight": 500
    }
   ]
  },
@@ -3177,7 +4157,11 @@
    {
     "src": "/covers/739-1.webp",
     "width": 329,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/739-1-thumb.webp",
+    "large": "/covers/739-1.webp",
+    "largeWidth": 329,
+    "largeHeight": 500
    }
   ]
  },
@@ -3189,8 +4173,12 @@
   "images": [
    {
     "src": "/covers/740-1.webp",
-    "width": 519,
-    "height": 780
+    "width": 520,
+    "height": 780,
+    "thumb": "/covers/740-1-thumb.webp",
+    "large": "/covers/740-1-lg.webp",
+    "largeWidth": 1399,
+    "largeHeight": 2100
    }
   ]
  },
@@ -3203,7 +4191,11 @@
    {
     "src": "/covers/741-1.webp",
     "width": 128,
-    "height": 192
+    "height": 192,
+    "thumb": "/covers/741-1-thumb.webp",
+    "large": "/covers/741-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 192
    }
   ]
  },
@@ -3216,7 +4208,11 @@
    {
     "src": "/covers/742-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/742-1-thumb.webp",
+    "large": "/covers/742-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -3229,7 +4225,11 @@
    {
     "src": "/covers/745-1.webp",
     "width": 128,
-    "height": 186
+    "height": 186,
+    "thumb": "/covers/745-1-thumb.webp",
+    "large": "/covers/745-1.webp",
+    "largeWidth": 128,
+    "largeHeight": 186
    }
   ]
  },
@@ -3242,7 +4242,11 @@
    {
     "src": "/covers/746-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/746-1-thumb.webp",
+    "large": "/covers/746-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -3255,7 +4259,11 @@
    {
     "src": "/covers/754-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/754-1-thumb.webp",
+    "large": "/covers/754-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -3268,7 +4276,11 @@
    {
     "src": "/covers/757-1.webp",
     "width": 336,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/757-1-thumb.webp",
+    "large": "/covers/757-1.webp",
+    "largeWidth": 336,
+    "largeHeight": 475
    }
   ]
  },
@@ -3281,7 +4293,11 @@
    {
     "src": "/covers/767-1.webp",
     "width": 520,
-    "height": 770
+    "height": 770,
+    "thumb": "/covers/767-1-thumb.webp",
+    "large": "/covers/767-1-lg.webp",
+    "largeWidth": 1400,
+    "largeHeight": 2073
    }
   ]
  },
@@ -3294,7 +4310,11 @@
    {
     "src": "/covers/773-1.webp",
     "width": 309,
-    "height": 475
+    "height": 475,
+    "thumb": "/covers/773-1-thumb.webp",
+    "large": "/covers/773-1.webp",
+    "largeWidth": 309,
+    "largeHeight": 475
    }
   ]
  },
@@ -3307,7 +4327,11 @@
    {
     "src": "/covers/774-1.webp",
     "width": 315,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/774-1-thumb.webp",
+    "large": "/covers/774-1.webp",
+    "largeWidth": 315,
+    "largeHeight": 500
    }
   ]
  },
@@ -3319,8 +4343,12 @@
   "images": [
    {
     "src": "/covers/779-1.webp",
-    "width": 519,
-    "height": 780
+    "width": 520,
+    "height": 780,
+    "thumb": "/covers/779-1-thumb.webp",
+    "large": "/covers/779-1-lg.webp",
+    "largeWidth": 1399,
+    "largeHeight": 2100
    }
   ]
  },
@@ -3333,7 +4361,11 @@
    {
     "src": "/covers/780-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/780-1-thumb.webp",
+    "large": "/covers/780-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -3346,7 +4378,11 @@
    {
     "src": "/covers/784-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/784-1-thumb.webp",
+    "large": "/covers/784-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -3359,7 +4395,11 @@
    {
     "src": "/covers/785-1.webp",
     "width": 300,
-    "height": 389
+    "height": 389,
+    "thumb": "/covers/785-1-thumb.webp",
+    "large": "/covers/785-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 389
    }
   ]
  },
@@ -3371,8 +4411,12 @@
   "images": [
    {
     "src": "/covers/790-1.webp",
-    "width": 519,
-    "height": 780
+    "width": 520,
+    "height": 780,
+    "thumb": "/covers/790-1-thumb.webp",
+    "large": "/covers/790-1-lg.webp",
+    "largeWidth": 1399,
+    "largeHeight": 2100
    }
   ]
  },
@@ -3385,7 +4429,11 @@
    {
     "src": "/covers/799-1.webp",
     "width": 300,
-    "height": 375
+    "height": 375,
+    "thumb": "/covers/799-1-thumb.webp",
+    "large": "/covers/799-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 375
    }
   ]
  },
@@ -3398,7 +4446,11 @@
    {
     "src": "/covers/800-1.webp",
     "width": 300,
-    "height": 375
+    "height": 375,
+    "thumb": "/covers/800-1-thumb.webp",
+    "large": "/covers/800-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 375
    }
   ]
  },
@@ -3411,7 +4463,11 @@
    {
     "src": "/covers/801-1.webp",
     "width": 306,
-    "height": 500
+    "height": 500,
+    "thumb": "/covers/801-1-thumb.webp",
+    "large": "/covers/801-1.webp",
+    "largeWidth": 306,
+    "largeHeight": 500
    }
   ]
  },
@@ -3424,7 +4480,11 @@
    {
     "src": "/covers/802-1.webp",
     "width": 300,
-    "height": 450
+    "height": 450,
+    "thumb": "/covers/802-1-thumb.webp",
+    "large": "/covers/802-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 450
    }
   ]
  },
@@ -3437,7 +4497,11 @@
    {
     "src": "/covers/806-1.webp",
     "width": 300,
-    "height": 463
+    "height": 463,
+    "thumb": "/covers/806-1-thumb.webp",
+    "large": "/covers/806-1.webp",
+    "largeWidth": 300,
+    "largeHeight": 463
    }
   ]
  }
