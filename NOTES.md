@@ -33,6 +33,11 @@ Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC)
 - Smooth page transitions, covers that glide from lists into book pages, a 3D "turn the
   book" cover gallery with swipe/arrow keys, and a full-screen viewer with pinch/scroll/click
   zoom. Motion is reduced if the visitor asks.
+- Search bar suggestions: after 2+ characters the home page bar shows up to 7 books (cover, title,
+  author, category) with keyboard and screen-reader support. Its data is `/search-index.json`,
+  built with the site and downloaded only when the bar is first used.
+- The "This catalogue lists the books the library holds…" notice sits above the footer on every
+  page (`src/components/Disclaimer.tsx`).
 - Welcome intro (once per visit, skippable), **Shelves** tabs (one per Cat #, sections by
   Sub Cat #), faint geometric pattern on the cream background.
 
