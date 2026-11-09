@@ -1863,3 +1863,7 @@ button:active,
   text-decoration: underline;
   cursor: pointer;
 }
+
+.browse-cards {
+  margin-top: 8px;
+}

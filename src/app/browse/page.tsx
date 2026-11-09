@@ -3,7 +3,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ShelfTabs from "@/components/ShelfTabs";
 import BrowseClient from "@/components/BrowseClient";
 import BrowseIntro from "@/components/BrowseIntro";
-import { allShelfSections, books, shelves, toListItem } from "@/lib/catalog";
+import CategoryCard from "@/components/CategoryCard";
+import { allShelfSections, books, categories, shelves, toListItem } from "@/lib/catalog";
 
 export const metadata: Metadata = {
   title: "Browse",
@@ -20,10 +21,25 @@ export default function BrowsePage() {
       <section className="page-head arch-band shelf-band" aria-labelledby="band-title">
         <h2 id="band-title">All shelves</h2>
         <p className="lede">
-          {books.length} books on {shelves.length} shelves, with a short description of each subject.
+          {books.length} books in {categories.length} subjects. Pick a subject to open its shelf, or type in the
+          filter to find books on every shelf.
         </p>
       </section>
-      <BrowseClient sections={sections} scope="all shelves" chipLabel="Shelves" />
+      <BrowseClient
+        sections={sections}
+        scope="all shelves"
+        chipLabel="Shelves"
+        idle={
+          // The big subject blocks from the old Browse page. Each opens its shelf.
+          <ul className="card-grid browse-cards" aria-label="Subjects">
+            {categories.map((c) => (
+              <li key={c.slug}>
+                <CategoryCard category={c} />
+              </li>
+            ))}
+          </ul>
+        }
+      />
     </div>
   );
 }

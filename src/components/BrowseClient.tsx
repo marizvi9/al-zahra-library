@@ -7,7 +7,7 @@
 // The chosen section is kept in the address (e.g. /browse/300/#s50), so it can be
 // shared, and old category / sub-category links land on the right section.
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import Link from "next/link";
 import BookList, { type BookListItem } from "./BookList";
 import { buildIndex, matchingSlugs, type SearchRecord } from "@/lib/search";
@@ -28,9 +28,11 @@ type Props = {
   searchCategory?: string;
   /** On the "No number" shelf the chips are categories, so the chosen chip sets the search category. */
   chipsAreCategories?: boolean;
+  /** Shown instead of the book lists until something is typed in the filter (the subject cards on "All shelves"). */
+  idle?: ReactNode;
 };
 
-export default function BrowseClient({ sections, scope, chipLabel, searchCategory, chipsAreCategories }: Props) {
+export default function BrowseClient({ sections, scope, chipLabel, searchCategory, chipsAreCategories, idle }: Props) {
   const [query, setQuery] = useState("");
   const [only, setOnly] = useState(""); // section key, "" = all
 
@@ -94,7 +96,11 @@ export default function BrowseClient({ sections, scope, chipLabel, searchCategor
         </Link>
       </div>
 
-      {multi && (
+      {idle && !hasQuery ? (
+        idle
+      ) : (
+        <>
+      {multi && !idle && (
         <div className="filter-row" role="group" aria-label={`Show one of the ${chipLabel.toLowerCase()}`}>
           <button type="button" className={`chip ${only === "" ? "is-active" : ""}`} aria-pressed={only === ""} onClick={() => choose("")}>
             All {chipLabel.toLowerCase()} <span className="chip-count">{matches ? matches.size : total}</span>
@@ -136,6 +142,8 @@ export default function BrowseClient({ sections, scope, chipLabel, searchCategor
           <BookList items={s.shown} />
         </section>
       ))}
+        </>
+      )}
     </div>
   );
 }
