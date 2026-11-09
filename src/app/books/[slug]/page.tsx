@@ -7,11 +7,13 @@ import CoverGallery from "@/components/CoverGallery";
 import {
   books,
   booksInSubCategory,
+  exploreHref,
   copiesText,
   creditLine,
   getBook,
   getCategory,
   getCover,
+  getDescription,
   publisherLabel,
   toListItem,
 } from "@/lib/catalog";
@@ -33,8 +35,11 @@ export default async function BookPage({ params }: Props) {
   if (!book) notFound();
   const cat = getCategory(book.categorySlug)!;
   const cover = getCover(book.id);
-  const catHref = `/categories/${book.categorySlug}/`;
-  const subHref = `${catHref}${book.subCategorySlug}/`;
+  const description = getDescription(book.id);
+  // Long descriptions: show the first part, with "Read more" for the rest.
+  const [lead, more] = splitDescription(description?.paragraphs ?? []);
+  const catHref = exploreHref(book.categorySlug);
+  const subHref = exploreHref(book.categorySlug, book.subCategorySlug);
   const related = booksInSubCategory(book.categorySlug, book.subCategorySlug)
     .filter((b) => b.slug !== book.slug)
     .slice(0, 6);
@@ -133,6 +138,33 @@ export default async function BookPage({ params }: Props) {
               <dd>{copiesText(book.copies)}</dd>
             </div>
           </dl>
+
+          {description && (
+            <section className="book-about" aria-labelledby="about-title">
+              <h2 id="about-title">About this book</h2>
+              {lead.map((p, i) => (
+                <p key={i} dir="auto">
+                  {p}
+                </p>
+              ))}
+              {more.length > 0 && (
+                <details className="book-about-more">
+                  <summary>Read more</summary>
+                  {more.map((p, i) => (
+                    <p key={i} dir="auto">
+                      {p}
+                    </p>
+                  ))}
+                </details>
+              )}
+              <p className="small muted book-about-source">
+                Description from{" "}
+                <a href={description.url} target="_blank" rel="noopener noreferrer">
+                  {description.source}
+                </a>
+              </p>
+            </section>
+          )}
         </div>
       </article>
 
@@ -149,4 +181,26 @@ export default async function BookPage({ params }: Props) {
       )}
     </div>
   );
+}
+
+/** Split a description so roughly the first 450 characters show, and the rest sits behind "Read more". */
+function splitDescription(paras: string[]): [string[], string[]] {
+  const LEAD = 450;
+  const lead: string[] = [];
+  let used = 0;
+  for (let i = 0; i < paras.length; i++) {
+    const p = paras[i];
+    if (used + p.length <= LEAD || lead.length === 0) {
+      if (lead.length === 0 && p.length > LEAD * 1.6) {
+        // One very long paragraph: cut it at a sentence near the limit.
+        const at = p.indexOf(". ", LEAD);
+        if (at > 0 && at < p.length - 80) return [[p.slice(0, at + 1)], [p.slice(at + 2), ...paras.slice(i + 1)]];
+      }
+      lead.push(p);
+      used += p.length;
+    } else {
+      return [lead, paras.slice(i)];
+    }
+  }
+  return [lead, []];
 }

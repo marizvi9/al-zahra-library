@@ -2,6 +2,7 @@
 // which is produced by scripts/clean_catalog.py from the original spreadsheet.
 import rawBooks from "@data/books.json";
 import rawCovers from "@data/covers.json";
+import rawDescriptions from "@data/descriptions.json";
 import { categoryDescriptions, FEATURED_CATEGORIES, MORE_TO_EXPLORE } from "./categoryInfo";
 import { withBase } from "./paths";
 
@@ -162,11 +163,9 @@ export const getCategory = (slug: string) => categories.find((c) => c.slug === s
 
 export const getBook = (slug: string) => books.find((b) => b.slug === slug);
 
-export const booksInCategory = (catSlug: string) =>
-  books.filter((b) => b.categorySlug === catSlug).sort(byShelfThenTitle);
-
+/** Books in one sub-category (used for "More in …" on book pages). */
 export const booksInSubCategory = (catSlug: string, subSlug: string) =>
-  booksInCategory(catSlug).filter((b) => b.subCategorySlug === subSlug);
+  books.filter((b) => b.categorySlug === catSlug && b.subCategorySlug === subSlug).sort(byShelfThenTitle);
 
 /** Text in the publisher column that is really a person's credit, e.g. "Compiled by: …". */
 const isPersonCredit = (s: string) => /^(compiled|prepared|translated|edited|compiler)\b/i.test(s);
@@ -209,14 +208,23 @@ export type Shelf = {
   count: number;
 };
 
-export type ShelfSection = { key: string; heading: string; books: Book[] };
+export type ShelfSection = {
+  key: string; // used in the web address, e.g. /explore/300/#s50
+  heading: string;
+  description?: string;
+  href?: string;
+  books: Book[];
+};
 
 const NO_SHELF = "none";
+const shelfOf = (b: Book) => b.catNo ?? NO_SHELF;
+/** Which section of its shelf a book is in: Sub Cat # on numbered shelves, category otherwise. */
+const sectionKeyOf = (b: Book) => (b.catNo ? (b.subCatNo ? `s${b.subCatNo}` : "unnumbered") : b.categorySlug);
 
 export const shelves: Shelf[] = (() => {
   const byNo = new Map<string, Book[]>();
   for (const b of books) {
-    const key = b.catNo ?? NO_SHELF;
+    const key = shelfOf(b);
     if (!byNo.has(key)) byNo.set(key, []);
     byNo.get(key)!.push(b);
   }
@@ -233,31 +241,93 @@ export const shelves: Shelf[] = (() => {
 
 export const getShelf = (slug: string) => shelves.find((s) => s.slug === slug);
 
+const byTitle = (a: Book, b: Book) => collator.compare(a.title, b.title);
+
 /** Books on one shelf, grouped into sections by Sub Cat # (10, 20 …). */
 export function shelfSections(slug: string): ShelfSection[] {
-  const list = books
-    .filter((b) => (b.catNo ?? NO_SHELF) === slug)
-    .sort((a, b) => collator.compare(a.title, b.title));
+  const list = books.filter((b) => shelfOf(b) === slug).sort(byTitle);
 
-  // Books with no shelf number at all: group them by category instead.
+  // Books with no shelf number at all: group them by category, with its description.
   if (slug === NO_SHELF) {
-    const cats = [...new Set(list.map((b) => b.category))].sort(collator.compare);
-    return cats.map((c) => ({ key: c, heading: c, books: list.filter((b) => b.category === c) }));
+    return categories
+      .filter((c) => list.some((b) => b.categorySlug === c.slug))
+      .map((c) => ({
+        key: c.slug,
+        heading: c.name,
+        description: c.description,
+        books: list.filter((b) => b.categorySlug === c.slug),
+      }));
   }
 
   const sections = new Map<string, Book[]>();
   for (const b of list) {
-    const key = b.subCatNo ?? "";
+    const key = sectionKeyOf(b);
     if (!sections.has(key)) sections.set(key, []);
     sections.get(key)!.push(b);
   }
+  const num = (k: string) => (k === "unnumbered" ? Infinity : Number(k.slice(1)));
   return [...sections.entries()]
-    .sort(([a], [b]) => (a === "" ? 1 : b === "" ? -1 : Number(a) - Number(b)))
+    .sort(([a], [b]) => num(a) - num(b))
     .map(([key, group]) => ({
-      key: key || "unnumbered",
-      heading: key
-        ? `${slug} · ${key} — ${[...new Set(group.map((b) => b.subCategory))].join(", ")}`
-        : "No section number recorded",
+      key,
+      heading:
+        key === "unnumbered"
+          ? "No section number recorded"
+          : `${slug} · ${key.slice(1)} — ${[...new Set(group.map((b) => b.subCategory))].join(", ")}`,
       books: group,
     }));
+}
+
+/** "All shelves": one section per shelf, with its category description. */
+export function allShelfSections(): ShelfSection[] {
+  return shelves.map((sh) => {
+    const cats = categories.filter((c) => sh.categories.includes(c.name));
+    return {
+      key: `shelf-${sh.slug}`,
+      heading: sh.number ? `Shelf ${sh.number} — ${cats.map((c) => c.name).join(", ")}` : "No shelf number",
+      description: sh.number ? cats.map((c) => c.description).filter(Boolean).join(" ") : "Books that have not been given a shelf number yet.",
+      href: `/explore/${sh.slug}/`,
+      books: books.filter((b) => shelfOf(b) === sh.slug).sort(byTitle),
+    };
+  });
+}
+
+/**
+ * Where a category (or one of its sub-categories) lives on the Explore page.
+ * Used by links around the site and by the old /categories/ addresses.
+ */
+export function exploreHref(categorySlug: string, subSlug?: string): string {
+  const list = books.filter((b) => b.categorySlug === categorySlug && (!subSlug || b.subCategorySlug === subSlug));
+  if (list.length === 0) return "/explore/";
+  const shelf = shelfOf(list[0]);
+  if (shelf === NO_SHELF) return `/explore/${NO_SHELF}/#${categorySlug}`;
+  if (!subSlug) return `/explore/${shelf}/`;
+  // the section most of the sub-category's books are in
+  const counts = new Map<string, number>();
+  for (const b of list) counts.set(sectionKeyOf(b), (counts.get(sectionKeyOf(b)) ?? 0) + 1);
+  const key = [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0];
+  return `/explore/${shelf}/#${key}`;
+}
+
+// ---------- Descriptions (from scripts/fetch_descriptions.mjs, never written by hand) ----------
+
+export type Description = {
+  paragraphs: string[];
+  source: string; // "Google Books" or "Open Library"
+  url: string;
+  matchedTitle: string;
+  matchedAuthor: string;
+};
+
+const descriptions = rawDescriptions as Record<string, Description>;
+export const getDescription = (id: number): Description | undefined => descriptions[String(id)];
+
+/** The start of a description, cut at a sentence or word, for small spaces like the slider. */
+export function shortDescription(d: Description, maxChars = 300): string {
+  const text = d.paragraphs.join(" ");
+  if (text.length <= maxChars) return text;
+  const cut = text.slice(0, maxChars);
+  const sentence = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("! "), cut.lastIndexOf("? "));
+  if (sentence > maxChars * 0.6) return cut.slice(0, sentence + 1);
+  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:\s-]+$/, "") + "…";
 }

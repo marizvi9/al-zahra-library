@@ -15,7 +15,7 @@ const arabic = Noto_Naskh_Arabic({ subsets: ["arabic"], variable: "--font-arabic
 
 export const metadata: Metadata = {
   title: { default: "The Al-Zahra Library at IEC", template: "%s · The Al-Zahra Library at IEC" },
-  description: "Search and browse the book catalog of the Al-Zahra Library at the Islamic Education Center.",
+  description: "Search and explore the book catalog of the Al-Zahra Library at the Islamic Education Center.",
 };
 
 export const viewport: Viewport = {

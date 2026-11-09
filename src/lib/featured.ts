@@ -1,12 +1,12 @@
 // The books in the home page slider.
 //   Which books:        data/featured-slider-books.json   (edit this to swap a book)
-//   Their descriptions: data/featured-descriptions.json   (made by scripts/fetch_featured.mjs
-//                                                           from Google Books - never hand-written)
+//   Their descriptions: data/descriptions.json            (made by scripts/fetch_descriptions.mjs
+//                                                           - copied from Google Books / Open Library)
 // The build stops with a clear message if a chosen book is missing an author,
-// publisher, cover or description, so a half-filled slide can never go live.
+// cover or description, so a half-filled slide can never go live. (A publisher is
+// no longer required: only one book with a publisher has a real description.)
 import config from "@data/featured-slider-books.json";
-import descriptions from "@data/featured-descriptions.json";
-import { books, getCover } from "./catalog";
+import { books, getCover, getDescription, shortDescription } from "./catalog";
 
 export type FeaturedSlide = {
   slug: string;
@@ -14,10 +14,9 @@ export type FeaturedSlide = {
   author: string;
   category: string;
   description: string;
+  descriptionSource: string;
   cover: { src: string; width: number; height: number };
 };
-
-const texts = descriptions as Record<string, { text: string }>;
 
 export const featuredSlides: FeaturedSlide[] = config.books.map(({ id }) => {
   const book = books.find((b) => b.id === id);
@@ -26,17 +25,18 @@ export const featuredSlides: FeaturedSlide[] = config.books.map(({ id }) => {
   };
   if (!book) return fail("is not in the catalog");
   if (!book.author) fail("has no author");
-  if (!book.publisher) fail("has no publisher");
   const cover = getCover(id)?.images[0];
   if (!cover) return fail("has no cover image");
-  const description = texts[String(id)]?.text;
-  if (!description) return fail("has no Google Books description (run: node scripts/fetch_featured.mjs)");
+  const found = getDescription(id);
+  if (!found) return fail("has no description (run: node scripts/fetch_descriptions.mjs)");
+  const description = shortDescription(found);
   return {
     slug: book.slug,
     title: book.title,
     author: book.author!,
     category: book.category,
     description,
+    descriptionSource: found.source,
     cover: { src: cover.src, width: cover.width, height: cover.height },
   };
 });

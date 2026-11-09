@@ -25,7 +25,11 @@ Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC)
 - Call numbers are `Cat # · Sub Cat #` (Book # is empty in the whole spreadsheet).
 
 ### Website (Next.js + TypeScript, static, no backend)
-- Home page with search and featured categories; browse by category and sub-category;
+- Home page with search and featured categories; one **Explore** page (`/explore/`) with shelf tabs
+  labelled number + subject (All shelves, 100 · Theology … No number); "All shelves" has a Cards / List
+  switch (big subject cards with descriptions, or shelf buttons + every book; remembered per device); subject descriptions on each shelf,
+  section chips, a filter box, and a "Search this shelf" link (opens `/search/?category=…`);
+  old `/categories/…` and `/shelves/…` links forward to it;
   instant search by title, author or category; a page per book with a "Find it on the shelf"
   call-number box.
 - Design: cream/white with small blue and gold accents, light girih pattern, arched shapes,
@@ -33,16 +37,19 @@ Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC)
 - Smooth page transitions, covers that glide from lists into book pages, a 3D "turn the
   book" cover gallery with swipe/arrow keys, and a full-screen viewer with pinch/scroll/click
   zoom. Motion is reduced if the visitor asks.
-- Home page: "Welcome to The Al-Zahra Library" heading with the logo placeholder, and a
-  **Featured books** slider (5 books). To swap a book, edit `data/featured-slider-books.json`,
-  run `node scripts/fetch_featured.mjs` (fetches its Google Books description), and rebuild.
-  The build stops with a clear message if a chosen book lacks an author, publisher, cover or description.
+- Home page: "Welcome to the Al-Zahra Library" heading with the logo placeholder, and a
+  **Featured books** slider (5 books). To swap a book, edit `data/featured-slider-books.json` and
+  rebuild. The build stops with a clear message if a chosen book lacks an author, cover or description.
+- **Book descriptions** ("About this book") on 160 book pages, copied from Google Books (153) or
+  Open Library (7) by `node scripts/fetch_descriptions.mjs`, using the same strict title + author check
+  as the covers (`scripts/lib/match.mjs`). Distributors' standard blurbs are removed. Check them in
+  `data/descriptions-report.md`.
 - Search bar suggestions: after 2+ characters the home page bar shows up to 7 books (cover, title,
   author, category) with keyboard and screen-reader support. Its data is `/search-index.json`,
   built with the site and downloaded only when the bar is first used.
 - The "This catalogue lists the books the library holds…" notice sits above the footer on every
   page (`src/components/Disclaimer.tsx`).
-- Welcome intro (once per visit, skippable), **Shelves** tabs (one per Cat #, sections by
+- Welcome intro (once per visit, skippable), shelf tabs on Explore (one per Cat #, sections by
   Sub Cat #), faint geometric pattern on the cream background.
 
 ### Cover art
