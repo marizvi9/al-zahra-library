@@ -1731,9 +1731,6 @@ button:active,
   font-family: var(--font-body);
   font-size: 0.95rem;
 }
-.browse-search {
-  margin: 4px 0 14px;
-}
 .browse .filter-row {
   margin-bottom: 4px;
 }
@@ -1763,4 +1760,106 @@ button:active,
   background: var(--white);
   border: 1px dashed var(--line);
   border-radius: var(--radius);
+}
+
+/* Browse: tab labels with number + subject */
+.shelf-tab-name {
+  max-width: 8.5rem;
+  font-size: 0.78rem;
+  line-height: 1.2;
+  text-align: center;
+  white-space: normal;
+}
+.shelf-tab.is-active .shelf-tab-name {
+  font-weight: 600;
+}
+
+/* Browse: the how-to note at the top */
+.browse-intro {
+  margin: 4px 0 4px;
+}
+.browse-intro h1 {
+  margin-bottom: 0.2em;
+}
+.browse-intro .lede {
+  margin: 0;
+  max-width: 68ch;
+}
+.shelf-band h2 {
+  font-size: clamp(1.5rem, 5vw, 2.1rem);
+  margin: 0 0 0.3em;
+}
+
+/* Browse: filter box + "Search this shelf" link */
+.browse-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  margin: 18px 0 12px;
+}
+.browse-filter {
+  flex: 1 1 320px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.browse-filter-label {
+  font-weight: 600;
+  color: var(--ink);
+}
+.browse-filter input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  padding: 11px 14px;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  background: var(--white);
+  color: var(--text);
+}
+.browse-filter input:focus {
+  border-color: var(--blue);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--blue-soft);
+}
+.browse-search-link {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Search page: "Searching in Fiqh ✕" */
+.search-within {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 0;
+  padding: 4px 6px 4px 14px;
+  border-radius: 999px;
+  background: var(--blue-soft);
+  color: var(--ink);
+}
+.search-within-clear {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--blue);
+  cursor: pointer;
+}
+.search-within-clear:hover {
+  background: var(--gold-soft);
+}
+.link-button {
+  font: inherit;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--blue);
+  text-decoration: underline;
+  cursor: pointer;
 }

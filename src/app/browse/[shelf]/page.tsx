@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ShelfTabs from "@/components/ShelfTabs";
 import BrowseClient from "@/components/BrowseClient";
+import BrowseIntro from "@/components/BrowseIntro";
 import { categories, getShelf, shelfSections, shelves, toListItem } from "@/lib/catalog";
 
 type Props = { params: Promise<{ shelf: string }> };
@@ -25,6 +26,7 @@ export default async function ShelfPage({ params }: Props) {
   if (!shelf) notFound();
   const sections = shelfSections(shelf.slug).map(({ books: list, ...s }) => ({ ...s, items: list.map(toListItem) }));
   // The category description from the old Browse page (numbered shelves hold one category each).
+  const categorySlug = categories.find((c) => c.name === shelf.categories[0])?.slug;
   const description = shelf.number
     ? categories
         .filter((c) => shelf.categories.includes(c.name))
@@ -42,13 +44,20 @@ export default async function ShelfPage({ params }: Props) {
           { label: shelf.number ? `Shelf ${shelf.number}` : "No shelf number" },
         ]}
       />
+      <BrowseIntro />
       <ShelfTabs shelves={shelves} active={shelf.slug} />
-      <header className="page-head arch-band">
+      <section className="page-head arch-band shelf-band" aria-labelledby="band-title">
         <p className="eyebrow">{shelf.number ? `Shelf ${shelf.number}` : "No shelf number"}</p>
-        <h1>{shelf.categories.join(", ")}</h1>
+        <h2 id="band-title">{shelf.categories.join(", ")}</h2>
         {description && <p className="lede">{description}</p>}
-      </header>
-      <BrowseClient sections={sections} scope="this shelf" chipLabel="Sections" />
+      </section>
+      <BrowseClient
+        sections={sections}
+        scope="this shelf"
+        chipLabel={shelf.number ? "Sections" : "Subjects"}
+        searchCategory={shelf.number ? categorySlug : undefined}
+        chipsAreCategories={!shelf.number}
+      />
     </div>
   );
 }

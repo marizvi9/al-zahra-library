@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ShelfTabs from "@/components/ShelfTabs";
 import BrowseClient from "@/components/BrowseClient";
+import BrowseIntro from "@/components/BrowseIntro";
 import { allShelfSections, books, shelves, toListItem } from "@/lib/catalog";
 
 export const metadata: Metadata = {
@@ -14,15 +15,14 @@ export default function BrowsePage() {
   return (
     <div className="container page">
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Browse" }]} />
+      <BrowseIntro />
       <ShelfTabs shelves={shelves} active="" />
-      <header className="page-head arch-band">
-        <p className="eyebrow">All shelves</p>
-        <h1>Browse the library</h1>
+      <section className="page-head arch-band shelf-band" aria-labelledby="band-title">
+        <h2 id="band-title">All shelves</h2>
         <p className="lede">
-          Books are shelved by number: the first part of a call number (for example <strong>300</strong> in
-          300&nbsp;·&nbsp;50) is the shelf. Pick a shelf above, or search all {books.length} books below.
+          {books.length} books on {shelves.length} shelves, with a short description of each subject.
         </p>
-      </header>
+      </section>
       <BrowseClient sections={sections} scope="all shelves" chipLabel="Shelves" />
     </div>
   );

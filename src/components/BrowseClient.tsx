@@ -1,6 +1,7 @@
 "use client";
 // The interactive part of the Browse page:
-// - a search box that filters the books shown (this shelf, or every shelf),
+// - a filter box that narrows the books shown on this page as you type,
+// - a "Search this shelf" link that opens the full search page limited to the shelf,
 // - chips to show just one section (or one shelf, on "All shelves"),
 // - the books, grouped under section headings with their descriptions.
 // The chosen section is kept in the address (e.g. /browse/300/#s50), so it can be
@@ -22,10 +23,14 @@ export type BrowseSection = {
 type Props = {
   sections: BrowseSection[];
   scope: string; // "this shelf" or "all shelves"
-  chipLabel: string; // "Sections" or "Shelves"
+  chipLabel: string; // "Sections", "Shelves" or "Subjects"
+  /** Category the "Search this shelf" link limits the search to. */
+  searchCategory?: string;
+  /** On the "No number" shelf the chips are categories, so the chosen chip sets the search category. */
+  chipsAreCategories?: boolean;
 };
 
-export default function BrowseClient({ sections, scope, chipLabel }: Props) {
+export default function BrowseClient({ sections, scope, chipLabel, searchCategory, chipsAreCategories }: Props) {
   const [query, setQuery] = useState("");
   const [only, setOnly] = useState(""); // section key, "" = all
 
@@ -58,22 +63,36 @@ export default function BrowseClient({ sections, scope, chipLabel }: Props) {
   const shownCount = visible.reduce((n, s) => n + s.shown.length, 0);
   const multi = sections.length > 1;
 
+  const linkCategory = chipsAreCategories ? only : searchCategory;
+  const qs = new URLSearchParams();
+  if (query.trim()) qs.set("q", query.trim());
+  if (linkCategory) qs.set("category", linkCategory);
+  const searchHref = `/search/${qs.size ? `?${qs}` : ""}`;
+  const chipName = chipsAreCategories && only ? sections.find((s) => s.key === only)?.heading : undefined;
+  const searchText = chipName ? `Search ${chipName}` : linkCategory ? "Search this shelf" : "Open full search";
+
   return (
     <div className="browse">
-      <form role="search" className="search-box browse-search" onSubmit={(e) => e.preventDefault()}>
-        <label htmlFor="browse-q" className="visually-hidden">
-          Search {scope} by title, author or category
-        </label>
-        <input
-          id="browse-q"
-          type="search"
-          dir="auto"
-          placeholder={`Search ${scope}`}
-          autoComplete="off"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
-      </form>
+      <div className="browse-tools">
+        <form className="browse-filter" role="search" aria-label={`Filter ${scope}`} onSubmit={(e) => e.preventDefault()}>
+          <label htmlFor="browse-q" className="browse-filter-label">
+            Filter
+          </label>
+          <input
+            id="browse-q"
+            type="search"
+            dir="auto"
+            placeholder="Title, author or topic"
+            autoComplete="off"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            aria-describedby="browse-count"
+          />
+        </form>
+        <Link href={searchHref} className="browse-search-link">
+          {searchText} <span aria-hidden="true">→</span>
+        </Link>
+      </div>
 
       {multi && (
         <div className="filter-row" role="group" aria-label={`Show one of the ${chipLabel.toLowerCase()}`}>
@@ -95,7 +114,7 @@ export default function BrowseClient({ sections, scope, chipLabel }: Props) {
         </div>
       )}
 
-      <p className="browse-count small muted" aria-live="polite">
+      <p id="browse-count" className="browse-count small muted" aria-live="polite">
         {shownCount === total ? `${total} ${total === 1 ? "book" : "books"}` : `Showing ${shownCount} of ${total} books`}
       </p>
 
@@ -109,10 +128,10 @@ export default function BrowseClient({ sections, scope, chipLabel }: Props) {
 
       {visible.map((s) => (
         <section key={s.key} id={s.key} className="browse-section" aria-labelledby={`h-${s.key}`}>
-          <h2 id={`h-${s.key}`} className="shelf-section-heading">
+          <h3 id={`h-${s.key}`} className="shelf-section-heading">
             {s.href ? <Link href={s.href}>{s.heading}</Link> : s.heading}{" "}
             <span className="chip-count">{s.shown.length}</span>
-          </h2>
+          </h3>
           {s.description && <p className="section-desc">{s.description}</p>}
           <BookList items={s.shown} />
         </section>

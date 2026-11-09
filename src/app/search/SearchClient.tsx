@@ -21,7 +21,12 @@ export default function SearchClient({ records, categories }: Props) {
   const params = useSearchParams();
   const [query, setQuery] = useState(params.get("q") ?? "");
   const [scope, setScope] = useState<SearchScope>("all");
-  const [category, setCategory] = useState("");
+  // ?category=fiqh (from a "Search this shelf" link) starts the search inside that category.
+  const [category, setCategory] = useState(() => {
+    const c = params.get("category") ?? "";
+    return categories.some((x) => x.slug === c) ? c : "";
+  });
+  const categoryName = categories.find((c) => c.slug === category)?.name;
   const [shown, setShown] = useState(PAGE_SIZE);
 
   const index = useMemo(() => buildIndex(records), [records]);
@@ -37,14 +42,13 @@ export default function SearchClient({ records, categories }: Props) {
 
   // Keep the address bar in step, so a search can be bookmarked or shared.
   useEffect(() => {
-    const url = query ? `?q=${encodeURIComponent(query)}` : window.location.pathname;
+    const qs = new URLSearchParams();
+    if (query) qs.set("q", query);
+    if (category) qs.set("category", category);
+    const url = qs.size ? `?${qs}` : window.location.pathname;
     window.history.replaceState(null, "", url);
     setShown(PAGE_SIZE);
   }, [query, scope, category]);
-
-  useEffect(() => {
-    if (category && !counts.has(category)) setCategory("");
-  }, [counts, category]);
 
   const hasQuery = query.trim().length > 0;
 
@@ -82,11 +86,23 @@ export default function SearchClient({ records, categories }: Props) {
         ))}
       </fieldset>
 
+      {categoryName && (
+        <p className="search-within">
+          Searching in <strong>{categoryName}</strong>
+          <button type="button" className="search-within-clear" onClick={() => setCategory("")}>
+            <span aria-hidden="true">✕</span>
+            <span className="visually-hidden">Stop searching only in {categoryName}; search all books</span>
+          </button>
+        </p>
+      )}
+
       <p className="result-count" role="status" aria-live="polite">
         {!hasQuery
-          ? `Type to search ${records.length} books.`
+          ? categoryName
+            ? `Type to search the ${records.filter((r) => r.categorySlug === category).length} books in ${categoryName}.`
+            : `Type to search ${records.length} books.`
           : results.length === 0
-            ? `No books found for “${query.trim()}”.`
+            ? `No books found for “${query.trim()}”${categoryName ? ` in ${categoryName}` : ""}.`
             : `Showing ${Math.min(shown, results.length)} of ${results.length} ${results.length === 1 ? "book" : "books"}`}
       </p>
 
@@ -113,7 +129,19 @@ export default function SearchClient({ records, categories }: Props) {
 
       {hasQuery && results.length === 0 && (
         <p className="muted">
-          Try fewer words, check the spelling, or <Link href="/browse/">browse the shelves</Link>.
+          {categoryName && matches.length > 0 ? (
+            <>
+              {matches.length} {matches.length === 1 ? "book matches" : "books match"} on other shelves.{" "}
+              <button type="button" className="link-button" onClick={() => setCategory("")}>
+                Search all books
+              </button>
+              .
+            </>
+          ) : (
+            <>
+              Try fewer words, check the spelling, or <Link href="/browse/">browse the shelves</Link>.
+            </>
+          )}
         </p>
       )}
 
