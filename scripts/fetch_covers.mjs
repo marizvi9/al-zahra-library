@@ -186,8 +186,9 @@ async function googleBooks(book) {
     const full = v.subtitle ? `${v.title}: ${v.subtitle}` : v.title;
     const img = v.imageLinks?.thumbnail ?? v.imageLinks?.smallThumbnail;
     if (!img || !(accept(book, full, v.authors) || accept(book, v.title, v.authors))) continue;
-    // zoom=1 + fife=w600 gives a 300px-wide cover; other sizes return a "no image" picture.
-    const big = `https://books.google.com/books/content?id=${item.id}&printsec=frontcover&img=1&zoom=1&fife=w600&source=gbs_api`;
+    // zoom=1 + fife=w1600 asks for the largest scan Google has (up to 1600px wide;
+    // some books only have 300px). Other zoom levels return a "no image" picture.
+    const big = `https://books.google.com/books/content?id=${item.id}&printsec=frontcover&img=1&zoom=1&fife=w1600&source=gbs_api`;
     return {
       source: "Google Books",
       sourceUrl: v.infoLink ?? v.canonicalVolumeLink,
@@ -216,14 +217,34 @@ async function saveImage(url, outName) {
     const meta = await sharp(buf).metadata();
     if (!meta.width || meta.width < 80 || meta.height < 100) return null; // placeholder / too small
     if (host === "books.google.com" && meta.format === "png") return null; // Google's "image not available"
-    const out = path.join(OUT_IMG, outName);
-    const info = await sharp(buf)
-      .resize({ width: 520, height: 780, fit: "inside", withoutEnlargement: true })
-      .webp({ quality: 80 })
-      .toFile(out);
+    // Three sizes: a tiny thumbnail for lists, a medium image for the book page,
+    // and the largest available (capped at 1400px wide) for the enlarged view.
+    const base = outName.replace(/\.webp$/, "");
+    const save = (name, width, height, quality) =>
+      sharp(buf)
+        .resize({ width, height, fit: "inside", withoutEnlargement: true })
+        .webp({ quality })
+        .toFile(path.join(OUT_IMG, name));
+    const thumb = await save(`${base}-thumb.webp`, 96, 144, 72);
+    const md = await save(`${base}.webp`, 520, 780, 80);
+    let large = md;
+    let largeName = `${base}.webp`;
+    if (meta.width > md.width * 1.15) {
+      largeName = `${base}-lg.webp`;
+      large = await save(largeName, 1400, 2100, 82);
+    }
     // A tiny greyscale "fingerprint" to spot duplicate scans of the same image.
-    const sig = await sharp(out).resize(12, 18, { fit: "fill" }).greyscale().raw().toBuffer();
-    return { src: `/covers/${outName}`, width: info.width, height: info.height, sig };
+    const sig = await sharp(path.join(OUT_IMG, `${base}.webp`)).resize(12, 18, { fit: "fill" }).greyscale().raw().toBuffer();
+    return {
+      src: `/covers/${base}.webp`,
+      width: md.width,
+      height: md.height,
+      thumb: `/covers/${base}-thumb.webp`,
+      large: `/covers/${largeName}`,
+      largeWidth: large.width,
+      largeHeight: large.height,
+      sig,
+    };
   } catch {
     return null;
   }
@@ -253,7 +274,9 @@ for (const book of books) {
       if (!img) continue;
       // Skip near-identical copies of an image we already have.
       const dupe = images.some((k) => k.sig.reduce((sum, v, j) => sum + Math.abs(v - img.sig[j]), 0) / img.sig.length < 32);
-      if (dupe) await fs.rm(path.join(ROOT, "public", img.src));
+      if (dupe) {
+        for (const f of new Set([img.src, img.thumb, img.large])) await fs.rm(path.join(ROOT, "public", f), { force: true });
+      }
       else images.push(img);
     }
     for (const img of images) delete img.sig;

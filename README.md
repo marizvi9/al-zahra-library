@@ -24,9 +24,10 @@ repository's **Actions** tab).
 - `private/` — the full cleaned data (with librarian notes) and the cleaning report. Also kept off GitHub.
 - `scripts/clean_catalog.py` — cleans the spreadsheet. All fixes are listed at the top of the file.
 - `data/books.json` — the cleaned catalogue the site uses (generated, don't edit by hand).
-- `scripts/fetch_covers.mjs` — finds cover images on Open Library and saves them to `public/covers/`.
+- `scripts/fetch_covers.mjs` — finds cover images on Open Library and Google Books and saves them to `public/covers/`.
 - `data/covers.json` — which book has which cover images. To remove a wrong cover, delete that book's entry **and** add its id to `data/covers-rejected.json` (e.g. `[12, 345]`) so it isn't fetched again.
 - `data/covers-report.md` — every cover match, so you can check them.
 - `src/lib/categoryInfo.ts` — the one-line category descriptions (drafts — edit freely).
 - `src/app/globals.css` — colours, fonts and layout. Colours are at the top.
-- `src/components/Header.tsx` — the logo placeholder (instructions are in the file).
+- `public/logos/` — placeholder logos (header and welcome intro). Replace with the real files, same names.
+- `src/lib/categoryInfo.ts` — category descriptions, and the home page's featured / "More to explore" order.

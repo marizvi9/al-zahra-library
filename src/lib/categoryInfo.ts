@@ -23,6 +23,33 @@ export const categoryDescriptions: Record<string, string> = {
   "Literature & Poetry": "Poetry, nohas and marsiyas, plays and novels.",
   "Duas, Ziyarat & Amaal": "Supplications, ziyarat and devotional acts for special nights and months.",
   Ethics: "Books filed under Ethics. This shelf does not have a number yet.",
-  "French & Italian": "Books written in French and Italian.",
-  Uncategorised: "Books that have not been given a category yet. Please ask at the library desk.",
+  French: "Books written in French.",
+  Italian: "Books written in Italian.",
+  Uncategorized: "Books that have not been given a category yet. Please ask at the library desk.",
 };
+
+// Home page: the six featured categories, in this order.
+export const FEATURED_CATEGORIES = [
+  "Biography",
+  "Philosophy",
+  "Fiqh",
+  "Theology",
+  "History",
+  "Governance, Politics & Society",
+];
+
+// Home page: "More to explore", in exactly this order.
+export const MORE_TO_EXPLORE = [
+  "Duas, Ziyarat & Amaal",
+  "Quranic Studies",
+  "Hadith & Ahlal Bayt Teachings",
+  "Stories & Reflections",
+  "Comparative Religion",
+  "Islamic Schools of Thought",
+  "Ethics",
+  "Literature & Poetry",
+  "Miscellaneous",
+  "French",
+  "Italian",
+  "Uncategorized",
+];

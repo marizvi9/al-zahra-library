@@ -15,7 +15,7 @@ export default function SearchPage() {
   return (
     <div className="container page">
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Search" }]} />
-      <h1>Search the catalogue</h1>
+      <h1>Search the catalog</h1>
       <Suspense fallback={<p>Loading search…</p>}>
         <SearchClient records={records} categories={categoryOptions} />
       </Suspense>
