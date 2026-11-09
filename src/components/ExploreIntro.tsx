@@ -1,14 +1,14 @@
-// The note at the top of every Explore page, split into its two topics:
+// The note at the top of every "Explore by shelves" page, split into its two topics:
 // how to use this page (left / first on phones), and how the shelves and call numbers work (right).
 export default function ExploreIntro() {
   return (
     <header className="explore-intro">
-      <h1>Explore</h1>
+      <h1>Explore by shelves</h1>
       <div className="explore-guide">
         <section className="explore-guide-part" aria-labelledby="guide-use">
           <h2 id="guide-use">How to use this page</h2>
           <ul>
-            <li>Pick a shelf from the tabs, or <strong>All shelves</strong> to see everything.</li>
+            <li>Pick a shelf from the tabs, or click a shelf box under <strong>All shelves</strong>.</li>
             <li>On a shelf, its books are listed section by section.</li>
             <li>Narrow it down with the section buttons or the filter.</li>
           </ul>

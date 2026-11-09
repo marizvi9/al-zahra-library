@@ -7,7 +7,6 @@ import CoverGallery from "@/components/CoverGallery";
 import {
   books,
   booksInSubCategory,
-  exploreHref,
   copiesText,
   creditLine,
   getBook,
@@ -38,8 +37,8 @@ export default async function BookPage({ params }: Props) {
   const description = getDescription(book.id);
   // Long descriptions: show the first part, with "Read more" for the rest.
   const [lead, more] = splitDescription(description?.paragraphs ?? []);
-  const catHref = exploreHref(book.categorySlug);
-  const subHref = exploreHref(book.categorySlug, book.subCategorySlug);
+  const catHref = `/categories/${book.categorySlug}/`;
+  const subHref = `/categories/${book.categorySlug}/${book.subCategorySlug}/`;
   const related = booksInSubCategory(book.categorySlug, book.subCategorySlug)
     .filter((b) => b.slug !== book.slug)
     .slice(0, 6);

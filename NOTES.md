@@ -25,11 +25,13 @@ Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC)
 - Call numbers are `Cat # · Sub Cat #` (Book # is empty in the whole spreadsheet).
 
 ### Website (Next.js + TypeScript, static, no backend)
-- Home page with search and featured categories; one **Explore** page (`/explore/`) with shelf tabs
-  labelled number + subject (All shelves, 100 · Theology … No number); "All shelves" has a Cards / List
-  switch (big subject cards with descriptions, or shelf buttons + every book; remembered per device); subject descriptions on each shelf,
-  section chips, a filter box, and a "Search this shelf" link (opens `/search/?category=…`);
-  old `/categories/…` and `/shelves/…` links forward to it;
+- Home page with search and featured categories. The menu's **Explore** dropdown has two pages:
+  - **Explore by shelves** (`/explore/`): shelf tabs labelled number + subject (All shelves, 100 · Theology
+    … No number). "All shelves" shows one box per shelf (number, subject, count, short description) above
+    every book; clicking a box shows just that shelf. Each shelf page has its description, section chips,
+    a filter box, and a "Search this shelf" link (opens `/search/?category=…`). Old `/shelves/…` links forward here.
+  - **Browse by categories** (`/categories/`): the simple version, with a card per category, then a page
+    per category and sub-category. Category links on the home page and book pages open these.
   instant search by title, author or category; a page per book with a "Find it on the shelf"
   call-number box.
 - Design: cream/white with small blue and gold accents, light girih pattern, arched shapes,

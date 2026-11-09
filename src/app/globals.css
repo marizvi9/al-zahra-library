@@ -224,6 +224,73 @@ a:hover {
   background: var(--blue-soft);
 }
 
+/* "Explore" dropdown in the menu */
+.nav-dropdown {
+  position: relative;
+}
+.nav-menu > summary {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--blue);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.nav-menu > summary::-webkit-details-marker {
+  display: none;
+}
+.nav-menu > summary:hover,
+.nav-menu[open] > summary {
+  background: var(--blue-soft);
+}
+.nav-menu > summary:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 1px;
+}
+.nav-menu-arrow {
+  font-size: 0.8em;
+  transition: transform 0.15s ease;
+}
+.nav-menu[open] .nav-menu-arrow {
+  transform: rotate(180deg);
+}
+.nav-menu-list {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  z-index: 50;
+  min-width: 250px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+.nav-list .nav-menu-list a {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+}
+.nav-menu-label {
+  color: var(--ink);
+}
+.nav-menu-hint {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+.nav-list .nav-menu-list a[aria-current="page"] {
+  background: var(--blue-soft);
+}
+
 /* ---------- Girih pattern ---------- */
 .girih {
   position: absolute;
@@ -1348,8 +1415,16 @@ button:active,
     width: 100%;
     justify-content: center;
   }
-  .nav-list a {
+  .nav-list a,
+  .nav-menu > summary {
     padding: 6px 12px;
+  }
+  /* On phones the menu opens centred under "Explore" so it can't run off the screen. */
+  .nav-menu-list {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: min(250px, calc(100vw - 32px));
   }
 }
 
@@ -1885,40 +1960,88 @@ button:active,
   cursor: pointer;
 }
 
-.browse-cards {
-  margin-top: 8px;
+/* Explore by shelves → All shelves: one box per shelf (smaller than the category cards). */
+.shelf-tiles {
+  list-style: none;
+  margin: 8px 0 4px;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
 }
-
-/* Browse: Cards / List switch */
-.view-switch {
-  display: inline-flex;
-  margin-left: auto;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--white);
-  padding: 3px;
-}
-.view-switch button {
+.shelf-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  height: 100%;
+  padding: 12px 14px;
+  text-align: left;
   font: inherit;
-  font-size: 0.9rem;
-  font-weight: 600;
-  padding: 6px 14px;
-  border: 0;
-  border-radius: 999px;
-  background: transparent;
-  color: var(--blue);
+  color: var(--text);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  border-radius: 12px;
   cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
 }
-.view-switch button:hover {
-  background: var(--blue-soft);
+.shelf-tile:hover:not(:disabled) {
+  border-color: var(--blue);
+  border-top-color: var(--gold);
 }
-.view-switch button.is-active {
-  background: var(--blue);
-  color: var(--white);
-}
-.view-switch button:focus-visible {
+.shelf-tile:focus-visible {
   outline: 3px solid var(--gold);
-  outline-offset: 1px;
+  outline-offset: 2px;
+}
+.shelf-tile.is-active {
+  background: var(--blue-soft);
+  border-color: var(--blue);
+  border-top-color: var(--blue);
+}
+.shelf-tile:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.shelf-tile-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+.shelf-tile-no {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--blue);
+}
+.shelf-tile-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.shelf-tile-name {
+  font-family: var(--font-head);
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.25;
+}
+.shelf-tile-desc {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media (max-width: 560px) {
+  .shelf-tiles {
+    grid-template-columns: 1fr 1fr;
+  }
+  .shelf-tile-desc {
+    display: none; /* too cramped on phones: number, subject and count only */
+  }
 }
 
 /* Book page: "About this book" */

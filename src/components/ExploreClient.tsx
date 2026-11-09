@@ -2,12 +2,13 @@
 // The interactive part of the Explore page:
 // - a filter box that narrows the books shown on this page as you type,
 // - a "Search this shelf" link that opens the full search page limited to the shelf,
-// - chips to show just one section (or one shelf, on "All shelves"),
+// - chips to show just one section (on "All shelves": one box per shelf, with its
+//   number, subject, book count and a short description),
 // - the books, grouped under section headings with their descriptions.
 // The chosen section is kept in the address (e.g. /explore/300/#s50), so it can be
 // shared, and old category / sub-category links land on the right section.
 
-import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import BookList, { type BookListItem } from "./BookList";
 import { buildIndex, matchingSlugs, type SearchRecord } from "@/lib/search";
@@ -17,6 +18,8 @@ export type ExploreSection = {
   heading: string;
   description?: string;
   href?: string;
+  /** For the shelf boxes on "All shelves": the shelf number and subject. */
+  tile?: { number: string | null; name: string };
   items: (BookListItem & SearchRecord)[];
 };
 
@@ -28,30 +31,9 @@ type Props = {
   searchCategory?: string;
   /** On the "No number" shelf the chips are categories, so the chosen chip sets the search category. */
   chipsAreCategories?: boolean;
-  /**
-   * The big subject cards ("All shelves" only). When given, visitors can switch between
-   * "Cards" and "List" (shelf buttons + every book). Typing in the filter always shows the
-   * matching books.
-   */
-  cards?: ReactNode;
 };
 
-type View = "cards" | "list";
-const VIEW_KEY = "azl-browse-view"; // remembers the visitor's choice on this device
-
-export default function ExploreClient({ sections, scope, chipLabel, searchCategory, chipsAreCategories, cards }: Props) {
-  const [view, setView] = useState<View>("cards");
-  useEffect(() => {
-    try {
-      if (localStorage.getItem(VIEW_KEY) === "list") setView("list");
-    } catch {}
-  }, []);
-  const chooseView = (v: View) => {
-    setView(v);
-    try {
-      localStorage.setItem(VIEW_KEY, v);
-    } catch {}
-  };
+export default function ExploreClient({ sections, scope, chipLabel, searchCategory, chipsAreCategories }: Props) {
   const [query, setQuery] = useState("");
   const [only, setOnly] = useState(""); // section key, "" = all
 
@@ -83,6 +65,7 @@ export default function ExploreClient({ sections, scope, chipLabel, searchCatego
   const total = sections.reduce((n, s) => n + s.items.length, 0);
   const shownCount = visible.reduce((n, s) => n + s.shown.length, 0);
   const multi = sections.length > 1;
+  const tiles = sections.every((s) => s.tile); // "All shelves": boxes instead of buttons
 
   const linkCategory = chipsAreCategories ? only : searchCategory;
   const qs = new URLSearchParams();
@@ -113,22 +96,41 @@ export default function ExploreClient({ sections, scope, chipLabel, searchCatego
         <Link href={searchHref} className="browse-search-link">
           {searchText} <span aria-hidden="true">→</span>
         </Link>
-        {cards && (
-          <div className="view-switch" role="group" aria-label="How to show the shelves">
-            {(["cards", "list"] as const).map((v) => (
-              <button key={v} type="button" aria-pressed={view === v} className={view === v ? "is-active" : ""} onClick={() => chooseView(v)}>
-                <span aria-hidden="true">{v === "cards" ? "▦" : "☰"}</span> {v === "cards" ? "Cards" : "List"}
-              </button>
-            ))}
-          </div>
-        )}
       </div>
 
-      {cards && view === "cards" && !hasQuery ? (
-        cards
-      ) : (
-        <>
-      {multi && !(cards && view === "cards") && (
+      {tiles && (
+        <ul className="shelf-tiles" aria-label={`Show one of the ${chipLabel.toLowerCase()}`}>
+          {filtered.map((s) => (
+            <li key={s.key}>
+              <button
+                type="button"
+                className={`shelf-tile ${only === s.key ? "is-active" : ""}`}
+                aria-pressed={only === s.key}
+                onClick={() => choose(only === s.key ? "" : s.key)}
+                disabled={s.shown.length === 0 && only !== s.key}
+              >
+                <span className="shelf-tile-top">
+                  <span className="shelf-tile-no">{s.tile!.number ?? "—"}</span>
+                  <span className="shelf-tile-count">
+                    {s.shown.length} {s.shown.length === 1 ? "book" : "books"}
+                  </span>
+                </span>
+                <span className="shelf-tile-name">{s.tile!.name}</span>
+                {s.description && <span className="shelf-tile-desc">{s.description}</span>}
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+      {tiles && only && (
+        <p className="small">
+          <button type="button" className="link-button" onClick={() => choose("")}>
+            Show all shelves again
+          </button>
+        </p>
+      )}
+
+      {multi && !tiles && (
         <div className="filter-row" role="group" aria-label={`Show one of the ${chipLabel.toLowerCase()}`}>
           <button type="button" className={`chip ${only === "" ? "is-active" : ""}`} aria-pressed={only === ""} onClick={() => choose("")}>
             All {chipLabel.toLowerCase()} <span className="chip-count">{matches ? matches.size : total}</span>
@@ -170,8 +172,6 @@ export default function ExploreClient({ sections, scope, chipLabel, searchCatego
           <BookList items={s.shown} />
         </section>
       ))}
-        </>
-      )}
     </div>
   );
 }
