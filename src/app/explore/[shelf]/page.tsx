@@ -40,7 +40,7 @@ export default async function ShelfPage({ params }: Props) {
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
-          { label: "Explore", href: "/explore/" },
+          { label: "Explore by shelves", href: "/explore/" },
           { label: shelf.number ? `Shelf ${shelf.number}` : "No shelf number" },
         ]}
       />

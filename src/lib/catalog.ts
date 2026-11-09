@@ -163,6 +163,9 @@ export const getCategory = (slug: string) => categories.find((c) => c.slug === s
 
 export const getBook = (slug: string) => books.find((b) => b.slug === slug);
 
+/** All books in one category, in shelf order (Browse by categories). */
+export const booksInCategory = (catSlug: string) => books.filter((b) => b.categorySlug === catSlug).sort(byShelfThenTitle);
+
 /** Books in one sub-category (used for "More in …" on book pages). */
 export const booksInSubCategory = (catSlug: string, subSlug: string) =>
   books.filter((b) => b.categorySlug === catSlug && b.subCategorySlug === subSlug).sort(byShelfThenTitle);
@@ -290,23 +293,6 @@ export function allShelfSections(): ShelfSection[] {
       books: books.filter((b) => shelfOf(b) === sh.slug).sort(byTitle),
     };
   });
-}
-
-/**
- * Where a category (or one of its sub-categories) lives on the Explore page.
- * Used by links around the site and by the old /categories/ addresses.
- */
-export function exploreHref(categorySlug: string, subSlug?: string): string {
-  const list = books.filter((b) => b.categorySlug === categorySlug && (!subSlug || b.subCategorySlug === subSlug));
-  if (list.length === 0) return "/explore/";
-  const shelf = shelfOf(list[0]);
-  if (shelf === NO_SHELF) return `/explore/${NO_SHELF}/#${categorySlug}`;
-  if (!subSlug) return `/explore/${shelf}/`;
-  // the section most of the sub-category's books are in
-  const counts = new Map<string, number>();
-  for (const b of list) counts.set(sectionKeyOf(b), (counts.get(sectionKeyOf(b)) ?? 0) + 1);
-  const key = [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0];
-  return `/explore/${shelf}/#${key}`;
 }
 
 // ---------- Descriptions (from scripts/fetch_descriptions.mjs, never written by hand) ----------

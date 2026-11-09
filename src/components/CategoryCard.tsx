@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { exploreHref, type Category } from "@/lib/catalog";
+import type { Category } from "@/lib/catalog";
 
 export default function CategoryCard({ category }: { category: Category }) {
   return (
-    <Link href={exploreHref(category.slug)} className="category-card">
+    <Link href={`/categories/${category.slug}/`} className="category-card">
       <span className="category-card-top">
         {category.number ? <span className="shelf-no">Shelf {category.number}</span> : <span className="shelf-no">&nbsp;</span>}
       </span>

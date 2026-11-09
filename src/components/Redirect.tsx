@@ -12,7 +12,7 @@ export default function Redirect({ to }: { to: string }) {
       <script dangerouslySetInnerHTML={{ __html: `location.replace(${JSON.stringify(url)})` }} />
       <h1>This page has moved</h1>
       <p className="lede">
-        <Link href={to}>Continue to Explore</Link>
+        <Link href={to}>Continue to Explore by shelves</Link>
       </p>
     </div>
   );

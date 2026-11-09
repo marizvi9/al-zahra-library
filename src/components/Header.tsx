@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { withBase } from "@/lib/paths";
+import ExploreMenu from "./ExploreMenu";
 
 export default function Header() {
   return (
@@ -13,8 +14,8 @@ export default function Header() {
         </Link>
         <nav aria-label="Main">
           <ul className="nav-list">
-            <li>
-              <Link href="/explore/">Explore</Link>
+            <li className="nav-dropdown">
+              <ExploreMenu />
             </li>
             <li>
               <Link href="/search/">Search</Link>
