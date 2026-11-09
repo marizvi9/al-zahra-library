@@ -7,6 +7,7 @@ import CoverGallery from "@/components/CoverGallery";
 import {
   books,
   booksInSubCategory,
+  browseHref,
   copiesText,
   creditLine,
   getBook,
@@ -33,8 +34,8 @@ export default async function BookPage({ params }: Props) {
   if (!book) notFound();
   const cat = getCategory(book.categorySlug)!;
   const cover = getCover(book.id);
-  const catHref = `/categories/${book.categorySlug}/`;
-  const subHref = `${catHref}${book.subCategorySlug}/`;
+  const catHref = browseHref(book.categorySlug);
+  const subHref = browseHref(book.categorySlug, book.subCategorySlug);
   const related = booksInSubCategory(book.categorySlug, book.subCategorySlug)
     .filter((b) => b.slug !== book.slug)
     .slice(0, 6);
