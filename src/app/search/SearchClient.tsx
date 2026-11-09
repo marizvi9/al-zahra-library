@@ -113,7 +113,7 @@ export default function SearchClient({ records, categories }: Props) {
 
       {hasQuery && results.length === 0 && (
         <p className="muted">
-          Try fewer words, check the spelling, or <Link href="/categories/">browse by category</Link>.
+          Try fewer words, check the spelling, or <Link href="/browse/">browse the shelves</Link>.
         </p>
       )}
 

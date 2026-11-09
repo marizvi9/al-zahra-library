@@ -25,7 +25,9 @@ Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC)
 - Call numbers are `Cat # · Sub Cat #` (Book # is empty in the whole spreadsheet).
 
 ### Website (Next.js + TypeScript, static, no backend)
-- Home page with search and featured categories; browse by category and sub-category;
+- Home page with search and featured categories; one **Browse** page (`/browse/`) with shelf tabs
+  (All shelves, 100 … 1400, No number), category descriptions, section chips and a search box;
+  old `/categories/…` and `/shelves/…` links forward to it;
   instant search by title, author or category; a page per book with a "Find it on the shelf"
   call-number box.
 - Design: cream/white with small blue and gold accents, light girih pattern, arched shapes,
@@ -42,7 +44,7 @@ Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC)
   built with the site and downloaded only when the bar is first used.
 - The "This catalogue lists the books the library holds…" notice sits above the footer on every
   page (`src/components/Disclaimer.tsx`).
-- Welcome intro (once per visit, skippable), **Shelves** tabs (one per Cat #, sections by
+- Welcome intro (once per visit, skippable), shelf tabs on Browse (one per Cat #, sections by
   Sub Cat #), faint geometric pattern on the cream background.
 
 ### Cover art

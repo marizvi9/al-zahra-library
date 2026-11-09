@@ -437,10 +437,6 @@ a:hover {
   background: var(--gold);
   color: var(--ink);
 }
-.chip-no {
-  font-size: 0.8rem;
-  color: var(--muted);
-}
 
 /* ---------- Page header band ---------- */
 .page-head {
@@ -1728,4 +1724,43 @@ button:active,
 
 .nowrap {
   white-space: nowrap;
+}
+
+/* ---------- Browse page ---------- */
+.shelf-tab-all .shelf-tab-no {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+.browse-search {
+  margin: 4px 0 14px;
+}
+.browse .filter-row {
+  margin-bottom: 4px;
+}
+.browse-count {
+  margin: 6px 0 0;
+}
+.browse-section {
+  scroll-margin-top: 16px;
+}
+.shelf-section-heading a {
+  color: inherit;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 4px;
+}
+.shelf-section-heading a:hover {
+  color: var(--blue);
+}
+.section-desc {
+  margin: -4px 0 12px;
+  color: var(--muted);
+  max-width: 70ch;
+}
+.empty {
+  margin: 24px 0;
+  padding: 18px;
+  text-align: center;
+  background: var(--white);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
 }

@@ -85,3 +85,16 @@ export function suggest(index: Indexed[], query: string, limit = 7): SearchRecor
     .filter((r) => words.every((w) => r.t.includes(w) || r.a.includes(w) || r.c.includes(w)))
     .slice(0, limit);
 }
+
+/**
+ * Which books match, for filtering a list in place (keeps the list's own order).
+ * Same forgiving rules as the main search; falls back to partial-word matches.
+ */
+export function matchingSlugs(index: Indexed[], query: string): Set<string> {
+  const words = normalize(query).split(" ").filter(Boolean);
+  const hits = search(index, query, "all");
+  if (hits.length > 0 || words.length === 0) return new Set(hits.map((r) => r.slug));
+  return new Set(
+    index.filter((r) => words.every((w) => r.t.includes(w) || r.a.includes(w) || r.c.includes(w))).map((r) => r.slug),
+  );
+}
