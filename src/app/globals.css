@@ -1920,3 +1920,32 @@ button:active,
   outline: 3px solid var(--gold);
   outline-offset: 1px;
 }
+
+/* Book page: "About this book" */
+.book-about {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.book-about h2 {
+  font-size: 1.2rem;
+  margin: 0 0 8px;
+}
+.book-about p {
+  max-width: 70ch;
+  line-height: 1.65;
+}
+.book-about-more summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--blue);
+  margin: 4px 0 8px;
+}
+.book-about-more summary:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.book-about-source {
+  margin-top: 8px;
+}

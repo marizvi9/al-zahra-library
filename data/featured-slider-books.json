@@ -1,10 +1,10 @@
 {
-  "_help": "The books shown in the home page slider, in this order. To swap a book, change its id (the number in data/books.json, also the number at the start of the book's web address, e.g. /books/126-... is id 126). Then run:  node scripts/fetch_featured.mjs  to fetch its Google Books description, and rebuild. Each book needs an author, a cover and a description. The 'why' notes are just for people reading this file.",
+  "_help": "The books shown in the home page slider, in this order. To swap a book, change its id (the number at the start of the book's web address, e.g. /books/137-... is id 137) and rebuild. Each book needs an author, a cover and a description in data/descriptions.json (run: node scripts/fetch_descriptions.mjs). The 'why' notes are just for people reading this file.",
   "books": [
-    { "id": 806, "why": "History - Thomas Arnold's classic on how Islam spread through peaceful preaching" },
-    { "id": 126, "why": "Biography - first detailed life of Abdullah Yusuf Ali, translator of the Quran" },
-    { "id": 124, "why": "Theology - Mutahhari on the Prophet's unschooled status" },
-    { "id": 116, "why": "History - a full account of the Prophet's life, written for young readers and students" },
-    { "id": 137, "why": "Biography - Imam Ali's justice, written by a Lebanese Christian author" }
+    { "id": 137, "why": "Biography - George Jordac on Imam Ali's justice (kept)" },
+    { "id": 527, "why": "Governance - Muhammad Baqir as-Sadr on which social system suits humanity" },
+    { "id": 116, "why": "History - Allama Rizvi's full account of the Prophet's life (kept)" },
+    { "id": 688, "why": "Fiqh - Secrets of the Hajj: the inner meaning of each act of Hajj" },
+    { "id": 398, "why": "Philosophy - Mutahhari on the Islamic approach to society and history (kept author; his Unschooled Prophet has no real description)" }
   ]
 }

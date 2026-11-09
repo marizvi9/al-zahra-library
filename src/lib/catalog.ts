@@ -2,6 +2,7 @@
 // which is produced by scripts/clean_catalog.py from the original spreadsheet.
 import rawBooks from "@data/books.json";
 import rawCovers from "@data/covers.json";
+import rawDescriptions from "@data/descriptions.json";
 import { categoryDescriptions, FEATURED_CATEGORIES, MORE_TO_EXPLORE } from "./categoryInfo";
 import { withBase } from "./paths";
 
@@ -306,4 +307,27 @@ export function exploreHref(categorySlug: string, subSlug?: string): string {
   for (const b of list) counts.set(sectionKeyOf(b), (counts.get(sectionKeyOf(b)) ?? 0) + 1);
   const key = [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0];
   return `/explore/${shelf}/#${key}`;
+}
+
+// ---------- Descriptions (from scripts/fetch_descriptions.mjs, never written by hand) ----------
+
+export type Description = {
+  paragraphs: string[];
+  source: string; // "Google Books" or "Open Library"
+  url: string;
+  matchedTitle: string;
+  matchedAuthor: string;
+};
+
+const descriptions = rawDescriptions as Record<string, Description>;
+export const getDescription = (id: number): Description | undefined => descriptions[String(id)];
+
+/** The start of a description, cut at a sentence or word, for small spaces like the slider. */
+export function shortDescription(d: Description, maxChars = 300): string {
+  const text = d.paragraphs.join(" ");
+  if (text.length <= maxChars) return text;
+  const cut = text.slice(0, maxChars);
+  const sentence = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("! "), cut.lastIndexOf("? "));
+  if (sentence > maxChars * 0.6) return cut.slice(0, sentence + 1);
+  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:\s-]+$/, "") + "…";
 }

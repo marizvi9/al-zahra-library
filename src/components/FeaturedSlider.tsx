@@ -15,6 +15,10 @@ import Link from "next/link";
 import type { FeaturedSlide } from "@/lib/featured";
 
 const EVERY_MS = 6500;
+const SOURCE_LINKS: Record<string, string> = {
+  "Google Books": "https://books.google.com",
+  "Open Library": "https://openlibrary.org",
+};
 const TOUCH_HOLD_MS = 12000;
 
 export default function FeaturedSlider({ slides }: { slides: FeaturedSlide[] }) {
@@ -210,7 +214,16 @@ export default function FeaturedSlider({ slides }: { slides: FeaturedSlide[] }) 
       )}
 
       <p className="slider-credit small muted">
-        Descriptions from <a href="https://books.google.com" target="_blank" rel="noopener noreferrer">Google Books</a>.
+        Descriptions from{" "}
+        {[...new Set(slides.map((s) => s.descriptionSource))].map((src, i, all) => (
+          <span key={src}>
+            {i > 0 ? (i === all.length - 1 ? " and " : ", ") : ""}
+            <a href={SOURCE_LINKS[src] ?? "#"} target="_blank" rel="noopener noreferrer">
+              {src}
+            </a>
+          </span>
+        ))}
+        .
       </p>
     </section>
   );
