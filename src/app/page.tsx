@@ -24,7 +24,7 @@ export default function HomePage() {
                 className="hero-logo"
               />
               <h1 id="hero-title">
-                Welcome to The <span className="nowrap">Al-Zahra</span> Library
+                Welcome to the <span className="nowrap">Al-Zahra</span> Library
               </h1>
             </div>
             <p className="hero-sub">at the Islamic Education Center</p>
