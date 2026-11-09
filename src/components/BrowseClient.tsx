@@ -28,11 +28,30 @@ type Props = {
   searchCategory?: string;
   /** On the "No number" shelf the chips are categories, so the chosen chip sets the search category. */
   chipsAreCategories?: boolean;
-  /** Shown instead of the book lists until something is typed in the filter (the subject cards on "All shelves"). */
-  idle?: ReactNode;
+  /**
+   * The big subject cards ("All shelves" only). When given, visitors can switch between
+   * "Cards" and "List" (shelf buttons + every book). Typing in the filter always shows the
+   * matching books.
+   */
+  cards?: ReactNode;
 };
 
-export default function BrowseClient({ sections, scope, chipLabel, searchCategory, chipsAreCategories, idle }: Props) {
+type View = "cards" | "list";
+const VIEW_KEY = "azl-browse-view"; // remembers the visitor's choice on this device
+
+export default function BrowseClient({ sections, scope, chipLabel, searchCategory, chipsAreCategories, cards }: Props) {
+  const [view, setView] = useState<View>("cards");
+  useEffect(() => {
+    try {
+      if (localStorage.getItem(VIEW_KEY) === "list") setView("list");
+    } catch {}
+  }, []);
+  const chooseView = (v: View) => {
+    setView(v);
+    try {
+      localStorage.setItem(VIEW_KEY, v);
+    } catch {}
+  };
   const [query, setQuery] = useState("");
   const [only, setOnly] = useState(""); // section key, "" = all
 
@@ -94,13 +113,22 @@ export default function BrowseClient({ sections, scope, chipLabel, searchCategor
         <Link href={searchHref} className="browse-search-link">
           {searchText} <span aria-hidden="true">→</span>
         </Link>
+        {cards && (
+          <div className="view-switch" role="group" aria-label="How to show the shelves">
+            {(["cards", "list"] as const).map((v) => (
+              <button key={v} type="button" aria-pressed={view === v} className={view === v ? "is-active" : ""} onClick={() => chooseView(v)}>
+                <span aria-hidden="true">{v === "cards" ? "▦" : "☰"}</span> {v === "cards" ? "Cards" : "List"}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
-      {idle && !hasQuery ? (
-        idle
+      {cards && view === "cards" && !hasQuery ? (
+        cards
       ) : (
         <>
-      {multi && !idle && (
+      {multi && !(cards && view === "cards") && (
         <div className="filter-row" role="group" aria-label={`Show one of the ${chipLabel.toLowerCase()}`}>
           <button type="button" className={`chip ${only === "" ? "is-active" : ""}`} aria-pressed={only === ""} onClick={() => choose("")}>
             All {chipLabel.toLowerCase()} <span className="chip-count">{matches ? matches.size : total}</span>

@@ -1867,3 +1867,35 @@ button:active,
 .browse-cards {
   margin-top: 8px;
 }
+
+/* Browse: Cards / List switch */
+.view-switch {
+  display: inline-flex;
+  margin-left: auto;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--white);
+  padding: 3px;
+}
+.view-switch button {
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--blue);
+  cursor: pointer;
+}
+.view-switch button:hover {
+  background: var(--blue-soft);
+}
+.view-switch button.is-active {
+  background: var(--blue);
+  color: var(--white);
+}
+.view-switch button:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 1px;
+}

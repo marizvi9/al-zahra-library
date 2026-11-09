@@ -26,8 +26,8 @@ Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC)
 
 ### Website (Next.js + TypeScript, static, no backend)
 - Home page with search and featured categories; one **Browse** page (`/browse/`) with shelf tabs
-  labelled number + subject (All shelves, 100 · Theology … No number); "All shelves" shows the big
-  subject cards with descriptions; subject descriptions on each shelf,
+  labelled number + subject (All shelves, 100 · Theology … No number); "All shelves" has a Cards / List
+  switch (big subject cards with descriptions, or shelf buttons + every book; remembered per device); subject descriptions on each shelf,
   section chips, a filter box, and a "Search this shelf" link (opens `/search/?category=…`);
   old `/categories/…` and `/shelves/…` links forward to it;
   instant search by title, author or category; a page per book with a "Find it on the shelf"

@@ -21,15 +21,15 @@ export default function BrowsePage() {
       <section className="page-head arch-band shelf-band" aria-labelledby="band-title">
         <h2 id="band-title">All shelves</h2>
         <p className="lede">
-          {books.length} books in {categories.length} subjects. Pick a subject to open its shelf, or type in the
-          filter to find books on every shelf.
+          {books.length} books in {categories.length} subjects. Choose <strong>Cards</strong> to see each subject
+          with its description, or <strong>List</strong> for shelf buttons and every book.
         </p>
       </section>
       <BrowseClient
         sections={sections}
         scope="all shelves"
         chipLabel="Shelves"
-        idle={
+        cards={
           // The big subject blocks from the old Browse page. Each opens its shelf.
           <ul className="card-grid browse-cards" aria-label="Subjects">
             {categories.map((c) => (
