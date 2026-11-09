@@ -2,6 +2,9 @@ import Link from "next/link";
 import Girih from "@/components/Girih";
 import SearchBox from "@/components/SearchBox";
 import CategoryCard from "@/components/CategoryCard";
+import FeaturedSlider from "@/components/FeaturedSlider";
+import { withBase } from "@/lib/paths";
+import { featuredSlides } from "@/lib/featured";
 import { books, featuredCategories, moreToExplore } from "@/lib/catalog";
 
 export default function HomePage() {
@@ -11,8 +14,20 @@ export default function HomePage() {
         <div className="hero-arch">
           <Girih className="girih-hero" />
           <div className="hero-content">
-            <p className="eyebrow">Islamic Education Center</p>
-            <h1 id="hero-title">Al-Zahra Library</h1>
+            <div className="hero-title-row">
+              {/* Logo placeholder: replace public/logos/al-zahra-logo.svg with the real logo. */}
+              <img
+                src={withBase("/logos/al-zahra-logo.svg")}
+                alt="Al-Zahra Library logo"
+                width={88}
+                height={88}
+                className="hero-logo"
+              />
+              <h1 id="hero-title">
+                Welcome to The <span className="nowrap">Al-Zahra</span> Library
+              </h1>
+            </div>
+            <p className="hero-sub">at the Islamic Education Center</p>
             <p className="hero-lede">
               Search {books.length} books on faith, history, law, thought and more.
             </p>
@@ -20,6 +35,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <div className="container section">
+        <FeaturedSlider slides={featuredSlides} />
+      </div>
 
       <section className="container section" aria-labelledby="featured-title">
         <div className="section-head">
