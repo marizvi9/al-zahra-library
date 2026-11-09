@@ -33,6 +33,10 @@ Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC)
 - Smooth page transitions, covers that glide from lists into book pages, a 3D "turn the
   book" cover gallery with swipe/arrow keys, and a full-screen viewer with pinch/scroll/click
   zoom. Motion is reduced if the visitor asks.
+- Home page: "Welcome to The Al-Zahra Library" heading with the logo placeholder, and a
+  **Featured books** slider (5 books). To swap a book, edit `data/featured-slider-books.json`,
+  run `node scripts/fetch_featured.mjs` (fetches its Google Books description), and rebuild.
+  The build stops with a clear message if a chosen book lacks an author, publisher, cover or description.
 - Search bar suggestions: after 2+ characters the home page bar shows up to 7 books (cover, title,
   author, category) with keyboard and screen-reader support. Its data is `/search-index.json`,
   built with the site and downloaded only when the bar is first used.
