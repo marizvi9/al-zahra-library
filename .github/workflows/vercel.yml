@@ -1,6 +1,9 @@
 # Deploys the site to Vercel automatically.
 #  - Pull request opened/updated  -> PREVIEW deploy + comment with the link
 #  - Push (or merge) to main      -> PRODUCTION deploy
+# The source code is sent to Vercel and Vercel builds the site there. (Sending the
+# ~5,250 built files instead ran into the free plan's 5,000-uploads-a-day limit;
+# the source is ~620 files, and only changed files are sent again.)
 name: Vercel Deploy
 
 on:
@@ -33,13 +36,10 @@ jobs:
       - name: Download Vercel project settings
         run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
 
-      - name: Build
-        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
-
-      - name: Deploy preview
+      - name: Deploy preview (Vercel builds it)
         id: deploy
         run: |
-          url=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})
+          url=$(vercel deploy --token=${{ secrets.VERCEL_TOKEN }})
           echo "url=$url" >> "$GITHUB_OUTPUT"
 
       - name: Comment preview link on the pull request
@@ -70,8 +70,5 @@ jobs:
       - name: Download Vercel project settings
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
 
-      - name: Build
-        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
-
-      - name: Deploy to production
-        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Deploy to production (Vercel builds it)
+        run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }}
