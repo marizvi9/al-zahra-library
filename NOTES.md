@@ -45,13 +45,18 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
   - Old addresses forward: `/categories/…` → `/explore/…`, `/explore/300/` → `/shelves/300/`.
 - **Authors data:** `data/authors.json` holds, for each author, the photo (Wikimedia Commons, free licences
   only, with credit + licence) and the short bio. Review list: `data/authors-report.md`.
-  - **Bios** appear only on the author's own page, and only when marked `"bioStatus": "verified"` (written by
-    hand from the linked sources and the books we hold). `"from our data only"` and `"needs review"` show just
-    the line built from the catalogue ("Author of 7 books in the Al-Zahra Islamic Library, in …").
-    To change or remove a bio, edit that author's `bio` / `bioStatus` and rebuild.
+  - **Bios** appear only on the author's own page, written in our own words (never copied), 1–3 sentences, and
+    checked against the books we hold. Source order: **WikiShia first** (`"bioStatus": "WikiShia"`, 46 authors); if
+    WikiShia has no article, Wikipedia or another reliable source (`"other source"`, 67). Sources are never mixed in
+    one bio. Each bio links its source under it. `"from our data only"` (291) and `"needs review"` (9: the three holy
+    figures, plus uncertain matches with a draft and a note) show just the catalogue line ("Author of 7 books…").
+    To approve a draft, change its `bioStatus` to `"WikiShia"` or `"other source"`; to change or remove a bio, edit
+    `bio` / `bioStatus` and rebuild. The review list (`data/authors-report.md`) shows needs-review first.
   - **Photos:** a small copy for lists and cards, and a large one (up to 640px, never enlarged) for the big
     portrait on the author's page. Each author's Wikipedia article is chosen by hand, then
-    `node scripts/fetch_author_photos.mjs` fetches the photos and licences. Authors with no photo get a
+    `node scripts/fetch_author_photos.mjs` fetches the photos and licences. A WikiShia photo is preferred when its
+    file page states a free licence (only Ali al-Sistani and Ali Khamenei so far, CC BY-SA 2.0; marked
+    `"photoSource": "WikiShia"` and never replaced by the script). Most WikiShia photos state no licence, so they're not used. Authors with no photo get a
     navy-and-gold initials badge (and a large initials panel on their page).
   - **Author pages** list the author's books large (`src/components/AuthorBooks.tsx`): big covers in a 3-column grid
     (2 on tablets, 1 on small phones), with title, category, shelf number and a link; one or two books get bigger cards.

@@ -8,8 +8,11 @@ import { bioFor } from "@/lib/authorPhotos";
 
 /** "https://en.wikipedia.org/wiki/Ali_Shariati" → "Wikipedia: Ali Shariati". */
 function sourceName(url: string) {
+  if (/wikishia\.net/.test(url)) return "WikiShia";
+  if (/britannica\.com/.test(url)) return "Encyclopaedia Britannica";
+  if (/iranicaonline\.org/.test(url)) return "Encyclopaedia Iranica";
   const m = /wikipedia\.org\/wiki\/(.+)$/.exec(url);
-  return m ? `Wikipedia: ${decodeURIComponent(m[1]).replace(/_/g, " ")}` : new URL(url).hostname;
+  return m ? `Wikipedia: ${decodeURIComponent(m[1]).replace(/_/g, " ")}` : new URL(url).hostname.replace(/^www\./, "");
 }
 import { authors, categories, getAuthor, spellingOn } from "@/lib/catalog";
 
