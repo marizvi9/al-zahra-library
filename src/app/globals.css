@@ -296,6 +296,59 @@ a:hover {
 .nav-list a[aria-current="page"] {
   box-shadow: inset 0 -3px 0 var(--gold);
 }
+/* "More" drop-down (holds Shelves). */
+.nav-more {
+  position: relative;
+}
+.nav-more-details > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  user-select: none;
+}
+.nav-more-details > summary::-webkit-details-marker {
+  display: none;
+}
+.nav-more-details > summary:hover,
+.nav-more-details[open] > summary {
+  background: var(--navy-soft);
+}
+.nav-more-details > summary[data-current] {
+  box-shadow: inset 0 -3px 0 var(--gold);
+}
+.nav-more-details > summary:focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 2px;
+}
+.nav-more-caret {
+  transition: rotate 0.2s ease;
+}
+.nav-more-details[open] .nav-more-caret {
+  rotate: 180deg;
+}
+.nav-more-list {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 40;
+  min-width: 170px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgb(4 20 46 / 16%);
+}
+.nav-more-list a {
+  white-space: nowrap;
+}
 /* The search bar takes the rest of the row, up to a comfortable width, at the right. */
 .header-search {
   flex: 1 1 260px;
@@ -384,6 +437,24 @@ a:hover {
   .header-inner[data-ready] .nav-list a[aria-current="page"] {
     box-shadow: inset 3px 0 0 var(--gold);
     background: var(--navy-soft);
+  }
+  .header-inner[data-ready] .nav-more-details > summary {
+    padding: 12px 14px;
+  }
+  .header-inner[data-ready] .nav-more-details > summary[data-current] {
+    box-shadow: inset 3px 0 0 var(--gold);
+    background: var(--navy-soft);
+  }
+  .header-inner[data-ready] .nav-more-list {
+    position: static;
+    min-width: 0;
+    margin: 2px 0 4px 14px;
+    padding: 0 0 0 8px;
+    border: 0;
+    border-left: 2px solid var(--line);
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
   }
   .header-inner:not([data-ready]) .main-nav {
     flex-basis: 100%;

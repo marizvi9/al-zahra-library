@@ -29,7 +29,8 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
 - Call numbers are `Cat # · Sub Cat #` (Book # is empty in the whole spreadsheet).
 
 ### Website (Next.js + TypeScript, static, no backend)
-- **Header:** one row — brand, then the tabs **Explore · Shelves · Authors**, then a search bar
+- **Header:** one row — brand, then the tabs **Explore · Authors · More ▾** (the "More" drop-down holds **Shelves**; add
+  more links in `MORE` in `src/components/MainNav.tsx`), then a search bar
   (`src/components/Header.tsx`). Under 1000px wide the search folds behind a 🔍 button; under 700px
   the tabs fold behind a **Menu** button. The home page and search results page have their own
   search boxes, so the header search is left out there.
