@@ -29,8 +29,10 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
 - Call numbers are `Cat # · Sub Cat #` (Book # is empty in the whole spreadsheet).
 
 ### Website (Next.js + TypeScript, static, no backend)
-- **Menu:** **Explore** (all categories) and **More ▾** (Shelves, Authors). A search bar sits at the
-  top of every page except the home page and the search results page.
+- **Header:** one row — brand, then the tabs **Explore · Shelves · Authors**, then a search bar
+  (`src/components/Header.tsx`). Under 1000px wide the search folds behind a 🔍 button; under 700px
+  the tabs fold behind a **Menu** button. The home page and search results page have their own
+  search boxes, so the header search is left out there.
   - **Explore** (`/explore/`): a card per category with its cover artwork and one-line description,
     then a page per category (`/explore/fiqh/`) and sub-category (`/explore/fiqh/worship/`).
     Descriptions and display spellings (e.g. "Ahlul-Bayt") are in `src/lib/categoryInfo.ts`;
