@@ -16,8 +16,7 @@ export default function PhotoCreditsPage() {
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Authors", href: "/authors/" }, { label: "Photo credits" }]} />
       <h1>Author photo credits</h1>
       <p className="lede">
-        The {list.length} author photos on this site come from Wikimedia Commons{fromWs > 0 && ` (and ${fromWs} from WikiShia)`}, each under a free licence that
-        allows reuse with credit. Authors without a verified photo are shown with their initials.
+        The {list.length} author photos on this site come from Wikimedia Commons, each under a free licence that allows reuse with credit,{fromWs > 0 && ` and from WikiShia (${fromWs}), whose copyright policy allows reuse with the source credited`}. Authors without a verified photo are shown with their initials.
       </p>
       <ul className="credit-list">
         {list.map(({ name, photo }) => (
@@ -35,7 +34,12 @@ export default function PhotoCreditsPage() {
                 ) : (
                   photo.license
                 )}{" "}
-                · <a href={photo.wikipediaUrl} rel="noopener">Wikipedia</a>
+                {photo.wikipediaUrl && (
+                  <>
+                    {" "}
+                    · <a href={photo.wikipediaUrl} rel="noopener">Wikipedia</a>
+                  </>
+                )}
               </span>
             </div>
           </li>

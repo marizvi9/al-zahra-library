@@ -29,7 +29,8 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
 - Call numbers are `Cat # · Sub Cat #` (Book # is empty in the whole spreadsheet).
 
 ### Website (Next.js + TypeScript, static, no backend)
-- **Header:** one row — brand, then the tabs **Explore · Shelves · Authors**, then a search bar
+- **Header:** one row — brand, then the tabs **Explore · Authors · More ▾** (the "More" drop-down holds **Shelves**; add
+  more links in `MORE` in `src/components/MainNav.tsx`), then a search bar
   (`src/components/Header.tsx`). Under 1000px wide the search folds behind a 🔍 button; under 700px
   the tabs fold behind a **Menu** button. The home page and search results page have their own
   search boxes, so the header search is left out there.
@@ -54,9 +55,11 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
     `bio` / `bioStatus` and rebuild. The review list (`data/authors-report.md`) shows needs-review first.
   - **Photos:** a small copy for lists and cards, and a large one (up to 640px, never enlarged) for the big
     portrait on the author's page. Each author's Wikipedia article is chosen by hand, then
-    `node scripts/fetch_author_photos.mjs` fetches the photos and licences. A WikiShia photo is preferred when its
-    file page states a free licence (only Ali al-Sistani and Ali Khamenei so far, CC BY-SA 2.0; marked
-    `"photoSource": "WikiShia"` and never replaced by the script). Most WikiShia photos state no licence, so they're not used. Authors with no photo get a
+    `node scripts/fetch_author_photos.mjs` fetches the photos and licences. A WikiShia photo is used instead whenever WikiShia has a
+    real portrait (34 authors, marked `"photoSource": "WikiShia"`, never replaced by the script). Most of these state no licence;
+    WikiShia's copyright policy allows reuse with the source credited, and each is credited "Photo: WikiShia, used with credit".
+    Kept from Wikimedia: Mutahhari, Iqbal and Madelung (WikiShia's are tiny or far away). Majlisi and Nasir al-Din Tusi have
+    painted portraits (no photos of them exist). Authors with no photo get a
     navy-and-gold initials badge (and a large initials panel on their page).
   - **Author pages** list the author's books large (`src/components/AuthorBooks.tsx`): big covers in a 3-column grid
     (2 on tablets, 1 on small phones), with title, category, shelf number and a link; one or two books get bigger cards.

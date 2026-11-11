@@ -42,16 +42,18 @@ export default function HomePage() {
           <Girih className="girih-hero" />
           <div className="hero-content">
             <Emblem className="hero-emblem" />
-            <h1 id="hero-title">
-              Welcome to the <span className="nowrap">Al-Zahra</span> Islamic Library
-            </h1>
-            <p className="hero-sub">at the Islamic Education Center of Houston</p>
-            <Ornament className="hero-ornament" />
-            <p className="hero-lede">
-              We&rsquo;re glad you&rsquo;re here. Explore {books.length} books on faith, history, law, thought
-              and more.
-            </p>
-            <SearchBox large />
+            <div className="hero-text">
+              <h1 id="hero-title">
+                Welcome to the <span className="nowrap">Al-Zahra</span> Islamic Library
+              </h1>
+              <p className="hero-sub">at the Islamic Education Center of Houston</p>
+              <Ornament className="hero-ornament" />
+              <p className="hero-lede">
+                We&rsquo;re glad you&rsquo;re here. Explore {books.length} books on faith, history, law, thought
+                and more.
+              </p>
+              <SearchBox large />
+            </div>
           </div>
         </div>
       </section>

@@ -184,6 +184,12 @@ export default function FeaturedSlider({ slides }: { slides: FeaturedSlide[] }) 
                   <span className="slide-desc" dir="auto">
                     {s.description}
                   </span>
+                  <span className="slide-source">
+                    Description from{" "}
+                    <a href={SOURCE_LINKS[s.descriptionSource] ?? "#"} target="_blank" rel="noopener noreferrer">
+                      {s.descriptionSource}
+                    </a>
+                  </span>
                   <span className="slide-more" aria-hidden="true">
                     View book details <span>→</span>
                   </span>
@@ -216,18 +222,6 @@ export default function FeaturedSlider({ slides }: { slides: FeaturedSlide[] }) 
         </ul>
       )}
 
-      <p className="slider-credit small muted">
-        Descriptions from{" "}
-        {[...new Set(slides.map((s) => s.descriptionSource))].map((src, i, all) => (
-          <span key={src}>
-            {i > 0 ? (i === all.length - 1 ? " and " : ", ") : ""}
-            <a href={SOURCE_LINKS[src] ?? "#"} target="_blank" rel="noopener noreferrer">
-              {src}
-            </a>
-          </span>
-        ))}
-        .
-      </p>
     </section>
   );
 }
