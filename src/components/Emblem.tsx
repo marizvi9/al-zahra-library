@@ -5,7 +5,7 @@
 //   <Emblem />      the full emblem: arc lettering, flower, stars, AL-ZAHRA, IEC-HOUSTON
 //
 // The flower is traced from the original artwork (stroke centre-lines). The lettering
-// uses Montserrat, which is close to the emblem's typeface.
+// uses IBM Plex Sans Arabic (the site's sans-serif), a clean geometric face close to the emblem's own.
 
 const GOLD = "#ac8521";
 const NAVY = "#04142e";
@@ -86,7 +86,7 @@ export function Emblem({ className = "", animated = false, title = "Al-Zahra Isl
               y="166"
               textAnchor="middle"
               fill={NAVY}
-              fontFamily="var(--font-brand), Montserrat, sans-serif"
+              fontFamily="var(--font-brand), sans-serif"
               fontWeight="500"
               fontSize="98"
               className="em-letter"
@@ -106,12 +106,12 @@ export function Emblem({ className = "", animated = false, title = "Al-Zahra Isl
         <FlowerStrokes className="em-flower" />
       </g>
       <g className="em-name">
-        <text x="705" y="962" textAnchor="middle" fill={NAVY} fontFamily="var(--font-brand), Montserrat, sans-serif" fontWeight="600" fontSize="172" textLength="980" lengthAdjust="spacingAndGlyphs">
+        <text x="705" y="962" textAnchor="middle" fill={NAVY} fontFamily="var(--font-brand), sans-serif" fontWeight="600" fontSize="172" textLength="980" lengthAdjust="spacingAndGlyphs">
           AL-ZAHRA
         </text>
       </g>
       <g className="em-place">
-        <text x="705" y="1076" textAnchor="middle" fill={GOLD} fontFamily="var(--font-brand), Montserrat, sans-serif" fontWeight="500" fontSize="62" letterSpacing="9">
+        <text x="705" y="1076" textAnchor="middle" fill={GOLD} fontFamily="var(--font-brand), sans-serif" fontWeight="500" fontSize="62" letterSpacing="9">
           IEC-HOUSTON
         </text>
       </g>

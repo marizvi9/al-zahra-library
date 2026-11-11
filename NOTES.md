@@ -72,7 +72,9 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
 - Design: parchment, deep navy and antique gold from the emblem; light girih pattern (bolder in the welcome
   arch, quieter and more spaced on the rest of the page); small gold star dividers between home sections and an
   arched top edge on the footer, so there are no hard lines;
-  Noto fonts (incl. Arabic) and Montserrat for the emblem lettering; right-to-left support,
+  two fonts only, self-hosted with next/font: **Literata** (headings and reading text, 17px on phones / 18px on
+  wider screens, line height 1.65, lines kept under ~72 characters) and **IBM Plex Sans Arabic** (menus,
+  buttons, labels, the emblem lettering, and every Arabic/Persian/Urdu letter); right-to-left support,
   mobile-first and keyboard accessible.
 - Smooth page transitions, covers that glide from lists into book pages, a 3D "turn the
   book" cover gallery with swipe/arrow keys, and a full-screen viewer with pinch/scroll/click

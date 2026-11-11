@@ -28,8 +28,13 @@
   --shadow: 0 1px 2px rgb(4 20 46 / 6%), 0 4px 14px rgb(4 20 46 / 5%);
   --gutter: 16px;
 
-  --font-body: var(--font-sans), var(--font-arabic), system-ui, sans-serif;
-  --font-head: var(--font-serif), var(--font-arabic), Georgia, serif;
+  /* Two families only (loaded in layout.tsx). Arabic-script letters in any text are drawn by
+     IBM Plex Sans Arabic, because Literata has none and the browser falls through to it. */
+  --font-body: var(--font-serif), var(--font-sans), Georgia, serif;   /* reading text */
+  --font-head: var(--font-serif), var(--font-sans), Georgia, serif;   /* headings */
+  --font-ui: var(--font-sans), system-ui, sans-serif;                 /* menus, buttons, labels */
+  --font-arabic: var(--font-sans);
+  --font-brand: var(--font-sans);                                     /* emblem lettering */
 }
 
 *,
@@ -47,8 +52,9 @@ body {
   background: var(--pattern) center top / 128px 128px repeat, var(--cream);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 1.0625rem;
-  line-height: 1.6;
+  font-size: 1.0625rem; /* 17px on phones, 18px on wider screens (below) */
+  line-height: 1.65;
+  font-optical-sizing: auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -61,7 +67,49 @@ main {
   background: radial-gradient(ellipse min(1100px, 120%) 340px at 50% 0, rgb(248 243 230 / 0.8), transparent 72%) no-repeat;
 }
 
-/* Arabic text (if any appears) gets the Naskh font and a little more height. */
+/* Larger reading text on wider screens, and paragraphs kept to a comfortable line length. */
+@media (min-width: 900px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+p {
+  max-width: 72ch;
+}
+
+/* Small interface text (menus, buttons, labels, chips) uses the clean sans-serif. */
+button,
+input,
+select,
+textarea,
+label,
+.nav-list,
+.header-btn,
+.skip-link,
+.eyebrow,
+.see-all,
+.chip,
+.chip-count,
+.scope-option,
+.call-badge,
+.status,
+.status-text,
+.tag,
+.shelf-tab,
+.shelf-chip,
+.set-vol,
+.slide-cat,
+.slide-more,
+.slider-head button,
+.book-row-cat,
+.suggest-cat,
+.recent-link,
+.details dt,
+.small {
+  font-family: var(--font-ui);
+}
+
+/* Arabic text (if any appears) gets the Arabic-script font and a little more height. */
 :lang(ar),
 [dir="rtl"] {
   font-family: var(--font-arabic), var(--font-body);
@@ -268,6 +316,7 @@ a:hover {
   background: var(--card);
   color: var(--navy);
   font: inherit;
+  font-family: var(--font-ui);
   font-weight: 600;
   cursor: pointer;
 }
@@ -432,6 +481,7 @@ a:hover {
   flex: 1;
   min-width: 0;
   font: inherit;
+  font-family: var(--font-ui);
   padding: 12px 14px;
   border: 2px solid var(--line);
   border-radius: 12px;
@@ -446,6 +496,7 @@ a:hover {
 .search-box > button,
 .button-secondary {
   font: inherit;
+  font-family: var(--font-ui);
   font-weight: 600;
   padding: 12px 18px;
   border-radius: 12px;
@@ -632,6 +683,7 @@ a:hover {
   background: var(--card);
   color: var(--text);
   font: inherit;
+  font-family: var(--font-ui);
   font-size: 0.95rem;
   text-decoration: none;
   cursor: pointer;
@@ -890,7 +942,7 @@ a:hover {
 }
 .shelf-card h2 {
   font-size: 1rem;
-  font-family: var(--font-body);
+  font-family: var(--font-ui);
   margin-bottom: 4px;
 }
 .shelf-card p:last-child {
@@ -1414,6 +1466,7 @@ button:active,
 }
 .close-btn {
   font: inherit;
+  font-family: var(--font-ui);
   font-weight: 600;
   padding: 10px 18px;
   border-radius: 999px;
@@ -1582,6 +1635,7 @@ button:active,
   top: 16px;
   right: 16px;
   font: inherit;
+  font-family: var(--font-ui);
   font-weight: 600;
   padding: 8px 18px;
   border-radius: 999px;
@@ -1813,6 +1867,7 @@ button:active,
 .recent-clear,
 .recent-remove {
   font: inherit;
+  font-family: var(--font-ui);
   background: none;
   border: 0;
   cursor: pointer;
@@ -1896,6 +1951,7 @@ button:active,
 }
 .recent-chip button {
   font: inherit;
+  font-family: var(--font-ui);
   background: none;
   border: 0;
   cursor: pointer;
@@ -2402,6 +2458,7 @@ button:active,
 }
 .slider-pause {
   font: inherit;
+  font-family: var(--font-ui);
   font-size: 0.9rem;
   font-weight: 600;
   padding: 6px 14px;
@@ -2618,7 +2675,7 @@ button:active,
 
 /* ---------- Browse page ---------- */
 .shelf-tab-all .shelf-tab-no {
-  font-family: var(--font-body);
+  font-family: var(--font-ui);
   font-size: 0.95rem;
 }
 .browse .filter-row {
@@ -2712,7 +2769,7 @@ button:active,
 }
 .shelf-band-no {
   color: var(--gold-text);
-  font-family: var(--font-body);
+  font-family: var(--font-ui);
   font-size: 0.7em;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -2743,6 +2800,7 @@ button:active,
   flex: 1;
   min-width: 0;
   font: inherit;
+  font-family: var(--font-ui);
   padding: 11px 14px;
   border: 2px solid var(--line);
   border-radius: 12px;
@@ -2786,6 +2844,7 @@ button:active,
 }
 .link-button {
   font: inherit;
+  font-family: var(--font-ui);
   padding: 0;
   border: 0;
   background: none;
@@ -2812,6 +2871,7 @@ button:active,
   padding: 12px 14px;
   text-align: left;
   font: inherit;
+  font-family: var(--font-ui);
   color: var(--text);
   background: var(--card);
   border: 1px solid var(--line);
