@@ -43,13 +43,19 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
   - **Authors** (`/authors/`): everyone with 2+ books, A to Z, each with a page listing their books.
     Spellings of one person are grouped by `data/author-names.json` (please check it).
   - Old addresses forward: `/categories/…` → `/explore/…`, `/explore/300/` → `/shelves/300/`.
-- **Author photos:** 61 authors have a photo, from Wikimedia Commons under free licences, with a
-  credit + licence line beside it and a full list at `/authors/photo-credits/`. Everyone else gets a
-  navy-and-gold initials badge. The data is `data/author-photos.json` (delete an entry to remove a photo);
-  each author's Wikipedia article is chosen by hand, then `node scripts/fetch_author_photos.mjs` fetches the
-  photo and licence. Review list: `data/author-photos-report.md`. The Prophet, the Imams, Lady Fatima and
-  other holy figures (including books attributed to them) never get a picture, and are never looked up;
-  `src/lib/authorPhotos.ts` enforces this.
+- **Authors data:** `data/authors.json` holds, for each author, the photo (Wikimedia Commons, free licences
+  only, with credit + licence) and the short bio. Review list: `data/authors-report.md`.
+  - **Bios** appear only on the author's own page, and only when marked `"bioStatus": "verified"` (written by
+    hand from the linked sources and the books we hold). `"from our data only"` and `"needs review"` show just
+    the line built from the catalogue ("Author of 7 books in the Al-Zahra Islamic Library, in …").
+    To change or remove a bio, edit that author's `bio` / `bioStatus` and rebuild.
+  - **Photos:** a small copy for lists and cards, and a large one (up to 640px, never enlarged) for the big
+    portrait on the author's page. Each author's Wikipedia article is chosen by hand, then
+    `node scripts/fetch_author_photos.mjs` fetches the photos and licences. Authors with no photo get a
+    navy-and-gold initials badge (and a large initials panel on their page).
+  - The Prophet, the Imams, Lady Fatima and other holy figures (including books attributed to them) never get a
+    picture and are never looked up (`src/lib/authorPhotos.ts` enforces this); their bios are left for you to write.
+  - A catalogue cell naming several people (e.g. "A, B, C") gets no author page.
 - Instant search by title, author or category; a page per book with a "Find it on the shelf"
   call-number box, and the author linked to their page.
 - **Recent searches:** the last 6, kept only in the visitor's own browser (`src/lib/recentSearches.ts`),

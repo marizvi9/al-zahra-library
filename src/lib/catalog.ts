@@ -360,6 +360,8 @@ export const authors: Author[] = (() => {
   const groups = new Map<string, Book[]>();
   for (const b of books) {
     if (!b.author || b.titleMissing) continue;
+    // A cell naming several people ("A, B, C" or "A; B") is not one author, so it gets no page.
+    if (/[,;]/.test(b.author) && !nameFor.has(b.author)) continue;
     const name = nameFor.get(b.author) ?? b.author;
     if (!groups.has(name)) groups.set(name, []);
     groups.get(name)!.push(b);

@@ -1,10 +1,10 @@
 {
   "_help": [
-    "Author photos. Each entry: the author's name as shown on the site -> the Wikipedia article that is clearly the same person, and the photo details.",
-    "Photos come ONLY from Wikimedia Commons, under a free licence (public domain, CC0, CC BY or CC BY-SA), and each one is shown with its credit and licence.",
-    "To REMOVE a photo: delete that author's entry (or set \"photo\": null) and rebuild. To ADD one: add the name and its Wikipedia article title, then run: node scripts/fetch_author_photos.mjs",
-    "Authors with no entry get a navy-and-gold badge with their initials.",
-    "neverPhoto: the Prophet, the Imams, Lady Fatima and other members of the Ahlul-Bayt and holy figures, including books attributed to them. They NEVER get a photo or any picture, and are never searched for. The site enforces this even if a photo is added by mistake."
+    "One entry per author, keyed by the name shown on the site (spelling variants are merged in author-names.json).",
+    "BIOS (shown ONLY on the author's own page): \"bio\" is 1-2 sentences written by hand from the sources in \"bioSources\" and the books we hold. \"bioStatus\" is one of: \"verified\" (shown), \"from our data only\" (no bio; the page shows only the line built from the catalogue), \"needs review\" (nothing shown until you approve: copy \"draftBio\" into \"bio\", or write your own, and set \"bioStatus\" to \"verified\"). To remove a bio, set \"bio\": null and \"bioStatus\": \"from our data only\".",
+    "PHOTOS come ONLY from Wikimedia Commons, under a free licence (public domain, CC0, CC BY or CC BY-SA), and each is shown with its credit and licence. \"photo\" is the small copy (lists, cards); \"photoLarge\" the big portrait on the author's page (never enlarged; \"lowRes\": true means the original is under 480px wide). To REMOVE a photo set \"photo\": null and rebuild. To ADD one, put the Wikipedia article title in \"wikipedia\", then run: node scripts/fetch_author_photos.mjs",
+    "Authors with no photo get a navy-and-gold badge with their initials.",
+    "neverPhoto: the Prophet, the Imams, Lady Fatima and other members of the Ahlul-Bayt and holy figures, including books attributed to them. They NEVER get a photo or any picture, and are never searched for. The site enforces this even if a photo is added by mistake. Their bios are left for you to write."
   ],
   "neverPhoto": [
     "Imam Ali Amir al-Mum'minin",
@@ -26,7 +26,18 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Morteza Motahhari - probably in the 1940s",
-      "photo": "/authors/murtaza-mutahhari.jpg"
+      "photo": "/authors/murtaza-mutahhari.jpg",
+      "photoLarge": "/authors/large/murtaza-mutahhari.webp",
+      "largeWidth": 640,
+      "largeHeight": 789,
+      "lowRes": false,
+      "originalWidth": 821,
+      "originalHeight": 1012,
+      "bioStatus": "verified",
+      "bio": "Iranian Shia scholar, philosopher and lecturer (1919–1979). He wrote widely on Islamic thought, society and ethics, and was a student of Imam Khomeini.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Morteza_Motahhari"
+      ]
     },
     "Ali Shariati": {
       "wikipedia": "Ali Shariati",
@@ -38,7 +49,18 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Dr. Ali Shariati",
-      "photo": "/authors/ali-shariati.jpg"
+      "photo": "/authors/ali-shariati.jpg",
+      "photoLarge": "/authors/large/ali-shariati.webp",
+      "largeWidth": 640,
+      "largeHeight": 837,
+      "lowRes": false,
+      "originalWidth": 1260,
+      "originalHeight": 1647,
+      "bioStatus": "verified",
+      "bio": "Iranian sociologist and writer (1933–1977) who specialised in the sociology of religion and wrote and lectured widely on Islam and society.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Ali_Shariati"
+      ]
     },
     "Muhammad Baqir al-Sadr": {
       "wikipedia": "Muhammad Baqir al-Sadr",
@@ -50,7 +72,18 @@
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "imageDescription": "محمد باقر الصدر في منزله",
-      "photo": "/authors/muhammad-baqir-al-sadr.jpg"
+      "photo": "/authors/muhammad-baqir-al-sadr.jpg",
+      "photoLarge": "/authors/large/muhammad-baqir-al-sadr.webp",
+      "largeWidth": 623,
+      "largeHeight": 850,
+      "lowRes": false,
+      "originalWidth": 623,
+      "originalHeight": 850,
+      "bioStatus": "verified",
+      "bio": "Iraqi Islamic scholar and philosopher (1935–1980). His books include Our Philosophy and Our Economics (Iqtisaduna), both held by the library.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Muhammad_Baqir_al-Sadr"
+      ]
     },
     "Muhammad Husayn Tabatabai": {
       "wikipedia": "Muhammad Husayn Tabatabai",
@@ -62,7 +95,18 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Muhammad Husayn Tabataba'i - 1940s",
-      "photo": "/authors/muhammad-husayn-tabatabai.jpg"
+      "photo": "/authors/muhammad-husayn-tabatabai.jpg",
+      "photoLarge": "/authors/large/muhammad-husayn-tabatabai.webp",
+      "largeWidth": 640,
+      "largeHeight": 898,
+      "lowRes": false,
+      "originalWidth": 842,
+      "originalHeight": 1182,
+      "bioStatus": "verified",
+      "bio": "Iranian scholar and philosopher (1903–1981), commonly known as Allamah Tabataba'i. He is best known for Tafsir al-Mizan, a commentary on the Quran in many volumes.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Muhammad_Husayn_Tabataba%27i"
+      ]
     },
     "Imam Khomeini": {
       "wikipedia": "Ruhollah Khomeini",
@@ -74,7 +118,18 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Ruhollah Khomeini",
-      "photo": "/authors/imam-khomeini.jpg"
+      "photo": "/authors/imam-khomeini.jpg",
+      "photoLarge": "/authors/large/imam-khomeini.webp",
+      "largeWidth": 640,
+      "largeHeight": 960,
+      "lowRes": false,
+      "originalWidth": 1667,
+      "originalHeight": 2500,
+      "bioStatus": "verified",
+      "bio": "Iranian Shia cleric (1900–1989) who led the Iranian Revolution of 1979 and was the first Supreme Leader of Iran until his death.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Ruhollah_Khomeini"
+      ]
     },
     "Ali Khamenei": {
       "wikipedia": "Ali Khamenei",
@@ -86,7 +141,18 @@
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "imageDescription": "Ali Khamenei, Supreme Leader of Iran",
-      "photo": "/authors/ali-khamenei.jpg"
+      "photo": "/authors/ali-khamenei.jpg",
+      "photoLarge": "/authors/large/ali-khamenei.webp",
+      "largeWidth": 640,
+      "largeHeight": 851,
+      "lowRes": false,
+      "originalWidth": 1560,
+      "originalHeight": 2073,
+      "bioStatus": "verified",
+      "bio": "Iranian Shia cleric (1939–2026) who was President of Iran from 1981 to 1989 and then its Supreme Leader from 1989 until his death.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Ali_Khamenei"
+      ]
     },
     "Seyyed Hossein Nasr": {
       "wikipedia": "Seyyed Hossein Nasr",
@@ -98,14 +164,30 @@
       "license": "CC BY 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
       "imageDescription": "Hossein Nasr at the Massachusetts Institute of Technology on October 1, 2007.",
-      "photo": "/authors/seyyed-hossein-nasr.jpg"
+      "photo": "/authors/seyyed-hossein-nasr.jpg",
+      "photoLarge": "/authors/large/seyyed-hossein-nasr.webp",
+      "largeWidth": 640,
+      "largeHeight": 793,
+      "lowRes": false,
+      "originalWidth": 775,
+      "originalHeight": 960,
+      "bioStatus": "verified",
+      "bio": "Iranian-American philosopher and scholar of Islam, born in 1933, and University Professor of Islamic studies at George Washington University. He writes on Islamic philosophy, spirituality and the history of science.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Seyyed_Hossein_Nasr"
+      ]
     },
     "Ahmed Deedat": {
       "wikipedia": "Ahmed Deedat",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Ahmed_Deedat",
       "description": "South African–Indian Islamic orator and author (1918–2005)",
+      "photo": null,
       "skipped": "not a photo file (image/svg+xml)",
-      "photo": null
+      "bioStatus": "verified",
+      "bio": "Indian-born South African author and speaker on comparative religion (1918–2005), known for his public debates and booklets on Islam and Christianity.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Ahmed_Deedat"
+      ]
     },
     "Muhammad Taqi Misbah Yazdi": {
       "wikipedia": "Mohammad-Taqi Mesbah-Yazdi",
@@ -117,7 +199,18 @@
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "imageDescription": "Mohammad Taqi Mesbah-Yazdi",
-      "photo": "/authors/muhammad-taqi-misbah-yazdi.jpg"
+      "photo": "/authors/muhammad-taqi-misbah-yazdi.jpg",
+      "photoLarge": "/authors/large/muhammad-taqi-misbah-yazdi.webp",
+      "largeWidth": 640,
+      "largeHeight": 960,
+      "lowRes": false,
+      "originalWidth": 2975,
+      "originalHeight": 4462,
+      "bioStatus": "verified",
+      "bio": "Iranian Shia scholar and philosopher (1935–2021) and a member of Iran's Assembly of Experts. His books cover philosophy, belief and self-improvement.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Mohammad-Taqi_Mesbah-Yazdi"
+      ]
     },
     "Muhammad Husayni Beheshti": {
       "wikipedia": "Mohammad Beheshti",
@@ -129,7 +222,18 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Mohammad Beheshti",
-      "photo": "/authors/muhammad-husayni-beheshti.jpg"
+      "photo": "/authors/muhammad-husayni-beheshti.jpg",
+      "photoLarge": "/authors/large/muhammad-husayni-beheshti.webp",
+      "largeWidth": 222,
+      "largeHeight": 333,
+      "lowRes": true,
+      "originalWidth": 222,
+      "originalHeight": 333,
+      "bioStatus": "verified",
+      "bio": "Iranian jurist, cleric and politician (1928–1981), considered the main architect of Iran's constitution after the 1979 revolution.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Mohammad_Beheshti"
+      ]
     },
     "Mehdi Bazargan": {
       "wikipedia": "Mehdi Bazargan",
@@ -141,7 +245,18 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Mehdi Bazargan Portrait",
-      "photo": "/authors/mehdi-bazargan.jpg"
+      "photo": "/authors/mehdi-bazargan.jpg",
+      "photoLarge": "/authors/large/mehdi-bazargan.webp",
+      "largeWidth": 640,
+      "largeHeight": 991,
+      "lowRes": false,
+      "originalWidth": 1180,
+      "originalHeight": 1828,
+      "bioStatus": "verified",
+      "bio": "Iranian engineer, scholar and politician (1907–1995) who headed Iran's interim government after the 1979 revolution.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Mehdi_Bazargan"
+      ]
     },
     "Ali al-Sistani": {
       "wikipedia": "Ali al-Sistani",
@@ -153,7 +268,18 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Ali al-Sistani",
-      "photo": "/authors/ali-al-sistani.jpg"
+      "photo": "/authors/ali-al-sistani.jpg",
+      "photoLarge": "/authors/large/ali-al-sistani.webp",
+      "largeWidth": 640,
+      "largeHeight": 849,
+      "lowRes": false,
+      "originalWidth": 1000,
+      "originalHeight": 1327,
+      "bioStatus": "verified",
+      "bio": "Grand Ayatollah and Islamic scholar, born in Mashhad, Iran, in 1930, who leads the seminary (hawza) of Najaf, Iraq. He is one of the leading religious authorities of Twelver Shia Muslims.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Ali_al-Sistani"
+      ]
     },
     "Nasir Makarim Shirazi": {
       "wikipedia": "Naser Makarem Shirazi",
@@ -165,26 +291,55 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "imageDescription": "He was born in the city of Shiraz, Iran. His ancestors were Iranian Jews who converted to Shia Islam. He finished his school in Shiraz. He started his formal Is",
-      "photo": "/authors/nasir-makarim-shirazi.jpg"
+      "photo": "/authors/nasir-makarim-shirazi.jpg",
+      "photoLarge": "/authors/large/nasir-makarim-shirazi.webp",
+      "largeWidth": 640,
+      "largeHeight": 960,
+      "lowRes": false,
+      "originalWidth": 3000,
+      "originalHeight": 4500,
+      "bioStatus": "verified",
+      "bio": "Iranian Grand Ayatollah and Shia religious leader, born in 1927. His books in the library explain the principles of belief.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Naser_Makarem_Shirazi"
+      ]
     },
     "Kalim Siddiqui": {
-      "wikipedia": null,
+      "wikipedia": "Kalim Siddiqui (writer)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Kalim_Siddiqui_(writer)",
+      "description": "Pakistani British writer and Islamic extremist leader (1931–1996)",
       "photo": null,
-      "skipped": "checked by hand: the article 'Kalim Siddiqui' is about a different person (Kaleem Siddiqui, b. 1957); our author is Dr Kalim Siddiqui of London (1931–1996)"
+      "skipped": "the article has no free main image",
+      "bioStatus": "verified",
+      "bio": "Pakistani-British writer and activist (1931–1996) who directed the Muslim Institute in London. His Issues in the Islamic Movement series is in the library.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Kalim_Siddiqui_(writer)",
+        "https://en.wikipedia.org/wiki/Institute_of_Contemporary_Islamic_Thought"
+      ]
     },
     "Maryam Jameelah": {
       "wikipedia": "Maryam Jameelah",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Maryam_Jameelah",
       "description": "American-Pakistani author on Islam (1934–2012)",
+      "photo": null,
       "skipped": "the article has no free main image",
-      "photo": null
+      "bioStatus": "verified",
+      "bio": "American-born Pakistani author (1934–2012) of more than thirty books on Islamic culture and history, known for her writing about the West. Born in New York, she embraced Islam in 1961.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Maryam_Jameelah"
+      ]
     },
     "Jamal Badawi": {
       "wikipedia": "Jamal Badawi",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Jamal_Badawi",
       "description": "Egyptian-Canadian author, preacher and speaker on Islam",
+      "photo": null,
       "skipped": "the article has no free main image",
-      "photo": null
+      "bioStatus": "verified",
+      "bio": "Egyptian-Canadian author, preacher and speaker on Islam.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Jamal_Badawi"
+      ]
     },
     "Khurram Murad": {
       "wikipedia": "Khurram Murad",
@@ -196,28 +351,54 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "imageDescription": "KM-Wikipedia picture",
-      "photo": "/authors/khurram-murad.jpg"
+      "photo": "/authors/khurram-murad.jpg",
+      "photoLarge": "/authors/large/khurram-murad.webp",
+      "largeWidth": 640,
+      "largeHeight": 679,
+      "lowRes": false,
+      "originalWidth": 1248,
+      "originalHeight": 1325,
+      "bioStatus": "verified",
+      "bio": "Pakistani scholar of Islam (1932–1996). His books in the library include Da'wah among Non-Muslims in the West.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Khurram_Murad"
+      ]
     },
     "Muhammad Hamidullah": {
       "wikipedia": "Muhammad Hamidullah",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Muhammad_Hamidullah",
       "description": "Indian Islamic scholar (1908–2002)",
+      "photo": null,
       "skipped": "the article has no free main image",
-      "photo": null
+      "bioStatus": "verified",
+      "bio": "Islamic scholar from Hyderabad, India (1908–2002), who wrote dozens of books and hundreds of articles on Islamic science, history and culture.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Muhammad_Hamidullah"
+      ]
     },
     "Dr. Muhammad al-Tijani al-Samawi": {
       "wikipedia": "Muhammad al-Tijani",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Muhammad_al-Tijani",
       "description": "Tunisian Shia Scholar",
+      "photo": null,
       "skipped": "licence not accepted: GFDL 1.2",
-      "photo": null
+      "bioStatus": "verified",
+      "bio": "Tunisian scholar and author, born in 1943, known for books such as Then I Was Guided, which describe his move from Sunni to Twelver Shia Islam.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Muhammad_al-Tijani"
+      ]
     },
     "Sayyid Saeed Akhtar Rizvi": {
       "wikipedia": "Saeed Akhtar Rizvi",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Sa'id_Akhtar_Rizvi",
       "description": "",
+      "photo": null,
       "skipped": "the article has no free main image",
-      "photo": null
+      "bioStatus": "verified",
+      "bio": "Indian-born Twelver Shia scholar (1927–2002) who founded the Bilal Muslim Mission in East Africa. He wrote more than 140 books.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Sa%27id_Akhtar_Rizvi"
+      ]
     },
     "Sayyid Mujtaba Musavi Lari": {
       "wikipedia": "Mujtaba Musavi Lari",
@@ -229,7 +410,18 @@
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "imageDescription": "Mujtaba Musavi Lari",
-      "photo": "/authors/sayyid-mujtaba-musavi-lari.jpg"
+      "photo": "/authors/sayyid-mujtaba-musavi-lari.jpg",
+      "photoLarge": "/authors/large/sayyid-mujtaba-musavi-lari.webp",
+      "largeWidth": 640,
+      "largeHeight": 959,
+      "lowRes": false,
+      "originalWidth": 942,
+      "originalHeight": 1412,
+      "bioStatus": "verified",
+      "bio": "Shia scholar (1925–2013) known for his books explaining Islamic beliefs, including the Lessons on Islamic Doctrine series.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Mujtaba_Musavi_Lari"
+      ]
     },
     "Ibrahim Amini": {
       "wikipedia": "Ebrahim Amini",
@@ -241,21 +433,42 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "imageDescription": "Ebrahim Amini (born 30 June 1925 in Najaf Abad, Isfahan Province, Iran) is an Iranian politician in the Assembly of Experts. He is also a member of the Expedien",
-      "photo": "/authors/ibrahim-amini.jpg"
+      "photo": "/authors/ibrahim-amini.jpg",
+      "photoLarge": "/authors/large/ibrahim-amini.webp",
+      "largeWidth": 640,
+      "largeHeight": 960,
+      "lowRes": false,
+      "originalWidth": 2000,
+      "originalHeight": 3000,
+      "bioStatus": "verified",
+      "bio": "Iranian ayatollah and jurist (1925–2020) who served on Iran's Assembly of Experts. His books cover Shia belief, family life and self-improvement.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Ebrahim_Amini"
+      ]
     },
     "Mohammad Ali Shomali": {
       "wikipedia": "Mohammad Ali Shomali",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Mohammad_Ali_Shomali",
       "description": "Muslim scholar, academic, philosopher and theologian",
+      "photo": null,
       "skipped": "the article has no free main image",
-      "photo": null
+      "bioStatus": "verified",
+      "bio": "Muslim scholar, philosopher and theologian, born in 1965, and author of introductions to Shia Islam such as Discovering Shi'i Islam.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Mohammad_Ali_Shomali"
+      ]
     },
     "Sayed Moustafa al-Qazwini": {
       "wikipedia": "Moustafa al-Qazwini",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Moustafa_Al-Qazwini",
       "description": "Islamic religious leader (born 1961)",
+      "photo": null,
       "skipped": "the article has no free main image",
-      "photo": null
+      "bioStatus": "verified",
+      "bio": "Iraqi-American Shia imam, born in 1961, who leads the Islamic Educational Center of Orange County in California.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Moustafa_Al-Qazwini"
+      ]
     },
     "Mohammadi Reyshahri": {
       "wikipedia": "Mohammad Mohammadi Reyshahri",
@@ -267,7 +480,18 @@
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "imageDescription": "Mohammad Reyshari in 202",
-      "photo": "/authors/mohammadi-reyshahri.jpg"
+      "photo": "/authors/mohammadi-reyshahri.jpg",
+      "photoLarge": "/authors/large/mohammadi-reyshahri.webp",
+      "largeWidth": 640,
+      "largeHeight": 960,
+      "lowRes": false,
+      "originalWidth": 1667,
+      "originalHeight": 2500,
+      "bioStatus": "verified",
+      "bio": "Iranian cleric and religious scholar (1946–2022) who also held senior judicial and government posts in Iran.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Mohammad_Reyshahri"
+      ]
     },
     "Husayn Ansariyan": {
       "wikipedia": "Hossein Ansarian",
@@ -279,19 +503,40 @@
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "imageDescription": "Hossein Ansarian",
-      "photo": "/authors/husayn-ansariyan.jpg"
+      "photo": "/authors/husayn-ansariyan.jpg",
+      "photoLarge": "/authors/large/husayn-ansariyan.webp",
+      "largeWidth": 400,
+      "largeHeight": 595,
+      "lowRes": true,
+      "originalWidth": 400,
+      "originalHeight": 595,
+      "bioStatus": "verified",
+      "bio": "Iranian Shia cleric, born in 1944. His books in the library include works on religious knowledge and a commentary on the Supplication of Kumayl.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Hossein_Ansarian"
+      ]
     },
     "Muhammad Rida al-Muzaffar": {
       "wikipedia": null,
       "photo": null,
-      "skipped": "checked by hand: the Commons image is a drawing, not a photograph"
+      "skipped": "checked by hand: the Commons image is a drawing, not a photograph",
+      "bioStatus": "verified",
+      "bio": "Shia jurist and philosopher (1904–1964), known for his book on the principles of jurisprudence, Usul al-Fiqh. The library holds his The Faith of Shi'a Islam.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Muhammad_Rida_al-Muzaffar"
+      ]
     },
     "Muhammad Husayn Kashif al-Ghita": {
       "wikipedia": "Muhammad Husayn Kashif al-Ghita",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Muhammad_Husayn_Kashif_al-Ghita'",
       "description": "",
+      "photo": null,
       "skipped": "the article has no free main image",
-      "photo": null
+      "bioStatus": "verified",
+      "bio": "Shia jurist, philosopher and teacher from Najaf, Iraq (1877–1954), who worked for the welfare of Iraq's Shia community and for Sunni–Shia understanding.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Muhammad_Husayn_Kashif_al-Ghita%27"
+      ]
     },
     "Sayyid Abdul-Husayn Sharafud-Din al Musawi": {
       "wikipedia": "Abd al-Husayn Sharaf al-Din al-Musawi",
@@ -303,12 +548,23 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "imageDescription": "Passport of the Shia scholar Sayed Abdul Hussein Sharafeddine in Tyre/Sour, Lebanon",
-      "photo": "/authors/sayyid-abdul-husayn-sharafud-din-al-musawi.jpg"
+      "photo": "/authors/sayyid-abdul-husayn-sharafud-din-al-musawi.jpg",
+      "photoLarge": "/authors/large/sayyid-abdul-husayn-sharafud-din-al-musawi.webp",
+      "largeWidth": 263,
+      "largeHeight": 275,
+      "lowRes": true,
+      "originalWidth": 263,
+      "originalHeight": 275
     },
     "Murtada al-Askari": {
       "wikipedia": "Morteza Askari",
+      "photo": null,
       "skipped": "no such Wikipedia article",
-      "photo": null
+      "bioStatus": "verified",
+      "bio": "Shia scholar (1914–2007), known as Allamah Askari, who wrote scholarly studies of early Islamic history and hadith.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Murtada_Sharif_%27Askari"
+      ]
     },
     "Ja'far Subhani": {
       "wikipedia": "Ja'far Sobhani",
@@ -320,7 +576,13 @@
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "imageDescription": "Grand Ayatollah Jafar Subhani (left) with Musa Shubairi Zanajni (right)",
-      "photo": "/authors/ja-far-subhani.jpg"
+      "photo": "/authors/ja-far-subhani.jpg",
+      "photoLarge": "/authors/large/ja-far-subhani.webp",
+      "largeWidth": 325,
+      "largeHeight": 396,
+      "lowRes": true,
+      "originalWidth": 325,
+      "originalHeight": 396
     },
     "Sir Mohammad Iqbal": {
       "wikipedia": "Muhammad Iqbal",
@@ -332,7 +594,13 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Depicted person: Muhammad Iqbal – British-Indian Islamic philosopher, poet and politician (1877-1938)",
-      "photo": "/authors/sir-mohammad-iqbal.jpg"
+      "photo": "/authors/sir-mohammad-iqbal.jpg",
+      "photoLarge": "/authors/large/sir-mohammad-iqbal.webp",
+      "largeWidth": 640,
+      "largeHeight": 917,
+      "lowRes": false,
+      "originalWidth": 1491,
+      "originalHeight": 2136
     },
     "Tayeb Salih": {
       "wikipedia": "Tayeb Salih",
@@ -344,7 +612,13 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "imageDescription": "An Image of the late Sudanese Novelist Tayeb Saleh",
-      "photo": "/authors/tayeb-salih.jpg"
+      "photo": "/authors/tayeb-salih.jpg",
+      "photoLarge": "/authors/large/tayeb-salih.webp",
+      "largeWidth": 300,
+      "largeHeight": 225,
+      "lowRes": true,
+      "originalWidth": 300,
+      "originalHeight": 225
     },
     "Akbar S. Ahmed": {
       "wikipedia": "Akbar Ahmed",
@@ -356,14 +630,20 @@
       "license": "CC BY 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
       "imageDescription": "Professor Akbar Salahuddin Ahmed at SOAS in 2016.",
-      "photo": "/authors/akbar-s-ahmed.jpg"
+      "photo": "/authors/akbar-s-ahmed.jpg",
+      "photoLarge": "/authors/large/akbar-s-ahmed.webp",
+      "largeWidth": 548,
+      "largeHeight": 728,
+      "lowRes": false,
+      "originalWidth": 548,
+      "originalHeight": 728
     },
     "Khurshid Ahmad": {
       "wikipedia": "Khurshid Ahmad",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Khurshid_Ahmed",
       "description": "Topics referred to by the same term",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Maulana Wahiduddin Khan": {
       "wikipedia": "Wahiduddin Khan",
@@ -375,19 +655,37 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "imageDescription": "MaulanawahidudinKhan",
-      "photo": "/authors/maulana-wahiduddin-khan.jpg"
+      "photo": "/authors/maulana-wahiduddin-khan.jpg",
+      "photoLarge": "/authors/large/maulana-wahiduddin-khan.webp",
+      "largeWidth": 500,
+      "largeHeight": 722,
+      "lowRes": false,
+      "originalWidth": 500,
+      "originalHeight": 722
     },
     "Muhammad Jawad Chirri": {
       "wikipedia": "Mohamad Jawad Chirri",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Mohamad_Jawad_Chirri",
       "description": "American imam (1905–1994)",
+      "photo": null,
       "skipped": "the article has no free main image",
-      "photo": null
+      "bioStatus": "verified",
+      "bio": "Founder and director of the Islamic Center of America, which he led until his death (1905–1994).",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Mohamad_Jawad_Chirri"
+      ]
     },
     "Baqir Sharif al-Qurashi": {
       "wikipedia": "Baqir Sharif al-Qurashi",
+      "photo": null,
       "skipped": "no such Wikipedia article",
-      "photo": null
+      "bioStatus": "needs review",
+      "bio": null,
+      "draftBio": "Scholar (1925–2012) known for his multi-volume series of biographies of the Ahlul-Bayt, several of which the library holds.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/List_of_Shia_books"
+      ],
+      "bioNote": "Only a passing mention in a list was found, not a full article."
     },
     "Dr.Muhammad Javad Bahonar": {
       "wikipedia": "Mohammad-Javad Bahonar",
@@ -399,12 +697,27 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Mohammad Javad Bahonar, 77th Prime Minister of Iran",
-      "photo": "/authors/dr-muhammad-javad-bahonar.jpg"
+      "photo": "/authors/dr-muhammad-javad-bahonar.jpg",
+      "photoLarge": "/authors/large/dr-muhammad-javad-bahonar.webp",
+      "largeWidth": 640,
+      "largeHeight": 884,
+      "lowRes": false,
+      "originalWidth": 4104,
+      "originalHeight": 5670
     },
     "Muhammad Jawad Mughniyya": {
       "wikipedia": "Muhammad Jawad Mughniyya",
+      "photo": null,
       "skipped": "no such Wikipedia article",
-      "photo": null
+      "bioStatus": "needs review",
+      "bio": null,
+      "draftBio": "Najaf-educated Shia jurist (died 1979), author of Fiqh al-Imam al-Sadiq, a study of Ja'fari jurisprudence.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Mohammad_Taqi_al-Modarresi",
+        "https://en.wikipedia.org/wiki/History_of_Hezbollah",
+        "https://en.wikipedia.org/wiki/Zaynab_bint_Ali"
+      ],
+      "bioNote": "Only passing mentions in other articles were found, not a full article."
     },
     "Jalal Ali Ahmad": {
       "wikipedia": "Jalal Al-e-Ahmad",
@@ -416,14 +729,20 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Jalal Al-e-Ahmad",
-      "photo": "/authors/jalal-ali-ahmad.jpg"
+      "photo": "/authors/jalal-ali-ahmad.jpg",
+      "photoLarge": "/authors/large/jalal-ali-ahmad.webp",
+      "largeWidth": 533,
+      "largeHeight": 688,
+      "lowRes": false,
+      "originalWidth": 533,
+      "originalHeight": 688
     },
     "George Jordac": {
       "wikipedia": "George Jordac",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/George_Jordac",
       "description": "Lebanese author and poet (1931–2014)",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Laleh Bakhtiar": {
       "wikipedia": "Laleh Bakhtiar",
@@ -435,21 +754,32 @@
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "imageDescription": "Author Laleh Bakhtiar",
-      "photo": "/authors/laleh-bakhtiar.jpg"
+      "photo": "/authors/laleh-bakhtiar.jpg",
+      "photoLarge": "/authors/large/laleh-bakhtiar.webp",
+      "largeWidth": 640,
+      "largeHeight": 766,
+      "lowRes": false,
+      "originalWidth": 802,
+      "originalHeight": 960
     },
     "Hazrat Inayat Khan": {
       "wikipedia": "Inayat Khan",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Inayat_Khan",
       "description": "Indian singer, poet and Sufi guide (1882–1927)",
-      "skipped": "image is not on Wikimedia Commons",
-      "photo": null
+      "photo": null,
+      "skipped": "image is not on Wikimedia Commons"
     },
     "Abul A'la Maududi": {
       "wikipedia": "Abul A'la Maududi",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Abu_al-A'la_Mawdudi",
       "description": "Pakistani Islamic scholar (1903–1979)",
+      "photo": null,
       "skipped": "the article has no free main image",
-      "photo": null
+      "bioStatus": "verified",
+      "bio": "Pakistani Islamic scholar (1903–1979) who founded the Jamaat-e-Islami movement, known for his commentary on the Quran and many books on Islam.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Abu_al-A%27la_Mawdudi"
+      ]
     },
     "Ali Abunimah": {
       "wikipedia": "Ali Abunimah",
@@ -461,7 +791,13 @@
       "license": "CC BY 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
       "imageDescription": "Journalist Ali Abunimah speaking at Hampshire College in 2014",
-      "photo": "/authors/ali-abunimah.png"
+      "photo": "/authors/ali-abunimah.png",
+      "photoLarge": "/authors/large/ali-abunimah.webp",
+      "largeWidth": 628,
+      "largeHeight": 475,
+      "lowRes": false,
+      "originalWidth": 628,
+      "originalHeight": 475
     },
     "Alija Ali Izetbegovic": {
       "wikipedia": "Alija Izetbegović",
@@ -473,7 +809,13 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Former Bosnian president Alija Izetbegović",
-      "photo": "/authors/alija-ali-izetbegovic.jpg"
+      "photo": "/authors/alija-ali-izetbegovic.jpg",
+      "photoLarge": "/authors/large/alija-ali-izetbegovic.webp",
+      "largeWidth": 640,
+      "largeHeight": 895,
+      "lowRes": false,
+      "originalWidth": 755,
+      "originalHeight": 1056
     },
     "Amin Maalouf": {
       "wikipedia": "Amin Maalouf",
@@ -485,14 +827,20 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "imageDescription": "amin maalouf",
-      "photo": "/authors/amin-maalouf.jpg"
+      "photo": "/authors/amin-maalouf.jpg",
+      "photoLarge": "/authors/large/amin-maalouf.webp",
+      "largeWidth": 454,
+      "largeHeight": 454,
+      "lowRes": true,
+      "originalWidth": 454,
+      "originalHeight": 454
     },
     "Amir Taheri": {
       "wikipedia": "Amir Taheri",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Amir_Taheri",
       "description": "Iranian author (born 1942)",
-      "skipped": "licence not accepted: OGL v1.0",
-      "photo": null
+      "photo": null,
+      "skipped": "licence not accepted: OGL v1.0"
     },
     "Bediuzzaman Said Nursi": {
       "wikipedia": "Said Nursi",
@@ -504,7 +852,13 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Passport photograph of Said Nursi in 1918, taken in Germany after he escaped from captivity in Russia.",
-      "photo": "/authors/bediuzzaman-said-nursi.jpg"
+      "photo": "/authors/bediuzzaman-said-nursi.jpg",
+      "photoLarge": "/authors/large/bediuzzaman-said-nursi.webp",
+      "largeWidth": 640,
+      "largeHeight": 919,
+      "lowRes": false,
+      "originalWidth": 945,
+      "originalHeight": 1357
     },
     "Dr. Zakir Naik": {
       "wikipedia": "Zakir Naik",
@@ -516,7 +870,13 @@
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "imageDescription": "Photograph of Dr Zakir Naik - Dr Zakir Naik in Maldives.",
-      "photo": "/authors/dr-zakir-naik.jpg"
+      "photo": "/authors/dr-zakir-naik.jpg",
+      "photoLarge": "/authors/large/dr-zakir-naik.webp",
+      "largeWidth": 630,
+      "largeHeight": 794,
+      "lowRes": false,
+      "originalWidth": 630,
+      "originalHeight": 794
     },
     "Gilles Kepel": {
       "wikipedia": "Gilles Kepel",
@@ -528,19 +888,25 @@
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "imageDescription": "Professor Gilles Kepel, Chair, Middle East and Mediterranean Studies, Institut d’Études Politiques de Paris (Sciences Po) at the Chatham House event The Arab Up",
-      "photo": "/authors/gilles-kepel.jpg"
+      "photo": "/authors/gilles-kepel.jpg",
+      "photoLarge": "/authors/large/gilles-kepel.webp",
+      "largeWidth": 640,
+      "largeHeight": 709,
+      "lowRes": false,
+      "originalWidth": 1246,
+      "originalHeight": 1380
     },
     "H.A.R Gibb": {
       "wikipedia": "Hamilton A. R. Gibb",
-      "skipped": "no such Wikipedia article",
-      "photo": null
+      "photo": null,
+      "skipped": "no such Wikipedia article"
     },
     "Hamid Algar": {
       "wikipedia": "Hamid Algar",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Hamid_Algar",
       "description": "British-American Iranologist",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Hamid Enayat": {
       "wikipedia": "Hamid Enayat",
@@ -552,7 +918,13 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "حمید عنایت، فیلسوف ایرانی و استاد دانشگاه تهران",
-      "photo": "/authors/hamid-enayat.jpg"
+      "photo": "/authors/hamid-enayat.jpg",
+      "photoLarge": "/authors/large/hamid-enayat.webp",
+      "largeWidth": 200,
+      "largeHeight": 198,
+      "lowRes": true,
+      "originalWidth": 200,
+      "originalHeight": 198
     },
     "Hashimi Rafsanjani": {
       "wikipedia": "Akbar Hashemi Rafsanjani",
@@ -564,14 +936,20 @@
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "imageDescription": "Photograph of Iranian president, Akbar Hashemi Rafsanjani. Image cropped and reuploaded to Wikimedia Commons by Emiya1980.",
-      "photo": "/authors/hashimi-rafsanjani.jpg"
+      "photo": "/authors/hashimi-rafsanjani.jpg",
+      "photoLarge": "/authors/large/hashimi-rafsanjani.webp",
+      "largeWidth": 630,
+      "largeHeight": 891,
+      "lowRes": false,
+      "originalWidth": 630,
+      "originalHeight": 891
     },
     "Heinz Halm": {
       "wikipedia": "Heinz Halm",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Heinz_Halm",
       "description": "German scholar of Islamic Studies (born 1942)",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Ismail R. al-Faruqi": {
       "wikipedia": "Ismail al-Faruqi",
@@ -583,7 +961,13 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Photo of Ismail al-Faruqi in Kenosha News May 28 1986 p. 3",
-      "photo": "/authors/ismail-r-al-faruqi.jpg"
+      "photo": "/authors/ismail-r-al-faruqi.jpg",
+      "photoLarge": "/authors/large/ismail-r-al-faruqi.webp",
+      "largeWidth": 640,
+      "largeHeight": 1039,
+      "lowRes": false,
+      "originalWidth": 713,
+      "originalHeight": 1157
     },
     "Jimmy Carter": {
       "wikipedia": "Jimmy Carter",
@@ -595,14 +979,20 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Jimmy Carter portrait by the Naval Photographic Center",
-      "photo": "/authors/jimmy-carter.jpg"
+      "photo": "/authors/jimmy-carter.jpg",
+      "photoLarge": "/authors/large/jimmy-carter.webp",
+      "largeWidth": 640,
+      "largeHeight": 849,
+      "lowRes": false,
+      "originalWidth": 1528,
+      "originalHeight": 2027
     },
     "Josef Pieper": {
       "wikipedia": "Josef Pieper",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Josef_Pieper",
       "description": "German Catholic philosopher (1904–1997)",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Karl Rove": {
       "wikipedia": "Karl Rove",
@@ -614,7 +1004,13 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Karl RoveAssistant to the President, Deputy Chief of Staff and Senior Advisor",
-      "photo": "/authors/karl-rove.jpg"
+      "photo": "/authors/karl-rove.jpg",
+      "photoLarge": "/authors/large/karl-rove.webp",
+      "largeWidth": 180,
+      "largeHeight": 270,
+      "lowRes": true,
+      "originalWidth": 180,
+      "originalHeight": 270
     },
     "M. Pickthall": {
       "wikipedia": "Marmaduke Pickthall",
@@ -626,14 +1022,20 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Photographic portrait of Muhammad Marmaduke Pickthall",
-      "photo": "/authors/m-pickthall.jpg"
+      "photo": "/authors/m-pickthall.jpg",
+      "photoLarge": "/authors/large/m-pickthall.webp",
+      "largeWidth": 400,
+      "largeHeight": 574,
+      "lowRes": true,
+      "originalWidth": 400,
+      "originalHeight": 574
     },
     "Majid Fakhry": {
       "wikipedia": "Majid Fakhry",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Majid_Fakhry",
       "description": "Lebanese scholar of Islamic philosophy (1923 - 2021)",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Martin Lings": {
       "wikipedia": "Martin Lings",
@@ -645,7 +1047,13 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "imageDescription": "Dr. Martin Lings, Shaykh Abu Bakr Sirajudeen, in 2001.",
-      "photo": "/authors/martin-lings.jpg"
+      "photo": "/authors/martin-lings.jpg",
+      "photoLarge": "/authors/large/martin-lings.webp",
+      "largeWidth": 147,
+      "largeHeight": 166,
+      "lowRes": true,
+      "originalWidth": 147,
+      "originalHeight": 166
     },
     "Martyr Mustafa Chamran": {
       "wikipedia": "Mostafa Chamran",
@@ -657,21 +1065,27 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Mostafa Chamran (1932–1981)",
-      "photo": "/authors/martyr-mustafa-chamran.jpg"
+      "photo": "/authors/martyr-mustafa-chamran.jpg",
+      "photoLarge": "/authors/large/martyr-mustafa-chamran.webp",
+      "largeWidth": 440,
+      "largeHeight": 600,
+      "lowRes": true,
+      "originalWidth": 440,
+      "originalHeight": 600
     },
     "Mehdi Golshani": {
       "wikipedia": "Mehdi Golshani",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Mehdi_Golshani",
       "description": "Iranian physicist (born 1939)",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Moojan Momen": {
       "wikipedia": "Moojan Momen",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Moojan_Momen",
       "description": "British-Iranian Baháʼí scholar (born 1950)",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Paul Findley": {
       "wikipedia": "Paul Findley",
@@ -683,7 +1097,13 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Paul Findley, US Representative from Illinois",
-      "photo": "/authors/paul-findley.jpg"
+      "photo": "/authors/paul-findley.jpg",
+      "photoLarge": "/authors/large/paul-findley.webp",
+      "largeWidth": 175,
+      "largeHeight": 297,
+      "lowRes": true,
+      "originalWidth": 175,
+      "originalHeight": 297
     },
     "Ralph Nader": {
       "wikipedia": "Ralph Nader",
@@ -695,7 +1115,13 @@
       "license": "CC BY-SA 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
       "imageDescription": "Ralph Nader, speaking at BYU's Alternate Commencement",
-      "photo": "/authors/ralph-nader.jpg"
+      "photo": "/authors/ralph-nader.jpg",
+      "photoLarge": "/authors/large/ralph-nader.webp",
+      "largeWidth": 640,
+      "largeHeight": 759,
+      "lowRes": false,
+      "originalWidth": 1406,
+      "originalHeight": 1667
     },
     "Robert Fisk": {
       "wikipedia": "Robert Fisk",
@@ -707,21 +1133,27 @@
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "imageDescription": "Robert Fisk at Al Jazeera Forum 2010",
-      "photo": "/authors/robert-fisk.jpg"
+      "photo": "/authors/robert-fisk.jpg",
+      "photoLarge": "/authors/large/robert-fisk.webp",
+      "largeWidth": 640,
+      "largeHeight": 711,
+      "lowRes": false,
+      "originalWidth": 897,
+      "originalHeight": 996
     },
     "Robert C. Tucker": {
       "wikipedia": "Robert C. Tucker",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Robert_C._Tucker",
       "description": "American political scientist and historian",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Roy Gutman": {
       "wikipedia": "Roy Gutman",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Roy_Gutman",
       "description": "American journalist and author",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Sachiko Murata": {
       "wikipedia": "Sachiko Murata",
@@ -733,7 +1165,13 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "imageDescription": "Sachiko Murata",
-      "photo": "/authors/sachiko-murata.jpg"
+      "photo": "/authors/sachiko-murata.jpg",
+      "photoLarge": "/authors/large/sachiko-murata.webp",
+      "largeWidth": 640,
+      "largeHeight": 427,
+      "lowRes": false,
+      "originalWidth": 5472,
+      "originalHeight": 3648
     },
     "Strobe Talbott": {
       "wikipedia": "Strobe Talbott",
@@ -741,11 +1179,17 @@
       "description": "American foreign policy analyst",
       "file": "File:StrobeTalbott.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:StrobeTalbott.jpg",
-      "creator": "Unknown author; original uploader was The Special Education Squad at en.wikipedia",
+      "creator": "Unknown author Original uploader was The Special Education Squad at en.wikipedia",
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Strobe Talbott, U.S. diplomat",
-      "photo": "/authors/strobe-talbott.jpg"
+      "photo": "/authors/strobe-talbott.jpg",
+      "photoLarge": "/authors/large/strobe-talbott.webp",
+      "largeWidth": 346,
+      "largeHeight": 444,
+      "lowRes": true,
+      "originalWidth": 346,
+      "originalHeight": 444
     },
     "Tariq Ramadan": {
       "wikipedia": "Tariq Ramadan",
@@ -757,14 +1201,20 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "imageDescription": "Tariq Ramadan, in 2017.",
-      "photo": "/authors/tariq-ramadan.jpg"
+      "photo": "/authors/tariq-ramadan.jpg",
+      "photoLarge": "/authors/large/tariq-ramadan.webp",
+      "largeWidth": 640,
+      "largeHeight": 927,
+      "lowRes": false,
+      "originalWidth": 1095,
+      "originalHeight": 1587
     },
     "Thomas W. Lippman": {
       "wikipedia": "Thomas W. Lippman",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Thomas_Lippman",
       "description": "American journalist",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Wilferd Madelung": {
       "wikipedia": "Wilferd Madelung",
@@ -776,21 +1226,27 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "imageDescription": "",
-      "photo": "/authors/wilferd-madelung.jpg"
+      "photo": "/authors/wilferd-madelung.jpg",
+      "photoLarge": "/authors/large/wilferd-madelung.webp",
+      "largeWidth": 329,
+      "largeHeight": 448,
+      "lowRes": true,
+      "originalWidth": 329,
+      "originalHeight": 448
     },
     "Ziba Mir-Hosseini": {
       "wikipedia": "Ziba Mir-Hosseini",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Ziba_Mir-Hosseini",
       "description": "Iranian legal anthropologist",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Alfred Guillaume": {
       "wikipedia": "Alfred Guillaume",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Alfred_Guillaume",
       "description": "British Hebrew and Islamic scholar (1888–1965)",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Prof. Thomas Arnold": {
       "wikipedia": "Thomas Walker Arnold",
@@ -802,24 +1258,33 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Thomas Arnold",
-      "photo": "/authors/prof-thomas-arnold.jpg"
+      "photo": "/authors/prof-thomas-arnold.jpg",
+      "photoLarge": "/authors/large/prof-thomas-arnold.webp",
+      "largeWidth": 393,
+      "largeHeight": 662,
+      "lowRes": true,
+      "originalWidth": 393,
+      "originalHeight": 662
     },
     "Professor T.B. Irving": {
       "wikipedia": "Thomas Ballantine Irving",
-      "skipped": "no such Wikipedia article",
-      "photo": null
+      "photo": null,
+      "skipped": "no such Wikipedia article"
     },
     "Taha Jabir al-Alwani": {
       "wikipedia": "Taha Jabir Alalwani",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Taha_Jabir_Alalwani",
       "description": "Islamic scholar",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Hammudah Abdalati": {
       "wikipedia": "Hammudah Abd al-Ati",
+      "photo": null,
       "skipped": "no such Wikipedia article",
-      "photo": null
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
     },
     "Ayatullah Sayyid Mahmud Taleghani": {
       "wikipedia": "Mahmoud Taleghani",
@@ -831,7 +1296,13 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Portrait of Mahmoud Taleghani - c 1979",
-      "photo": "/authors/ayatullah-sayyid-mahmud-taleghani.jpg"
+      "photo": "/authors/ayatullah-sayyid-mahmud-taleghani.jpg",
+      "photoLarge": "/authors/large/ayatullah-sayyid-mahmud-taleghani.webp",
+      "largeWidth": 640,
+      "largeHeight": 891,
+      "lowRes": false,
+      "originalWidth": 734,
+      "originalHeight": 1022
     },
     "Ayatullah Sayyid Abu Al-Qasim Al-Musawi Al-Khu'i": {
       "wikipedia": "Abu al-Qasim al-Khoei",
@@ -843,7 +1314,13 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Abu al-Qasim al-Khoei, probably in the early 1970s",
-      "photo": "/authors/ayatullah-sayyid-abu-al-qasim-al-musawi-al-khu-i.jpg"
+      "photo": "/authors/ayatullah-sayyid-abu-al-qasim-al-musawi-al-khu-i.jpg",
+      "photoLarge": "/authors/large/ayatullah-sayyid-abu-al-qasim-al-musawi-al-khu-i.webp",
+      "largeWidth": 569,
+      "largeHeight": 915,
+      "lowRes": false,
+      "originalWidth": 569,
+      "originalHeight": 915
     },
     "Ayatullah Jawadi Amuli": {
       "wikipedia": "Abdollah Javadi-Amoli",
@@ -855,7 +1332,13 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "imageDescription": "Grand Ayatollah Abdollah Javadi-Amoli is an Iranian Twelver Shi'a Marja. He is a conservative Iranian politician and one of the prominent Islamic scholars of th",
-      "photo": "/authors/ayatullah-jawadi-amuli.jpg"
+      "photo": "/authors/ayatullah-jawadi-amuli.jpg",
+      "photoLarge": "/authors/large/ayatullah-jawadi-amuli.webp",
+      "largeWidth": 640,
+      "largeHeight": 795,
+      "lowRes": false,
+      "originalWidth": 1213,
+      "originalHeight": 1508
     },
     "Ayatullah Gulpaygani": {
       "wikipedia": null,
@@ -872,7 +1355,13 @@
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "imageDescription": "Ali Meshkini",
-      "photo": "/authors/ayatullah-ali-mishkini.jpg"
+      "photo": "/authors/ayatullah-ali-mishkini.jpg",
+      "photoLarge": "/authors/large/ayatullah-ali-mishkini.webp",
+      "largeWidth": 400,
+      "largeHeight": 577,
+      "lowRes": true,
+      "originalWidth": 400,
+      "originalHeight": 577
     },
     "Ayatollah Hossein Vahid Khorasani": {
       "wikipedia": "Hossein Vahid Khorasani",
@@ -884,7 +1373,13 @@
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "imageDescription": "Hossein Vahid Khorasani, mourning martyrdom of Imam Ali in Qom. see full gallery",
-      "photo": "/authors/ayatollah-hossein-vahid-khorasani.jpg"
+      "photo": "/authors/ayatollah-hossein-vahid-khorasani.jpg",
+      "photoLarge": "/authors/large/ayatollah-hossein-vahid-khorasani.webp",
+      "largeWidth": 640,
+      "largeHeight": 849,
+      "lowRes": false,
+      "originalWidth": 681,
+      "originalHeight": 903
     },
     "Ayatullah Sayyid Muhammad Taqi-al-Modarresi": {
       "wikipedia": "Mohammad Taqi al-Modarresi",
@@ -896,12 +1391,18 @@
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "imageDescription": "An image of Ayatollah Sayyid Mohammad Taqi al-Modaressi",
-      "photo": "/authors/ayatullah-sayyid-muhammad-taqi-al-modarresi.jpg"
+      "photo": "/authors/ayatullah-sayyid-muhammad-taqi-al-modarresi.jpg",
+      "photoLarge": "/authors/large/ayatullah-sayyid-muhammad-taqi-al-modarresi.webp",
+      "largeWidth": 425,
+      "largeHeight": 279,
+      "lowRes": true,
+      "originalWidth": 425,
+      "originalHeight": 279
     },
     "Imam Muhammad Shirazi": {
       "wikipedia": "Muhammad al-Husayni al-Shirazi",
-      "skipped": "no such Wikipedia article",
-      "photo": null
+      "photo": null,
+      "skipped": "no such Wikipedia article"
     },
     "Hassan Shirazi": {
       "wikipedia": "Hassan al-Shirazi",
@@ -913,12 +1414,18 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "imageDescription": "Hassan al-Shirazi",
-      "photo": "/authors/hassan-shirazi.jpg"
+      "photo": "/authors/hassan-shirazi.jpg",
+      "photoLarge": "/authors/large/hassan-shirazi.webp",
+      "largeWidth": 397,
+      "largeHeight": 465,
+      "lowRes": true,
+      "originalWidth": 397,
+      "originalHeight": 465
     },
     "Shaykh Fadhlalla Haeri": {
       "wikipedia": "Fadhlalla Haeri",
-      "skipped": "no such Wikipedia article",
-      "photo": null
+      "photo": null,
+      "skipped": "no such Wikipedia article"
     },
     "Muhaddith Qummi": {
       "wikipedia": "Abbas Qumi",
@@ -930,12 +1437,21 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Sheikh Abbas Qumi",
-      "photo": "/authors/muhaddith-qummi.jpg"
+      "photo": "/authors/muhaddith-qummi.jpg",
+      "photoLarge": "/authors/large/muhaddith-qummi.webp",
+      "largeWidth": 233,
+      "largeHeight": 350,
+      "lowRes": true,
+      "originalWidth": 233,
+      "originalHeight": 350
     },
     "Abdul Husayn Dastghaib Shirazi": {
       "wikipedia": "Abdul Hussein Dastgheib",
+      "photo": null,
       "skipped": "no such Wikipedia article",
-      "photo": null
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
     },
     "Abbasali Amid Zanjani": {
       "wikipedia": "Abbasali Amid Zanjani",
@@ -947,7 +1463,13 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "imageDescription": "Abbas Ali Amid Zanjani, Second Workshop of Computer and Persian Language, Tehran University عباس‌ علی عمید زنجانی، دومین کارگاه پژوهشی زبان فارسی و رایانه، دانش",
-      "photo": "/authors/abbasali-amid-zanjani.jpg"
+      "photo": "/authors/abbasali-amid-zanjani.jpg",
+      "photoLarge": "/authors/large/abbasali-amid-zanjani.webp",
+      "largeWidth": 640,
+      "largeHeight": 801,
+      "lowRes": false,
+      "originalWidth": 652,
+      "originalHeight": 816
     },
     "Sherwood Eddy": {
       "wikipedia": "Sherwood Eddy",
@@ -959,7 +1481,13 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "imageDescription": "Visage de Sherwood Eddy tiré de la photo File:G. Sherwood Eddy & Sun Yat-Sen in Canton.jpg",
-      "photo": "/authors/sherwood-eddy.jpg"
+      "photo": "/authors/sherwood-eddy.jpg",
+      "photoLarge": "/authors/large/sherwood-eddy.webp",
+      "largeWidth": 640,
+      "largeHeight": 710,
+      "lowRes": false,
+      "originalWidth": 707,
+      "originalHeight": 784
     },
     "Sultanul-Waizin Shirazi": {
       "wikipedia": "Sultan al-Wa'izin Shirazi",
@@ -971,26 +1499,32 @@
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "imageDescription": "Sultan al-Wa'izin Shirazi",
-      "photo": "/authors/sultanul-waizin-shirazi.jpg"
+      "photo": "/authors/sultanul-waizin-shirazi.jpg",
+      "photoLarge": "/authors/large/sultanul-waizin-shirazi.webp",
+      "largeWidth": 416,
+      "largeHeight": 564,
+      "lowRes": true,
+      "originalWidth": 416,
+      "originalHeight": 564
     },
     "Haji Mirza Mehdi Pooya": {
       "wikipedia": "Mirza Mahdi Pouya",
-      "skipped": "no such Wikipedia article",
-      "photo": null
+      "photo": null,
+      "skipped": "no such Wikipedia article"
     },
     "Abdul Hadi al-Fadhli": {
       "wikipedia": "Abd al-Hadi al-Fadli",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Abd_al-Hadi_al-Fadli",
       "description": "Iraqi Ayatollah (1935-2013)",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Allamah Ali Naqi Naqvi": {
       "wikipedia": "Ali Naqi Naqvi",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Ali_Naqi_Naqvi",
       "description": "Indian poet, writer and jurist (1905–1988)",
-      "skipped": "the article has no free main image",
-      "photo": null
+      "photo": null,
+      "skipped": "the article has no free main image"
     },
     "Allamah Rasheed Turabi": {
       "wikipedia": "Rasheed Turabi",
@@ -1002,21 +1536,27 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "w:Allamah Rasheed Turabi",
-      "photo": "/authors/allamah-rasheed-turabi.jpg"
+      "photo": "/authors/allamah-rasheed-turabi.jpg",
+      "photoLarge": "/authors/large/allamah-rasheed-turabi.webp",
+      "largeWidth": 640,
+      "largeHeight": 571,
+      "lowRes": false,
+      "originalWidth": 1120,
+      "originalHeight": 1000
     },
     "Syed Jawad Naqvi": {
       "wikipedia": "Syed Jawad Naqvi",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Jawad_Naqvi",
       "description": "Pakistani Islamic scholar (born 1952)",
-      "skipped": "image is not on Wikimedia Commons",
-      "photo": null
+      "photo": null,
+      "skipped": "image is not on Wikimedia Commons"
     },
     "Zafar Bangash": {
       "wikipedia": "Zafar Bangash",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Zafar_Bangash",
       "description": "Islamic journalist and imam",
-      "skipped": "licence not accepted: Attribution",
-      "photo": null
+      "photo": null,
+      "skipped": "licence not accepted: Attribution"
     },
     "Mirza Ghulam Ahmad of Qadian": {
       "wikipedia": "Mirza Ghulam Ahmad",
@@ -1028,12 +1568,234 @@
       "license": "Public domain",
       "licenseUrl": null,
       "imageDescription": "Mirza Ghulam Ahmad (13 February 1835 – 26 May 1908), a religious figure from India, and the founder of the Ahmadiyya movement.",
-      "photo": "/authors/mirza-ghulam-ahmad-of-qadian.jpg"
+      "photo": "/authors/mirza-ghulam-ahmad-of-qadian.jpg",
+      "photoLarge": "/authors/large/mirza-ghulam-ahmad-of-qadian.webp",
+      "largeWidth": 640,
+      "largeHeight": 923,
+      "lowRes": false,
+      "originalWidth": 1475,
+      "originalHeight": 2127
     },
     "Ayatullah Najafi Quchani": {
       "wikipedia": null,
       "photo": null,
       "skipped": "checked by hand: not certain the Commons image is a photograph rather than a drawing"
+    },
+    "Abbas al-Abiri": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Abdul Hadi al-Hakim": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Abu'l-Qasim Gourji": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Ahmad Von Denffer": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Al-Balagh Foundation": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "An organisation or a team of compilers rather than one person, so no biography is given."
+    },
+    "Ali Muhammad Naqvi": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Azieza Hamid": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Dar Rah-i Haq Institute": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "An organisation or a team of compilers rather than one person, so no biography is given."
+    },
+    "Ejaz Naqvi": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Fazl Ahmad": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "H & T Kassamali": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "An organisation or a team of compilers rather than one person, so no biography is given."
+    },
+    "Hadi Husayn Sayyid": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Imam Ja'far al-Sadiq": {
+      "bioStatus": "needs review",
+      "bio": null,
+      "bioSources": [],
+      "bioNote": "Holy figure (the sixth Imam). Please write or approve this description yourself. No picture is ever shown."
+    },
+    "Kamber Asadi": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Kazim Unnisa Mirza Midhat": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Masih Muhajeri": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Muhammad Baqir al-Majlisi": {
+      "bioStatus": "verified",
+      "bio": "Leading Iranian Shia scholar of the Safavid era (about 1627–1699), also known as Allamah Majlisi. He compiled the large hadith collection Bihar al-Anwar.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Mohammad-Baqer_Majlesi",
+        "https://en.wikipedia.org/wiki/Bihar_al-Anwar"
+      ]
+    },
+    "Muhammad Husayn al-Irfani": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Muhammad Husayn al-Jalali": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Muhammad Ibrahim Nejad": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Muhammad Mahdi al-Asifi": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Muhammad Mahdi al-Naraqi": {
+      "bioStatus": "verified",
+      "bio": "Iranian Twelver Shia scholar, theologian and moral philosopher (1715–1795). The library holds his book on ethics, Jami' al-Sa'adat (The Collector of Felicities).",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Mulla_Muhammad_Mahdi_Naraqi"
+      ]
+    },
+    "Mustafa Zamani": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "S. M. Hasan Rizvi": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "S. V. Mir Ahmed Ali": {
+      "bioStatus": "needs review",
+      "bio": null,
+      "draftBio": "Translator of the Quran into English, with a commentary.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Quran_translations_into_English"
+      ],
+      "bioNote": "Only a listing of his translation was found."
+    },
+    "Sakina Hasan Askari": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Saleem Bhimji": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Sayyid Mahdi as-Sadr": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Sayyid Muhammad Rizvi": {
+      "bioStatus": "verified",
+      "bio": "Shia scholar who serves as imam of the Islamic Shia Ithna'asheri Jamaat in Toronto, Canada, and the son of Sayyid Saeed Akhtar Rizvi. His books explain Islamic law and belief.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Sa%27id_Akhtar_Rizvi"
+      ]
+    },
+    "Shaykh al-Saduq": {
+      "bioStatus": "verified",
+      "bio": "Persian Shia scholar, theologian and hadith compiler from Qom in the 10th century, also known as Ibn Babawayh.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Ibn_Babawayh"
+      ]
+    },
+    "Sulayman Shahid Mufassir": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Syed A. A. Razwy": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Syed Ali Raza": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Syed Hasan Raza Jafri": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Syed Mohsin Naquvi": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Talib Hussain Zaidi": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Yousuf N. Lalljee": {
+      "bioStatus": "from our data only",
+      "bio": null,
+      "bioNote": "No reliable source found that clearly identifies this author, or the name is too common to be sure."
+    },
+    "Zeinolabedin Rahnema": {
+      "bioStatus": "needs review",
+      "bio": null,
+      "draftBio": "Iranian writer, author of Payambar (The Messenger), a life of the Prophet in several volumes; he was nominated for the Nobel Prize in Literature.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/List_of_nominees_for_the_Nobel_Prize_in_Literature",
+        "https://en.wikipedia.org/wiki/Amir-Abbas_Hoveyda"
+      ],
+      "bioNote": "Only passing mentions were found; the Payambar attribution comes from our catalogue."
+    },
+    "al-Muhaqqiq al-Hilli": {
+      "bioStatus": "verified",
+      "bio": "Shia jurist (about 1205–1277) born in Hilla, Iraq, also known as al-Muhaqqiq al-Awwal. His legal manual Shara'i' al-Islam has attracted more than thirty commentaries.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Muhaqqiq_al-Hilli"
+      ]
     }
   }
 }
