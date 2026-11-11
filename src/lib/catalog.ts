@@ -427,6 +427,17 @@ export const authors: Author[] = (() => {
   return list;
 })();
 
+/** Every author grouped A–Z by the first letter of their surname ("Ali Shariati" is under S). */
+export function authorsByLetter(): Map<string, Author[]> {
+  const byLetter = new Map<string, Author[]>();
+  for (const a of authors) {
+    const l = surname(a.name)[0]?.toUpperCase() ?? "#";
+    if (!byLetter.has(l)) byLetter.set(l, []);
+    byLetter.get(l)!.push(a);
+  }
+  return byLetter;
+}
+
 const bySlug = new Map(authors.map((a) => [a.slug, a]));
 const byName = new Map(authors.map((a) => [a.name, a]));
 export const getAuthor = (slug: string) => bySlug.get(slug);

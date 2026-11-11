@@ -1053,15 +1053,33 @@ a:hover {
 .footer-inner {
   position: relative;
   padding-block: 32px;
+  display: flex;
+  justify-content: center;
 }
 .footer-inner p {
   margin-bottom: 0.3em;
 }
 .footer-name {
+  margin: 0 auto;
+  max-width: 46rem;
   font-family: var(--font-head);
   font-weight: 700;
   font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: center;
+  text-wrap: balance;
   color: var(--card);
+}
+.footer-name span {
+  display: inline-block; /* wraps between the two halves, not mid-phrase */
+}
+@media (max-width: 480px) {
+  .footer-inner {
+    padding-block: 28px 30px;
+  }
+  .footer-name {
+    font-size: 1rem; /* still easy to read; long text wraps onto two lines instead of shrinking */
+  }
 }
 
 /* ---------- Phones ---------- */
@@ -1981,6 +1999,56 @@ button:active,
 .section-lede {
   margin: -4px 0 12px;
   color: var(--muted);
+}
+/* Authors in our collection: full A–Z list under the cards */
+.all-authors {
+  margin-top: 16px;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+.all-authors summary {
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  color: var(--navy-deep);
+  padding: 6px 0;
+}
+.all-authors summary:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+.all-authors[open] summary {
+  margin-bottom: 8px;
+}
+/* Open: the letters flow into as many columns as fit (one on phones). */
+.all-authors[open] {
+  columns: 16rem auto;
+  column-gap: 28px;
+}
+.all-authors[open] summary {
+  column-span: all;
+}
+.all-authors-letter {
+  break-inside: avoid;
+}
+.all-authors-letter h3 {
+  margin: 10px 0 4px;
+  font-size: 1rem;
+  color: var(--gold-text);
+}
+.all-authors-letter ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.all-authors-letter li {
+  padding: 2px 0;
+  line-height: 1.4;
+  font-size: 0.97rem;
+}
+.all-authors-count {
+  color: var(--muted);
+  font-size: 0.85em;
 }
 /* Authors in our collection */
 .author-cards {
