@@ -51,110 +51,109 @@
       "wikipedia": "Ali Shariati",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Ali_Shariati",
       "description": "Iranian sociologist and philosopher (1933–1977)",
-      "file": "File:Dr Ali Shariati.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Dr_Ali_Shariati.jpg",
-      "creator": "Unknown author",
-      "license": "Public domain",
-      "licenseUrl": null,
-      "imageDescription": "Dr. Ali Shariati",
-      "photo": "/authors/ali-shariati.jpg",
-      "photoLarge": "/authors/large/ali-shariati.webp",
-      "largeWidth": 640,
-      "largeHeight": 837,
-      "lowRes": false,
-      "originalWidth": 1260,
-      "originalHeight": 1647,
-      "focus": {
-        "x": 50,
-        "y": 35
-      },
       "bio": "Dr. Ali Shari'ati (1933–1977) was an Iranian Shia intellectual whose ideas influenced the Islamic Revolution of 1979. His lectures at Husayniyya Irshad and at universities between 1968 and 1976 were later published in 36 volumes.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Ali_Shari'ati"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:Ali shariati.jpg",
+      "source": "http://commons.wikishia.net/common/File:Ali_shariati.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/ali-shariati.jpg",
+      "photoLarge": "/authors/large/ali-shariati.webp",
+      "largeWidth": 426,
+      "largeHeight": 616,
+      "originalWidth": 426,
+      "originalHeight": 616,
+      "lowRes": true,
+      "focus": {
+        "x": 55,
+        "y": 45
+      }
     },
     "Muhammad Baqir al-Sadr": {
       "wikipedia": "Muhammad Baqir al-Sadr",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Muhammad_Baqir_al-Sadr",
       "description": "Iraqi Islamic scholar (1935–1980)",
-      "file": "File:Muhammad Baqir al-Sadr.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Muhammad_Baqir_al-Sadr.jpg",
-      "creator": "علي شارف",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "imageDescription": "محمد باقر الصدر في منزله",
-      "photo": "/authors/muhammad-baqir-al-sadr.jpg",
-      "photoLarge": "/authors/large/muhammad-baqir-al-sadr.webp",
-      "largeWidth": 623,
-      "largeHeight": 850,
-      "lowRes": false,
-      "originalWidth": 623,
-      "originalHeight": 850,
-      "focus": {
-        "x": 55,
-        "y": 32,
-        "zoom": 1.8
-      },
       "bio": "Ayatollah Sayyid Muhammad Baqir al-Sadr (1935–1980) was an Iraqi Shia jurist, Quran commentator, thinker and political activist. He studied in Najaf under Ayatollah al-Khoei and others, completed his studies before the age of 20, and went on to teach at the Najaf seminary.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Al-Sayyid_Muhammad_Baqir_al-Sadr"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:سید محمد باقر صدر.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%B3%DB%8C%D8%AF_%D9%85%D8%AD%D9%85%D8%AF_%D8%A8%D8%A7%D9%82%D8%B1_%D8%B5%D8%AF%D8%B1.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/muhammad-baqir-al-sadr.jpg",
+      "photoLarge": "/authors/large/muhammad-baqir-al-sadr.webp",
+      "largeWidth": 640,
+      "largeHeight": 928,
+      "originalWidth": 1000,
+      "originalHeight": 1450,
+      "lowRes": false,
+      "focus": {
+        "x": 50,
+        "y": 38
+      }
     },
     "Muhammad Husayn Tabatabai": {
       "wikipedia": "Muhammad Husayn Tabatabai",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Muhammad_Husayn_Tabataba'i",
       "description": "Iranian scholar, theorist, philosopher (1903–1981)",
-      "file": "File:Muhammad Husayn Tabataba'i - 1940s.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Muhammad_Husayn_Tabataba%27i_-_1940s.jpg",
-      "creator": "Unknown author",
-      "license": "Public domain",
-      "licenseUrl": null,
-      "imageDescription": "Muhammad Husayn Tabataba'i - 1940s",
-      "photo": "/authors/muhammad-husayn-tabatabai.jpg",
-      "photoLarge": "/authors/large/muhammad-husayn-tabatabai.webp",
-      "largeWidth": 640,
-      "largeHeight": 898,
-      "lowRes": false,
-      "originalWidth": 842,
-      "originalHeight": 1182,
-      "focus": {
-        "x": 50,
-        "y": 38
-      },
       "bio": "Allama Sayyid Muhammad Husayn Tabataba'i (1904–1981) was one of the most influential Shia scholars of 20th-century Iran, an expert in philosophy, Quranic commentary and mysticism. He wrote the Quran commentary al-Mizan, and his students included Mutahhari, Jawadi Amuli and Beheshti.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Sayyid_Muhammad_Husayn_Tabataba'i"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:Sayyid Muhammad Husayn Tabataba'i.jpg",
+      "source": "http://commons.wikishia.net/common/File:Sayyid_Muhammad_Husayn_Tabataba%27i.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/muhammad-husayn-tabatabai.jpg",
+      "photoLarge": "/authors/large/muhammad-husayn-tabatabai.webp",
+      "largeWidth": 465,
+      "largeHeight": 476,
+      "originalWidth": 465,
+      "originalHeight": 476,
+      "lowRes": true,
+      "focus": {
+        "x": 40,
+        "y": 45
+      }
     },
     "Imam Khomeini": {
       "wikipedia": "Ruhollah Khomeini",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Ruhollah_Khomeini",
       "description": "Supreme Leader of Iran from 1979 to 1989",
-      "file": "File:Ruhollah Khomeini by Jamaran 1.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Ruhollah_Khomeini_by_Jamaran_1.jpg",
-      "creator": "Different",
-      "license": "Public domain",
-      "licenseUrl": null,
-      "imageDescription": "Ruhollah Khomeini",
-      "photo": "/authors/imam-khomeini.jpg",
-      "photoLarge": "/authors/large/imam-khomeini.webp",
-      "largeWidth": 640,
-      "largeHeight": 960,
-      "lowRes": false,
-      "originalWidth": 1667,
-      "originalHeight": 2500,
-      "focus": {
-        "x": 48,
-        "y": 40
-      },
       "bio": "Imam Sayyid Ruhollah Musavi Khomeini (1902–1989) was one of the most important Shia marja's of the 20th century and the leader of the 1979 Islamic Revolution in Iran. Exiled by the Pahlavi government, he spent 13 years teaching and writing in Najaf before returning to Iran.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Sayyid_Ruhollah_Musavi_Khomeini"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:امام خمینی.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%A7%D9%85%D8%A7%D9%85_%D8%AE%D9%85%DB%8C%D9%86%DB%8C.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/imam-khomeini.jpg",
+      "photoLarge": "/authors/large/imam-khomeini.webp",
+      "largeWidth": 525,
+      "largeHeight": 690,
+      "originalWidth": 525,
+      "originalHeight": 690,
+      "lowRes": false,
+      "focus": {
+        "x": 50,
+        "y": 45
+      }
     },
     "Ali Khamenei": {
       "wikipedia": "Ali Khamenei",
@@ -236,56 +235,55 @@
       "wikipedia": "Mohammad-Taqi Mesbah-Yazdi",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Taqi_Yazdi",
       "description": "Iranian Shia scholar and philosopher (1935–2021)",
-      "file": "File:Mohammad Taqi Mesbah-Yazdi 13980909 1144279.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Mohammad_Taqi_Mesbah-Yazdi_13980909_1144279.jpg",
-      "creator": "khamenei.ir",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "imageDescription": "Mohammad Taqi Mesbah-Yazdi",
-      "photo": "/authors/muhammad-taqi-misbah-yazdi.jpg",
-      "photoLarge": "/authors/large/muhammad-taqi-misbah-yazdi.webp",
-      "largeWidth": 640,
-      "largeHeight": 960,
-      "lowRes": false,
-      "originalWidth": 2975,
-      "originalHeight": 4462,
-      "focus": {
-        "x": 52,
-        "y": 33,
-        "zoom": 1.3
-      },
       "bio": "Ayatollah Muhammad Taqi Misbah Yazdi (1935–2021) was a mujtahid, philosopher and Quran commentator who taught at the Qom seminary and headed the Imam Khomeini Educational and Research Institute. He wrote on Quranic commentary, Islamic philosophy and doctrine.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Muhammad_Taqi_Misbah_Yazdi"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:آیت-الله-مصباح-یزدی.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%A2%DB%8C%D8%AA-%D8%A7%D9%84%D9%84%D9%87-%D9%85%D8%B5%D8%A8%D8%A7%D8%AD-%DB%8C%D8%B2%D8%AF%DB%8C.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/muhammad-taqi-misbah-yazdi.jpg",
+      "photoLarge": "/authors/large/muhammad-taqi-misbah-yazdi.webp",
+      "largeWidth": 315,
+      "largeHeight": 301,
+      "originalWidth": 315,
+      "originalHeight": 301,
+      "lowRes": true,
+      "focus": {
+        "x": 50,
+        "y": 38
+      }
     },
     "Muhammad Husayni Beheshti": {
       "wikipedia": "Mohammad Beheshti",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Mohammad_Beheshti",
       "description": "Iranian Islamic cleric and politician (1928–1981)",
-      "file": "File:Mohammad Beheshti portrait.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Mohammad_Beheshti_portrait.jpg",
-      "creator": "Unknown author",
-      "license": "Public domain",
-      "licenseUrl": null,
-      "imageDescription": "Mohammad Beheshti",
-      "photo": "/authors/muhammad-husayni-beheshti.jpg",
-      "photoLarge": "/authors/large/muhammad-husayni-beheshti.webp",
-      "largeWidth": 222,
-      "largeHeight": 333,
-      "lowRes": true,
-      "originalWidth": 222,
-      "originalHeight": 333,
-      "focus": {
-        "x": 48,
-        "y": 40
-      },
       "bio": "Ayatollah Sayyid Muhammad Husayni Beheshti was a leading cleric of the Islamic Revolution of Iran who studied in Qom under Ayatollah Burujirdi, Imam Khomeini and Allama Tabataba'i. Unusually for a cleric of his time, he also studied at university and knew English and German, and he helped found the Haqqani School in Qom.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Sayyid_Muhammad_Husayni_Bihishti"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:Muhammad Husayni Bihishti portrait.jpg",
+      "source": "http://commons.wikishia.net/common/File:Muhammad_Husayni_Bihishti_portrait.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/muhammad-husayni-beheshti.jpg",
+      "photoLarge": "/authors/large/muhammad-husayni-beheshti.webp",
+      "largeWidth": 381,
+      "largeHeight": 577,
+      "originalWidth": 381,
+      "originalHeight": 577,
+      "lowRes": true,
+      "focus": {
+        "x": 52,
+        "y": 45
+      }
     },
     "Mehdi Bazargan": {
       "wikipedia": "Mehdi Bazargan",
@@ -353,28 +351,28 @@
       "wikipedia": "Naser Makarem Shirazi",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Naser_Makarem_Shirazi",
       "description": "Iranian Shia marja' and religious leader (born 1927)",
-      "file": "File:Naser Makarem Shirazi ناصر مکارم شیرازی 01.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Naser_Makarem_Shirazi_%D9%86%D8%A7%D8%B5%D8%B1_%D9%85%DA%A9%D8%A7%D8%B1%D9%85_%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2%DB%8C_01.jpg",
-      "creator": "Mostafameraji",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "imageDescription": "He was born in the city of Shiraz, Iran. His ancestors were Iranian Jews who converted to Shia Islam. He finished his school in Shiraz. He started his formal Is",
-      "photo": "/authors/nasir-makarim-shirazi.jpg",
-      "photoLarge": "/authors/large/nasir-makarim-shirazi.webp",
-      "largeWidth": 640,
-      "largeHeight": 960,
-      "lowRes": false,
-      "originalWidth": 3000,
-      "originalHeight": 4500,
-      "focus": {
-        "x": 50,
-        "y": 30
-      },
       "bio": "Grand Ayatollah Nasir Makarim Shirazi (born 1927) is a Shia marja' and senior teacher at the Qom seminary. He has published around a hundred works, including the widely read Quran commentary Tafsir-i Nimuna.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Nasir_Makarim_Shirazi"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:ناصر مکارم شیرازی.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D9%86%D8%A7%D8%B5%D8%B1_%D9%85%DA%A9%D8%A7%D8%B1%D9%85_%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2%DB%8C.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/nasir-makarim-shirazi.jpg",
+      "photoLarge": "/authors/large/nasir-makarim-shirazi.webp",
+      "largeWidth": 640,
+      "largeHeight": 899,
+      "originalWidth": 2000,
+      "originalHeight": 2809,
+      "lowRes": false,
+      "focus": {
+        "x": 50,
+        "y": 35
+      }
     },
     "Kalim Siddiqui": {
       "wikipedia": "Kalim Siddiqui (writer)",
@@ -456,25 +454,56 @@
       "wikipedia": "Muhammad al-Tijani",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Muhammad_al-Tijani",
       "description": "Tunisian Shia Scholar",
-      "photo": null,
-      "skipped": "licence not accepted: GFDL 1.2",
       "bio": "Sayyid Muhammad al-Tijani al-Samawi (born 1936) is a Tunisian scholar who was raised a Sunni Muslim of the Maliki school. He embraced Shia Islam after travelling to Najaf and speaking with Shia scholars.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Sayyid_Muhammad_al-Tijani"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:آقای تیجانی 2.JPG",
+      "source": "http://commons.wikishia.net/common/File:%D8%A2%D9%82%D8%A7%DB%8C_%D8%AA%DB%8C%D8%AC%D8%A7%D9%86%DB%8C_2.JPG",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/dr-muhammad-al-tijani-al-samawi.jpg",
+      "photoLarge": "/authors/large/dr-muhammad-al-tijani-al-samawi.webp",
+      "largeWidth": 594,
+      "largeHeight": 395,
+      "originalWidth": 594,
+      "originalHeight": 395,
+      "lowRes": false,
+      "focus": {
+        "x": 40,
+        "y": 25,
+        "zoom": 1.6
+      }
     },
     "Sayyid Saeed Akhtar Rizvi": {
       "wikipedia": "Saeed Akhtar Rizvi",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Sa'id_Akhtar_Rizvi",
       "description": "",
-      "photo": null,
-      "skipped": "the article has no free main image",
       "bio": "Allama Sayyid Sa'id Akhtar Rizvi (1927–2002) founded the Bilal Muslim Mission and was a member of the Ahl al-Bayt World Assembly. He wrote and translated works in English, Arabic and Urdu, including volumes of Allama Tabataba'i's al-Mizan, and died in Dar es Salaam, Tanzania.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Sayyid_Sa'id_Akhtar_Rizvi"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:سید اختر رضوی.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%B3%DB%8C%D8%AF_%D8%A7%D8%AE%D8%AA%D8%B1_%D8%B1%D8%B6%D9%88%DB%8C.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/sayyid-saeed-akhtar-rizvi.jpg",
+      "photoLarge": "/authors/large/sayyid-saeed-akhtar-rizvi.webp",
+      "largeWidth": 640,
+      "largeHeight": 899,
+      "originalWidth": 1009,
+      "originalHeight": 1417,
+      "lowRes": false,
+      "focus": {
+        "x": 52,
+        "y": 33
+      }
     },
     "Sayyid Mujtaba Musavi Lari": {
       "wikipedia": "Mujtaba Musavi Lari",
@@ -612,90 +641,137 @@
     },
     "Muhammad Rida al-Muzaffar": {
       "wikipedia": null,
-      "photo": null,
-      "skipped": "checked by hand: the Commons image is a drawing, not a photograph",
       "bio": "Shaykh Muhammad Rida al-Muzaffar (1904–1964) was a Shia scholar of Najaf who studied under Muhammad Husayn Na'ini and others. He founded several scholarly and cultural institutes in Najaf.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Muhammad_Rida_al-Muzaffar"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:محمد رضا مظفر.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D9%85%D8%AD%D9%85%D8%AF_%D8%B1%D8%B6%D8%A7_%D9%85%D8%B8%D9%81%D8%B1.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/muhammad-rida-al-muzaffar.jpg",
+      "photoLarge": "/authors/large/muhammad-rida-al-muzaffar.webp",
+      "largeWidth": 365,
+      "largeHeight": 515,
+      "originalWidth": 365,
+      "originalHeight": 515,
+      "lowRes": true,
+      "focus": {
+        "x": 50,
+        "y": 18,
+        "zoom": 2
+      }
     },
     "Muhammad Husayn Kashif al-Ghita": {
       "wikipedia": "Muhammad Husayn Kashif al-Ghita",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Muhammad_Husayn_Kashif_al-Ghita'",
       "description": "",
-      "photo": null,
-      "skipped": "the article has no free main image",
       "bio": "Ayatollah Muhammad Husayn Kashif al-Ghita' (1877–1954) was a Shia marja' and scholar of Najaf, known for his work in jurisprudence, philosophy and Arabic literature. His book on the origin and principles of Shi'ism (Asl al-Shi'a wa usuluha) introduces Shia beliefs, and he worked for Islamic unity.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Muhammad_Husayn_Kashif_al-Ghita'"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:Kashef-al-gheta-face.jpg",
+      "source": "http://commons.wikishia.net/common/File:Kashef-al-gheta-face.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/muhammad-husayn-kashif-al-ghita.jpg",
+      "photoLarge": "/authors/large/muhammad-husayn-kashif-al-ghita.webp",
+      "largeWidth": 480,
+      "largeHeight": 743,
+      "originalWidth": 480,
+      "originalHeight": 743,
+      "lowRes": false,
+      "focus": {
+        "x": 50,
+        "y": 38
+      }
     },
     "Sayyid Abdul-Husayn Sharafud-Din al Musawi": {
       "wikipedia": "Abd al-Husayn Sharaf al-Din al-Musawi",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Abd_al-Husayn_Sharaf_al-Din_al-Musawi",
       "description": "Islamic scholar",
-      "file": "File:SayedAbdulHusseinSharafeddin ID-photo 1938.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:SayedAbdulHusseinSharafeddin_ID-photo_1938.jpg",
-      "creator": "Republique Libanaise, Ministere de l'Interieure, Service du Recensement et de l'Etat Civil",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "imageDescription": "Passport of the Shia scholar Sayed Abdul Hussein Sharafeddine in Tyre/Sour, Lebanon",
-      "photo": "/authors/sayyid-abdul-husayn-sharafud-din-al-musawi.jpg",
-      "photoLarge": "/authors/large/sayyid-abdul-husayn-sharafud-din-al-musawi.webp",
-      "largeWidth": 263,
-      "largeHeight": 275,
-      "lowRes": true,
-      "originalWidth": 263,
-      "originalHeight": 275,
-      "focus": {
-        "x": 55,
-        "y": 45
-      },
       "bio": "Sayyid Abd al-Husayn Sharaf al-Din al-Musawi al-Amili (1873–1957) was a Shia mujtahid of Lebanon who worked to bring Shia and Sunni Muslims closer together, and a leader of Lebanon's independence movement. His best-known books are al-Muraja'at and al-Nass wa l-ijtihad.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Al-Sayyid_'Abd_al-Husayn_Sharaf_al-Din"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:شرف الدین عاملی.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%B4%D8%B1%D9%81_%D8%A7%D9%84%D8%AF%DB%8C%D9%86_%D8%B9%D8%A7%D9%85%D9%84%DB%8C.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/sayyid-abdul-husayn-sharafud-din-al-musawi.jpg",
+      "photoLarge": "/authors/large/sayyid-abdul-husayn-sharafud-din-al-musawi.webp",
+      "largeWidth": 500,
+      "largeHeight": 552,
+      "originalWidth": 500,
+      "originalHeight": 552,
+      "lowRes": false,
+      "focus": {
+        "x": 48,
+        "y": 30,
+        "zoom": 1.6
+      }
     },
     "Murtada al-Askari": {
       "wikipedia": "Morteza Askari",
-      "photo": null,
-      "skipped": "no such Wikipedia article",
       "bio": "Allama Sayyid Murtada al-Askari (1914–2007) was a Shia scholar known for his research into early Islamic history and hadith. His works include Ma'alim al-madrasatayn and 'Abd Allah ibn Saba' and Other Myths.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Al-Sayyid_Murtada_Sharif_al-'Askari"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:علامه عسکری (3).jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%B9%D9%84%D8%A7%D9%85%D9%87_%D8%B9%D8%B3%DA%A9%D8%B1%DB%8C_(3).jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/murtada-al-askari.jpg",
+      "photoLarge": "/authors/large/murtada-al-askari.webp",
+      "largeWidth": 230,
+      "largeHeight": 350,
+      "originalWidth": 230,
+      "originalHeight": 350,
+      "lowRes": true,
+      "focus": {
+        "x": 50,
+        "y": 38
+      }
     },
     "Ja'far Subhani": {
       "wikipedia": "Ja'far Sobhani",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Ja'far_Sobhani",
       "description": "Iranian Grand Ayatollah",
-      "file": "File:Grand Ayatollah Subhani and Shubairi Zanjani (cropped).jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Grand_Ayatollah_Subhani_and_Shubairi_Zanjani_(cropped).jpg",
-      "creator": "Seyed Ruhollah Moosavi",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "imageDescription": "Grand Ayatollah Jafar Subhani (left) with Musa Shubairi Zanajni (right)",
-      "photo": "/authors/ja-far-subhani.jpg",
-      "photoLarge": "/authors/large/ja-far-subhani.webp",
-      "largeWidth": 325,
-      "largeHeight": 396,
-      "lowRes": true,
-      "originalWidth": 325,
-      "originalHeight": 396,
-      "focus": {
-        "x": 48,
-        "y": 30,
-        "zoom": 1.3
-      },
       "bio": "Ayatollah Ja'far Subhani (born 1929) is a Shia marja' and teacher at the Qom seminary who specialises in jurisprudence, Quranic commentary and theology. He founded the Imam Sadiq Institute in Qom and has written many books.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Ja'far_Subhani"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:آیت الله جعفر سبحانی.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%A2%DB%8C%D8%AA_%D8%A7%D9%84%D9%84%D9%87_%D8%AC%D8%B9%D9%81%D8%B1_%D8%B3%D8%A8%D8%AD%D8%A7%D9%86%DB%8C.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/ja-far-subhani.jpg",
+      "photoLarge": "/authors/large/ja-far-subhani.webp",
+      "largeWidth": 533,
+      "largeHeight": 800,
+      "originalWidth": 533,
+      "originalHeight": 800,
+      "lowRes": false,
+      "focus": {
+        "x": 50,
+        "y": 30,
+        "zoom": 1.3
+      }
     },
     "Sir Mohammad Iqbal": {
       "wikipedia": "Muhammad Iqbal",
@@ -827,25 +903,57 @@
     },
     "Baqir Sharif al-Qurashi": {
       "wikipedia": "Baqir Sharif al-Qurashi",
-      "photo": null,
-      "skipped": "no such Wikipedia article",
       "draftBio": "Scholar (1925–2012) known for his multi-volume series of biographies of the Ahlul-Bayt, several of which the library holds.",
       "bio": "Baqir Sharif al-Qarashi (1925–2012) was an Iraqi Shia researcher, historian and author who studied for about twenty years under Ayatollah al-Khoei. He wrote many books, including a series on the lives of the Imams.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Baqir_Sharif_al-Qarashi"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:Baqir sharif al-qurashi 1.jpg",
+      "source": "http://commons.wikishia.net/common/File:Baqir_sharif_al-qurashi_1.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/baqir-sharif-al-qurashi.jpg",
+      "photoLarge": "/authors/large/baqir-sharif-al-qurashi.webp",
+      "largeWidth": 520,
+      "largeHeight": 527,
+      "originalWidth": 520,
+      "originalHeight": 527,
+      "lowRes": false,
+      "focus": {
+        "x": 45,
+        "y": 35,
+        "zoom": 1.2
+      }
     },
     "Muhammad Jawad Mughniyya": {
       "wikipedia": "Muhammad Jawad Mughniyya",
-      "photo": null,
-      "skipped": "no such Wikipedia article",
       "draftBio": "Najaf-educated Shia jurist (died 1979), author of Fiqh al-Imam al-Sadiq, a study of Ja'fari jurisprudence.",
       "bio": "Shaykh Muhammad Jawad Mughniyya (1904–1979) was a Lebanese Shia scholar and Quran commentator. After studying in Najaf, including under Ayatollah al-Khoei, he returned to Lebanon as a senior judge; he wrote two Quran commentaries, al-Kashif and al-Mubin, and worked for unity among the Islamic schools of thought.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Muhammad_Jawad_Mughniyya"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:محمد جواد مغنیه.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D9%85%D8%AD%D9%85%D8%AF_%D8%AC%D9%88%D8%A7%D8%AF_%D9%85%D8%BA%D9%86%DB%8C%D9%87.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/muhammad-jawad-mughniyya.jpg",
+      "photoLarge": "/authors/large/muhammad-jawad-mughniyya.webp",
+      "largeWidth": 150,
+      "largeHeight": 213,
+      "originalWidth": 150,
+      "originalHeight": 213,
+      "lowRes": true,
+      "focus": {
+        "x": 48,
+        "y": 18,
+        "zoom": 1.6
+      }
     },
     "Jalal Ali Ahmad": {
       "wikipedia": "Jalal Al-e-Ahmad",
@@ -874,13 +982,29 @@
       "wikipedia": "George Jordac",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/George_Jordac",
       "description": "Lebanese author and poet (1931–2014)",
-      "photo": null,
-      "skipped": "the article has no free main image",
       "bio": "George Jordac (1926–2014) was a Lebanese Christian author and poet, best known for his book about Imam Ali, The Voice of Human Justice, which was admired by Muslim and non-Muslim readers alike.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/George_Jordac"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:جرج جرداق.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%AC%D8%B1%D8%AC_%D8%AC%D8%B1%D8%AF%D8%A7%D9%82.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/george-jordac.jpg",
+      "photoLarge": "/authors/large/george-jordac.webp",
+      "largeWidth": 265,
+      "largeHeight": 359,
+      "originalWidth": 265,
+      "originalHeight": 359,
+      "lowRes": true,
+      "focus": {
+        "x": 48,
+        "y": 25,
+        "zoom": 1.4
+      }
     },
     "Laleh Bakhtiar": {
       "wikipedia": "Laleh Bakhtiar",
@@ -1728,59 +1852,60 @@
       "wikipedia": "Abu al-Qasim al-Khoei",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Abu_al-Qasim_al-Khoei",
       "description": "Iranian-Iraqi Shia marja' (1899–1992)",
-      "file": "File:Abu al-Qasim al-Khoei (7738).jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Abu_al-Qasim_al-Khoei_(7738).jpg",
-      "creator": "Unknown author",
-      "license": "Public domain",
-      "licenseUrl": null,
-      "imageDescription": "Abu al-Qasim al-Khoei, probably in the early 1970s",
-      "photo": "/authors/ayatullah-sayyid-abu-al-qasim-al-musawi-al-khu-i.jpg",
-      "photoLarge": "/authors/large/ayatullah-sayyid-abu-al-qasim-al-musawi-al-khu-i.webp",
-      "largeWidth": 569,
-      "largeHeight": 915,
-      "lowRes": false,
-      "originalWidth": 569,
-      "originalHeight": 915,
-      "focus": {
-        "x": 50,
-        "y": 28
-      },
       "bio": "Grand Ayatollah Sayyid Abu l-Qasim al-Musawi al-Khoei (1899–1992) was an influential Shia religious authority and a scholar of hadith narrators. He wrote the 23-volume Mu'jam rijal al-hadith and the Quran commentary al-Bayan fi tafsir al-Qur'an.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Al-Sayyid_Abu_l-Qasim_al-Khoei"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:Sayyid Abu al-Qasim Khoei.jpg",
+      "source": "http://commons.wikishia.net/common/File:Sayyid_Abu_al-Qasim_Khoei.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/ayatullah-sayyid-abu-al-qasim-al-musawi-al-khu-i.jpg",
+      "photoLarge": "/authors/large/ayatullah-sayyid-abu-al-qasim-al-musawi-al-khu-i.webp",
+      "largeWidth": 442,
+      "largeHeight": 599,
+      "originalWidth": 442,
+      "originalHeight": 599,
+      "lowRes": true,
+      "focus": {
+        "x": 42,
+        "y": 18,
+        "zoom": 1.8
+      }
     },
     "Ayatullah Jawadi Amuli": {
       "wikipedia": "Abdollah Javadi-Amoli",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Abdollah_Javadi_Amoli",
       "description": "Iranian grand ayatollah (born 1933)",
-      "file": "File:Abdollah Javadi Amoli عبدالله جوادی آملی 29 (cropped).jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Abdollah_Javadi_Amoli_%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87_%D8%AC%D9%88%D8%A7%D8%AF%DB%8C_%D8%A2%D9%85%D9%84%DB%8C_29_(cropped).jpg",
-      "creator": "Mostafameraji",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "imageDescription": "Grand Ayatollah Abdollah Javadi-Amoli is an Iranian Twelver Shi'a Marja. He is a conservative Iranian politician and one of the prominent Islamic scholars of th",
-      "photo": "/authors/ayatullah-jawadi-amuli.jpg",
-      "photoLarge": "/authors/large/ayatullah-jawadi-amuli.webp",
-      "largeWidth": 640,
-      "largeHeight": 795,
-      "lowRes": false,
-      "originalWidth": 1213,
-      "originalHeight": 1508,
-      "focus": {
-        "x": 52,
-        "y": 30
-      },
       "bio": "Ayatollah Abd Allah Jawadi Amuli (born 1933) is a Shia marja', philosopher, jurist and Quran commentator who has taught in the seminaries of Qom and Tehran for some sixty years. A student of Imam Khomeini and Allama Tabataba'i, he is known for his Quran commentary Tasnim.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Abd_Allah_Jawadi_Amuli"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:آیت الله جوادی آملی.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%A2%DB%8C%D8%AA_%D8%A7%D9%84%D9%84%D9%87_%D8%AC%D9%88%D8%A7%D8%AF%DB%8C_%D8%A2%D9%85%D9%84%DB%8C.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/ayatullah-jawadi-amuli.jpg",
+      "photoLarge": "/authors/large/ayatullah-jawadi-amuli.webp",
+      "largeWidth": 543,
+      "largeHeight": 599,
+      "originalWidth": 543,
+      "originalHeight": 599,
+      "lowRes": false,
+      "focus": {
+        "x": 48,
+        "y": 25,
+        "zoom": 1.6
+      }
     },
     "Ayatullah Gulpaygani": {
       "wikipedia": "Lotfollah Safi Golpaygani",
-      "photo": "/authors/ayatullah-gulpaygani.jpg",
       "bio": "Grand Ayatollah Lutf Allah Safi Gulpaygani (1919–2022) was a Shia marja' and a teacher of advanced jurisprudence in Qom, and a leading student of Ayatollah Burujirdi. He wrote Muntakhab al-athar, a well-known work about the Twelfth Imam.",
       "bioStatus": "WikiShia",
       "bioSources": [
@@ -1788,75 +1913,79 @@
       ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Lotfollah_Safi_Golpaygani",
       "description": "Iranian Shia marja (1919–2022)",
-      "file": "File:تصویر آیت الله صافی گلپایگانی از مراجع تقلید قم.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:%D8%AA%D8%B5%D9%88%DB%8C%D8%B1_%D8%A2%DB%8C%D8%AA_%D8%A7%D9%84%D9%84%D9%87_%D8%B5%D8%A7%D9%81%DB%8C_%DA%AF%D9%84%D9%BE%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%DB%8C_%D8%A7%D8%B2_%D9%85%D8%B1%D8%A7%D8%AC%D8%B9_%D8%AA%D9%82%D9%84%DB%8C%D8%AF_%D9%82%D9%85.jpg",
-      "creator": "Mostafameraji",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photoSource": "WikiShia",
+      "file": "File:الشيخ لطف الله الصافي الكلبايكاني.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%A7%D9%84%D8%B4%D9%8A%D8%AE_%D9%84%D8%B7%D9%81_%D8%A7%D9%84%D9%84%D9%87_%D8%A7%D9%84%D8%B5%D8%A7%D9%81%D9%8A_%D8%A7%D9%84%D9%83%D9%84%D8%A8%D8%A7%D9%8A%D9%83%D8%A7%D9%86%D9%8A.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/ayatullah-gulpaygani.jpg",
       "photoLarge": "/authors/large/ayatullah-gulpaygani.webp",
-      "largeWidth": 640,
-      "largeHeight": 960,
-      "lowRes": false,
-      "originalWidth": 1333,
-      "originalHeight": 2000,
+      "largeWidth": 431,
+      "largeHeight": 639,
+      "originalWidth": 431,
+      "originalHeight": 639,
+      "lowRes": true,
       "focus": {
         "x": 50,
-        "y": 27
+        "y": 25,
+        "zoom": 1.6
       }
     },
     "Ayatullah Ali Mishkini": {
       "wikipedia": "Ali Meshkini",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Ali_Meshkini",
       "description": "Iranian ayatollah (1921–2007)",
-      "file": "File:Ali Meshkini01.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Ali_Meshkini01.jpg",
-      "creator": "Ali Agharabie",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "imageDescription": "Ali Meshkini",
-      "photo": "/authors/ayatullah-ali-mishkini.jpg",
-      "photoLarge": "/authors/large/ayatullah-ali-mishkini.webp",
-      "largeWidth": 400,
-      "largeHeight": 577,
-      "lowRes": true,
-      "originalWidth": 400,
-      "originalHeight": 577,
-      "focus": {
-        "x": 47,
-        "y": 35
-      },
       "bio": "Ayatollah Ali Mishkini (1921–2007) was an influential cleric of the Iranian Revolution who headed the Assembly of Experts and led Friday prayers in Qom. He taught jurisprudence, Quranic commentary and ethics, and his ethics classes at the Qom seminary drew very large audiences.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Ali_Akbar_Fayd_Mishkini"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:آیت الله مشکینی.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%A2%DB%8C%D8%AA_%D8%A7%D9%84%D9%84%D9%87_%D9%85%D8%B4%DA%A9%DB%8C%D9%86%DB%8C.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/ayatullah-ali-mishkini.jpg",
+      "photoLarge": "/authors/large/ayatullah-ali-mishkini.webp",
+      "largeWidth": 400,
+      "largeHeight": 574,
+      "originalWidth": 400,
+      "originalHeight": 574,
+      "lowRes": true,
+      "focus": {
+        "x": 45,
+        "y": 33,
+        "zoom": 1.4
+      }
     },
     "Ayatollah Hossein Vahid Khorasani": {
       "wikipedia": "Hossein Vahid Khorasani",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Hossein_Wahid_Khorasani",
       "description": "Iranian Grand Ayatollah (born 1921)",
-      "file": "File:Hossein Vahid Khorasani, mourning martyrdom of Imam Ali in Qom (41545).jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Hossein_Vahid_Khorasani,_mourning_martyrdom_of_Imam_Ali_in_Qom_(41545).jpg",
-      "creator": "Zoheyr Seydanlou",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "imageDescription": "Hossein Vahid Khorasani, mourning martyrdom of Imam Ali in Qom. see full gallery",
-      "photo": "/authors/ayatollah-hossein-vahid-khorasani.jpg",
-      "photoLarge": "/authors/large/ayatollah-hossein-vahid-khorasani.webp",
-      "largeWidth": 640,
-      "largeHeight": 849,
-      "lowRes": false,
-      "originalWidth": 681,
-      "originalHeight": 903,
-      "focus": {
-        "x": 52,
-        "y": 40
-      },
       "bio": "Grand Ayatollah Husayn Vahid Khorasani is a Shia marja' in Qom and a former student of Ayatollah al-Khoei. Educated in Nishapur, Mashhad and Najaf, he teaches advanced jurisprudence at the Qom seminary, where his lectures are among the most widely attended.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Husayn_Wahid_Khurasani"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:حسین وحید خراسانی.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%AD%D8%B3%DB%8C%D9%86_%D9%88%D8%AD%DB%8C%D8%AF_%D8%AE%D8%B1%D8%A7%D8%B3%D8%A7%D9%86%DB%8C.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/ayatollah-hossein-vahid-khorasani.jpg",
+      "photoLarge": "/authors/large/ayatollah-hossein-vahid-khorasani.webp",
+      "largeWidth": 300,
+      "largeHeight": 450,
+      "originalWidth": 300,
+      "originalHeight": 450,
+      "lowRes": true,
+      "focus": {
+        "x": 55,
+        "y": 45
+      }
     },
     "Ayatullah Sayyid Muhammad Taqi-al-Modarresi": {
       "wikipedia": "Mohammad Taqi al-Modarresi",
@@ -1921,38 +2050,53 @@
       "wikipedia": "Abbas Qumi",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Abbas_Qomi",
       "description": "Iranian Islamic scholar and historian (1877–1941)",
-      "file": "File:Sheikh Abbas Qumi.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Sheikh_Abbas_Qumi.jpg",
-      "creator": "Unknown author",
-      "license": "Public domain",
-      "licenseUrl": null,
-      "imageDescription": "Sheikh Abbas Qumi",
-      "photo": "/authors/muhaddith-qummi.jpg",
-      "photoLarge": "/authors/large/muhaddith-qummi.webp",
-      "largeWidth": 233,
-      "largeHeight": 350,
-      "lowRes": true,
-      "originalWidth": 233,
-      "originalHeight": 350,
-      "focus": {
-        "x": 55,
-        "y": 30
-      },
       "bio": "Shaykh Abbas Qummi (1877–1941), known as Muhaddith Qummi, was a prominent Shia scholar of hadith, history and preaching. His best-known works are Mafatih al-jinan, Safinat al-bihar and Muntaha al-amal.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Shaykh_'Abbas_Qummi"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:شیخ عباس قمی.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%B4%DB%8C%D8%AE_%D8%B9%D8%A8%D8%A7%D8%B3_%D9%82%D9%85%DB%8C.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/muhaddith-qummi.jpg",
+      "photoLarge": "/authors/large/muhaddith-qummi.webp",
+      "largeWidth": 640,
+      "largeHeight": 938,
+      "originalWidth": 1000,
+      "originalHeight": 1466,
+      "lowRes": false,
+      "focus": {
+        "x": 50,
+        "y": 38
+      }
     },
     "Abdul Husayn Dastghaib Shirazi": {
       "wikipedia": "Abdul Hussein Dastgheib",
-      "photo": null,
-      "skipped": "no such Wikipedia article",
       "bio": "Ayatollah Sayyid Abd al-Husayn Dastghaib (1913–1981) was a Shia jurist and the Friday prayer leader of Shiraz, Iran.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Sayyid_Abd_al-Husayn_Dastghayb"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:Sayyid 'Abd al-Ḥusayn Dastghiyb.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%B3%DB%8C%D8%AF_%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%AD%D8%B3%DB%8C%D9%86_%D8%AF%D8%B3%D8%AA%D8%BA%DB%8C%D8%A8.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/abdul-husayn-dastghaib-shirazi.jpg",
+      "photoLarge": "/authors/large/abdul-husayn-dastghaib-shirazi.webp",
+      "largeWidth": 452,
+      "largeHeight": 551,
+      "originalWidth": 452,
+      "originalHeight": 551,
+      "lowRes": true,
+      "focus": {
+        "x": 55,
+        "y": 37
+      }
     },
     "Abbasali Amid Zanjani": {
       "wikipedia": "Abbasali Amid Zanjani",
@@ -2204,7 +2348,25 @@
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Muhammad_Baqir_al-Majlisi"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:Allama Majlisi.jpg",
+      "source": "http://commons.wikishia.net/common/File:Allama_Majlisi.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/muhammad-baqir-al-majlisi.jpg",
+      "photoLarge": "/authors/large/muhammad-baqir-al-majlisi.webp",
+      "largeWidth": 478,
+      "largeHeight": 585,
+      "originalWidth": 478,
+      "originalHeight": 585,
+      "lowRes": true,
+      "focus": {
+        "x": 45,
+        "y": 15,
+        "zoom": 2.2
+      }
     },
     "Muhammad Husayn al-Irfani": {
       "bioStatus": "from our data only"
@@ -2220,14 +2382,49 @@
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Muhammad_Mahdi_al-Asifi"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:محمد مهدی آصفی.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D9%85%D8%AD%D9%85%D8%AF_%D9%85%D9%87%D8%AF%DB%8C_%D8%A2%D8%B5%D9%81%DB%8C.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/muhammad-mahdi-al-asifi.jpg",
+      "photoLarge": "/authors/large/muhammad-mahdi-al-asifi.webp",
+      "largeWidth": 606,
+      "largeHeight": 776,
+      "originalWidth": 606,
+      "originalHeight": 776,
+      "lowRes": false,
+      "focus": {
+        "x": 40,
+        "y": 42
+      }
     },
     "Muhammad Mahdi al-Naraqi": {
       "bio": "Muhaqqiq Muhammad Mahdi Naraqi (1715–1795) was an 18th-century Shia scholar who studied in Iraq under Wahid Bihbahani and Yusuf al-Bahrani. His best-known work is Jami' al-sa'adat, a book on ethics.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Muhammad_Mahdi_Naraqi"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:ملا مهدی نراقی.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D9%85%D9%84%D8%A7_%D9%85%D9%87%D8%AF%DB%8C_%D9%86%D8%B1%D8%A7%D9%82%DB%8C.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/muhammad-mahdi-al-naraqi.jpg",
+      "photoLarge": "/authors/large/muhammad-mahdi-al-naraqi.webp",
+      "largeWidth": 143,
+      "largeHeight": 216,
+      "originalWidth": 143,
+      "originalHeight": 216,
+      "lowRes": true,
+      "focus": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1.6
+      }
     },
     "Mustafa Zamani": {
       "bioStatus": "from our data only"
@@ -2780,7 +2977,24 @@
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Husayn_Mazahiri"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:آیت الله مظاهری.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%A2%DB%8C%D8%AA_%D8%A7%D9%84%D9%84%D9%87_%D9%85%D8%B8%D8%A7%D9%87%D8%B1%DB%8C.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/ayatullah-al-hajj-ash-shaykh-husain-mazaheri.jpg",
+      "photoLarge": "/authors/large/ayatullah-al-hajj-ash-shaykh-husain-mazaheri.webp",
+      "largeWidth": 633,
+      "largeHeight": 715,
+      "originalWidth": 633,
+      "originalHeight": 715,
+      "lowRes": false,
+      "focus": {
+        "x": 52,
+        "y": 42
+      }
     },
     "Michael McClain": {
       "bioStatus": "from our data only"
@@ -2879,22 +3093,22 @@
       "wikipedia": "Bashir al-Najafi",
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Bashir_al-Najafi",
       "description": "Shia marja based in Najaf",
-      "file": "File:Ayatollah Sheikh Basheer Hussain Najafi.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Ayatollah_Sheikh_Basheer_Hussain_Najafi.jpg",
-      "creator": "Tasnim News Agency",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "photoSource": "WikiShia",
+      "file": "File:Bashir najafi.jpg",
+      "source": "http://commons.wikishia.net/common/File:Bashir_najafi.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
       "photo": "/authors/basheer-husain-al-najafy.jpg",
       "photoLarge": "/authors/large/basheer-husain-al-najafy.webp",
-      "largeWidth": 474,
-      "largeHeight": 330,
+      "largeWidth": 300,
+      "largeHeight": 316,
+      "originalWidth": 300,
+      "originalHeight": 316,
       "lowRes": true,
-      "originalWidth": 474,
-      "originalHeight": 330,
       "focus": {
-        "x": 44,
-        "y": 36,
-        "zoom": 1.3
+        "x": 50,
+        "y": 38
       }
     },
     "Mohammed Namazi": {
@@ -3015,14 +3229,50 @@
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Abdulaziz_Sachedina"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:ساچادینا.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%B3%D8%A7%DA%86%D8%A7%D8%AF%DB%8C%D9%86%D8%A7.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/abdulaziz-sachedina.jpg",
+      "photoLarge": "/authors/large/abdulaziz-sachedina.webp",
+      "largeWidth": 500,
+      "largeHeight": 300,
+      "originalWidth": 500,
+      "originalHeight": 300,
+      "lowRes": false,
+      "focus": {
+        "x": 40,
+        "y": 22,
+        "zoom": 1.6
+      }
     },
     "Sayyid Rida Sadr": {
       "bio": "Ayatollah Sayyid Rida al-Sadr (1921–1994) was a Shia mujtahid, teacher at the Qom seminary and writer of religious books, and the brother of Sayyid Musa al-Sadr.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Al-Sayyid_Rida_al-Sadr"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:سید رضا صدر.jpg",
+      "source": "http://commons.wikishia.net/common/File:%D8%B3%DB%8C%D8%AF_%D8%B1%D8%B6%D8%A7_%D8%B5%D8%AF%D8%B1.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/sayyid-rida-sadr.jpg",
+      "photoLarge": "/authors/large/sayyid-rida-sadr.webp",
+      "largeWidth": 276,
+      "largeHeight": 390,
+      "originalWidth": 276,
+      "originalHeight": 390,
+      "lowRes": true,
+      "focus": {
+        "x": 50,
+        "y": 30,
+        "zoom": 1.4
+      }
     },
     "S.S. Safavi": {
       "bioStatus": "from our data only"
@@ -3236,7 +3486,25 @@
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Nasir_al-Din_al-Tusi"
-      ]
+      ],
+      "photoSource": "WikiShia",
+      "file": "File:Nasir al-Din al-Tusi 2.jpg",
+      "source": "http://commons.wikishia.net/common/File:Nasir_al-Din_al-Tusi_2.jpg",
+      "creator": "WikiShia",
+      "license": "used with credit",
+      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
+      "photo": "/authors/nasir-al-din-tusi.jpg",
+      "photoLarge": "/authors/large/nasir-al-din-tusi.webp",
+      "largeWidth": 600,
+      "largeHeight": 844,
+      "originalWidth": 600,
+      "originalHeight": 844,
+      "lowRes": false,
+      "focus": {
+        "x": 45,
+        "y": 30,
+        "zoom": 1.6
+      }
     }
   }
 }

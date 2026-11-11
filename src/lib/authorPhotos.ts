@@ -17,7 +17,7 @@ export type AuthorPhoto = {
   creator: string;
   license: string;
   licenseUrl: string | null;
-  wikipediaUrl: string;
+  wikipediaUrl?: string;
   /** "WikiShia" for photos from WikiShia's media library; otherwise Wikimedia Commons. */
   photoSource?: string;
   /** Where the face is, in percent from the left and top; every crop centres on it. */
@@ -42,6 +42,9 @@ export function badgeStyle(p: Pick<AuthorPhoto, "focus">, maxZoom = 3): React.CS
 
 /** Where a photo came from, for its credit line. */
 export const photoVia = (p: Pick<AuthorPhoto, "photoSource">) => (p.photoSource === "WikiShia" ? "WikiShia" : "Wikimedia Commons");
+
+/** ", via Wikimedia Commons" — left out when the creator already names the site (WikiShia photos). */
+export const viaSuffix = (p: Pick<AuthorPhoto, "photoSource" | "creator">) => (p.creator === photoVia(p) ? "" : `, via ${photoVia(p)}`);
 
 /** CSS object-position that keeps the face in view when the photo is cropped. */
 export const focusPosition = (p: Pick<AuthorPhoto, "focus">) => (p.focus ? `${p.focus.x}% ${p.focus.y}%` : "50% 30%");
