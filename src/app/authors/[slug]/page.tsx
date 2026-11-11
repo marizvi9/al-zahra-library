@@ -11,7 +11,7 @@ function sourceName(url: string) {
   const m = /wikipedia\.org\/wiki\/(.+)$/.exec(url);
   return m ? `Wikipedia: ${decodeURIComponent(m[1]).replace(/_/g, " ")}` : new URL(url).hostname;
 }
-import { authors, categories, getAuthor, toListItem } from "@/lib/catalog";
+import { authors, categories, getAuthor, toListItem, spellingOn } from "@/lib/catalog";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -33,7 +33,9 @@ export default async function AuthorPage({ params }: Props) {
   for (const b of author.books) counts.set(b.categorySlug, (counts.get(b.categorySlug) ?? 0) + 1);
   const subjects = [...counts.entries()].sort((a, b) => b[1] - a[1]).map(([slug, n]) => ({ cat: categories.find((c) => c.slug === slug)!, n }));
   const bio = bioFor(author.name);
-  const spellings = [...new Set(author.books.map((b) => b.author!))].filter((s) => s !== author.name);
+  const spellings = [...new Set(author.books.map((b) => spellingOn(b, author.name)))].filter(
+    (s): s is string => !!s && s !== author.name,
+  );
 
   return (
     <div className="container page">

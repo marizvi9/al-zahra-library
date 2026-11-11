@@ -69,13 +69,16 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
   Multi-volume sets (2+ different volumes held, found from "Vol."/"Part" in titles); Browse by shelf number.
   The four featured sections and their books are set in `data/home-featured-sections.json`; the build
   stops if a chosen book lacks an author, a cover or a Google Books description.
-- Design: parchment, deep navy and antique gold from the emblem; light girih pattern;
+- Design: parchment, deep navy and antique gold from the emblem; light girih pattern (bolder in the welcome
+  arch, quieter and more spaced on the rest of the page); small gold star dividers between home sections and an
+  arched top edge on the footer, so there are no hard lines;
   Noto fonts (incl. Arabic) and Montserrat for the emblem lettering; right-to-left support,
   mobile-first and keyboard accessible.
 - Smooth page transitions, covers that glide from lists into book pages, a 3D "turn the
   book" cover gallery with swipe/arrow keys, and a full-screen viewer with pinch/scroll/click
   zoom. Motion is reduced if the visitor asks.
-- Home page: the emblem, "Welcome to the Al-Zahra Islamic Library", and a
+- Home page: a compact welcome arch (emblem, "Welcome to the Al-Zahra Islamic Library", a gold divider, a
+  one-line welcome and the search bar) on a soft navy-and-gold geometric pattern that fades in gently; then a
   **Featured books** slider (5 books). To swap a book, edit `data/featured-slider-books.json` and
   rebuild. The build stops with a clear message if a chosen book lacks an author, cover or description.
 - **Book descriptions** ("About this book") on 160 book pages, copied from Google Books (153) or

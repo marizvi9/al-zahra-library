@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Girih from "@/components/Girih";
+import Ornament from "@/components/Ornament";
 import SearchBox from "@/components/SearchBox";
 import CategoryCard from "@/components/CategoryCard";
 import FeaturedSlider from "@/components/FeaturedSlider";
@@ -43,8 +44,10 @@ export default function HomePage() {
               Welcome to the <span className="nowrap">Al-Zahra</span> Islamic Library
             </h1>
             <p className="hero-sub">at the Islamic Education Center of Houston</p>
+            <Ornament className="hero-ornament" />
             <p className="hero-lede">
-              Search {books.length} books on faith, history, law, thought and more.
+              We&rsquo;re glad you&rsquo;re here. Explore {books.length} books on faith, history, law, thought
+              and more.
             </p>
             <SearchBox large />
           </div>

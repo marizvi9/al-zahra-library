@@ -397,6 +397,13 @@ function splitCredit(raw: string): { text: string; name?: string }[] {
   return out;
 }
 
+/** How one person's name is written on a book (e.g. "Allamah Mutahhari"), or undefined. */
+export function spellingOn(b: Book, name: string): string | undefined {
+  if (!b.author) return undefined;
+  const p = splitCredit(b.author).find((x) => x.name === name);
+  return p?.text;
+}
+
 /** The people credited on a book (spellings merged), for author pages. */
 export const authorsOfBook = (b: Book) => (b.author ? splitCredit(b.author).flatMap((p) => (p.name ? [p.name] : [])) : []);
 
