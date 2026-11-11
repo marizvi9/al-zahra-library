@@ -75,7 +75,8 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
 - **Home page sections** (all from the catalogue's own data): Featured books slider; then
   "New to Islamic beliefs? Start here" and Featured author: Murtaza Mutahhari; Explore by category;
   **Featured Authors** (5 large portraits, set in `featuredAuthors` in `data/home-featured-sections.json`);
-  Authors in our collection (8 cards, leaving out the featured five); Featured author: Muhammad Baqir al-Sadr and "Building character";
+  Authors in our collection (12 cards for the authors with the most books, featured ones included, then a
+  "Show all 413 authors, A to Z" list so every author appears); Featured author: Muhammad Baqir al-Sadr and "Building character";
   Multi-volume sets (2+ different volumes held, found from "Vol."/"Part" in titles); Browse by shelf number.
   The four featured sections and their books are set in `data/home-featured-sections.json`; the build
   stops if a chosen book lacks an author, a cover or a Google Books description.
@@ -100,6 +101,8 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
 - Search bar suggestions: after 2+ characters the search bar shows up to 7 books (cover, title,
   author, category) with keyboard and screen-reader support. Its data is `/search-index.json`,
   built with the site and downloaded only when the bar is first used.
+- Footer: "Al-Zahra Islamic Library - Islamic Education Center of Houston TX © 2026", centred; on narrow screens it
+  wraps into two centred lines at the dash.
 - The "This catalogue lists the books the library holds…" notice sits above the footer on every
   page (`src/components/Disclaimer.tsx`).
 - Welcome intro (once per visit, about 3 s, skippable, off with "reduce motion"): the SVG emblem's

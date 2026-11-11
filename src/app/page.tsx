@@ -19,6 +19,7 @@ import {
   moreToExplore,
   shelves,
   topAuthors,
+  authorsByLetter,
   type Book,
 } from "@/lib/catalog";
 
@@ -96,8 +97,8 @@ export default function HomePage() {
       {/* Featured Authors: large portraits, chosen in data/home-featured-sections.json */}
       {featuredAuthors && <FeaturedAuthors {...featuredAuthors} />}
 
-      {/* Authors with the most books here (spellings of one name counted together),
-          leaving out the featured authors just above so nobody appears twice. */}
+      {/* Every author in the library. The authors with the most books come first as cards
+          (featured authors included, so they show here as well as above), then the full A–Z list. */}
       <section className="container section" aria-labelledby="authors-title">
         <div className="section-head">
           <h2 id="authors-title">Authors in our collection</h2>
@@ -106,10 +107,7 @@ export default function HomePage() {
           </Link>
         </div>
         <ul className="author-cards">
-          {topAuthors(8 + (featuredAuthors?.authors.length ?? 0))
-            .filter((a) => !featuredAuthors?.authors.some((f) => f.slug === a.slug))
-            .slice(0, 8)
-            .map((a) => (
+          {topAuthors(12).map((a) => (
             <li key={a.slug}>
               <Link href={`/authors/${a.slug}/`} className="author-card">
                 <AuthorAvatar name={a.name} size={52} />
@@ -125,6 +123,24 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
+        <details className="all-authors">
+          <summary>Show all {authors.length} authors, A to Z</summary>
+          {[...authorsByLetter()].map(([letter, list]) => (
+            <div key={letter} className="all-authors-letter">
+              <h3>{letter}</h3>
+              <ul>
+                {list.map((a) => (
+                  <li key={a.slug}>
+                    <Link href={`/authors/${a.slug}/`} dir="auto">
+                      {a.name}
+                    </Link>{" "}
+                    <span className="all-authors-count">({a.count})</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </details>
       </section>
 
       {homeSections

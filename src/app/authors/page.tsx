@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { authors } from "@/lib/catalog";
+import { authors, authorsByLetter } from "@/lib/catalog";
 import AuthorAvatar from "@/components/AuthorAvatar";
 
 export const metadata: Metadata = {
@@ -9,19 +9,8 @@ export const metadata: Metadata = {
   description: "Every author in the Al-Zahra Islamic Library, A to Z.",
 };
 
-// A–Z by surname ("Ali Shariati" is under S).
-const letterOf = (name: string) => {
-  const last = name.replace(/\(.*?\)/g, "").trim().split(/\s+/).pop()!.replace(/^(al|as|at|an|ar|ash)-/i, "");
-  return last[0].toUpperCase();
-};
-
 export default function AuthorsPage() {
-  const byLetter = new Map<string, typeof authors>();
-  for (const a of authors) {
-    const l = letterOf(a.name);
-    if (!byLetter.has(l)) byLetter.set(l, []);
-    byLetter.get(l)!.push(a);
-  }
+  const byLetter = authorsByLetter(); // A–Z by surname ("Ali Shariati" is under S)
   const letters = [...byLetter.keys()];
 
   return (
