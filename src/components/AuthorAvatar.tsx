@@ -1,7 +1,7 @@
 // An author's photo (if there's a verified, freely licensed one) or, if not, a
 // navy-and-gold badge with their initials. See src/lib/authorPhotos.ts.
 
-import { initials, photoFor, type AuthorPhoto } from "@/lib/authorPhotos";
+import { badgeStyle, initials, photoFor, photoVia, type AuthorPhoto } from "@/lib/authorPhotos";
 import { withBase } from "@/lib/paths";
 
 type Props = { name: string | null | undefined; size?: number; className?: string };
@@ -20,7 +20,8 @@ export default function AuthorAvatar({ name, size = 48, className = "" }: Props)
           height={size}
           loading="lazy"
           decoding="async"
-          title={`Photo: ${shortCreator(photo.creator)}, ${photo.license}, via Wikimedia Commons`}
+          style={badgeStyle(photo)}
+          title={`Photo: ${shortCreator(photo.creator)}, ${photo.license}, via ${photoVia(photo)}`}
         />
       </span>
     );
@@ -33,7 +34,7 @@ export default function AuthorAvatar({ name, size = 48, className = "" }: Props)
 
 export const shortCreator = (c: string) => (c.length > 60 ? c.slice(0, 57).trimEnd() + "…" : c);
 
-/** "Photo: Name, CC BY-SA 4.0, via Wikimedia Commons", each part linked. */
+/** "Photo: Name, CC BY-SA 4.0, via Wikimedia Commons" (or WikiShia), each part linked. */
 export function PhotoCredit({ photo }: { photo: AuthorPhoto }) {
   return (
     <p className="photo-credit">
@@ -49,7 +50,7 @@ export function PhotoCredit({ photo }: { photo: AuthorPhoto }) {
       ) : (
         photo.license
       )}
-      , via Wikimedia Commons
+      , via {photoVia(photo)}
     </p>
   );
 }

@@ -40,39 +40,58 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
     and gold motif (the full colour + motif list is at the top of that file).
   - **Shelves** (`/shelves/`): shelf tabs (All shelves, 100 · Theology … No number); "All shelves" shows a
     box per shelf above every book. Each shelf page has section chips, a filter box and "Search this shelf".
-  - **Authors** (`/authors/`): everyone with 2+ books, A to Z, each with a page listing their books.
+  - **Authors** (`/authors/`): every author, A to Z, each with a page listing their books.
     Spellings of one person are grouped by `data/author-names.json` (please check it).
   - Old addresses forward: `/categories/…` → `/explore/…`, `/explore/300/` → `/shelves/300/`.
 - **Authors data:** `data/authors.json` holds, for each author, the photo (Wikimedia Commons, free licences
   only, with credit + licence) and the short bio. Review list: `data/authors-report.md`.
-  - **Bios** appear only on the author's own page, and only when marked `"bioStatus": "verified"` (written by
-    hand from the linked sources and the books we hold). `"from our data only"` and `"needs review"` show just
-    the line built from the catalogue ("Author of 7 books in the Al-Zahra Islamic Library, in …").
-    To change or remove a bio, edit that author's `bio` / `bioStatus` and rebuild.
+  - **Bios** appear only on the author's own page, written in our own words (never copied), 1–3 sentences, and
+    checked against the books we hold. Source order: **WikiShia first** (`"bioStatus": "WikiShia"`, 50 authors); if
+    WikiShia has no article, Wikipedia or another reliable source (`"other source"`, 69). Sources are never mixed in
+    one bio. Each bio links its source under it. `"from our data only"` (291) and `"needs review"` (3: the holy
+    figures, for you to write) show just the catalogue line ("Author of 7 books…").
+    To approve a draft, change its `bioStatus` to `"WikiShia"` or `"other source"`; to change or remove a bio, edit
+    `bio` / `bioStatus` and rebuild. The review list (`data/authors-report.md`) shows needs-review first.
   - **Photos:** a small copy for lists and cards, and a large one (up to 640px, never enlarged) for the big
     portrait on the author's page. Each author's Wikipedia article is chosen by hand, then
-    `node scripts/fetch_author_photos.mjs` fetches the photos and licences. Authors with no photo get a
+    `node scripts/fetch_author_photos.mjs` fetches the photos and licences. A WikiShia photo is preferred when its
+    file page states a free licence (only Ali al-Sistani and Ali Khamenei so far, CC BY-SA 2.0; marked
+    `"photoSource": "WikiShia"` and never replaced by the script). Most WikiShia photos state no licence, so they're not used. Authors with no photo get a
     navy-and-gold initials badge (and a large initials panel on their page).
+  - **Author pages** list the author's books large (`src/components/AuthorBooks.tsx`): big covers in a 3-column grid
+    (2 on tablets, 1 on small phones), with title, category, shelf number and a link; one or two books get bigger cards.
+  - **Face position:** each photo's `focus` (x, y in percent, set by eye) keeps the face centred whenever the photo is
+    cropped, at any size; an optional `zoom` enlarges far-away shots in the small round badges.
   - The Prophet, the Imams, Lady Fatima and other holy figures (including books attributed to them) never get a
     picture and are never looked up (`src/lib/authorPhotos.ts` enforces this); their bios are left for you to write.
-  - A catalogue cell naming several people (e.g. "A, B, C") gets no author page.
+  - **Author names are links** everywhere (book pages, lists, search, slider, featured sections), except on the
+    author's own page. A cell naming several people ("A & B", "Compiled by X & Y", "A Translated By: B") is
+    split so each person has their own link and page (`creditParts()` in `src/lib/catalog.ts`). On clickable
+    cards the title link is stretched over the card and author names sit on top, so links never nest.
 - Instant search by title, author or category; a page per book with a "Find it on the shelf"
-  call-number box, and the author linked to their page.
+  call-number box, and each author linked to their page.
 - **Recent searches:** the last 6, kept only in the visitor's own browser (`src/lib/recentSearches.ts`),
   shown when the search bar is clicked, each removable, plus "Clear all".
 - **Home page sections** (all from the catalogue's own data): Featured books slider; then
   "New to Islamic beliefs? Start here" and Featured author: Murtaza Mutahhari; Explore by category;
-  Authors in our collection; Featured author: Muhammad Baqir al-Sadr and "Building character";
+  **Featured Authors** (5 large portraits, set in `featuredAuthors` in `data/home-featured-sections.json`);
+  Authors in our collection (12 cards for the authors with the most books, featured ones included, then a
+  "Show all 413 authors, A to Z" list so every author appears); Featured author: Muhammad Baqir al-Sadr and "Building character";
   Multi-volume sets (2+ different volumes held, found from "Vol."/"Part" in titles); Browse by shelf number.
   The four featured sections and their books are set in `data/home-featured-sections.json`; the build
   stops if a chosen book lacks an author, a cover or a Google Books description.
-- Design: parchment, deep navy and antique gold from the emblem; light girih pattern;
-  Noto fonts (incl. Arabic) and Montserrat for the emblem lettering; right-to-left support,
+- Design: parchment, deep navy and antique gold from the emblem; light girih pattern (bolder in the welcome
+  arch, quieter and more spaced on the rest of the page); small gold star dividers between home sections and an
+  arched top edge on the footer, so there are no hard lines;
+  two fonts only, self-hosted with next/font: **Literata** (headings and reading text, 17px on phones / 18px on
+  wider screens, line height 1.65, lines kept under ~72 characters) and **IBM Plex Sans Arabic** (menus,
+  buttons, labels, the emblem lettering, and every Arabic/Persian/Urdu letter); right-to-left support,
   mobile-first and keyboard accessible.
 - Smooth page transitions, covers that glide from lists into book pages, a 3D "turn the
   book" cover gallery with swipe/arrow keys, and a full-screen viewer with pinch/scroll/click
   zoom. Motion is reduced if the visitor asks.
-- Home page: the emblem, "Welcome to the Al-Zahra Islamic Library", and a
+- Home page: a compact welcome arch (emblem, "Welcome to the Al-Zahra Islamic Library", a gold divider, a
+  one-line welcome and the search bar) on a soft navy-and-gold geometric pattern that fades in gently; then a
   **Featured books** slider (5 books). To swap a book, edit `data/featured-slider-books.json` and
   rebuild. The build stops with a clear message if a chosen book lacks an author, cover or description.
 - **Book descriptions** ("About this book") on 160 book pages, copied from Google Books (153) or
@@ -82,6 +101,8 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
 - Search bar suggestions: after 2+ characters the search bar shows up to 7 books (cover, title,
   author, category) with keyboard and screen-reader support. Its data is `/search-index.json`,
   built with the site and downloaded only when the bar is first used.
+- Footer: "Al-Zahra Islamic Library - Islamic Education Center of Houston TX © 2026", centred; on narrow screens it
+  wraps into two centred lines at the dash.
 - The "This catalogue lists the books the library holds…" notice sits above the footer on every
   page (`src/components/Disclaimer.tsx`).
 - Welcome intro (once per visit, about 3 s, skippable, off with "reduce motion"): the SVG emblem's

@@ -5,14 +5,15 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import BookList from "@/components/BookList";
 import CoverGallery from "@/components/CoverGallery";
 import AuthorAvatar, { PhotoCredit } from "@/components/AuthorAvatar";
+import Credit from "@/components/Credit";
 import { photoFor } from "@/lib/authorPhotos";
 import {
-  authorName,
   authorOf,
   books,
   booksInSubCategory,
   copiesText,
   creditLine,
+  creditParts,
   getBook,
   getCategory,
   getCover,
@@ -39,7 +40,7 @@ export default async function BookPage({ params }: Props) {
   const cat = getCategory(book.categorySlug)!;
   const cover = getCover(book.id);
   const author = authorOf(book);
-  const authorPhoto = book.author ? photoFor(authorName(book.author)) : null;
+  const authorPhoto = author ? photoFor(author.name) : null;
   const description = getDescription(book.id);
   // Long descriptions: show the first part, with "Read more" for the rest.
   const [lead, more] = splitDescription(description?.paragraphs ?? []);
@@ -73,7 +74,7 @@ export default async function BookPage({ params }: Props) {
             {book.title}
           </h1>
           <p className="book-detail-credit" dir="auto">
-            {creditLine(book)}
+            <Credit parts={creditParts(book)} />
           </p>
           <p className="tag-row">
             <span className={`status ${book.available ? "is-available" : "is-unavailable"}`}>
@@ -116,9 +117,9 @@ export default async function BookPage({ params }: Props) {
               <dt>Author</dt>
               <dd dir="auto">
                 <span className="details-author">
-                  {book.author && <AuthorAvatar name={authorName(book.author)} size={44} />}
+                  {author && <AuthorAvatar name={author.name} size={44} />}
                   <span>
-                    {author ? <Link href={`/authors/${author.slug}/`}>{book.author}</Link> : (book.author ?? "Unknown")}
+                    {book.author ? <Credit parts={creditParts(book)} /> : "Unknown"}
                     {authorPhoto && <PhotoCredit photo={authorPhoto} />}
                   </span>
                 </span>

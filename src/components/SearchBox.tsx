@@ -217,7 +217,28 @@ export default function SearchBox({ large = false, compact = false }: { large?: 
                   {r.title}
                 </span>
                 <span className="suggest-meta" dir="auto">
-                  {r.credit}
+                  {/* Inside a suggestion list real links aren't allowed (they confuse screen readers
+                      and the arrow keys), so author names are clickable spans instead. Keyboard
+                      users reach the author from the book page or the full results page. */}
+                  {r.creditParts
+                    ? r.creditParts.map((p, k) =>
+                        p.slug ? (
+                          <span
+                            key={k}
+                            className="author-link suggest-author"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              addRecent(trimmed);
+                              go(`/authors/${p.slug}/`);
+                            }}
+                          >
+                            {p.text}
+                          </span>
+                        ) : (
+                          <span key={k}>{p.text}</span>
+                        ),
+                      )
+                    : r.credit}
                 </span>
                 <span className="suggest-cat">{r.category}</span>
               </span>

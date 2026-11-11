@@ -316,7 +316,7 @@ export default function CategoryCover({ slug, number, className = "" }: { slug: 
       ))}
       {/* the motif */}
       {word ? (
-        <g textAnchor="middle" fill={GOLD} fontFamily="var(--font-brand), Montserrat, sans-serif">
+        <g textAnchor="middle" fill={GOLD} fontFamily="var(--font-brand), sans-serif">
           <text x={CX} y={CY + 12} fontSize="40" fontWeight="600" letterSpacing="1">
             {word}
           </text>
@@ -341,7 +341,7 @@ export default function CategoryCover({ slug, number, className = "" }: { slug: 
         y={H - 24}
         textAnchor="middle"
         fill={GOLD}
-        fontFamily="var(--font-brand), Montserrat, sans-serif"
+        fontFamily="var(--font-brand), sans-serif"
         fontWeight="500"
         fontSize="12.5"
         letterSpacing="3.5"

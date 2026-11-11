@@ -188,7 +188,8 @@ await fs.mkdir(OUT_DIR, { recursive: true });
 
 await fs.mkdir(path.join(OUT_DIR, "large"), { recursive: true });
 const todo = Object.entries(data.authors).filter(
-  ([name, e]) => !never.has(name) && e.wikipedia && (refresh || (!e.photo && !e.skipped)),
+  // Photos taken from WikiShia ("photoSource": "WikiShia", added by hand) are never replaced here.
+  ([name, e]) => !never.has(name) && e.wikipedia && e.photoSource !== "WikiShia" && (refresh || (!e.photo && !e.skipped)),
 );
 const results = await lookupAll([...new Set(todo.map(([, e]) => e.wikipedia))]);
 
@@ -238,15 +239,25 @@ const photoRows = Object.entries(data.authors)
   .filter(([n]) => !never.has(n) && (Object.hasOwn(data.authors[n], "photo") || data.authors[n].wikipedia))
   .map(([n, e]) =>
     e.photo
-      ? `| ${n} | [${e.wikipedia}](${e.wikipediaUrl}) | ${esc(e.description)} | [${e.license}](${e.source}) | ${esc(e.creator)} | ${e.originalWidth ?? "?"}×${e.originalHeight ?? "?"}${e.lowRes ? " **low-res**" : ""} |`
+      ? `| ${n} | ${e.photoSource === "WikiShia" ? "WikiShia (photo); " : ""}[${e.wikipedia}](${e.wikipediaUrl}) | ${esc(e.description)} | [${e.license}](${e.source}) | ${esc(e.creator)} | ${e.originalWidth ?? "?"}×${e.originalHeight ?? "?"}${e.lowRes ? " **low-res**" : ""} |`
       : `| ${n} | ${e.wikipediaUrl ? `[${e.wikipedia}](${e.wikipediaUrl})` : (e.wikipedia ?? "—")} | ${esc(e.description)} | — skipped: ${esc(e.skipped ?? "removed by hand")} | | |`,
   );
-const bioRows = Object.entries(data.authors)
-  .filter(([, e]) => e.bioStatus)
-  .map(([n, e]) => `| ${n} | ${e.bioStatus} | ${esc(e.bio ?? e.draftBio ?? "")} | ${(e.bioSources ?? []).map((u, k) => `[${k + 1}](${u})`).join(" ")} |`);
+const ORDER = ["needs review", "WikiShia", "other source", "from our data only"];
+const withBio = Object.entries(data.authors)
+  .filter(([, e]) => e.bioStatus && e.bioStatus !== "from our data only")
+  .sort(([a, x], [b, y]) => ORDER.indexOf(x.bioStatus) - ORDER.indexOf(y.bioStatus) || a.localeCompare(b));
+const bioRows = withBio.map(
+  ([n, e]) =>
+    `| ${n} | ${e.bioStatus} | ${esc(e.bio ?? "")}${e.bioNote ? ` *(${esc(e.bioNote)})*` : ""} | ${(e.bioSources ?? []).map((u, k) => `[${k + 1}](${u})`).join(" ")} |`,
+);
+const dataOnly = Object.entries(data.authors)
+  .filter(([, e]) => e.bioStatus === "from our data only")
+  .map(([n]) => n)
+  .sort((a, b) => a.localeCompare(b));
+const counts = ORDER.map((st) => `${st}: ${Object.values(data.authors).filter((e) => e.bioStatus === st).length}`).join(" · ");
 await fs.writeFile(
   REPORT,
-  `# Authors — review list (bios and photos)\n\nThe data is \`${FILE}\`. Bios are written by hand; photos are fetched by \`node scripts/fetch_author_photos.mjs\`.\n\n## Bios (shown only on each author's own page)\n\n"verified": written from the linked sources and checked against the books we hold. "from our data only": no bio is shown, only the line built from the catalogue. "needs review": nothing is shown until you approve or write it (a draft may be given).\n\n| Author (as shown) | Status | Bio (or draft) | Sources |\n|---|---|---|---|\n${bioRows.join("\n")}\n\n## Photos\n\nEach photo is the main image of the hand-picked Wikipedia article, from Wikimedia Commons under a free licence. To remove one, set \`"photo": null\` for that author and rebuild.\n\n| Author (as shown) | Wikipedia article | Wikipedia's description | Licence (links to the photo's page) | Creator | Original size |\n|---|---|---|---|---|---|\n${photoRows.join("\n")}\n`,
+  `# Authors — review list (bios and photos)\n\nThe data is \`${FILE}\`. Bios are written by hand; photos are fetched by \`node scripts/fetch_author_photos.mjs\`.\n\n## Bios (shown only on each author's own page)\n\n"WikiShia": written in our own words from the author's WikiShia article. "other source": from Wikipedia or another reliable source. Both are checked against the books we hold. "from our data only": no bio is shown, only the line built from the catalogue. "needs review": nothing is shown until you approve or write it (a draft may be given).\n\n${counts}\n\n| Author (as shown) | Status | Bio (or draft) *(note)* | Sources |\n|---|---|---|---|\n${bioRows.join("\n")}\n\n### From our data only (${dataOnly.length})\n\nNo WikiShia article or other reliable source was found (or the match was uncertain), so only the catalogue line is shown:\n\n${dataOnly.join(" · ")}\n\n## Photos\n\nEach photo is the main image of the hand-picked Wikipedia article, from Wikimedia Commons under a free licence — except photos marked WikiShia, taken from WikiShia\'s media library because their file page states a free licence (most WikiShia photos state none, so they are not used). To remove one, set \`"photo": null\` for that author and rebuild.\n\n| Author (as shown) | Wikipedia article | Wikipedia's description | Licence (links to the photo's page) | Creator | Original size |\n|---|---|---|---|---|---|\n${photoRows.join("\n")}\n`,
 );
 const got = Object.values(data.authors).filter((e) => e.photo).length;
 console.log(`\n${got} photos. Review: ${REPORT}`);
