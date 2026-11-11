@@ -3366,23 +3366,6 @@
    }
   ]
  },
- "583": {
-  "source": "Open Library",
-  "sourceUrl": "https://openlibrary.org/works/OL5917039W",
-  "matchedTitle": "Man and faith",
-  "matchedAuthor": "Murṭazá Muṭahharī",
-  "images": [
-   {
-    "src": "/covers/583-1.webp",
-    "width": 314,
-    "height": 500,
-    "thumb": "/covers/583-1-thumb.webp",
-    "large": "/covers/583-1.webp",
-    "largeWidth": 314,
-    "largeHeight": 500
-   }
-  ]
- },
  "594": {
   "source": "Open Library",
   "sourceUrl": "https://openlibrary.org/works/OL582351W",

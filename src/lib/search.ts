@@ -5,6 +5,7 @@ export type SearchRecord = {
   slug: string;
   title: string;
   credit: string;
+  creditParts?: { text: string; slug?: string }[];
   category: string;
   categorySlug: string;
   subCategory: string;

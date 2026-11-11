@@ -1,50 +1,309 @@
 {
   "_help": "Authors whose names are spelled more than one way in the catalogue. Each entry is: the name to SHOW on the site -> every spelling used in the catalogue for that same person. Only clear matches are listed; when unsure, names are kept apart (e.g. Sayyid Saeed Akhtar Rizvi and his son Sayyid Muhammad Rizvi are different people). The catalogue spreadsheet itself is not changed. Authors with 2 or more books get their own page under /authors/. Books with several authors in one entry are not counted here.",
   "groups": {
-    "Murtaza Mutahhari": ["Morteza Mutahhari", "Murtada Mutahhari", "Ayatullah Murtaza Mutahhari", "Murtaza Mutahhari", "Ayatullah Morteza Mutahhari", "Martyr Murtada Mutahhari", "Martyr Ayatullah Murtada Mutahhari", "Murtaza Muthahheri", "Allamah Murtaza Mutahheri", "Ayatullah Murtaza Mutahheri"],
-    "Ali Shariati": ["Dr. Ali Shariati", "Ali Shariati", "Dr Ali Shariati"],
-    "Muhammad Baqir al-Sadr": ["Muhammad Baqir As-Sadr", "Ayatullah Baqir al-Sadr", "Sayyed Mohammad Baqer al-sadr", "Muhammad Baqir al-Sadr", "Ayatullah Baqir Sadr", "Allamah Muhammad Baqir As-Sadr", "Sayyid Muhammad Bakr Sadr"],
-    "Muhammad Husayn Tabatabai": ["Allamah Sayyid Muhammad Husayn Tabatabai", "Allamah Sayyid Mohammad Husayn Tabatabai", "Allamah Sayyid M.H. Tabatabai", "Allamah Tabatabai", "Ayatollah Tabataba'i", "Allamah Sayyid Muhammad Husayn Tabataba'i", "Al-Allamah As-Sayyid Muhammad Husayn at-Tabatabai"],
-    "Sayyid Mujtaba Musavi Lari": ["Sayyid Mujtaba Musavi Lari", "Sayyid Mujtaba Musawi Lari", "Sayyed Mujtaba Musavi Lari", "Sayid Mujtaba Rukni Musaqi Lari", "Sayid Mujtaba & Rukni Musawi Lari", "Sayid Mujtaba and Rukni Musawi Lari"],
-    "Sayyid Saeed Akhtar Rizvi": ["Seyyid Saeed Akhtar Rizvi", "Sayed Saeed Akhtar Rizvi", "Allama Syed Saeed Akhter Rizvi", "Sayid Saeed Akhtar Rizvi", "Maulana Syed Saeed Akhtar Rizvi"],
-    "S. M. Hasan Rizvi": ["Dr. S.M. Hasan Rizvi", "Dr. S. M. Hasan Rizvi"],
-    "Imam Khomeini": ["Imam Khomeini", "Ayatollah Khomeini", "Imam Khomeini (S.A)"],
-    "Ali Khamenei": ["Ayatullah Sayyid Ali Khamenei", "Ayatollah Khamenei", "Sayyid Ali Hosseini Khamene'i", "Ayatullah al-Uzma Khamenei", "Seyyed Ali Khamenei", "Ayatollah Seyyid Ali Khamenei"],
-    "Seyyed Hossein Nasr": ["Seyyed Hossein Nasr", "Seyyid Hossein Nasr"],
-    "Ibrahim Amini": ["Ayatullah Ibrahim Amini", "Ayatollah Ibrahim Amini", "Ibrahim Amini", "Professor Ibrahim Amini"],
-    "Baqir Sharif al-Qurashi": ["Baqir Shareef Al-Qarashi", "Allama Baqir Sharif Al-Qarashi", "Baqir Shareef al-Qurashi"],
-    "Muhammad Taqi Misbah Yazdi": ["Professor Muhammad Taqi Misbah Yazdi", "Muhammad Taqi Misbah Yazdi", "Ayatollah Misbah Yazdi"],
-    "Muhammad Baqir al-Majlisi": ["Allamah Muhammad Baqir Al-Majlisi", "Allamah Muhammad Baqir al-Majlisi"],
-    "Nasir Makarim Shirazi": ["Ayatullah Nasir Makarim Shirazi", "Ayatollah Makarim Shirazi", "Nasir Makarim Shirazi"],
-    "Fazl Ahmad": ["Prof. Fazl Ahmad", "prof. Fazl Ahmad", "Fazl Ahmad", "Prof. Fazl Ahmed"],
-    "Murtada al-Askari": ["Allamah Syed Murtadha Askari", "Allamah Seyed Murtaza Askari", "Allamah Murtaza al-Askari"],
-    "Sakina Hasan Askari": ["Compiled by: Sakina Hasan Askari"],
-    "Muhammad Jawad Chirri": ["Muhammad Jawad Chirri", "Imam Mohamad Jawad Chirri", "Mohammad Jawad Chirri"],
-    "Yousuf N. Lalljee": ["Yousef N. Lalljee", "Yousuf N. Lalljee"],
-    "Muhammad Husayn Kashif al-Ghita": ["Allama Shaikh Mohammad Husain Aal-e-Khashiful Ghita", "Allama Kashif Al Ghita", "Allamah Shaykh Muhammad Husayn Aal-e-Kashiful Ghita", "Allamah Shaykh Muhammad Husayn Al Kashifu L-ghita"],
-    "Muhammad Husayni Beheshti": ["Ayatullah S.M.H. Beheshti", "Martyred Ayatollah Beheshti", "Ayatullah Sayyid M.H. Beheshti", "Sayyid Muhammad Husayni Beheshti"],
-    "Muhammad Rida al-Muzaffar": ["Muhammad Rida al-Muzaffar", "Allama Muhammad Raza Muzaffar"],
-    "Mohammad Ali Shomali": ["Mohammad Ali Shomali", "Muhammad Ali Shomali"],
-    "Mehdi Bazargan": ["Mehdi Bazargan", "Professor Mehdi Bazargan"],
-    "Dar Rah-i Haq Institute": ["Editorial Board of Dar Rah-i Haq Institute", "Editorial Board of Dar Rah I Haq Institute"],
-    "Jamal Badawi": ["Dr. Jamal Badawi", "Dr. Gamal A. Badawi", "Dr. Jamal A. Badawi"],
-    "Mohammadi Reyshahri": ["Mohammadi-ye-Reyshahri", "Mohammadi-y-Reyshahri"],
-    "Muhammad Husayn al-Jalali": ["Sayyid Muhammad Husain al-Jalali", "Sayyid Mohammad Hussain Jalali"],
-    "Husayn Ansariyan": ["Hojjatul Islam Val Muslimin Hussein Ansariyan", "Shaykh Husayn Ansariyan", "Allamah Husayn Ansariyan"],
-    "Syed Mohsin Naquvi": ["Syed Mohsin Naquvi", "Syed-Mohsin Naquvi"],
-    "Syed A. A. Razwy": ["Syed A.A. Razwy", "Sayed A. A. Razwy"],
-    "S. V. Mir Ahmed Ali": ["S.V. Mir Ahmed Ali", "S.V Mir Ahmed Ali"],
-    "Muhammad Hamidullah": ["Dr. Muhammad Hamidullah", "Dr. Hamidullah"],
-    "Muhammad Husayn al-Irfani": ["Muhammad Husayn Al Irfani", "Muhammad Husayn al-Irfani"],
-    "Sulayman Shahid Mufassir": ["Sulaiman Shahid Mufassir", "Sulayman Shahid Mufassir"],
-    "Sayed Moustafa al-Qazwini": ["Sayed Moustafa al-Qazwini", "Imam Sayed Moustafa al-Qazwini"],
-    "Kamber Asadi": ["Kambar Asadi", "Kamber Asadi"],
-    "Ali al-Sistani": ["Ayatullah Seestani", "Ayatollah Ali Al-Husayni Al-Seestani"],
-    "Abu'l-Qasim Gourji": ["Professor Abu'l Qasim Gourji", "Professor Abu'l-Qasim Gourji"],
-    "Muhammad Mahdi al-Asifi": ["Ayatullah Muhammad Mahdi Asifi", "Muhammad Mahdi Al-Asifi"],
-    "Muhammad Mahdi al-Naraqi": ["Muhammad Mahdi ibn Abi Zarr al-Naraqi", "Muhammad Mahdi ibn abi Dharr al-Naraqi"],
-    "Imam Ja'far al-Sadiq": ["Abu 'Abdillah al-Imam Jafar ibn Muhammad as-Sadiq", "Imam Ja'far Al-Sadiq"],
-    "H & T Kassamali": ["Compiled by H&T Kassamali"],
-    "Al-Balagh Foundation": ["Al Balagh Foundation"]
+    "Murtaza Mutahhari": [
+      "Morteza Mutahhari",
+      "Murtada Mutahhari",
+      "Ayatullah Murtaza Mutahhari",
+      "Murtaza Mutahhari",
+      "Ayatullah Morteza Mutahhari",
+      "Martyr Murtada Mutahhari",
+      "Martyr Ayatullah Murtada Mutahhari",
+      "Murtaza Muthahheri",
+      "Allamah Murtaza Mutahheri",
+      "Ayatullah Murtaza Mutahheri",
+      "Murtaza Mutahhary",
+      "Ayatollah Mortadha Motahhari",
+      "Ayatullah Murtaza Muthahhari",
+      "Allamah Mutahhari"
+    ],
+    "Ali Shariati": [
+      "Dr. Ali Shariati",
+      "Ali Shariati",
+      "Dr Ali Shariati"
+    ],
+    "Muhammad Baqir al-Sadr": [
+      "Muhammad Baqir As-Sadr",
+      "Ayatullah Baqir al-Sadr",
+      "Sayyed Mohammad Baqer al-sadr",
+      "Muhammad Baqir al-Sadr",
+      "Ayatullah Baqir Sadr",
+      "Allamah Muhammad Baqir As-Sadr",
+      "Sayyid Muhammad Bakr Sadr",
+      "Ayatullah Muhammad Baqir Al-Sadr"
+    ],
+    "Muhammad Husayn Tabatabai": [
+      "Allamah Sayyid Muhammad Husayn Tabatabai",
+      "Allamah Sayyid Mohammad Husayn Tabatabai",
+      "Allamah Sayyid M.H. Tabatabai",
+      "Allamah Tabatabai",
+      "Ayatollah Tabataba'i",
+      "Allamah Sayyid Muhammad Husayn Tabataba'i",
+      "Al-Allamah As-Sayyid Muhammad Husayn at-Tabatabai"
+    ],
+    "Sayyid Mujtaba Musavi Lari": [
+      "Sayyid Mujtaba Musavi Lari",
+      "Sayyid Mujtaba Musawi Lari",
+      "Sayyed Mujtaba Musavi Lari",
+      "Sayid Mujtaba Rukni Musaqi Lari",
+      "Sayid Mujtaba & Rukni Musawi Lari",
+      "Sayid Mujtaba and Rukni Musawi Lari"
+    ],
+    "Sayyid Saeed Akhtar Rizvi": [
+      "Seyyid Saeed Akhtar Rizvi",
+      "Sayed Saeed Akhtar Rizvi",
+      "Allama Syed Saeed Akhter Rizvi",
+      "Sayid Saeed Akhtar Rizvi",
+      "Maulana Syed Saeed Akhtar Rizvi",
+      "Sayyid Sa'eed Akhtar Redhewi"
+    ],
+    "S. M. Hasan Rizvi": [
+      "Dr. S.M. Hasan Rizvi",
+      "Dr. S. M. Hasan Rizvi"
+    ],
+    "Imam Khomeini": [
+      "Imam Khomeini",
+      "Ayatollah Khomeini",
+      "Imam Khomeini (S.A)",
+      "Imam Khomeiny",
+      "Imam Khumayni"
+    ],
+    "Ali Khamenei": [
+      "Ayatullah Sayyid Ali Khamenei",
+      "Ayatollah Khamenei",
+      "Sayyid Ali Hosseini Khamene'i",
+      "Ayatullah al-Uzma Khamenei",
+      "Seyyed Ali Khamenei",
+      "Ayatollah Seyyid Ali Khamenei",
+      "Sayyid Ali Hosseini Khammene'i"
+    ],
+    "Seyyed Hossein Nasr": [
+      "Seyyed Hossein Nasr",
+      "Seyyid Hossein Nasr"
+    ],
+    "Ibrahim Amini": [
+      "Ayatullah Ibrahim Amini",
+      "Ayatollah Ibrahim Amini",
+      "Ibrahim Amini",
+      "Professor Ibrahim Amini",
+      "Allamah Ibrahim Amini"
+    ],
+    "Baqir Sharif al-Qurashi": [
+      "Baqir Shareef Al-Qarashi",
+      "Allama Baqir Sharif Al-Qarashi",
+      "Baqir Shareef al-Qurashi"
+    ],
+    "Muhammad Taqi Misbah Yazdi": [
+      "Professor Muhammad Taqi Misbah Yazdi",
+      "Muhammad Taqi Misbah Yazdi",
+      "Ayatollah Misbah Yazdi"
+    ],
+    "Muhammad Baqir al-Majlisi": [
+      "Allamah Muhammad Baqir Al-Majlisi",
+      "Allamah Muhammad Baqir al-Majlisi",
+      "Allama Majlisi-i"
+    ],
+    "Nasir Makarim Shirazi": [
+      "Ayatullah Nasir Makarim Shirazi",
+      "Ayatollah Makarim Shirazi",
+      "Nasir Makarim Shirazi",
+      "Ayatullah Makarim Shirazi"
+    ],
+    "Fazl Ahmad": [
+      "Prof. Fazl Ahmad",
+      "prof. Fazl Ahmad",
+      "Fazl Ahmad",
+      "Prof. Fazl Ahmed"
+    ],
+    "Murtada al-Askari": [
+      "Allamah Syed Murtadha Askari",
+      "Allamah Seyed Murtaza Askari",
+      "Allamah Murtaza al-Askari"
+    ],
+    "Sakina Hasan Askari": [
+      "Compiled by: Sakina Hasan Askari"
+    ],
+    "Muhammad Jawad Chirri": [
+      "Muhammad Jawad Chirri",
+      "Imam Mohamad Jawad Chirri",
+      "Mohammad Jawad Chirri"
+    ],
+    "Yousuf N. Lalljee": [
+      "Yousef N. Lalljee",
+      "Yousuf N. Lalljee"
+    ],
+    "Muhammad Husayn Kashif al-Ghita": [
+      "Allama Shaikh Mohammad Husain Aal-e-Khashiful Ghita",
+      "Allama Kashif Al Ghita",
+      "Allamah Shaykh Muhammad Husayn Aal-e-Kashiful Ghita",
+      "Allamah Shaykh Muhammad Husayn Al Kashifu L-ghita"
+    ],
+    "Muhammad Husayni Beheshti": [
+      "Ayatullah S.M.H. Beheshti",
+      "Martyred Ayatollah Beheshti",
+      "Ayatullah Sayyid M.H. Beheshti",
+      "Sayyid Muhammad Husayni Beheshti",
+      "Dr. Behishti"
+    ],
+    "Muhammad Rida al-Muzaffar": [
+      "Muhammad Rida al-Muzaffar",
+      "Allama Muhammad Raza Muzaffar",
+      "Allamah Mohammad Reza Al-Mudhafar"
+    ],
+    "Mohammad Ali Shomali": [
+      "Mohammad Ali Shomali",
+      "Muhammad Ali Shomali"
+    ],
+    "Mehdi Bazargan": [
+      "Mehdi Bazargan",
+      "Professor Mehdi Bazargan"
+    ],
+    "Dar Rah-i Haq Institute": [
+      "Editorial Board of Dar Rah-i Haq Institute",
+      "Editorial Board of Dar Rah I Haq Institute"
+    ],
+    "Jamal Badawi": [
+      "Dr. Jamal Badawi",
+      "Dr. Gamal A. Badawi",
+      "Dr. Jamal A. Badawi"
+    ],
+    "Mohammadi Reyshahri": [
+      "Mohammadi-ye-Reyshahri",
+      "Mohammadi-y-Reyshahri",
+      "Ayatullah Muhammadi Rayshahri"
+    ],
+    "Muhammad Husayn al-Jalali": [
+      "Sayyid Muhammad Husain al-Jalali",
+      "Sayyid Mohammad Hussain Jalali"
+    ],
+    "Husayn Ansariyan": [
+      "Hojjatul Islam Val Muslimin Hussein Ansariyan",
+      "Shaykh Husayn Ansariyan",
+      "Allamah Husayn Ansariyan",
+      "Allamah Husayn Ansarian"
+    ],
+    "Syed Mohsin Naquvi": [
+      "Syed Mohsin Naquvi",
+      "Syed-Mohsin Naquvi"
+    ],
+    "Syed A. A. Razwy": [
+      "Syed A.A. Razwy",
+      "Sayed A. A. Razwy",
+      "Sayed A. A. Razavi"
+    ],
+    "S. V. Mir Ahmed Ali": [
+      "S.V. Mir Ahmed Ali",
+      "S.V Mir Ahmed Ali"
+    ],
+    "Muhammad Hamidullah": [
+      "Dr. Muhammad Hamidullah",
+      "Dr. Hamidullah"
+    ],
+    "Muhammad Husayn al-Irfani": [
+      "Muhammad Husayn Al Irfani",
+      "Muhammad Husayn al-Irfani"
+    ],
+    "Sulayman Shahid Mufassir": [
+      "Sulaiman Shahid Mufassir",
+      "Sulayman Shahid Mufassir"
+    ],
+    "Sayed Moustafa al-Qazwini": [
+      "Sayed Moustafa al-Qazwini",
+      "Imam Sayed Moustafa al-Qazwini"
+    ],
+    "Kamber Asadi": [
+      "Kambar Asadi",
+      "Kamber Asadi"
+    ],
+    "Ali al-Sistani": [
+      "Ayatullah Seestani",
+      "Ayatollah Ali Al-Husayni Al-Seestani"
+    ],
+    "Abu'l-Qasim Gourji": [
+      "Professor Abu'l Qasim Gourji",
+      "Professor Abu'l-Qasim Gourji"
+    ],
+    "Muhammad Mahdi al-Asifi": [
+      "Ayatullah Muhammad Mahdi Asifi",
+      "Muhammad Mahdi Al-Asifi",
+      "Allamah Muhammad Mahdi Asifi"
+    ],
+    "Muhammad Mahdi al-Naraqi": [
+      "Muhammad Mahdi ibn Abi Zarr al-Naraqi",
+      "Muhammad Mahdi ibn abi Dharr al-Naraqi"
+    ],
+    "Imam Ja'far al-Sadiq": [
+      "Abu 'Abdillah al-Imam Jafar ibn Muhammad as-Sadiq",
+      "Imam Ja'far Al-Sadiq"
+    ],
+    "H & T Kassamali": [
+      "Compiled by H&T Kassamali"
+    ],
+    "Al-Balagh Foundation": [
+      "Al Balagh Foundation"
+    ],
+    "Muhammad Jawad Mughniyya": [
+      "Muhammad Jawad Maghniyyah",
+      "Shaykh Muhammad Jawad Mughniyyah"
+    ],
+    "Abul A'la Maududi": [
+      "Abul A'la Maududi",
+      "Sayyid Abul A'la Mawdudi",
+      "S. Maudoodi"
+    ],
+    "Masih Muhajeri": [
+      "Masih Muhajeri",
+      "Masih Muhajiri"
+    ],
+    "Hammudah Abdalati": [
+      "Hammudah Abdalati",
+      "Hammudah 'Abd al 'Ati"
+    ],
+    "Abbas al-Abiri": [
+      "Abbas al-Abiri",
+      "Abbas Al-'Abeeri"
+    ],
+    "Abdul Husayn Dastghaib Shirazi": [
+      "Ayatullah Dastghaib Shiraazi",
+      "Shaheed E. Mehrab Ayatollah, Syed Abdul Hussain Dastghaib Shirazi"
+    ],
+    "Shaykh al-Saduq": [
+      "Al-Shaykh al-Saduq",
+      "Sheikh Sadooq"
+    ],
+    "Abdulaziz Sachedina": [
+      "Abdulaziz Sachedina",
+      "Dr Abdulaziz A. Sachedina"
+    ],
+    "Muhammad Javad Bahonar": [
+      "Dr.Muhammad Javad Bahonar",
+      "Mohammad Javad Bahonar",
+      "Dr. Bahonar"
+    ],
+    "Imam Ali ibn Abi Talib": [
+      "Imam Ali Ibn Abi Talib",
+      "Imam Ali ibn Abu Talib",
+      "Imam Ali Amir al-Mum'minin"
+    ],
+    "Imam Zayn al-Abidin": [
+      "Imam Zayn Al-Abidin",
+      "Imam Ali Ibnul-Husayn Zaynul-A'abidin (a.s)",
+      "Imam Sajjad Ali ibn al-Hussein",
+      "Abu Muhammad Zaynul 'Abidin"
+    ],
+    "Shaykh 'Emadul Deen Abu Jaafar Mohammad bin Abi Qasim Al-Tabari": [
+      "Shaykh 'Emadul Deen, Abu Jaafar Mohammad bin Abi Qasim Al-Tabari"
+    ],
+    "Ja'far Subhani": [
+      "Ja'far Subhani",
+      "Ayatullah Jafar Subhani"
+    ],
+    "Odeh A. Muhawesh": [
+      "Odeh A. Muhawesh",
+      "A. Muhawesh"
+    ],
+    "Nasir al-Din Tusi": [
+      "Sheikh Tusi"
+    ]
   }
 }

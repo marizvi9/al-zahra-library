@@ -1,0 +1,81 @@
+{
+  "_help": [
+    "The extra featured sections on the home page, below the main 'Featured books' slider (which is set in featured-slider-books.json).",
+    "Each section: a type ('author' or 'theme'), a heading, a short intro, and the book ids to show (the number at the start of a book's web address: /books/441-... is id 441).",
+    "For an 'author' section, 'author' must be the name exactly as shown on the site (see data/author-names.json); the intro line is then written from the catalogue automatically.",
+    "'placement' is where it goes: 'after-slider' or 'after-authors' (after 'Authors in our collection').",
+    "Every book needs an author, a cover, and a description from Google Books; the build stops with a clear message if one doesn't. Keep to 4 sections at most so the page stays short. The 'why' notes are just for people reading this file.",
+    "FEATURED AUTHORS: the row of large portraits on the home page, shown just before 'Authors in our collection'. List up to 6 names in 'featuredAuthors.authors', in order. Any spelling used in the catalogue works (e.g. 'Murtada Mutahhari' finds Murtaza Mutahhari); the build stops if a name has no author page. Authors without a free photo show a large initials panel."
+  ],
+  "sections": [
+    {
+      "type": "theme",
+      "id": "start-here",
+      "placement": "after-slider",
+      "heading": "New to Islamic beliefs? Start here",
+      "intro": "Short, clear introductions to the core beliefs of Shi'a Islam.",
+      "why": "The library's Theology shelf is strongest on these 'Usul al-Din' introductions, and five have real covers and Google Books descriptions.",
+      "books": [
+        74,
+        209,
+        64,
+        311,
+        359
+      ]
+    },
+    {
+      "type": "author",
+      "id": "mutahhari",
+      "placement": "after-slider",
+      "author": "Murtaza Mutahhari",
+      "why": "The author with the most books in the library (31); 10 of them have covers and descriptions.",
+      "books": [
+        441,
+        345,
+        543,
+        27,
+        536
+      ]
+    },
+    {
+      "type": "author",
+      "id": "al-sadr",
+      "placement": "after-authors",
+      "author": "Muhammad Baqir al-Sadr",
+      "why": "Third-largest author in the library; covers philosophy, belief, economics and law. (His 'Contemporary Man and the Social Problem' is already in the main slider.)",
+      "books": [
+        437,
+        301,
+        511,
+        446,
+        422
+      ]
+    },
+    {
+      "type": "theme",
+      "id": "character",
+      "placement": "after-authors",
+      "heading": "Building character",
+      "intro": "Books on knowing yourself and growing in good character.",
+      "why": "Five books on self-knowledge and ethics from the Philosophy and Fiqh shelves, all with covers and descriptions.",
+      "books": [
+        779,
+        665,
+        780,
+        375,
+        291
+      ]
+    }
+  ],
+  "featuredAuthors": {
+    "heading": "Featured Authors",
+    "intro": "Open an author's page to see all of their books in the library.",
+    "authors": [
+      "Imam Khomeini",
+      "Muhammad Baqir al-Sadr",
+      "Murtada Mutahhari",
+      "Ali Khamenei",
+      "Ibrahim Amini"
+    ]
+  }
+}
