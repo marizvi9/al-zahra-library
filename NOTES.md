@@ -29,17 +29,27 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
 - Call numbers are `Cat # · Sub Cat #` (Book # is empty in the whole spreadsheet).
 
 ### Website (Next.js + TypeScript, static, no backend)
-- Home page with search and featured categories. The menu's **Explore** dropdown has two pages:
-  - **Explore by shelves** (`/explore/`): shelf tabs labelled number + subject (All shelves, 100 · Theology
-    … No number). "All shelves" shows one box per shelf (number, subject, count, short description) above
-    every book; clicking a box shows just that shelf. Each shelf page has its description, section chips,
-    a filter box, and a "Search this shelf" link (opens `/search/?category=…`). Old `/shelves/…` links forward here.
-  - **Browse by categories** (`/categories/`): the simple version, with a card per category, then a page
-    per category and sub-category. Category links on the home page and book pages open these.
-  instant search by title, author or category; a page per book with a "Find it on the shelf"
-  call-number box.
-- Design: cream/white with small blue and gold accents, light girih pattern, arched shapes,
-  Noto fonts (incl. Arabic), right-to-left support, mobile-first and keyboard accessible.
+- **Menu:** **Explore** (all categories) and **More ▾** (Shelves, Authors). A search bar sits at the
+  top of every page except the home page and the search results page.
+  - **Explore** (`/explore/`): a card per category with its cover artwork and one-line description,
+    then a page per category (`/explore/fiqh/`) and sub-category (`/explore/fiqh/worship/`).
+    Descriptions and display spellings (e.g. "Ahlul-Bayt") are in `src/lib/categoryInfo.ts`;
+    covers are drawn in `src/components/CategoryCover.tsx` (motif list at the top of that file).
+  - **Shelves** (`/shelves/`): shelf tabs (All shelves, 100 · Theology … No number); "All shelves" shows a
+    box per shelf above every book. Each shelf page has section chips, a filter box and "Search this shelf".
+  - **Authors** (`/authors/`): everyone with 2+ books, A to Z, each with a page listing their books.
+    Spellings of one person are grouped by `data/author-names.json` (please check it).
+  - Old addresses forward: `/categories/…` → `/explore/…`, `/explore/300/` → `/shelves/300/`.
+- Instant search by title, author or category; a page per book with a "Find it on the shelf"
+  call-number box, and the author linked to their page.
+- **Recent searches:** the last 6, kept only in the visitor's own browser (`src/lib/recentSearches.ts`),
+  shown when the search bar is clicked, each removable, plus "Clear all".
+- **Home page sections** (all from the catalogue's own data): Featured books, Explore by category,
+  Authors in our collection (most books), Multi-volume sets (2+ different volumes held, found from
+  "Vol."/"Part" in titles), Browse by shelf number.
+- Design: parchment, deep navy and antique gold from the emblem; light girih pattern;
+  Noto fonts (incl. Arabic) and Montserrat for the emblem lettering; right-to-left support,
+  mobile-first and keyboard accessible.
 - Smooth page transitions, covers that glide from lists into book pages, a 3D "turn the
   book" cover gallery with swipe/arrow keys, and a full-screen viewer with pinch/scroll/click
   zoom. Motion is reduced if the visitor asks.
@@ -50,14 +60,14 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
   Open Library (7) by `node scripts/fetch_descriptions.mjs`, using the same strict title + author check
   as the covers (`scripts/lib/match.mjs`). Distributors' standard blurbs are removed. Check them in
   `data/descriptions-report.md`.
-- Search bar suggestions: after 2+ characters the home page bar shows up to 7 books (cover, title,
+- Search bar suggestions: after 2+ characters the search bar shows up to 7 books (cover, title,
   author, category) with keyboard and screen-reader support. Its data is `/search-index.json`,
   built with the site and downloaded only when the bar is first used.
 - The "This catalogue lists the books the library holds…" notice sits above the footer on every
   page (`src/components/Disclaimer.tsx`).
 - Welcome intro (once per visit, about 3 s, skippable, off with "reduce motion"): the SVG emblem's
   flower draws and blooms, the stars twinkle in, the letters settle, then it fades into the site
-  (timings at the "Welcome intro" block in `globals.css`). Shelf tabs on Explore (one per Cat #, sections by
+  (timings at the "Welcome intro" block in `globals.css`). Shelf tabs on Shelves (one per Cat #, sections by
   Sub Cat #), faint geometric pattern on the cream background.
 
 ### Cover art

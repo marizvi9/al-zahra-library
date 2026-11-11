@@ -5,7 +5,28 @@ import CategoryCard from "@/components/CategoryCard";
 import FeaturedSlider from "@/components/FeaturedSlider";
 import { Emblem } from "@/components/Emblem";
 import { featuredSlides } from "@/lib/featured";
-import { books, featuredCategories, moreToExplore } from "@/lib/catalog";
+import {
+  authors,
+  bookSets,
+  books,
+  categories,
+  featuredCategories,
+  moreToExplore,
+  shelves,
+  topAuthors,
+  type Book,
+} from "@/lib/catalog";
+
+/** An author's two most common subjects, e.g. "Philosophy, Theology". */
+function mainSubjects(list: Book[]) {
+  const counts = new Map<string, number>();
+  for (const b of list) counts.set(b.category, (counts.get(b.category) ?? 0) + 1);
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 2)
+    .map(([c]) => c)
+    .join(", ");
+}
 
 export default function HomePage() {
   return (
@@ -31,11 +52,12 @@ export default function HomePage() {
         <FeaturedSlider slides={featuredSlides} />
       </div>
 
+      {/* Explore by category: six featured subjects with their covers, then the rest. */}
       <section className="container section" aria-labelledby="featured-title">
         <div className="section-head">
-          <h2 id="featured-title">Featured categories</h2>
+          <h2 id="featured-title">Explore by category</h2>
           <Link href="/explore/" className="see-all">
-            Explore all categories
+            All {categories.length} categories
           </Link>
         </div>
         <ul className="card-grid">
@@ -45,15 +67,80 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
-      </section>
-
-      <section className="container section" aria-labelledby="more-title">
-        <h2 id="more-title">More to explore</h2>
+        <h3 className="section-subhead">More subjects</h3>
         <ul className="chip-list">
           {moreToExplore.map((c) => (
             <li key={c.slug}>
               <Link href={`/explore/${c.slug}/`} className="chip">
                 {c.name} <span className="chip-count">{c.count}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Authors with the most books here (spellings of one name counted together). */}
+      <section className="container section" aria-labelledby="authors-title">
+        <div className="section-head">
+          <h2 id="authors-title">Authors in our collection</h2>
+          <Link href="/authors/" className="see-all">
+            All {authors.length} authors
+          </Link>
+        </div>
+        <ul className="author-cards">
+          {topAuthors(12).map((a) => (
+            <li key={a.slug}>
+              <Link href={`/authors/${a.slug}/`} className="author-card">
+                <span className="author-card-name" dir="auto">
+                  {a.name}
+                </span>
+                <span className="author-card-meta">
+                  {a.count} books · {mainSubjects(a.books)}
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Multi-volume sets: shown only where the library holds 2+ different volumes. */}
+      {bookSets.length > 0 && (
+        <section className="container section" aria-labelledby="sets-title">
+          <h2 id="sets-title">Multi-volume sets</h2>
+          <p className="section-lede">Works the library holds in more than one volume.</p>
+          <ul className="set-list">
+            {bookSets.map((set) => (
+              <li key={set.title} className="set-row">
+                <span className="set-title" dir="auto">
+                  {set.title}
+                </span>
+                <span className="set-volumes">
+                  {set.volumes.map((v) => (
+                    <Link key={v.book.slug} href={`/books/${v.book.slug}/`} className="set-vol" title={v.book.title}>
+                      {v.label}
+                    </Link>
+                  ))}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {/* Browse by shelf number: as the books stand in the library. */}
+      <section className="container section" aria-labelledby="shelves-title">
+        <div className="section-head">
+          <h2 id="shelves-title">Browse by shelf number</h2>
+          <Link href="/shelves/" className="see-all">
+            All shelves
+          </Link>
+        </div>
+        <ul className="shelf-strip">
+          {shelves.map((sh) => (
+            <li key={sh.slug}>
+              <Link href={`/shelves/${sh.slug}/`} className="shelf-chip">
+                <span className="shelf-chip-no">{sh.number ?? "—"}</span>
+                <span className="shelf-chip-name">{sh.number ? sh.categories.join(", ") : "No shelf number"}</span>
               </Link>
             </li>
           ))}

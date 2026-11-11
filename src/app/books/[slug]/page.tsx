@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import BookList from "@/components/BookList";
 import CoverGallery from "@/components/CoverGallery";
 import {
+  authorOf,
   books,
   booksInSubCategory,
   copiesText,
@@ -34,6 +35,7 @@ export default async function BookPage({ params }: Props) {
   if (!book) notFound();
   const cat = getCategory(book.categorySlug)!;
   const cover = getCover(book.id);
+  const author = authorOf(book);
   const description = getDescription(book.id);
   // Long descriptions: show the first part, with "Read more" for the rest.
   const [lead, more] = splitDescription(description?.paragraphs ?? []);
@@ -108,7 +110,9 @@ export default async function BookPage({ params }: Props) {
           <dl className="details">
             <div>
               <dt>Author</dt>
-              <dd dir="auto">{book.author ?? "Unknown"}</dd>
+              <dd dir="auto">
+                {author ? <Link href={`/authors/${author.slug}/`}>{book.author}</Link> : (book.author ?? "Unknown")}
+              </dd>
             </div>
             {book.publisher && (
               <div>

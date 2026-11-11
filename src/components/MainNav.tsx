@@ -9,7 +9,10 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const MORE = [{ href: "/shelves/", label: "Shelves", hint: "Books by shelf number, as they stand in the library" }];
+const MORE = [
+  { href: "/shelves/", label: "Shelves", hint: "Books by shelf number, as they stand in the library" },
+  { href: "/authors/", label: "Authors", hint: "Everyone with two or more books here, A to Z" },
+];
 
 export default function MainNav() {
   const ref = useRef<HTMLDetailsElement>(null);
