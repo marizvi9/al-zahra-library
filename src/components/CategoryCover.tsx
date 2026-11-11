@@ -1,33 +1,67 @@
 // Cover artwork for each category, drawn in code as SVG (sharp at any size, tiny to load).
-// Every cover shares one style, so they read as a set:
-//   - a deep navy panel with a faint eight-pointed-star lattice,
+// Every cover shares one style, so they read as a family:
+//   - a deep panel in the category's OWN colour, with a faint eight-pointed-star lattice,
 //   - a gold double frame with small corner stars,
 //   - one simple gold line motif in the centre that stands for the category,
 //   - the shelf number set in the emblem's lettering.
-// No people or animals, and no Quranic verses or sacred names as decoration.
+// Each colour is dark enough that the gold lettering passes WCAG AA contrast (4.5:1 or more).
+// No people or animals (not even hands), and no Quranic verses or sacred names as decoration.
 //
-// Motifs (one per category):
-//   Theology ............ eight-point star within rings (the oneness of God)
-//   Philosophy .......... compass-drawn circles (reason and order)
-//   Fiqh ................ balanced scales (law and justice)
-//   Governance .......... interlocking hexagons (a community holding together)
-//   Comparative Religion  three overlapping circles (dialogue)
-//   Schools of Thought .. a tree with branches spreading from one trunk
-//   Quranic Studies ..... an open book on a folding book stand (rehal); pages left blank
-//   Hadith & Ahlul-Bayt . a hanging lamp (qandil): teaching as light
-//   History ............. arches receding into the distance (time)
-//   Stories & Reflections a crescent and stars
-//   Biography ........... a winding path to a sunset between cypress trees (a life's journey)
-//   Literature & Poetry . a reed pen (qalam) and inkwell
-//   Duas, Ziyarat & Amaal prayer beads around a dome
-//   Ethics .............. a fountain (purity)
-//   Miscellaneous ....... a cluster of different girih tiles
-//   French / Italian .... the word "Français" / "Italiano" set in type
-//   Uncategorized ....... a plain ring of stars
+// Category ............ colour ......................... motif
+//   Theology ............ navy #0F2547 ................... eight-point star within rings (the oneness of God)
+//   Philosophy .......... indigo #2A2A66 ................. compass-drawn circles (reason and order)
+//   Fiqh ................ deep teal #0D4648 .............. balanced scales (law and justice)
+//   Governance .......... burgundy #621B2E ............... a city skyline of domes and towers (society)
+//   Comparative Religion  steel blue #163C5C ............. three overlapping circles (dialogue)
+//   Schools of Thought .. forest green #1C4A2B ........... a tree with branches spreading from one trunk
+//   Quranic Studies ..... emerald #0C4D3C ................ an open book with fanned pages on a book stand (rehal); pages blank
+//   Hadith & Ahlul-Bayt . bronze #553A12 ................. a hanging lamp (qandil): teaching as light
+//   History ............. terracotta #66301A ............. an hourglass beneath an arch (the passing of time)
+//   Stories & Reflections twilight violet #35215A ........ a crescent and stars (stories told at night)
+//   Biography ........... dusk rose #5A2246 .............. a winding path to a sunset between cypress trees (a life's journey)
+//   Literature & Poetry . oxblood #5E1B1B ................ a reed pen (qalam) and inkwell
+//   Duas, Ziyarat & Amaal turquoise #0B4A5E .............. a prayer mat with a mihrab arch, and prayer beads (tasbih)
+//   Ethics .............. moss green #2F4A1C ............. a compass rose (a moral compass)
+//   Miscellaneous ....... warm taupe #463C33 ............. a cluster of different girih tiles
+//   French .............. cobalt #1E2E6E ................. the word "Français" set in type
+//   Italian ............. olive #3E4517 .................. the word "Italiano" set in type
+//   Uncategorized ....... charcoal #2E3238 ............... a plain ring of stars
 
 import { useId, type ReactNode } from "react";
 
-const GOLD = "#d4af55"; // emblem gold, lightened so it shows clearly on navy
+const GOLD = "#d4af55"; // emblem gold, lightened so it shows clearly on the dark panels
+
+/** Each category's panel colour (top of the panel; it deepens towards the bottom). */
+export const CATEGORY_COLORS: Record<string, string> = {
+  theology: "#0F2547",
+  philosophy: "#2A2A66",
+  fiqh: "#0D4648",
+  "governance-politics-and-society": "#621B2E",
+  "comparative-religion": "#163C5C",
+  "islamic-schools-of-thought": "#1C4A2B",
+  "quranic-studies": "#0C4D3C",
+  "hadith-and-ahlal-bayt-teachings": "#553A12",
+  history: "#66301A",
+  "stories-and-reflections": "#35215A",
+  biography: "#5A2246",
+  "literature-and-poetry": "#5E1B1B",
+  "duas-ziyarat-and-amaal": "#0B4A5E",
+  ethics: "#2F4A1C",
+  miscellaneous: "#463C33",
+  french: "#1E2E6E",
+  italian: "#3E4517",
+  uncategorized: "#2E3238",
+};
+
+/** The same colour, darker (f = 0.55 keeps 55% of the brightness). */
+function deepen(hex: string, f = 0.55) {
+  return (
+    "#" +
+    [1, 3, 5]
+      .map((i) => Math.round(parseInt(hex.slice(i, i + 2), 16) * f).toString(16).padStart(2, "0"))
+      .join("")
+  );
+}
 const W = 320;
 const H = 200;
 const CX = 160;
@@ -94,12 +128,19 @@ const MOTIFS: Record<string, (id: string) => ReactNode> = {
   ),
   "governance-politics-and-society": () => (
     <>
-      <polygon points={hexagon(0, 0, 20)} fill={GOLD} fillOpacity="0.18" />
-      {Array.from({ length: 6 }, (_, i) => {
-        const a = (Math.PI / 3) * i + Math.PI / 6;
-        const d = 20 * Math.sqrt(3);
-        return <polygon key={i} points={hexagon(d * Math.cos(a), d * Math.sin(a), 20)} />;
-      })}
+      {/* a city: a domed hall in the middle, towers and houses either side */}
+      <path d="M-66 52 H66" />
+      <path d="M-22 52 V10 H22 V52" />
+      <path d="M-24 10 Q-24 -24 0 -34 Q24 -24 24 10 Z" fill={GOLD} fillOpacity="0.18" />
+      <path d="M0 -34 V-42" />
+      <polygon points={star(0, -47, 5)} fill={GOLD} stroke="none" />
+      <path d={arch(0, 52, 14, 26)} />
+      <path d="M-44 52 V-18 H-32 V52 M-46 -18 L-38 -32 L-30 -18 M32 52 V-18 H44 V52 M30 -18 L38 -32 L46 -18" />
+      <path d="M-62 52 V22 L-53 14 L-44 22 M62 52 V22 L53 14 L44 22" strokeOpacity="0.8" />
+      <path d={arch(-53, 40, 6, 10)} strokeOpacity="0.8" strokeWidth="1.8" />
+      <path d={arch(53, 40, 6, 10)} strokeOpacity="0.8" strokeWidth="1.8" />
+      <path d={arch(-38, 4, 4, 9)} strokeWidth="1.6" />
+      <path d={arch(38, 4, 4, 9)} strokeWidth="1.6" />
     </>
   ),
   "comparative-religion": () => (
@@ -125,6 +166,8 @@ const MOTIFS: Record<string, (id: string) => ReactNode> = {
       {/* open book, pages left blank */}
       <path d="M0 -6 Q-26 -22 -58 -14 V20 Q-26 12 0 26 Q26 12 58 20 V-14 Q26 -22 0 -6 Z" fill={GOLD} fillOpacity="0.12" />
       <path d="M0 -6 V26" />
+      <path d="M0 -6 Q-22 -16 -48 -11 M0 -6 Q-18 -12 -38 -9 M0 -6 Q22 -16 48 -11 M0 -6 Q18 -12 38 -9" strokeOpacity="0.55" strokeWidth="1.6" />
+      <path d="M-58 20 V24 Q-26 16 0 30 Q26 16 58 24 V20" strokeOpacity="0.7" strokeWidth="1.8" />
       {/* folding book stand (rehal) */}
       <path d="M-44 24 L30 58 M44 24 L-30 58" />
       <path d="M-50 22 L-36 28 M50 22 L36 28" />
@@ -144,11 +187,14 @@ const MOTIFS: Record<string, (id: string) => ReactNode> = {
   ),
   history: () => (
     <>
-      <path d={arch(0, 52, 108, 108)} />
-      <path d={arch(0, 40, 74, 80)} strokeOpacity="0.8" />
-      <path d={arch(0, 30, 46, 54)} strokeOpacity="0.6" />
-      <path d={arch(0, 22, 24, 30)} strokeOpacity="0.45" />
-      <path d="M-54 52 L-12 22 M54 52 L12 22" strokeOpacity="0.5" />
+      {/* an hourglass standing beneath an arch */}
+      <path d={arch(0, 56, 104, 114)} strokeOpacity="0.5" />
+      <path d="M-28 -38 H28 M-28 46 H28" strokeWidth="3.2" />
+      <path d="M-24 -38 V46 M24 -38 V46" strokeOpacity="0.6" strokeWidth="1.8" />
+      <path d="M-17 -38 C-17 -12 -4 -4 -3 4 C-4 12 -17 20 -17 46 M17 -38 C17 -12 4 -4 3 4 C4 12 17 20 17 46" />
+      <path d="M-11 -18 Q0 -13 11 -18 Q5 -6 0 1 Q-5 -6 -11 -18 Z" fill={GOLD} fillOpacity="0.55" stroke="none" />
+      <path d="M0 4 V32" strokeWidth="1.4" />
+      <path d="M-15 44 Q0 26 15 44 Z" fill={GOLD} fillOpacity="0.55" stroke="none" />
     </>
   ),
   "stories-and-reflections": (id) => (
@@ -190,22 +236,33 @@ const MOTIFS: Record<string, (id: string) => ReactNode> = {
   ),
   "duas-ziyarat-and-amaal": () => (
     <>
-      {Array.from({ length: 33 }, (_, i) => {
-        const a = (Math.PI * 2 * i) / 33 - Math.PI / 2;
-        return <circle key={i} cx={(54 * Math.cos(a)).toFixed(1)} cy={(4 + 54 * Math.sin(a)).toFixed(1)} r="3.6" fill={GOLD} stroke="none" />;
+      {/* a prayer mat with a mihrab arch, fringed at the foot */}
+      <rect x="-44" y="-50" width="64" height="94" rx="3" fill={GOLD} fillOpacity="0.08" />
+      <rect x="-38" y="-44" width="52" height="82" rx="2" strokeOpacity="0.6" strokeWidth="1.6" />
+      <path d={arch(-12, 30, 34, 60)} fill={GOLD} fillOpacity="0.16" />
+      <polygon points={star(-12, -12, 5)} fill={GOLD} stroke="none" />
+      <path d="M-26 30 H2" strokeOpacity="0.7" />
+      {Array.from({ length: 8 }, (_, i) => (
+        <path key={i} d={`M${-40 + i * 8} 44 V52`} strokeWidth="1.6" strokeOpacity="0.8" />
+      ))}
+      {/* prayer beads (tasbih) beside it, with a tassel */}
+      {Array.from({ length: 19 }, (_, i) => {
+        const a = (Math.PI * 2 * i) / 19 - Math.PI / 2;
+        return <circle key={i} cx={(42 + 10 * Math.cos(a)).toFixed(1)} cy={(-2 + 28 * Math.sin(a)).toFixed(1)} r="2.9" fill={GOLD} stroke="none" />;
       })}
-      <path d="M-24 30 V6 Q-24 -16 0 -30 Q24 -16 24 6 V30 Z" fill={GOLD} fillOpacity="0.15" />
-      <path d="M0 -30 V-40 M-30 30 H30" />
-      <path d="M-8 30 V16 Q0 8 8 16 V30" strokeOpacity="0.8" />
+      <path d="M42 26 V38" />
+      <path d="M42 38 L37 50 M42 38 V51 M42 38 L47 50" strokeWidth="1.6" />
     </>
   ),
   ethics: () => (
     <>
-      <polygon points={star(0, 34, 50, 8, 0.82)} transform="scale(1 0.42) translate(0 46)" />
-      <path d="M0 22 V-28" />
-      <path d="M0 -28 Q-26 -40 -40 10 M0 -28 Q26 -40 40 10 M0 -28 Q-12 -44 -20 4 M0 -28 Q12 -44 20 4" strokeOpacity="0.8" />
-      <circle cy="-32" r="5" fill={GOLD} stroke="none" />
-      <path d="M-30 22 H30" />
+      {/* a compass rose: finding the right direction */}
+      <circle r="52" />
+      <circle r="44" strokeOpacity="0.5" />
+      <polygon points={star(0, 0, 36, 4, 0.3)} transform="rotate(45)" strokeOpacity="0.8" />
+      <polygon points={star(0, 0, 58, 4, 0.17)} fill={GOLD} fillOpacity="0.2" />
+      <polygon points="0,-58 9.9,-9.9 -9.9,-9.9" fill={GOLD} stroke="none" />
+      <circle r="5" fill={GOLD} stroke="none" />
     </>
   ),
   miscellaneous: () => (
@@ -233,12 +290,13 @@ export default function CategoryCover({ slug, number, className = "" }: { slug: 
   const id = useId().replace(/:/g, "");
   const motif = MOTIFS[slug];
   const word = WORDS[slug];
+  const color = CATEGORY_COLORS[slug] ?? CATEGORY_COLORS.theology;
   return (
     <svg className={`category-cover ${className}`} viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
       <defs>
         <linearGradient id={`${id}-bg`} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#0f2547" />
-          <stop offset="1" stopColor="#04142e" />
+          <stop offset="0" stopColor={color} />
+          <stop offset="1" stopColor={deepen(color)} />
         </linearGradient>
         <pattern id={`${id}-lattice`} width="40" height="40" patternUnits="userSpaceOnUse">
           <g fill="none" stroke={GOLD} strokeOpacity="0.09" strokeWidth="1">

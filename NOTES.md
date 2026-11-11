@@ -36,7 +36,8 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
   - **Explore** (`/explore/`): a card per category with its cover artwork and one-line description,
     then a page per category (`/explore/fiqh/`) and sub-category (`/explore/fiqh/worship/`).
     Descriptions and display spellings (e.g. "Ahlul-Bayt") are in `src/lib/categoryInfo.ts`;
-    covers are drawn in `src/components/CategoryCover.tsx` (motif list at the top of that file).
+    covers are drawn in `src/components/CategoryCover.tsx`: each category has its own deep colour
+    and gold motif (the full colour + motif list is at the top of that file).
   - **Shelves** (`/shelves/`): shelf tabs (All shelves, 100 · Theology … No number); "All shelves" shows a
     box per shelf above every book. Each shelf page has section chips, a filter box and "Search this shelf".
   - **Authors** (`/authors/`): everyone with 2+ books, A to Z, each with a page listing their books.
