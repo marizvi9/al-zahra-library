@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="site-footer">
       <Girih className="girih-footer" />
       <div className="container footer-inner">
-        <p className="footer-name">Al-Zahra Library - Islamic Education Center of Houston TX © 2026</p>
+        <p className="footer-name">Al-Zahra Islamic Library – Islamic Education Center of Houston TX © 2026</p>
       </div>
     </footer>
   );

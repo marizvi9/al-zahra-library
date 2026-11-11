@@ -3,7 +3,7 @@ import Girih from "@/components/Girih";
 import SearchBox from "@/components/SearchBox";
 import CategoryCard from "@/components/CategoryCard";
 import FeaturedSlider from "@/components/FeaturedSlider";
-import { withBase } from "@/lib/paths";
+import { Emblem } from "@/components/Emblem";
 import { featuredSlides } from "@/lib/featured";
 import { books, featuredCategories, moreToExplore } from "@/lib/catalog";
 
@@ -14,20 +14,11 @@ export default function HomePage() {
         <div className="hero-arch">
           <Girih className="girih-hero" />
           <div className="hero-content">
-            <div className="hero-title-row">
-              {/* Logo placeholder: replace public/logos/al-zahra-logo.svg with the real logo. */}
-              <img
-                src={withBase("/logos/al-zahra-logo.svg")}
-                alt="Al-Zahra Library logo"
-                width={88}
-                height={88}
-                className="hero-logo"
-              />
-              <h1 id="hero-title">
-                Welcome to the <span className="nowrap">Al-Zahra</span> Library
-              </h1>
-            </div>
-            <p className="hero-sub">at the Islamic Education Center</p>
+            <Emblem className="hero-emblem" />
+            <h1 id="hero-title">
+              Welcome to the <span className="nowrap">Al-Zahra</span> Islamic Library
+            </h1>
+            <p className="hero-sub">at the Islamic Education Center of Houston</p>
             <p className="hero-lede">
               Search {books.length} books on faith, history, law, thought and more.
             </p>

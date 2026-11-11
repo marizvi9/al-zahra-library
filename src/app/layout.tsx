@@ -1,6 +1,6 @@
 import { ViewTransition } from "react";
 import type { Metadata, Viewport } from "next";
-import { Noto_Naskh_Arabic, Noto_Sans, Noto_Serif } from "next/font/google";
+import { Montserrat, Noto_Naskh_Arabic, Noto_Sans, Noto_Serif } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Disclaimer from "@/components/Disclaimer";
@@ -11,17 +11,19 @@ import "./globals.css";
 // Fonts are downloaded at build time and served with the site (no tracking).
 const serif = Noto_Serif({ subsets: ["latin", "latin-ext"], variable: "--font-serif", display: "swap" });
 const sans = Noto_Sans({ subsets: ["latin", "latin-ext"], variable: "--font-sans", display: "swap" });
+// Montserrat: the emblem lettering (close to the original typeface).
+const brand = Montserrat({ subsets: ["latin"], weight: ["500", "600"], variable: "--font-brand", display: "swap" });
 const arabic = Noto_Naskh_Arabic({ subsets: ["arabic"], variable: "--font-arabic", display: "swap" });
 
 export const metadata: Metadata = {
-  title: { default: "The Al-Zahra Library at IEC", template: "%s · The Al-Zahra Library at IEC" },
-  description: "Search and explore the book catalog of the Al-Zahra Library at the Islamic Education Center.",
+  title: { default: "Al-Zahra Islamic Library", template: "%s · Al-Zahra Islamic Library" },
+  description: "Search and explore the book catalog of the Al-Zahra Islamic Library at the Islamic Education Center of Houston.",
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#FBF7EE",
+  themeColor: "#ECE3CE",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -29,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="en"
       dir="ltr"
-      className={`${serif.variable} ${sans.variable} ${arabic.variable}`}
+      className={`${serif.variable} ${sans.variable} ${arabic.variable} ${brand.variable}`}
       suppressHydrationWarning /* the intro script may add a class before React loads */
     >
       <head>

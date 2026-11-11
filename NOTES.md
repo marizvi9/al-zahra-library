@@ -1,6 +1,10 @@
 # Project notes
 
-Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC).
+Catalogue website for the Al-Zahra Islamic Library at the Islamic Education Center of Houston (IEC).
+
+Brand: the official emblem is `public/brand/emblem.png`. It is redrawn as SVG in
+`src/components/Emblem.tsx` (crisp at any size, and animatable). Colours come from the emblem:
+parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of `src/app/globals.css`).
 
 - **Live site (Vercel):** https://al-zahra-library.vercel.app
 - **Live site (GitHub Pages):** https://marizvi9.github.io/al-zahra-library/
@@ -39,7 +43,7 @@ Catalogue website for the Al-Zahra Library at the Islamic Education Center (IEC)
 - Smooth page transitions, covers that glide from lists into book pages, a 3D "turn the
   book" cover gallery with swipe/arrow keys, and a full-screen viewer with pinch/scroll/click
   zoom. Motion is reduced if the visitor asks.
-- Home page: "Welcome to the Al-Zahra Library" heading with the logo placeholder, and a
+- Home page: the emblem, "Welcome to the Al-Zahra Islamic Library", and a
   **Featured books** slider (5 books). To swap a book, edit `data/featured-slider-books.json` and
   rebuild. The build stops with a clear message if a chosen book lacks an author, cover or description.
 - **Book descriptions** ("About this book") on 160 book pages, copied from Google Books (153) or

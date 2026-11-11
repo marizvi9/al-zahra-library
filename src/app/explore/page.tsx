@@ -7,7 +7,7 @@ import { allShelfSections, books, shelves, toListItem } from "@/lib/catalog";
 
 export const metadata: Metadata = {
   title: "Explore by shelves",
-  description: "Explore every book in the Al-Zahra Library, shelf by shelf.",
+  description: "Explore every book in the Al-Zahra Islamic Library, shelf by shelf.",
 };
 
 export default function ExplorePage() {

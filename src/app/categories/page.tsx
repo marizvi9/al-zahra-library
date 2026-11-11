@@ -6,7 +6,7 @@ import { categories } from "@/lib/catalog";
 
 export const metadata: Metadata = {
   title: "Browse by categories",
-  description: "Every subject in the Al-Zahra Library, with a short description of each.",
+  description: "Every subject in the Al-Zahra Islamic Library, with a short description of each.",
 };
 
 export default function CategoriesPage() {
