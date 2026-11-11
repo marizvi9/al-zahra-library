@@ -2,7 +2,7 @@
 // or, if there's no verified photo, a large navy-and-gold initials panel.
 // The photo is never stretched beyond the size of the copy we have, so it stays sharp.
 
-import { initials, photoFor } from "@/lib/authorPhotos";
+import { focusPosition, initials, photoFor } from "@/lib/authorPhotos";
 import { withBase } from "@/lib/paths";
 import { PhotoCredit } from "./AuthorAvatar";
 
@@ -15,7 +15,7 @@ export default function AuthorPortrait({ name }: { name: string }) {
     return (
       <figure className="author-portrait" style={{ ["--native-w" as string]: `${w}px` }}>
         {/* The author's name is the page heading right beside this, so no alt text is needed. */}
-        <img src={withBase(src)} alt="" width={w} height={h} fetchPriority="high" decoding="async" />
+        <img src={withBase(src)} alt="" width={w} height={h} fetchPriority="high" decoding="async" style={{ objectPosition: focusPosition(photo) }} />
         <figcaption>
           <PhotoCredit photo={photo} />
         </figcaption>

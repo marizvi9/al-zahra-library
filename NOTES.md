@@ -53,6 +53,8 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
     portrait on the author's page. Each author's Wikipedia article is chosen by hand, then
     `node scripts/fetch_author_photos.mjs` fetches the photos and licences. Authors with no photo get a
     navy-and-gold initials badge (and a large initials panel on their page).
+  - **Face position:** each photo's `focus` (x, y in percent, set by eye) keeps the face centred whenever the photo is
+    cropped, at any size; an optional `zoom` enlarges far-away shots in the small round badges.
   - The Prophet, the Imams, Lady Fatima and other holy figures (including books attributed to them) never get a
     picture and are never looked up (`src/lib/authorPhotos.ts` enforces this); their bios are left for you to write.
   - **Author names are links** everywhere (book pages, lists, search, slider, featured sections), except on the

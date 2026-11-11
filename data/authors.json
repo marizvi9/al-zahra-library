@@ -4,7 +4,8 @@
     "BIOS (shown ONLY on the author's own page): \"bio\" is 1-2 sentences written by hand from the sources in \"bioSources\" and the books we hold. \"bioStatus\" is one of: \"verified\" (shown), \"from our data only\" (no bio; the page shows only the line built from the catalogue), \"needs review\" (nothing shown until you approve: copy \"draftBio\" into \"bio\", or write your own, and set \"bioStatus\" to \"verified\"). To remove a bio, set \"bio\": null and \"bioStatus\": \"from our data only\".",
     "PHOTOS come ONLY from Wikimedia Commons, under a free licence (public domain, CC0, CC BY or CC BY-SA), and each is shown with its credit and licence. \"photo\" is the small copy (lists, cards); \"photoLarge\" the big portrait on the author's page (never enlarged; \"lowRes\": true means the original is under 480px wide). To REMOVE a photo set \"photo\": null and rebuild. To ADD one, put the Wikipedia article title in \"wikipedia\", then run: node scripts/fetch_author_photos.mjs",
     "Authors with no photo get a navy-and-gold badge with their initials.",
-    "neverPhoto: the Prophet, the Imams, Lady Fatima and other members of the Ahlul-Bayt and holy figures, including books attributed to them. They NEVER get a photo or any picture, and are never searched for. The site enforces this even if a photo is added by mistake. Their bios are left for you to write."
+    "neverPhoto: the Prophet, the Imams, Lady Fatima and other members of the Ahlul-Bayt and holy figures, including books attributed to them. They NEVER get a photo or any picture, and are never searched for. The site enforces this even if a photo is added by mistake. Their bios are left for you to write.",
+    "FOCUS: \"focus\" {x, y} is where the face is in the photo, in percent from the left and from the top (set by checking each photo by eye). Every size of the photo is cropped around this point. If a face looks cut off, nudge these numbers and rebuild. Optional \"zoom\" (e.g. 1.5) enlarges the photo around the face in the small round badges only, for photos taken from far away."
   ],
   "neverPhoto": [
     "Imam Ali Amir al-Mum'minin",
@@ -40,7 +41,11 @@
       "bio": "Iranian Shia scholar, philosopher and lecturer (1919–1979). He wrote widely on Islamic thought, society and ethics, and was a student of Imam Khomeini.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Morteza_Motahhari"
-      ]
+      ],
+      "focus": {
+        "x": 50,
+        "y": 50
+      }
     },
     "Ali Shariati": {
       "wikipedia": "Ali Shariati",
@@ -63,7 +68,11 @@
       "bio": "Iranian sociologist and writer (1933–1977) who specialised in the sociology of religion and wrote and lectured widely on Islam and society.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Ali_Shariati"
-      ]
+      ],
+      "focus": {
+        "x": 50,
+        "y": 35
+      }
     },
     "Muhammad Baqir al-Sadr": {
       "wikipedia": "Muhammad Baqir al-Sadr",
@@ -86,7 +95,12 @@
       "bio": "Iraqi Islamic scholar and philosopher (1935–1980). His books include Our Philosophy and Our Economics (Iqtisaduna), both held by the library.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Muhammad_Baqir_al-Sadr"
-      ]
+      ],
+      "focus": {
+        "x": 55,
+        "y": 32,
+        "zoom": 1.8
+      }
     },
     "Muhammad Husayn Tabatabai": {
       "wikipedia": "Muhammad Husayn Tabatabai",
@@ -109,7 +123,11 @@
       "bio": "Iranian scholar and philosopher (1903–1981), commonly known as Allamah Tabataba'i. He is best known for Tafsir al-Mizan, a commentary on the Quran in many volumes.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Muhammad_Husayn_Tabataba%27i"
-      ]
+      ],
+      "focus": {
+        "x": 50,
+        "y": 38
+      }
     },
     "Imam Khomeini": {
       "wikipedia": "Ruhollah Khomeini",
@@ -132,7 +150,11 @@
       "bio": "Iranian Shia cleric (1900–1989) who led the Iranian Revolution of 1979 and was the first Supreme Leader of Iran until his death.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Ruhollah_Khomeini"
-      ]
+      ],
+      "focus": {
+        "x": 48,
+        "y": 40
+      }
     },
     "Ali Khamenei": {
       "wikipedia": "Ali Khamenei",
@@ -155,7 +177,11 @@
       "bio": "Iranian Shia cleric (1939–2026) who was President of Iran from 1981 to 1989 and then its Supreme Leader from 1989 until his death.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Ali_Khamenei"
-      ]
+      ],
+      "focus": {
+        "x": 52,
+        "y": 37
+      }
     },
     "Seyyed Hossein Nasr": {
       "wikipedia": "Seyyed Hossein Nasr",
@@ -178,7 +204,12 @@
       "bio": "Iranian-American philosopher and scholar of Islam, born in 1933, and University Professor of Islamic studies at George Washington University. He writes on Islamic philosophy, spirituality and the history of science.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Seyyed_Hossein_Nasr"
-      ]
+      ],
+      "focus": {
+        "x": 52,
+        "y": 30,
+        "zoom": 1.3
+      }
     },
     "Ahmed Deedat": {
       "wikipedia": "Ahmed Deedat",
@@ -213,7 +244,12 @@
       "bio": "Iranian Shia scholar and philosopher (1935–2021) and a member of Iran's Assembly of Experts. His books cover philosophy, belief and self-improvement.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Mohammad-Taqi_Mesbah-Yazdi"
-      ]
+      ],
+      "focus": {
+        "x": 52,
+        "y": 33,
+        "zoom": 1.3
+      }
     },
     "Muhammad Husayni Beheshti": {
       "wikipedia": "Mohammad Beheshti",
@@ -236,7 +272,11 @@
       "bio": "Iranian jurist, cleric and politician (1928–1981), considered the main architect of Iran's constitution after the 1979 revolution.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Mohammad_Beheshti"
-      ]
+      ],
+      "focus": {
+        "x": 48,
+        "y": 40
+      }
     },
     "Mehdi Bazargan": {
       "wikipedia": "Mehdi Bazargan",
@@ -259,7 +299,11 @@
       "bio": "Iranian engineer, scholar and politician (1907–1995) who headed Iran's interim government after the 1979 revolution.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Mehdi_Bazargan"
-      ]
+      ],
+      "focus": {
+        "x": 55,
+        "y": 22
+      }
     },
     "Ali al-Sistani": {
       "wikipedia": "Ali al-Sistani",
@@ -282,7 +326,11 @@
       "bio": "Grand Ayatollah and Islamic scholar, born in Mashhad, Iran, in 1930, who leads the seminary (hawza) of Najaf, Iraq. He is one of the leading religious authorities of Twelver Shia Muslims.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Ali_al-Sistani"
-      ]
+      ],
+      "focus": {
+        "x": 48,
+        "y": 40
+      }
     },
     "Nasir Makarim Shirazi": {
       "wikipedia": "Naser Makarem Shirazi",
@@ -305,7 +353,11 @@
       "bio": "Iranian Grand Ayatollah and Shia religious leader, born in 1927. His books in the library explain the principles of belief.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Naser_Makarem_Shirazi"
-      ]
+      ],
+      "focus": {
+        "x": 50,
+        "y": 30
+      }
     },
     "Kalim Siddiqui": {
       "wikipedia": "Kalim Siddiqui (writer)",
@@ -365,7 +417,11 @@
       "bio": "Pakistani scholar of Islam (1932–1996). His books in the library include Da'wah among Non-Muslims in the West.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Khurram_Murad"
-      ]
+      ],
+      "focus": {
+        "x": 50,
+        "y": 33
+      }
     },
     "Muhammad Hamidullah": {
       "wikipedia": "Muhammad Hamidullah",
@@ -424,7 +480,11 @@
       "bio": "Shia scholar (1925–2013) known for his books explaining Islamic beliefs, including the Lessons on Islamic Doctrine series.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Mujtaba_Musavi_Lari"
-      ]
+      ],
+      "focus": {
+        "x": 48,
+        "y": 40
+      }
     },
     "Ibrahim Amini": {
       "wikipedia": "Ebrahim Amini",
@@ -447,7 +507,11 @@
       "bio": "Iranian ayatollah and jurist (1925–2020) who served on Iran's Assembly of Experts. His books cover Shia belief, family life and self-improvement.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Ebrahim_Amini"
-      ]
+      ],
+      "focus": {
+        "x": 52,
+        "y": 30
+      }
     },
     "Mohammad Ali Shomali": {
       "wikipedia": "Mohammad Ali Shomali",
@@ -494,7 +558,12 @@
       "bio": "Iranian cleric and religious scholar (1946–2022) who also held senior judicial and government posts in Iran.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Mohammad_Reyshahri"
-      ]
+      ],
+      "focus": {
+        "x": 50,
+        "y": 30,
+        "zoom": 1.2
+      }
     },
     "Husayn Ansariyan": {
       "wikipedia": "Hossein Ansarian",
@@ -517,7 +586,12 @@
       "bio": "Iranian Shia cleric, born in 1944. His books in the library include works on religious knowledge and a commentary on the Supplication of Kumayl.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Hossein_Ansarian"
-      ]
+      ],
+      "focus": {
+        "x": 52,
+        "y": 25,
+        "zoom": 1.4
+      }
     },
     "Muhammad Rida al-Muzaffar": {
       "wikipedia": null,
@@ -557,7 +631,11 @@
       "largeHeight": 275,
       "lowRes": true,
       "originalWidth": 263,
-      "originalHeight": 275
+      "originalHeight": 275,
+      "focus": {
+        "x": 55,
+        "y": 45
+      }
     },
     "Murtada al-Askari": {
       "wikipedia": "Morteza Askari",
@@ -585,7 +663,12 @@
       "largeHeight": 396,
       "lowRes": true,
       "originalWidth": 325,
-      "originalHeight": 396
+      "originalHeight": 396,
+      "focus": {
+        "x": 48,
+        "y": 30,
+        "zoom": 1.3
+      }
     },
     "Sir Mohammad Iqbal": {
       "wikipedia": "Muhammad Iqbal",
@@ -603,7 +686,11 @@
       "largeHeight": 917,
       "lowRes": false,
       "originalWidth": 1491,
-      "originalHeight": 2136
+      "originalHeight": 2136,
+      "focus": {
+        "x": 42,
+        "y": 35
+      }
     },
     "Tayeb Salih": {
       "wikipedia": "Tayeb Salih",
@@ -621,7 +708,11 @@
       "largeHeight": 225,
       "lowRes": true,
       "originalWidth": 300,
-      "originalHeight": 225
+      "originalHeight": 225,
+      "focus": {
+        "x": 55,
+        "y": 40
+      }
     },
     "Akbar S. Ahmed": {
       "wikipedia": "Akbar Ahmed",
@@ -639,7 +730,11 @@
       "largeHeight": 728,
       "lowRes": false,
       "originalWidth": 548,
-      "originalHeight": 728
+      "originalHeight": 728,
+      "focus": {
+        "x": 50,
+        "y": 33
+      }
     },
     "Khurshid Ahmad": {
       "wikipedia": "Khurshid Ahmad",
@@ -664,7 +759,11 @@
       "largeHeight": 722,
       "lowRes": false,
       "originalWidth": 500,
-      "originalHeight": 722
+      "originalHeight": 722,
+      "focus": {
+        "x": 50,
+        "y": 35
+      }
     },
     "Muhammad Jawad Chirri": {
       "wikipedia": "Mohamad Jawad Chirri",
@@ -720,7 +819,11 @@
       "largeHeight": 688,
       "lowRes": false,
       "originalWidth": 533,
-      "originalHeight": 688
+      "originalHeight": 688,
+      "focus": {
+        "x": 52,
+        "y": 35
+      }
     },
     "George Jordac": {
       "wikipedia": "George Jordac",
@@ -745,7 +848,11 @@
       "largeHeight": 766,
       "lowRes": false,
       "originalWidth": 802,
-      "originalHeight": 960
+      "originalHeight": 960,
+      "focus": {
+        "x": 52,
+        "y": 40
+      }
     },
     "Hazrat Inayat Khan": {
       "wikipedia": "Inayat Khan",
@@ -782,7 +889,12 @@
       "largeHeight": 475,
       "lowRes": false,
       "originalWidth": 628,
-      "originalHeight": 475
+      "originalHeight": 475,
+      "focus": {
+        "x": 52,
+        "y": 38,
+        "zoom": 1.4
+      }
     },
     "Alija Ali Izetbegovic": {
       "wikipedia": "Alija Izetbegović",
@@ -800,7 +912,11 @@
       "largeHeight": 895,
       "lowRes": false,
       "originalWidth": 755,
-      "originalHeight": 1056
+      "originalHeight": 1056,
+      "focus": {
+        "x": 45,
+        "y": 30
+      }
     },
     "Amin Maalouf": {
       "wikipedia": "Amin Maalouf",
@@ -818,7 +934,12 @@
       "largeHeight": 454,
       "lowRes": true,
       "originalWidth": 454,
-      "originalHeight": 454
+      "originalHeight": 454,
+      "focus": {
+        "x": 42,
+        "y": 30,
+        "zoom": 1.9
+      }
     },
     "Amir Taheri": {
       "wikipedia": "Amir Taheri",
@@ -843,7 +964,11 @@
       "largeHeight": 919,
       "lowRes": false,
       "originalWidth": 945,
-      "originalHeight": 1357
+      "originalHeight": 1357,
+      "focus": {
+        "x": 50,
+        "y": 38
+      }
     },
     "Dr. Zakir Naik": {
       "wikipedia": "Zakir Naik",
@@ -861,7 +986,12 @@
       "largeHeight": 794,
       "lowRes": false,
       "originalWidth": 630,
-      "originalHeight": 794
+      "originalHeight": 794,
+      "focus": {
+        "x": 48,
+        "y": 18,
+        "zoom": 2
+      }
     },
     "Gilles Kepel": {
       "wikipedia": "Gilles Kepel",
@@ -879,7 +1009,12 @@
       "largeHeight": 709,
       "lowRes": false,
       "originalWidth": 1246,
-      "originalHeight": 1380
+      "originalHeight": 1380,
+      "focus": {
+        "x": 48,
+        "y": 20,
+        "zoom": 2.4
+      }
     },
     "H.A.R Gibb": {
       "wikipedia": "Hamilton A. R. Gibb",
@@ -909,7 +1044,11 @@
       "largeHeight": 198,
       "lowRes": true,
       "originalWidth": 200,
-      "originalHeight": 198
+      "originalHeight": 198,
+      "focus": {
+        "x": 55,
+        "y": 35
+      }
     },
     "Hashimi Rafsanjani": {
       "wikipedia": "Akbar Hashemi Rafsanjani",
@@ -927,7 +1066,11 @@
       "largeHeight": 891,
       "lowRes": false,
       "originalWidth": 630,
-      "originalHeight": 891
+      "originalHeight": 891,
+      "focus": {
+        "x": 50,
+        "y": 42
+      }
     },
     "Heinz Halm": {
       "wikipedia": "Heinz Halm",
@@ -952,7 +1095,11 @@
       "largeHeight": 1039,
       "lowRes": false,
       "originalWidth": 713,
-      "originalHeight": 1157
+      "originalHeight": 1157,
+      "focus": {
+        "x": 55,
+        "y": 52
+      }
     },
     "Jimmy Carter": {
       "wikipedia": "Jimmy Carter",
@@ -970,7 +1117,12 @@
       "largeHeight": 849,
       "lowRes": false,
       "originalWidth": 1528,
-      "originalHeight": 2027
+      "originalHeight": 2027,
+      "focus": {
+        "x": 48,
+        "y": 22,
+        "zoom": 1.3
+      }
     },
     "Josef Pieper": {
       "wikipedia": "Josef Pieper",
@@ -995,7 +1147,12 @@
       "largeHeight": 270,
       "lowRes": true,
       "originalWidth": 180,
-      "originalHeight": 270
+      "originalHeight": 270,
+      "focus": {
+        "x": 50,
+        "y": 22,
+        "zoom": 1.3
+      }
     },
     "M. Pickthall": {
       "wikipedia": "Marmaduke Pickthall",
@@ -1013,7 +1170,12 @@
       "largeHeight": 574,
       "lowRes": true,
       "originalWidth": 400,
-      "originalHeight": 574
+      "originalHeight": 574,
+      "focus": {
+        "x": 47,
+        "y": 25,
+        "zoom": 1.3
+      }
     },
     "Majid Fakhry": {
       "wikipedia": "Majid Fakhry",
@@ -1038,7 +1200,11 @@
       "largeHeight": 166,
       "lowRes": true,
       "originalWidth": 147,
-      "originalHeight": 166
+      "originalHeight": 166,
+      "focus": {
+        "x": 52,
+        "y": 32
+      }
     },
     "Martyr Mustafa Chamran": {
       "wikipedia": "Mostafa Chamran",
@@ -1056,7 +1222,11 @@
       "largeHeight": 600,
       "lowRes": true,
       "originalWidth": 440,
-      "originalHeight": 600
+      "originalHeight": 600,
+      "focus": {
+        "x": 52,
+        "y": 40
+      }
     },
     "Mehdi Golshani": {
       "wikipedia": "Mehdi Golshani",
@@ -1088,7 +1258,11 @@
       "largeHeight": 297,
       "lowRes": true,
       "originalWidth": 175,
-      "originalHeight": 297
+      "originalHeight": 297,
+      "focus": {
+        "x": 50,
+        "y": 28
+      }
     },
     "Ralph Nader": {
       "wikipedia": "Ralph Nader",
@@ -1106,7 +1280,12 @@
       "largeHeight": 759,
       "lowRes": false,
       "originalWidth": 1406,
-      "originalHeight": 1667
+      "originalHeight": 1667,
+      "focus": {
+        "x": 45,
+        "y": 18,
+        "zoom": 2.1
+      }
     },
     "Robert Fisk": {
       "wikipedia": "Robert Fisk",
@@ -1124,7 +1303,11 @@
       "largeHeight": 711,
       "lowRes": false,
       "originalWidth": 897,
-      "originalHeight": 996
+      "originalHeight": 996,
+      "focus": {
+        "x": 47,
+        "y": 28
+      }
     },
     "Robert C. Tucker": {
       "wikipedia": "Robert C. Tucker",
@@ -1156,7 +1339,12 @@
       "largeHeight": 427,
       "lowRes": false,
       "originalWidth": 5472,
-      "originalHeight": 3648
+      "originalHeight": 3648,
+      "focus": {
+        "x": 45,
+        "y": 35,
+        "zoom": 1.4
+      }
     },
     "Strobe Talbott": {
       "wikipedia": "Strobe Talbott",
@@ -1174,7 +1362,12 @@
       "largeHeight": 444,
       "lowRes": true,
       "originalWidth": 346,
-      "originalHeight": 444
+      "originalHeight": 444,
+      "focus": {
+        "x": 50,
+        "y": 22,
+        "zoom": 1.3
+      }
     },
     "Tariq Ramadan": {
       "wikipedia": "Tariq Ramadan",
@@ -1192,7 +1385,12 @@
       "largeHeight": 927,
       "lowRes": false,
       "originalWidth": 1095,
-      "originalHeight": 1587
+      "originalHeight": 1587,
+      "focus": {
+        "x": 45,
+        "y": 25,
+        "zoom": 1.3
+      }
     },
     "Thomas W. Lippman": {
       "wikipedia": "Thomas W. Lippman",
@@ -1217,7 +1415,11 @@
       "largeHeight": 448,
       "lowRes": true,
       "originalWidth": 329,
-      "originalHeight": 448
+      "originalHeight": 448,
+      "focus": {
+        "x": 48,
+        "y": 42
+      }
     },
     "Ziba Mir-Hosseini": {
       "wikipedia": "Ziba Mir-Hosseini",
@@ -1249,7 +1451,12 @@
       "largeHeight": 662,
       "lowRes": true,
       "originalWidth": 393,
-      "originalHeight": 662
+      "originalHeight": 662,
+      "focus": {
+        "x": 47,
+        "y": 20,
+        "zoom": 1.3
+      }
     },
     "Professor T.B. Irving": {
       "wikipedia": "Thomas Ballantine Irving",
@@ -1287,7 +1494,11 @@
       "largeHeight": 891,
       "lowRes": false,
       "originalWidth": 734,
-      "originalHeight": 1022
+      "originalHeight": 1022,
+      "focus": {
+        "x": 52,
+        "y": 38
+      }
     },
     "Ayatullah Sayyid Abu Al-Qasim Al-Musawi Al-Khu'i": {
       "wikipedia": "Abu al-Qasim al-Khoei",
@@ -1305,7 +1516,11 @@
       "largeHeight": 915,
       "lowRes": false,
       "originalWidth": 569,
-      "originalHeight": 915
+      "originalHeight": 915,
+      "focus": {
+        "x": 50,
+        "y": 28
+      }
     },
     "Ayatullah Jawadi Amuli": {
       "wikipedia": "Abdollah Javadi-Amoli",
@@ -1323,7 +1538,11 @@
       "largeHeight": 795,
       "lowRes": false,
       "originalWidth": 1213,
-      "originalHeight": 1508
+      "originalHeight": 1508,
+      "focus": {
+        "x": 52,
+        "y": 30
+      }
     },
     "Ayatullah Gulpaygani": {
       "wikipedia": null,
@@ -1346,7 +1565,11 @@
       "largeHeight": 577,
       "lowRes": true,
       "originalWidth": 400,
-      "originalHeight": 577
+      "originalHeight": 577,
+      "focus": {
+        "x": 47,
+        "y": 35
+      }
     },
     "Ayatollah Hossein Vahid Khorasani": {
       "wikipedia": "Hossein Vahid Khorasani",
@@ -1364,7 +1587,11 @@
       "largeHeight": 849,
       "lowRes": false,
       "originalWidth": 681,
-      "originalHeight": 903
+      "originalHeight": 903,
+      "focus": {
+        "x": 52,
+        "y": 40
+      }
     },
     "Ayatullah Sayyid Muhammad Taqi-al-Modarresi": {
       "wikipedia": "Mohammad Taqi al-Modarresi",
@@ -1382,7 +1609,12 @@
       "largeHeight": 279,
       "lowRes": true,
       "originalWidth": 425,
-      "originalHeight": 279
+      "originalHeight": 279,
+      "focus": {
+        "x": 48,
+        "y": 30,
+        "zoom": 1.3
+      }
     },
     "Imam Muhammad Shirazi": {
       "wikipedia": "Muhammad al-Husayni al-Shirazi",
@@ -1405,7 +1637,11 @@
       "largeHeight": 465,
       "lowRes": true,
       "originalWidth": 397,
-      "originalHeight": 465
+      "originalHeight": 465,
+      "focus": {
+        "x": 52,
+        "y": 25
+      }
     },
     "Shaykh Fadhlalla Haeri": {
       "wikipedia": "Fadhlalla Haeri",
@@ -1428,7 +1664,11 @@
       "largeHeight": 350,
       "lowRes": true,
       "originalWidth": 233,
-      "originalHeight": 350
+      "originalHeight": 350,
+      "focus": {
+        "x": 55,
+        "y": 30
+      }
     },
     "Abdul Husayn Dastghaib Shirazi": {
       "wikipedia": "Abdul Hussein Dastgheib",
@@ -1454,7 +1694,12 @@
       "largeHeight": 801,
       "lowRes": false,
       "originalWidth": 652,
-      "originalHeight": 816
+      "originalHeight": 816,
+      "focus": {
+        "x": 48,
+        "y": 25,
+        "zoom": 1.6
+      }
     },
     "Sherwood Eddy": {
       "wikipedia": "Sherwood Eddy",
@@ -1472,7 +1717,12 @@
       "largeHeight": 710,
       "lowRes": false,
       "originalWidth": 707,
-      "originalHeight": 784
+      "originalHeight": 784,
+      "focus": {
+        "x": 47,
+        "y": 30,
+        "zoom": 1.2
+      }
     },
     "Sultanul-Waizin Shirazi": {
       "wikipedia": "Sultan al-Wa'izin Shirazi",
@@ -1490,7 +1740,12 @@
       "largeHeight": 564,
       "lowRes": true,
       "originalWidth": 416,
-      "originalHeight": 564
+      "originalHeight": 564,
+      "focus": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1.3
+      }
     },
     "Haji Mirza Mehdi Pooya": {
       "wikipedia": "Mirza Mahdi Pouya",
@@ -1527,7 +1782,12 @@
       "largeHeight": 571,
       "lowRes": false,
       "originalWidth": 1120,
-      "originalHeight": 1000
+      "originalHeight": 1000,
+      "focus": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1.3
+      }
     },
     "Syed Jawad Naqvi": {
       "wikipedia": "Syed Jawad Naqvi",
@@ -1559,7 +1819,12 @@
       "largeHeight": 923,
       "lowRes": false,
       "originalWidth": 1475,
-      "originalHeight": 2127
+      "originalHeight": 2127,
+      "focus": {
+        "x": 50,
+        "y": 28,
+        "zoom": 1.2
+      }
     },
     "Ayatullah Najafi Quchani": {
       "wikipedia": null,
@@ -1798,7 +2063,11 @@
       "largeHeight": 884,
       "lowRes": false,
       "originalWidth": 4104,
-      "originalHeight": 5670
+      "originalHeight": 5670,
+      "focus": {
+        "x": 40,
+        "y": 25
+      }
     }
   }
 }

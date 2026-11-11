@@ -18,7 +18,28 @@ export type AuthorPhoto = {
   license: string;
   licenseUrl: string | null;
   wikipediaUrl: string;
+  /** Where the face is, in percent from the left and top; every crop centres on it. */
+  focus?: { x: number; y: number; zoom?: number };
 };
+
+/**
+ * Style for a small square/round badge: centred on the face and, if "zoom" is set, enlarged
+ * around it. The shift is limited so the photo always covers the whole badge (no gaps).
+ */
+export function badgeStyle(p: Pick<AuthorPhoto, "focus">): React.CSSProperties {
+  const f = p.focus ?? { x: 50, y: 30 };
+  const z = f.zoom ?? 1;
+  if (z <= 1) return { objectPosition: `${f.x}% ${f.y}%` };
+  const shift = (pos: number) => Math.max(-(100 - pos) * (z - 1), Math.min(pos * (z - 1), 50 - pos));
+  return {
+    objectPosition: `${f.x}% ${f.y}%`,
+    transformOrigin: `${f.x}% ${f.y}%`,
+    transform: `translate(${shift(f.x).toFixed(1)}%, ${shift(f.y).toFixed(1)}%) scale(${z})`,
+  };
+}
+
+/** CSS object-position that keeps the face in view when the photo is cropped. */
+export const focusPosition = (p: Pick<AuthorPhoto, "focus">) => (p.focus ? `${p.focus.x}% ${p.focus.y}%` : "50% 30%");
 
 type Entry = Partial<AuthorPhoto> & {
   photo?: string | null;

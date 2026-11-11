@@ -1,7 +1,7 @@
 // An author's photo (if there's a verified, freely licensed one) or, if not, a
 // navy-and-gold badge with their initials. See src/lib/authorPhotos.ts.
 
-import { initials, photoFor, type AuthorPhoto } from "@/lib/authorPhotos";
+import { badgeStyle, initials, photoFor, type AuthorPhoto } from "@/lib/authorPhotos";
 import { withBase } from "@/lib/paths";
 
 type Props = { name: string | null | undefined; size?: number; className?: string };
@@ -20,6 +20,7 @@ export default function AuthorAvatar({ name, size = 48, className = "" }: Props)
           height={size}
           loading="lazy"
           decoding="async"
+          style={badgeStyle(photo)}
           title={`Photo: ${shortCreator(photo.creator)}, ${photo.license}, via Wikimedia Commons`}
         />
       </span>
