@@ -1,11 +1,13 @@
 import Link from "next/link";
 import Girih from "@/components/Girih";
+import Ornament from "@/components/Ornament";
 import SearchBox from "@/components/SearchBox";
 import CategoryCard from "@/components/CategoryCard";
 import FeaturedSlider from "@/components/FeaturedSlider";
 import { Emblem } from "@/components/Emblem";
 import { featuredSlides } from "@/lib/featured";
-import { homeSections } from "@/lib/homeSections";
+import { featuredAuthors, homeSections } from "@/lib/homeSections";
+import FeaturedAuthors from "@/components/FeaturedAuthors";
 import FeaturedShelf from "@/components/FeaturedShelf";
 import AuthorAvatar from "@/components/AuthorAvatar";
 import {
@@ -17,6 +19,7 @@ import {
   moreToExplore,
   shelves,
   topAuthors,
+  authorsByLetter,
   type Book,
 } from "@/lib/catalog";
 
@@ -43,8 +46,10 @@ export default function HomePage() {
               Welcome to the <span className="nowrap">Al-Zahra</span> Islamic Library
             </h1>
             <p className="hero-sub">at the Islamic Education Center of Houston</p>
+            <Ornament className="hero-ornament" />
             <p className="hero-lede">
-              Search {books.length} books on faith, history, law, thought and more.
+              We&rsquo;re glad you&rsquo;re here. Explore {books.length} books on faith, history, law, thought
+              and more.
             </p>
             <SearchBox large />
           </div>
@@ -89,7 +94,11 @@ export default function HomePage() {
         </ul>
       </section>
 
-      {/* Authors with the most books here (spellings of one name counted together). */}
+      {/* Featured Authors: large portraits, chosen in data/home-featured-sections.json */}
+      {featuredAuthors && <FeaturedAuthors {...featuredAuthors} />}
+
+      {/* Every author in the library. The authors with the most books come first as cards
+          (featured authors included, so they show here as well as above), then the full A–Z list. */}
       <section className="container section" aria-labelledby="authors-title">
         <div className="section-head">
           <h2 id="authors-title">Authors in our collection</h2>
@@ -114,6 +123,24 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
+        <details className="all-authors">
+          <summary>Show all {authors.length} authors, A to Z</summary>
+          {[...authorsByLetter()].map(([letter, list]) => (
+            <div key={letter} className="all-authors-letter">
+              <h3>{letter}</h3>
+              <ul>
+                {list.map((a) => (
+                  <li key={a.slug}>
+                    <Link href={`/authors/${a.slug}/`} dir="auto">
+                      {a.name}
+                    </Link>{" "}
+                    <span className="all-authors-count">({a.count})</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </details>
       </section>
 
       {homeSections

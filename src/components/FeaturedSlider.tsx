@@ -13,6 +13,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type { FeaturedSlide } from "@/lib/featured";
+import Credit from "./Credit";
 
 const EVERY_MS = 6500;
 const SOURCE_LINKS: Record<string, string> = {
@@ -158,7 +159,9 @@ export default function FeaturedSlider({ slides }: { slides: FeaturedSlide[] }) 
               aria-roledescription="slide"
               aria-label={`${i + 1} of ${total}`}
             >
-              <Link href={`/books/${s.slug}/`} className="slide-link">
+              {/* The title is the link to the book, stretched over the whole slide; the author
+                  names are separate links on top (see .card-link in globals.css). */}
+              <div className="slide-link">
                 <span className="slide-cover">
                   <img
                     src={s.cover.src}
@@ -172,20 +175,20 @@ export default function FeaturedSlider({ slides }: { slides: FeaturedSlide[] }) 
                 </span>
                 <span className="slide-text">
                   <span className="slide-cat">{s.category}</span>
-                  <span className="slide-title" dir="auto">
+                  <Link href={`/books/${s.slug}/`} className="slide-title card-link" dir="auto">
                     {s.title}
-                  </span>
+                  </Link>
                   <span className="slide-author" dir="auto">
-                    {s.author}
+                    <Credit parts={s.creditParts} />
                   </span>
                   <span className="slide-desc" dir="auto">
                     {s.description}
                   </span>
-                  <span className="slide-more">
-                    View book details <span aria-hidden="true">→</span>
+                  <span className="slide-more" aria-hidden="true">
+                    View book details <span>→</span>
                   </span>
                 </span>
-              </Link>
+              </div>
             </li>
           ))}
         </ul>
