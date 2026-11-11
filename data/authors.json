@@ -1779,15 +1779,30 @@
       ]
     },
     "Ayatullah Gulpaygani": {
-      "wikipedia": null,
-      "photo": null,
-      "skipped": "checked by hand: ambiguous: the book is by Lutfullah Safi Gulpaygani, not Mohammad-Reza Golpaygani",
+      "wikipedia": "Lotfollah Safi Golpaygani",
+      "photo": "/authors/ayatullah-gulpaygani.jpg",
       "bio": "Grand Ayatollah Lutf Allah Safi Gulpaygani (1919–2022) was a Shia marja' and a teacher of advanced jurisprudence in Qom, and a leading student of Ayatollah Burujirdi. He wrote Muntakhab al-athar, a well-known work about the Twelfth Imam.",
-      "bioStatus": "needs review",
+      "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Lutf_Allah_Safi_Gulpayigani"
       ],
-      "bioNote": "The catalogue name could mean more than one Ayatollah Gulpaygani. The book (Discussions Concerning Al-Mahdi) fits Lutf Allah Safi Gulpaygani, author of Muntakhab al-athar on the Twelfth Imam; please confirm before this draft (from WikiShia) is shown."
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Lotfollah_Safi_Golpaygani",
+      "description": "Iranian Shia marja (1919–2022)",
+      "file": "File:تصویر آیت الله صافی گلپایگانی از مراجع تقلید قم.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%D8%AA%D8%B5%D9%88%DB%8C%D8%B1_%D8%A2%DB%8C%D8%AA_%D8%A7%D9%84%D9%84%D9%87_%D8%B5%D8%A7%D9%81%DB%8C_%DA%AF%D9%84%D9%BE%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%DB%8C_%D8%A7%D8%B2_%D9%85%D8%B1%D8%A7%D8%AC%D8%B9_%D8%AA%D9%82%D9%84%DB%8C%D8%AF_%D9%82%D9%85.jpg",
+      "creator": "Mostafameraji",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photoLarge": "/authors/large/ayatullah-gulpaygani.webp",
+      "largeWidth": 640,
+      "largeHeight": 960,
+      "lowRes": false,
+      "originalWidth": 1333,
+      "originalHeight": 2000,
+      "focus": {
+        "x": 50,
+        "y": 27
+      }
     },
     "Ayatullah Ali Mishkini": {
       "wikipedia": "Ali Meshkini",
@@ -2273,13 +2288,11 @@
       "bioStatus": "from our data only"
     },
     "Zeinolabedin Rahnema": {
-      "draftBio": "Iranian writer, author of Payambar (The Messenger), a life of the Prophet in several volumes; he was nominated for the Nobel Prize in Literature.",
-      "bioStatus": "needs review",
+      "bioStatus": "other source",
       "bioSources": [
-        "https://en.wikipedia.org/wiki/List_of_nominees_for_the_Nobel_Prize_in_Literature",
-        "https://en.wikipedia.org/wiki/Amir-Abbas_Hoveyda"
+        "https://fa.wikipedia.org/wiki/%D8%B2%DB%8C%D9%86%E2%80%8C%D8%A7%D9%84%D8%B9%D8%A7%D8%A8%D8%AF%DB%8C%D9%86_%D8%B1%D9%87%D9%86%D9%85%D8%A7"
       ],
-      "bioNote": "Only passing mentions were found; the Payambar attribution comes from our catalogue."
+      "bio": "Zayn al-Abidin Rahnema (1890s–1989) was an Iranian writer, translator, journalist and politician of the Qajar and Pahlavi eras, born in Karbala. His best-known books are Payambar (The Messenger), a life of the Prophet, and Husayn."
     },
     "al-Muhaqqiq al-Hilli": {
       "bio": "Al-Muhaqqiq al-Hilli (1205–1277), Abu l-Qasim Ja'far ibn al-Hasan al-Hilli, was one of the leading Shia jurists of his century and also a poet. His Shara'i' al-Islam became a standard work of Shia law, and al-Allama al-Hilli was among his students.",
@@ -2555,12 +2568,11 @@
       "bioStatus": "from our data only"
     },
     "Sayyid Mohammad Taqi Hakim": {
-      "bio": "Al-Sayyid Muhammad Taqi al-Hakim (1922–2002) taught at the Najaf seminary and headed its Faculty of Jurisprudence; his best-known work is al-Usul al-'amma li l-fiqh al-muqaran.",
-      "bioStatus": "needs review",
+      "bio": "Sayyid Mohammad Taqi Hakim (born 1926) is an Iranian Shia scholar from Shushtar in Khuzestan, where he began his religious studies in 1950. His book How to Bridge the Generation Gap, written as conversations between a father and a child, was first published in Persian in 1963. (He is a different scholar from Sayyid Muhammad Taqi al-Hakim of Najaf.)",
+      "bioStatus": "other source",
       "bioSources": [
-        "https://en.wikishia.net/view/Al-Sayyid_Muhammad_Taqi_al-Hakim"
-      ],
-      "bioNote": "WikiShia has an article on this scholar, but I couldn't confirm he wrote 'How to Bridge the Generation Gap'."
+        "https://www.al-islam.org/node/35071"
+      ]
     },
     "Idris Samawi Hamid": {
       "bioStatus": "from our data only"
@@ -2860,11 +2872,30 @@
     },
     "Basheer Husain Al-Najafy": {
       "bio": "Grand Ayatollah Shaykh Bashir Husayn al-Najafi (born 1942) is a Pakistani-born Shia marja' based in Najaf, Iraq.",
-      "bioStatus": "needs review",
+      "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Bashir_Husayn_al-Najafi"
       ],
-      "bioNote": "WikiShia has an article on this marja', but I couldn't confirm he wrote 'Miracle Birth Of Imam Mahdi'."
+      "wikipedia": "Bashir al-Najafi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Bashir_al-Najafi",
+      "description": "Shia marja based in Najaf",
+      "file": "File:Ayatollah Sheikh Basheer Hussain Najafi.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Ayatollah_Sheikh_Basheer_Hussain_Najafi.jpg",
+      "creator": "Tasnim News Agency",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "photo": "/authors/basheer-husain-al-najafy.jpg",
+      "photoLarge": "/authors/large/basheer-husain-al-najafy.webp",
+      "largeWidth": 474,
+      "largeHeight": 330,
+      "lowRes": true,
+      "originalWidth": 474,
+      "originalHeight": 330,
+      "focus": {
+        "x": 44,
+        "y": 36,
+        "zoom": 1.3
+      }
     },
     "Mohammed Namazi": {
       "bioStatus": "from our data only"
@@ -2988,11 +3019,10 @@
     },
     "Sayyid Rida Sadr": {
       "bio": "Ayatollah Sayyid Rida al-Sadr (1921–1994) was a Shia mujtahid, teacher at the Qom seminary and writer of religious books, and the brother of Sayyid Musa al-Sadr.",
-      "bioStatus": "needs review",
+      "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Al-Sayyid_Rida_al-Sadr"
-      ],
-      "bioNote": "WikiShia has an article on this scholar, but I couldn't confirm he wrote 'Imam Ali's Life Motto'."
+      ]
     },
     "S.S. Safavi": {
       "bioStatus": "from our data only"
@@ -3167,10 +3197,6 @@
     "Tallal Alie Turfe": {
       "bioStatus": "from our data only"
     },
-    "Sheikh Tusi": {
-      "bioStatus": "needs review",
-      "bioNote": "The book in the library is by Nasir al-Din Tusi, not Shaykh al-Tusi, so the name may be recorded wrongly; please check."
-    },
     "Allama Shaikh A.M.Mohsen Al-Usfoor": {
       "bioStatus": "from our data only"
     },
@@ -3204,6 +3230,13 @@
     },
     "Zaynab": {
       "bioStatus": "from our data only"
+    },
+    "Nasir al-Din Tusi": {
+      "bio": "Khwaja Nasir al-Din al-Tusi (1201–1274) was one of the most influential Shia philosophers, theologians and scientists. He founded the Maragheh observatory and its great library, and wrote Tajrid al-i'tiqad and Akhlaq-i Nasiri; al-Allama al-Hilli was among his students.",
+      "bioStatus": "WikiShia",
+      "bioSources": [
+        "https://en.wikishia.net/view/Nasir_al-Din_al-Tusi"
+      ]
     }
   }
 }
