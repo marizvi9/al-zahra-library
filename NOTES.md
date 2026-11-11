@@ -67,7 +67,8 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
   shown when the search bar is clicked, each removable, plus "Clear all".
 - **Home page sections** (all from the catalogue's own data): Featured books slider; then
   "New to Islamic beliefs? Start here" and Featured author: Murtaza Mutahhari; Explore by category;
-  Authors in our collection; Featured author: Muhammad Baqir al-Sadr and "Building character";
+  **Featured Authors** (5 large portraits, set in `featuredAuthors` in `data/home-featured-sections.json`);
+  Authors in our collection (8 cards, leaving out the featured five); Featured author: Muhammad Baqir al-Sadr and "Building character";
   Multi-volume sets (2+ different volumes held, found from "Vol."/"Part" in titles); Browse by shelf number.
   The four featured sections and their books are set in `data/home-featured-sections.json`; the build
   stops if a chosen book lacks an author, a cover or a Google Books description.

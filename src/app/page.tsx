@@ -6,7 +6,8 @@ import CategoryCard from "@/components/CategoryCard";
 import FeaturedSlider from "@/components/FeaturedSlider";
 import { Emblem } from "@/components/Emblem";
 import { featuredSlides } from "@/lib/featured";
-import { homeSections } from "@/lib/homeSections";
+import { featuredAuthors, homeSections } from "@/lib/homeSections";
+import FeaturedAuthors from "@/components/FeaturedAuthors";
 import FeaturedShelf from "@/components/FeaturedShelf";
 import AuthorAvatar from "@/components/AuthorAvatar";
 import {
@@ -92,7 +93,11 @@ export default function HomePage() {
         </ul>
       </section>
 
-      {/* Authors with the most books here (spellings of one name counted together). */}
+      {/* Featured Authors: large portraits, chosen in data/home-featured-sections.json */}
+      {featuredAuthors && <FeaturedAuthors {...featuredAuthors} />}
+
+      {/* Authors with the most books here (spellings of one name counted together),
+          leaving out the featured authors just above so nobody appears twice. */}
       <section className="container section" aria-labelledby="authors-title">
         <div className="section-head">
           <h2 id="authors-title">Authors in our collection</h2>
@@ -101,7 +106,10 @@ export default function HomePage() {
           </Link>
         </div>
         <ul className="author-cards">
-          {topAuthors(12).map((a) => (
+          {topAuthors(8 + (featuredAuthors?.authors.length ?? 0))
+            .filter((a) => !featuredAuthors?.authors.some((f) => f.slug === a.slug))
+            .slice(0, 8)
+            .map((a) => (
             <li key={a.slug}>
               <Link href={`/authors/${a.slug}/`} className="author-card">
                 <AuthorAvatar name={a.name} size={52} />

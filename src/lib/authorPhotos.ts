@@ -26,9 +26,9 @@ export type AuthorPhoto = {
  * Style for a small square/round badge: centred on the face and, if "zoom" is set, enlarged
  * around it. The shift is limited so the photo always covers the whole badge (no gaps).
  */
-export function badgeStyle(p: Pick<AuthorPhoto, "focus">): React.CSSProperties {
+export function badgeStyle(p: Pick<AuthorPhoto, "focus">, maxZoom = 3): React.CSSProperties {
   const f = p.focus ?? { x: 50, y: 30 };
-  const z = f.zoom ?? 1;
+  const z = Math.min(f.zoom ?? 1, maxZoom);
   if (z <= 1) return { objectPosition: `${f.x}% ${f.y}%` };
   const shift = (pos: number) => Math.max(-(100 - pos) * (z - 1), Math.min(pos * (z - 1), 50 - pos));
   return {

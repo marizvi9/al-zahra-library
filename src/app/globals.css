@@ -2960,3 +2960,103 @@ button:active,
 .book-about-source {
   margin-top: 8px;
 }
+
+/* ---------- Featured Authors (home page): large portraits ---------- */
+.portrait-row {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+}
+.portrait-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: var(--radius);
+}
+.portrait-frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  /* the same arch shape as the welcome section */
+  border-radius: 50% 50% 10px 10px / 34% 34% 10px 10px;
+  border: 1px solid var(--line);
+  box-shadow: inset 0 0 0 4px var(--card), 0 0 0 1px var(--gold), var(--shadow);
+  background: var(--card);
+}
+.portrait-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s var(--ease-out);
+}
+.portrait-card:hover .portrait-frame img {
+  transform: scale(1.03);
+}
+.portrait-initials {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background: linear-gradient(160deg, var(--navy), var(--ink));
+  color: var(--gold-light);
+  font-family: var(--font-brand);
+  font-weight: 600;
+  font-size: 3rem;
+}
+.portrait-name {
+  margin-top: 12px;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1.08rem;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.portrait-card:hover .portrait-name {
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 3px;
+}
+.portrait-count {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.portrait-credit {
+  position: relative;
+  z-index: 1;
+  margin-top: 4px;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+.portrait-credit a {
+  color: inherit;
+}
+.portrait-card:has(.card-link:focus-visible) {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+/* Phones and tablets: a row you can swipe sideways. */
+@media (max-width: 760px) {
+  .portrait-row {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 44%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+    gap: 14px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--line) transparent;
+  }
+  .portrait-card {
+    scroll-snap-align: start;
+  }
+}
