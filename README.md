@@ -1,6 +1,6 @@
-# Al-Zahra Library website
+# Al-Zahra Islamic Library website
 
-Catalogue website for the Al-Zahra Library at the Islamic Education Center.
+Catalogue website for the Al-Zahra Islamic Library at the Islamic Education Center of Houston.
 
 ## Everyday commands
 

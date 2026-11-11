@@ -5,7 +5,10 @@ export default function Footer() {
     <footer className="site-footer">
       <Girih className="girih-footer" />
       <div className="container footer-inner">
-        <p className="footer-name">Al-Zahra Library - Islamic Education Center of Houston TX © 2026</p>
+        {/* Two halves that each stay on one line, so on small screens the text wraps neatly at the dash. */}
+        <p className="footer-name">
+          <span>Al-Zahra Islamic Library -</span> <span>Islamic Education Center of Houston TX © 2026</span>
+        </p>
       </div>
     </footer>
   );

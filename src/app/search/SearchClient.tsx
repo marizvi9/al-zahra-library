@@ -6,6 +6,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import BookList from "@/components/BookList";
 import { buildIndex, search, type SearchRecord, type SearchScope } from "@/lib/search";
+import { addRecent, clearRecent, getRecent, onRecentChange, removeRecent } from "@/lib/recentSearches";
 
 const PAGE_SIZE = 30;
 const SCOPES: { value: SearchScope; label: string }[] = [
@@ -28,6 +29,15 @@ export default function SearchClient({ records, categories }: Props) {
   });
   const categoryName = categories.find((c) => c.slug === category)?.name;
   const [shown, setShown] = useState(PAGE_SIZE);
+
+  // Recent searches (kept only in this browser). A search is remembered when you press
+  // Enter, open a result, or arrive here from another page's search bar.
+  const [recent, setRecent] = useState<string[]>([]);
+  useEffect(() => {
+    const read = () => setRecent(getRecent());
+    read();
+    return onRecentChange(read);
+  }, []);
 
   const index = useMemo(() => buildIndex(records), [records]);
   const matches = useMemo(() => search(index, query, scope), [index, query, scope]);
@@ -54,7 +64,14 @@ export default function SearchClient({ records, categories }: Props) {
 
   return (
     <div className="search-page">
-      <form role="search" className="search-box search-box-large" onSubmit={(e) => e.preventDefault()}>
+      <form
+        role="search"
+        className="search-box search-box-large"
+        onSubmit={(e) => {
+          e.preventDefault();
+          addRecent(query);
+        }}
+      >
         <label htmlFor="q" className="visually-hidden">
           Search by title, author or category
         </label>
@@ -85,6 +102,27 @@ export default function SearchClient({ records, categories }: Props) {
           </label>
         ))}
       </fieldset>
+
+      {!hasQuery && recent.length > 0 && (
+        <div className="recent-chips">
+          <span className="recent-chips-label">Recent searches:</span>
+          <ul>
+            {recent.map((q) => (
+              <li key={q} className="recent-chip">
+                <button type="button" className="recent-chip-text" dir="auto" onClick={() => { setQuery(q); addRecent(q); }}>
+                  {q}
+                </button>
+                <button type="button" className="recent-chip-remove" onClick={() => removeRecent(q)} aria-label={`Remove “${q}” from recent searches`}>
+                  <span aria-hidden="true">✕</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+          <button type="button" className="link-button small" onClick={clearRecent}>
+            Clear all
+          </button>
+        </div>
+      )}
 
       {categoryName && (
         <p className="search-within">
@@ -139,13 +177,15 @@ export default function SearchClient({ records, categories }: Props) {
             </>
           ) : (
             <>
-              Try fewer words, check the spelling, or <Link href="/explore/">explore the shelves</Link>.
+              Try fewer words, check the spelling, or <Link href="/explore/">explore the categories</Link>.
             </>
           )}
         </p>
       )}
 
-      <BookList items={results.slice(0, shown)} showCategory />
+      <div onClickCapture={(e) => (e.target as HTMLElement).closest("a") && addRecent(query)}>
+        <BookList items={results.slice(0, shown)} showCategory />
+      </div>
 
       {results.length > shown && (
         <button type="button" className="button-secondary" onClick={() => setShown((n) => n + PAGE_SIZE)}>

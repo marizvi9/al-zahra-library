@@ -4,11 +4,16 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BookList from "@/components/BookList";
 import CoverGallery from "@/components/CoverGallery";
+import AuthorAvatar, { PhotoCredit } from "@/components/AuthorAvatar";
+import Credit from "@/components/Credit";
+import { photoFor } from "@/lib/authorPhotos";
 import {
+  authorOf,
   books,
   booksInSubCategory,
   copiesText,
   creditLine,
+  creditParts,
   getBook,
   getCategory,
   getCover,
@@ -34,11 +39,13 @@ export default async function BookPage({ params }: Props) {
   if (!book) notFound();
   const cat = getCategory(book.categorySlug)!;
   const cover = getCover(book.id);
+  const author = authorOf(book);
+  const authorPhoto = author ? photoFor(author.name) : null;
   const description = getDescription(book.id);
   // Long descriptions: show the first part, with "Read more" for the rest.
   const [lead, more] = splitDescription(description?.paragraphs ?? []);
-  const catHref = `/categories/${book.categorySlug}/`;
-  const subHref = `/categories/${book.categorySlug}/${book.subCategorySlug}/`;
+  const catHref = `/explore/${book.categorySlug}/`;
+  const subHref = `/explore/${book.categorySlug}/${book.subCategorySlug}/`;
   const related = booksInSubCategory(book.categorySlug, book.subCategorySlug)
     .filter((b) => b.slug !== book.slug)
     .slice(0, 6);
@@ -67,7 +74,7 @@ export default async function BookPage({ params }: Props) {
             {book.title}
           </h1>
           <p className="book-detail-credit" dir="auto">
-            {creditLine(book)}
+            <Credit parts={creditParts(book)} />
           </p>
           <p className="tag-row">
             <span className={`status ${book.available ? "is-available" : "is-unavailable"}`}>
@@ -108,7 +115,15 @@ export default async function BookPage({ params }: Props) {
           <dl className="details">
             <div>
               <dt>Author</dt>
-              <dd dir="auto">{book.author ?? "Unknown"}</dd>
+              <dd dir="auto">
+                <span className="details-author">
+                  {author && <AuthorAvatar name={author.name} size={44} />}
+                  <span>
+                    {book.author ? <Credit parts={creditParts(book)} /> : "Unknown"}
+                    {authorPhoto && <PhotoCredit photo={authorPhoto} />}
+                  </span>
+                </span>
+              </dd>
             </div>
             {book.publisher && (
               <div>
