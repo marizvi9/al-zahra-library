@@ -3,7 +3,7 @@
 // Same rules as the main slider: every book needs an author, a cover, and a real
 // description from Google Books. The build stops with a clear message otherwise.
 import config from "@data/home-featured-sections.json";
-import { getAuthor, authors, books, creditParts, getCover, getDescription, shortDescription, slugifyName, type CreditPart } from "./catalog";
+import { authorName, getAuthor, authors, books, creditParts, getCover, getDescription, shortDescription, slugifyName, type CreditPart } from "./catalog";
 
 export type ShelfBook = {
   slug: string;
@@ -71,3 +71,22 @@ export const homeSections: HomeSection[] = (config.sections as Raw[]).map((s) =>
     books: list,
   };
 });
+
+// ---------- Featured Authors (large portraits) ----------
+export type FeaturedAuthor = { name: string; slug: string; count: number };
+
+const fa = (config as { featuredAuthors?: { heading: string; intro?: string; authors: string[] } }).featuredAuthors;
+if (fa && fa.authors.length > 6) throw new Error("data/home-featured-sections.json: please keep featuredAuthors to 6 names at most.");
+
+export const featuredAuthors = fa
+  ? {
+      heading: fa.heading,
+      intro: fa.intro ?? "",
+      authors: fa.authors.map((raw): FeaturedAuthor => {
+        const name = authorName(raw);
+        const a = authors.find((x) => x.name === name) ?? getAuthor(slugifyName(raw));
+        if (!a) throw new Error(`data/home-featured-sections.json, featuredAuthors: no author page for "${raw}" (use a spelling from the catalogue)`);
+        return { name: a.name, slug: a.slug, count: a.count };
+      }),
+    }
+  : null;

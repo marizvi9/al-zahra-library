@@ -2,16 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import BookList from "@/components/BookList";
+import AuthorBooks from "@/components/AuthorBooks";
 import AuthorPortrait from "@/components/AuthorPortrait";
 import { bioFor } from "@/lib/authorPhotos";
 
 /** "https://en.wikipedia.org/wiki/Ali_Shariati" → "Wikipedia: Ali Shariati". */
 function sourceName(url: string) {
+  if (/wikishia\.net/.test(url)) return "WikiShia";
+  if (/britannica\.com/.test(url)) return "Encyclopaedia Britannica";
+  if (/iranicaonline\.org/.test(url)) return "Encyclopaedia Iranica";
   const m = /wikipedia\.org\/wiki\/(.+)$/.exec(url);
-  return m ? `Wikipedia: ${decodeURIComponent(m[1]).replace(/_/g, " ")}` : new URL(url).hostname;
+  return m ? `Wikipedia: ${decodeURIComponent(m[1]).replace(/_/g, " ")}` : new URL(url).hostname.replace(/^www\./, "");
 }
-import { authors, categories, getAuthor, toListItem, spellingOn } from "@/lib/catalog";
+import { authors, categories, getAuthor, spellingOn } from "@/lib/catalog";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -73,7 +76,10 @@ export default async function AuthorPage({ params }: Props) {
           {spellings.length > 0 && <p className="small muted">Also spelled in the catalogue: {spellings.join("; ")}.</p>}
         </div>
       </header>
-      <BookList items={author.books.map(toListItem)} showCategory currentAuthor={author.slug} />
+      <h2 className="author-books-heading">
+        {author.count === 1 ? "Book in the library" : `Books in the library (${author.count})`}
+      </h2>
+      <AuthorBooks books={author.books} authorSlug={author.slug} />
     </div>
   );
 }

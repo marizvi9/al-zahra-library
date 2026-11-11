@@ -18,12 +18,38 @@ export type AuthorPhoto = {
   license: string;
   licenseUrl: string | null;
   wikipediaUrl: string;
+  /** "WikiShia" for photos from WikiShia's media library; otherwise Wikimedia Commons. */
+  photoSource?: string;
+  /** Where the face is, in percent from the left and top; every crop centres on it. */
+  focus?: { x: number; y: number; zoom?: number };
 };
+
+/**
+ * Style for a small square/round badge: centred on the face and, if "zoom" is set, enlarged
+ * around it. The shift is limited so the photo always covers the whole badge (no gaps).
+ */
+export function badgeStyle(p: Pick<AuthorPhoto, "focus">, maxZoom = 3): React.CSSProperties {
+  const f = p.focus ?? { x: 50, y: 30 };
+  const z = Math.min(f.zoom ?? 1, maxZoom);
+  if (z <= 1) return { objectPosition: `${f.x}% ${f.y}%` };
+  const shift = (pos: number) => Math.max(-(100 - pos) * (z - 1), Math.min(pos * (z - 1), 50 - pos));
+  return {
+    objectPosition: `${f.x}% ${f.y}%`,
+    transformOrigin: `${f.x}% ${f.y}%`,
+    transform: `translate(${shift(f.x).toFixed(1)}%, ${shift(f.y).toFixed(1)}%) scale(${z})`,
+  };
+}
+
+/** Where a photo came from, for its credit line. */
+export const photoVia = (p: Pick<AuthorPhoto, "photoSource">) => (p.photoSource === "WikiShia" ? "WikiShia" : "Wikimedia Commons");
+
+/** CSS object-position that keeps the face in view when the photo is cropped. */
+export const focusPosition = (p: Pick<AuthorPhoto, "focus">) => (p.focus ? `${p.focus.x}% ${p.focus.y}%` : "50% 30%");
 
 type Entry = Partial<AuthorPhoto> & {
   photo?: string | null;
   bio?: string | null;
-  bioStatus?: "verified" | "from our data only" | "needs review";
+  bioStatus?: "WikiShia" | "other source" | "from our data only" | "needs review";
   bioSources?: string[];
 };
 const file = data as unknown as { neverPhoto: string[]; authors: Record<string, Entry> };
@@ -44,12 +70,12 @@ export function photoFor(name: string | null | undefined): AuthorPhoto | null {
 }
 
 /**
- * The short bio for an author's own page. Only bios marked "verified" are shown;
+ * The short bio for an author's own page. Only bios marked "WikiShia" or "other source" are shown;
  * "needs review" drafts and "from our data only" entries show nothing here.
  */
 export function bioFor(name: string): { text: string; sources: string[] } | null {
   const e = file.authors[name];
-  if (!e?.bio || e.bioStatus !== "verified") return null;
+  if (!e?.bio || (e.bioStatus !== "WikiShia" && e.bioStatus !== "other source")) return null;
   return { text: e.bio, sources: e.bioSources ?? [] };
 }
 

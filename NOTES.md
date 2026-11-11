@@ -45,14 +45,23 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
   - Old addresses forward: `/categories/…` → `/explore/…`, `/explore/300/` → `/shelves/300/`.
 - **Authors data:** `data/authors.json` holds, for each author, the photo (Wikimedia Commons, free licences
   only, with credit + licence) and the short bio. Review list: `data/authors-report.md`.
-  - **Bios** appear only on the author's own page, and only when marked `"bioStatus": "verified"` (written by
-    hand from the linked sources and the books we hold). `"from our data only"` and `"needs review"` show just
-    the line built from the catalogue ("Author of 7 books in the Al-Zahra Islamic Library, in …").
-    To change or remove a bio, edit that author's `bio` / `bioStatus` and rebuild.
+  - **Bios** appear only on the author's own page, written in our own words (never copied), 1–3 sentences, and
+    checked against the books we hold. Source order: **WikiShia first** (`"bioStatus": "WikiShia"`, 50 authors); if
+    WikiShia has no article, Wikipedia or another reliable source (`"other source"`, 69). Sources are never mixed in
+    one bio. Each bio links its source under it. `"from our data only"` (291) and `"needs review"` (3: the holy
+    figures, for you to write) show just the catalogue line ("Author of 7 books…").
+    To approve a draft, change its `bioStatus` to `"WikiShia"` or `"other source"`; to change or remove a bio, edit
+    `bio` / `bioStatus` and rebuild. The review list (`data/authors-report.md`) shows needs-review first.
   - **Photos:** a small copy for lists and cards, and a large one (up to 640px, never enlarged) for the big
     portrait on the author's page. Each author's Wikipedia article is chosen by hand, then
-    `node scripts/fetch_author_photos.mjs` fetches the photos and licences. Authors with no photo get a
+    `node scripts/fetch_author_photos.mjs` fetches the photos and licences. A WikiShia photo is preferred when its
+    file page states a free licence (only Ali al-Sistani and Ali Khamenei so far, CC BY-SA 2.0; marked
+    `"photoSource": "WikiShia"` and never replaced by the script). Most WikiShia photos state no licence, so they're not used. Authors with no photo get a
     navy-and-gold initials badge (and a large initials panel on their page).
+  - **Author pages** list the author's books large (`src/components/AuthorBooks.tsx`): big covers in a 3-column grid
+    (2 on tablets, 1 on small phones), with title, category, shelf number and a link; one or two books get bigger cards.
+  - **Face position:** each photo's `focus` (x, y in percent, set by eye) keeps the face centred whenever the photo is
+    cropped, at any size; an optional `zoom` enlarges far-away shots in the small round badges.
   - The Prophet, the Imams, Lady Fatima and other holy figures (including books attributed to them) never get a
     picture and are never looked up (`src/lib/authorPhotos.ts` enforces this); their bios are left for you to write.
   - **Author names are links** everywhere (book pages, lists, search, slider, featured sections), except on the
@@ -65,7 +74,9 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
   shown when the search bar is clicked, each removable, plus "Clear all".
 - **Home page sections** (all from the catalogue's own data): Featured books slider; then
   "New to Islamic beliefs? Start here" and Featured author: Murtaza Mutahhari; Explore by category;
-  Authors in our collection; Featured author: Muhammad Baqir al-Sadr and "Building character";
+  **Featured Authors** (5 large portraits, set in `featuredAuthors` in `data/home-featured-sections.json`);
+  Authors in our collection (12 cards for the authors with the most books, featured ones included, then a
+  "Show all 413 authors, A to Z" list so every author appears); Featured author: Muhammad Baqir al-Sadr and "Building character";
   Multi-volume sets (2+ different volumes held, found from "Vol."/"Part" in titles); Browse by shelf number.
   The four featured sections and their books are set in `data/home-featured-sections.json`; the build
   stops if a chosen book lacks an author, a cover or a Google Books description.
@@ -90,6 +101,8 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
 - Search bar suggestions: after 2+ characters the search bar shows up to 7 books (cover, title,
   author, category) with keyboard and screen-reader support. Its data is `/search-index.json`,
   built with the site and downloaded only when the bar is first used.
+- Footer: "Al-Zahra Islamic Library - Islamic Education Center of Houston TX © 2026", centred; on narrow screens it
+  wraps into two centred lines at the dash.
 - The "This catalogue lists the books the library holds…" notice sits above the footer on every
   page (`src/components/Disclaimer.tsx`).
 - Welcome intro (once per visit, about 3 s, skippable, off with "reduce motion"): the SVG emblem's

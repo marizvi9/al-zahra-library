@@ -1053,15 +1053,33 @@ a:hover {
 .footer-inner {
   position: relative;
   padding-block: 32px;
+  display: flex;
+  justify-content: center;
 }
 .footer-inner p {
   margin-bottom: 0.3em;
 }
 .footer-name {
+  margin: 0 auto;
+  max-width: 46rem;
   font-family: var(--font-head);
   font-weight: 700;
   font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: center;
+  text-wrap: balance;
   color: var(--card);
+}
+.footer-name span {
+  display: inline-block; /* wraps between the two halves, not mid-phrase */
+}
+@media (max-width: 480px) {
+  .footer-inner {
+    padding-block: 28px 30px;
+  }
+  .footer-name {
+    font-size: 1rem; /* still easy to read; long text wraps onto two lines instead of shrinking */
+  }
 }
 
 /* ---------- Phones ---------- */
@@ -1981,6 +1999,56 @@ button:active,
 .section-lede {
   margin: -4px 0 12px;
   color: var(--muted);
+}
+/* Authors in our collection: full A–Z list under the cards */
+.all-authors {
+  margin-top: 16px;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+.all-authors summary {
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  color: var(--navy-deep);
+  padding: 6px 0;
+}
+.all-authors summary:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+.all-authors[open] summary {
+  margin-bottom: 8px;
+}
+/* Open: the letters flow into as many columns as fit (one on phones). */
+.all-authors[open] {
+  columns: 16rem auto;
+  column-gap: 28px;
+}
+.all-authors[open] summary {
+  column-span: all;
+}
+.all-authors-letter {
+  break-inside: avoid;
+}
+.all-authors-letter h3 {
+  margin: 10px 0 4px;
+  font-size: 1rem;
+  color: var(--gold-text);
+}
+.all-authors-letter ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.all-authors-letter li {
+  padding: 2px 0;
+  line-height: 1.4;
+  font-size: 0.97rem;
+}
+.all-authors-count {
+  color: var(--muted);
+  font-size: 0.85em;
 }
 /* Authors in our collection */
 .author-cards {
@@ -2959,4 +3027,253 @@ button:active,
 }
 .book-about-source {
   margin-top: 8px;
+}
+
+/* ---------- Featured Authors (home page): large portraits ---------- */
+.portrait-row {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+}
+.portrait-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: var(--radius);
+}
+.portrait-frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  /* the same arch shape as the welcome section */
+  border-radius: 50% 50% 10px 10px / 34% 34% 10px 10px;
+  border: 1px solid var(--line);
+  box-shadow: inset 0 0 0 4px var(--card), 0 0 0 1px var(--gold), var(--shadow);
+  background: var(--card);
+}
+.portrait-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s var(--ease-out);
+}
+.portrait-card:hover .portrait-frame img {
+  transform: scale(1.03);
+}
+.portrait-initials {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background: linear-gradient(160deg, var(--navy), var(--ink));
+  color: var(--gold-light);
+  font-family: var(--font-brand);
+  font-weight: 600;
+  font-size: 3rem;
+}
+.portrait-name {
+  margin-top: 12px;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1.08rem;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.portrait-card:hover .portrait-name {
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 3px;
+}
+.portrait-count {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.portrait-credit {
+  position: relative;
+  z-index: 1;
+  margin-top: 4px;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+.portrait-credit a {
+  color: inherit;
+}
+.portrait-card:has(.card-link:focus-visible) {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+/* Phones and tablets: a row you can swipe sideways. */
+@media (max-width: 760px) {
+  .portrait-row {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 44%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+    gap: 14px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--line) transparent;
+  }
+  .portrait-card {
+    scroll-snap-align: start;
+  }
+}
+
+/* ---------- An author's books, shown large (author pages) ---------- */
+.author-books-heading {
+  margin: 36px 0 14px;
+  font-size: 1.35rem;
+}
+.author-books {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.author-book {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px 18px 16px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: border-color 0.18s ease, box-shadow 0.25s ease, transform 0.25s var(--ease-out);
+  animation: rise 0.5s var(--ease-out) both;
+  animation-delay: calc(var(--i, 0) * 35ms);
+}
+.author-book:hover {
+  border-color: var(--navy);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+.author-book:has(.card-link:focus-visible) {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+.author-book-cover {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 3 / 4;
+  padding: 14px;
+  border-radius: 10px;
+  background: var(--cream-deep);
+}
+.author-book-cover img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 3px 6px 6px 3px;
+  box-shadow: 0 2px 4px rgb(4 20 46 / 18%), 0 10px 24px rgb(4 20 46 / 16%);
+}
+.author-book-cover .arch-cover {
+  width: 62%;
+  height: auto;
+}
+.author-book-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+.author-book-title {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1.12rem;
+  line-height: 1.3;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+.author-book-credit {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.author-book-cat {
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  color: var(--navy);
+}
+.author-book-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+.author-book-more {
+  margin-top: auto;
+  padding-top: 8px;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--navy);
+}
+.author-book:hover .author-book-more span {
+  display: inline-block;
+  transform: translateX(3px);
+  transition: transform 0.2s var(--ease-out);
+}
+/* One or two books: bigger cards, cover beside the details. */
+.author-books.is-few {
+  grid-template-columns: repeat(auto-fit, minmax(0, 600px));
+}
+.author-books.is-few .author-book {
+  flex-direction: row;
+  align-items: stretch;
+  gap: 22px;
+  padding: 22px;
+}
+.author-books.is-few .author-book-cover {
+  flex: none;
+  width: 46%;
+}
+.author-books.is-few .author-book-title {
+  font-size: 1.35rem;
+}
+@media (max-width: 900px) {
+  .author-books {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+/* In narrow cards the drawn arch is too small for its title (shown just below anyway). */
+@media (max-width: 700px) {
+  .author-books:not(.is-few) .author-book-cover .arch-cover-title {
+    display: none;
+  }
+}
+@media (max-width: 560px) {
+  .author-books.is-few .author-book {
+    flex-direction: column;
+  }
+  .author-books.is-few .author-book-cover {
+    width: 100%;
+  }
+  .author-books.is-few {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 420px) {
+  .author-books {
+    grid-template-columns: 1fr;
+  }
+  .author-book-cover {
+    aspect-ratio: 4 / 3;
+  }
 }
