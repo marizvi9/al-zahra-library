@@ -124,7 +124,7 @@ async function lookupAll(articles) {
         ...info,
         file: file.title,
         source: ii.descriptionurl,
-        creator: strip(meta.Artist?.value) || "Unknown",
+        creator: strip(meta.Artist?.value).replace(/^(.+?)\1$/, "$1") || "Unknown", // Commons sometimes repeats the name
         license,
         licenseUrl: meta.LicenseUrl?.value ?? null,
         imageDescription: strip(meta.ImageDescription?.value).slice(0, 160),
