@@ -5,22 +5,20 @@
 // - The intro is part of the page's HTML, so it appears instantly with no flash.
 // - A tiny script in <head> (src/lib/intro.ts) hides it straight away if it was
 //   already shown in this browser tab, or if the visitor prefers reduced motion.
-// - Otherwise CSS plays it for about 2.5 seconds and fades it out by itself
-//   (this works even if JavaScript fails to load).
+// - Otherwise CSS plays it (about 3 seconds) and fades it out by itself, even if
+//   JavaScript fails to load: the emblem's flower draws itself and blooms upward,
+//   the stars twinkle in, the letters settle into place, then it fades into the site.
 // - "Skip", a click anywhere, or the Escape key ends it early.
-//
-// Logo files (replace with the real ones, keeping the same names):
-//   public/logos/al-zahra-logo.svg   and   public/logos/iec-logo.svg
 
 import { useEffect } from "react";
-import { withBase } from "@/lib/paths";
+import { Emblem } from "./Emblem";
 
 export default function Intro() {
   useEffect(() => {
     const finish = () => document.documentElement.classList.add("intro-skipped");
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && finish();
     window.addEventListener("keydown", onKey);
-    const t = window.setTimeout(() => window.removeEventListener("keydown", onKey), 3500);
+    const t = window.setTimeout(() => window.removeEventListener("keydown", onKey), 3800);
     return () => {
       window.removeEventListener("keydown", onKey);
       window.clearTimeout(t);
@@ -32,11 +30,7 @@ export default function Intro() {
   return (
     <div className="intro" onClick={skip}>
       <div className="intro-inner">
-        <div className="intro-logos">
-          <img src={withBase("/logos/al-zahra-logo.svg")} alt="Al-Zahra Library logo" width={120} height={120} />
-          <img src={withBase("/logos/iec-logo.svg")} alt="Islamic Education Center logo" width={120} height={120} />
-        </div>
-        <p className="intro-text">Welcome to the Al-Zahra Library at IEC</p>
+        <Emblem animated className="intro-emblem" title="Welcome to the Al-Zahra Islamic Library" />
       </div>
       <button type="button" className="intro-skip" onClick={skip}>
         Skip

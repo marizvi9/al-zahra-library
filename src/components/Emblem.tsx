@@ -80,21 +80,21 @@ export function Emblem({ className = "", animated = false, title = "Al-Zahra Isl
         {/* Each letter is placed and turned separately (angles measured from the original),
             which looks the same in every browser. */}
         {ARC_LETTERS.map(([ch, deg], i) => (
-          <text
-            key={i}
-            x="705"
-            y="166"
-            textAnchor="middle"
-            transform={`rotate(${deg} 705 720)`}
-            fill={NAVY}
-            fontFamily="var(--font-brand), Montserrat, sans-serif"
-            fontWeight="500"
-            fontSize="98"
-            className="em-letter"
-            style={{ ["--i" as string]: i }}
-          >
-            {ch}
-          </text>
+          <g key={i} transform={`rotate(${deg} 705 720)`}>
+            <text
+              x="705"
+              y="166"
+              textAnchor="middle"
+              fill={NAVY}
+              fontFamily="var(--font-brand), Montserrat, sans-serif"
+              fontWeight="500"
+              fontSize="98"
+              className="em-letter"
+              style={{ ["--i" as string]: i }}
+            >
+              {ch}
+            </text>
+          </g>
         ))}
       </g>
       <g className="em-stars" fill={GOLD}>
@@ -102,8 +102,8 @@ export function Emblem({ className = "", animated = false, title = "Al-Zahra Isl
           <polygon key={i} points={starPoints(x, y, 40)} className={`em-star em-star-${i}`} style={{ transformOrigin: `${x}px ${y}px` }} />
         ))}
       </g>
-      <g className="em-flower" transform="translate(420 330)">
-        <FlowerStrokes />
+      <g transform="translate(420 330)">
+        <FlowerStrokes className="em-flower" />
       </g>
       <g className="em-name">
         <text x="705" y="962" textAnchor="middle" fill={NAVY} fontFamily="var(--font-brand), Montserrat, sans-serif" fontWeight="600" fontSize="172" textLength="980" lengthAdjust="spacingAndGlyphs">

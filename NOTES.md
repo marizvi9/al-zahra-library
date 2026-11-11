@@ -55,7 +55,9 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
   built with the site and downloaded only when the bar is first used.
 - The "This catalogue lists the books the library holds…" notice sits above the footer on every
   page (`src/components/Disclaimer.tsx`).
-- Welcome intro (once per visit, skippable), shelf tabs on Explore (one per Cat #, sections by
+- Welcome intro (once per visit, about 3 s, skippable, off with "reduce motion"): the SVG emblem's
+  flower draws and blooms, the stars twinkle in, the letters settle, then it fades into the site
+  (timings at the "Welcome intro" block in `globals.css`). Shelf tabs on Explore (one per Cat #, sections by
   Sub Cat #), faint geometric pattern on the cream background.
 
 ### Cover art
@@ -74,8 +76,6 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
 
 - [ ] **Try the animations** on the live site (cover turning on *Punishment of Apostasy in
       Islam*, tap-to-enlarge, cover glide from lists) — only checked with still screenshots.
-- [ ] **Add the logos** — replace `public/logos/al-zahra-logo.svg` and `public/logos/iec-logo.svg`
-      (keep the same names; PNG works too if you change the extension in `Header.tsx` and `Intro.tsx`).
 - [ ] **Replace the ~25 XKP covers** with photos of the library's own copies; photograph back
       covers too so the gallery has real backs to turn to. ~540 books still have no cover.
 - [ ] **Categorize the 4 uncategorized books** (two also appear elsewhere with a category).
