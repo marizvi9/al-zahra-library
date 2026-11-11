@@ -1,11 +1,11 @@
 "use client";
-// The interactive part of the Explore page:
+// The interactive part of the Shelves pages:
 // - a filter box that narrows the books shown on this page as you type,
 // - a "Search this shelf" link that opens the full search page limited to the shelf,
 // - chips to show just one section (on "All shelves": one box per shelf, with its
 //   number, subject, book count and a short description),
 // - the books, grouped under section headings with their descriptions.
-// The chosen section is kept in the address (e.g. /explore/300/#s50), so it can be
+// The chosen section is kept in the address (e.g. /shelves/300/#s50), so it can be
 // shared, and old category / sub-category links land on the right section.
 
 import { useEffect, useMemo, useState } from "react";
@@ -13,7 +13,7 @@ import Link from "next/link";
 import BookList, { type BookListItem } from "./BookList";
 import { buildIndex, matchingSlugs, type SearchRecord } from "@/lib/search";
 
-export type ExploreSection = {
+export type ShelfSection = {
   key: string;
   heading: string;
   description?: string;
@@ -24,7 +24,7 @@ export type ExploreSection = {
 };
 
 type Props = {
-  sections: ExploreSection[];
+  sections: ShelfSection[];
   scope: string; // "this shelf" or "all shelves"
   chipLabel: string; // "Sections", "Shelves" or "Subjects"
   /** Category the "Search this shelf" link limits the search to. */
@@ -33,7 +33,7 @@ type Props = {
   chipsAreCategories?: boolean;
 };
 
-export default function ExploreClient({ sections, scope, chipLabel, searchCategory, chipsAreCategories }: Props) {
+export default function ShelfClient({ sections, scope, chipLabel, searchCategory, chipsAreCategories }: Props) {
   const [query, setQuery] = useState("");
   const [only, setOnly] = useState(""); // section key, "" = all
 

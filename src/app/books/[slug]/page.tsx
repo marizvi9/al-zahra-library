@@ -37,8 +37,8 @@ export default async function BookPage({ params }: Props) {
   const description = getDescription(book.id);
   // Long descriptions: show the first part, with "Read more" for the rest.
   const [lead, more] = splitDescription(description?.paragraphs ?? []);
-  const catHref = `/categories/${book.categorySlug}/`;
-  const subHref = `/categories/${book.categorySlug}/${book.subCategorySlug}/`;
+  const catHref = `/explore/${book.categorySlug}/`;
+  const subHref = `/explore/${book.categorySlug}/${book.subCategorySlug}/`;
   const related = booksInSubCategory(book.categorySlug, book.subCategorySlug)
     .filter((b) => b.slug !== book.slug)
     .slice(0, 6);

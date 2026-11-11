@@ -9,10 +9,11 @@ export default function Redirect({ to }: { to: string }) {
   return (
     <div className="container page narrow">
       <meta httpEquiv="refresh" content={`0; url=${url}`} />
-      <script dangerouslySetInnerHTML={{ __html: `location.replace(${JSON.stringify(url)})` }} />
+      {/* The script keeps any "#section" part of the old address. */}
+      <script dangerouslySetInnerHTML={{ __html: `location.replace(${JSON.stringify(url)}+location.hash)` }} />
       <h1>This page has moved</h1>
       <p className="lede">
-        <Link href={to}>Continue to Explore by shelves</Link>
+        <Link href={to}>Continue to the new page</Link>
       </p>
     </div>
   );

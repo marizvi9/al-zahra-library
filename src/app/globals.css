@@ -227,6 +227,10 @@ a:hover {
 .nav-list a:hover {
   background: var(--navy-soft);
 }
+.nav-list > li > a[aria-current="page"],
+.nav-menu > summary.is-current {
+  box-shadow: inset 0 -3px 0 var(--gold);
+}
 
 /* "Explore" dropdown in the menu */
 .nav-dropdown {
@@ -366,7 +370,7 @@ a:hover {
   outline: none;
   box-shadow: 0 0 0 3px var(--navy-soft);
 }
-.search-box button,
+.search-box > button,
 .button-secondary {
   font: inherit;
   font-weight: 600;
@@ -377,7 +381,7 @@ a:hover {
   color: var(--card);
   cursor: pointer;
 }
-.search-box button:hover {
+.search-box > button:hover {
   background: var(--navy-deep);
 }
 .search-box-large input {
@@ -1605,6 +1609,145 @@ button:active,
   .suggest-list {
     animation: none;
   }
+}
+
+/* ---------- Search bar at the top of inner pages ---------- */
+.header-search {
+  padding: 2px 0 12px;
+}
+.header-search .search-box {
+  max-width: 640px;
+  margin-inline: auto;
+}
+.search-box-compact input {
+  min-height: 44px;
+  padding-block: 8px;
+  font-size: 1rem;
+}
+.search-box-compact button[type="submit"] {
+  min-height: 44px;
+  padding-inline: 16px;
+}
+
+/* ---------- Recent searches (in the search bar's dropdown) ---------- */
+.recent-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.recent-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 10px 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.recent-clear,
+.recent-remove {
+  font: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: var(--navy);
+}
+.recent-clear {
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 3px;
+  padding: 6px 4px;
+}
+.recent-row {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.recent-row:hover,
+.recent-row:focus-within {
+  background: var(--navy-soft);
+}
+.recent-link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 6px 10px;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 10px;
+}
+.recent-link:focus-visible,
+.recent-remove:focus-visible,
+.recent-clear:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: -3px;
+}
+.recent-icon {
+  color: var(--gold-text);
+}
+.recent-remove {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  color: var(--muted);
+}
+.recent-remove:hover {
+  color: var(--ink);
+}
+.recent-note {
+  margin: 4px 10px 2px;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* Recent searches on the search results page */
+.recent-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  margin: 12px 0 4px;
+}
+.recent-chips ul {
+  display: contents;
+  list-style: none;
+}
+.recent-chips-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.recent-chip {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+}
+.recent-chip button {
+  font: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: var(--navy);
+  min-height: 40px;
+}
+.recent-chip-text {
+  padding: 4px 4px 4px 14px;
+  font-size: 0.95rem;
+}
+.recent-chip-remove {
+  width: 36px;
+  border-radius: 999px;
+  color: var(--muted);
+}
+.recent-chip-remove:hover {
+  color: var(--ink);
+  background: var(--navy-soft);
 }
 
 /* ---------- Home page heading: emblem + welcome line ---------- */

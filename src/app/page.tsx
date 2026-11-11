@@ -34,8 +34,8 @@ export default function HomePage() {
       <section className="container section" aria-labelledby="featured-title">
         <div className="section-head">
           <h2 id="featured-title">Featured categories</h2>
-          <Link href="/categories/" className="see-all">
-            Browse all categories
+          <Link href="/explore/" className="see-all">
+            Explore all categories
           </Link>
         </div>
         <ul className="card-grid">
@@ -52,7 +52,7 @@ export default function HomePage() {
         <ul className="chip-list">
           {moreToExplore.map((c) => (
             <li key={c.slug}>
-              <Link href={`/categories/${c.slug}/`} className="chip">
+              <Link href={`/explore/${c.slug}/`} className="chip">
                 {c.name} <span className="chip-count">{c.count}</span>
               </Link>
             </li>

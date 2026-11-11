@@ -212,7 +212,7 @@ export type Shelf = {
 };
 
 export type ShelfSection = {
-  key: string; // used in the web address, e.g. /explore/300/#s50
+  key: string; // used in the web address, e.g. /shelves/300/#s50
   heading: string;
   description?: string;
   href?: string;
@@ -289,7 +289,7 @@ export function allShelfSections(): ShelfSection[] {
       key: `shelf-${sh.slug}`,
       heading: sh.number ? `Shelf ${sh.number} — ${cats.map((c) => c.name).join(", ")}` : "No shelf number",
       description: sh.number ? cats.map((c) => c.description).filter(Boolean).join(" ") : "Books that have not been given a shelf number yet.",
-      href: `/explore/${sh.slug}/`,
+      href: `/shelves/${sh.slug}/`,
       books: books.filter((b) => shelfOf(b) === sh.slug).sort(byTitle),
     };
   });

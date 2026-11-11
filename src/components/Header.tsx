@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FlowerMark } from "./Emblem";
-import ExploreMenu from "./ExploreMenu";
+import MainNav from "./MainNav";
+import HeaderSearch from "./HeaderSearch";
 
 export default function Header() {
   return (
@@ -14,16 +15,10 @@ export default function Header() {
           </span>
         </Link>
         <nav aria-label="Main">
-          <ul className="nav-list">
-            <li className="nav-dropdown">
-              <ExploreMenu />
-            </li>
-            <li>
-              <Link href="/search/">Search</Link>
-            </li>
-          </ul>
+          <MainNav />
         </nav>
       </div>
+      <HeaderSearch />
     </header>
   );
 }
