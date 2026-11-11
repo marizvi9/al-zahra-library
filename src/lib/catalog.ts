@@ -336,6 +336,8 @@ const nameFor = new Map<string, string>(
   ),
 );
 
+export const slugifyName = (s: string) => slugify(s);
+
 const slugify = (s: string) =>
   s
     .normalize("NFKD")

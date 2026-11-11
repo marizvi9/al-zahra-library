@@ -54,9 +54,12 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
   call-number box, and the author linked to their page.
 - **Recent searches:** the last 6, kept only in the visitor's own browser (`src/lib/recentSearches.ts`),
   shown when the search bar is clicked, each removable, plus "Clear all".
-- **Home page sections** (all from the catalogue's own data): Featured books, Explore by category,
-  Authors in our collection (most books), Multi-volume sets (2+ different volumes held, found from
-  "Vol."/"Part" in titles), Browse by shelf number.
+- **Home page sections** (all from the catalogue's own data): Featured books slider; then
+  "New to Islamic beliefs? Start here" and Featured author: Murtaza Mutahhari; Explore by category;
+  Authors in our collection; Featured author: Muhammad Baqir al-Sadr and "Building character";
+  Multi-volume sets (2+ different volumes held, found from "Vol."/"Part" in titles); Browse by shelf number.
+  The four featured sections and their books are set in `data/home-featured-sections.json`; the build
+  stops if a chosen book lacks an author, a cover or a Google Books description.
 - Design: parchment, deep navy and antique gold from the emblem; light girih pattern;
   Noto fonts (incl. Arabic) and Montserrat for the emblem lettering; right-to-left support,
   mobile-first and keyboard accessible.
@@ -81,10 +84,10 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
   Sub Cat #), faint geometric pattern on the cream background.
 
 ### Cover art
-- **264 books have covers** (126 Open Library, 138 Google Books) via `scripts/fetch_covers.mjs`.
+- **263 books have covers** (125 Open Library, 138 Google Books) via `scripts/fetch_covers.mjs`.
   Each is saved in three sizes: a tiny list thumbnail, a page image, and (for 26 books where
   the source has one) a large up-to-1400px version that loads only in the zoom view.
-- Every match was checked by hand; 18 wrong matches are listed in `data/covers-rejected.json`.
+- Every match was checked by hand; 19 wrong matches are listed in `data/covers-rejected.json`.
 - About 25 covers are generic XKP e-book designs — **kept until the real covers are added.**
 - Google Books uses an API key stored in `.env.local` (private, never committed).
 

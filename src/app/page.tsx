@@ -5,6 +5,8 @@ import CategoryCard from "@/components/CategoryCard";
 import FeaturedSlider from "@/components/FeaturedSlider";
 import { Emblem } from "@/components/Emblem";
 import { featuredSlides } from "@/lib/featured";
+import { homeSections } from "@/lib/homeSections";
+import FeaturedShelf from "@/components/FeaturedShelf";
 import AuthorAvatar from "@/components/AuthorAvatar";
 import {
   authors,
@@ -52,6 +54,13 @@ export default function HomePage() {
       <div className="container section">
         <FeaturedSlider slides={featuredSlides} />
       </div>
+
+      {/* Extra featured sections, set in data/home-featured-sections.json */}
+      {homeSections
+        .filter((s) => s.placement === "after-slider")
+        .map((s) => (
+          <FeaturedShelf key={s.id} section={s} />
+        ))}
 
       {/* Explore by category: six featured subjects with their covers, then the rest. */}
       <section className="container section" aria-labelledby="featured-title">
@@ -106,6 +115,12 @@ export default function HomePage() {
           ))}
         </ul>
       </section>
+
+      {homeSections
+        .filter((s) => s.placement === "after-authors")
+        .map((s) => (
+          <FeaturedShelf key={s.id} section={s} />
+        ))}
 
       {/* Multi-volume sets: shown only where the library holds 2+ different volumes. */}
       {bookSets.length > 0 && (
