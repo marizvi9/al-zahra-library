@@ -188,14 +188,15 @@ a:hover {
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  min-height: 64px;
+  gap: 8px 20px;
+  min-height: 68px;
+  padding-block: 8px;
 }
 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex: none;
   text-decoration: none;
   color: var(--ink);
 }
@@ -209,6 +210,7 @@ a:hover {
   font-weight: 700;
   font-size: 1.2rem;
   color: var(--ink);
+  white-space: nowrap;
 }
 .nav-list {
   display: flex;
@@ -219,7 +221,7 @@ a:hover {
 }
 .nav-list a {
   display: block;
-  padding: 10px 12px;
+  padding: 10px 14px;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
@@ -227,76 +229,105 @@ a:hover {
 .nav-list a:hover {
   background: var(--navy-soft);
 }
-.nav-list > li > a[aria-current="page"],
-.nav-menu > summary.is-current {
+.nav-list a[aria-current="page"] {
   box-shadow: inset 0 -3px 0 var(--gold);
 }
-
-/* "Explore" dropdown in the menu */
-.nav-dropdown {
-  position: relative;
+/* The search bar takes the rest of the row, up to a comfortable width, at the right. */
+.header-search {
+  flex: 1 1 260px;
+  max-width: 440px;
+  margin-left: auto;
 }
-.nav-menu > summary {
-  display: flex;
+.header-buttons {
+  display: none;
+  gap: 6px;
+  margin-left: auto;
+}
+.header-btn {
+  display: inline-flex;
   align-items: center;
-  gap: 4px;
-  padding: 10px 12px;
-  border-radius: 8px;
-  font-weight: 600;
+  gap: 6px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 10px;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--card);
   color: var(--navy);
+  font: inherit;
+  font-weight: 600;
   cursor: pointer;
-  list-style: none;
-  user-select: none;
 }
-.nav-menu > summary::-webkit-details-marker {
+.header-btn:hover,
+.header-btn[aria-expanded="true"] {
+  background: var(--navy-soft);
+  border-color: var(--gold);
+}
+.header-btn-menu {
   display: none;
 }
-.nav-menu > summary:hover,
-.nav-menu[open] > summary {
-  background: var(--navy-soft);
+
+/* Tablets: the search bar folds behind a magnifying-glass button (once JavaScript is ready). */
+@media (max-width: 999px) {
+  .header-inner {
+    flex-wrap: wrap;
+  }
+  .header-inner[data-ready] .header-buttons {
+    display: flex;
+  }
+  .header-inner[data-ready] .header-search {
+    display: none;
+  }
+  .header-inner[data-ready][data-search-open] .header-search {
+    display: block;
+    order: 5;
+    flex-basis: 100%;
+    max-width: none;
+    padding-bottom: 4px;
+  }
+  .header-inner:not([data-ready]) .header-search {
+    flex-basis: 100%;
+    max-width: none;
+  }
 }
-.nav-menu > summary:focus-visible {
-  outline: 3px solid var(--gold);
-  outline-offset: 1px;
+/* Phones: the tabs fold behind a "Menu" button too, and open as a full-width list. */
+@media (max-width: 699px) {
+  .header-inner {
+    gap: 6px 10px;
+    min-height: 60px;
+  }
+  .header-inner[data-ready] .header-btn-menu {
+    display: inline-flex;
+  }
+  .header-inner[data-ready] .main-nav {
+    display: none;
+  }
+  .header-inner[data-ready][data-menu-open] .main-nav {
+    display: block;
+    order: 4;
+    flex-basis: 100%;
+    padding-bottom: 6px;
+  }
+  .header-inner[data-ready] .nav-list {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .header-inner[data-ready] .nav-list a {
+    padding: 12px 14px;
+  }
+  .header-inner[data-ready] .nav-list a[aria-current="page"] {
+    box-shadow: inset 3px 0 0 var(--gold);
+    background: var(--navy-soft);
+  }
+  .header-inner:not([data-ready]) .main-nav {
+    flex-basis: 100%;
+  }
 }
-.nav-menu-arrow {
-  font-size: 0.8em;
-  transition: transform 0.15s ease;
-}
-.nav-menu[open] .nav-menu-arrow {
-  transform: rotate(180deg);
-}
-.nav-menu-list {
-  position: absolute;
-  right: 0;
-  top: calc(100% + 6px);
-  z-index: 50;
-  min-width: 250px;
-  margin: 0;
-  padding: 6px;
-  list-style: none;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-top: 3px solid var(--gold);
-  border-radius: 12px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
-}
-.nav-list .nav-menu-list a {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  padding: 10px 12px;
-}
-.nav-menu-label {
-  color: var(--ink);
-}
-.nav-menu-hint {
-  font-size: 0.85rem;
-  font-weight: 400;
-  color: var(--muted);
-}
-.nav-list .nav-menu-list a[aria-current="page"] {
-  background: var(--navy-soft);
+@media (max-width: 420px) {
+  .header-btn-label {
+    display: none;
+  }
 }
 
 /* ---------- Girih pattern ---------- */
@@ -908,9 +939,6 @@ a:hover {
   .brand-logo {
     width: 34px;
     height: 34px;
-  }
-  .nav-list a {
-    padding: 10px 8px;
   }
   .hero-arch {
     border-radius: 50% 50% var(--radius) var(--radius) / 64px 64px var(--radius) var(--radius);
@@ -1540,34 +1568,6 @@ button:active,
   margin: 28px 0 10px;
 }
 
-/* Phones: the longer site name gets its own line, with the menu underneath. */
-@media (max-width: 640px) {
-  .header-inner {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0 12px;
-    padding-block: 6px;
-  }
-  .brand-name {
-    white-space: normal;
-  }
-  .nav-list {
-    width: 100%;
-    justify-content: center;
-  }
-  .nav-list a,
-  .nav-menu > summary {
-    padding: 6px 12px;
-  }
-  /* On phones the menu opens centred under "Explore" so it can't run off the screen. */
-  .nav-menu-list {
-    right: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: min(250px, calc(100vw - 32px));
-  }
-}
-
 /* The pattern in the hero is clipped to the arch shape on its own. */
 .girih-hero {
   border-radius: inherit;
@@ -1684,14 +1684,7 @@ button:active,
   }
 }
 
-/* ---------- Search bar at the top of inner pages ---------- */
-.header-search {
-  padding: 2px 0 12px;
-}
-.header-search .search-box {
-  max-width: 640px;
-  margin-inline: auto;
-}
+/* ---------- Compact search bar (in the header) ---------- */
 .search-box-compact input {
   min-height: 44px;
   padding-block: 8px;
