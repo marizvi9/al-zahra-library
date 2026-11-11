@@ -43,6 +43,13 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
   - **Authors** (`/authors/`): everyone with 2+ books, A to Z, each with a page listing their books.
     Spellings of one person are grouped by `data/author-names.json` (please check it).
   - Old addresses forward: `/categories/…` → `/explore/…`, `/explore/300/` → `/shelves/300/`.
+- **Author photos:** 61 authors have a photo, from Wikimedia Commons under free licences, with a
+  credit + licence line beside it and a full list at `/authors/photo-credits/`. Everyone else gets a
+  navy-and-gold initials badge. The data is `data/author-photos.json` (delete an entry to remove a photo);
+  each author's Wikipedia article is chosen by hand, then `node scripts/fetch_author_photos.mjs` fetches the
+  photo and licence. Review list: `data/author-photos-report.md`. The Prophet, the Imams, Lady Fatima and
+  other holy figures (including books attributed to them) never get a picture, and are never looked up;
+  `src/lib/authorPhotos.ts` enforces this.
 - Instant search by title, author or category; a page per book with a "Find it on the shelf"
   call-number box, and the author linked to their page.
 - **Recent searches:** the last 6, kept only in the visitor's own browser (`src/lib/recentSearches.ts`),

@@ -5,6 +5,7 @@ import CategoryCard from "@/components/CategoryCard";
 import FeaturedSlider from "@/components/FeaturedSlider";
 import { Emblem } from "@/components/Emblem";
 import { featuredSlides } from "@/lib/featured";
+import AuthorAvatar from "@/components/AuthorAvatar";
 import {
   authors,
   bookSets,
@@ -91,11 +92,14 @@ export default function HomePage() {
           {topAuthors(12).map((a) => (
             <li key={a.slug}>
               <Link href={`/authors/${a.slug}/`} className="author-card">
-                <span className="author-card-name" dir="auto">
-                  {a.name}
-                </span>
-                <span className="author-card-meta">
-                  {a.count} books · {mainSubjects(a.books)}
+                <AuthorAvatar name={a.name} size={52} />
+                <span className="author-card-text">
+                  <span className="author-card-name" dir="auto">
+                    {a.name}
+                  </span>
+                  <span className="author-card-meta">
+                    {a.count} books · {mainSubjects(a.books)}
+                  </span>
                 </span>
               </Link>
             </li>

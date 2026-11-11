@@ -370,6 +370,9 @@ export const authors: Author[] = (() => {
 
 export const getAuthor = (slug: string) => authors.find((a) => a.slug === slug);
 
+/** The name shown for an author (spelling variants become one name). */
+export const authorName = (raw: string) => nameFor.get(raw) ?? raw;
+
 /** The author page for this book's author, if they have one. */
 export function authorOf(b: Book): Author | undefined {
   if (!b.author) return undefined;

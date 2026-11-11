@@ -4,7 +4,10 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BookList from "@/components/BookList";
 import CoverGallery from "@/components/CoverGallery";
+import AuthorAvatar, { PhotoCredit } from "@/components/AuthorAvatar";
+import { photoFor } from "@/lib/authorPhotos";
 import {
+  authorName,
   authorOf,
   books,
   booksInSubCategory,
@@ -36,6 +39,7 @@ export default async function BookPage({ params }: Props) {
   const cat = getCategory(book.categorySlug)!;
   const cover = getCover(book.id);
   const author = authorOf(book);
+  const authorPhoto = book.author ? photoFor(authorName(book.author)) : null;
   const description = getDescription(book.id);
   // Long descriptions: show the first part, with "Read more" for the rest.
   const [lead, more] = splitDescription(description?.paragraphs ?? []);
@@ -111,7 +115,13 @@ export default async function BookPage({ params }: Props) {
             <div>
               <dt>Author</dt>
               <dd dir="auto">
-                {author ? <Link href={`/authors/${author.slug}/`}>{book.author}</Link> : (book.author ?? "Unknown")}
+                <span className="details-author">
+                  {book.author && <AuthorAvatar name={authorName(book.author)} size={44} />}
+                  <span>
+                    {author ? <Link href={`/authors/${author.slug}/`}>{book.author}</Link> : (book.author ?? "Unknown")}
+                    {authorPhoto && <PhotoCredit photo={authorPhoto} />}
+                  </span>
+                </span>
               </dd>
             </div>
             {book.publisher && (

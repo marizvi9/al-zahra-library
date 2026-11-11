@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { authors } from "@/lib/catalog";
+import AuthorAvatar from "@/components/AuthorAvatar";
 
 export const metadata: Metadata = {
   title: "Authors",
@@ -45,13 +46,21 @@ export default function AuthorsPage() {
             {byLetter.get(l)!.map((a) => (
               <li key={a.slug}>
                 <Link href={`/authors/${a.slug}/`}>
-                  <span dir="auto">{a.name}</span> <span className="chip-count">{a.count}</span>
+                  <AuthorAvatar name={a.name} size={36} />
+                  <span dir="auto" className="author-list-name">
+                    {a.name}
+                  </span>{" "}
+                  <span className="chip-count">{a.count}</span>
                 </Link>
               </li>
             ))}
           </ul>
         </section>
       ))}
+      <p className="small muted photo-credits-link">
+        Author photos are from Wikimedia Commons, under free licences.{" "}
+        <Link href="/authors/photo-credits/">See every photo&rsquo;s credit and licence</Link>.
+      </p>
     </div>
   );
 }
