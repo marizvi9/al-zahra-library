@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BookList from "@/components/BookList";
 import Redirect from "@/components/Redirect";
+import CategoryCover from "@/components/CategoryCover";
 import { booksInCategory, categories, getCategory, shelves, toListItem } from "@/lib/catalog";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -34,10 +35,16 @@ export default async function CategoryPage({ params }: Props) {
   return (
     <div className="container page">
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Explore", href: "/explore/" }, { label: cat.name }]} />
-      <header className="page-head arch-band">
-        {cat.number && <p className="eyebrow">Shelf {cat.number}</p>}
-        <h1>{cat.name}</h1>
-        {cat.description && <p className="lede">{cat.description}</p>}
+      <header className="category-hero">
+        <CategoryCover slug={cat.slug} number={cat.number} className="category-hero-cover" />
+        <div className="category-hero-text">
+          <h1>{cat.name}</h1>
+          {cat.description && <p className="lede">{cat.description}</p>}
+          <p className="category-hero-count">
+            {list.length} {list.length === 1 ? "book" : "books"}
+            {cat.number ? ` · Shelf ${cat.number}` : ""}
+          </p>
+        </div>
       </header>
 
       {showSubs && (

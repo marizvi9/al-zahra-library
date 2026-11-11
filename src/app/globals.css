@@ -421,49 +421,121 @@ a:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 26px 20px 18px;
+  overflow: hidden;
   background: var(--card);
   border: 1px solid var(--line);
-  border-top: 3px solid var(--gold);
-  border-radius: var(--arch);
+  border-radius: var(--radius);
   text-decoration: none;
   color: var(--text);
   box-shadow: var(--shadow);
-  transition: transform 0.15s ease, border-color 0.15s ease;
 }
 .category-card:hover {
   transform: translateY(-2px);
-  border-color: var(--navy);
-  border-top-color: var(--gold);
+  border-color: var(--gold);
   color: var(--text);
 }
-.category-card-top {
-  text-align: center;
+.category-card-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 320 / 200;
 }
-.shelf-no {
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  color: var(--navy);
+.category-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 14px 18px 16px;
 }
 .category-card-name {
   font-family: var(--font-head);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--ink);
-  text-align: center;
-  margin: 4px 0 8px;
+  line-height: 1.25;
+  margin: 0 0 6px;
 }
 .category-card-desc {
   color: var(--muted);
   font-size: 0.95rem;
+  line-height: 1.5;
   flex: 1;
 }
 .category-card-count {
-  margin-top: 12px;
-  font-size: 0.9rem;
+  margin-top: 10px;
+  font-size: 0.88rem;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--gold-text);
+}
+/* Phones: cover on the left, text on the right, so the list stays short. */
+@media (max-width: 559px) {
+  .category-card {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .category-card-cover {
+    width: 38%;
+    max-width: 150px;
+    flex: none;
+    aspect-ratio: auto;
+    height: 100%;
+    min-height: 96px;
+    object-fit: cover;
+  }
+  .category-card-body {
+    padding: 10px 12px;
+  }
+  .category-card-name {
+    font-size: 1.05rem;
+  }
+  .category-card-desc {
+    font-size: 0.88rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/* Category page: cover beside the name and description */
+.category-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 260px) 1fr;
+  gap: 22px;
+  align-items: center;
+  margin: 4px 0 18px;
+  padding: 14px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.category-hero-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.category-hero-text h1 {
+  margin-bottom: 6px;
+}
+.category-hero-text .lede {
+  margin: 0;
+}
+.category-hero-count {
+  margin: 10px 0 0;
+  font-weight: 600;
+  color: var(--gold-text);
+}
+@media (max-width: 559px) {
+  .category-hero {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    text-align: center;
+  }
+  .category-hero-cover {
+    max-width: 320px;
+    margin-inline: auto;
+  }
 }
 
 /* ---------- Chips ---------- */

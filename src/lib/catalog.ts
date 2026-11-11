@@ -3,7 +3,7 @@
 import rawBooks from "@data/books.json";
 import rawCovers from "@data/covers.json";
 import rawDescriptions from "@data/descriptions.json";
-import { categoryDescriptions, FEATURED_CATEGORIES, MORE_TO_EXPLORE } from "./categoryInfo";
+import { categoryDescriptions, DISPLAY_NAMES, FEATURED_CATEGORIES, MORE_TO_EXPLORE } from "./categoryInfo";
 import { withBase } from "./paths";
 
 export type Book = {
@@ -85,8 +85,12 @@ export type Category = {
 
 const collator = new Intl.Collator("en", { sensitivity: "base", numeric: true });
 
-/** Books shown on the website (books marked "removed" are hidden). */
-export const books: Book[] = (rawBooks as Book[]).filter((b) => !b.removed);
+const shown = (name: string) => DISPLAY_NAMES[name] ?? name;
+
+/** Books shown on the website (books marked "removed" are hidden), with display names applied. */
+export const books: Book[] = (rawBooks as Book[])
+  .filter((b) => !b.removed)
+  .map((b) => ({ ...b, category: shown(b.category), subCategory: shown(b.subCategory) }));
 
 const byShelfThenTitle = (a: Book, b: Book) =>
   Number(a.subCatNo ?? 9999) - Number(b.subCatNo ?? 9999) || collator.compare(a.title, b.title);
