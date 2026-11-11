@@ -13,7 +13,10 @@
     "Imam Ali ibn Abu Talib",
     "Imam Ja'far al-Sadiq",
     "Imam Sajjad Ali ibn al-Hussein",
-    "Abu Muhammad Zaynul 'Abidin"
+    "Abu Muhammad Zaynul 'Abidin",
+    "Imam Ali ibn Abi Talib",
+    "Imam Zayn al-Abidin",
+    "Imam Zayn Al-Abidin"
   ],
   "authors": {
     "Murtaza Mutahhari": {
@@ -686,24 +689,6 @@
         "https://en.wikipedia.org/wiki/List_of_Shia_books"
       ],
       "bioNote": "Only a passing mention in a list was found, not a full article."
-    },
-    "Dr.Muhammad Javad Bahonar": {
-      "wikipedia": "Mohammad-Javad Bahonar",
-      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mohammad-Javad_Bahonar",
-      "description": "Iranian Islamic cleric and politician (1933–1981)",
-      "file": "File:Mohammad Javad Bahonar.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Mohammad_Javad_Bahonar.jpg",
-      "creator": "Unknown author",
-      "license": "Public domain",
-      "licenseUrl": null,
-      "imageDescription": "Mohammad Javad Bahonar, 77th Prime Minister of Iran",
-      "photo": "/authors/dr-muhammad-javad-bahonar.jpg",
-      "photoLarge": "/authors/large/dr-muhammad-javad-bahonar.webp",
-      "largeWidth": 640,
-      "largeHeight": 884,
-      "lowRes": false,
-      "originalWidth": 4104,
-      "originalHeight": 5670
     },
     "Muhammad Jawad Mughniyya": {
       "wikipedia": "Muhammad Jawad Mughniyya",
@@ -1796,6 +1781,24 @@
       "bioSources": [
         "https://en.wikipedia.org/wiki/Muhaqqiq_al-Hilli"
       ]
+    },
+    "Muhammad Javad Bahonar": {
+      "wikipedia": "Mohammad-Javad Bahonar",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mohammad-Javad_Bahonar",
+      "description": "Iranian Islamic cleric and politician (1933–1981)",
+      "file": "File:Mohammad Javad Bahonar.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Mohammad_Javad_Bahonar.jpg",
+      "creator": "Unknown author",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "imageDescription": "Mohammad Javad Bahonar, 77th Prime Minister of Iran",
+      "photo": "/authors/dr-muhammad-javad-bahonar.jpg",
+      "photoLarge": "/authors/large/dr-muhammad-javad-bahonar.webp",
+      "largeWidth": 640,
+      "largeHeight": 884,
+      "lowRes": false,
+      "originalWidth": 4104,
+      "originalHeight": 5670
     }
   }
 }

@@ -13,7 +13,9 @@
       "Allamah Murtaza Mutahheri",
       "Ayatullah Murtaza Mutahheri",
       "Murtaza Mutahhary",
-      "Ayatollah Mortadha Motahhari"
+      "Ayatollah Mortadha Motahhari",
+      "Ayatullah Murtaza Muthahhari",
+      "Allamah Mutahhari"
     ],
     "Ali Shariati": [
       "Dr. Ali Shariati",
@@ -27,7 +29,8 @@
       "Muhammad Baqir al-Sadr",
       "Ayatullah Baqir Sadr",
       "Allamah Muhammad Baqir As-Sadr",
-      "Sayyid Muhammad Bakr Sadr"
+      "Sayyid Muhammad Bakr Sadr",
+      "Ayatullah Muhammad Baqir Al-Sadr"
     ],
     "Muhammad Husayn Tabatabai": [
       "Allamah Sayyid Muhammad Husayn Tabatabai",
@@ -62,7 +65,8 @@
       "Imam Khomeini",
       "Ayatollah Khomeini",
       "Imam Khomeini (S.A)",
-      "Imam Khomeiny"
+      "Imam Khomeiny",
+      "Imam Khumayni"
     ],
     "Ali Khamenei": [
       "Ayatullah Sayyid Ali Khamenei",
@@ -81,7 +85,8 @@
       "Ayatullah Ibrahim Amini",
       "Ayatollah Ibrahim Amini",
       "Ibrahim Amini",
-      "Professor Ibrahim Amini"
+      "Professor Ibrahim Amini",
+      "Allamah Ibrahim Amini"
     ],
     "Baqir Sharif al-Qurashi": [
       "Baqir Shareef Al-Qarashi",
@@ -101,7 +106,8 @@
     "Nasir Makarim Shirazi": [
       "Ayatullah Nasir Makarim Shirazi",
       "Ayatollah Makarim Shirazi",
-      "Nasir Makarim Shirazi"
+      "Nasir Makarim Shirazi",
+      "Ayatullah Makarim Shirazi"
     ],
     "Fazl Ahmad": [
       "Prof. Fazl Ahmad",
@@ -136,7 +142,8 @@
       "Ayatullah S.M.H. Beheshti",
       "Martyred Ayatollah Beheshti",
       "Ayatullah Sayyid M.H. Beheshti",
-      "Sayyid Muhammad Husayni Beheshti"
+      "Sayyid Muhammad Husayni Beheshti",
+      "Dr. Behishti"
     ],
     "Muhammad Rida al-Muzaffar": [
       "Muhammad Rida al-Muzaffar",
@@ -218,7 +225,8 @@
     ],
     "Muhammad Mahdi al-Asifi": [
       "Ayatullah Muhammad Mahdi Asifi",
-      "Muhammad Mahdi Al-Asifi"
+      "Muhammad Mahdi Al-Asifi",
+      "Allamah Muhammad Mahdi Asifi"
     ],
     "Muhammad Mahdi al-Naraqi": [
       "Muhammad Mahdi ibn Abi Zarr al-Naraqi",
@@ -262,6 +270,33 @@
     "Shaykh al-Saduq": [
       "Al-Shaykh al-Saduq",
       "Sheikh Sadooq"
+    ],
+    "Abdulaziz Sachedina": [
+      "Abdulaziz Sachedina",
+      "Dr Abdulaziz A. Sachedina"
+    ],
+    "Muhammad Javad Bahonar": [
+      "Dr.Muhammad Javad Bahonar",
+      "Mohammad Javad Bahonar",
+      "Dr. Bahonar"
+    ],
+    "Imam Ali ibn Abi Talib": [
+      "Imam Ali Ibn Abi Talib",
+      "Imam Ali ibn Abu Talib",
+      "Imam Ali Amir al-Mum'minin"
+    ],
+    "Imam Zayn al-Abidin": [
+      "Imam Zayn Al-Abidin",
+      "Imam Ali Ibnul-Husayn Zaynul-A'abidin (a.s)",
+      "Imam Sajjad Ali ibn al-Hussein",
+      "Abu Muhammad Zaynul 'Abidin"
+    ],
+    "Shaykh 'Emadul Deen Abu Jaafar Mohammad bin Abi Qasim Al-Tabari": [
+      "Shaykh 'Emadul Deen, Abu Jaafar Mohammad bin Abi Qasim Al-Tabari"
+    ],
+    "Ja'far Subhani": [
+      "Ja'far Subhani",
+      "Ayatullah Jafar Subhani"
     ]
   }
 }

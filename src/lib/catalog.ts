@@ -198,6 +198,7 @@ export const toListItem = (b: Book) => ({
   slug: b.slug,
   title: b.title,
   credit: creditLine(b),
+  creditParts: creditParts(b),
   category: b.category,
   categorySlug: b.categorySlug,
   subCategory: b.subCategory,
@@ -325,10 +326,13 @@ export function shortDescription(d: Description, maxChars = 300): string {
 
 // ---------- Authors ----------
 // Many authors are spelled several ways in the catalogue. data/author-names.json lists,
-// for each person, the name to show and every spelling used. Authors with 2+ books get
-// a page at /authors/<slug>/. (Entries naming several authors at once are left out.)
+// for each person, the name to show and every spelling used. Every author has a page at
+// /authors/<slug>/. A cell naming several people ("A & B", "A, B and C",
+// "X Translated by: Y") is split so each person gets their own link and page.
 
 export type Author = { name: string; slug: string; count: number; books: Book[] };
+/** A piece of a credit line: plain text (", ", "Compiled by: ") or a linked author name. */
+export type CreditPart = { text: string; slug?: string };
 
 const nameFor = new Map<string, string>(
   Object.entries((authorNames as { groups: Record<string, string[]> }).groups).flatMap(([name, spellings]) =>
@@ -356,32 +360,80 @@ const surname = (name: string) =>
     .replace(/^(al|as|at|an|ar|ash)-/i, "")
     .toLowerCase();
 
-export const authors: Author[] = (() => {
-  const groups = new Map<string, Book[]>();
-  for (const b of books) {
-    if (!b.author || b.titleMissing) continue;
-    // A cell naming several people ("A, B, C" or "A; B") is not one author, so it gets no page.
-    if (/[,;]/.test(b.author) && !nameFor.has(b.author)) continue;
-    const name = nameFor.get(b.author) ?? b.author;
-    if (!groups.has(name)) groups.set(name, []);
-    groups.get(name)!.push(b);
-  }
-  return [...groups.entries()]
-    .filter(([, list]) => list.length >= 2)
-    .map(([name, list]) => ({ name, slug: slugify(name), count: list.length, books: list.sort(byTitle) }))
-    .sort((a, b) => collator.compare(surname(a.name), surname(b.name)) || collator.compare(a.name, b.name));
-})();
-
-export const getAuthor = (slug: string) => authors.find((a) => a.slug === slug);
-
+const ROLE = /^(compiled by:?|compiler:|translated by:?)\s*/i;
+const SEPARATOR = /(,\s*and\s+|\s*[,;&]\s*|\s+and\s+|\s+(?=translated by:?\s))/i;
+const DEGREE = /^(m\.?\s?d\.?|ph\.?\s?d\.?|phd)$/i;
 /** The name shown for an author (spelling variants become one name). */
 export const authorName = (raw: string) => nameFor.get(raw) ?? raw;
 
-/** The author page for this book's author, if they have one. */
+/**
+ * Split a credit cell into plain text and author names, keeping the original wording:
+ * "Ali Shariati Translated By: Laleh Bakhtiar and Husayn Salih" →
+ * [Ali Shariati] [ Translated By: ] [Laleh Bakhtiar] [ and ] [Husayn Salih].
+ */
+function splitCredit(raw: string): { text: string; name?: string }[] {
+  const one = (cell: string) => {
+    const role = ROLE.exec(cell)?.[0] ?? "";
+    const rest = cell.slice(role.length);
+    const name = nameFor.get(cell) ?? nameFor.get(rest) ?? rest;
+    return role ? [{ text: role }, { text: rest, name }] : [{ text: cell, name }];
+  };
+  if (nameFor.has(raw) || !SEPARATOR.test(raw)) return one(raw);
+  const bits = raw.split(SEPARATOR); // names at even positions, separators at odd ones
+  const names: string[] = [];
+  const seps: string[] = [];
+  for (let k = 0; k < bits.length; k++) {
+    if (k % 2 === 1) seps.push(bits[k]);
+    else if (DEGREE.test(bits[k].trim()) && names.length) names[names.length - 1] += seps.pop() + bits[k]; // "Syed M. Rizvi, M.D."
+    else names.push(bits[k]);
+  }
+  // A one-word piece ("Abbas & Shaheen Merali", "H & T ...") means it isn't really a list: keep it whole.
+  if (names.some((n) => n.replace(ROLE, "").trim().split(/\s+/).length < 2)) return one(raw);
+  const out: { text: string; name?: string }[] = [];
+  names.forEach((n, k) => {
+    if (k > 0) out.push({ text: seps[k - 1] });
+    out.push(...one(n.trim()));
+  });
+  return out;
+}
+
+/** The people credited on a book (spellings merged), for author pages. */
+export const authorsOfBook = (b: Book) => (b.author ? splitCredit(b.author).flatMap((p) => (p.name ? [p.name] : [])) : []);
+
+export const authors: Author[] = (() => {
+  const groups = new Map<string, Book[]>();
+  for (const b of books) {
+    if (b.titleMissing) continue;
+    for (const name of new Set(authorsOfBook(b))) {
+      if (!groups.has(name)) groups.set(name, []);
+      groups.get(name)!.push(b);
+    }
+  }
+  const list = [...groups.entries()]
+    .map(([name, books]) => ({ name, slug: slugify(name), count: books.length, books: books.sort(byTitle) }))
+    .sort((a, b) => collator.compare(surname(a.name), surname(b.name)) || collator.compare(a.name, b.name));
+  const seen = new Map<string, string>();
+  for (const a of list) {
+    if (seen.has(a.slug)) throw new Error(`Two authors share the address /authors/${a.slug}/: "${seen.get(a.slug)}" and "${a.name}". Add one of them to data/author-names.json.`);
+    seen.set(a.slug, a.name);
+  }
+  return list;
+})();
+
+const bySlug = new Map(authors.map((a) => [a.slug, a]));
+const byName = new Map(authors.map((a) => [a.name, a]));
+export const getAuthor = (slug: string) => bySlug.get(slug);
+
+/** A book's credit line in pieces, with each author linked (a publisher shown instead is not linked). */
+export function creditParts(b: Pick<Book, "author" | "publisher">): CreditPart[] {
+  if (!b.author) return [{ text: creditLine(b) }];
+  return splitCredit(b.author).map((p) => (p.name && byName.has(p.name) ? { text: p.text, slug: byName.get(p.name)!.slug } : { text: p.text }));
+}
+
+/** The author page for this book's author, when the book has exactly one author. */
 export function authorOf(b: Book): Author | undefined {
-  if (!b.author) return undefined;
-  const name = nameFor.get(b.author) ?? b.author;
-  return authors.find((a) => a.name === name);
+  const names = authorsOfBook(b);
+  return names.length === 1 ? byName.get(names[0]) : undefined;
 }
 
 /** Authors with the most books, for the home page. */

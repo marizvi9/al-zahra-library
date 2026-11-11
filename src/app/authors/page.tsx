@@ -6,7 +6,7 @@ import AuthorAvatar from "@/components/AuthorAvatar";
 
 export const metadata: Metadata = {
   title: "Authors",
-  description: "Authors with two or more books in the Al-Zahra Islamic Library, A to Z.",
+  description: "Every author in the Al-Zahra Islamic Library, A to Z.",
 };
 
 // A–Z by surname ("Ali Shariati" is under S).
@@ -29,7 +29,7 @@ export default function AuthorsPage() {
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Authors" }]} />
       <h1>Authors</h1>
       <p className="lede">
-        The {authors.length} authors with two or more books in the library, A to Z by surname. Different
+        All {authors.length} authors in the library, A to Z by surname. Different
         spellings of the same name are listed together.
       </p>
       <nav className="letter-jump" aria-label="Jump to a letter">

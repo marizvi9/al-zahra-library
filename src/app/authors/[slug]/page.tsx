@@ -22,7 +22,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const a = getAuthor((await params).slug);
-  return a ? { title: a.name, description: `${a.count} books by ${a.name} in the Al-Zahra Islamic Library.` } : {};
+  return a ? { title: a.name, description: `${a.count === 1 ? "1 book" : `${a.count} books`} by ${a.name} in the Al-Zahra Islamic Library.` } : {};
 }
 
 export default async function AuthorPage({ params }: Props) {
@@ -59,7 +59,7 @@ export default async function AuthorPage({ params }: Props) {
             </div>
           )}
           <p className="author-data-line">
-            Author of {author.count} books in the Al-Zahra Islamic Library, in{" "}
+            Author of {author.count === 1 ? "1 book" : `${author.count} books`} in the Al-Zahra Islamic Library, in{" "}
             {subjects.map(({ cat, n }, i) => (
               <span key={cat.slug}>
                 {i > 0 && (i === subjects.length - 1 ? " and " : ", ")}
@@ -71,7 +71,7 @@ export default async function AuthorPage({ params }: Props) {
           {spellings.length > 0 && <p className="small muted">Also spelled in the catalogue: {spellings.join("; ")}.</p>}
         </div>
       </header>
-      <BookList items={author.books.map(toListItem)} showCategory />
+      <BookList items={author.books.map(toListItem)} showCategory currentAuthor={author.slug} />
     </div>
   );
 }

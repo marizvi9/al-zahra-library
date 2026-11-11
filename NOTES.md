@@ -40,7 +40,7 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
     and gold motif (the full colour + motif list is at the top of that file).
   - **Shelves** (`/shelves/`): shelf tabs (All shelves, 100 · Theology … No number); "All shelves" shows a
     box per shelf above every book. Each shelf page has section chips, a filter box and "Search this shelf".
-  - **Authors** (`/authors/`): everyone with 2+ books, A to Z, each with a page listing their books.
+  - **Authors** (`/authors/`): every author, A to Z, each with a page listing their books.
     Spellings of one person are grouped by `data/author-names.json` (please check it).
   - Old addresses forward: `/categories/…` → `/explore/…`, `/explore/300/` → `/shelves/300/`.
 - **Authors data:** `data/authors.json` holds, for each author, the photo (Wikimedia Commons, free licences
@@ -55,9 +55,12 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
     navy-and-gold initials badge (and a large initials panel on their page).
   - The Prophet, the Imams, Lady Fatima and other holy figures (including books attributed to them) never get a
     picture and are never looked up (`src/lib/authorPhotos.ts` enforces this); their bios are left for you to write.
-  - A catalogue cell naming several people (e.g. "A, B, C") gets no author page.
+  - **Author names are links** everywhere (book pages, lists, search, slider, featured sections), except on the
+    author's own page. A cell naming several people ("A & B", "Compiled by X & Y", "A Translated By: B") is
+    split so each person has their own link and page (`creditParts()` in `src/lib/catalog.ts`). On clickable
+    cards the title link is stretched over the card and author names sit on top, so links never nest.
 - Instant search by title, author or category; a page per book with a "Find it on the shelf"
-  call-number box, and the author linked to their page.
+  call-number box, and each author linked to their page.
 - **Recent searches:** the last 6, kept only in the visitor's own browser (`src/lib/recentSearches.ts`),
   shown when the search bar is clicked, each removable, plus "Clear all".
 - **Home page sections** (all from the catalogue's own data): Featured books slider; then

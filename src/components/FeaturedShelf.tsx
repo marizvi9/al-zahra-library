@@ -3,6 +3,7 @@
 // its page. On phones the row scrolls sideways.
 import Link from "next/link";
 import AuthorAvatar from "./AuthorAvatar";
+import Credit from "./Credit";
 import type { HomeSection } from "@/lib/homeSections";
 
 export default function FeaturedShelf({ section }: { section: HomeSection }) {
@@ -27,20 +28,21 @@ export default function FeaturedShelf({ section }: { section: HomeSection }) {
       <ul className="shelf-row">
         {section.books.map((b) => (
           <li key={b.slug}>
-            <Link href={`/books/${b.slug}/`} className="shelf-book">
+            {/* Title link stretched over the card; author names are separate links on top. */}
+            <div className="shelf-book">
               <span className="shelf-book-cover">
                 <img src={b.cover.src} alt="" width={b.cover.width} height={b.cover.height} loading="lazy" decoding="async" />
               </span>
-              <span className="shelf-book-title" dir="auto">
+              <Link href={`/books/${b.slug}/`} className="shelf-book-title card-link" dir="auto">
                 {b.title}
-              </span>
+              </Link>
               {section.type === "theme" && (
                 <span className="shelf-book-author" dir="auto">
-                  {b.author}
+                  <Credit parts={b.creditParts} />
                 </span>
               )}
               <span className="shelf-book-desc">{b.description}</span>
-            </Link>
+            </div>
           </li>
         ))}
       </ul>

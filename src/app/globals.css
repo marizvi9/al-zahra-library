@@ -658,6 +658,46 @@ a:hover {
   max-width: 100%;
 }
 
+/* ---------- Author links and "whole card is clickable" ---------- */
+/* An author's name: a faint gold underline that turns solid gold on hover or focus. */
+.author-link {
+  position: relative;
+  z-index: 1; /* sits above the card's stretched link */
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(172 133 33 / 0.35);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.author-link:hover,
+.author-link:focus-visible {
+  color: var(--ink);
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 2px;
+}
+/* The card's main link (the title) is stretched over the whole card, so the card is
+   clickable without wrapping other links inside it. */
+.card-link {
+  color: inherit;
+  text-decoration: none;
+}
+.card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+}
+.card-link:focus-visible {
+  outline: none;
+}
+.book-row:has(.card-link:focus-visible),
+.shelf-book:has(.card-link:focus-visible),
+.slide-link:has(.card-link:focus-visible) {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
 /* ---------- Book list ---------- */
 .book-list {
   list-style: none;
@@ -667,6 +707,7 @@ a:hover {
   gap: 8px;
 }
 .book-row {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -1975,6 +2016,7 @@ button:active,
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .shelf-book {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -2338,6 +2380,7 @@ button:active,
   min-width: 0;
 }
 .slide-link {
+  position: relative;
   display: flex;
   align-items: center;
   gap: clamp(16px, 4vw, 36px);
