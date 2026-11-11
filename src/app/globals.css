@@ -1489,9 +1489,10 @@ button:active,
 
 /* ---------- Shelf tabs ---------- */
 .shelf-tabs {
-  margin: 8px 0 24px;
+  margin: 12px 0 14px;
   overflow-x: auto;
   scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
   -webkit-overflow-scrolling: touch;
   border-bottom: 2px solid var(--line);
 }
@@ -2124,7 +2125,8 @@ button:active,
   gap: 12px;
 }
 .explore-guide-part {
-  padding: 14px 18px;
+  padding: 12px 16px;
+  font-size: 0.97rem;
   background: var(--card);
   border: 1px solid var(--line);
   border-left: 4px solid var(--gold);
@@ -2143,9 +2145,27 @@ button:active,
 .explore-guide-part li + li {
   margin-top: 4px;
 }
+/* Shelves: the compact heading above the filter (no big empty banner) */
+.shelf-band {
+  margin: 4px 0 0;
+}
 .shelf-band h2 {
-  font-size: clamp(1.5rem, 5vw, 2.1rem);
-  margin: 0 0 0.3em;
+  font-size: clamp(1.25rem, 4vw, 1.6rem);
+  margin: 0 0 2px;
+}
+.shelf-band p {
+  margin: 0;
+  max-width: 70ch;
+  color: var(--muted);
+}
+.shelf-band-no {
+  color: var(--gold-text);
+  font-family: var(--font-body);
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  vertical-align: 0.12em;
+  margin-right: 4px;
 }
 
 /* Browse: filter box + "Search this shelf" link */
@@ -2154,7 +2174,7 @@ button:active,
   flex-wrap: wrap;
   align-items: center;
   gap: 10px 16px;
-  margin: 18px 0 12px;
+  margin: 12px 0 12px;
 }
 .browse-filter {
   flex: 1 1 320px;
@@ -2265,22 +2285,12 @@ button:active,
   opacity: 0.45;
   cursor: default;
 }
-.shelf-tile-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 8px;
-}
-.shelf-tile-no {
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 1.15rem;
-  color: var(--navy);
-}
 .shelf-tile-count {
+  margin-top: auto;
+  padding-top: 4px;
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--muted);
+  color: var(--gold-text);
 }
 .shelf-tile-name {
   font-family: var(--font-head);
@@ -2288,12 +2298,16 @@ button:active,
   color: var(--ink);
   line-height: 1.25;
 }
+.shelf-tile-no {
+  color: var(--navy);
+  font-weight: 700;
+}
 .shelf-tile-desc {
   font-size: 0.88rem;
   color: var(--muted);
   line-height: 1.4;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -2302,7 +2316,7 @@ button:active,
     grid-template-columns: 1fr 1fr;
   }
   .shelf-tile-desc {
-    display: none; /* too cramped on phones: number, subject and count only */
+    -webkit-line-clamp: 1; /* phones: just "Shelf 300 · …" */
   }
 }
 

@@ -46,10 +46,12 @@ export default async function ShelfPage({ params }: Props) {
       />
       <ShelvesIntro />
       <ShelfTabs shelves={shelves} active={shelf.slug} />
-      <section className="page-head arch-band shelf-band" aria-labelledby="band-title">
-        <p className="eyebrow">{shelf.number ? `Shelf ${shelf.number}` : "No shelf number"}</p>
-        <h2 id="band-title">{shelf.categories.join(", ")}</h2>
-        {description && <p className="lede">{description}</p>}
+      <section className="shelf-band" aria-labelledby="band-title">
+        <h2 id="band-title">
+          <span className="shelf-band-no">{shelf.number ? `Shelf ${shelf.number}` : "No shelf number"}</span>{" "}
+          {shelf.categories.join(", ")}
+        </h2>
+        {description && <p>{description}</p>}
       </section>
       <ShelfClient
         sections={sections}

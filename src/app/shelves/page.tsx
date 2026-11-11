@@ -16,7 +16,7 @@ export default function ShelvesPage() {
     return {
       ...s,
       tile: { number: shelf.number, name: shelf.number ? shelf.categories.join(", ") : "No shelf number" },
-      description: shelf.number ? s.description : `${shelf.categories.join(", ")}: not given a shelf number yet.`,
+      description: shelf.number ? s.description : `Not given a shelf number yet: ${shelf.categories.join(", ")}.`,
       items: list.map(toListItem),
     };
   });
@@ -25,9 +25,9 @@ export default function ShelvesPage() {
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Shelves" }]} />
       <ShelvesIntro />
       <ShelfTabs shelves={shelves} active="" />
-      <section className="page-head arch-band shelf-band" aria-labelledby="band-title">
+      <section className="shelf-band" aria-labelledby="band-title">
         <h2 id="band-title">All shelves</h2>
-        <p className="lede">
+        <p>
           {books.length} books on {shelves.length} shelves. Click a shelf to see just its books, or use the filter.
         </p>
       </section>

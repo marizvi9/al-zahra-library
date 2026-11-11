@@ -109,14 +109,14 @@ export default function ShelfClient({ sections, scope, chipLabel, searchCategory
                 onClick={() => choose(only === s.key ? "" : s.key)}
                 disabled={s.shown.length === 0 && only !== s.key}
               >
-                <span className="shelf-tile-top">
-                  <span className="shelf-tile-no">{s.tile!.number ?? "—"}</span>
-                  <span className="shelf-tile-count">
-                    {s.shown.length} {s.shown.length === 1 ? "book" : "books"}
-                  </span>
-                </span>
                 <span className="shelf-tile-name">{s.tile!.name}</span>
-                {s.description && <span className="shelf-tile-desc">{s.description}</span>}
+                <span className="shelf-tile-desc">
+                  {s.tile!.number && <strong className="shelf-tile-no">Shelf {s.tile!.number} · </strong>}
+                  {s.description}
+                </span>
+                <span className="shelf-tile-count">
+                  {s.shown.length} {s.shown.length === 1 ? "book" : "books"}
+                </span>
               </button>
             </li>
           ))}
