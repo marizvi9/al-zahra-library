@@ -1,5 +1,11 @@
 {
  "_help": "One entry per multi-volume set (or series of issues). 'volumes' are in order; 'books' lists the catalogue ids (data/books.json) that are that volume (more than one id = the catalogue lists it twice). 'numbers' are the volume numbers used to spot gaps ([3,4] = volumes 3 and 4 in one book). 'totalVolumes' is optional: set it only when you know how many volumes the set has. 'description' is optional text shown on the set page. 'notes' are for the library team. Change this file, then rebuild (npm run build).",
+ "homeFeatured": [
+  "payambar-the-messenger",
+  "hayat-al-qulub",
+  "iqtisaduna-our-economics"
+ ],
+ "_homeFeaturedHelp": "The three sets shown big on the home page (slugs from 'sets' below). Change the slugs to feature other sets.",
  "sets": [
   {
    "slug": "a-manual-of-islamic-beliefs-and-practice",

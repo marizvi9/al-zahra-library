@@ -205,3 +205,6 @@ It is used in lists, search suggestions, author pages and the book page. A real 
   a volume's own page has a panel with previous/next volume and the full list (`SetPanel`).
 - Search finds sets by name (`searchSets`), and a book's set name is searchable too.
 - Code: `src/lib/setIndex.ts` (tiny lookup used everywhere), `src/lib/sets.ts` (full set objects for pages).
+
+## Home page featured sets
+The home page shows three multi-volume sets big (`FeaturedSets`); pick them with `homeFeatured` in data/multi-volume-sets.json. Home-page headings and sub headings are larger.

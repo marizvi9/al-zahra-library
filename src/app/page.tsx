@@ -2,7 +2,8 @@ import Link from "next/link";
 import Girih from "@/components/Girih";
 import Ornament from "@/components/Ornament";
 import SearchBox from "@/components/SearchBox";
-import { volumeSets } from "@/lib/sets";
+import FeaturedSets from "@/components/FeaturedSets";
+import { homeFeaturedSets, volumeSets } from "@/lib/sets";
 import CategoryCard from "@/components/CategoryCard";
 import FeaturedSlider from "@/components/FeaturedSlider";
 import { Emblem } from "@/components/Emblem";
@@ -151,34 +152,8 @@ export default function HomePage() {
           <FeaturedShelf key={s.id} section={s} />
         ))}
 
-      {/* Multi-volume sets: a quick list; each links to its own page (data/multi-volume-sets.json). */}
-      <section className="container section" aria-labelledby="sets-title">
-        <div className="section-head">
-          <h2 id="sets-title">Multi-volume sets</h2>
-          <Link href="/sets/" className="see-all">
-            All {volumeSets.length} sets
-          </Link>
-        </div>
-        <p className="section-lede">Works the library holds in more than one volume.</p>
-        <ul className="set-list">
-          {volumeSets
-            .filter((set) => set.volumes.length > 1)
-            .map((set) => (
-              <li key={set.slug} className="set-row">
-                <Link href={`/sets/${set.slug}/`} className="set-title" dir="auto">
-                  {set.name}
-                </Link>
-                <span className="set-volumes">
-                  {set.volumes.map((v) => (
-                    <Link key={v.label} href={`/books/${v.books[0].slug}/`} className="set-vol" title={v.books[0].title}>
-                      {v.label}
-                    </Link>
-                  ))}
-                </span>
-              </li>
-            ))}
-        </ul>
-      </section>
+      {/* Three multi-volume sets, shown big (chosen in data/multi-volume-sets.json). */}
+      <FeaturedSets sets={homeFeaturedSets} total={volumeSets.length} />
 
       {/* Browse by shelf number: as the books stand in the library. */}
       <section className="container section" aria-labelledby="shelves-title">

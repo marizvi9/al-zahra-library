@@ -79,3 +79,10 @@ export function neighbours(set: VolumeSet, bookId: number) {
   const i = set.volumes.findIndex((v) => v.books.some((b) => b.id === bookId));
   return { prev: set.volumes[i - 1], next: set.volumes[i + 1], index: i };
 }
+
+/** The sets shown big on the home page ("homeFeatured" in the data file). */
+export const homeFeaturedSets: VolumeSet[] = (raw as { homeFeatured?: string[] }).homeFeatured?.map((slug) => {
+  const set = volumeSets.find((x) => x.slug === slug);
+  if (!set) throw new Error(`data/multi-volume-sets.json: homeFeatured lists "${slug}", which is not a set.`);
+  return set;
+}) ?? [];
