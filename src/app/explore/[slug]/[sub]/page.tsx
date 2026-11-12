@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import BookList from "@/components/BookList";
-import { booksInSubCategory, categories, getCategory, toListItem } from "@/lib/catalog";
+import BookGrid from "@/components/BookGrid";
+import SubTopicNav from "@/components/SubTopicNav";
+import SubTopicPager from "@/components/SubTopicPager";
+import { booksInSubCategory, categories, getCategory, subTopicNeighbours, subTopicText, toGridItem } from "@/lib/catalog";
 
 type Props = { params: Promise<{ slug: string; sub: string }> };
 
@@ -20,7 +22,7 @@ function lookup(catSlug: string, subSlug: string) {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const p = await params;
   const { cat, sub } = lookup(p.slug, p.sub);
-  return { title: sub && cat ? `${sub.name} – ${cat.name}` : undefined };
+  return sub && cat ? { title: `${sub.name} – ${cat.name}`, description: subTopicText(cat, sub) } : {};
 }
 
 export default async function SubCategoryPage({ params }: Props) {
@@ -28,6 +30,8 @@ export default async function SubCategoryPage({ params }: Props) {
   const { cat, sub } = lookup(p.slug, p.sub);
   if (!cat || !sub) notFound();
   const list = booksInSubCategory(cat.slug, sub.slug);
+  const many = cat.subCategories.length > 1;
+  const { prev, next, nextCategory } = subTopicNeighbours(cat, sub.slug);
 
   return (
     <div className="container page">
@@ -50,8 +54,11 @@ export default async function SubCategoryPage({ params }: Props) {
         <p className="lede">
           {cat.name} · {list.length} {list.length === 1 ? "book" : "books"}
         </p>
+        <p>{subTopicText(cat, sub)}</p>
       </header>
-      <BookList items={list.map(toListItem)} />
+      {many && <SubTopicNav cat={cat} current={sub.slug} />}
+      <BookGrid items={list.map(toGridItem)} />
+      {many && <SubTopicPager cat={cat} prev={prev} next={next} nextCategory={nextCategory} />}
     </div>
   );
 }
