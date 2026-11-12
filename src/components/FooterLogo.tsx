@@ -37,6 +37,7 @@ const lBottom = lTop + lib.height;
 const hTop = lBottom + GAP_LINES;
 const hBottom = hTop + (HOUSTON.maxy - HOUSTON.miny);
 const H = hBottom;
+const PAD = 310; // empty room above and below, so the logo shows at the same size as before the stars moved
 const STAR_X = BLOCK_X + BLOCK_W + STAR_SPACE + STAR_R; // the two stars, one above the other, to the right of the words
 const W = STAR_X + STAR_R + 10;
 const stars = [H / 2 - STAR_R - STAR_GAP / 2, H / 2 + STAR_R + STAR_GAP / 2].map((y) => starPoints(STAR_X, y, STAR_R));
@@ -44,7 +45,7 @@ const stars = [H / 2 - STAR_R - STAR_GAP / 2, H / 2 + STAR_R + STAR_GAP / 2].map
 export default function FooterLogo({ className = "" }: { className?: string }) {
   const flowerY = H / 2 - 4 * 217.5;
   return (
-    <svg className={className} viewBox={`0 0 ${Math.round(W)} ${Math.round(H)}`} role="img" aria-label="Al-Zahra Islamic Library, IEC Houston" focusable="false">
+    <svg className={className} viewBox={`0 ${-PAD} ${Math.round(W)} ${Math.round(H + 2 * PAD)}`} role="img" aria-label="Al-Zahra Islamic Library, IEC Houston" focusable="false">
       {/* the flower, on the left */}
       <g transform={`translate(-12 ${flowerY}) scale(4)`} fill="none" stroke={GOLD} strokeWidth="14" strokeLinejoin="miter" strokeLinecap="butt">
         {Object.entries(FLOWER_PATHS).map(([name, d]) => (
