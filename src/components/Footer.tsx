@@ -1,15 +1,15 @@
 import Link from "next/link";
 import Girih from "./Girih";
-import { withBase } from "@/lib/paths";
+import FooterLogo from "./FooterLogo";
 
 export default function Footer() {
   return (
     <footer className="site-footer">
       <Girih className="girih-footer" />
       <div className="container footer-inner">
-        {/* The emblem (a small copy of public/brand/emblem.png) sits on a parchment plate, because its lettering is navy. */}
-        <Link href="/" className="footer-emblem" aria-label="Al-Zahra Islamic Library, back to the home page">
-          <img src={withBase("/brand/emblem-footer.png")} alt="Al-Zahra Islamic Library emblem" width={140} height={116} loading="lazy" decoding="async" />
+        {/* The logo sits straight on the navy footer (no plate) and links home. */}
+        <Link href="/" className="footer-logo" aria-label="Al-Zahra Islamic Library, back to the home page">
+          <FooterLogo />
         </Link>
         {/* Two halves that each stay on one line, so on small screens the text wraps neatly at the dash. */}
         <p className="footer-name">
