@@ -49,7 +49,7 @@ export function FlowerMark({ className = "", title }: { className?: string; titl
 }
 
 /** A 16-point star like the emblem's four small stars. */
-function starPoints(cx: number, cy: number, r: number) {
+export function starPoints(cx: number, cy: number, r: number) {
   const pts: string[] = [];
   for (let i = 0; i < 32; i++) {
     const rad = i % 2 === 0 ? r : r * 0.36;

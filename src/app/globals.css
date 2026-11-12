@@ -1120,51 +1120,63 @@ a:hover {
 }
 .footer-inner {
   position: relative;
-  padding-block: 32px;
+  padding-block: 44px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 16px;
+  justify-content: center;
+  gap: 24px 48px;
 }
-.footer-emblem {
+/* The logo: big, straight on the navy footer, linking home. */
+.footer-logo {
   display: block;
-  padding: 10px 18px 8px;
-  background: var(--card);
-  border: 2px solid var(--gold-light);
-  border-radius: 50% 50% 14px 14px / 40px 40px 14px 14px;
+  flex: none;
   line-height: 0;
+  border-radius: 8px;
 }
-.footer-emblem img {
+.footer-logo svg {
   display: block;
-  mix-blend-mode: multiply; /* the picture's white background takes on the plate's parchment colour */
-  width: 140px;
-  height: auto;
+  height: 112px;
+  width: auto;
 }
-.footer-emblem:focus-visible {
+.footer-logo:focus-visible {
   outline: 3px solid var(--gold-light);
-  outline-offset: 3px;
+  outline-offset: 6px;
 }
 .footer-inner p {
   margin-bottom: 0.3em;
 }
 .footer-name {
-  margin: 0 auto;
-  max-width: 46rem;
+  margin: 0;
+  max-width: 24rem;
   font-family: var(--font-head);
   font-weight: 700;
   font-size: 1.1rem;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
   text-wrap: balance;
   color: var(--card);
 }
 .footer-name span {
   display: inline-block; /* wraps between the two halves, not mid-phrase */
 }
-@media (max-width: 480px) {
+/* Phones and narrow windows: logo on top, big and centred; the text below it. */
+@media (max-width: 760px) {
   .footer-inner {
-    padding-block: 28px 30px;
+    flex-direction: column;
+    padding-block: 36px 34px;
+    gap: 22px;
   }
+  .footer-logo svg {
+    height: 100px;
+    max-width: 88vw;
+  }
+  .footer-name {
+    max-width: 46rem;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
   .footer-name {
     font-size: 1rem; /* still easy to read; long text wraps onto two lines instead of shrinking */
   }
