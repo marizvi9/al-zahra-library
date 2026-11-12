@@ -3390,3 +3390,20 @@ button:active,
 .sources-note a { color: inherit; }
 
 .shelves-blurb { margin: 6px 0 14px; max-width: 46rem; color: var(--muted); }
+
+/* ---------- Search drop-down always on top ----------
+   Animated blocks (the welcome text, cards, lists) each form their own layer, and a later layer paints over an
+   earlier one even when the drop-down inside it has a high z-index. So the layers that CONTAIN a search bar are
+   raised above everything that follows them. */
+.site-header {
+  position: relative;
+  z-index: 60;
+}
+.hero,
+.hero-text,
+.hero-text > :has(.search-suggest),
+.page > :has(> .search-suggest),
+.container:has(.search-suggest) {
+  position: relative;
+  z-index: 20;
+}
