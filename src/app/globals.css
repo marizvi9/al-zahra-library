@@ -3397,3 +3397,15 @@ button:active,
     aspect-ratio: 4 / 3;
   }
 }
+
+/* ---------- Author results in search ---------- */
+.suggest-section { margin: 0; padding: 6px 14px 2px; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted, #6b5f4a); list-style: none; }
+.suggest-author-row .suggest-cover { display: flex; align-items: center; justify-content: center; width: 36px; }
+.type-label { display: inline-block; margin-right: 6px; padding: 1px 7px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid var(--gold, #b8923a); border-radius: 999px; color: var(--navy, #14213d); background: rgba(184, 146, 58, 0.14); vertical-align: middle; }
+.search-hint { margin: 4px 0 12px; font-size: 0.92rem; color: var(--muted, #6b5f4a); }
+.author-results { list-style: none; margin: 8px 0 20px; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.author-result a { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border: 1px solid rgba(184, 146, 58, 0.45); border-radius: 12px; background: #fbf6ea; text-decoration: none; color: inherit; }
+.author-result a:hover, .author-result a:focus-visible { border-color: var(--gold, #b8923a); box-shadow: 0 2px 8px rgba(20, 33, 61, 0.12); }
+.author-result .name { display: block; font-weight: 700; }
+.author-result .meta { display: block; font-size: 0.86rem; color: var(--muted, #6b5f4a); }
+.results-heading { margin: 18px 0 6px; font-size: 1.1rem; }

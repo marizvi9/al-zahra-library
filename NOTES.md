@@ -155,3 +155,17 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
   `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`.
 - Don't also turn on Vercel's own GitHub connection (`vercel git connect`) —
   that would deploy every change twice.
+
+
+## Search (spelling-tolerant, with authors)
+- `src/lib/search.ts` does the matching in the visitor's browser. It ignores capitals, accents (ā ī ū), apostrophes (ʿ ʾ '),
+  hyphens and spaces, treats doubled letters and common transliteration habits as the same (Hussain = Husain = Husayn),
+  and forgives small typos in words of 4+ letters (typo matches are only added after the exact ones, and only when there are
+  fewer than 5 exact matches). Ranking: exact word > start of word > listed variant > typo; a title/name equal to or starting
+  with the search comes first.
+- **Edit `data/search-variants.json`** to add spellings: each list is one word written different ways (first = main spelling).
+  Rebuild afterwards. Don't put surnames that merely look similar in the same list (they would flood the results).
+- `/search-index.json` now holds `{ books, authors }` (built by `src/lib/searchData.ts`). Authors are searched by name and by
+  every spelling in `data/author-names.json`, shown in their own "Authors" group, labelled "Author", with a photo/initials badge
+  (`src/components/AvatarView.tsx`), above the books on the search page and in the drop-down (up to 3).
+- The search page tells the visitor which other spellings were included ("Also included other spellings: …").
