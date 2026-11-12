@@ -90,6 +90,7 @@ export default async function BookPage({ params }: Props) {
           slug={book.slug}
           title={book.title}
           author={book.author}
+          seed={bookSet?.slug}
           images={cover?.images ?? []}
         />
 

@@ -29,7 +29,7 @@ export default function FeaturedSets({ sets, total }: { sets: VolumeSet[]; total
                     {img ? (
                       <img src={withBase(img.large ?? img.src)} alt="" width={img.width} height={img.height} loading="lazy" decoding="async" />
                     ) : (
-                      <ArchCover title={b.title} author={b.author} seed={b.slug} />
+                      <ArchCover title={b.title} author={b.author} seed={s.slug} />
                     )}
                   </span>
                 );

@@ -40,7 +40,7 @@ export default function AuthorBooks({ books, authorSlug }: { books: Book[]; auth
                     decoding="async"
                   />
                 ) : (
-                  <ArchCover title={b.title} author={b.author} seed={b.slug} />
+                  <ArchCover title={b.title} author={b.author} seed={setRefFor(b.id)?.slug ?? b.slug} />
                 )}
               </span>
             </ViewTransition>

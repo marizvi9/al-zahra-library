@@ -65,7 +65,7 @@ export default async function SetPage({ params }: Props) {
                         decoding="async"
                       />
                     ) : (
-                      <ArchCover title={b.title} author={b.author} seed={b.slug} />
+                      <ArchCover title={b.title} author={b.author} seed={set.slug} />
                     )}
                   </Link>
                   <div className="set-volume-text">
