@@ -40,7 +40,7 @@ export default function BookList({
                 {b.thumb ? (
                   <img src={b.thumb} alt="" loading="lazy" decoding="async" />
                 ) : (
-                  <ArchCover title={b.title} size="small" />
+                  <ArchCover title={b.title} author={b.credit} seed={b.slug} size="small" />
                 )}
               </span>
             </ViewTransition>

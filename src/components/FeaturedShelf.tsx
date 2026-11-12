@@ -46,9 +46,6 @@ export default function FeaturedShelf({ section }: { section: HomeSection }) {
           </li>
         ))}
       </ul>
-      <p className="slider-credit">
-        Descriptions from <a href="https://books.google.com">Google Books</a>.
-      </p>
     </section>
   );
 }

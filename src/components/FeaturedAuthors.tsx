@@ -1,9 +1,9 @@
 // "Featured Authors" on the home page: large portraits in a row, each linking to the author's
-// page, with the photo credit and licence underneath. Chosen in data/home-featured-sections.json.
+// page. Chosen in data/home-featured-sections.json.
 // The name link is stretched over the whole card (see .card-link), so the small credit links
 // can sit on top without links being nested.
 import Link from "next/link";
-import { badgeStyle, initials, isHolyFigure, photoFor } from "@/lib/authorPhotos";
+import { frameStyle, initials, isHolyFigure, photoFor } from "@/lib/authorPhotos";
 import { withBase } from "@/lib/paths";
 import { shortCreator } from "./AuthorAvatar";
 import type { FeaturedAuthor } from "@/lib/homeSections";
@@ -32,7 +32,7 @@ export default function FeaturedAuthors({ heading, intro, authors }: { heading: 
                     sizes="(max-width: 700px) 45vw, 210px"
                     loading="lazy"
                     decoding="async"
-                    style={badgeStyle(photo, 1.4) /* face-centred; far-away shots zoomed a little, still sharp */}
+                    style={frameStyle(photo, 4 / 5, 1.45) /* head centred in the arch; far-away shots zoomed a little, still sharp */}
                   />
                 ) : (
                   <span className="portrait-initials" aria-hidden="true">
@@ -50,15 +50,6 @@ export default function FeaturedAuthors({ heading, intro, authors }: { heading: 
                 ))}
               </Link>
               <span className="portrait-count">{a.count === 1 ? "1 book" : `${a.count} books`}</span>
-              {photo && (
-                <span className="portrait-credit">
-                  Photo:{" "}
-                  <a href={photo.source} rel="noopener">
-                    {shortCreator(photo.creator)}
-                  </a>
-                  , {photo.licenseUrl ? <a href={photo.licenseUrl} rel="noopener license">{photo.license}</a> : photo.license}
-                </span>
-              )}
             </li>
           );
         })}

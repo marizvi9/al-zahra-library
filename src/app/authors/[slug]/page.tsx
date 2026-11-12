@@ -4,7 +4,9 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AuthorBooks from "@/components/AuthorBooks";
 import AuthorPortrait from "@/components/AuthorPortrait";
-import { bioFor } from "@/lib/authorPhotos";
+import SourcesNote, { type SourceItem } from "@/components/SourcesNote";
+import { PhotoCreditText } from "@/components/AuthorAvatar";
+import { bioFor, photoFor } from "@/lib/authorPhotos";
 
 /** "https://en.wikipedia.org/wiki/Ali_Shariati" → "Wikipedia: Ali Shariati". */
 function sourceName(url: string) {
@@ -40,6 +42,22 @@ export default async function AuthorPage({ params }: Props) {
     (s): s is string => !!s && s !== author.name,
   );
 
+  const photo = photoFor(author.name);
+  const sources: SourceItem[] = [];
+  if (bio)
+    sources.push({
+      label: bio.sources.length > 1 ? "Biography" : "Biography",
+      content: bio.sources.map((u, i) => (
+        <span key={u}>
+          {i > 0 && ", "}
+          <a href={u} rel="noopener">
+            {sourceName(u)}
+          </a>
+        </span>
+      )),
+    });
+  if (photo) sources.push({ label: "Photo", content: <PhotoCreditText photo={photo} /> });
+
   return (
     <div className="container page">
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Authors", href: "/authors/" }, { label: author.name }]} />
@@ -50,17 +68,6 @@ export default async function AuthorPage({ params }: Props) {
           {bio && (
             <div className="author-bio">
               <p>{bio.text}</p>
-              <p className="author-bio-source">
-                Source{bio.sources.length > 1 ? "s" : ""}:{" "}
-                {bio.sources.map((u, i) => (
-                  <span key={u}>
-                    {i > 0 && ", "}
-                    <a href={u} rel="noopener">
-                      {sourceName(u)}
-                    </a>
-                  </span>
-                ))}
-              </p>
             </div>
           )}
           <p className="author-data-line">
@@ -76,6 +83,7 @@ export default async function AuthorPage({ params }: Props) {
           {spellings.length > 0 && <p className="small muted">Also spelled in the catalogue: {spellings.join("; ")}.</p>}
         </div>
       </header>
+      <SourcesNote items={sources} />
       <h2 className="author-books-heading">
         {author.count === 1 ? "Book in the library" : `Books in the library (${author.count})`}
       </h2>

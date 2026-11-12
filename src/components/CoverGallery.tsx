@@ -13,15 +13,16 @@ import type { CoverImage } from "@/lib/catalog";
 type Props = {
   slug: string;
   title: string;
+  /** The author as catalogued (for the drawn cover). */
+  author?: string | null;
   images: CoverImage[];
-  source?: { name: string; url: string };
 };
 
 // Neutral captions: Open Library doesn't say which image is front, back or title page.
 const labelFor = (images: CoverImage[], i: number) =>
   images.length > 1 ? `Image ${i + 1} of ${images.length}` : "Cover image";
 
-export default function CoverGallery({ slug, title, images, source }: Props) {
+export default function CoverGallery({ slug, title, author, images }: Props) {
   const [index, setIndex] = useState(0);
   const [leaving, setLeaving] = useState<{ index: number; dir: 1 | -1 } | null>(null);
   const [turnDir, setTurnDir] = useState<1 | -1 | null>(null); // direction of the last turn
@@ -60,7 +61,7 @@ export default function CoverGallery({ slug, title, images, source }: Props) {
       <div className="gallery">
         <ViewTransition name={`cover-${slug}`} share="morph" default="none">
           <div>
-            <ArchCover title={title} />
+            <ArchCover title={title} author={author} seed={slug} />
           </div>
         </ViewTransition>
         <p className="gallery-caption muted small">No cover image yet</p>
@@ -138,12 +139,6 @@ export default function CoverGallery({ slug, title, images, source }: Props) {
             ›
           </button>
         </div>
-      )}
-
-      {source && (
-        <p className="gallery-source small muted">
-          Cover from <a href={source.url} target="_blank" rel="noopener noreferrer">{source.name}</a>
-        </p>
       )}
 
       <ZoomViewer

@@ -1,10 +1,10 @@
-// One small file with every book's search details (title, author, category, thumbnail).
-// The home page search bar downloads it the first time someone clicks into the bar,
-// so the home page itself stays light. It is built once, when the site is built.
-import { books, toListItem } from "@/lib/catalog";
+// One small file with every book's and author's search details (title, name, category, thumbnail,
+// photo framing). The search bar downloads it the first time someone clicks into it, so pages
+// stay light. It is built once, when the site is built.
+import { searchData } from "@/lib/searchData";
 
 export const dynamic = "force-static";
 
 export function GET() {
-  return Response.json(books.map(toListItem));
+  return Response.json(searchData());
 }

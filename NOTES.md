@@ -63,8 +63,13 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
     navy-and-gold initials badge (and a large initials panel on their page).
   - **Author pages** list the author's books large (`src/components/AuthorBooks.tsx`): big covers in a 3-column grid
     (2 on tablets, 1 on small phones), with title, category, shelf number and a link; one or two books get bigger cards.
-  - **Face position:** each photo's `focus` (x, y in percent, set by eye) keeps the face centred whenever the photo is
-    cropped, at any size; an optional `zoom` enlarges far-away shots in the small round badges.
+  - **Face framing:** script `scripts/frame_author_photos.py` (Python + OpenCV's YuNet face detector) finds each
+    face, widens it to the whole head (headwear, beard and chin) and stores the head box (`head`) and the centre + zoom
+    (`focus: {x, y, zoom}`) in `data/authors.json`. The round badges are drawn from that: the head sits in the middle with
+    breathing room. Zoom below 1 means the circle reaches past a photo whose head already fills the picture; the gap is a
+    soft blurred copy of the same photo. A `head` box already in the file is kept (fix one by hand if a face looks off); run
+    with `--redo` to detect again. Setup: `python3 -m venv v && v/bin/pip install opencv-python-headless numpy`, plus the
+    YuNet model `face_detection_yunet_2023mar.onnx` from github.com/opencv/opencv_zoo.
   - The Prophet, the Imams, Lady Fatima and other holy figures (including books attributed to them) never get a
     picture and are never looked up (`src/lib/authorPhotos.ts` enforces this); their bios are left for you to write.
   - **Author names are links** everywhere (book pages, lists, search, slider, featured sections), except on the
@@ -150,3 +155,42 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
   `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`.
 - Don't also turn on Vercel's own GitHub connection (`vercel git connect`) —
   that would deploy every change twice.
+
+
+## Search (spelling-tolerant, with authors)
+- `src/lib/search.ts` does the matching in the visitor's browser. It ignores capitals, accents (ā ī ū), apostrophes (ʿ ʾ '),
+  hyphens and spaces, treats doubled letters and common transliteration habits as the same (Hussain = Husain = Husayn),
+  and forgives small typos in words of 4+ letters (typo matches are only added after the exact ones, and only when there are
+  fewer than 5 exact matches). Ranking: exact word > start of word > listed variant > typo; a title/name equal to or starting
+  with the search comes first.
+- **Edit `data/search-variants.json`** to add spellings: each list is one word written different ways (first = main spelling).
+  Rebuild afterwards. Don't put surnames that merely look similar in the same list (they would flood the results).
+- `/search-index.json` now holds `{ books, authors }` (built by `src/lib/searchData.ts`). Authors are searched by name and by
+  every spelling in `data/author-names.json`, shown in their own "Authors" group, labelled "Author", with a photo/initials badge
+  (`src/components/AvatarView.tsx`), above the books on the search page and in the drop-down (up to 3).
+- The search page tells the visitor which other spellings were included ("Also included other spellings: …").
+
+## Footer emblem
+Every page's footer shows the emblem (`public/brand/emblem-footer.png`, a small copy of `emblem.png`) centred above the footer text on a parchment plate (its lettering is navy). It links to the home page.
+
+## Home page and shelves tidy-up
+- The home slider has no pause button (it still glides on by itself, waits while hovered/touched/focused, and never moves for reduced-motion visitors).
+- Category cards on the home page are the smaller `compact` variant; the Explore page keeps the large ones.
+- **Sources appear only on a book's page and an author's page**, in a small "Sources" note (`src/components/SourcesNote.tsx`):
+  description, cover, biography, photo. No source lines on the home page, cards or sliders.
+- The Shelves note is two sentences; on a shelf's page only the shelf name and book count are bold.
+
+## Drawn covers (books without a real cover)
+`src/components/ArchCover.tsx` draws an SVG cover for every book that has no cover picture: bold wrapped title (shrinks for long
+titles), the flower emblem, the author or "Unknown", a colour from the navy / gold / parchment family chosen from the book's slug
+(so the same book always gets the same cover; text contrast is checked), and a faint geometric star pattern. Nothing is downloaded.
+It is used in lists, search suggestions, author pages and the book page. A real cover (when we have one) always wins.
+
+## al-islam.org (tried, low yield)
+- Their robots.txt asks for `Crawl-delay: 10` and disallows `/search/`; there is no page of terms of use. The site says its content is hosted for
+  non-commercial use with the copyright holders' permission, and other use needs the owners' approval. So: slow requests, no search, and descriptions
+  are only ever rewritten in our own words with a link back.
+- Their covers are mostly generic drawn covers (pattern, dark band with the author, "Al-Islam.org" badge). `scripts/is_alislam_filler.py` detects them
+  (it flags the reference image and none of the covers already on the site), so they would never be used.
+- `scripts/fetch_alislam.mjs` guesses book addresses (`/<title-words>-<author>`), keeps a page only if title and author agree, and saves to `.cache/alislam/`
+  (git-ignored). A 40-book test found 0 matches, so nothing from al-islam.org is in the site. A full run would take ~5 hours.

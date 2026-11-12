@@ -10,3 +10,6 @@ next-env.d.ts
 Al-Zahra_Library_Catalog.csv
 private/
 .vercel
+
+# Reference image for Claude only (not part of the website)
+reference/

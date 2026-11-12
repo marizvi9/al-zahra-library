@@ -48,8 +48,12 @@ export default async function ShelfPage({ params }: Props) {
       <ShelfTabs shelves={shelves} active={shelf.slug} />
       <section className="shelf-band" aria-labelledby="band-title">
         <h2 id="band-title">
+          {/* Only the shelf's name and its book count are bold; the number is regular weight. */}
           <span className="shelf-band-no">{shelf.number ? `Shelf ${shelf.number}` : "No shelf number"}</span>{" "}
-          {shelf.categories.join(", ")}
+          <strong>{shelf.categories.join(", ")}</strong>{" "}
+          <strong>
+            ({shelf.count} {shelf.count === 1 ? "book" : "books"})
+          </strong>
         </h2>
         {description && <p>{description}</p>}
       </section>

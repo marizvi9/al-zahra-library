@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BookList from "@/components/BookList";
 import CoverGallery from "@/components/CoverGallery";
-import AuthorAvatar, { PhotoCredit } from "@/components/AuthorAvatar";
+import SourcesNote, { type SourceItem } from "@/components/SourcesNote";
+import AuthorAvatar, { PhotoCreditText } from "@/components/AuthorAvatar";
 import Credit from "@/components/Credit";
 import { photoFor } from "@/lib/authorPhotos";
 import {
@@ -44,6 +45,26 @@ export default async function BookPage({ params }: Props) {
   const description = getDescription(book.id);
   // Long descriptions: show the first part, with "Read more" for the rest.
   const [lead, more] = splitDescription(description?.paragraphs ?? []);
+  const sources: SourceItem[] = [];
+  if (description)
+    sources.push({
+      label: "Description",
+      content: (
+        <a href={description.url} target="_blank" rel="noopener noreferrer">
+          {description.source}
+        </a>
+      ),
+    });
+  if (cover)
+    sources.push({
+      label: "Cover",
+      content: (
+        <a href={cover.sourceUrl} target="_blank" rel="noopener noreferrer">
+          {cover.source}
+        </a>
+      ),
+    });
+  if (authorPhoto) sources.push({ label: "Author photo", content: <PhotoCreditText photo={authorPhoto} /> });
   const catHref = `/explore/${book.categorySlug}/`;
   const subHref = `/explore/${book.categorySlug}/${book.subCategorySlug}/`;
   const related = booksInSubCategory(book.categorySlug, book.subCategorySlug)
@@ -65,8 +86,8 @@ export default async function BookPage({ params }: Props) {
         <CoverGallery
           slug={book.slug}
           title={book.title}
+          author={book.author}
           images={cover?.images ?? []}
-          source={cover ? { name: cover.source, url: cover.sourceUrl } : undefined}
         />
 
         <div className="book-detail-body">
@@ -120,7 +141,6 @@ export default async function BookPage({ params }: Props) {
                   {author && <AuthorAvatar name={author.name} size={44} />}
                   <span>
                     {book.author ? <Credit parts={creditParts(book)} /> : "Unknown"}
-                    {authorPhoto && <PhotoCredit photo={authorPhoto} />}
                   </span>
                 </span>
               </dd>
@@ -171,16 +191,12 @@ export default async function BookPage({ params }: Props) {
                   ))}
                 </details>
               )}
-              <p className="small muted book-about-source">
-                Description from{" "}
-                <a href={description.url} target="_blank" rel="noopener noreferrer">
-                  {description.source}
-                </a>
-              </p>
             </section>
           )}
         </div>
       </article>
+
+      <SourcesNote items={sources} />
 
       {related.length > 0 && (
         <section className="section" aria-labelledby="related-title">

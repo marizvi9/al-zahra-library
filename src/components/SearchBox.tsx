@@ -6,21 +6,23 @@
 // - Clicking into the empty bar shows your recent searches (kept only in this browser,
 //   see src/lib/recentSearches.ts), each with a ✕ to remove it, plus "Clear all".
 //   Down arrow moves into the list; Escape closes it.
-// - After 2+ characters it shows a dropdown of up to 7 matching books:
+// - After 2+ characters it shows a dropdown of up to 3 matching authors (labelled "Author") and 7 matching books:
 //   - Up / Down arrows move through the suggestions, Enter opens the highlighted one
 //     (or runs the full search if none is highlighted), Escape closes the list.
 //   - Tap or click a suggestion to open it. The last row is "See all results".
 // The book data (/search-index.json) is downloaded once, the first time the bar is used.
 // Built as an accessible "combobox": screen readers announce the list and the highlighted row.
 
-import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import ArchCover from "./ArchCover";
 import { withBase } from "@/lib/paths";
-import { buildIndex, suggest, type Indexed, type SearchRecord } from "@/lib/search";
+import AvatarView from "./AvatarView";
+import { buildAuthorIndex, buildIndex, searchAuthors, suggest, type Indexed, type SearchData, type SearchRecord } from "@/lib/search";
 import { addRecent, clearRecent, getRecent, onRecentChange, removeRecent } from "@/lib/recentSearches";
 
 const MAX_SUGGESTIONS = 7;
+const MAX_AUTHORS = 3;
 
 export default function SearchBox({ large = false, compact = false }: { large?: boolean; compact?: boolean }) {
   const router = useRouter();
@@ -29,7 +31,8 @@ export default function SearchBox({ large = false, compact = false }: { large?: 
   const listId = `suggestions-${uid}`;
 
   const [query, setQuery] = useState("");
-  const [records, setRecords] = useState<SearchRecord[] | null>(null);
+  const [data, setData] = useState<SearchData | null>(null);
+  const records = data?.books ?? null;
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(-1); // highlighted row, -1 = none
   const loading = useRef(false);
@@ -47,25 +50,34 @@ export default function SearchBox({ large = false, compact = false }: { large?: 
 
   // Download the book list the first time the visitor clicks in or types.
   const load = useCallback(() => {
-    if (records || loading.current) return;
+    if (data || loading.current) return;
     loading.current = true;
     fetch(withBase("/search-index.json"))
       .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then((data: SearchRecord[]) => setRecords(data))
+      .then((d: SearchData) => setData(d))
       .catch(() => {
         loading.current = false; // the plain search form still works
       });
-  }, [records]);
+  }, [data]);
 
-  const index: Indexed[] = useMemo(() => (records ? buildIndex(records) : []), [records]);
-  const results = useMemo(() => suggest(index, query, MAX_SUGGESTIONS), [index, query]);
+  const index: Indexed[] = useMemo(() => (data ? buildIndex(data.books) : []), [data]);
+  const authorIndex = useMemo(() => (data ? buildAuthorIndex(data.authors) : []), [data]);
+  const books = useMemo(() => suggest(index, query, MAX_SUGGESTIONS), [index, query]);
+  const authorHits = useMemo(() => (query.trim().length >= 2 ? searchAuthors(authorIndex, query).slice(0, MAX_AUTHORS) : []), [authorIndex, query]);
+  // One list of rows: authors first (labelled "Author"), then books.
+  type Row = { kind: "author"; a: (typeof authorHits)[number] } | { kind: "book"; r: SearchRecord };
+  const rows: Row[] = useMemo(
+    () => [...authorHits.map((a) => ({ kind: "author" as const, a })), ...books.map((r) => ({ kind: "book" as const, r }))],
+    [authorHits, books],
+  );
+  const rowHref = (row: Row) => (row.kind === "author" ? `/authors/${row.a.slug}/` : `/books/${row.r.slug}/`);
 
   const trimmed = query.trim();
   const ready = trimmed.length >= 2;
   const showList = open && ready && records !== null;
   const showRecent = open && !ready && recent.length > 0;
   const seeAllHref = `/search/?q=${encodeURIComponent(trimmed)}`;
-  const rowCount = results.length + 1; // + the "See all results" row
+  const rowCount = rows.length + 1; // + the "See all results" row
 
   useEffect(() => setActive(-1), [query]);
 
@@ -131,7 +143,7 @@ export default function SearchBox({ large = false, compact = false }: { large?: 
     } else if (e.key === "Enter" && showList && active >= 0) {
       e.preventDefault();
       addRecent(trimmed);
-      go(active < results.length ? `/books/${results[active].slug}/` : seeAllHref);
+      go(active < rows.length ? rowHref(rows[active]) : seeAllHref);
     }
   };
 
@@ -139,9 +151,9 @@ export default function SearchBox({ large = false, compact = false }: { large?: 
     ? ""
     : records === null
       ? "Loading suggestions…"
-      : results.length === 0
-        ? "No matching books. Press Enter to search anyway."
-        : `${results.length} suggestion${results.length === 1 ? "" : "s"} available. Use the up and down arrow keys to review.`;
+      : rows.length === 0
+        ? "No matching books or authors. Press Enter to search anyway."
+        : `${rows.length} suggestion${rows.length === 1 ? "" : "s"} available. Use the up and down arrow keys to review.`;
 
   return (
     <form
@@ -194,69 +206,112 @@ export default function SearchBox({ large = false, compact = false }: { large?: 
 
       {showList && (
         <ul id={listId} role="listbox" aria-label="Search suggestions" className="suggest-list">
-          {results.map((r, i) => (
-            <li
-              key={r.slug}
-              id={`${listId}-${i}`}
-              role="option"
-              aria-selected={i === active}
-              className={`suggest-row ${i === active ? "is-active" : ""}`}
+          {rows.map((row, i) => {
+            const common = {
+              id: `${listId}-${i}`,
+              role: "option" as const,
+              "aria-selected": i === active,
               // Keep the cursor in the input when pressing a row (matters on phones).
-              onMouseDown={(e) => e.preventDefault()}
-              onMouseEnter={() => setActive(i)}
-              onClick={() => {
-                addRecent(trimmed);
-                go(`/books/${r.slug}/`);
-              }}
-            >
-              <span className="suggest-cover" aria-hidden="true">
-                {r.thumb ? <img src={r.thumb} alt="" width={36} height={52} /> : <ArchCover title={r.title} size="small" />}
-              </span>
-              <span className="suggest-text">
-                <span className="suggest-title" dir="auto">
-                  {r.title}
+              onMouseDown: (e: React.MouseEvent) => e.preventDefault(),
+              onMouseEnter: () => setActive(i),
+            };
+            const heading =
+              (i === 0 || rows[i - 1].kind !== row.kind) && (
+                <li role="presentation" className="suggest-section" aria-hidden="true">
+                  {row.kind === "author" ? "Authors" : "Books"}
+                </li>
+              );
+            if (row.kind === "author") {
+              const a = row.a;
+              return (
+                <Fragment key={`a-${a.slug}`}>
+                  {heading}
+                  <li
+                    {...common}
+                    className={`suggest-row suggest-author-row ${i === active ? "is-active" : ""}`}
+                    onClick={() => {
+                      addRecent(trimmed);
+                      go(`/authors/${a.slug}/`);
+                    }}
+                  >
+                    <span className="suggest-cover" aria-hidden="true">
+                      <AvatarView initials={a.initials} photo={a.photo} size={40} />
+                    </span>
+                    <span className="suggest-text">
+                      <span className="suggest-title" dir="auto">
+                        <span className="type-label">Author</span>
+                        {a.name}
+                      </span>
+                      <span className="suggest-meta">
+                        {a.count} {a.count === 1 ? "book" : "books"} in the library
+                      </span>
+                    </span>
+                  </li>
+                </Fragment>
+              );
+            }
+            const r = row.r;
+            return (
+              <Fragment key={`b-${r.slug}`}>
+                {heading}
+                <li
+                  {...common}
+                  className={`suggest-row ${i === active ? "is-active" : ""}`}
+                  onClick={() => {
+                    addRecent(trimmed);
+                    go(`/books/${r.slug}/`);
+                  }}
+                >
+                <span className="suggest-cover" aria-hidden="true">
+                  {r.thumb ? <img src={r.thumb} alt="" width={36} height={52} /> : <ArchCover title={r.title} author={r.credit} seed={r.slug} size="small" />}
                 </span>
-                <span className="suggest-meta" dir="auto">
-                  {/* Inside a suggestion list real links aren't allowed (they confuse screen readers
-                      and the arrow keys), so author names are clickable spans instead. Keyboard
-                      users reach the author from the book page or the full results page. */}
-                  {r.creditParts
-                    ? r.creditParts.map((p, k) =>
-                        p.slug ? (
-                          <span
-                            key={k}
-                            className="author-link suggest-author"
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              addRecent(trimmed);
-                              go(`/authors/${p.slug}/`);
-                            }}
-                          >
-                            {p.text}
-                          </span>
-                        ) : (
-                          <span key={k}>{p.text}</span>
-                        ),
-                      )
-                    : r.credit}
+                <span className="suggest-text">
+                  <span className="suggest-title" dir="auto">
+                    {r.title}
+                  </span>
+                  <span className="suggest-meta" dir="auto">
+                    {/* Inside a suggestion list real links aren't allowed (they confuse screen readers
+                        and the arrow keys), so author names are clickable spans instead. Keyboard
+                        users reach the author from the book page or the full results page. */}
+                    {r.creditParts
+                      ? r.creditParts.map((p, k) =>
+                          p.slug ? (
+                            <span
+                              key={k}
+                              className="author-link suggest-author"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                addRecent(trimmed);
+                                go(`/authors/${p.slug}/`);
+                              }}
+                            >
+                              {p.text}
+                            </span>
+                          ) : (
+                            <span key={k}>{p.text}</span>
+                          ),
+                        )
+                      : r.credit}
+                  </span>
+                  <span className="suggest-cat">{r.category}</span>
                 </span>
-                <span className="suggest-cat">{r.category}</span>
-              </span>
-            </li>
-          ))}
+                </li>
+              </Fragment>
+            );
+          })}
           <li
-            id={`${listId}-${results.length}`}
+            id={`${listId}-${rows.length}`}
             role="option"
-            aria-selected={active === results.length}
-            className={`suggest-row suggest-all ${active === results.length ? "is-active" : ""}`}
+            aria-selected={active === rows.length}
+            className={`suggest-row suggest-all ${active === rows.length ? "is-active" : ""}`}
             onMouseDown={(e) => e.preventDefault()}
-            onMouseEnter={() => setActive(results.length)}
+            onMouseEnter={() => setActive(rows.length)}
             onClick={() => {
               addRecent(trimmed);
               go(seeAllHref);
             }}
           >
-            {results.length === 0 ? "No quick matches — search the whole catalog for" : "See all results for"}{" "}
+            {rows.length === 0 ? "No quick matches — search the whole catalog for" : "See all results for"}{" "}
             <strong dir="auto">&ldquo;{trimmed}&rdquo;</strong> <span aria-hidden="true">→</span>
           </li>
         </ul>

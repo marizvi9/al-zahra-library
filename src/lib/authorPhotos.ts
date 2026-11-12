@@ -12,6 +12,8 @@ export type AuthorPhoto = {
   photoLarge?: string | null;
   largeWidth?: number | null;
   largeHeight?: number | null;
+  originalWidth?: number | null;
+  originalHeight?: number | null;
   lowRes?: boolean;
   source: string;
   creator: string;
@@ -20,25 +22,16 @@ export type AuthorPhoto = {
   wikipediaUrl?: string;
   /** "WikiShia" for photos from WikiShia's media library; otherwise Wikimedia Commons. */
   photoSource?: string;
-  /** Where the face is, in percent from the left and top; every crop centres on it. */
+  /**
+   * Where the head is (centre, in percent from the left and top) and how close to zoom. Zoom 1 = the photo's
+   * shorter side fills the round badge; above 1 = closer in; below 1 = the badge reaches past the photo's
+   * edge, which is filled with a soft blur of the same photo so the whole head fits. Worked out from the
+   * detected face (beard and chin included) by scripts/frame_author_photos.py.
+   */
   focus?: { x: number; y: number; zoom?: number };
 };
 
-/**
- * Style for a small square/round badge: centred on the face and, if "zoom" is set, enlarged
- * around it. The shift is limited so the photo always covers the whole badge (no gaps).
- */
-export function badgeStyle(p: Pick<AuthorPhoto, "focus">, maxZoom = 3): React.CSSProperties {
-  const f = p.focus ?? { x: 50, y: 30 };
-  const z = Math.min(f.zoom ?? 1, maxZoom);
-  if (z <= 1) return { objectPosition: `${f.x}% ${f.y}%` };
-  const shift = (pos: number) => Math.max(-(100 - pos) * (z - 1), Math.min(pos * (z - 1), 50 - pos));
-  return {
-    objectPosition: `${f.x}% ${f.y}%`,
-    transformOrigin: `${f.x}% ${f.y}%`,
-    transform: `translate(${shift(f.x).toFixed(1)}%, ${shift(f.y).toFixed(1)}%) scale(${z})`,
-  };
-}
+export { circleLayout, frameStyle } from "./photoLayout";
 
 /** Where a photo came from, for its credit line. */
 export const photoVia = (p: Pick<AuthorPhoto, "photoSource">) => (p.photoSource === "WikiShia" ? "WikiShia" : "Wikimedia Commons");
