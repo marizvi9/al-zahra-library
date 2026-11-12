@@ -86,6 +86,7 @@ export default async function BookPage({ params }: Props) {
         <CoverGallery
           slug={book.slug}
           title={book.title}
+          author={book.author}
           images={cover?.images ?? []}
         />
 

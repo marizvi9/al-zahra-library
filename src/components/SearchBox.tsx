@@ -263,7 +263,7 @@ export default function SearchBox({ large = false, compact = false }: { large?: 
                   }}
                 >
                 <span className="suggest-cover" aria-hidden="true">
-                  {r.thumb ? <img src={r.thumb} alt="" width={36} height={52} /> : <ArchCover title={r.title} size="small" />}
+                  {r.thumb ? <img src={r.thumb} alt="" width={36} height={52} /> : <ArchCover title={r.title} author={r.credit} seed={r.slug} size="small" />}
                 </span>
                 <span className="suggest-text">
                   <span className="suggest-title" dir="auto">

@@ -948,55 +948,23 @@ a:hover {
   white-space: nowrap;
 }
 
-/* ---------- Arch stand-in covers ---------- */
-.arch-cover {
-  position: relative;
+/* ---------- Drawn covers (books without a real cover picture; see ArchCover.tsx) ---------- */
+.generated-cover {
+  display: block;
   flex: none;
+  height: auto;
+  aspect-ratio: 300 / 440;
+  border-radius: 3px 6px 6px 3px;
+  box-shadow: 0 2px 4px rgb(4 20 46 / 18%), 0 8px 18px rgb(4 20 46 / 14%);
 }
-.arch-cover-frame {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-.arch-outer {
-  fill: var(--cream-deep);
-  stroke: var(--gold);
-  stroke-width: 2;
-  vector-effect: non-scaling-stroke;
-}
-.arch-inner {
-  fill: var(--cream);
-  stroke: var(--line);
-  stroke-width: 1;
-  vector-effect: non-scaling-stroke;
-}
-.arch-cover-small {
+.generated-cover-small {
   width: 36px;
   height: 52px;
+  box-shadow: 0 1px 2px rgb(4 20 46 / 25%);
 }
-.arch-cover-large {
-  width: min(220px, 60vw);
-  aspect-ratio: 12 / 17;
+.generated-cover-large {
+  width: min(240px, 64vw);
   margin-inline: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.arch-cover-title {
-  position: relative;
-  padding: 50px 30px 20px;
-  font-family: var(--font-head);
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.35;
-  color: var(--ink);
-  text-align: center;
-  overflow-wrap: anywhere;
-  display: -webkit-box;
-  -webkit-line-clamp: 7;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 /* ---------- Book detail ---------- */
@@ -3292,7 +3260,7 @@ button:active,
   border-radius: 3px 6px 6px 3px;
   box-shadow: 0 2px 4px rgb(4 20 46 / 18%), 0 10px 24px rgb(4 20 46 / 16%);
 }
-.author-book-cover .arch-cover {
+.author-book-cover .generated-cover {
   width: 62%;
   height: auto;
 }
@@ -3361,12 +3329,6 @@ button:active,
   .author-books {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
-  }
-}
-/* In narrow cards the drawn arch is too small for its title (shown just below anyway). */
-@media (max-width: 700px) {
-  .author-books:not(.is-few) .author-book-cover .arch-cover-title {
-    display: none;
   }
 }
 @media (max-width: 560px) {

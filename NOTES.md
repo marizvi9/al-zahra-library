@@ -179,3 +179,9 @@ Every page's footer shows the emblem (`public/brand/emblem-footer.png`, a small 
 - **Sources appear only on a book's page and an author's page**, in a small "Sources" note (`src/components/SourcesNote.tsx`):
   description, cover, biography, photo. No source lines on the home page, cards or sliders.
 - The Shelves note is two sentences; on a shelf's page only the shelf name and book count are bold.
+
+## Drawn covers (books without a real cover)
+`src/components/ArchCover.tsx` draws an SVG cover for every book that has no cover picture: bold wrapped title (shrinks for long
+titles), the flower emblem, the author or "Unknown", a colour from the navy / gold / parchment family chosen from the book's slug
+(so the same book always gets the same cover; text contrast is checked), and a faint geometric star pattern. Nothing is downloaded.
+It is used in lists, search suggestions, author pages and the book page. A real cover (when we have one) always wins.
