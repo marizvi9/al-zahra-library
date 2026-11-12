@@ -208,3 +208,6 @@ It is used in lists, search suggestions, author pages and the book page. A real 
 
 ## Home page featured sets
 The home page shows three multi-volume sets big (`FeaturedSets`); pick them with `homeFeatured` in data/multi-volume-sets.json. Home-page headings and sub headings are larger.
+
+## Header
+The top bar is dark navy like the footer, with the same star pattern behind it and a gold line along a gently curved bottom edge (`.site-header`, `.header-pattern` in globals.css).

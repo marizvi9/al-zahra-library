@@ -3521,3 +3521,34 @@ main:has(.hero) .featured-sets .eyebrow { font-size: 0.85rem; }
   .featured-set-covers { flex: 0 0 62%; padding: 28px 24px 24px; }
   .featured-set-text { flex: 1; padding: 24px 28px; }
 }
+
+/* ---------- Dark header: same navy and pattern as the footer ---------- */
+.site-header {
+  position: relative;
+  z-index: 60;
+  background: var(--navy-deep);
+  /* a gentle arch along the bottom edge, the mirror of the footer's top edge, with the same gold line */
+  border-radius: 0 0 50% 50% / 0 0 34px 34px;
+  border-bottom: 3px solid var(--gold);
+}
+.site-header::after { display: none; } /* the old thin gold rule: the border above replaces it */
+/* The pattern sits in its own clipped layer, so the header itself can let the search drop-down hang below it. */
+.header-pattern {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.site-header .header-inner { position: relative; }
+.site-header .brand,
+.site-header .brand-name { color: var(--card); }
+.site-header .nav-list > li > a,
+.site-header .nav-more-details > summary { color: var(--card); }
+.site-header .nav-list > li > a:hover,
+.site-header .nav-more-details > summary:hover,
+.site-header .nav-more-details[open] > summary { background: rgb(255 255 255 / 0.12); }
+.site-header .nav-more-details > summary:focus-visible { outline-color: var(--gold-light); }
+.site-header .nav-more-list a { color: var(--ink); }
+.site-header .search-box button[type="submit"] { background: var(--gold); color: var(--navy-deep); }
+.site-header .header-btn { color: var(--card); border-color: rgb(255 255 255 / 0.4); background: transparent; }
