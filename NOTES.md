@@ -185,3 +185,12 @@ Every page's footer shows the emblem (`public/brand/emblem-footer.png`, a small 
 titles), the flower emblem, the author or "Unknown", a colour from the navy / gold / parchment family chosen from the book's slug
 (so the same book always gets the same cover; text contrast is checked), and a faint geometric star pattern. Nothing is downloaded.
 It is used in lists, search suggestions, author pages and the book page. A real cover (when we have one) always wins.
+
+## al-islam.org (tried, low yield)
+- Their robots.txt asks for `Crawl-delay: 10` and disallows `/search/`; there is no page of terms of use. The site says its content is hosted for
+  non-commercial use with the copyright holders' permission, and other use needs the owners' approval. So: slow requests, no search, and descriptions
+  are only ever rewritten in our own words with a link back.
+- Their covers are mostly generic drawn covers (pattern, dark band with the author, "Al-Islam.org" badge). `scripts/is_alislam_filler.py` detects them
+  (it flags the reference image and none of the covers already on the site), so they would never be used.
+- `scripts/fetch_alislam.mjs` guesses book addresses (`/<title-words>-<author>`), keeps a page only if title and author agree, and saves to `.cache/alislam/`
+  (git-ignored). A 40-book test found 0 matches, so nothing from al-islam.org is in the site. A full run would take ~5 hours.
