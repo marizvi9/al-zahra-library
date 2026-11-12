@@ -2,7 +2,7 @@
 // The lettering is the emblem's OWN lettering: AL-ZAHRA, ISLAMIC LIBRARY and IEC-HOUSTON were
 // cut out of public/brand/emblem.png and traced to vector outlines (scripts/trace_lettering.mjs →
 // lettering.ts). ISLAMIC LIBRARY keeps its letter shapes and spacing but is laid in a straight line.
-// The flower and stars are the emblem's too (Emblem.tsx). The footer is dark navy, so the emblem's
+// The flower and stars are the emblem's too (Emblem.tsx): two stars stand one above the other to the right of the words. The footer is dark navy, so the emblem's
 // navy letters are drawn in parchment white here; gold stays gold.
 import { FLOWER_PATHS, starPoints } from "./Emblem";
 import { HOUSTON, LIBRARY, ZAHRA } from "./lettering";
@@ -15,11 +15,11 @@ const FLOWER_W = 560 * 4;
 const GAP = 380; // flower ↔ words
 const BLOCK_X = FLOWER_W + GAP;
 const BLOCK_W = ZAHRA.maxx - ZAHRA.minx; // the words are as wide as AL-ZAHRA
-const MID = BLOCK_X + BLOCK_W / 2; // the middle of the words: the stars sit here too
+const MID = BLOCK_X + BLOCK_W / 2; // the middle of the words
 
-const STAR_R = 90; // small
-const STAR_GAP = 40; // space between the two stars
-const GAP_STAR = 130; // star ↔ words
+const STAR_R = 135; // small
+const STAR_GAP = 90; // space between the two stars
+const STAR_SPACE = 260; // words ↔ stars
 const GAP_LINES = 160; // between lines of words
 
 // ISLAMIC LIBRARY, scaled so the line is as wide as AL-ZAHRA, letters spaced as they were on the arc.
@@ -30,18 +30,16 @@ const lib = (() => {
   return { k, mid: (left + right) / 2, height: Math.max(...LIBRARY.map((l) => l.maxy - l.miny)) * k };
 })();
 
-const zTop = STAR_R * 2 + GAP_STAR;
+const zTop = 0;
 const zBottom = zTop + (ZAHRA.maxy - ZAHRA.miny);
 const lTop = zBottom + GAP_LINES;
 const lBottom = lTop + lib.height;
 const hTop = lBottom + GAP_LINES;
 const hBottom = hTop + (HOUSTON.maxy - HOUSTON.miny);
-const starsBottomY = hBottom + GAP_STAR + STAR_R;
-const H = starsBottomY + STAR_R;
-const W = BLOCK_X + BLOCK_W + 10;
-
-const pair = (y: number) =>
-  [MID - STAR_R - STAR_GAP / 2, MID + STAR_R + STAR_GAP / 2].map((x) => starPoints(x, y, STAR_R));
+const H = hBottom;
+const STAR_X = BLOCK_X + BLOCK_W + STAR_SPACE + STAR_R; // the two stars, one above the other, to the right of the words
+const W = STAR_X + STAR_R + 10;
+const stars = [H / 2 - STAR_R - STAR_GAP / 2, H / 2 + STAR_R + STAR_GAP / 2].map((y) => starPoints(STAR_X, y, STAR_R));
 
 export default function FooterLogo({ className = "" }: { className?: string }) {
   const flowerY = H / 2 - 4 * 217.5;
@@ -54,13 +52,10 @@ export default function FooterLogo({ className = "" }: { className?: string }) {
         ))}
       </g>
 
-      {/* two stars together above the words, two together below, centred on them */}
+      {/* two stars, one above the other, to the right of the words */}
       <g fill={GOLD}>
-        {pair(STAR_R).map((p, i) => (
-          <polygon key={`a${i}`} points={p} />
-        ))}
-        {pair(starsBottomY).map((p, i) => (
-          <polygon key={`b${i}`} points={p} />
+        {stars.map((p, i) => (
+          <polygon key={i} points={p} />
         ))}
       </g>
 
