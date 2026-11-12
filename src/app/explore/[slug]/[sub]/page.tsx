@@ -1,14 +1,25 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import BookList from "@/components/BookList";
-import { booksInSubCategory, categories, getCategory, toListItem } from "@/lib/catalog";
+import BookGrid from "@/components/BookGrid";
+import SubTopicNav from "@/components/SubTopicNav";
+import SubTopicPager, { type PagerLink } from "@/components/SubTopicPager";
+import {
+  booksInSubCategory,
+  categories,
+  getCategory,
+  subTopicNeighbours,
+  subTopicText,
+  toGridItem,
+} from "@/lib/catalog";
 
 type Props = { params: Promise<{ slug: string; sub: string }> };
 
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return categories.flatMap((c) => c.subCategories.map((s) => ({ slug: c.slug, sub: s.slug })));
+  return categories.flatMap((c) =>
+    c.subCategories.map((s) => ({ slug: c.slug, sub: s.slug })),
+  );
 }
 
 function lookup(catSlug: string, subSlug: string) {
@@ -20,7 +31,12 @@ function lookup(catSlug: string, subSlug: string) {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const p = await params;
   const { cat, sub } = lookup(p.slug, p.sub);
-  return { title: sub && cat ? `${sub.name} – ${cat.name}` : undefined };
+  return sub && cat
+    ? {
+        title: `${sub.name} – ${cat.name}`,
+        description: subTopicText(cat, sub),
+      }
+    : {};
 }
 
 export default async function SubCategoryPage({ params }: Props) {
@@ -28,6 +44,34 @@ export default async function SubCategoryPage({ params }: Props) {
   const { cat, sub } = lookup(p.slug, p.sub);
   if (!cat || !sub) notFound();
   const list = booksInSubCategory(cat.slug, sub.slug);
+  const many = cat.subCategories.length > 1;
+  const { prev, next, nextCategory } = subTopicNeighbours(cat, sub.slug);
+  const prevCategory = categories[categories.indexOf(cat) - 1];
+  // Sub-topic buttons; when a category has just "General", the buttons go to the neighbouring categories.
+  const prevLink: PagerLink = prev
+    ? { href: `/explore/${cat.slug}/${prev.slug}/`, name: prev.name }
+    : many
+      ? {
+          href: `/explore/${cat.slug}/`,
+          name: cat.name,
+          kind: "category overview",
+        }
+      : prevCategory
+        ? {
+            href: `/explore/${prevCategory.slug}/`,
+            name: prevCategory.name,
+            kind: "category",
+          }
+        : null;
+  const nextLink: PagerLink = next
+    ? { href: `/explore/${cat.slug}/${next.slug}/`, name: next.name }
+    : nextCategory
+      ? {
+          href: `/explore/${nextCategory.slug}/`,
+          name: nextCategory.name,
+          kind: "category",
+        }
+      : null;
 
   return (
     <div className="container page">
@@ -50,8 +94,11 @@ export default async function SubCategoryPage({ params }: Props) {
         <p className="lede">
           {cat.name} · {list.length} {list.length === 1 ? "book" : "books"}
         </p>
+        <p>{subTopicText(cat, sub)}</p>
       </header>
-      <BookList items={list.map(toListItem)} />
+      {many && <SubTopicNav cat={cat} current={sub.slug} />}
+      <BookGrid items={list.map(toGridItem)} paged={false} />
+      <SubTopicPager prev={prevLink} next={nextLink} />
     </div>
   );
 }

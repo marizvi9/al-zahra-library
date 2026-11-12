@@ -4,6 +4,7 @@ import rawBooks from "@data/books.json";
 import rawCovers from "@data/covers.json";
 import rawDescriptions from "@data/descriptions.json";
 import authorNames from "@data/author-names.json";
+import subTopicTexts from "@data/subtopic-descriptions.json";
 import { setRefFor } from "./setIndex";
 import { categoryDescriptions, DISPLAY_NAMES, FEATURED_CATEGORIES, MORE_TO_EXPLORE } from "./categoryInfo";
 import { withBase } from "./paths";
@@ -209,6 +210,38 @@ export const toListItem = (b: Book) => ({
   set: setRefFor(b.id),
 });
 
+/** What a book card in the big Explore grid needs: a sharper cover and a short description. */
+export type GridItem = ReturnType<typeof toListItem> & {
+  cover?: { src: string; width: number; height: number };
+  blurb?: string;
+};
+export const toGridItem = (b: Book): GridItem => {
+  const img = getCover(b.id)?.images[0];
+  const d = getDescription(b.id);
+  return {
+    ...toListItem(b),
+    cover: img ? { src: img.src, width: img.width, height: img.height } : undefined,
+    blurb: d ? shortDescription(d, 190) : undefined,
+  };
+};
+
+/** One sentence about a sub-topic (data/subtopic-descriptions.json), or a standard one. */
+export function subTopicText(cat: Category, sub: SubCategory): string {
+  const texts = subTopicTexts as Record<string, string>;
+  return texts[`${cat.slug}/${sub.slug}`] ?? `Books in ${cat.name} that are listed under ${sub.name}.`;
+}
+
+/** The sub-topics in order, with the one before and the one after (for Previous / Next). */
+export function subTopicNeighbours(cat: Category, subSlug: string) {
+  const i = cat.subCategories.findIndex((s) => s.slug === subSlug);
+  return {
+    prev: i > 0 ? cat.subCategories[i - 1] : null,
+    next: i >= 0 && i < cat.subCategories.length - 1 ? cat.subCategories[i + 1] : null,
+    /** After the last sub-topic: the next category, if there is one. */
+    nextCategory: i === cat.subCategories.length - 1 ? (categories[categories.indexOf(cat) + 1] ?? null) : null,
+  };
+}
+
 // ---------- Shelves (Cat # = shelf, Sub Cat # = section on that shelf) ----------
 
 export type Shelf = {
@@ -253,10 +286,13 @@ export const shelves: Shelf[] = (() => {
 export const getShelf = (slug: string) => shelves.find((s) => s.slug === slug);
 
 const byTitle = (a: Book, b: Book) => collator.compare(a.title, b.title);
+/** Inside a shelf: by Book # (a real number, so 9 before 10), then by title where Book # is missing. */
+const byBookNoThenTitle = (a: Book, b: Book) =>
+  Number(a.bookNo ?? Infinity) - Number(b.bookNo ?? Infinity) || byTitle(a, b);
 
 /** Books on one shelf, grouped into sections by Sub Cat # (10, 20 …). */
 export function shelfSections(slug: string): ShelfSection[] {
-  const list = books.filter((b) => shelfOf(b) === slug).sort(byTitle);
+  const list = books.filter((b) => shelfOf(b) === slug).sort(byBookNoThenTitle);
 
   // Books with no shelf number at all: group them by category, with its description.
   if (slug === NO_SHELF) {
@@ -289,18 +325,40 @@ export function shelfSections(slug: string): ShelfSection[] {
     }));
 }
 
-/** "All shelves": one section per shelf, with its category description. */
-export function allShelfSections(): ShelfSection[] {
-  return shelves.map((sh) => {
-    const cats = categories.filter((c) => sh.categories.includes(c.name));
-    return {
-      key: `shelf-${sh.slug}`,
-      heading: sh.number ? `Shelf ${sh.number} — ${cats.map((c) => c.name).join(", ")}` : "No shelf number",
-      description: sh.number ? cats.map((c) => c.description).filter(Boolean).join(" ") : "Books that have not been given a shelf number yet.",
-      href: `/shelves/${sh.slug}/`,
-      books: books.filter((b) => shelfOf(b) === sh.slug).sort(byTitle),
-    };
-  });
+/** "All shelves": one entry per sub-shelf, strictly by Cat # and then Sub Cat # (300 · 10, 300 · 20 …,
+ *  then the next Cat #). Books with no Sub Cat # come last on their shelf; books with no Cat # come
+ *  at the very end, grouped by category. Numbers are compared as numbers, so 20 comes before 100. */
+export function allShelfSections(): (ShelfSection & { tile: { number: string | null; name: string }; subject: string })[] {
+  const out: (ShelfSection & { tile: { number: string | null; name: string }; subject: string })[] = [];
+  for (const sh of shelves) {
+    if (!sh.number) {
+      for (const sec of shelfSections(sh.slug)) {
+        out.push({
+          key: `shelf-none-${sec.key}`,
+          heading: `No number · ${sec.heading}`,
+          href: "/shelves/none/",
+          books: sec.books,
+          subject: "No Cat # or Sub Cat # recorded",
+          tile: { number: null, name: sec.heading },
+        });
+      }
+      continue;
+    }
+    for (const sec of shelfSections(sh.slug)) {
+      const sub = sec.key === "unnumbered" ? null : sec.key.slice(1);
+      const names = [...new Set(sec.books.map((b) => b.subCategory))].join(", ");
+      const cats = [...new Set(sec.books.map((b) => b.category))].join(", ");
+      out.push({
+        key: `shelf-${sh.slug}-${sec.key}`,
+        heading: sub ? `${sh.slug} · ${sub} — ${names}` : `${sh.slug} · no sub number — ${names}`,
+        href: `/shelves/${sh.slug}/#${sec.key}`,
+        books: sec.books,
+        subject: cats,
+        tile: { number: sub ? `${sh.slug} · ${sub}` : `${sh.slug} · no sub number`, name: names },
+      });
+    }
+  }
+  return out;
 }
 
 // ---------- Descriptions (from scripts/fetch_descriptions.mjs, never written by hand) ----------

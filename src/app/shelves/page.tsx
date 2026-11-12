@@ -11,15 +11,11 @@ export const metadata: Metadata = {
 };
 
 export default function ShelvesPage() {
-  const sections = allShelfSections().map(({ books: list, ...s }, i) => {
-    const shelf = shelves[i];
-    return {
-      ...s,
-      tile: { number: shelf.number, name: shelf.number ? shelf.categories.join(", ") : "No shelf number" },
-      description: shelf.number ? s.description : `Not given a shelf number yet: ${shelf.categories.join(", ")}.`,
-      items: list.map(toListItem),
-    };
-  });
+  const sections = allShelfSections().map(({ books: list, subject, ...s }) => ({
+    ...s,
+    description: subject,
+    items: list.map(toListItem),
+  }));
   return (
     <div className="container page">
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Shelves" }]} />
@@ -28,10 +24,10 @@ export default function ShelvesPage() {
       <section className="shelf-band" aria-labelledby="band-title">
         <h2 id="band-title">All shelves</h2>
         <p>
-          {books.length} books on {shelves.length} shelves. Click a shelf to see just its books, or use the filter.
+          {books.length} books on {shelves.length} shelves, in catalogue order: by shelf number, then by section number (300 · 10, 300 · 20 …). Click a section to see just its books, or use the filter.
         </p>
       </section>
-      <ShelfClient sections={sections} scope="all shelves" chipLabel="Shelves" />
+      <ShelfClient sections={sections} scope="all shelves" chipLabel="Sections" />
     </div>
   );
 }

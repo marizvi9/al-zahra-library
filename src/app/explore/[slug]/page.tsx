@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import BookList from "@/components/BookList";
+import BookGrid from "@/components/BookGrid";
+import SubTopicPager from "@/components/SubTopicPager";
+import SubTopicNav from "@/components/SubTopicNav";
 import Redirect from "@/components/Redirect";
 import CategoryCover from "@/components/CategoryCover";
-import { booksInCategory, categories, getCategory, shelves, toListItem } from "@/lib/catalog";
+import { booksInCategory, categories, getCategory, shelves, toGridItem } from "@/lib/catalog";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -30,6 +32,8 @@ export default async function CategoryPage({ params }: Props) {
   const cat = getCategory(slug);
   if (!cat) notFound();
   const list = booksInCategory(cat.slug);
+  const prevCat = categories[categories.indexOf(cat) - 1];
+  const nextCat = categories[categories.indexOf(cat) + 1];
   const showSubs = cat.subCategories.length > 1 || cat.subCategories[0]?.name !== "General";
 
   return (
@@ -49,17 +53,8 @@ export default async function CategoryPage({ params }: Props) {
 
       {showSubs && (
         <section aria-labelledby="subs-title" className="section-tight">
-          <h2 id="subs-title">Sub-categories</h2>
-          <ul className="chip-list">
-            {cat.subCategories.map((s) => (
-              <li key={s.slug}>
-                <Link href={`/explore/${cat.slug}/${s.slug}/`} className="chip">
-                  {s.number && cat.number && <span className="chip-no">{cat.number} · {s.number}</span>}
-                  {s.name} <span className="chip-count">{s.count}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <h2 id="subs-title">Sub-topics</h2>
+          <SubTopicNav cat={cat} />
         </section>
       )}
 
@@ -67,11 +62,18 @@ export default async function CategoryPage({ params }: Props) {
         <h2 id="books-title">
           All {list.length} {list.length === 1 ? "book" : "books"}
         </h2>
-        <BookList
-          items={list.map(toListItem)}
-          showCategory={showSubs}
-        />
+        <BookGrid items={list.map(toGridItem)} showCategory={showSubs} paged={false} />
       </section>
+      <SubTopicPager
+        prev={prevCat ? { href: `/explore/${prevCat.slug}/`, name: prevCat.name, kind: "category" } : null}
+        next={
+          showSubs
+            ? { href: `/explore/${cat.slug}/${cat.subCategories[0].slug}/`, name: cat.subCategories[0].name, kind: "sub-topic" }
+            : nextCat
+              ? { href: `/explore/${nextCat.slug}/`, name: nextCat.name, kind: "category" }
+              : null
+        }
+      />
     </div>
   );
 }
