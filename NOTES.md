@@ -169,3 +169,6 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
   every spelling in `data/author-names.json`, shown in their own "Authors" group, labelled "Author", with a photo/initials badge
   (`src/components/AvatarView.tsx`), above the books on the search page and in the drop-down (up to 3).
 - The search page tells the visitor which other spellings were included ("Also included other spellings: …").
+
+## Footer emblem
+Every page's footer shows the emblem (`public/brand/emblem-footer.png`, a small copy of `emblem.png`) centred above the footer text on a parchment plate (its lettering is navy). It links to the home page.

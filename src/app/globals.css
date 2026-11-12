@@ -1134,7 +1134,27 @@ a:hover {
   position: relative;
   padding-block: 32px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.footer-emblem {
+  display: block;
+  padding: 10px 18px 8px;
+  background: var(--card);
+  border: 2px solid var(--gold-light);
+  border-radius: 50% 50% 14px 14px / 40px 40px 14px 14px;
+  line-height: 0;
+}
+.footer-emblem img {
+  display: block;
+  mix-blend-mode: multiply; /* the picture's white background takes on the plate's parchment colour */
+  width: 140px;
+  height: auto;
+}
+.footer-emblem:focus-visible {
+  outline: 3px solid var(--gold-light);
+  outline-offset: 3px;
 }
 .footer-inner p {
   margin-bottom: 0.3em;
