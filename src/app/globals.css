@@ -3527,8 +3527,7 @@ main:has(.hero) .featured-sets .eyebrow { font-size: 0.85rem; }
   position: relative;
   z-index: 60;
   background: var(--navy-deep);
-  /* a gentle arch along the bottom edge, the mirror of the footer's top edge, with the same gold line */
-  border-radius: 0 0 50% 50% / 0 0 34px 34px;
+  /* a straight bottom edge with the same gold line as the footer's */
   border-bottom: 3px solid var(--gold);
 }
 .site-header::after { display: none; } /* the old thin gold rule: the border above replaces it */
