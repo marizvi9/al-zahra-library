@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import BookList from "@/components/BookList";
 import AvatarView from "@/components/AvatarView";
-import { buildAuthorIndex, buildIndex, search, searchAuthors, variantsIncluded, type AuthorRecord, type SearchRecord, type SearchScope } from "@/lib/search";
+import { buildAuthorIndex, buildIndex, buildSetIndex, search, searchSets, searchAuthors, variantsIncluded, type AuthorRecord, type SetRecord, type SearchRecord, type SearchScope } from "@/lib/search";
 import { addRecent, clearRecent, getRecent, onRecentChange, removeRecent } from "@/lib/recentSearches";
 
 const PAGE_SIZE = 30;
@@ -17,9 +17,9 @@ const SCOPES: { value: SearchScope; label: string }[] = [
   { value: "category", label: "Category" },
 ];
 
-type Props = { records: SearchRecord[]; authors: AuthorRecord[]; categories: { name: string; slug: string }[] };
+type Props = { records: SearchRecord[]; authors: AuthorRecord[]; sets: SetRecord[]; categories: { name: string; slug: string }[] };
 
-export default function SearchClient({ records, authors, categories }: Props) {
+export default function SearchClient({ records, authors, sets, categories }: Props) {
   const params = useSearchParams();
   const [query, setQuery] = useState(params.get("q") ?? "");
   const [scope, setScope] = useState<SearchScope>("all");
@@ -48,6 +48,11 @@ export default function SearchClient({ records, authors, categories }: Props) {
   const authorMatches = useMemo(
     () => (scope === "all" || scope === "author") && !category ? searchAuthors(authorIndex, query) : [],
     [authorIndex, query, scope, category],
+  );
+  const setIndex = useMemo(() => buildSetIndex(sets), [sets]);
+  const setMatches = useMemo(
+    () => (scope === "all" || scope === "title") && !category ? searchSets(setIndex, query) : [],
+    [setIndex, query, scope, category],
   );
   const variants = useMemo(() => variantsIncluded(query), [query]);
   const results = category ? matches.filter((r) => r.categorySlug === category) : matches;
@@ -239,7 +244,32 @@ export default function SearchClient({ records, authors, categories }: Props) {
         </section>
       )}
 
-      {hasQuery && results.length > 0 && authorMatches.length > 0 && <h2 className="results-heading">Books</h2>}
+      {hasQuery && setMatches.length > 0 && (
+        <section aria-labelledby="set-results-h">
+          <h2 id="set-results-h" className="results-heading">
+            Multi-volume sets <span className="chip-count">{setMatches.length}</span>
+          </h2>
+          <ul className="author-results">
+            {setMatches.slice(0, 6).map((s) => (
+              <li key={s.slug} className="author-result">
+                <Link href={`/sets/${s.slug}/`} onClick={() => addRecent(query)}>
+                  <span>
+                    <span className="name">
+                      <span className="type-label">{s.kind === "series" ? "Series" : "Set"}</span>
+                      {s.name}
+                    </span>
+                    <span className="meta">
+                      {s.held} {s.kind === "series" ? "issues" : s.held === 1 ? "volume" : "volumes"} in the library
+                    </span>
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {hasQuery && results.length > 0 && (authorMatches.length > 0 || setMatches.length > 0) && <h2 className="results-heading">Books</h2>}
 
       <div onClickCapture={(e) => (e.target as HTMLElement).closest("a") && addRecent(query)}>
         <BookList items={results.slice(0, shown)} showCategory />

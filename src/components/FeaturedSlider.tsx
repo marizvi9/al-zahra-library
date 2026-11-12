@@ -14,6 +14,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type { FeaturedSlide } from "@/lib/featured";
 import Credit from "./Credit";
+import SetLabel from "./SetLabel";
 
 const EVERY_MS = 6500;
 const TOUCH_HOLD_MS = 12000;
@@ -173,6 +174,7 @@ export default function FeaturedSlider({ slides }: { slides: FeaturedSlide[] }) 
                   <span className="slide-desc" dir="auto">
                     {s.description}
                   </span>
+                  {s.set && <SetLabel set={s.set} />}
                   <span className="slide-more" aria-hidden="true">
                     View book details <span>→</span>
                   </span>

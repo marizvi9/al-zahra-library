@@ -2,6 +2,8 @@ import Link from "next/link";
 import Girih from "@/components/Girih";
 import Ornament from "@/components/Ornament";
 import SearchBox from "@/components/SearchBox";
+import FeaturedSets from "@/components/FeaturedSets";
+import { homeFeaturedSets, volumeSets } from "@/lib/sets";
 import CategoryCard from "@/components/CategoryCard";
 import FeaturedSlider from "@/components/FeaturedSlider";
 import { Emblem } from "@/components/Emblem";
@@ -12,7 +14,6 @@ import FeaturedShelf from "@/components/FeaturedShelf";
 import AuthorAvatar from "@/components/AuthorAvatar";
 import {
   authors,
-  bookSets,
   books,
   categories,
   featuredCategories,
@@ -151,29 +152,8 @@ export default function HomePage() {
           <FeaturedShelf key={s.id} section={s} />
         ))}
 
-      {/* Multi-volume sets: shown only where the library holds 2+ different volumes. */}
-      {bookSets.length > 0 && (
-        <section className="container section" aria-labelledby="sets-title">
-          <h2 id="sets-title">Multi-volume sets</h2>
-          <p className="section-lede">Works the library holds in more than one volume.</p>
-          <ul className="set-list">
-            {bookSets.map((set) => (
-              <li key={set.title} className="set-row">
-                <span className="set-title" dir="auto">
-                  {set.title}
-                </span>
-                <span className="set-volumes">
-                  {set.volumes.map((v) => (
-                    <Link key={v.book.slug} href={`/books/${v.book.slug}/`} className="set-vol" title={v.book.title}>
-                      {v.label}
-                    </Link>
-                  ))}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      {/* Three multi-volume sets, shown big (chosen in data/multi-volume-sets.json). */}
+      <FeaturedSets sets={homeFeaturedSets} total={volumeSets.length} />
 
       {/* Browse by shelf number: as the books stand in the library. */}
       <section className="container section" aria-labelledby="shelves-title">

@@ -15,6 +15,8 @@ type Props = {
   title: string;
   /** The author as catalogued (for the drawn cover). */
   author?: string | null;
+  /** Colour seed for the drawn cover: the set's slug for a volume of a set, so every volume matches. */
+  seed?: string;
   images: CoverImage[];
 };
 
@@ -22,7 +24,7 @@ type Props = {
 const labelFor = (images: CoverImage[], i: number) =>
   images.length > 1 ? `Image ${i + 1} of ${images.length}` : "Cover image";
 
-export default function CoverGallery({ slug, title, author, images }: Props) {
+export default function CoverGallery({ slug, title, author, seed, images }: Props) {
   const [index, setIndex] = useState(0);
   const [leaving, setLeaving] = useState<{ index: number; dir: 1 | -1 } | null>(null);
   const [turnDir, setTurnDir] = useState<1 | -1 | null>(null); // direction of the last turn
@@ -61,7 +63,7 @@ export default function CoverGallery({ slug, title, author, images }: Props) {
       <div className="gallery">
         <ViewTransition name={`cover-${slug}`} share="morph" default="none">
           <div>
-            <ArchCover title={title} author={author} seed={slug} />
+            <ArchCover title={title} author={author} seed={seed ?? slug} />
           </div>
         </ViewTransition>
         <p className="gallery-caption muted small">No cover image yet</p>

@@ -2,7 +2,9 @@
 import authorNames from "@data/author-names.json";
 import { authors, books, toListItem } from "./catalog";
 import { initials, photoFor, viaSuffix } from "./authorPhotos";
-import type { AuthorRecord, SearchData } from "./search";
+import type { AuthorRecord, SearchData, SetRecord } from "./search";
+import { getCover } from "./catalog";
+import { volumeSets } from "./sets";
 
 const groups = (authorNames as { groups: Record<string, string[]> }).groups;
 
@@ -22,4 +24,15 @@ export function authorRecords(): AuthorRecord[] {
   });
 }
 
-export const searchData = (): SearchData => ({ books: books.map(toListItem), authors: authorRecords() });
+export function setRecords(): SetRecord[] {
+  return volumeSets.map((s) => ({
+    slug: s.slug,
+    name: s.name,
+    kind: s.kind,
+    held: s.volumes.length,
+    author: s.author,
+    thumb: s.coverBook ? getCover(s.coverBook.id)?.images[0]?.thumb : undefined,
+  }));
+}
+
+export const searchData = (): SearchData => ({ books: books.map(toListItem), authors: authorRecords(), sets: setRecords() });

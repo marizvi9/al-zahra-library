@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BookList from "@/components/BookList";
 import CoverGallery from "@/components/CoverGallery";
+import SetPanel from "@/components/SetPanel";
+import { setOfBook } from "@/lib/sets";
 import SourcesNote, { type SourceItem } from "@/components/SourcesNote";
 import AuthorAvatar, { PhotoCreditText } from "@/components/AuthorAvatar";
 import Credit from "@/components/Credit";
@@ -45,6 +47,7 @@ export default async function BookPage({ params }: Props) {
   const description = getDescription(book.id);
   // Long descriptions: show the first part, with "Read more" for the rest.
   const [lead, more] = splitDescription(description?.paragraphs ?? []);
+  const bookSet = setOfBook(book.id);
   const sources: SourceItem[] = [];
   if (description)
     sources.push({
@@ -87,6 +90,7 @@ export default async function BookPage({ params }: Props) {
           slug={book.slug}
           title={book.title}
           author={book.author}
+          seed={bookSet?.slug}
           images={cover?.images ?? []}
         />
 
@@ -103,6 +107,8 @@ export default async function BookPage({ params }: Props) {
             </span>
             {book.booklet && <span className="tag">Booklet</span>}
           </p>
+
+          {bookSet && <SetPanel set={bookSet} bookId={book.id} />}
 
           <section className="shelf-card" aria-labelledby="shelf-title">
             <h2 id="shelf-title">Find it on the shelf</h2>

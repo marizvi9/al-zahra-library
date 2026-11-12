@@ -194,3 +194,20 @@ It is used in lists, search suggestions, author pages and the book page. A real 
   (it flags the reference image and none of the covers already on the site), so they would never be used.
 - `scripts/fetch_alislam.mjs` guesses book addresses (`/<title-words>-<author>`), keeps a page only if title and author agree, and saves to `.cache/alislam/`
   (git-ignored). A 40-book test found 0 matches, so nothing from al-islam.org is in the site. A full run would take ~5 hours.
+
+## Multi-volume sets
+- **One file to edit: `data/multi-volume-sets.json`.** Each set has a name, its volumes in order (`books` = catalogue ids; two ids = the catalogue lists that
+  volume twice), optional `totalVolumes`, optional `description`, and `notes`. The `notSets` list records titles that looked like volumes but are not.
+  Change it, then rebuild. The build stops with a clear message if a listed id doesn't exist.
+- Gaps are worked out from the volume numbers (and `totalVolumes`, if given): "Not in the catalogue: Volumes 1–6". Journals are `"kind": "series"` (issues; no gaps).
+- Pages: `/sets/` (all sets, large cards, filter box; linked from the "More" menu and from a card on Explore) and `/sets/<slug>/` (volumes in order, covers, shelf).
+- A "Part of a multi-volume set · Volume N" label (`SetLabel`) shows on book lists, shelf/category lists, search results, author pages and sliders;
+  a volume's own page has a panel with previous/next volume and the full list (`SetPanel`).
+- Search finds sets by name (`searchSets`), and a book's set name is searchable too.
+- Code: `src/lib/setIndex.ts` (tiny lookup used everywhere), `src/lib/sets.ts` (full set objects for pages).
+
+## Home page featured sets
+The home page shows three multi-volume sets big (`FeaturedSets`); pick them with `homeFeatured` in data/multi-volume-sets.json. Home-page headings and sub headings are larger.
+
+## Header
+The top bar is dark navy like the footer, with the same star pattern behind it and a gold line along a straight bottom edge (`.site-header`, `.header-pattern` in globals.css).

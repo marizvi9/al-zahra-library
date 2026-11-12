@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CategoryCard from "@/components/CategoryCard";
+import CategoryCover from "@/components/CategoryCover";
 import { categories } from "@/lib/catalog";
+import { volumeSets } from "@/lib/sets";
 
 export const metadata: Metadata = {
   title: "Explore",
@@ -25,6 +27,19 @@ export default function ExplorePage() {
             <CategoryCard category={c} />
           </li>
         ))}
+        {/* Multi-volume sets are not a shelf category: this card opens the list of sets. */}
+        <li>
+          <Link href="/sets/" className="category-card">
+            <CategoryCover slug="multi-volume-sets" number={null} caption="SETS OF VOLUMES" className="category-card-cover" />
+            <span className="category-card-body">
+              <span className="category-card-name">Multi-Volume Sets</span>
+              <span className="category-card-desc">
+                Works that come in several volumes or parts, gathered in one place, with the volumes the library holds in order.
+              </span>
+              <span className="category-card-count">{volumeSets.length} sets</span>
+            </span>
+          </Link>
+        </li>
       </ul>
     </div>
   );

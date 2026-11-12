@@ -7,6 +7,8 @@ import { ViewTransition } from "react";
 import Link from "next/link";
 import ArchCover from "./ArchCover";
 import Credit from "./Credit";
+import SetLabel from "./SetLabel";
+import { setRefFor } from "@/lib/setIndex";
 import { creditParts, getCover, type Book } from "@/lib/catalog";
 import { withBase } from "@/lib/paths";
 
@@ -38,7 +40,7 @@ export default function AuthorBooks({ books, authorSlug }: { books: Book[]; auth
                     decoding="async"
                   />
                 ) : (
-                  <ArchCover title={b.title} author={b.author} seed={b.slug} />
+                  <ArchCover title={b.title} author={b.author} seed={setRefFor(b.id)?.slug ?? b.slug} />
                 )}
               </span>
             </ViewTransition>
@@ -55,6 +57,7 @@ export default function AuthorBooks({ books, authorSlug }: { books: Book[]; auth
                 {b.category}
                 {b.subCategory && b.subCategory !== "General" ? ` › ${b.subCategory}` : ""}
               </span>
+              {setRefFor(b.id) && <SetLabel set={setRefFor(b.id)!} />}
               <span className="author-book-meta">
                 {b.callNumber && (
                   <span className="call-badge">

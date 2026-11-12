@@ -15,6 +15,7 @@ import { usePathname } from "next/navigation";
 import { FlowerMark } from "./Emblem";
 import MainNav from "./MainNav";
 import SearchBox from "./SearchBox";
+import Girih from "./Girih";
 
 export default function Header() {
   const pathname = usePathname();
@@ -46,6 +47,10 @@ export default function Header() {
 
   return (
     <header className="site-header">
+      {/* The same star pattern as the footer, behind the bar. */}
+      <div className="header-pattern" aria-hidden="true">
+        <Girih className="girih-footer" />
+      </div>
       <div
         className="container header-inner"
         data-ready={ready || undefined}

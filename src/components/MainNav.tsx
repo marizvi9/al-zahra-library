@@ -1,5 +1,5 @@
 "use client";
-// The site's main tabs: Explore, Authors, and a "More" drop-down that holds Shelves.
+// The site's main tabs: Explore, Authors, and a "More" drop-down that holds Shelves and Multi-Volume Sets.
 // The gold underline marks where you are (on "More" too, when you are on a page inside it).
 //
 // The drop-down is a native <details>, so it opens and closes even without JavaScript. The code
@@ -16,7 +16,10 @@ export const TABS: Tab[] = [
   { href: "/authors/", label: "Authors", also: [] },
 ];
 // Tucked away under "More".
-export const MORE: Tab[] = [{ href: "/shelves/", label: "Shelves", also: [] }];
+export const MORE: Tab[] = [
+  { href: "/shelves/", label: "Shelves", also: [] },
+  { href: "/sets/", label: "Multi-Volume Sets", also: [] },
+];
 
 export default function MainNav() {
   const pathname = usePathname();

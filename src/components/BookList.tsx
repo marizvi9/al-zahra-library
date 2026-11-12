@@ -1,5 +1,7 @@
 import { ViewTransition } from "react";
 import Link from "next/link";
+import SetLabel from "./SetLabel";
+import type { SetRef } from "@/lib/setIndex";
 import ArchCover from "./ArchCover";
 import Credit from "./Credit";
 import type { CreditPart } from "@/lib/catalog";
@@ -14,6 +16,7 @@ export type BookListItem = {
   callNumber: string | null;
   thumb?: string;
   available?: boolean;
+  set?: SetRef;
 };
 
 // Each row is a card: the title is the link to the book, stretched (with CSS) to cover the
@@ -40,7 +43,7 @@ export default function BookList({
                 {b.thumb ? (
                   <img src={b.thumb} alt="" loading="lazy" decoding="async" />
                 ) : (
-                  <ArchCover title={b.title} author={b.credit} seed={b.slug} size="small" />
+                  <ArchCover title={b.title} author={b.credit} seed={b.set?.slug ?? b.slug} size="small" />
                 )}
               </span>
             </ViewTransition>
@@ -57,6 +60,7 @@ export default function BookList({
                   {b.subCategory && b.subCategory !== "General" ? ` › ${b.subCategory}` : ""}
                 </span>
               )}
+              {b.set && <SetLabel set={b.set} />}
               {b.available === false && <span className="status-text">Not available</span>}
             </span>
             {b.callNumber && (

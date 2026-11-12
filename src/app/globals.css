@@ -3390,3 +3390,164 @@ button:active,
 .sources-note a { color: inherit; }
 
 .shelves-blurb { margin: 6px 0 14px; max-width: 46rem; color: var(--muted); }
+
+/* ---------- Search drop-down always on top ----------
+   Animated blocks (the welcome text, cards, lists) each form their own layer, and a later layer paints over an
+   earlier one even when the drop-down inside it has a high z-index. So the layers that CONTAIN a search bar are
+   raised above everything that follows them. */
+.site-header {
+  position: relative;
+  z-index: 60;
+}
+.hero,
+.hero-text,
+.hero-text > :has(.search-suggest),
+.page > :has(> .search-suggest),
+.container:has(.search-suggest) {
+  position: relative;
+  z-index: 20;
+}
+
+/* ---------- Multi-volume set label ---------- */
+.set-label {
+  position: relative;
+  z-index: 1; /* above the card's stretched link */
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  align-self: flex-start;
+  margin-top: 3px;
+  padding: 1px 9px 1px 6px;
+  font-family: var(--font-ui);
+  font-size: 0.74rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--gold-text);
+  background: var(--gold-soft);
+  border: 1px solid rgb(172 133 33 / 0.45);
+  border-radius: 999px;
+  text-decoration: none;
+}
+.set-label:hover,
+.set-label:focus-visible {
+  color: var(--ink);
+  border-color: var(--gold);
+  text-decoration: underline;
+}
+.set-label-icon { font-size: 0.8em; }
+
+/* ---------- Set panel on a volume's page ---------- */
+.set-panel {
+  margin: 14px 0;
+  padding: 12px 16px;
+  background: var(--gold-soft);
+  border: 1px solid rgb(172 133 33 / 0.45);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+}
+.set-panel p { margin: 0 0 6px; }
+.set-panel-title { font-family: var(--font-ui); font-weight: 600; color: var(--gold-text); }
+.set-panel-title a { color: var(--ink); }
+.set-panel-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 8px; padding: 0; list-style: none; }
+.set-panel-list a,
+.set-panel-here {
+  display: inline-block;
+  padding: 2px 11px;
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+}
+.set-panel-here { background: var(--navy); border-color: var(--navy); color: var(--card); font-weight: 600; }
+.set-panel-steps { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-family: var(--font-ui); font-size: 0.9rem; }
+
+/* ---------- Multi-volume set pages ---------- */
+.set-head { margin: 4px 0 18px; max-width: 46rem; }
+.set-head h1 { margin-bottom: 0.15em; }
+.set-head-author { margin: 0; color: var(--muted); font-size: 1.05rem; }
+.set-head-count { margin: 6px 0; font-family: var(--font-ui); font-weight: 600; color: var(--gold-text); }
+.set-head-desc { margin: 8px 0; }
+.set-gap { margin: 10px 0 0; padding: 8px 14px; background: var(--gold-soft); border-left: 4px solid var(--gold); border-radius: 0 8px 8px 0; }
+.set-volumes-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); }
+.set-volume { padding: 14px 16px 16px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+.set-volume-label { margin: 0 0 10px; font-size: 1.25rem; }
+.set-volume-book { display: flex; gap: 16px; align-items: flex-start; }
+.set-volume-book + .set-volume-book { margin-top: 14px; padding-top: 14px; border-top: 1px dashed var(--line); }
+.set-volume-cover { flex: none; width: 46%; max-width: 190px; line-height: 0; }
+.set-volume-cover img,
+.set-volume-cover .generated-cover { width: 100%; height: auto; border-radius: 3px 6px 6px 3px; box-shadow: 0 2px 4px rgb(4 20 46 / 18%), 0 10px 24px rgb(4 20 46 / 16%); }
+.set-volume-text { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.set-volume-title { font-family: var(--font-head); font-weight: 600; color: var(--ink); line-height: 1.3; }
+.set-volume-author { color: var(--muted); font-size: 0.95rem; }
+
+/* ---------- Multi-volume sets listing (large cards) ---------- */
+.set-cards { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); }
+.set-card { position: relative; display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.set-card:hover { border-color: var(--gold); }
+.set-card-cover { position: relative; display: grid; place-items: center; padding: 18px 18px 8px; background: var(--cream-deep); }
+.set-card-cover img, .set-card-cover .generated-cover { width: min(160px, 60%); height: auto; border-radius: 3px 6px 6px 3px; box-shadow: 0 2px 4px rgb(4 20 46 / 18%), 0 10px 24px rgb(4 20 46 / 16%); }
+.set-card-cover .generated-cover-large { width: min(160px, 60%); }
+.set-card-count { margin-top: 10px; padding: 1px 10px; font-family: var(--font-ui); font-size: 0.78rem; font-weight: 700; color: var(--card); background: var(--navy); border-radius: 999px; }
+.set-card-text { display: flex; flex-direction: column; gap: 4px; padding: 12px 16px 16px; }
+.set-card-title { font-family: var(--font-head); font-size: 1.15rem; font-weight: 600; color: var(--ink); line-height: 1.3; }
+.set-card-author { color: var(--muted); font-size: 0.92rem; }
+.set-card-vols { font-family: var(--font-ui); font-size: 0.84rem; color: var(--gold-text); }
+
+/* ---------- Home page: bigger headings and sub headings ---------- */
+main:has(.hero) .section h2 { font-size: clamp(1.7rem, 4.6vw, 2.2rem); line-height: 1.2; }
+main:has(.hero) .section-subhead { font-size: clamp(1.25rem, 3.4vw, 1.5rem); }
+main:has(.hero) .section-lede { font-size: 1.15rem; }
+main:has(.hero) .featured-shelf-titles .eyebrow,
+main:has(.hero) .featured-sets .eyebrow { font-size: 0.85rem; }
+
+/* ---------- Home page: featured multi-volume sets ---------- */
+.featured-sets-grid { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 24px; }
+.featured-set { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-top: 4px solid var(--gold); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.featured-set-covers { display: flex; justify-content: center; align-items: flex-end; gap: 3%; padding: 24px 18px 20px; background: var(--cream-deep); line-height: 0; }
+.featured-set-cover { flex: 0 1 31%; max-width: 210px; min-width: 0; }
+.featured-set-cover img,
+.featured-set-cover .generated-cover { width: 100%; height: auto; border-radius: 3px 6px 6px 3px; box-shadow: 0 2px 4px rgb(4 20 46 / 22%), 0 12px 26px rgb(4 20 46 / 24%); }
+.featured-set-text { display: flex; flex-direction: column; justify-content: center; gap: 8px; padding: 16px 20px 20px; }
+.featured-set-text .eyebrow { margin: 0; }
+.featured-set-title { margin: 0; font-size: clamp(1.5rem, 4vw, 1.9rem); line-height: 1.2; }
+.featured-set-title a { color: var(--ink); text-decoration: none; }
+.featured-set-title a:hover { text-decoration: underline; }
+.featured-set-author { margin: 0; font-size: 1.1rem; color: var(--muted); }
+.featured-set-vols { margin: 0; font-family: var(--font-ui); font-weight: 600; font-size: 1.05rem; color: var(--gold-text); }
+.featured-set-more { font-family: var(--font-ui); font-weight: 600; font-size: 1.05rem; margin-top: 4px; }
+@media (min-width: 820px) {
+  .featured-set { flex-direction: row; }
+  .featured-set-covers { flex: 0 0 62%; padding: 28px 24px 24px; }
+  .featured-set-text { flex: 1; padding: 24px 28px; }
+}
+
+/* ---------- Dark header: same navy and pattern as the footer ---------- */
+.site-header {
+  position: relative;
+  z-index: 60;
+  background: var(--navy-deep);
+  /* a straight bottom edge with the same gold line as the footer's */
+  border-bottom: 3px solid var(--gold);
+}
+.site-header::after { display: none; } /* the old thin gold rule: the border above replaces it */
+/* The pattern sits in its own clipped layer, so the header itself can let the search drop-down hang below it. */
+.header-pattern {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.site-header .header-inner { position: relative; }
+.site-header .brand,
+.site-header .brand-name { color: var(--card); }
+.site-header .nav-list > li > a,
+.site-header .nav-more-details > summary { color: var(--card); }
+.site-header .nav-list > li > a:hover,
+.site-header .nav-more-details > summary:hover,
+.site-header .nav-more-details[open] > summary { background: rgb(255 255 255 / 0.12); }
+.site-header .nav-more-details > summary:focus-visible { outline-color: var(--gold-light); }
+.site-header .nav-more-list a { color: var(--ink); }
+.site-header .search-box button[type="submit"] { background: var(--gold); color: var(--navy-deep); }
+.site-header .header-btn { color: var(--card); border-color: rgb(255 255 255 / 0.4); background: transparent; }

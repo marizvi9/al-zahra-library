@@ -24,6 +24,8 @@ export type SearchRecord = {
   callNumber: string | null;
   thumb?: string;
   available?: boolean;
+  /** Set when the book is a volume of a multi-volume set (or a series of issues). */
+  set?: { slug: string; name: string; volume: string; kind: string };
 };
 
 /** An author, as the search sees them (photo details are only what the round badge needs). */
@@ -43,8 +45,11 @@ export type AuthorRecord = {
   } | null;
 };
 
+/** A multi-volume set, as the search sees it. */
+export type SetRecord = { slug: string; name: string; kind: string; held: number; author: string | null; thumb?: string };
+
 /** The one file the browser downloads (/search-index.json). */
-export type SearchData = { books: SearchRecord[]; authors: AuthorRecord[] };
+export type SearchData = { books: SearchRecord[]; authors: AuthorRecord[]; sets: SetRecord[] };
 
 export type SearchScope = "all" | "title" | "author" | "category";
 
@@ -256,7 +261,7 @@ export function buildIndex(records: SearchRecord[]): Indexed[] {
     ...r,
     _t: field(r.title),
     _a: field(r.credit),
-    _c: field(`${r.category} ${r.subCategory} ${r.callNumber ?? ""}`),
+    _c: field(`${r.category} ${r.subCategory} ${r.callNumber ?? ""} ${r.set?.name ?? ""}`),
   }));
 }
 
@@ -317,6 +322,30 @@ export function searchAuthors(index: IndexedAuthor[], query: string): AuthorReco
     .filter(({ r }) => !have.has(r.slug))
     .sort(order);
   return [...strict, ...typos].map(({ r }) => r);
+}
+
+// ---------- Multi-volume sets ----------
+
+export type IndexedSet = SetRecord & { _n: Field };
+
+export const buildSetIndex = (sets: SetRecord[]): IndexedSet[] => sets.map((s) => ({ ...s, _n: field(s.name) }));
+
+/** Sets whose name matches (same forgiving rules as books and authors). */
+export function searchSets(index: IndexedSet[], query: string): SetRecord[] {
+  const p = prepare(query);
+  if (p.words.length === 0) return [];
+  const run = (fuzzy: boolean) => {
+    const out: { r: IndexedSet; s: number }[] = [];
+    for (const r of index) {
+      const s = score([{ f: r._n, w: 5 }], p.words, p.qNorm, p.qFold, p.qSq, p.qFsq, fuzzy, [r._n]);
+      if (s > 0) out.push({ r, s });
+    }
+    return out.sort((x, y) => y.s - x.s || x.r.name.localeCompare(y.r.name));
+  };
+  const strict = run(false);
+  if (strict.length >= FEW) return strict.map(({ r }) => r);
+  const have = new Set(strict.map(({ r }) => r.slug));
+  return [...strict, ...run(true).filter(({ r }) => !have.has(r.slug))].map(({ r }) => r);
 }
 
 // ---------- Quick suggestions, and filtering a list in place ----------

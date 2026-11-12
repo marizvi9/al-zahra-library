@@ -3,6 +3,7 @@
 // Same rules as the main slider: every book needs an author, a cover, and a real
 // description from Google Books. The build stops with a clear message otherwise.
 import config from "@data/home-featured-sections.json";
+import { setRefFor, type SetRef } from "./setIndex";
 import { authorName, getAuthor, authors, books, creditParts, getCover, getDescription, shortDescription, slugifyName, type CreditPart } from "./catalog";
 
 export type ShelfBook = {
@@ -12,6 +13,7 @@ export type ShelfBook = {
   creditParts: CreditPart[];
   description: string;
   cover: { src: string; width: number; height: number };
+  set?: SetRef;
 };
 export type HomeSection = {
   id: string;
@@ -54,6 +56,7 @@ export const homeSections: HomeSection[] = (config.sections as Raw[]).map((s) =>
       author: book.author!,
       creditParts: creditParts(book),
       description: shortDescription(d, 200),
+      set: setRefFor(book.id),
       cover: { src: cover.src, width: cover.width, height: cover.height },
     };
   });
