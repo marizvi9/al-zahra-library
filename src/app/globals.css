@@ -3578,15 +3578,11 @@ main:has(.hero) .featured-sets .eyebrow { font-size: 0.85rem; }
 .big-grid-more { text-align: center; margin: 8px 0 0; }
 .big-grid-more button { min-height: 48px; padding-inline: 24px; }
 
-/* Previous / Next at the bottom of a sub-topic page */
+/* Previous / Next: small buttons at the bottom of a page */
 .subtopic-nav { margin: 4px 0 8px; }
-.pager { display: flex; justify-content: space-between; gap: 12px; margin: 36px 0 8px; }
-.pager-link { display: flex; flex-direction: column; gap: 2px; flex: 1 1 0; min-width: 0; min-height: 56px; padding: 12px 16px; background: var(--card); border: 1px solid var(--line); border-top: 3px solid var(--gold); border-radius: 12px; text-decoration: none; color: var(--ink); }
-.pager-next { text-align: right; align-items: flex-end; }
-a.pager-link:hover { border-color: var(--navy); border-top-color: var(--gold); }
-a.pager-link:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
-.pager-dir { font-family: var(--font-ui); font-size: 0.85rem; font-weight: 600; color: var(--gold-text); }
-.pager-name { font-family: var(--font-head); font-weight: 600; font-size: 1.1rem; line-height: 1.25; overflow-wrap: anywhere; }
-.pager-link.is-disabled { opacity: 0.45; border-top-color: var(--line); }
-@media (max-width: 480px) { .pager { gap: 8px; } .pager-link { padding: 10px 12px; } .pager-name { font-size: 1rem; } }
+.pager { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 32px 0 8px; }
+.pager-btn { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; max-width: 48%; padding: 8px 16px; font-family: var(--font-ui); font-weight: 600; font-size: 0.95rem; line-height: 1.2; color: var(--navy); background: var(--card); border: 1px solid var(--line); border-radius: 999px; text-decoration: none; overflow-wrap: anywhere; }
+a.pager-btn:hover { border-color: var(--navy); background: var(--navy-soft); }
+a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.pager-btn.is-disabled { opacity: 0.45; }
 .arch-band > p { margin-inline: auto; }

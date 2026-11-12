@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BookGrid from "@/components/BookGrid";
 import SubTopicNav from "@/components/SubTopicNav";
-import SubTopicPager from "@/components/SubTopicPager";
+import SubTopicPager, { type PagerLink } from "@/components/SubTopicPager";
 import { booksInSubCategory, categories, getCategory, subTopicNeighbours, subTopicText, toGridItem } from "@/lib/catalog";
 
 type Props = { params: Promise<{ slug: string; sub: string }> };
@@ -32,6 +32,18 @@ export default async function SubCategoryPage({ params }: Props) {
   const list = booksInSubCategory(cat.slug, sub.slug);
   const many = cat.subCategories.length > 1;
   const { prev, next, nextCategory } = subTopicNeighbours(cat, sub.slug);
+  const prevCategory = categories[categories.indexOf(cat) - 1];
+  // Sub-topic buttons; when a category has just "General", the buttons go to the neighbouring categories.
+  const prevLink: PagerLink = prev
+    ? { href: `/explore/${cat.slug}/${prev.slug}/`, name: prev.name }
+    : !many && prevCategory
+      ? { href: `/explore/${prevCategory.slug}/`, name: prevCategory.name, kind: "category" }
+      : null;
+  const nextLink: PagerLink = next
+    ? { href: `/explore/${cat.slug}/${next.slug}/`, name: next.name }
+    : nextCategory
+      ? { href: `/explore/${nextCategory.slug}/`, name: nextCategory.name, kind: "category" }
+      : null;
 
   return (
     <div className="container page">
@@ -57,8 +69,8 @@ export default async function SubCategoryPage({ params }: Props) {
         <p>{subTopicText(cat, sub)}</p>
       </header>
       {many && <SubTopicNav cat={cat} current={sub.slug} />}
-      <BookGrid items={list.map(toGridItem)} />
-      {many && <SubTopicPager cat={cat} prev={prev} next={next} nextCategory={nextCategory} />}
+      <BookGrid items={list.map(toGridItem)} paged={sub.name !== "General"} />
+      <SubTopicPager prev={prevLink} next={nextLink} />
     </div>
   );
 }

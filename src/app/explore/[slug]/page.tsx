@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BookGrid from "@/components/BookGrid";
+import SubTopicPager from "@/components/SubTopicPager";
 import SubTopicNav from "@/components/SubTopicNav";
 import Redirect from "@/components/Redirect";
 import CategoryCover from "@/components/CategoryCover";
@@ -31,6 +32,8 @@ export default async function CategoryPage({ params }: Props) {
   const cat = getCategory(slug);
   if (!cat) notFound();
   const list = booksInCategory(cat.slug);
+  const prevCat = categories[categories.indexOf(cat) - 1];
+  const nextCat = categories[categories.indexOf(cat) + 1];
   const showSubs = cat.subCategories.length > 1 || cat.subCategories[0]?.name !== "General";
 
   return (
@@ -59,8 +62,14 @@ export default async function CategoryPage({ params }: Props) {
         <h2 id="books-title">
           All {list.length} {list.length === 1 ? "book" : "books"}
         </h2>
-        <BookGrid items={list.map(toGridItem)} showCategory={showSubs} />
+        <BookGrid items={list.map(toGridItem)} showCategory={showSubs} paged={showSubs} />
       </section>
+      {!showSubs && (
+        <SubTopicPager
+          prev={prevCat ? { href: `/explore/${prevCat.slug}/`, name: prevCat.name, kind: "category" } : null}
+          next={nextCat ? { href: `/explore/${nextCat.slug}/`, name: nextCat.name, kind: "category" } : null}
+        />
+      )}
     </div>
   );
 }

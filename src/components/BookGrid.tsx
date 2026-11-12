@@ -14,9 +14,9 @@ import type { GridItem } from "@/lib/catalog";
 
 const PAGE = 24;
 
-export default function BookGrid({ items, showCategory = false }: { items: GridItem[]; showCategory?: boolean }) {
+export default function BookGrid({ items, showCategory = false, paged = true }: { items: GridItem[]; showCategory?: boolean; /** false: show every book, no "Show more" button */ paged?: boolean }) {
   const [count, setCount] = useState(PAGE);
-  const shown = items.slice(0, count);
+  const shown = paged ? items.slice(0, count) : items;
   const left = items.length - shown.length;
 
   return (
@@ -66,9 +66,11 @@ export default function BookGrid({ items, showCategory = false }: { items: GridI
           </li>
         ))}
       </ul>
-      <p className="big-grid-status small muted" role="status" aria-live="polite">
-        Showing {shown.length} of {items.length} {items.length === 1 ? "book" : "books"}
-      </p>
+      {paged && (
+        <p className="big-grid-status small muted" role="status" aria-live="polite">
+          Showing {shown.length} of {items.length} {items.length === 1 ? "book" : "books"}
+        </p>
+      )}
       {left > 0 && (
         <p className="big-grid-more">
           <button type="button" className="button-secondary" onClick={() => setCount(count + PAGE)}>

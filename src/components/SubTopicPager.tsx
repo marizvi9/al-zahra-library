@@ -1,44 +1,30 @@
-// "← Previous sub-topic" and "Next sub-topic →" at the bottom of a sub-topic page.
-// First sub-topic: Previous is shown greyed out (not a link). Last sub-topic: Next becomes a
-// link to the next category, when there is one.
+// Small "← Prophets" and "Christianity →" buttons at the bottom of a page, going to the
+// previous / next sub-topic (or category). When there is nothing before, the Previous button
+// is shown greyed out and can't be pressed; the same goes for Next at the very end.
 import Link from "next/link";
-import type { Category, SubCategory } from "@/lib/catalog";
 
-type Props = {
-  cat: Category;
-  prev: SubCategory | null;
-  next: SubCategory | null;
-  nextCategory: Category | null;
-};
+export type PagerLink = { href: string; name: string; kind?: string } | null;
 
-export default function SubTopicPager({ cat, prev, next, nextCategory }: Props) {
+export default function SubTopicPager({ prev, next }: { prev: PagerLink; next: PagerLink }) {
+  const label = (dir: string, l: NonNullable<PagerLink>) => `${dir}${l.kind ? ` ${l.kind}` : ""}: ${l.name}`;
   return (
-    <nav className="pager" aria-label="Previous and next sub-topic">
+    <nav className="pager" aria-label="Previous and next">
       {prev ? (
-        <Link href={`/explore/${cat.slug}/${prev.slug}/`} className="pager-link pager-prev" rel="prev">
-          <span className="pager-dir">← Previous</span>
-          <span className="pager-name">{prev.name}</span>
+        <Link href={prev.href} className="pager-btn" rel="prev" aria-label={label("Previous", prev)}>
+          <span aria-hidden="true">←</span> {prev.name}
         </Link>
       ) : (
-        <span className="pager-link pager-prev is-disabled" aria-disabled="true">
-          <span className="pager-dir">← Previous</span>
-          <span className="pager-name">This is the first</span>
+        <span className="pager-btn is-disabled" aria-disabled="true">
+          <span aria-hidden="true">←</span> Previous
         </span>
       )}
       {next ? (
-        <Link href={`/explore/${cat.slug}/${next.slug}/`} className="pager-link pager-next" rel="next">
-          <span className="pager-dir">Next →</span>
-          <span className="pager-name">{next.name}</span>
-        </Link>
-      ) : nextCategory ? (
-        <Link href={`/explore/${nextCategory.slug}/`} className="pager-link pager-next">
-          <span className="pager-dir">Next category →</span>
-          <span className="pager-name">{nextCategory.name}</span>
+        <Link href={next.href} className="pager-btn" rel="next" aria-label={label("Next", next)}>
+          {next.name} <span aria-hidden="true">→</span>
         </Link>
       ) : (
-        <span className="pager-link pager-next is-disabled" aria-disabled="true">
-          <span className="pager-dir">Next →</span>
-          <span className="pager-name">This is the last</span>
+        <span className="pager-btn is-disabled" aria-disabled="true">
+          Next <span aria-hidden="true">→</span>
         </span>
       )}
     </nav>
