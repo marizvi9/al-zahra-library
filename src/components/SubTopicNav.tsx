@@ -7,6 +7,11 @@ export default function SubTopicNav({ cat, current }: { cat: Category; current?:
   return (
     <nav aria-label={`Sub-topics in ${cat.name}`} className="subtopic-nav">
       <ul className="chip-list">
+        <li>
+          <Link href={`/explore/${cat.slug}/`} className={`chip ${current ? "" : "is-active"}`} aria-current={current ? undefined : "page"}>
+            All books <span className="chip-count">{cat.count}</span>
+          </Link>
+        </li>
         {cat.subCategories.map((s) => (
           <li key={s.slug}>
             <Link
