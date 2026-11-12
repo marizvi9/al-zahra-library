@@ -38,14 +38,21 @@
       "originalWidth": 821,
       "originalHeight": 1012,
       "focus": {
-        "x": 50,
-        "y": 50
+        "x": 49.7,
+        "y": 48.1,
+        "zoom": 0.76
       },
       "bio": "Ayatollah Murtaza Mutahhari (1920–1979) was a prominent Shia jurist, philosopher, theologian and writer of the 20th century. A student of Allama Tabataba'i and Imam Khomeini, he was one of the most influential Iranian clerics in explaining Islamic teachings for his time.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Morteza_Motahhari"
-      ]
+      ],
+      "head": {
+        "x0": 19.1,
+        "y0": 3.2,
+        "x1": 80.3,
+        "y1": 92.9
+      }
     },
     "Ali Shariati": {
       "wikipedia": "Ali Shariati",
@@ -70,8 +77,15 @@
       "originalHeight": 616,
       "lowRes": true,
       "focus": {
-        "x": 55,
-        "y": 45
+        "x": 48.4,
+        "y": 50.0,
+        "zoom": 0.62
+      },
+      "head": {
+        "x0": 0.4,
+        "y0": 0.0,
+        "x1": 96.5,
+        "y1": 100.0
       }
     },
     "Muhammad Baqir al-Sadr": {
@@ -97,8 +111,15 @@
       "originalHeight": 1450,
       "lowRes": false,
       "focus": {
-        "x": 50,
-        "y": 38
+        "x": 49.8,
+        "y": 41.2,
+        "zoom": 0.83
+      },
+      "head": {
+        "x0": 22.6,
+        "y0": 6.4,
+        "x1": 77.0,
+        "y1": 76.1
       }
     },
     "Muhammad Husayn Tabatabai": {
@@ -124,8 +145,15 @@
       "originalHeight": 476,
       "lowRes": true,
       "focus": {
-        "x": 40,
-        "y": 45
+        "x": 37.2,
+        "y": 50.0,
+        "zoom": 0.82
+      },
+      "head": {
+        "x0": 6.9,
+        "y0": 0.0,
+        "x1": 67.4,
+        "y1": 100.0
       }
     },
     "Imam Khomeini": {
@@ -151,8 +179,15 @@
       "originalHeight": 690,
       "lowRes": false,
       "focus": {
-        "x": 50,
-        "y": 45
+        "x": 51.0,
+        "y": 50.0,
+        "zoom": 0.64
+      },
+      "head": {
+        "x0": 13.8,
+        "y0": 0.0,
+        "x1": 88.2,
+        "y1": 100.0
       }
     },
     "Ali Khamenei": {
@@ -173,9 +208,9 @@
       "originalWidth": 1132,
       "originalHeight": 1440,
       "focus": {
-        "x": 55,
-        "y": 28,
-        "zoom": 1.9
+        "x": 55.0,
+        "y": 30.0,
+        "zoom": 1.75
       },
       "previousPhoto": {
         "file": "File:Ali Khamenei Nowruz message official portrait 1397 02 (3 x 4 cropped).jpg",
@@ -189,7 +224,13 @@
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Sayyid_Ali_Husayni_Khamenei"
-      ]
+      ],
+      "head": {
+        "x0": 40.9,
+        "y0": 11.2,
+        "x1": 69.1,
+        "y1": 48.9
+      }
     },
     "Seyyed Hossein Nasr": {
       "wikipedia": "Seyyed Hossein Nasr",
@@ -214,9 +255,15 @@
         "https://en.wikipedia.org/wiki/Seyyed_Hossein_Nasr"
       ],
       "focus": {
-        "x": 52,
-        "y": 30,
-        "zoom": 1.3
+        "x": 52.3,
+        "y": 33.1,
+        "zoom": 1.02
+      },
+      "head": {
+        "x0": 31.4,
+        "y0": 0.0,
+        "x1": 73.3,
+        "y1": 66.3
       }
     },
     "Ahmed Deedat": {
@@ -254,8 +301,15 @@
       "originalHeight": 301,
       "lowRes": true,
       "focus": {
-        "x": 50,
-        "y": 38
+        "x": 51.8,
+        "y": 43.7,
+        "zoom": 0.96
+      },
+      "head": {
+        "x0": 29.6,
+        "y0": 0.0,
+        "x1": 74.1,
+        "y1": 87.4
       }
     },
     "Muhammad Husayni Beheshti": {
@@ -281,8 +335,15 @@
       "originalHeight": 577,
       "lowRes": true,
       "focus": {
-        "x": 52,
-        "y": 45
+        "x": 57.9,
+        "y": 55.8,
+        "zoom": 0.63
+      },
+      "head": {
+        "x0": 21.6,
+        "y0": 12.0,
+        "x1": 94.2,
+        "y1": 99.6
       }
     },
     "Mehdi Bazargan": {
@@ -308,8 +369,15 @@
         "https://en.wikipedia.org/wiki/Mehdi_Bazargan"
       ],
       "focus": {
-        "x": 55,
-        "y": 22
+        "x": 54.8,
+        "y": 43.2,
+        "zoom": 0.63
+      },
+      "head": {
+        "x0": 13.8,
+        "y0": 0.0,
+        "x1": 95.8,
+        "y1": 86.4
       }
     },
     "Ali al-Sistani": {
@@ -330,8 +398,9 @@
       "originalWidth": 2000,
       "originalHeight": 1536,
       "focus": {
-        "x": 47,
-        "y": 40
+        "x": 48.9,
+        "y": 43.7,
+        "zoom": 1.1
       },
       "previousPhoto": {
         "file": "File:Ali Sistani edit1.jpg",
@@ -345,7 +414,13 @@
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Sayyid_Ali_al-Husayni_al-Sistani"
-      ]
+      ],
+      "head": {
+        "x0": 32.8,
+        "y0": 5.6,
+        "x1": 64.9,
+        "y1": 81.8
+      }
     },
     "Nasir Makarim Shirazi": {
       "wikipedia": "Naser Makarem Shirazi",
@@ -370,8 +445,15 @@
       "originalHeight": 2809,
       "lowRes": false,
       "focus": {
-        "x": 50,
-        "y": 35
+        "x": 49.9,
+        "y": 37.7,
+        "zoom": 0.88
+      },
+      "head": {
+        "x0": 23.6,
+        "y0": 3.9,
+        "x1": 76.2,
+        "y1": 71.5
       }
     },
     "Kalim Siddiqui": {
@@ -434,8 +516,15 @@
         "https://en.wikipedia.org/wiki/Khurram_Murad"
       ],
       "focus": {
-        "x": 50,
-        "y": 33
+        "x": 40.8,
+        "y": 48.9,
+        "zoom": 0.81
+      },
+      "head": {
+        "x0": 9.6,
+        "y0": 0.0,
+        "x1": 71.9,
+        "y1": 97.7
       }
     },
     "Muhammad Hamidullah": {
@@ -473,9 +562,15 @@
       "originalHeight": 395,
       "lowRes": false,
       "focus": {
-        "x": 40,
-        "y": 25,
-        "zoom": 1.6
+        "x": 40.0,
+        "y": 29.1,
+        "zoom": 1.44
+      },
+      "head": {
+        "x0": 28.8,
+        "y0": 0.0,
+        "x1": 51.2,
+        "y1": 58.3
       }
     },
     "Sayyid Saeed Akhtar Rizvi": {
@@ -501,8 +596,15 @@
       "originalHeight": 1417,
       "lowRes": false,
       "focus": {
-        "x": 52,
-        "y": 33
+        "x": 62.1,
+        "y": 32.0,
+        "zoom": 1.07
+      },
+      "head": {
+        "x0": 38.2,
+        "y0": 4.0,
+        "x1": 86.1,
+        "y1": 60.0
       }
     },
     "Sayyid Mujtaba Musavi Lari": {
@@ -528,8 +630,15 @@
         "https://en.wikipedia.org/wiki/Mujtaba_Musavi_Lari"
       ],
       "focus": {
-        "x": 48,
-        "y": 40
+        "x": 46.8,
+        "y": 50.0,
+        "zoom": 0.62
+      },
+      "head": {
+        "x0": 8.6,
+        "y0": 0.0,
+        "x1": 85.0,
+        "y1": 100.0
       }
     },
     "Ibrahim Amini": {
@@ -550,14 +659,21 @@
       "originalWidth": 2000,
       "originalHeight": 3000,
       "focus": {
-        "x": 52,
-        "y": 30
+        "x": 51.6,
+        "y": 37.4,
+        "zoom": 0.78
       },
       "bio": "Ayatollah Ibrahim Amini (died 2020) was an Iranian Shia scholar. He published 34 volumes of books on education, ethics and belief, written, as he explained, to meet needs he saw in society.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/List_of_Works_by_Ibrahim_Amini"
-      ]
+      ],
+      "head": {
+        "x0": 26.7,
+        "y0": 1.4,
+        "x1": 76.5,
+        "y1": 73.4
+      }
     },
     "Mohammad Ali Shomali": {
       "wikipedia": "Mohammad Ali Shomali",
@@ -606,9 +722,15 @@
         "https://en.wikipedia.org/wiki/Mohammad_Reyshahri"
       ],
       "focus": {
-        "x": 50,
-        "y": 30,
-        "zoom": 1.2
+        "x": 47.9,
+        "y": 34.6,
+        "zoom": 0.82
+      },
+      "head": {
+        "x0": 21.7,
+        "y0": 0.6,
+        "x1": 74.2,
+        "y1": 68.6
       }
     },
     "Husayn Ansariyan": {
@@ -629,15 +751,21 @@
       "originalWidth": 400,
       "originalHeight": 595,
       "focus": {
-        "x": 52,
-        "y": 25,
-        "zoom": 1.4
+        "x": 54.8,
+        "y": 34.8,
+        "zoom": 0.81
       },
       "bio": "Husayn Ansariyan (born 1944) is an Iranian Shia writer and preacher. His works cover the Quran, hadith, mysticism, ethics and the lives of the Ahl al-Bayt, and include his own writings, translations and lectures.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/List_of_Works_by_Husayn_Ansariyan"
-      ]
+      ],
+      "head": {
+        "x0": 28.1,
+        "y0": 0.0,
+        "x1": 81.4,
+        "y1": 69.5
+      }
     },
     "Muhammad Rida al-Muzaffar": {
       "wikipedia": null,
@@ -660,9 +788,15 @@
       "originalHeight": 515,
       "lowRes": true,
       "focus": {
-        "x": 50,
-        "y": 18,
-        "zoom": 2
+        "x": 48.6,
+        "y": 20.9,
+        "zoom": 1.67
+      },
+      "head": {
+        "x0": 35.3,
+        "y0": 3.1,
+        "x1": 61.9,
+        "y1": 38.8
       }
     },
     "Muhammad Husayn Kashif al-Ghita": {
@@ -688,8 +822,15 @@
       "originalHeight": 743,
       "lowRes": false,
       "focus": {
-        "x": 50,
-        "y": 38
+        "x": 49.9,
+        "y": 47.9,
+        "zoom": 0.62
+      },
+      "head": {
+        "x0": 18.7,
+        "y0": 2.6,
+        "x1": 81.1,
+        "y1": 93.2
       }
     },
     "Sayyid Abdul-Husayn Sharafud-Din al Musawi": {
@@ -715,9 +856,15 @@
       "originalHeight": 552,
       "lowRes": false,
       "focus": {
-        "x": 48,
-        "y": 30,
-        "zoom": 1.6
+        "x": 49.9,
+        "y": 26.4,
+        "zoom": 1.64
+      },
+      "head": {
+        "x0": 36.4,
+        "y0": 3.2,
+        "x1": 63.4,
+        "y1": 49.5
       }
     },
     "Murtada al-Askari": {
@@ -741,8 +888,15 @@
       "originalHeight": 350,
       "lowRes": true,
       "focus": {
-        "x": 50,
-        "y": 38
+        "x": 58.2,
+        "y": 42.5,
+        "zoom": 0.67
+      },
+      "head": {
+        "x0": 25.5,
+        "y0": 1.5,
+        "x1": 91.0,
+        "y1": 83.4
       }
     },
     "Ja'far Subhani": {
@@ -768,9 +922,15 @@
       "originalHeight": 800,
       "lowRes": false,
       "focus": {
-        "x": 50,
-        "y": 30,
-        "zoom": 1.3
+        "x": 51.5,
+        "y": 35.0,
+        "zoom": 0.8
+      },
+      "head": {
+        "x0": 24.3,
+        "y0": 0.0,
+        "x1": 78.8,
+        "y1": 69.9
       }
     },
     "Sir Mohammad Iqbal": {
@@ -791,14 +951,21 @@
       "originalWidth": 1491,
       "originalHeight": 2136,
       "focus": {
-        "x": 42,
-        "y": 35
+        "x": 35.9,
+        "y": 47.6,
+        "zoom": 0.62
       },
       "bio": "Muhammad Iqbal Lahori (1877–1938) was a Muslim thinker, poet and politician. He called for Islamic thought and theology to be renewed in the light of modern knowledge, and saw Islam as a complete civilization and way of life.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Iqbal_Lahori"
-      ]
+      ],
+      "head": {
+        "x0": 0.0,
+        "y0": 0.0,
+        "x1": 71.8,
+        "y1": 95.2
+      }
     },
     "Tayeb Salih": {
       "wikipedia": "Tayeb Salih",
@@ -818,14 +985,21 @@
       "originalWidth": 300,
       "originalHeight": 225,
       "focus": {
-        "x": 55,
-        "y": 40
+        "x": 56.5,
+        "y": 50.0,
+        "zoom": 0.84
       },
       "bio": "Sudanese novelist and journalist (1929–2009), one of the best-known Arab writers of the 20th century, author of Season of Migration to the North.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Tayeb_Salih"
-      ]
+      ],
+      "head": {
+        "x0": 25.1,
+        "y0": 0.0,
+        "x1": 88.0,
+        "y1": 100.0
+      }
     },
     "Akbar S. Ahmed": {
       "wikipedia": "Akbar Ahmed",
@@ -845,14 +1019,21 @@
       "originalWidth": 548,
       "originalHeight": 728,
       "focus": {
-        "x": 50,
-        "y": 33
+        "x": 50.1,
+        "y": 42.3,
+        "zoom": 0.75
       },
       "bio": "Pakistani-American academic, author and former diplomat (born 1943). He holds the Ibn Khaldun Chair of Islamic Studies at American University in Washington, D.C., and served as Pakistan's High Commissioner to the UK.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Akbar_Ahmed"
-      ]
+      ],
+      "head": {
+        "x0": 19.4,
+        "y0": 0.0,
+        "x1": 80.7,
+        "y1": 84.6
+      }
     },
     "Khurshid Ahmad": {
       "wikipedia": "Khurshid Ahmad",
@@ -880,14 +1061,21 @@
       "originalWidth": 500,
       "originalHeight": 722,
       "focus": {
-        "x": 50,
-        "y": 35
+        "x": 49.1,
+        "y": 46.6,
+        "zoom": 0.67
       },
       "bio": "Indian Islamic scholar and author (1925–2021), known for his Quran commentary and translation and for founding the Centre for Peace and Spirituality.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Wahiduddin_Khan"
-      ]
+      ],
+      "head": {
+        "x0": 16.2,
+        "y0": 2.9,
+        "x1": 82.1,
+        "y1": 90.3
+      }
     },
     "Muhammad Jawad Chirri": {
       "wikipedia": "Mohamad Jawad Chirri",
@@ -923,9 +1111,15 @@
       "originalHeight": 527,
       "lowRes": false,
       "focus": {
-        "x": 45,
-        "y": 35,
-        "zoom": 1.2
+        "x": 45.4,
+        "y": 47.8,
+        "zoom": 1.02
+      },
+      "head": {
+        "x0": 26.1,
+        "y0": 7.3,
+        "x1": 64.7,
+        "y1": 88.2
       }
     },
     "Muhammad Jawad Mughniyya": {
@@ -950,9 +1144,15 @@
       "originalHeight": 213,
       "lowRes": true,
       "focus": {
-        "x": 48,
-        "y": 18,
-        "zoom": 1.6
+        "x": 46.0,
+        "y": 29.4,
+        "zoom": 1.08
+      },
+      "head": {
+        "x0": 25.3,
+        "y0": 2.0,
+        "x1": 66.8,
+        "y1": 56.7
       }
     },
     "Jalal Ali Ahmad": {
@@ -973,10 +1173,17 @@
       "originalWidth": 533,
       "originalHeight": 688,
       "focus": {
-        "x": 52,
-        "y": 35
+        "x": 50.9,
+        "y": 50.0,
+        "zoom": 0.65
       },
-      "bioStatus": "from our data only"
+      "bioStatus": "from our data only",
+      "head": {
+        "x0": 14.8,
+        "y0": 0.0,
+        "x1": 86.9,
+        "y1": 100.0
+      }
     },
     "George Jordac": {
       "wikipedia": "George Jordac",
@@ -1001,9 +1208,15 @@
       "originalHeight": 359,
       "lowRes": true,
       "focus": {
-        "x": 48,
-        "y": 25,
-        "zoom": 1.4
+        "x": 52.0,
+        "y": 31.8,
+        "zoom": 0.97
+      },
+      "head": {
+        "x0": 32.8,
+        "y0": 0.0,
+        "x1": 71.3,
+        "y1": 63.6
       }
     },
     "Laleh Bakhtiar": {
@@ -1024,14 +1237,21 @@
       "originalWidth": 802,
       "originalHeight": 960,
       "focus": {
-        "x": 52,
-        "y": 40
+        "x": 55.9,
+        "y": 48.7,
+        "zoom": 0.72
       },
       "bio": "Iranian-American scholar, author, translator and psychologist (1938–2020). She translated many works on Islam and Sufism, including books by Ali Shariati, and produced an English translation of the Quran, The Sublime Quran.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Laleh_Bakhtiar"
-      ]
+      ],
+      "head": {
+        "x0": 23.8,
+        "y0": 0.0,
+        "x1": 88.0,
+        "y1": 97.4
+      }
     },
     "Hazrat Inayat Khan": {
       "wikipedia": "Inayat Khan",
@@ -1075,15 +1295,21 @@
       "originalWidth": 628,
       "originalHeight": 475,
       "focus": {
-        "x": 52,
-        "y": 38,
-        "zoom": 1.4
+        "x": 53.3,
+        "y": 43.0,
+        "zoom": 0.98
       },
       "bio": "Palestinian-American journalist (born 1971) based in Chicago. He is known for advocating a single democratic state for Israelis and Palestinians, the subject of his book One Country.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Ali_Abunimah"
-      ]
+      ],
+      "head": {
+        "x0": 34.8,
+        "y0": 0.0,
+        "x1": 71.8,
+        "y1": 85.9
+      }
     },
     "Alija Ali Izetbegovic": {
       "wikipedia": "Alija Izetbegović",
@@ -1103,14 +1329,21 @@
       "originalWidth": 755,
       "originalHeight": 1056,
       "focus": {
-        "x": 45,
-        "y": 30
+        "x": 46.9,
+        "y": 43.0,
+        "zoom": 0.7
       },
       "bio": "Bosnian politician, philosopher and author (1925–2003) who led Bosnia and Herzegovina from 1990 to 2000. His book Islam Between East and West sets out his philosophy.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Alija_Izetbegovi%C4%87"
-      ]
+      ],
+      "head": {
+        "x0": 10.1,
+        "y0": 0.0,
+        "x1": 83.8,
+        "y1": 86.1
+      }
     },
     "Amin Maalouf": {
       "wikipedia": "Amin Maalouf",
@@ -1130,15 +1363,21 @@
       "originalWidth": 454,
       "originalHeight": 454,
       "focus": {
-        "x": 42,
-        "y": 30,
-        "zoom": 1.9
+        "x": 40.5,
+        "y": 36.9,
+        "zoom": 1.27
       },
       "bio": "Lebanese-French author (born 1949) who writes in French. His best-known non-fiction book is The Crusades Through Arab Eyes.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Amin_Maalouf"
-      ]
+      ],
+      "head": {
+        "x0": 22.4,
+        "y0": 3.8,
+        "x1": 58.6,
+        "y1": 70.0
+      }
     },
     "Amir Taheri": {
       "wikipedia": "Amir Taheri",
@@ -1170,14 +1409,21 @@
       "originalWidth": 945,
       "originalHeight": 1357,
       "focus": {
-        "x": 50,
-        "y": 38
+        "x": 50.8,
+        "y": 41.1,
+        "zoom": 0.79
       },
       "bio": "Kurdish scholar of Islam from Turkey (1877–1960) who wrote the Risale-i Nur, a large collection of Quranic commentary.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Said_Nursi"
-      ]
+      ],
+      "head": {
+        "x0": 19.4,
+        "y0": 3.9,
+        "x1": 82.3,
+        "y1": 78.2
+      }
     },
     "Dr. Zakir Naik": {
       "wikipedia": "Zakir Naik",
@@ -1197,15 +1443,21 @@
       "originalWidth": 630,
       "originalHeight": 794,
       "focus": {
-        "x": 48,
-        "y": 18,
-        "zoom": 2
+        "x": 46.4,
+        "y": 19.1,
+        "zoom": 1.74
       },
       "bio": "Indian Islamic preacher and speaker (born 1965) who focuses on comparative religion. He founded the Islamic Research Foundation and Peace TV.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Zakir_Naik"
-      ]
+      ],
+      "head": {
+        "x0": 30.8,
+        "y0": 0.0,
+        "x1": 62.0,
+        "y1": 38.2
+      }
     },
     "Gilles Kepel": {
       "wikipedia": "Gilles Kepel",
@@ -1225,15 +1477,21 @@
       "originalWidth": 1246,
       "originalHeight": 1380,
       "focus": {
-        "x": 48,
-        "y": 20,
-        "zoom": 2.4
+        "x": 45.6,
+        "y": 24.2,
+        "zoom": 1.77
       },
       "bio": "French political scientist and Arabist (born 1955) who specialises in the contemporary Middle East and Muslims in the West.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Gilles_Kepel"
-      ]
+      ],
+      "head": {
+        "x0": 34.0,
+        "y0": 2.7,
+        "x1": 57.1,
+        "y1": 45.6
+      }
     },
     "H.A.R Gibb": {
       "wikipedia": "Hamilton A. R. Gibb",
@@ -1271,14 +1529,21 @@
       "originalWidth": 200,
       "originalHeight": 198,
       "focus": {
-        "x": 55,
-        "y": 35
+        "x": 45.9,
+        "y": 50.0,
+        "zoom": 0.84
       },
       "bio": "Iranian political scientist and translator (1932–1982), known for his studies of modern Islamic political thought.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Hamid_Enayat"
-      ]
+      ],
+      "head": {
+        "x0": 0.0,
+        "y0": 0.0,
+        "x1": 91.8,
+        "y1": 100.0
+      }
     },
     "Hashimi Rafsanjani": {
       "wikipedia": "Akbar Hashemi Rafsanjani",
@@ -1298,10 +1563,17 @@
       "originalWidth": 630,
       "originalHeight": 891,
       "focus": {
-        "x": 50,
-        "y": 42
+        "x": 47.4,
+        "y": 49.2,
+        "zoom": 0.62
       },
-      "bioStatus": "from our data only"
+      "bioStatus": "from our data only",
+      "head": {
+        "x0": 11.3,
+        "y0": 0.0,
+        "x1": 83.4,
+        "y1": 98.5
+      }
     },
     "Heinz Halm": {
       "wikipedia": "Heinz Halm",
@@ -1333,10 +1605,17 @@
       "originalWidth": 713,
       "originalHeight": 1157,
       "focus": {
-        "x": 55,
-        "y": 52
+        "x": 52.1,
+        "y": 56.6,
+        "zoom": 0.62
       },
-      "bioStatus": "from our data only"
+      "bioStatus": "from our data only",
+      "head": {
+        "x0": 4.2,
+        "y0": 13.3,
+        "x1": 100.0,
+        "y1": 100.0
+      }
     },
     "Jimmy Carter": {
       "wikipedia": "Jimmy Carter",
@@ -1356,15 +1635,21 @@
       "originalWidth": 1528,
       "originalHeight": 2027,
       "focus": {
-        "x": 48,
-        "y": 22,
-        "zoom": 1.3
+        "x": 48.2,
+        "y": 32.8,
+        "zoom": 0.97
       },
       "bio": "American politician and humanitarian (1924–2024) who served as the 39th president of the United States from 1977 to 1981.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Jimmy_Carter"
-      ]
+      ],
+      "head": {
+        "x0": 23.4,
+        "y0": 0.0,
+        "x1": 73.1,
+        "y1": 65.6
+      }
     },
     "Josef Pieper": {
       "wikipedia": "Josef Pieper",
@@ -1396,15 +1681,21 @@
       "originalWidth": 180,
       "originalHeight": 270,
       "focus": {
-        "x": 50,
-        "y": 22,
-        "zoom": 1.3
+        "x": 56.0,
+        "y": 35.0,
+        "zoom": 0.8
       },
       "bio": "American political consultant (born 1950) who was senior adviser and deputy chief of staff to President George W. Bush.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Karl_Rove"
-      ]
+      ],
+      "head": {
+        "x0": 27.2,
+        "y0": 0.0,
+        "x1": 84.8,
+        "y1": 70.1
+      }
     },
     "M. Pickthall": {
       "wikipedia": "Marmaduke Pickthall",
@@ -1424,11 +1715,17 @@
       "originalWidth": 400,
       "originalHeight": 574,
       "focus": {
-        "x": 47,
-        "y": 25,
-        "zoom": 1.3
+        "x": 50.6,
+        "y": 32.5,
+        "zoom": 0.9
       },
-      "bioStatus": "from our data only"
+      "bioStatus": "from our data only",
+      "head": {
+        "x0": 25.7,
+        "y0": 0.0,
+        "x1": 75.5,
+        "y1": 65.0
+      }
     },
     "Majid Fakhry": {
       "wikipedia": "Majid Fakhry",
@@ -1460,14 +1757,21 @@
       "originalWidth": 147,
       "originalHeight": 166,
       "focus": {
-        "x": 52,
-        "y": 32
+        "x": 54.3,
+        "y": 43.6,
+        "zoom": 0.98
       },
       "bio": "English writer and scholar of Islam (1909–2005), also known as Abu Bakr Siraj ad-Din. He is best known for his biography Muhammad: His Life Based on the Earliest Sources.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Martin_Lings"
-      ]
+      ],
+      "head": {
+        "x0": 31.3,
+        "y0": 5.7,
+        "x1": 77.3,
+        "y1": 81.5
+      }
     },
     "Martyr Mustafa Chamran": {
       "wikipedia": "Mostafa Chamran",
@@ -1487,10 +1791,17 @@
       "originalWidth": 440,
       "originalHeight": 600,
       "focus": {
-        "x": 52,
-        "y": 40
+        "x": 49.7,
+        "y": 50.0,
+        "zoom": 0.62
       },
-      "bioStatus": "from our data only"
+      "bioStatus": "from our data only",
+      "head": {
+        "x0": 0.4,
+        "y0": 0.0,
+        "x1": 99.0,
+        "y1": 100.0
+      }
     },
     "Mehdi Golshani": {
       "wikipedia": "Mehdi Golshani",
@@ -1534,14 +1845,21 @@
       "originalWidth": 175,
       "originalHeight": 297,
       "focus": {
-        "x": 50,
-        "y": 28
+        "x": 56.4,
+        "y": 45.6,
+        "zoom": 0.62
       },
       "bio": "American writer and politician (1921–2019) who represented Illinois in the US House of Representatives for over twenty years.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Paul_Findley"
-      ]
+      ],
+      "head": {
+        "x0": 12.8,
+        "y0": 0.0,
+        "x1": 100.0,
+        "y1": 91.2
+      }
     },
     "Ralph Nader": {
       "wikipedia": "Ralph Nader",
@@ -1561,15 +1879,21 @@
       "originalWidth": 1406,
       "originalHeight": 1667,
       "focus": {
-        "x": 45,
-        "y": 18,
-        "zoom": 2.1
+        "x": 47.4,
+        "y": 23.9,
+        "zoom": 1.48
       },
       "bio": "American lawyer and political activist (born 1934) known for his work on consumer protection, the environment and government reform, and for running for president several times.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Ralph_Nader"
-      ]
+      ],
+      "head": {
+        "x0": 31.4,
+        "y0": 0.0,
+        "x1": 63.4,
+        "y1": 47.9
+      }
     },
     "Robert Fisk": {
       "wikipedia": "Robert Fisk",
@@ -1589,14 +1913,21 @@
       "originalWidth": 897,
       "originalHeight": 996,
       "focus": {
-        "x": 47,
-        "y": 28
+        "x": 48.1,
+        "y": 44.2,
+        "zoom": 0.85
       },
       "bio": "English writer and journalist (1946–2020) who reported from the Middle East for decades, covering the civil war in Lebanon, the Iranian revolution and many other conflicts.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Robert_Fisk"
-      ]
+      ],
+      "head": {
+        "x0": 18.9,
+        "y0": 0.0,
+        "x1": 77.4,
+        "y1": 88.5
+      }
     },
     "Robert C. Tucker": {
       "wikipedia": "Robert C. Tucker",
@@ -1640,15 +1971,21 @@
       "originalWidth": 5472,
       "originalHeight": 3648,
       "focus": {
-        "x": 45,
-        "y": 35,
-        "zoom": 1.4
+        "x": 45.9,
+        "y": 46.8,
+        "zoom": 1.0
       },
       "bio": "Japanese scholar of comparative philosophy and mysticism (born 1943) and professor of religion and Asian studies at Stony Brook University.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Sachiko_Murata"
-      ]
+      ],
+      "head": {
+        "x0": 32.2,
+        "y0": 5.0,
+        "x1": 59.6,
+        "y1": 88.6
+      }
     },
     "Strobe Talbott": {
       "wikipedia": "Strobe Talbott",
@@ -1668,15 +2005,21 @@
       "originalWidth": 346,
       "originalHeight": 444,
       "focus": {
-        "x": 50,
-        "y": 22,
-        "zoom": 1.3
+        "x": 50.2,
+        "y": 34.6,
+        "zoom": 0.95
       },
       "bio": "American foreign policy analyst and journalist (born 1946) who served as US Deputy Secretary of State from 1994 to 2001.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Strobe_Talbott"
-      ]
+      ],
+      "head": {
+        "x0": 25.0,
+        "y0": 0.0,
+        "x1": 75.4,
+        "y1": 69.2
+      }
     },
     "Tariq Ramadan": {
       "wikipedia": "Tariq Ramadan",
@@ -1696,15 +2039,21 @@
       "originalWidth": 1095,
       "originalHeight": 1587,
       "focus": {
-        "x": 45,
-        "y": 25,
-        "zoom": 1.3
+        "x": 37.9,
+        "y": 40.2,
+        "zoom": 0.72
       },
       "bio": "Swiss philosopher and writer on Islam (born 1962) who taught contemporary Islamic studies at the University of Oxford.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Tariq_Ramadan"
-      ]
+      ],
+      "head": {
+        "x0": 6.4,
+        "y0": 0.0,
+        "x1": 69.5,
+        "y1": 80.5
+      }
     },
     "Thomas W. Lippman": {
       "wikipedia": "Thomas W. Lippman",
@@ -1736,14 +2085,21 @@
       "originalWidth": 329,
       "originalHeight": 448,
       "focus": {
-        "x": 48,
-        "y": 42
+        "x": 51.0,
+        "y": 50.0,
+        "zoom": 0.62
       },
       "bio": "Wilferd Madelung (1930–2023) was a German scholar of Islam and Shia studies who wrote around 200 books and articles. The Succession to Muhammad is among his best-known works, and he did much to introduce Shi'ism to Western readers.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Wilferd_Madelung"
-      ]
+      ],
+      "head": {
+        "x0": 7.2,
+        "y0": 0.0,
+        "x1": 94.7,
+        "y1": 100.0
+      }
     },
     "Ziba Mir-Hosseini": {
       "wikipedia": "Ziba Mir-Hosseini",
@@ -1787,15 +2143,21 @@
       "originalWidth": 393,
       "originalHeight": 662,
       "focus": {
-        "x": 47,
-        "y": 20,
-        "zoom": 1.3
+        "x": 55.4,
+        "y": 34.3,
+        "zoom": 0.79
       },
       "bio": "Sir Thomas Walker Arnold (1864–1930) was a British orientalist and historian of Islamic art who taught at Aligarh and Lahore. He is best known for The Preaching of Islam, a history of how Islam spread through peaceful means.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Thomas_Walker_Arnold"
-      ]
+      ],
+      "head": {
+        "x0": 28.2,
+        "y0": 2.6,
+        "x1": 82.6,
+        "y1": 66.0
+      }
     },
     "Professor T.B. Irving": {
       "wikipedia": "Thomas Ballantine Irving",
@@ -1839,14 +2201,21 @@
       "originalWidth": 734,
       "originalHeight": 1022,
       "focus": {
-        "x": 52,
-        "y": 38
+        "x": 48.4,
+        "y": 50.3,
+        "zoom": 0.62
       },
       "bio": "Ayatollah Sayyid Mahmud Taleghani (1911–1979) was an Iranian Shia scholar and thinker, a leader of the movement against the Shah and a founder of the Freedom Movement of Iran.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Mahmoud_Taleghani"
-      ]
+      ],
+      "head": {
+        "x0": 8.7,
+        "y0": 0.6,
+        "x1": 88.0,
+        "y1": 100.0
+      }
     },
     "Ayatullah Sayyid Abu Al-Qasim Al-Musawi Al-Khu'i": {
       "wikipedia": "Abu al-Qasim al-Khoei",
@@ -1871,9 +2240,15 @@
       "originalHeight": 599,
       "lowRes": true,
       "focus": {
-        "x": 42,
-        "y": 18,
-        "zoom": 1.8
+        "x": 54.2,
+        "y": 20.8,
+        "zoom": 1.51
+      },
+      "head": {
+        "x0": 39.1,
+        "y0": 0.3,
+        "x1": 69.3,
+        "y1": 41.4
       }
     },
     "Ayatullah Jawadi Amuli": {
@@ -1899,9 +2274,15 @@
       "originalHeight": 599,
       "lowRes": false,
       "focus": {
-        "x": 48,
-        "y": 25,
-        "zoom": 1.6
+        "x": 45.7,
+        "y": 26.2,
+        "zoom": 1.58
+      },
+      "head": {
+        "x0": 31.1,
+        "y0": 2.1,
+        "x1": 60.3,
+        "y1": 50.4
       }
     },
     "Ayatullah Gulpaygani": {
@@ -1927,9 +2308,15 @@
       "originalHeight": 639,
       "lowRes": true,
       "focus": {
-        "x": 50,
-        "y": 25,
-        "zoom": 1.6
+        "x": 41.0,
+        "y": 27.7,
+        "zoom": 1.14
+      },
+      "head": {
+        "x0": 21.4,
+        "y0": 2.8,
+        "x1": 60.7,
+        "y1": 52.6
       }
     },
     "Ayatullah Ali Mishkini": {
@@ -1955,9 +2342,15 @@
       "originalHeight": 574,
       "lowRes": true,
       "focus": {
-        "x": 45,
-        "y": 33,
-        "zoom": 1.4
+        "x": 56.8,
+        "y": 32.9,
+        "zoom": 1.13
+      },
+      "head": {
+        "x0": 32.9,
+        "y0": 7.1,
+        "x1": 80.7,
+        "y1": 58.8
       }
     },
     "Ayatollah Hossein Vahid Khorasani": {
@@ -1983,8 +2376,15 @@
       "originalHeight": 450,
       "lowRes": true,
       "focus": {
-        "x": 55,
-        "y": 45
+        "x": 46.1,
+        "y": 46.9,
+        "zoom": 0.77
+      },
+      "head": {
+        "x0": 11.2,
+        "y0": 10.5,
+        "x1": 81.0,
+        "y1": 83.3
       }
     },
     "Ayatullah Sayyid Muhammad Taqi-al-Modarresi": {
@@ -2005,11 +2405,17 @@
       "originalWidth": 425,
       "originalHeight": 279,
       "focus": {
-        "x": 48,
-        "y": 30,
-        "zoom": 1.3
+        "x": 44.5,
+        "y": 43.4,
+        "zoom": 0.97
       },
-      "bioStatus": "from our data only"
+      "bioStatus": "from our data only",
+      "head": {
+        "x0": 28.3,
+        "y0": 0.0,
+        "x1": 60.6,
+        "y1": 86.8
+      }
     },
     "Imam Muhammad Shirazi": {
       "wikipedia": "Muhammad al-Husayni al-Shirazi",
@@ -2035,10 +2441,17 @@
       "originalWidth": 397,
       "originalHeight": 465,
       "focus": {
-        "x": 52,
-        "y": 25
+        "x": 49.3,
+        "y": 29.2,
+        "zoom": 1.23
       },
-      "bioStatus": "from our data only"
+      "bioStatus": "from our data only",
+      "head": {
+        "x0": 30.4,
+        "y0": 0.0,
+        "x1": 68.3,
+        "y1": 58.4
+      }
     },
     "Shaykh Fadhlalla Haeri": {
       "wikipedia": "Fadhlalla Haeri",
@@ -2069,8 +2482,15 @@
       "originalHeight": 1466,
       "lowRes": false,
       "focus": {
-        "x": 50,
-        "y": 38
+        "x": 50.3,
+        "y": 44.9,
+        "zoom": 0.69
+      },
+      "head": {
+        "x0": 19.8,
+        "y0": 3.2,
+        "x1": 80.7,
+        "y1": 86.5
       }
     },
     "Abdul Husayn Dastghaib Shirazi": {
@@ -2094,8 +2514,15 @@
       "originalHeight": 551,
       "lowRes": true,
       "focus": {
-        "x": 55,
-        "y": 37
+        "x": 56.1,
+        "y": 40.0,
+        "zoom": 1.08
+      },
+      "head": {
+        "x0": 33.7,
+        "y0": 8.2,
+        "x1": 78.5,
+        "y1": 71.8
       }
     },
     "Abbasali Amid Zanjani": {
@@ -2116,15 +2543,21 @@
       "originalWidth": 652,
       "originalHeight": 816,
       "focus": {
-        "x": 48,
-        "y": 25,
-        "zoom": 1.6
+        "x": 51.2,
+        "y": 28.4,
+        "zoom": 1.26
       },
       "bio": "Abbas Ali Amid Zanjani (died 2011) was an Iranian Shia jurist and writer. His best-known work is a ten-volume collection on Islamic political jurisprudence (Fiqh-i siyasi).",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/List_of_Works_by_Abbas_Ali_Amid_Zanjani"
-      ]
+      ],
+      "head": {
+        "x0": 34.5,
+        "y0": 1.8,
+        "x1": 67.9,
+        "y1": 55.0
+      }
     },
     "Sherwood Eddy": {
       "wikipedia": "Sherwood Eddy",
@@ -2144,15 +2577,21 @@
       "originalWidth": 707,
       "originalHeight": 784,
       "focus": {
-        "x": 47,
-        "y": 30,
-        "zoom": 1.2
+        "x": 49.4,
+        "y": 46.6,
+        "zoom": 0.81
       },
       "bio": "American Protestant missionary, administrator and educator (1871–1963) who wrote many books and worked across Asia and the Middle East.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Sherwood_Eddy"
-      ]
+      ],
+      "head": {
+        "x0": 23.3,
+        "y0": 0.0,
+        "x1": 75.6,
+        "y1": 93.2
+      }
     },
     "Sultanul-Waizin Shirazi": {
       "wikipedia": "Sultan al-Wa'izin Shirazi",
@@ -2172,15 +2611,21 @@
       "originalWidth": 416,
       "originalHeight": 564,
       "focus": {
-        "x": 50,
-        "y": 25,
-        "zoom": 1.3
+        "x": 47.4,
+        "y": 25.1,
+        "zoom": 1.23
       },
       "bio": "Sultan al-Wa'izin Shirazi, Sayyid Muhammad Musawi Shirazi (1897–1971), was a Shia scholar and preacher famous for his sermons and debates. His book Peshawar Nights (Shab-ha-yi Pishawar) records his debates with Sunni scholars.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Sultan_al-Wa'izin_Shirazi"
-      ]
+      ],
+      "head": {
+        "x0": 27.7,
+        "y0": 0.0,
+        "x1": 67.0,
+        "y1": 50.2
+      }
     },
     "Haji Mirza Mehdi Pooya": {
       "wikipedia": "Mirza Mahdi Pouya",
@@ -2226,15 +2671,21 @@
       "originalWidth": 1120,
       "originalHeight": 1000,
       "focus": {
-        "x": 50,
-        "y": 25,
-        "zoom": 1.3
+        "x": 44.9,
+        "y": 41.9,
+        "zoom": 1.17
       },
       "bio": "Allama Rasheed Turabi (1908–1973) was a Shia scholar, orator, poet and philosopher from the Indian subcontinent, later based in Pakistan.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Rasheed_Turabi"
-      ]
+      ],
+      "head": {
+        "x0": 27.8,
+        "y0": 5.9,
+        "x1": 61.9,
+        "y1": 77.9
+      }
     },
     "Syed Jawad Naqvi": {
       "wikipedia": "Syed Jawad Naqvi",
@@ -2278,15 +2729,21 @@
       "originalWidth": 1475,
       "originalHeight": 2127,
       "focus": {
-        "x": 50,
-        "y": 28,
-        "zoom": 1.2
+        "x": 50.6,
+        "y": 39.3,
+        "zoom": 0.94
       },
       "bio": "Indian religious leader (1835–1908) who founded the Ahmadiyya movement.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Mirza_Ghulam_Ahmad"
-      ]
+      ],
+      "head": {
+        "x0": 24.8,
+        "y0": 8.4,
+        "x1": 76.3,
+        "y1": 70.2
+      }
     },
     "Ayatullah Najafi Quchani": {
       "wikipedia": null,
@@ -2363,9 +2820,15 @@
       "originalHeight": 585,
       "lowRes": true,
       "focus": {
-        "x": 45,
-        "y": 15,
-        "zoom": 2.2
+        "x": 47.0,
+        "y": 16.0,
+        "zoom": 2.4
+      },
+      "head": {
+        "x0": 36.2,
+        "y0": 1.7,
+        "x1": 57.7,
+        "y1": 30.3
       }
     },
     "Muhammad Husayn al-Irfani": {
@@ -2397,8 +2860,15 @@
       "originalHeight": 776,
       "lowRes": false,
       "focus": {
-        "x": 40,
-        "y": 42
+        "x": 42.1,
+        "y": 42.0,
+        "zoom": 0.78
+      },
+      "head": {
+        "x0": 13.6,
+        "y0": 0.0,
+        "x1": 70.6,
+        "y1": 83.9
       }
     },
     "Muhammad Mahdi al-Naraqi": {
@@ -2421,9 +2891,15 @@
       "originalHeight": 216,
       "lowRes": true,
       "focus": {
-        "x": 50,
-        "y": 25,
-        "zoom": 1.6
+        "x": 48.6,
+        "y": 28.8,
+        "zoom": 1.13
+      },
+      "head": {
+        "x0": 25.3,
+        "y0": 4.3,
+        "x1": 72.0,
+        "y1": 53.3
       }
     },
     "Mustafa Zamani": {
@@ -2516,14 +2992,21 @@
       "originalWidth": 4104,
       "originalHeight": 5670,
       "focus": {
-        "x": 40,
-        "y": 25
+        "x": 49.0,
+        "y": 32.5,
+        "zoom": 0.94
       },
       "bio": "Iranian theologian and politician (1933–1981) who briefly served as Prime Minister of Iran in 1981 before he was killed in a bombing.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Mohammad-Javad_Bahonar"
-      ]
+      ],
+      "head": {
+        "x0": 27.9,
+        "y0": 0.0,
+        "x1": 70.1,
+        "y1": 65.0
+      }
     },
     "Dr. Muhammad Abdul Hai Aarfi": {
       "bioStatus": "from our data only"
@@ -2992,8 +3475,15 @@
       "originalHeight": 715,
       "lowRes": false,
       "focus": {
-        "x": 52,
-        "y": 42
+        "x": 58.0,
+        "y": 42.5,
+        "zoom": 0.89
+      },
+      "head": {
+        "x0": 33.7,
+        "y0": 0.8,
+        "x1": 82.3,
+        "y1": 84.2
       }
     },
     "Michael McClain": {
@@ -3107,8 +3597,15 @@
       "originalHeight": 316,
       "lowRes": true,
       "focus": {
-        "x": 50,
-        "y": 38
+        "x": 52.5,
+        "y": 48.0,
+        "zoom": 0.93
+      },
+      "head": {
+        "x0": 27.9,
+        "y0": 5.0,
+        "x1": 77.1,
+        "y1": 90.9
       }
     },
     "Mohammed Namazi": {
@@ -3244,9 +3741,15 @@
       "originalHeight": 300,
       "lowRes": false,
       "focus": {
-        "x": 40,
-        "y": 22,
-        "zoom": 1.6
+        "x": 36.0,
+        "y": 44.5,
+        "zoom": 0.94
+      },
+      "head": {
+        "x0": 19.5,
+        "y0": 0.0,
+        "x1": 52.5,
+        "y1": 88.9
       }
     },
     "Sayyid Rida Sadr": {
@@ -3269,9 +3772,15 @@
       "originalHeight": 390,
       "lowRes": true,
       "focus": {
-        "x": 50,
-        "y": 30,
-        "zoom": 1.4
+        "x": 49.5,
+        "y": 25.0,
+        "zoom": 1.25
+      },
+      "head": {
+        "x0": 31.7,
+        "y0": 1.2,
+        "x1": 67.2,
+        "y1": 48.7
       }
     },
     "S.S. Safavi": {
@@ -3501,9 +4010,15 @@
       "originalHeight": 844,
       "lowRes": false,
       "focus": {
-        "x": 45,
-        "y": 30,
-        "zoom": 1.6
+        "x": 40.5,
+        "y": 22.8,
+        "zoom": 2.46
+      },
+      "head": {
+        "x0": 30.4,
+        "y0": 10.7,
+        "x1": 50.6,
+        "y1": 35.0
       }
     }
   }

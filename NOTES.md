@@ -63,8 +63,13 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
     navy-and-gold initials badge (and a large initials panel on their page).
   - **Author pages** list the author's books large (`src/components/AuthorBooks.tsx`): big covers in a 3-column grid
     (2 on tablets, 1 on small phones), with title, category, shelf number and a link; one or two books get bigger cards.
-  - **Face position:** each photo's `focus` (x, y in percent, set by eye) keeps the face centred whenever the photo is
-    cropped, at any size; an optional `zoom` enlarges far-away shots in the small round badges.
+  - **Face framing:** script `scripts/frame_author_photos.py` (Python + OpenCV's YuNet face detector) finds each
+    face, widens it to the whole head (headwear, beard and chin) and stores the head box (`head`) and the centre + zoom
+    (`focus: {x, y, zoom}`) in `data/authors.json`. The round badges are drawn from that: the head sits in the middle with
+    breathing room. Zoom below 1 means the circle reaches past a photo whose head already fills the picture; the gap is a
+    soft blurred copy of the same photo. A `head` box already in the file is kept (fix one by hand if a face looks off); run
+    with `--redo` to detect again. Setup: `python3 -m venv v && v/bin/pip install opencv-python-headless numpy`, plus the
+    YuNet model `face_detection_yunet_2023mar.onnx` from github.com/opencv/opencv_zoo.
   - The Prophet, the Imams, Lady Fatima and other holy figures (including books attributed to them) never get a
     picture and are never looked up (`src/lib/authorPhotos.ts` enforces this); their bios are left for you to write.
   - **Author names are links** everywhere (book pages, lists, search, slider, featured sections), except on the

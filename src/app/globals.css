@@ -2379,11 +2379,21 @@ button:active,
   background: var(--navy);
   box-shadow: 0 0 0 2px var(--gold-light), 0 0 0 3px var(--card);
 }
+.author-avatar {
+  position: relative;
+}
+/* The photo is placed exactly by inline styles (see circleLayout in src/lib/authorPhotos.ts). */
 .author-avatar img {
+  display: block;
+}
+.author-avatar .avatar-bg {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 22%;
+  transform: scale(1.5);
+  filter: blur(6px) saturate(1.1);
 }
 .author-avatar-initials {
   background: linear-gradient(160deg, var(--navy), var(--ink));
