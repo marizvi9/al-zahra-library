@@ -50,8 +50,7 @@ export default function HomePage() {
               <p className="hero-sub">at the Islamic Education Center of Houston</p>
               <Ornament className="hero-ornament" />
               <p className="hero-lede">
-                We&rsquo;re glad you&rsquo;re here. Explore {books.length} books on faith, history, law, thought
-                and more.
+                Peace be upon you! Explore {books.length} books on faith, history, law, thought and more.
               </p>
               <SearchBox large />
             </div>
