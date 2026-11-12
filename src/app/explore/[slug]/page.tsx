@@ -64,12 +64,10 @@ export default async function CategoryPage({ params }: Props) {
         </h2>
         <BookGrid items={list.map(toGridItem)} showCategory={showSubs} paged={showSubs} />
       </section>
-      {!showSubs && (
-        <SubTopicPager
-          prev={prevCat ? { href: `/explore/${prevCat.slug}/`, name: prevCat.name, kind: "category" } : null}
-          next={nextCat ? { href: `/explore/${nextCat.slug}/`, name: nextCat.name, kind: "category" } : null}
-        />
-      )}
+      <SubTopicPager
+        prev={prevCat ? { href: `/explore/${prevCat.slug}/`, name: prevCat.name, kind: "category" } : null}
+        next={nextCat ? { href: `/explore/${nextCat.slug}/`, name: nextCat.name, kind: "category" } : null}
+      />
     </div>
   );
 }
