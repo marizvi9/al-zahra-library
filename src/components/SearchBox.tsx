@@ -6,7 +6,7 @@
 // - Clicking into the empty bar shows your recent searches (kept only in this browser,
 //   see src/lib/recentSearches.ts), each with a ✕ to remove it, plus "Clear all".
 //   Down arrow moves into the list; Escape closes it.
-// - After 2+ characters it shows a dropdown of up to 3 matching authors (labelled "Author") and 7 matching books:
+// - After 2+ characters it shows a dropdown of up to 3 matching authors (labelled "Author"), 2 multi-volume sets (labelled "Set") and 7 matching books:
 //   - Up / Down arrows move through the suggestions, Enter opens the highlighted one
 //     (or runs the full search if none is highlighted), Escape closes the list.
 //   - Tap or click a suggestion to open it. The last row is "See all results".
@@ -18,11 +18,12 @@ import { useRouter } from "next/navigation";
 import ArchCover from "./ArchCover";
 import { withBase } from "@/lib/paths";
 import AvatarView from "./AvatarView";
-import { buildAuthorIndex, buildIndex, searchAuthors, suggest, type Indexed, type SearchData, type SearchRecord } from "@/lib/search";
+import { buildAuthorIndex, buildIndex, buildSetIndex, searchAuthors, searchSets, suggest, type Indexed, type SearchData, type SearchRecord, type SetRecord } from "@/lib/search";
 import { addRecent, clearRecent, getRecent, onRecentChange, removeRecent } from "@/lib/recentSearches";
 
 const MAX_SUGGESTIONS = 7;
 const MAX_AUTHORS = 3;
+const MAX_SETS = 2;
 
 export default function SearchBox({ large = false, compact = false }: { large?: boolean; compact?: boolean }) {
   const router = useRouter();
@@ -64,13 +65,19 @@ export default function SearchBox({ large = false, compact = false }: { large?: 
   const authorIndex = useMemo(() => (data ? buildAuthorIndex(data.authors) : []), [data]);
   const books = useMemo(() => suggest(index, query, MAX_SUGGESTIONS), [index, query]);
   const authorHits = useMemo(() => (query.trim().length >= 2 ? searchAuthors(authorIndex, query).slice(0, MAX_AUTHORS) : []), [authorIndex, query]);
-  // One list of rows: authors first (labelled "Author"), then books.
-  type Row = { kind: "author"; a: (typeof authorHits)[number] } | { kind: "book"; r: SearchRecord };
+  const setIndex = useMemo(() => (data ? buildSetIndex(data.sets ?? []) : []), [data]);
+  const setHits = useMemo(() => (query.trim().length >= 2 ? searchSets(setIndex, query).slice(0, MAX_SETS) : []), [setIndex, query]);
+  // One list of rows: authors first (labelled "Author"), then sets (labelled "Set"), then books.
+  type Row = { kind: "author"; a: (typeof authorHits)[number] } | { kind: "set"; s: SetRecord } | { kind: "book"; r: SearchRecord };
   const rows: Row[] = useMemo(
-    () => [...authorHits.map((a) => ({ kind: "author" as const, a })), ...books.map((r) => ({ kind: "book" as const, r }))],
-    [authorHits, books],
+    () => [
+      ...authorHits.map((a) => ({ kind: "author" as const, a })),
+      ...setHits.map((s) => ({ kind: "set" as const, s })),
+      ...books.map((r) => ({ kind: "book" as const, r })),
+    ],
+    [authorHits, setHits, books],
   );
-  const rowHref = (row: Row) => (row.kind === "author" ? `/authors/${row.a.slug}/` : `/books/${row.r.slug}/`);
+  const rowHref = (row: Row) => (row.kind === "author" ? `/authors/${row.a.slug}/` : row.kind === "set" ? `/sets/${row.s.slug}/` : `/books/${row.r.slug}/`);
 
   const trimmed = query.trim();
   const ready = trimmed.length >= 2;
@@ -218,7 +225,7 @@ export default function SearchBox({ large = false, compact = false }: { large?: 
             const heading =
               (i === 0 || rows[i - 1].kind !== row.kind) && (
                 <li role="presentation" className="suggest-section" aria-hidden="true">
-                  {row.kind === "author" ? "Authors" : "Books"}
+                  {row.kind === "author" ? "Authors" : row.kind === "set" ? "Multi-volume sets" : "Books"}
                 </li>
               );
             if (row.kind === "author") {
@@ -244,6 +251,35 @@ export default function SearchBox({ large = false, compact = false }: { large?: 
                       </span>
                       <span className="suggest-meta">
                         {a.count} {a.count === 1 ? "book" : "books"} in the library
+                      </span>
+                    </span>
+                  </li>
+                </Fragment>
+              );
+            }
+            if (row.kind === "set") {
+              const s = row.s;
+              return (
+                <Fragment key={`s-${s.slug}`}>
+                  {heading}
+                  <li
+                    {...common}
+                    className={`suggest-row ${i === active ? "is-active" : ""}`}
+                    onClick={() => {
+                      addRecent(trimmed);
+                      go(`/sets/${s.slug}/`);
+                    }}
+                  >
+                    <span className="suggest-cover" aria-hidden="true">
+                      {s.thumb ? <img src={s.thumb} alt="" width={36} height={52} /> : <ArchCover title={s.name} author={s.author} seed={s.slug} size="small" />}
+                    </span>
+                    <span className="suggest-text">
+                      <span className="suggest-title" dir="auto">
+                        <span className="type-label">{s.kind === "series" ? "Series" : "Set"}</span>
+                        {s.name}
+                      </span>
+                      <span className="suggest-meta">
+                        {s.held} {s.kind === "series" ? "issues" : s.held === 1 ? "volume" : "volumes"} in the library
                       </span>
                     </span>
                   </li>
@@ -293,7 +329,10 @@ export default function SearchBox({ large = false, compact = false }: { large?: 
                         )
                       : r.credit}
                   </span>
-                  <span className="suggest-cat">{r.category}</span>
+                  <span className="suggest-cat">
+                  {r.category}
+                  {r.set && <> · {r.set.kind === "series" ? "Part of a series" : "Part of a multi-volume set"}: {r.set.volume}</>}
+                </span>
                 </span>
                 </li>
               </Fragment>

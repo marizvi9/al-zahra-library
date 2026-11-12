@@ -4,6 +4,7 @@
 import Link from "next/link";
 import AuthorAvatar from "./AuthorAvatar";
 import Credit from "./Credit";
+import SetLabel from "./SetLabel";
 import type { HomeSection } from "@/lib/homeSections";
 
 export default function FeaturedShelf({ section }: { section: HomeSection }) {
@@ -42,6 +43,7 @@ export default function FeaturedShelf({ section }: { section: HomeSection }) {
                 </span>
               )}
               <span className="shelf-book-desc">{b.description}</span>
+              {b.set && <SetLabel set={b.set} />}
             </div>
           </li>
         ))}

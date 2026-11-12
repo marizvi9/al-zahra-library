@@ -1,0 +1,602 @@
+{
+ "_help": "One entry per multi-volume set (or series of issues). 'volumes' are in order; 'books' lists the catalogue ids (data/books.json) that are that volume (more than one id = the catalogue lists it twice). 'numbers' are the volume numbers used to spot gaps ([3,4] = volumes 3 and 4 in one book). 'totalVolumes' is optional: set it only when you know how many volumes the set has. 'description' is optional text shown on the set page. 'notes' are for the library team. Change this file, then rebuild (npm run build).",
+ "sets": [
+  {
+   "slug": "a-manual-of-islamic-beliefs-and-practice",
+   "name": "A Manual of Islamic Beliefs and Practice",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "Vol. 2 is catalogued twice (ids 695 and 809, the second lists a co-compiler). Vol. 1 is titled just 'I' in the catalogue.",
+   "volumes": [
+    {
+     "label": "Volume 1",
+     "numbers": [
+      1
+     ],
+     "books": [
+      432
+     ]
+    },
+    {
+     "label": "Volume 2",
+     "numbers": [
+      2
+     ],
+     "books": [
+      695,
+      809
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "al-mizan-an-exegesis-of-the-quran",
+   "name": "Al-Mizan – An Exegesis of the Quran",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "Only volume 7 is in the catalogue.",
+   "volumes": [
+    {
+     "label": "Volume 7",
+     "numbers": [
+      7
+     ],
+     "books": [
+      765
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "an-explanatory-translation-of-the-quran",
+   "name": "An Explanatory Translation of the Quran",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "Only volume 1 is in the catalogue.",
+   "volumes": [
+    {
+     "label": "Volume 1",
+     "numbers": [
+      1
+     ],
+     "books": [
+      788
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "dialogue-between-christians-and-muslims",
+   "name": "Dialogue Between Christians and Muslims",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "Part 1 is not in the catalogue. 'Some Reflections on dialogue between Christians and Muslims' (id 722) looks like a different book and is not included.",
+   "volumes": [
+    {
+     "label": "Part 2",
+     "numbers": [
+      2
+     ],
+     "books": [
+      237
+     ]
+    },
+    {
+     "label": "Part 3",
+     "numbers": [
+      3
+     ],
+     "books": [
+      232
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "duaas",
+   "name": "Dua'as",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "Only volume 4 is in the catalogue.",
+   "volumes": [
+    {
+     "label": "Volume 4",
+     "numbers": [
+      4
+     ],
+     "books": [
+      807
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "hayat-al-qulub",
+   "name": "Hayat Al-Qulub",
+   "kind": "set",
+   "totalVolumes": 3,
+   "description": null,
+   "notes": "Volume 3 is shelved at 100 · 40 while volumes 1 and 2 are at 1100 · 10 (as in the catalogue).",
+   "volumes": [
+    {
+     "label": "Volume 1",
+     "numbers": [
+      1
+     ],
+     "books": [
+      5
+     ]
+    },
+    {
+     "label": "Volume 2",
+     "numbers": [
+      2
+     ],
+     "books": [
+      6
+     ]
+    },
+    {
+     "label": "Volume 3",
+     "numbers": [
+      3
+     ],
+     "books": [
+      7
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "history-of-islamic-philosophy",
+   "name": "History of Islamic Philosophy",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "Part 2 is catalogued twice (ids 440 and 342). Majid Fakhry's 'A History of Islamic Philosophy' (id 362) is a different book.",
+   "volumes": [
+    {
+     "label": "Part 1",
+     "numbers": [
+      1
+     ],
+     "books": [
+      439
+     ]
+    },
+    {
+     "label": "Part 2",
+     "numbers": [
+      2
+     ],
+     "books": [
+      440,
+      342
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "international-journal-of-shii-studies",
+   "name": "International Journal of Shi'i Studies",
+   "kind": "series",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "A journal, so this is a series of issues rather than a set. Gaps are not flagged because the full run of issues is unknown. The catalogue spells the title 'Shi'i' and 'Shii'.",
+   "volumes": [
+    {
+     "label": "Volume 1, No. 1 (2003)",
+     "numbers": [
+      1,
+      1
+     ],
+     "books": [
+      63
+     ]
+    },
+    {
+     "label": "Volume 1, No. 2 (2003)",
+     "numbers": [
+      1,
+      2
+     ],
+     "books": [
+      351
+     ]
+    },
+    {
+     "label": "Volume 2, No. 1 (2004)",
+     "numbers": [
+      2,
+      1
+     ],
+     "books": [
+      71
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "iqtisaduna-our-economics",
+   "name": "Iqtisaduna – Our Economics",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "Both held entries are 'Part 1' of their volume.",
+   "volumes": [
+    {
+     "label": "Volume 1, Part 1",
+     "numbers": [
+      1,
+      1
+     ],
+     "books": [
+      313
+     ]
+    },
+    {
+     "label": "Volume 2, Part 1",
+     "numbers": [
+      2,
+      1
+     ],
+     "books": [
+      314
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "issues-in-the-islamic-movement",
+   "name": "Issues in the Islamic Movement",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "Volumes 1, 2 and 4 are not in the catalogue.",
+   "volumes": [
+    {
+     "label": "Volume 3",
+     "numbers": [
+      3
+     ],
+     "books": [
+      506
+     ]
+    },
+    {
+     "label": "Volume 5",
+     "numbers": [
+      5
+     ],
+     "books": [
+      507
+     ]
+    },
+    {
+     "label": "Volume 6",
+     "numbers": [
+      6
+     ],
+     "books": [
+      508
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "kauthar",
+   "name": "Kauthar",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "Volume 1 is not in the catalogue.",
+   "volumes": [
+    {
+     "label": "Volume 2",
+     "numbers": [
+      2
+     ],
+     "books": [
+      758
+     ]
+    },
+    {
+     "label": "Volume 3",
+     "numbers": [
+      3
+     ],
+     "books": [
+      760
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "lessons-on-islamic-doctrine",
+   "name": "Lessons on Islamic Doctrine (Sayyid Mujtaba Musavi Lari)",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "UNSURE: grouped because both are Lari's 'Lessons on Islamic Doctrine' books. 'God and His Attributes: Lessons on Islamic Doctrine' (id 459) is probably another book of the series but has no number in the catalogue, so it is not included.",
+   "volumes": [
+    {
+     "label": "Book 1",
+     "numbers": [
+      1
+     ],
+     "books": [
+      341
+     ]
+    },
+    {
+     "label": "Book 4",
+     "numbers": [
+      4
+     ],
+     "books": [
+      517
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "noor-e-imaan",
+   "name": "Noor e Imaan",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "Only volume 1 is in the catalogue.",
+   "volumes": [
+    {
+     "label": "Volume 1",
+     "numbers": [
+      1
+     ],
+     "books": [
+      482
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "payambar-the-messenger",
+   "name": "Payambar: The Messenger",
+   "kind": "set",
+   "totalVolumes": 3,
+   "description": null,
+   "notes": "Volumes 2 and 3 are each catalogued twice (two copies, spelled 'Payambar the Messenger' and 'Payambar: The Messenger').",
+   "volumes": [
+    {
+     "label": "Volume 1",
+     "numbers": [
+      1
+     ],
+     "books": [
+      708
+     ]
+    },
+    {
+     "label": "Volume 2",
+     "numbers": [
+      2
+     ],
+     "books": [
+      128,
+      434
+     ]
+    },
+    {
+     "label": "Volume 3",
+     "numbers": [
+      3
+     ],
+     "books": [
+      129,
+      435
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "persian-traditions-and-the-influence-of-shiism-in-spain",
+   "name": "Persian Traditions and the Influence of Shi'ism in Spain",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "Only volume 2 is in the catalogue.",
+   "volumes": [
+    {
+     "label": "Volume 2",
+     "numbers": [
+      2
+     ],
+     "books": [
+      795
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "principles-of-islamic-beliefs",
+   "name": "Principles of Islamic Beliefs",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "UNSURE: id 282 is titled 'Part One: Belief' (a different shelf, 200 · 60) and is placed with Volume 1; it may be another edition.",
+   "volumes": [
+    {
+     "label": "Volume 1",
+     "numbers": [
+      1
+     ],
+     "books": [
+      212,
+      282
+     ]
+    },
+    {
+     "label": "Volume 2",
+     "numbers": [
+      2
+     ],
+     "books": [
+      213
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "prophet-yusuf",
+   "name": "Prophet Yusuf",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "Only part 2 ('Part Two') is in the catalogue.",
+   "volumes": [
+    {
+     "label": "Part 2",
+     "numbers": [
+      2
+     ],
+     "books": [
+      102
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "ritual-purity-taharah",
+   "name": "Ritual Purity (Taharah)",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "UNSURE: 'Imam Sadiq's Jurisprudence: Ritual Purity (Taharah)' (id 427) is by the same author and may be the same work, but is not numbered, so it is not included.",
+   "volumes": [
+    {
+     "label": "Volume 1",
+     "numbers": [
+      1
+     ],
+     "books": [
+      737
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "sharai-al-islam",
+   "name": "Shara'i' al-Islam (Fi Masa'il al-Halal wal-Haram)",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "Volumes 3 and 4 are bound together in one book.",
+   "volumes": [
+    {
+     "label": "Volume 1",
+     "numbers": [
+      1
+     ],
+     "books": [
+      417
+     ]
+    },
+    {
+     "label": "Volume 2",
+     "numbers": [
+      2
+     ],
+     "books": [
+      418
+     ]
+    },
+    {
+     "label": "Volume 3–4",
+     "numbers": [
+      3,
+      4
+     ],
+     "books": [
+      419
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "some-companions-of-the-prophet",
+   "name": "Some Companions of the Prophet",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "",
+   "volumes": [
+    {
+     "label": "Part 1",
+     "numbers": [
+      1
+     ],
+     "books": [
+      160
+     ]
+    },
+    {
+     "label": "Part 2",
+     "numbers": [
+      2
+     ],
+     "books": [
+      168
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "the-meaning-of-the-quran",
+   "name": "The Meaning of the Quran (Maududi)",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "Only volume 2 (Surah Al-Imran and An-Nisa) is in the catalogue.",
+   "volumes": [
+    {
+     "label": "Volume 2",
+     "numbers": [
+      2
+     ],
+     "books": [
+      763
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "the-right-path-al-murajaat",
+   "name": "The Right Path (Al-Muraji'aat)",
+   "kind": "set",
+   "totalVolumes": null,
+   "description": null,
+   "notes": "Only volume 2 is in the catalogue.",
+   "volumes": [
+    {
+     "label": "Volume 2",
+     "numbers": [
+      2
+     ],
+     "books": [
+      68
+     ]
+    }
+   ]
+  }
+ ],
+ "notSets": {
+  "_help": "Looked like volumes but are NOT treated as sets:",
+  "400": "Islamic Thought (Part One and Two) - one book containing both parts",
+  "598": "Muhammad The Messenger Of Allah PT 1,2 - one book containing both parts",
+  "690": "Hajj Guide Book - 1 - '1' is a number in the title, no other volume found"
+ }
+}

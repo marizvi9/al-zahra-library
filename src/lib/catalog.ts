@@ -4,6 +4,7 @@ import rawBooks from "@data/books.json";
 import rawCovers from "@data/covers.json";
 import rawDescriptions from "@data/descriptions.json";
 import authorNames from "@data/author-names.json";
+import { setRefFor } from "./setIndex";
 import { categoryDescriptions, DISPLAY_NAMES, FEATURED_CATEGORIES, MORE_TO_EXPLORE } from "./categoryInfo";
 import { withBase } from "./paths";
 
@@ -205,6 +206,7 @@ export const toListItem = (b: Book) => ({
   callNumber: b.callNumber,
   thumb: getThumb(b.id)?.thumb,
   available: b.available,
+  set: setRefFor(b.id),
 });
 
 // ---------- Shelves (Cat # = shelf, Sub Cat # = section on that shelf) ----------
@@ -456,40 +458,3 @@ export function authorOf(b: Book): Author | undefined {
 
 /** Authors with the most books, for the home page. */
 export const topAuthors = (n: number) => [...authors].sort((a, b) => b.count - a.count || collator.compare(a.name, b.name)).slice(0, n);
-
-// ---------- Multi-volume sets ----------
-// Books whose titles carry a volume or part number ("Vol. 2", "Part II") and share the
-// rest of the title. A set is shown only when the library holds 2+ DIFFERENT volumes.
-
-export type BookSet = { title: string; volumes: { label: string; book: Book }[] };
-
-const VOLUME = /\s*[-,:(]?\s*\b(vol\.?|volume|part|pt\.?)\s*([ivx]+|\d+(?:-\d+)?)\b\)?/i;
-const ROMAN: Record<string, number> = { i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6, vii: 7, viii: 8, ix: 9, x: 10 };
-
-export const bookSets: BookSet[] = (() => {
-  const groups = new Map<string, { n: number; label: string; base: string; book: Book }[]>();
-  for (const b of books) {
-    if (b.titleMissing) continue;
-    const m = VOLUME.exec(b.title);
-    if (!m) continue;
-    const raw = m[2].toLowerCase();
-    const n = /^\d/.test(raw) ? parseInt(raw, 10) : ROMAN[raw];
-    if (!n) continue;
-    // "Part 2" stays "Part 2"; "Vol. II" / "Volume 3-4" become "Vol. 2" / "Vol. 3–4".
-    const label = `${/^p/i.test(m[1]) ? "Part" : "Vol."} ${/^\d/.test(raw) ? raw.replace("-", "–") : n}`;
-    const base = b.title.slice(0, m.index).replace(/[\s\-:,(]+$/, "");
-    const key = base.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-    if (!groups.has(key)) groups.set(key, []);
-    groups.get(key)!.push({ n, label, base, book: b });
-  }
-  return [...groups.values()]
-    .filter((list) => new Set(list.map((v) => v.n)).size >= 2)
-    .map((list) => {
-      list.sort((a, b) => a.n - b.n || collator.compare(a.book.title, b.book.title));
-      // one entry per volume number (the catalogue sometimes lists the same volume twice)
-      const seen = new Set<number>();
-      const volumes = list.filter((v) => !seen.has(v.n) && seen.add(v.n)).map((v) => ({ label: v.label, book: v.book }));
-      return { title: list[0].base, volumes };
-    })
-    .sort((a, b) => collator.compare(a.title, b.title));
-})();

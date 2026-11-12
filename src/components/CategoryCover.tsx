@@ -26,6 +26,7 @@
 //   French .............. cobalt #1E2E6E ................. the word "Français" set in type
 //   Italian ............. olive #3E4517 .................. the word "Italiano" set in type
 //   Uncategorized ....... charcoal #2E3238 ............... a plain ring of stars
+//   Multi-Volume Sets ... deep plum #54204F .............. three books standing side by side, each taller than the last
 
 import { useId, type ReactNode } from "react";
 
@@ -51,6 +52,7 @@ export const CATEGORY_COLORS: Record<string, string> = {
   french: "#1E2E6E",
   italian: "#3E4517",
   uncategorized: "#2E3238",
+  "multi-volume-sets": "#54204F",
 };
 
 /** The same colour, darker (f = 0.55 keeps 55% of the brightness). */
@@ -273,6 +275,21 @@ const MOTIFS: Record<string, (id: string) => ReactNode> = {
       <path d="M-50 18 L-30 30 L-50 42 L-10 42 L-30 30 L-10 18 Z" fill={GOLD} fillOpacity="0.15" />
     </>
   ),
+  "multi-volume-sets": () => (
+    <>
+      {/* three volumes standing together, rising left to right, each spine banded like a numbered set */}
+      {[[-52, -10, 34, 62], [-14, -28, 34, 80], [24, -46, 34, 98]].map(([x, y, w, h], i) => (
+        <g key={i}>
+          <rect x={x} y={y} width={w} height={h} rx="3" fill={GOLD} fillOpacity={0.1 + i * 0.05} />
+          <path d={`M${x} ${y + 12} H${x + w} M${x} ${y + h - 12} H${x + w}`} strokeOpacity="0.7" strokeWidth="1.8" />
+          {Array.from({ length: i + 1 }, (_, k) => (
+            <circle key={k} cx={x + w / 2 + (k - i / 2) * 8} cy={y + h / 2} r="2.6" fill={GOLD} stroke="none" />
+          ))}
+        </g>
+      ))}
+      <path d="M-62 56 H66" strokeOpacity="0.7" />
+    </>
+  ),
   uncategorized: () => (
     <>
       <circle r="44" strokeOpacity="0.6" />
@@ -286,7 +303,7 @@ const MOTIFS: Record<string, (id: string) => ReactNode> = {
 
 const WORDS: Record<string, string> = { french: "Français", italian: "Italiano" };
 
-export default function CategoryCover({ slug, number, className = "" }: { slug: string; number: string | null; className?: string }) {
+export default function CategoryCover({ slug, number, caption, className = "" }: { slug: string; number: string | null; caption?: string; className?: string }) {
   const id = useId().replace(/:/g, "");
   const motif = MOTIFS[slug];
   const word = WORDS[slug];
@@ -346,7 +363,7 @@ export default function CategoryCover({ slug, number, className = "" }: { slug: 
         fontSize="12.5"
         letterSpacing="3.5"
       >
-        {number ? `SHELF ${number}` : "NO SHELF NUMBER"}
+        {caption ?? (number ? `SHELF ${number}` : "NO SHELF NUMBER")}
       </text>
     </svg>
   );

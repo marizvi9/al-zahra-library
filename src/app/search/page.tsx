@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import SearchClient from "./SearchClient";
 import { books, categories, toListItem } from "@/lib/catalog";
 import type { SearchRecord } from "@/lib/search";
-import { authorRecords } from "@/lib/searchData";
+import { authorRecords, setRecords } from "@/lib/searchData";
 
 export const metadata: Metadata = { title: "Search" };
 
@@ -18,7 +18,7 @@ export default function SearchPage() {
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Search" }]} />
       <h1>Search the catalog</h1>
       <Suspense fallback={<p>Loading search…</p>}>
-        <SearchClient records={records} authors={authorRecords()} categories={categoryOptions} />
+        <SearchClient records={records} authors={authorRecords()} sets={setRecords()} categories={categoryOptions} />
       </Suspense>
     </div>
   );

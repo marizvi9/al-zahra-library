@@ -6,6 +6,7 @@
 // cover or description, so a half-filled slide can never go live. (A publisher is
 // no longer required: only one book with a publisher has a real description.)
 import config from "@data/featured-slider-books.json";
+import { setRefFor, type SetRef } from "./setIndex";
 import { books, creditParts, getCover, getDescription, shortDescription, type CreditPart } from "./catalog";
 
 export type FeaturedSlide = {
@@ -16,6 +17,7 @@ export type FeaturedSlide = {
   category: string;
   description: string;
   descriptionSource: string;
+  set?: SetRef;
   cover: { src: string; width: number; height: number };
 };
 
@@ -39,6 +41,7 @@ export const featuredSlides: FeaturedSlide[] = config.books.map(({ id }) => {
     category: book.category,
     description,
     descriptionSource: found.source,
+    set: setRefFor(book.id),
     cover: { src: cover.src, width: cover.width, height: cover.height },
   };
 });
