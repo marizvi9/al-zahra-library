@@ -5,7 +5,7 @@
 //   dots, or the Left/Right arrow keys while focus is inside the slider.
 // - Moves on by itself every ~6.5 seconds. It waits while the mouse is over it,
 //   while a finger has touched it recently, while a slide has keyboard focus, and
-//   when the browser tab is hidden. A Pause button stops it for good.
+//   when the browser tab is hidden. (There is no pause button; hovering or touching is enough.)
 // - For visitors who ask for reduced motion it never moves on its own and
 //   changes slide instantly.
 // - Each whole slide is one link to the book's page.
@@ -16,16 +16,11 @@ import type { FeaturedSlide } from "@/lib/featured";
 import Credit from "./Credit";
 
 const EVERY_MS = 6500;
-const SOURCE_LINKS: Record<string, string> = {
-  "Google Books": "https://books.google.com",
-  "Open Library": "https://openlibrary.org",
-};
 const TOUCH_HOLD_MS = 12000;
 
 export default function FeaturedSlider({ slides }: { slides: FeaturedSlide[] }) {
   const trackRef = useRef<HTMLUListElement>(null);
   const [index, setIndex] = useState(0);
-  const [playing, setPlaying] = useState(true);
   const [reduced, setReduced] = useState(false);
   const [tick, setTick] = useState(0); // bumps to re-check later when something is holding it still
   const indexRef = useRef(0); // the slide we are on, or heading to
@@ -90,14 +85,14 @@ export default function FeaturedSlider({ slides }: { slides: FeaturedSlide[] }) 
 
   // Gentle auto-advance.
   useEffect(() => {
-    if (!playing || reduced || total < 2) return;
+    if (reduced || total < 2) return;
     const t = window.setTimeout(() => {
       const held = hover.current || focus.current || document.hidden || Date.now() < touchUntil.current;
       if (held) setTick((n) => n + 1);
       else goTo(indexRef.current + 1);
     }, EVERY_MS);
     return () => window.clearTimeout(t);
-  }, [index, playing, reduced, tick, total, goTo]);
+  }, [index, reduced, tick, total, goTo]);
 
   const onKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "ArrowRight") {
@@ -130,12 +125,6 @@ export default function FeaturedSlider({ slides }: { slides: FeaturedSlide[] }) 
     >
       <div className="slider-head">
         <h2>Featured books</h2>
-        {total > 1 && !reduced && (
-          <button type="button" className="slider-pause" onClick={() => setPlaying((p) => !p)} aria-pressed={!playing}>
-            {playing ? "Pause" : "Play"}
-            <span className="visually-hidden"> automatic sliding</span>
-          </button>
-        )}
       </div>
 
       <div className="slider-frame">
@@ -149,7 +138,7 @@ export default function FeaturedSlider({ slides }: { slides: FeaturedSlide[] }) 
           ref={trackRef}
           className="slider-track"
           onScroll={onScroll}
-          aria-live={playing && !reduced ? "off" : "polite"}
+          aria-live={reduced ? "polite" : "off"}
         >
           {slides.map((s, i) => (
             <li
@@ -183,12 +172,6 @@ export default function FeaturedSlider({ slides }: { slides: FeaturedSlide[] }) 
                   </span>
                   <span className="slide-desc" dir="auto">
                     {s.description}
-                  </span>
-                  <span className="slide-source">
-                    Description from{" "}
-                    <a href={SOURCE_LINKS[s.descriptionSource] ?? "#"} target="_blank" rel="noopener noreferrer">
-                      {s.descriptionSource}
-                    </a>
                   </span>
                   <span className="slide-more" aria-hidden="true">
                     View book details <span>→</span>

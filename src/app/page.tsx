@@ -77,10 +77,10 @@ export default function HomePage() {
             All {categories.length} categories
           </Link>
         </div>
-        <ul className="card-grid">
+        <ul className="card-grid card-grid-compact">
           {featuredCategories.map((c) => (
             <li key={c.slug}>
-              <CategoryCard category={c} />
+              <CategoryCard category={c} compact />
             </li>
           ))}
         </ul>

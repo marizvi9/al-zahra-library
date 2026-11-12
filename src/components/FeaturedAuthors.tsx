@@ -1,5 +1,5 @@
 // "Featured Authors" on the home page: large portraits in a row, each linking to the author's
-// page, with the photo credit and licence underneath. Chosen in data/home-featured-sections.json.
+// page. Chosen in data/home-featured-sections.json.
 // The name link is stretched over the whole card (see .card-link), so the small credit links
 // can sit on top without links being nested.
 import Link from "next/link";
@@ -50,15 +50,6 @@ export default function FeaturedAuthors({ heading, intro, authors }: { heading: 
                 ))}
               </Link>
               <span className="portrait-count">{a.count === 1 ? "1 book" : `${a.count} books`}</span>
-              {photo && (
-                <span className="portrait-credit">
-                  Photo:{" "}
-                  <a href={photo.source} rel="noopener">
-                    {shortCreator(photo.creator)}
-                  </a>
-                  , {photo.licenseUrl ? <a href={photo.licenseUrl} rel="noopener license">{photo.license}</a> : photo.license}
-                </span>
-              )}
             </li>
           );
         })}

@@ -172,3 +172,10 @@ parchment `#ECE3CE`, deep navy `#04142E`, antique gold `#AC8521` (see the top of
 
 ## Footer emblem
 Every page's footer shows the emblem (`public/brand/emblem-footer.png`, a small copy of `emblem.png`) centred above the footer text on a parchment plate (its lettering is navy). It links to the home page.
+
+## Home page and shelves tidy-up
+- The home slider has no pause button (it still glides on by itself, waits while hovered/touched/focused, and never moves for reduced-motion visitors).
+- Category cards on the home page are the smaller `compact` variant; the Explore page keeps the large ones.
+- **Sources appear only on a book's page and an author's page**, in a small "Sources" note (`src/components/SourcesNote.tsx`):
+  description, cover, biography, photo. No source lines on the home page, cards or sliders.
+- The Shelves note is two sentences; on a shelf's page only the shelf name and book count are bold.

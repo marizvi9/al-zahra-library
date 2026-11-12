@@ -31,10 +31,9 @@ export default function AuthorAvatar({ name, size = 48, className = "" }: Props)
 export const shortCreator = (c: string) => (c.length > 60 ? c.slice(0, 57).trimEnd() + "…" : c);
 
 /** "Photo: Name, CC BY-SA 4.0, via Wikimedia Commons" (or WikiShia), each part linked. */
-export function PhotoCredit({ photo }: { photo: AuthorPhoto }) {
+export function PhotoCreditText({ photo }: { photo: AuthorPhoto }) {
   return (
-    <p className="photo-credit">
-      Photo:{" "}
+    <>
       <a href={photo.source} rel="noopener">
         {shortCreator(photo.creator)}
       </a>
@@ -47,6 +46,6 @@ export function PhotoCredit({ photo }: { photo: AuthorPhoto }) {
         photo.license
       )}
       {viaSuffix(photo)}
-    </p>
+    </>
   );
 }
