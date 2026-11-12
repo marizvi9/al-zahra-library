@@ -58,7 +58,7 @@ function candidates(b) {
   }
   const out = [];
   for (const m of mains.slice(0, 1)) for (const a of [...new Set(authors)]) out.push(`/${m}-${a}`);
-  return out.slice(0, 8);
+  return out.slice(0, 5);
 }
 
 let last = 0;
