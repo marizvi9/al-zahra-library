@@ -3,7 +3,8 @@
 //   - Covers are downloaded ONCE and saved in public/covers/ in three sizes (list thumbnail, book page,
 //     enlarged view), so the site never depends on another website staying online; data/covers.json
 //     records where each came from.
-//   - Anything marked needsReview (on the book, the description or the cover) is left off the site.
+//   - Anything marked needsReview (on the book, the description or the cover) is left off the site (the book
+//     itself stays; only the unconfirmed information is hidden). Its draft goes to the Google Sheet for a librarian.
 //   - Entries this script added before are refreshed; entries from the older scripts are never overwritten.
 // Run: node scripts/apply_web_finds.mjs
 import fs from "node:fs/promises";
@@ -38,7 +39,12 @@ let nd = 0, nc = 0, held = 0;
 for (const [id, f] of Object.entries(finds)) {
   const book = books.get(id);
   if (!book) { console.log(`! ${id}: no such book`); continue; }
-  if (f.needsReview) { held++; continue; }
+  if (f.needsReview) {
+    // Not confirmed: keep the book on the site, but take off any description this script put there before.
+    if (descriptions[id]?.origin === "web") delete descriptions[id];
+    held++;
+    continue;
+  }
 
   const d = f.description;
   if (d?.text?.length && !d.needsReview && (!descriptions[id] || descriptions[id].origin === "web")) {
