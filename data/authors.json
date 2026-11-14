@@ -197,38 +197,39 @@
     },
     "Ali Khamenei": {
       "wikipedia": "Ali Khamenei",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ali_Khamenei",
+      "description": "Supreme Leader of Iran from 1989 to 2026",
       "bio": "Ayatollah Sayyid Ali Husayni Khamenei (1939–2026) was the second Leader of the Islamic Republic of Iran and a Shia marja'. Before the revolution he was imprisoned and exiled for opposing the Pahlavi government; afterwards he served two terms as president (1981–1989) and led Friday prayers in Tehran. In 1989 he was elected Leader (often called the Supreme Leader) of the Islamic Republic of Iran, a position he held until his death in February 2026.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Sayyid_Ali_Husayni_Khamenei"
       ],
-      "photo": "/authors/ali-khamenei-2.jpg",
-      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ali_Khamenei",
-      "description": "Supreme Leader of Iran from 1989 to 2026",
-      "file": "File:Ali Khamenei Nowruz message official portrait 1397 02 (3 x 4 cropped).jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Ali_Khamenei_Nowruz_message_official_portrait_1397_02_(3_x_4_cropped).jpg",
+      "title": "Ayatullah",
+      "file": "7008.jpg",
+      "source": "https://english.khamenei.ir/news/4726/Women-and-men-are-different-in-some-cases-similar-in-others",
       "creator": "khamenei.ir",
       "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-      "imageDescription": "Ali Khamenei, Supreme Leader of Iran",
-      "originalWidth": 1560,
-      "originalHeight": 2073,
-      "photoLarge": "/authors/large/ali-khamenei-2.webp",
-      "largeWidth": 640,
-      "largeHeight": 814,
-      "lowRes": false,
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "imageDescription": "From the Office of Ayatollah Khamenei's website (english.khamenei.ir), whose content is published under CC BY 4.0; cropped to a portrait.",
+      "photoSource": "khamenei.ir",
+      "photo": "/authors/ali-khamenei-3.jpg",
+      "photoLarge": "/authors/large/ali-khamenei-3.webp",
+      "largeWidth": 320,
+      "largeHeight": 427,
+      "lowRes": true,
+      "originalWidth": 640,
+      "originalHeight": 427,
       "focus": {
-        "x": 55.0,
-        "y": 28.0,
-        "zoom": 1.9
+        "x": 48.0,
+        "y": 42.0,
+        "zoom": 0.85
       },
       "head": {
-        "x0": 39.0,
-        "y0": 10.0,
-        "x1": 71.0,
-        "y1": 46.0
-      },
-      "title": "Ayatullah"
+        "x0": 11.0,
+        "y0": 4.0,
+        "x1": 85.0,
+        "y1": 81.0
+      }
     },
     "Seyyed Hossein Nasr": {
       "wikipedia": "Seyyed Hossein Nasr",
@@ -1391,15 +1392,37 @@
     },
     "Amir Taheri": {
       "wikipedia": "Amir Taheri",
-      "wikipediaUrl": "https://en.wikipedia.org/wiki/Amir_Taheri",
-      "description": "Iranian author (born 1942)",
-      "photo": null,
-      "skipped": "licence not accepted: OGL v1.0",
+      "photo": "/authors/amir-taheri.jpg",
       "bio": "Iranian-born journalist and author (born 1942) who writes on Middle Eastern affairs.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Amir_Taheri"
-      ]
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Amir_Taheri",
+      "description": "Iranian author (born 1942)",
+      "file": "File:Amir Taheri (cropped).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Amir_Taheri_(cropped).jpg",
+      "creator": "Foreign and Commonwealth Office",
+      "license": "OGL v1.0",
+      "licenseUrl": "http://NationalArchives.gov.uk/doc/open-government-licence/version/1/",
+      "imageDescription": "First panel discussion at the \"Imprisoned in Iran\" event organised by the Times. Ali Ansari from Institute of Iranian Studies of University of St Andrews, Irani",
+      "originalWidth": 651,
+      "originalHeight": 970,
+      "photoLarge": "/authors/large/amir-taheri.webp",
+      "largeWidth": 640,
+      "largeHeight": 954,
+      "lowRes": false,
+      "focus": {
+        "x": 50.0,
+        "y": 32.0,
+        "zoom": 1.6
+      },
+      "head": {
+        "x0": 25.0,
+        "y0": 8.0,
+        "x1": 75.0,
+        "y1": 56.0
+      }
     },
     "Bediuzzaman Said Nursi": {
       "wikipedia": "Said Nursi",
@@ -2754,15 +2777,37 @@
     },
     "Zafar Bangash": {
       "wikipedia": "Zafar Bangash",
-      "wikipediaUrl": "https://en.wikipedia.org/wiki/Zafar_Bangash",
-      "description": "Islamic journalist and imam",
-      "photo": null,
-      "skipped": "licence not accepted: Attribution",
+      "photo": "/authors/zafar-bangash.png",
       "bio": "Journalist and commentator (born 1950) based in Toronto, Canada. He is director of the Institute of Contemporary Islamic Thought.",
       "bioStatus": "other source",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Zafar_Bangash"
-      ]
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Zafar_Bangash",
+      "description": "Islamic journalist and imam",
+      "file": "File:Zafar Bangash.png",
+      "source": "https://commons.wikimedia.org/wiki/File:Zafar_Bangash.png",
+      "creator": "Joshua Sherurcij",
+      "license": "Attribution",
+      "licenseUrl": null,
+      "imageDescription": "Zafar Bangash (Urdu: ظفر بنگش) is a noted Islamic movement journalist and commentator and a leader of the Muslim community in Toronto, Canada, and a strong advo",
+      "originalWidth": 396,
+      "originalHeight": 372,
+      "photoLarge": "/authors/large/zafar-bangash.webp",
+      "largeWidth": 396,
+      "largeHeight": 372,
+      "lowRes": true,
+      "focus": {
+        "x": 48.0,
+        "y": 42.0,
+        "zoom": 1.35
+      },
+      "head": {
+        "x0": 25.0,
+        "y0": 8.0,
+        "x1": 71.0,
+        "y1": 76.0
+      }
     },
     "Mirza Ghulam Ahmad of Qadian": {
       "wikipedia": "Mirza Ghulam Ahmad",

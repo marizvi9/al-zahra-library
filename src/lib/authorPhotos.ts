@@ -20,7 +20,7 @@ export type AuthorPhoto = {
   license: string;
   licenseUrl: string | null;
   wikipediaUrl?: string;
-  /** "WikiShia" for photos from WikiShia's media library; otherwise Wikimedia Commons. */
+  /** Where a hand-added photo came from ("WikiShia", or a site such as "khamenei.ir"); empty = Wikimedia Commons. */
   photoSource?: string;
   /**
    * Where the head is (centre, in percent from the left and top) and how close to zoom. Zoom 1 = the photo's
@@ -34,7 +34,7 @@ export type AuthorPhoto = {
 export { circleLayout, frameStyle } from "./photoLayout";
 
 /** Where a photo came from, for its credit line. */
-export const photoVia = (p: Pick<AuthorPhoto, "photoSource">) => (p.photoSource === "WikiShia" ? "WikiShia" : "Wikimedia Commons");
+export const photoVia = (p: Pick<AuthorPhoto, "photoSource">) => p.photoSource || "Wikimedia Commons";
 
 /** ", via Wikimedia Commons" — left out when the creator already names the site (WikiShia photos). */
 export const viaSuffix = (p: Pick<AuthorPhoto, "photoSource" | "creator">) => (p.creator === photoVia(p) ? "" : `, via ${photoVia(p)}`);

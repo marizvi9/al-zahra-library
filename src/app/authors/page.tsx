@@ -56,7 +56,7 @@ export default function AuthorsPage() {
       ))}
       </div>
       <p className="small muted photo-credits-link">
-        Author photos are from Wikimedia Commons (free licences) and WikiShia (used with credit).{" "}
+        Author photos are from Wikimedia Commons (free licences), WikiShia and a few authors’ official websites, each used with credit.{" "}
         <Link href="/authors/photo-credits/">See every photo&rsquo;s credit and licence</Link>.
       </p>
     </div>
