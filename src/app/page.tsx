@@ -52,7 +52,7 @@ export default function HomePage() {
               </p>
               <Ornament className="hero-ornament" />
               <p className="hero-lede">
-                Peace be upon you! Explore {books.length} books on faith, history, law, thought and more.
+                Explore {books.length} books on faith, history, law, thought and more.
               </p>
               <SearchBox large />
             </div>
@@ -102,13 +102,16 @@ export default function HomePage() {
       {featuredAuthors && <FeaturedAuthors {...featuredAuthors} />}
 
       {/* Every author in the library. The authors with the most books come first as cards
-          (featured authors included, so they show here as well as above), then a button to the Authors page (the full A–Z list). */}
+          (featured authors included, so they show here as well as above), with a link to the Authors page (the full A–Z list) at the top. */}
       <section className="container section" aria-labelledby="authors-title">
         <div className="section-head">
           <h2 id="authors-title">Authors in our collection</h2>
-          <Link href="/authors/" className="see-all">
-            All {authors.length} authors
-          </Link>
+          {/* Looks like the old fold-out line, but goes to the Authors page. */}
+          <div className="all-authors">
+            <Link href="/authors/" className="all-authors-summary">
+              <span className="all-authors-marker" aria-hidden="true">▸</span> Show all {authors.length} authors, A to Z
+            </Link>
+          </div>
         </div>
         <ul className="author-cards">
           {topAuthors(12).map((a) => (
@@ -127,12 +130,6 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
-        {/* Looks like the old fold-out line, but goes to the Authors page. */}
-        <div className="all-authors">
-          <Link href="/authors/" className="all-authors-summary">
-            <span className="all-authors-marker" aria-hidden="true">▸</span> Show all {authors.length} authors, A to Z
-          </Link>
-        </div>
       </section>
 
       {homeSections

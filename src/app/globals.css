@@ -3621,3 +3621,10 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
 .review-text p { margin: 0 0 6px; }
 .review-title { font-weight: 600; }
 .review-flag { color: #b3261e; font-weight: 600; }
+
+/* "Show all … authors" sits in the section heading row (in place of the old "All … authors" link). */
+.section-head .all-authors {
+  margin-top: 0;
+  border-top: 0;
+  padding-top: 0;
+}
