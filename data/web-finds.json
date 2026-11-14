@@ -7592,9 +7592,7 @@
         "confidence": "high"
       },
       "note": "Same book as #632.",
-      "coverNote": [
-        "Google Books"
-      ],
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     },
     "657": {
@@ -7611,9 +7609,7 @@
         "confidence": "high"
       },
       "note": "Same book as #632.",
-      "coverNote": [
-        "Google Books"
-      ],
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     }
   }
