@@ -1590,19 +1590,35 @@
       "needsReview": false
     },
     "232": {
+      "round": 2,
       "searched": [
-        "al-islam.org",
-        "general web search"
+        "Google Books"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Part of Ahmad von Denffer's series on dialogue between Christians and Muslims (Islamic Foundation). The series collects the resolutions and statements of the major Christian-Muslim dialogue meetings, with Part 3 giving those statements and resolutions."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=49WTSQAACAAJ",
+        "confidence": "medium"
+      },
+      "note": "Google Books lists the 1980 collection; the library's copy is one part of it.",
       "needsReview": false
     },
     "722": {
+      "round": 2,
       "searched": [
-        "al-islam.org",
-        "general web search"
+        "Google Books"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Ahmad von Denffer's collection of Muslim statements on Christian-Muslim dialogue."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=u0Y5AAAACAAJ",
+        "confidence": "high"
+      },
+      "note": "Islamic Foundation, 1989.",
       "needsReview": false
     },
     "128": {
@@ -1979,20 +1995,19 @@
       "needsReview": false
     },
     "605": {
+      "round": 2,
       "searched": [
-        "al-islam.org",
-        "library catalogues",
-        "bookshops"
+        "Google Books",
+        "Open Library"
       ],
       "description": {
         "text": [
-          "A biography of the Prophet Muhammad that aims to give a clear and positive account of his life and message."
+          "A clear account of the life, personality and mission of the Prophet Muhammad and his message, by Abdul Hameed Siddiqui."
         ],
-        "source": "Sound Vision (book listing)",
-        "url": "https://www.soundvision.com/node/2770",
-        "confidence": "medium"
+        "source": "Open Library",
+        "url": "https://openlibrary.org/works/OL6205866W",
+        "confidence": "high"
       },
-      "note": "Islamic Publications, Lahore, first published 1969.",
       "needsReview": false
     },
     "19": {
@@ -2147,11 +2162,19 @@
       "needsReview": false
     },
     "526": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Ayatullah Ibrahim Amini's guide for parents on raising children, starting before birth: the parents' role, setting an example through actions, and looking after the mother and baby during pregnancy and after birth."
+        ],
+        "source": "Shiavault (book contents)",
+        "url": "https://www.shiavault.com/books/the-codes-of-training/",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "122": {
@@ -2171,19 +2194,36 @@
       "needsReview": false
     },
     "390": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "No English book with this title found; it may be a translation of al-Hakim's al-Fiqh lil-Mughtaribin, but that is not confirmed.",
+      "description": {
+        "text": [
+          "Islamic rulings in question-and-answer form, based on Ayatullah Sistani's fatwas: acts of worship, money matters and personal status such as marriage. Written by Abdul Hadi al-Hakim."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/jurisprudence-made-easy-ayatullah-ali-sistani",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     },
     "598": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "No Al-Balagh Foundation book with this title found.",
+      "description": {
+        "text": [
+          "A history of the Prophet Muhammad's life by the Al-Balagh Foundation, in two parts: his life before prophethood, the first call to Islam, the hardships in Mecca and the migration; then the community in Medina, his military policy, the conquest of Mecca, the Farewell Hajj, the pledge at Ghadir and his last will."
+        ],
+        "source": "Shiavault (contents of the Al-Balagh edition)",
+        "url": "https://www.shiavault.com/books/muhammad-the-messenger-of-allah/",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "485": {
@@ -2481,11 +2521,19 @@
       "needsReview": false
     },
     "514": {
+      "round": 2,
       "searched": [
-        "al-islam.org",
-        "general web search"
+        "Google Books"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Akram Zahoor's timeline-based history of Muslims and Islamic civilisation, with maps of the rise and fall of caliphates, empires and kingdoms across the Middle East, Africa, Spain, Europe and Asia."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=pko_0QEACAAJ",
+        "confidence": "medium"
+      },
+      "note": "Google Books describes a later, two-volume edition; the library's copy covers 570–1950 CE.",
       "needsReview": false
     },
     "227": {
@@ -2692,11 +2740,19 @@
       "needsReview": false
     },
     "184": {
+      "round": 2,
       "searched": [
-        "al-islam.org",
-        "general web search"
+        "Google Books"
       ],
-      "note": "Only a citation was found (an anthology of Taleqani's writings, translated by R. Campbell, edited by Hamid Algar, Mizan Press, 1982); nothing about the contents.",
+      "description": {
+        "text": [
+          "Writings and speeches of Ayatullah Sayyid Mahmud Taleghani on society and the economy in Islam, translated by R. Campbell with an introduction and notes by Hamid Algar. Taleghani, a leading scholar known for independent thought and his opposition to the Shah, chaired Iran's Revolutionary Council when he died in 1979."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=e9c1AAAAMAAJ",
+        "confidence": "high"
+      },
+      "note": "Mizan Press, Berkeley, 1982.",
       "needsReview": false
     },
     "331": {
@@ -2724,11 +2780,20 @@
       "needsReview": false
     },
     "100": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Not found as a separate book; al-islam.org has a talk with a similar title inside 'Spirituality of Shi'ism and Other Discourses'.",
+      "description": {
+        "text": [
+          "Allamah Tabataba'i's short work, translated by William Chittick and edited by Seyyed Hossein Nasr, on Islam and other religions, the importance of the individual, the Islamic world view, and the spiritual path."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/muhammad-in-the-mirror-of-islam-allamah-tabatabai",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     },
     "46": {
@@ -2755,11 +2820,19 @@
       "needsReview": false
     },
     "414": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "No book with this title found.",
+      "description": {
+        "text": [
+          "Short answers by Ayatullahs Makarim Shirazi and Ja'far Subhani to common questions about the reasons behind Islamic laws, for example why we follow a mujtahid, why prayers are in Arabic and face the Qibla, why five prayers at three times, and why some things are impure or forbidden."
+        ],
+        "source": "Shiavault (book contents)",
+        "url": "https://www.shiavault.com/books/logic-for-islamic-rules/",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "354": {
@@ -2999,11 +3072,20 @@
       "needsReview": false
     },
     "686": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "No English book with this title found; Ayatullah Sistani's hajj rulings exist in English under other titles.",
+      "description": {
+        "text": [
+          "A guidebook answering the questions women have about the Hajj and Umrah pilgrimages, according to the rulings of Ayatullah Sistani, with explanations of the meaning behind the rituals. Compiled by Razia Batool Najafi."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/guidebook-women-rites-hajj-razia-batool-najafi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     },
     "627": {
@@ -3213,11 +3295,19 @@
       "needsReview": false
     },
     "387": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A book on concentration in prayer: why it matters, whether it is possible, its levels, what gets in the way and practical ways to achieve it, with the meaning of prayer and stories of pious people."
+        ],
+        "source": "Shiavault (book contents)",
+        "url": "https://www.shiavault.com/books/soaring-to-the-only-beloved/",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "805": {
@@ -3245,11 +3335,19 @@
       "needsReview": false
     },
     "551": {
+      "round": 2,
       "searched": [
-        "al-islam.org",
-        "general web search"
+        "Google Books"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Bediuzzaman Said Nursi on the miracles of the Prophet Muhammad: some of the extraordinary events of his time that supported his mission, as part of the many proofs of his prophethood."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=GBBRCwAAQBAJ",
+        "confidence": "medium"
+      },
+      "note": "Google Books lists it as 'Prophet Muhammad and His Miracles' (Tughra Books).",
       "needsReview": false
     },
     "238": {
@@ -3261,11 +3359,19 @@
       "needsReview": false
     },
     "10": {
+      "round": 2,
       "searched": [
-        "al-islam.org",
-        "general web search"
+        "Google Books"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A short biography of the Prophet Muhammad by Dr B. Salem Foad, highlighting the main events of his life for beginners. It gives special attention to explaining the idea of war in Islam and has a separate chapter on the Prophet's character."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=Ah66AAAACAAJ",
+        "confidence": "medium"
+      },
+      "note": "Google Books has it as 'The Life of the Prophet Muhammad' (2003) by the same author.",
       "needsReview": false
     },
     "226": {
@@ -4197,11 +4303,18 @@
       "needsReview": false
     },
     "92": {
+      "round": 2,
       "searched": [
-        "al-islam.org",
-        "general web search"
+        "Google Books"
       ],
-      "note": "Listed on al-islam.org (Ansariyan, 2008) but no description of the contents was found.",
+      "description": {
+        "text": [
+          "An account of the hardships Imam ʿAli faced during his life, and of his martyrdom."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=LteyswEACAAJ",
+        "confidence": "high"
+      },
       "needsReview": false
     },
     "254": {
@@ -4261,11 +4374,19 @@
       "needsReview": false
     },
     "328": {
+      "round": 2,
       "searched": [
-        "al-islam.org",
-        "general web search"
+        "Google Books"
       ],
-      "note": "Only an Apple Books listing with no description; nothing about the contents.",
+      "description": {
+        "text": [
+          "A criticism of modern 'religion reformers' who blame the earlier scholars and reject long-held beliefs and practices."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=tU9vAgAAQBAJ",
+        "confidence": "medium"
+      },
+      "note": "Hakikat Kitabevi, Istanbul.",
       "needsReview": false
     },
     "671": {
@@ -4340,11 +4461,18 @@
       "needsReview": false
     },
     "189": {
+      "round": 2,
       "searched": [
-        "al-islam.org",
-        "general web search"
+        "Google Books"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A book in five parts on death and what follows it: the moment of death, life in the barzakh (the time between death and resurrection), the Day of Resurrection, and descriptions of Hell and Paradise."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=De-uGwAACAAJ",
+        "confidence": "high"
+      },
       "needsReview": false
     },
     "154": {
@@ -4364,11 +4492,20 @@
       "needsReview": false
     },
     "48": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Laila Bigelli's personal account of how she discovered and came to Islam."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/my-journey-islam-laila-bigelli",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     },
     "625": {
@@ -4953,10 +5090,19 @@
       "needsReview": false
     },
     "308": {
+      "round": 2,
       "searched": [
-        "al-islam.org"
+        "al-islam.org",
+        "Shiavault"
       ],
-      "note": "Probably S.V. Mir Ahmed Ali's Qur'an translation and commentary 'according to the version of the Holy Ahlul-Bait' (Tahrike Tarsile Qur'an); no description of this edition found.",
+      "description": {
+        "text": [
+          "S. V. Mir Ahmed Ali's English translation of the Qur'an with commentary, with an introduction on English translations, the collection and recitations of the Qur'an and the basic beliefs of Islam."
+        ],
+        "source": "Shiavault (book contents)",
+        "url": "https://www.shiavault.com/books/a-commentary-on-the-holy-qur-an/",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "510": {
@@ -4976,11 +5122,19 @@
       "needsReview": false
     },
     "22": {
+      "round": 2,
       "searched": [
-        "al-islam.org",
-        "general web search"
+        "Google Books"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A biography of ʿAmmar ibn Yasir, a devoted companion of the Prophet, by Sadruddin Sharafuddin."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=ZV7dDwAAQBAJ",
+        "confidence": "high"
+      },
+      "note": "Islamic Seminary Publications, 1984.",
       "needsReview": false
     },
     "85": {
@@ -5219,11 +5373,20 @@
       "needsReview": false
     },
     "275": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A Muslim scholar's look at Western civilisation: its strengths and problems, what Islam has given the world, and how Islam can help with the social problems that materialism has brought to both East and West."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/western-civilization-through-muslim-eyes-sayyid-mujtaba-musawi-lari",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     },
     "774": {
@@ -5283,11 +5446,19 @@
       "needsReview": false
     },
     "415": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A simple guide to performing the daily prayer (salat), with pictures: the basic beliefs and practices, wudhu and tayammum, adhan and iqamah, the steps of the prayer and what makes it invalid."
+        ],
+        "source": "Shiavault (book contents)",
+        "url": "https://www.shiavault.com/books/method-of-salat-along-with-pictures/",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "120": {
@@ -5644,11 +5815,20 @@
       "needsReview": false
     },
     "18": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "The life of the Prophet of Islam told in order, from the world before Islam, his birth and youth and his marriages, to the start of revelation, his public mission and the hardships he faced, the migration to Medina, the brotherhood he set up among Muslims, his battles, Ghadir and his character. By the Dar Rah Haqq institute."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/glance-life-holy-prophet-islam-dar-rah-haqq",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     },
     "424": {
@@ -5715,11 +5895,19 @@
       "needsReview": false
     },
     "17": {
+      "round": 2,
       "searched": [
-        "al-islam.org",
-        "general web search"
+        "Google Books"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "An easy-to-read life of the Prophet Muhammad for families, focusing on his kindness and mercy more than on dates and battles."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=5bIBEgAAQBAJ",
+        "confidence": "high"
+      },
+      "note": "Ta-Ha Publishers.",
       "needsReview": false
     },
     "243": {
@@ -5771,11 +5959,20 @@
       "needsReview": false
     },
     "317": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A selection of a hundred short sayings of Imam ʿAli, together with a hundred sayings of Imam ʿAli al-Rida."
+        ],
+        "source": "Shiavault (book contents)",
+        "url": "https://www.shiavault.com/books/100-maximas-form-imam-ali-a-s-imam-ali-bin-musa-al-rida-a-s/",
+        "confidence": "medium"
+      },
+      "note": "Ansariyan Publications.",
       "needsReview": false
     },
     "245": {
@@ -5787,12 +5984,21 @@
       "needsReview": false
     },
     "266": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Nothing found for this title and author.",
-      "needsReview": false
+      "description": {
+        "text": [
+          "Personal stories of people from many backgrounds, mostly in America, telling how they came to Islam."
+        ],
+        "source": "Shiavault (book contents)",
+        "url": "https://www.shiavault.com/books/converts-to-islam/",
+        "confidence": "medium"
+      },
+      "needsReview": true,
+      "note": "The library lists 'Zaynab' as author; the online edition names no author, so it may not be the same book."
     },
     "132": {
       "searched": [
@@ -5882,11 +6088,19 @@
       "needsReview": false
     },
     "152": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A history of the Prophet Muhammad's life by the Al-Balagh Foundation, in two parts: his life before prophethood, the first call to Islam, the hardships in Mecca and the migration; then the community in Medina, his military policy, the conquest of Mecca, the Farewell Hajj, the pledge at Ghadir and his last will."
+        ],
+        "source": "Shiavault (contents of the Al-Balagh edition)",
+        "url": "https://www.shiavault.com/books/muhammad-the-messenger-of-allah/",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "623": {
@@ -5898,11 +6112,19 @@
       "needsReview": false
     },
     "631": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A short study of the seventh Imam, Musa al-Kadhim, by the Al-Balagh Foundation: his life, his school and learning, the political and social conditions of his time and his dealings with the caliph Harun al-Rashid."
+        ],
+        "source": "Shiavault (contents of the Al-Balagh edition)",
+        "url": "https://www.shiavault.com/books/imam-al-kadhim-a-s/",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "522": {
@@ -5994,35 +6216,76 @@
       "needsReview": false
     },
     "761": {
+      "round": 2,
       "searched": [
-        "al-islam.org",
-        "general web search"
+        "al-islam.org"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "An Al-Balagh Foundation booklet analysing how Islam deals with the economy: its concern for people's livelihood, common misunderstandings, the nature of the economic problem, and the general rules Islam sets for sharing out wealth."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/economic-distribution-islam",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     },
     "145": {
+      "round": 2,
       "searched": [
         "al-islam.org",
+        "Google Books",
+        "Open Library",
         "general web search"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "An introduction by the Al-Balagh Foundation to the Prophet's Household (Ahl al-Bayt). Drawing on the Qur'an, hadith and classical scholarship, it explains why they hold a special place in Islam, their spiritual authority and moral leadership, and how they preserved and handed on the Prophet's teachings."
+        ],
+        "source": "Islamic Sources (book page)",
+        "url": "https://islamic-sources.com/books/ahlul-bait-the-prophets-household-2",
+        "confidence": "medium"
+      },
+      "note": "Al-Balagh Foundation; first edition 1992.",
       "needsReview": false
     },
     "67": {
+      "round": 2,
       "searched": [
         "al-islam.org",
+        "Google Books",
+        "Open Library",
         "general web search"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "An introduction by the Al-Balagh Foundation to the Prophet's Household (Ahl al-Bayt). Drawing on the Qur'an, hadith and classical scholarship, it explains why they hold a special place in Islam, their spiritual authority and moral leadership, and how they preserved and handed on the Prophet's teachings."
+        ],
+        "source": "Islamic Sources (book page)",
+        "url": "https://islamic-sources.com/books/ahlul-bait-the-prophets-household-2",
+        "confidence": "medium"
+      },
+      "note": "Al-Balagh Foundation; first edition 1992.",
       "needsReview": false
     },
     "397": {
+      "round": 2,
       "searched": [
         "al-islam.org",
+        "Google Books",
+        "Open Library",
         "general web search"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "An introduction by the Al-Balagh Foundation to the Prophet's Household (Ahl al-Bayt). Drawing on the Qur'an, hadith and classical scholarship, it explains why they hold a special place in Islam, their spiritual authority and moral leadership, and how they preserved and handed on the Prophet's teachings."
+        ],
+        "source": "Islamic Sources (book page)",
+        "url": "https://islamic-sources.com/books/ahlul-bait-the-prophets-household-2",
+        "confidence": "medium"
+      },
+      "note": "Al-Balagh Foundation; first edition 1992.",
       "needsReview": false
     },
     "108": {
@@ -6164,11 +6427,19 @@
       "needsReview": false
     },
     "602": {
+      "round": 2,
       "searched": [
-        "al-islam.org",
-        "general web search"
+        "al-islam.org"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A collection of 560 hadith, forty from each of the Fourteen Infallibles (the Prophet, Lady Fatima and the twelve Imams), touching many sides of human life and today's problems. Compiled by Muhammad Muhammadi Ishtihardi and translated by Javed Iqbal Qazilbash."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/38971",
+        "confidence": "medium"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     },
     "224": {
@@ -6419,11 +6690,20 @@
       "needsReview": false
     },
     "787": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A selection of verses of the Qur'an arranged by subject, on God and His creation, the Prophet and his family, parents, human nature, the hereafter, charity, marriage and other parts of daily life. Compiled by Hasnain Sachedina."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/excerpts-from-the-holy-quran-an-eternal-guidance-to-mankind",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     },
     "396": {
@@ -6627,43 +6907,95 @@
       "needsReview": false
     },
     "746": {
+      "round": 2,
       "searched": [
         "al-islam.org",
+        "Google Books",
+        "Open Library",
         "general web search"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "The English translation of Ayatullah Sistani's manual of Islamic rulings (Tawdih al-Masa'il), published by the World Federation of KSI Muslim Communities. The first edition (1994) was translated by Mulla Asgharali M. M. Jaffer."
+        ],
+        "source": "The World Federation of KSIMC",
+        "url": "https://archive.world-federation.org/news/book-review-islamic-laws",
+        "confidence": "medium"
+      },
+      "note": "The library's record does not say which edition.",
       "needsReview": false
     },
     "400": {
+      "round": 2,
       "searched": [
-        "al-islam.org",
-        "general web search"
+        "al-islam.org"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "An Al-Balagh Foundation book on Islamic thought: what thought is, its main and secondary sources and features, its history, research methods and terms, and the problems facing Islamic thought today."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/islamic-thought",
+        "confidence": "medium"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     },
     "342": {
+      "round": 2,
       "searched": [
         "al-islam.org",
+        "Google Books",
+        "Open Library",
         "general web search"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Part 2 of History of Islamic Philosophy, a large collection of essays by many specialists, edited by Seyyed Hossein Nasr and Oliver Leaman, tracing Islamic philosophy, its main thinkers and schools from the beginning to modern times. First published by Routledge in 1996 in its History of World Philosophies series."
+        ],
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/History_of_Islamic_Philosophy",
+        "confidence": "medium"
+      },
+      "note": "Ansariyan Publications (Qum) reprinted it in English in 2001.",
       "needsReview": false
     },
     "439": {
+      "round": 2,
       "searched": [
         "al-islam.org",
+        "Google Books",
+        "Open Library",
         "general web search"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Part 1 of History of Islamic Philosophy, a large collection of essays by many specialists, edited by Seyyed Hossein Nasr and Oliver Leaman, tracing Islamic philosophy, its main thinkers and schools from the beginning to modern times. First published by Routledge in 1996 in its History of World Philosophies series."
+        ],
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/History_of_Islamic_Philosophy",
+        "confidence": "medium"
+      },
+      "note": "Ansariyan Publications (Qum) reprinted it in English in 2001.",
       "needsReview": false
     },
     "440": {
+      "round": 2,
       "searched": [
         "al-islam.org",
+        "Google Books",
+        "Open Library",
         "general web search"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Part 2 of History of Islamic Philosophy, a large collection of essays by many specialists, edited by Seyyed Hossein Nasr and Oliver Leaman, tracing Islamic philosophy, its main thinkers and schools from the beginning to modern times. First published by Routledge in 1996 in its History of World Philosophies series."
+        ],
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/History_of_Islamic_Philosophy",
+        "confidence": "medium"
+      },
+      "note": "Ansariyan Publications (Qum) reprinted it in English in 2001.",
       "needsReview": false
     },
     "334": {
@@ -6675,11 +7007,20 @@
       "needsReview": false
     },
     "770": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Ayatullah Murtada Mutahhari's study of hijab: what the word means, the psychological, family and social reasons for it, the Qur'anic command to lower the gaze, and what the traditions and religious rulings say."
+        ],
+        "source": "Shiavault (book contents)",
+        "url": "https://www.shiavault.com/books/hijab-islamic-veil/",
+        "confidence": "medium"
+      },
+      "note": "Matched by title; the library's copy is published by Dabistan-e-Zehra.",
       "needsReview": false
     },
     "258": {
@@ -6691,20 +7032,37 @@
       "needsReview": false
     },
     "109": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A short study of the seventh Imam, Musa al-Kadhim, by the Al-Balagh Foundation: his life, his school and learning, the political and social conditions of his time and his dealings with the caliph Harun al-Rashid."
+        ],
+        "source": "Shiavault (contents of the Al-Balagh edition)",
+        "url": "https://www.shiavault.com/books/imam-al-kadhim-a-s/",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "119": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Nothing found for this title and author.",
-      "needsReview": false
+      "description": {
+        "text": [
+          "A short study of Imam Husayn by the Al-Balagh Foundation: his role in reviving Islam, the build-up to his uprising, the journey to Iraq and the part women played."
+        ],
+        "source": "Shiavault (contents of the Al-Balagh edition)",
+        "url": "https://www.shiavault.com/books/imam-hussein-bin-ali-a-s/",
+        "confidence": "medium"
+      },
+      "needsReview": true,
+      "note": "The library records no author or publisher; matched by title to the Al-Balagh booklet."
     },
     "159": {
       "searched": [
@@ -6747,12 +7105,22 @@
       "needsReview": false
     },
     "704": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Shiavault"
       ],
-      "note": "Nothing found for this title and author.",
-      "needsReview": false
+      "description": {
+        "text": [
+          "The first volume of Allamah Majlisi's Hayat al-Qulub, published in English by Ansariyan as 'Stories of the Prophets': the lives of the prophets before Prophet Muhammad, as known from the Qur'an and hadith."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/hayat-al-qulub-vol-1-stories-prophets-muhammad-baqir-majlisi",
+        "confidence": "medium"
+      },
+      "needsReview": true,
+      "note": "The library records only the title and publisher (Ansariyan). Ansariyan's 'Stories of the Prophets' is this volume, but another book with the same title exists.",
+      "coverNote": "al-islam.org has only its standard drawn cover."
     },
     "540": {
       "searched": [
@@ -6803,11 +7171,14 @@
       "needsReview": false
     },
     "734": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "general web search (title on its own)"
       ],
-      "note": "Nothing found for this title and author.",
+      "note": "Found only catalogue records (Fathi Yakan, American Trust Publications, 1984, 122 pages), with no description of the contents.",
       "needsReview": false
     },
     "751": {
@@ -6851,11 +7222,22 @@
       "needsReview": false
     },
     "724": {
+      "round": 2,
       "searched": [
         "al-islam.org",
+        "Google Books",
+        "Open Library",
         "general web search"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A reflective study, by the author Zakir, of the spiritual meaning of weeping for and remembering Imam Husayn. Using hadith, devotional writings and accounts of Ashura, it explains how sincere mourning renews faith and loyalty to the Ahl al-Bayt and keeps the message of Karbala alive."
+        ],
+        "source": "Islamic Sources (book page)",
+        "url": "https://islamic-sources.com/en/books/tears-and-tributes",
+        "confidence": "medium"
+      },
+      "note": "First published by the World Organization for Islamic Services; ISBN 964-438-317-6 (an Ansariyan number).",
       "needsReview": false
     },
     "482": {
@@ -6920,8 +7302,19 @@
       "needsReview": false
     },
     "237": {
-      "searched": [],
-      "note": "Not searched one by one yet (no author is recorded, so a match would be a guess). Left for the librarian.",
+      "round": 2,
+      "searched": [
+        "Google Books"
+      ],
+      "description": {
+        "text": [
+          "Part of Ahmad von Denffer's series on dialogue between Christians and Muslims (Islamic Foundation). The series collects the resolutions and statements of the major Christian-Muslim dialogue meetings; Part 2 gives Christian guidelines for dialogue."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=49WTSQAACAAJ",
+        "confidence": "medium"
+      },
+      "note": "Google Books lists the 1980 collection; the library's copy is one part of it.",
       "needsReview": false
     },
     "807": {
@@ -6997,8 +7390,19 @@
       "needsReview": false
     },
     "735": {
-      "searched": [],
-      "note": "Not searched one by one yet (no author is recorded, so a match would be a guess). Left for the librarian.",
+      "round": 2,
+      "searched": [
+        "al-islam.org",
+        "Shiavault"
+      ],
+      "description": {
+        "text": [
+          "Talks by Dr Muhammad Ibrahim Ayati on Imam Husayn's uprising: its causes, why it succeeded, jihad and martyrdom, and the role of the sermon and pulpit in keeping its message alive."
+        ],
+        "source": "Shiavault (book contents)",
+        "url": "https://www.shiavault.com/books/lectures-on-ashura/",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "411": {
@@ -7054,8 +7458,19 @@
       "needsReview": false
     },
     "178": {
-      "searched": [],
-      "note": "Not searched one by one yet (no author is recorded, so a match would be a guess). Left for the librarian.",
+      "round": 2,
+      "searched": [
+        "Google Books"
+      ],
+      "description": {
+        "text": [
+          "An issue of the American Journal of Islamic Social Sciences (AJISS), a peer-reviewed quarterly founded in 1984 and published by the International Institute of Islamic Thought, with research on many sides of Islam and the Muslim world: history, philosophy, politics, psychology, law and more."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=v3k5DwAAQBAJ",
+        "confidence": "medium"
+      },
+      "note": "Describes the journal; the library's record does not say which issue.",
       "needsReview": false
     },
     "766": {
@@ -7094,8 +7509,18 @@
       "needsReview": false
     },
     "261": {
-      "searched": [],
-      "note": "Not searched one by one yet (no author is recorded, so a match would be a guess). Left for the librarian.",
+      "round": 2,
+      "searched": [
+        "Google Books"
+      ],
+      "description": {
+        "text": [
+          "A book from Life magazine's 1955 series on the world's great religions, expanded with extra material and selections from scripture. It covers Hinduism, Buddhism, the Chinese faiths, Islam, Judaism and Christianity, and compares them."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=6x7QrQEACAAJ",
+        "confidence": "high"
+      },
       "needsReview": false
     },
     "698": {
@@ -7106,6 +7531,89 @@
     "244": {
       "searched": [],
       "note": "Not searched one by one yet (no author is recorded, so a match would be a guess). Left for the librarian.",
+      "needsReview": false
+    },
+    "209": {
+      "round": 2,
+      "searched": [
+        "Google Books"
+      ],
+      "description": {
+        "text": [
+          "Allamah Tabataba'i's summary, in fairly simple language, of the core beliefs and teachings of Islam that every follower of the Ahl al-Bayt should know, each explained with references to the Qur'an, hadith and the practice of the Ahl al-Bayt."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=h344tAEACAAJ",
+        "confidence": "high"
+      },
+      "needsReview": false
+    },
+    "284": {
+      "round": 2,
+      "searched": [
+        "Google Books"
+      ],
+      "description": {
+        "text": [
+          "Mulla Muhammad Muhsin Fayd al-Kashani on the Prophet's Night Journey and Ascension (Mi'raj): what the Qur'an says, the physical ascension, and the traditions describing what happened."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=SuqtjgEACAAJ",
+        "confidence": "high"
+      },
+      "needsReview": false
+    },
+    "311": {
+      "round": 2,
+      "searched": [
+        "Google Books"
+      ],
+      "description": {
+        "text": [
+          "Sayyid Mujtaba Musawi Lari on knowing God: perfecting faith, the search for God, God and reason, belief in the unseen, and materialism."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=xaC3jgEACAAJ",
+        "confidence": "high"
+      },
+      "needsReview": false
+    },
+    "144": {
+      "round": 2,
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Short biographies of the Fourteen Infallibles: the Prophet, his daughter Lady Fatima, and the twelve Imams."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/brief-history-fourteen-infallibles",
+        "confidence": "high"
+      },
+      "note": "Same book as #632.",
+      "coverNote": [
+        "Google Books"
+      ],
+      "needsReview": false
+    },
+    "657": {
+      "round": 2,
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Short biographies of the Fourteen Infallibles: the Prophet, his daughter Lady Fatima, and the twelve Imams."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/brief-history-fourteen-infallibles",
+        "confidence": "high"
+      },
+      "note": "Same book as #632.",
+      "coverNote": [
+        "Google Books"
+      ],
       "needsReview": false
     }
   }
