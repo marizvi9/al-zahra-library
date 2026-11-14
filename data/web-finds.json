@@ -1,0 +1,162 @@
+{
+  "_help": [
+    "Covers and descriptions found by searching the web book by book (Part 2), in this order: al-islam.org, Google Books, Open Library, then publisher / bookstore / library-catalogue pages and general web search.",
+    "This file is also the progress file: every book that has been searched is listed here, so a new run skips it and carries on where it stopped.",
+    "description.text is written in our own words from the source page, never copied. If no reliable source was found, there is no description (we never guess).",
+    "confidence: high = the source is clearly this book; medium = the same work but another edition or translation, or a less direct source; low = doubtful.",
+    "needsReview: true means it is NOT shown on the site until a person checks it and sets it to false.",
+    "cover.imageUrl is where the picture was downloaded from; the site uses our own copy in public/covers/. Run node scripts/apply_web_finds.mjs after editing this file."
+  ],
+  "books": {
+    "472": {
+      "searched": ["al-islam.org"],
+      "description": {
+        "text": ["A detailed study of the life of Imam ʿAli ibn Musa al-Rida, the eighth Imam of the Prophet's Household. It covers his biography and the history of his life and death, looks at his works, debates and teachings on belief, gathers a selection of his wise sayings, and ends with his ziyarat and a short note on the benefits of reciting it."],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/life-imam-ali-bin-musa-al-ridha-baqir-sharif-al-qurashi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its generic drawn cover for this book, so our own drawn cover is used.",
+      "needsReview": false
+    },
+    "494": {
+      "searched": ["al-islam.org"],
+      "description": {
+        "text": ["An account of Imam Husayn's life from his birth to his martyrdom. It looks at his years with his mother, Lady Fatima, his father and his brother, and his part in events before he became Imam, and gives a careful narrative of what happened at Karbala."],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/husayn-saviour-islam-sv-mir-ahmad-ali",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its generic drawn cover.",
+      "needsReview": false
+    },
+    "587": {
+      "searched": ["al-islam.org"],
+      "description": {
+        "text": ["The first English translation of a work from the Twelver Shi'i tradition of medicine handed down from the Imams. It is meant both for readers studying the history of Islamic medicine and civilisation and for anyone who wants to know more about the Shi'i heritage and the practical side of the faith."],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/islamic-medical-wisdom-tibb-al-aimma",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its generic drawn cover.",
+      "needsReview": false
+    },
+    "32": {
+      "searched": ["al-islam.org"],
+      "description": {
+        "text": ["A study of the life of Imam Hasan, which the author says was full of events and lessons yet is often overlooked because so much attention goes to Imam Husayn. Chapters look at the oath of allegiance to him, his caliphate and the terms of his peace treaty."],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/imam-hasan-and-caliphate-qurrat-ul-ain-abidiy",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its generic drawn cover.",
+      "needsReview": false
+    },
+    "138": {
+      "searched": ["al-islam.org", "Google Books", "Open Library"],
+      "description": {
+        "text": ["A short introduction to the Shi'i belief in Imam al-Mahdi: his occultation, his return, and why the anniversary of his birth is worth celebrating."],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/inevitable-victory-mehdi-bazargan",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its generic drawn cover; Open Library's 1979 edition has no cover picture.",
+      "needsReview": false
+    },
+    "58": {
+      "searched": ["al-islam.org"],
+      "description": {
+        "text": ["A concise outline of the beliefs, practices and history of Twelver Shi'a Islam. The author wrote it as a short summary, without long proofs, so that beginners and students could use it; it covers subjects such as prophethood and the Imamate."],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/faith-imamiyyah-shiah-muhammad-ridha-al-muzaffar",
+        "confidence": "medium"
+      },
+      "note": "Same work ('Aqa'id al-Imamiyyah), but al-islam.org hosts a different English translation, titled 'The Faith of the Imamiyyah Shi'ah'.",
+      "coverNote": "Different translation, so its cover is not used.",
+      "needsReview": false
+    },
+    "294": {
+      "searched": ["al-islam.org"],
+      "description": {
+        "text": ["An introduction to three foundations of Islamic belief: God, His existence and His attributes; the Prophet Muhammad and prophethood; and the message of Islam."],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/revealer",
+        "confidence": "medium"
+      },
+      "note": "Same work, but al-islam.org hosts a different English translation, titled 'The Revealer, The Messenger, The Message'.",
+      "coverNote": "Different translation, so its cover is not used.",
+      "needsReview": false
+    },
+    "764": {
+      "searched": ["al-islam.org", "Google Books"],
+      "description": {
+        "text": [
+          "Ayatullah al-Khu'i's introduction to the history and study of the Qur'an, first published in Arabic in 1974 and translated by Abdulaziz Sachedina. It discusses the Qur'an's inimitability and the Prophet's other miracles, the different readings, how the text was collected, abrogation and the principles of interpretation.",
+          "Sachedina's introduction places the work in its historical setting."
+        ],
+        "source": "Google Books",
+        "url": "https://books.google.com/books?id=uu8RDAAAQBAJ",
+        "confidence": "high"
+      },
+      "cover": {
+        "imageUrl": "https://books.google.com/books/content?id=uu8RDAAAQBAJ&printsec=frontcover&img=1&zoom=1&fife=w800",
+        "source": "Google Books",
+        "sourceUrl": "https://books.google.com/books?id=uu8RDAAAQBAJ",
+        "confidence": "high"
+      },
+      "note": "Oxford University Press, 1998 (ISBN 0195116755).",
+      "needsReview": false
+    },
+    "729": {
+      "searched": ["al-islam.org", "Google Books", "publisher / bookstore"],
+      "description": {
+        "text": ["Papers from an international seminar held in the United States that set out to rethink Islamic political theory in the light of present-day political realities. Contributors include Fathi Osman and Fazlur Rahman, and the topics include the principles of shura (consultation) and building a just social order in Islam."],
+        "source": "IslamicBookstore.com (publisher's description)",
+        "url": "https://www.islamicbookstore.com/b3384.html",
+        "confidence": "high"
+      },
+      "coverNote": "Google Books only has a scan of the title page with library stamps, not a cover.",
+      "note": "American Trust Publications, 1986 (ISBN 0892590580).",
+      "needsReview": false
+    },
+    "677": {
+      "searched": ["al-islam.org", "Google Books", "Open Library", "library catalogues and reviews"],
+      "description": {
+        "text": ["A collection of lectures by Ali Shariati, edited and annotated by Farhang Rajaee, with a foreword by John L. Esposito. Shariati argues that Muslims need an \"Islamic renaissance\" led by enlightened thinkers, and describes what such thinkers should be like and where they should begin."],
+        "source": "Review in the International Journal of Islamic and Eastern Studies (IIUM)",
+        "url": "https://journals.iium.edu.my/ijes/index.php/iejs/article/download/52/pdf_8/146",
+        "confidence": "medium"
+      },
+      "note": "Institute for Research and Islamic Studies, Houston, 1986. The book already had a cover.",
+      "needsReview": false
+    },
+    "488": {
+      "searched": ["al-islam.org", "Google Books", "Open Library", "library catalogues"],
+      "description": {
+        "text": ["A short booklet published by UNESCO in 1970 in its series \"The Race Question and Modern Thought\", which gave the views of different faiths on race. The author, a professor at Cairo University who was also a minister for religious endowments in Egypt, sets out Islam's position on race."],
+        "source": "Texas A&M University Libraries catalogue",
+        "url": "https://libcat.library.tamu.edu/Record/in00002544306/Description",
+        "confidence": "medium"
+      },
+      "coverNote": "Google Books only has a scan of the title page, not a cover.",
+      "needsReview": false
+    },
+    "794": {
+      "searched": ["al-islam.org", "Google Books", "general web search"],
+      "note": "Only a rare-book seller's listing was found (a 27-page pamphlet, Tehran, 1981). It says nothing about the contents, so no description was written.",
+      "needsReview": true
+    },
+    "118": {
+      "searched": ["al-islam.org", "general web search"],
+      "note": "A book called 'Reunion with the Beloved' appears in a list of Imam Khomeini's works (his letters to his son), but nothing confirms it is this book or that Mansoor Limba translated it. Left empty.",
+      "needsReview": true
+    },
+    "182": { "searched": ["al-islam.org", "general web search"], "note": "No reliable source for this exact title (it may be an edition of Shariati's essays 'Man, Islam and Marxism'). Left empty.", "needsReview": false },
+    "525": { "searched": ["general web search"], "note": "Nothing found.", "needsReview": false },
+    "231": { "searched": ["general web search"], "note": "Nothing found.", "needsReview": false },
+    "674": { "searched": ["al-islam.org", "general web search"], "note": "Nothing found for this title by Yousuf N. Lalljee.", "needsReview": false },
+    "798": { "searched": ["general web search"], "note": "No translation by Salehe Salehpour found.", "needsReview": false },
+    "412": { "searched": ["al-islam.org", "general web search"], "note": "Nothing found.", "needsReview": false },
+    "811": { "searched": ["al-islam.org", "general web search"], "note": "Nothing found for this title by H&T Kassamali.", "needsReview": false }
+  }
+}

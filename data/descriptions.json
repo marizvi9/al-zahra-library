@@ -44,6 +44,18 @@
   "matchedTitle": "Ali the Magnificent",
   "matchedAuthor": "Yousuf Lalljee - XKP"
  },
+ "32": {
+  "paragraphs": [
+   "A study of the life of Imam Hasan, which the author says was full of events and lessons yet is often overlooked because so much attention goes to Imam Husayn. Chapters look at the oath of allegiance to him, his caliphate and the terms of his peace treaty."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/imam-hasan-and-caliphate-qurrat-ul-ain-abidiy",
+  "matchedTitle": "Imam Hasan and Caliphate",
+  "matchedAuthor": "Qurrat-ul-Ain Abidiy, Sibtul Hasan Hansvi",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "37": {
   "paragraphs": [
    "It is rare in history for a human being to be created solely for the sake of serving the mission of another human. This is the legendary story of the unique and esteemed personality, Abbas ibn Ali, the brother of the Holy Grandson of the Seal of Prophets, Hussain ibn Ali. The life and death of Abbas testify to his absolute dedication to Hussain's mission of serving and protecting the religion of Islam and highlights the remarkable attributes he embodied, most notably chivalry, loyalty, sacrifice, and devotion to the purified members of the Prophet's family. He was not infallible, yet he exemplified the position of infallibility and manifested the best example of a righteous servant to God and His Prophet, which demonstrated itself on the Day of Ashura. As the standard-bearer and the backbone of Imam Hussain, Abbas sacrificed his life while fetching water to quench the thirst of the women and children in Imam Hussain's camp. If there are two sides of the same coin, Hussain and Abbas are two sides of that golden coin. It is no wonder that their twin shrines stand in unison with each other. Millions flock to his shrine every year to pay their respect and seek their needs at his door, given his lofty position as the \"Door to Needs\". This book presents an introduction to this great saint in the history of Islam, who was a man of principle, morality, dedication, and unwavering faith in the face of tyranny."
@@ -52,6 +64,18 @@
   "url": "https://books.google.com/books?id=JBbL0AEACAAJ",
   "matchedTitle": "Who Is Abbas?",
   "matchedAuthor": "Jerrmein Abu Shahba"
+ },
+ "58": {
+  "paragraphs": [
+   "A concise outline of the beliefs, practices and history of Twelver Shi'a Islam. The author wrote it as a short summary, without long proofs, so that beginners and students could use it; it covers subjects such as prophethood and the Imamate."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/faith-imamiyyah-shiah-muhammad-ridha-al-muzaffar",
+  "matchedTitle": "The Beliefs Of Shi'ite School",
+  "matchedAuthor": "Allama Muhammad Raza Muzaffar",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
  },
  "64": {
   "paragraphs": [
@@ -169,6 +193,18 @@
   "url": "https://books.google.com/books?id=idkTswEACAAJ",
   "matchedTitle": "The Voice of Human Justice (Sautu'l 'Adalati'l Insaniyah)",
   "matchedAuthor": "George Jordac"
+ },
+ "138": {
+  "paragraphs": [
+   "A short introduction to the Shi'i belief in Imam al-Mahdi: his occultation, his return, and why the anniversary of his birth is worth celebrating."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/inevitable-victory-mehdi-bazargan",
+  "matchedTitle": "The Inevitable Victory",
+  "matchedAuthor": "Mehdi Bazargan",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
  },
  "144": {
   "paragraphs": [
@@ -450,6 +486,18 @@
   "url": "https://books.google.com/books?id=TAIaAwAAQBAJ",
   "matchedTitle": "The Duties of Brotherhood in Islam",
   "matchedAuthor": "Imam al-Ghazali"
+ },
+ "294": {
+  "paragraphs": [
+   "An introduction to three foundations of Islamic belief: God, His existence and His attributes; the Prophet Muhammad and prophethood; and the message of Islam."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/revealer",
+  "matchedTitle": "He, His Messenger and His Message",
+  "matchedAuthor": "Ayatullah Baqir al-Sadr",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
  },
  "301": {
   "paragraphs": [
@@ -832,6 +880,18 @@
   "matchedTitle": "Let's Learn about Divine Justice",
   "matchedAuthor": "Ayatullah Naser Makarem Shirazi"
  },
+ "472": {
+  "paragraphs": [
+   "A detailed study of the life of Imam ʿAli ibn Musa al-Rida, the eighth Imam of the Prophet's Household. It covers his biography and the history of his life and death, looks at his works, debates and teachings on belief, gathers a selection of his wise sayings, and ends with his ziyarat and a short note on the benefits of reciting it."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/life-imam-ali-bin-musa-al-ridha-baqir-sharif-al-qurashi",
+  "matchedTitle": "The Life of Imam Ali Bin Musa al-Rida",
+  "matchedAuthor": "Baqir Shareef al-Qurashi",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "473": {
   "paragraphs": [
    "Islam and traditional sexual ethics, sexual freedom, sexual ethics in modern world, love, sexual discipline, and chastity."
@@ -859,6 +919,18 @@
   "matchedTitle": "The Cultural Side of Islam",
   "matchedAuthor": "Muhammad Marmaduke Pickthall"
  },
+ "488": {
+  "paragraphs": [
+   "A short booklet published by UNESCO in 1970 in its series \"The Race Question and Modern Thought\", which gave the views of different faiths on race. The author, a professor at Cairo University who was also a minister for religious endowments in Egypt, sets out Islam's position on race."
+  ],
+  "source": "Texas A&M University Libraries catalogue",
+  "url": "https://libcat.library.tamu.edu/Record/in00002544306/Description",
+  "matchedTitle": "Islam and the Race Question",
+  "matchedAuthor": "Dr. Abdul Aziz Kamel",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "492": {
   "paragraphs": [
    "European and Arab versions of the Crusades have little in common. For Arabs, the twelfth and thirteenth centuries were years of strenuous efforts to repel a brutal and destructive invasion by barbarian hordes. Under Saladin, an unstoppable Muslim army inspired by prophets and poets finally succeeded in destroying the most powerful Crusader kingdoms. The memory of this greatest and most enduring victory ever won by a non-European society against the West still lives in the minds of millions of Arabs today. Amin Maalouf has sifted through the works of a score of contemporary Arab chroniclers of the Crusades, eyewitnesses and often participants in the events. He retells their stories in their own vivacious style, giving us a vivid portrait of a society rent by internal conflicts and shaken by a traumatic encounter with an alien culture. He retraces two critical centuries of Middle Eastern history, and offers fascinating insights into some of the forces that shape Arab and Islamic consciousness today."
@@ -867,6 +939,18 @@
   "url": "https://books.google.com/books?id=Fj0hBQAAQBAJ",
   "matchedTitle": "The Crusades Through Arab Eyes",
   "matchedAuthor": "Amin Maalouf"
+ },
+ "494": {
+  "paragraphs": [
+   "An account of Imam Husayn's life from his birth to his martyrdom. It looks at his years with his mother, Lady Fatima, his father and his brother, and his part in events before he became Imam, and gives a careful narrative of what happened at Karbala."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/husayn-saviour-islam-sv-mir-ahmad-ali",
+  "matchedTitle": "Husain The Savior Of Islam",
+  "matchedAuthor": "S.V Mir Ahmed Ali",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
  },
  "498": {
   "paragraphs": [
@@ -1084,6 +1168,18 @@
   "matchedTitle": "Man and Faith",
   "matchedAuthor": "Ayatullah Murtada Mutahhari - XKP"
  },
+ "587": {
+  "paragraphs": [
+   "The first English translation of a work from the Twelver Shi'i tradition of medicine handed down from the Imams. It is meant both for readers studying the history of Islamic medicine and civilisation and for anyone who wants to know more about the Shi'i heritage and the practical side of the faith."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/islamic-medical-wisdom-tibb-al-aimma",
+  "matchedTitle": "Islamic Medical Wisdom, The Tibb al-A'imma",
+  "matchedAuthor": "Batool Ispahanny",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "597": {
   "paragraphs": [
    "The Author in the book highlights and answers some of the vital questions like: What is the position of Islam today, what is its task and what role should it and could it be playing in helping mankind out of the morass into which the divisive materialism of East and West threaten to plunge us one and all?"
@@ -1230,6 +1326,18 @@
   "matchedTitle": "Empowerment for a New Golden Age",
   "matchedAuthor": "Mohammad Afzal Janjua"
  },
+ "677": {
+  "paragraphs": [
+   "A collection of lectures by Ali Shariati, edited and annotated by Farhang Rajaee, with a foreword by John L. Esposito. Shariati argues that Muslims need an \"Islamic renaissance\" led by enlightened thinkers, and describes what such thinkers should be like and where they should begin."
+  ],
+  "source": "Review in the International Journal of Islamic and Eastern Studies (IIUM)",
+  "url": "https://journals.iium.edu.my/ijes/index.php/iejs/article/download/52/pdf_8/146",
+  "matchedTitle": "What Is To Be Done",
+  "matchedAuthor": "Dr. Ali Shariati",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "688": {
   "paragraphs": [
    "Secrets, subtle points, and attitudes with which each action of Hajj must be carried out, enabling the Hajj to become more than a physical journey; a journey of the inner soul towards self-purification and the Almighty."
@@ -1329,6 +1437,18 @@
   "matchedTitle": "A Short History of the Revivalist Movement in Islam",
   "matchedAuthor": "Syed Abul ʻAla Maudoodi"
  },
+ "729": {
+  "paragraphs": [
+   "Papers from an international seminar held in the United States that set out to rethink Islamic political theory in the light of present-day political realities. Contributors include Fathi Osman and Fazlur Rahman, and the topics include the principles of shura (consultation) and building a just social order in Islam."
+  ],
+  "source": "IslamicBookstore.com (publisher's description)",
+  "url": "https://www.islamicbookstore.com/b3384.html",
+  "matchedTitle": "State Politics and Islam",
+  "matchedAuthor": "Mumtaz Ahmad",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "736": {
   "paragraphs": [
    "A beautifully constructed novel set in the Sudan and Europe. 'Among the six finest novels to be written in modern Arabic literature.' Edward Said"
@@ -1382,6 +1502,19 @@
   "url": "https://books.google.com/books?id=OmLAoQEACAAJ",
   "matchedTitle": "The Succession to Muhammad: A Study of the Early Caliphate",
   "matchedAuthor": "Madelung Wilferd"
+ },
+ "764": {
+  "paragraphs": [
+   "Ayatullah al-Khu'i's introduction to the history and study of the Qur'an, first published in Arabic in 1974 and translated by Abdulaziz Sachedina. It discusses the Qur'an's inimitability and the Prophet's other miracles, the different readings, how the text was collected, abrogation and the principles of interpretation.",
+   "Sachedina's introduction places the work in its historical setting."
+  ],
+  "source": "Google Books",
+  "url": "https://books.google.com/books?id=uu8RDAAAQBAJ",
+  "matchedTitle": "The Prolegomena to the Qur'an",
+  "matchedAuthor": "Ayatullah Sayyid Abu Al-Qasim Al-Musawi Al-Khu'i",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
  },
  "767": {
   "paragraphs": [
