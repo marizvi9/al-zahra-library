@@ -3035,7 +3035,32 @@
       "bio": "Shia scholar who serves as imam of the Islamic Shia Ithna'asheri Jamaat in Toronto, Canada, and the son of Sayyid Saeed Akhtar Rizvi. His books explain Islamic law and belief.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Sa%27id_Akhtar_Rizvi"
-      ]
+      ],
+      "file": "Maulana-Rizvi-300x300-1.jpeg",
+      "source": "https://www.imams.us/about/sayyid-muhammad-rizvi/",
+      "creator": "The Council of Shia Muslim Scholars of North America (imams.us)",
+      "license": "Used with credit",
+      "licenseUrl": null,
+      "imageDescription": "Photo from 'About Sayyid Muhammad Rizvi' on imams.us, chosen by the site owner; cropped to a portrait.",
+      "photoSource": "imams.us",
+      "photo": "/authors/sayyid-muhammad-rizvi.jpg",
+      "photoLarge": "/authors/large/sayyid-muhammad-rizvi.webp",
+      "largeWidth": 225,
+      "largeHeight": 300,
+      "lowRes": true,
+      "originalWidth": 225,
+      "originalHeight": 300,
+      "focus": {
+        "x": 50.0,
+        "y": 30.0,
+        "zoom": 1.05
+      },
+      "head": {
+        "x0": 27.0,
+        "y0": 2.0,
+        "x1": 72.0,
+        "y1": 48.0
+      }
     },
     "Shaykh al-Saduq": {
       "bio": "Shaykh al-Saduq (died 991), Abu Ja'far Muhammad ibn Ali ibn Babawayh al-Qummi, was one of the greatest Shia hadith scholars of the 10th century. He compiled Man la yahduruhu al-faqih, one of the Four Books of Shia hadith, and some 300 works are attributed to him.",
