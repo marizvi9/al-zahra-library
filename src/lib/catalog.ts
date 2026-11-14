@@ -261,9 +261,16 @@ export type ShelfSection = {
 };
 
 const NO_SHELF = "none";
-const shelfOf = (b: Book) => b.catNo ?? NO_SHELF;
+// A book with no Cat # goes on its category's shelf when every other book in that category shares one
+// Cat # (shown there under "No section number recorded"). Only for display; the sheet is not changed.
+const categoryShelf = (() => {
+  const seen = new Map<string, Set<string>>();
+  for (const b of books) if (b.catNo) (seen.get(b.categorySlug) ?? seen.set(b.categorySlug, new Set()).get(b.categorySlug)!).add(b.catNo);
+  return new Map([...seen].filter(([, s]) => s.size === 1).map(([c, s]) => [c, [...s][0]]));
+})();
+const shelfOf = (b: Book) => b.catNo ?? categoryShelf.get(b.categorySlug) ?? NO_SHELF;
 /** Which section of its shelf a book is in: Sub Cat # on numbered shelves, category otherwise. */
-const sectionKeyOf = (b: Book) => (b.catNo ? (b.subCatNo ? `s${b.subCatNo}` : "unnumbered") : b.categorySlug);
+const sectionKeyOf = (b: Book) => (shelfOf(b) !== NO_SHELF ? (b.subCatNo ? `s${b.subCatNo}` : "unnumbered") : b.categorySlug);
 
 export const shelves: Shelf[] = (() => {
   const byNo = new Map<string, Book[]>();
