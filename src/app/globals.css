@@ -2399,8 +2399,13 @@ button:active,
   display: block;
 }
 .author-avatar .avatar-bg {
-  /* placed by AvatarView (lined up with the photo, enlarged to cover the circle) */
-  filter: blur(4px) saturate(1.05);
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.5);
+  filter: blur(6px) saturate(1.1);
 }
 .author-avatar-initials {
   background: linear-gradient(160deg, var(--navy), var(--ink));
