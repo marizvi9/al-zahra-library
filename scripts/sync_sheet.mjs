@@ -352,6 +352,12 @@ async function main() {
       body: JSON.stringify({ requests: [{ appendDimension: { sheetId: props.sheetId, dimension: "COLUMNS", length: needCols - props.gridProperties.columnCount } }] }),
     });
   }
+  // The program's own columns clip long text at the box edge (instead of wrapping it), so rows stay one
+  // line tall and the sheet reads as it did before. Only the program's columns are touched.
+  await sheetsApi(token, ":batchUpdate", {
+    method: "POST",
+    body: JSON.stringify({ requests: [{ repeatCell: { range: { sheetId: props.sheetId, startColumnIndex: firstProgramCol, endColumnIndex: lastProgramCol + 1 }, cell: { userEnteredFormat: { wrapStrategy: "CLIP" } }, fields: "userEnteredFormat.wrapStrategy" } }] }),
+  });
   const q = () => `'${TAB.replace(/'/g, "''")}'`;
   for (let i = 0; i < all.length; i += 500) {
     const data = all.slice(i, i + 500).map((w) => ({ range: `${q()}!${colLetter(w.col)}${w.row}`, values: [[w.value]] }));
