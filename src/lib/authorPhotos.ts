@@ -47,6 +47,8 @@ type Entry = Partial<AuthorPhoto> & {
   bio?: string | null;
   bioStatus?: "WikiShia" | "other source" | "from our data only" | "needs review";
   bioSources?: string[];
+  /** A title shown before the name on the site (only "Ayatullah" for now). The Google Sheet is never changed. */
+  title?: string;
 };
 const file = data as unknown as { neverPhoto: string[]; authors: Record<string, Entry> };
 
@@ -97,3 +99,15 @@ export function initials(name: string) {
   const last = words[words.length - 1].replace(/^(al|as|at|an|ar|ash)-/i, "");
   return (words.length === 1 ? first[0] : first[0] + last[0]).toUpperCase();
 }
+
+// Honorifics at the start of a catalogue name that the shown title replaces ("Ayatollah X" -> "Ayatullah X").
+const LEADING_TITLE = /^(?:(?:grand|al-uzma)\s+)?(?:ayat(?:u|o)llah?|ayt\.?|imam)(?:\s+al-uzma)?\s+/i;
+
+/** The name as shown on the site: with its title ("Ayatullah ...") when the author has one in authors.json.
+ *  Page addresses and the Google Sheet keep the plain name. */
+export function displayName(name: string): string {
+  const t = file.authors[name]?.title;
+  if (!t || name === "Imam Khomeini") return name;
+  return `${t} ${name.replace(LEADING_TITLE, "")}`;
+}
+export const hasTitle = (name: string) => !!file.authors[name]?.title && name !== "Imam Khomeini";

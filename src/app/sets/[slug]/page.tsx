@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ArchCover from "@/components/ArchCover";
 import Credit from "@/components/Credit";
-import { coverPhotoFor, creditParts, getCover } from "@/lib/catalog";
+import { coverPhotoFor, creditLine, creditParts, getCover } from "@/lib/catalog";
 import { getSet, volumeSets } from "@/lib/sets";
 import { withBase } from "@/lib/paths";
 
@@ -69,7 +69,7 @@ export default async function SetPage({ params }: Props) {
                         decoding="async"
                       />
                     ) : (
-                      <ArchCover title={b.title} author={b.author} seed={set.slug} photo={coverPhotoFor(b)} />
+                      <ArchCover title={b.title} author={creditLine(b)} seed={set.slug} photo={coverPhotoFor(b)} />
                     )}
                   </Link>
                   <div className="set-volume-text">

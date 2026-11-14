@@ -9,7 +9,7 @@ import ArchCover from "./ArchCover";
 import Credit from "./Credit";
 import SetLabel from "./SetLabel";
 import { setRefFor } from "@/lib/setIndex";
-import { coverPhotoFor, creditParts, getCover, type Book } from "@/lib/catalog";
+import { coverPhotoFor, creditLine, creditParts, getCover, type Book } from "@/lib/catalog";
 import { withBase } from "@/lib/paths";
 
 export default function AuthorBooks({ books, authorSlug }: { books: Book[]; authorSlug: string }) {
@@ -40,7 +40,7 @@ export default function AuthorBooks({ books, authorSlug }: { books: Book[]; auth
                     decoding="async"
                   />
                 ) : (
-                  <ArchCover title={b.title} author={b.author} seed={setRefFor(b.id)?.slug ?? b.slug} photo={coverPhotoFor(b)} />
+                  <ArchCover title={b.title} author={creditLine(b)} seed={setRefFor(b.id)?.slug ?? b.slug} photo={coverPhotoFor(b)} />
                 )}
               </span>
             </ViewTransition>

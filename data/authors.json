@@ -5,7 +5,8 @@
     "PHOTOS come ONLY from Wikimedia Commons, under a free licence (public domain, CC0, CC BY or CC BY-SA), and each is shown with its credit and licence. \"photo\" is the small copy (lists, cards); \"photoLarge\" the big portrait on the author's page (never enlarged; \"lowRes\": true means the original is under 480px wide). To REMOVE a photo set \"photo\": null and rebuild. To ADD one, put the Wikipedia article title in \"wikipedia\", then run: node scripts/fetch_author_photos.mjs",
     "Authors with no photo get a navy-and-gold badge with their initials.",
     "neverPhoto: the Prophet, the Imams, Lady Fatima and other members of the Ahlul-Bayt and holy figures, including books attributed to them. They NEVER get a photo or any picture, and are never searched for. The site enforces this even if a photo is added by mistake. Their bios are left for you to write.",
-    "FOCUS: \"focus\" {x, y} is where the face is in the photo, in percent from the left and from the top (set by checking each photo by eye). Every size of the photo is cropped around this point. If a face looks cut off, nudge these numbers and rebuild. Optional \"zoom\" (e.g. 1.5) enlarges the photo around the face in the small round badges only, for photos taken from far away."
+    "FOCUS: \"focus\" {x, y} is where the face is in the photo, in percent from the left and from the top (set by checking each photo by eye). Every size of the photo is cropped around this point. If a face looks cut off, nudge these numbers and rebuild. Optional \"zoom\" (e.g. 1.5) enlarges the photo around the face in the small round badges only, for photos taken from far away.",
+    "TITLES: \"title\": \"Ayatullah\" shows the author on the site as \"Ayatullah <name>\" (on covers, \"Ayt.\" when the full name would not fit). Given only where the catalogue or a sourced bio calls the person Ayatollah or marja'. Imam Khomeini keeps \"Imam\". The Google Sheet is never changed."
   ],
   "neverPhoto": [
     "Imam Ali Amir al-Mum'minin",
@@ -52,7 +53,8 @@
         "y0": 3.2,
         "x1": 80.3,
         "y1": 92.9
-      }
+      },
+      "title": "Ayatullah"
     },
     "Ali Shariati": {
       "wikipedia": "Ali Shariati",
@@ -120,7 +122,8 @@
         "y0": 6.4,
         "x1": 77,
         "y1": 76.1
-      }
+      },
+      "title": "Ayatullah"
     },
     "Muhammad Husayn Tabatabai": {
       "wikipedia": "Muhammad Husayn Tabatabai",
@@ -154,7 +157,8 @@
         "y0": 0,
         "x1": 67.4,
         "y1": 100
-      }
+      },
+      "title": "Ayatullah"
     },
     "Imam Khomeini": {
       "wikipedia": "Ruhollah Khomeini",
@@ -192,45 +196,38 @@
     },
     "Ali Khamenei": {
       "wikipedia": "Ali Khamenei",
-      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ali_Khamenei",
-      "description": "Supreme Leader of Iran from 1989 to 2026",
-      "file": "File:Iran's supreme-leader Ayatollah Sayyid Ali Khamenei.webp",
-      "source": "http://commons.wikishia.net/common/File:Iran%27s_supreme-leader_Ayatollah_Sayyid_Ali_Khamenei.webp",
-      "creator": "Kadeh",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "imageDescription": "From WikiShia Commons, marked by the uploader as own work under CC BY-SA 2.0",
-      "photo": "/authors/ali-khamenei.jpg",
-      "photoLarge": "/authors/large/ali-khamenei.webp",
-      "largeWidth": 640,
-      "largeHeight": 814,
-      "lowRes": false,
-      "originalWidth": 1132,
-      "originalHeight": 1440,
-      "focus": {
-        "x": 55,
-        "y": 30,
-        "zoom": 1.75
-      },
-      "previousPhoto": {
-        "file": "File:Ali Khamenei Nowruz message official portrait 1397 02 (3 x 4 cropped).jpg",
-        "source": "https://commons.wikimedia.org/wiki/File:Ali_Khamenei_Nowruz_message_official_portrait_1397_02_(3_x_4_cropped).jpg",
-        "creator": "khamenei.ir",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
-      },
-      "photoSource": "WikiShia",
       "bio": "Ayatollah Sayyid Ali Husayni Khamenei (1939–2026) was the second Leader of the Islamic Republic of Iran and a Shia marja'. Before the revolution he was imprisoned and exiled for opposing the Pahlavi government; afterwards he served two terms as president (1981–1989) and led Friday prayers in Tehran. In 1989 he was elected Leader (often called the Supreme Leader) of the Islamic Republic of Iran, a position he held until his death in February 2026.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Sayyid_Ali_Husayni_Khamenei"
       ],
+      "photo": "/authors/ali-khamenei.jpg",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ali_Khamenei",
+      "description": "Supreme Leader of Iran from 1989 to 2026",
+      "file": "File:Ali Khamenei Nowruz message official portrait 1397 02 (3 x 4 cropped).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Ali_Khamenei_Nowruz_message_official_portrait_1397_02_(3_x_4_cropped).jpg",
+      "creator": "khamenei.ir",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "imageDescription": "Ali Khamenei, Supreme Leader of Iran",
+      "originalWidth": 1560,
+      "originalHeight": 2073,
+      "photoLarge": "/authors/large/ali-khamenei.webp",
+      "largeWidth": 640,
+      "largeHeight": 814,
+      "lowRes": false,
+      "focus": {
+        "x": 55.0,
+        "y": 28.0,
+        "zoom": 1.9
+      },
       "head": {
-        "x0": 40.9,
-        "y0": 11.2,
-        "x1": 69.1,
-        "y1": 48.9
-      }
+        "x0": 39.0,
+        "y0": 10.0,
+        "x1": 71.0,
+        "y1": 46.0
+      },
+      "title": "Ayatullah"
     },
     "Seyyed Hossein Nasr": {
       "wikipedia": "Seyyed Hossein Nasr",
@@ -310,7 +307,8 @@
         "y0": 0,
         "x1": 74.1,
         "y1": 87.4
-      }
+      },
+      "title": "Ayatullah"
     },
     "Muhammad Husayni Beheshti": {
       "wikipedia": "Mohammad Beheshti",
@@ -344,7 +342,8 @@
         "y0": 12,
         "x1": 94.2,
         "y1": 99.6
-      }
+      },
+      "title": "Ayatullah"
     },
     "Mehdi Bazargan": {
       "wikipedia": "Mehdi Bazargan",
@@ -420,7 +419,8 @@
         "y0": 5.6,
         "x1": 64.9,
         "y1": 81.8
-      }
+      },
+      "title": "Ayatullah"
     },
     "Nasir Makarim Shirazi": {
       "wikipedia": "Naser Makarem Shirazi",
@@ -454,7 +454,8 @@
         "y0": 3.9,
         "x1": 76.2,
         "y1": 71.5
-      }
+      },
+      "title": "Ayatullah"
     },
     "Kalim Siddiqui": {
       "wikipedia": "Kalim Siddiqui (writer)",
@@ -673,7 +674,8 @@
         "y0": 1.4,
         "x1": 76.5,
         "y1": 73.4
-      }
+      },
+      "title": "Ayatullah"
     },
     "Mohammad Ali Shomali": {
       "wikipedia": "Mohammad Ali Shomali",
@@ -731,7 +733,8 @@
         "y0": 0.6,
         "x1": 74.2,
         "y1": 68.6
-      }
+      },
+      "title": "Ayatullah"
     },
     "Husayn Ansariyan": {
       "wikipedia": "Hossein Ansarian",
@@ -831,7 +834,8 @@
         "y0": 2.6,
         "x1": 81.1,
         "y1": 93.2
-      }
+      },
+      "title": "Ayatullah"
     },
     "Sayyid Abdul-Husayn Sharafud-Din al Musawi": {
       "wikipedia": "Abd al-Husayn Sharaf al-Din al-Musawi",
@@ -931,7 +935,8 @@
         "y0": 0,
         "x1": 78.8,
         "y1": 69.9
-      }
+      },
+      "title": "Ayatullah"
     },
     "Sir Mohammad Iqbal": {
       "wikipedia": "Muhammad Iqbal",
@@ -2219,7 +2224,8 @@
         "y0": 0.6,
         "x1": 88,
         "y1": 100
-      }
+      },
+      "title": "Ayatullah"
     },
     "Ayatullah Sayyid Abu Al-Qasim Al-Musawi Al-Khu'i": {
       "wikipedia": "Abu al-Qasim al-Khoei",
@@ -2253,7 +2259,8 @@
         "y0": 0.3,
         "x1": 69.3,
         "y1": 41.4
-      }
+      },
+      "title": "Ayatullah"
     },
     "Ayatullah Jawadi Amuli": {
       "wikipedia": "Abdollah Javadi-Amoli",
@@ -2287,7 +2294,8 @@
         "y0": 2.1,
         "x1": 60.3,
         "y1": 50.4
-      }
+      },
+      "title": "Ayatullah"
     },
     "Ayatullah Gulpaygani": {
       "wikipedia": "Lotfollah Safi Golpaygani",
@@ -2321,7 +2329,8 @@
         "y0": 2.8,
         "x1": 60.7,
         "y1": 52.6
-      }
+      },
+      "title": "Ayatullah"
     },
     "Ayatullah Ali Mishkini": {
       "wikipedia": "Ali Meshkini",
@@ -2355,7 +2364,8 @@
         "y0": 7.1,
         "x1": 80.7,
         "y1": 58.8
-      }
+      },
+      "title": "Ayatullah"
     },
     "Ayatollah Hossein Vahid Khorasani": {
       "wikipedia": "Hossein Vahid Khorasani",
@@ -2389,7 +2399,8 @@
         "y0": 10.5,
         "x1": 81,
         "y1": 83.3
-      }
+      },
+      "title": "Ayatullah"
     },
     "Ayatullah Sayyid Muhammad Taqi-al-Modarresi": {
       "wikipedia": "Mohammad Taqi al-Modarresi",
@@ -2419,7 +2430,8 @@
         "y0": 0,
         "x1": 60.6,
         "y1": 86.8
-      }
+      },
+      "title": "Ayatullah"
     },
     "Imam Muhammad Shirazi": {
       "wikipedia": "Mohammad al-Shirazi",
@@ -2444,16 +2456,17 @@
       "largeHeight": 878,
       "lowRes": false,
       "focus": {
-        "x": 56.0,
-        "y": 49.0,
+        "x": 56,
+        "y": 49,
         "zoom": 1.1
       },
       "head": {
-        "x0": 21.0,
-        "y0": 8.0,
-        "x1": 92.0,
-        "y1": 90.0
-      }
+        "x0": 21,
+        "y0": 8,
+        "x1": 92,
+        "y1": 90
+      },
+      "title": "Ayatullah"
     },
     "Hassan Shirazi": {
       "wikipedia": "Hassan al-Shirazi",
@@ -2487,7 +2500,8 @@
       "bio": "Ayatollah Sayyid Hassan al-Husayni al-Shirazi (1935–1980) was an Iraqi Shia scholar, thinker and poet. He was assassinated in Beirut in 1980.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Hassan_al-Shirazi"
-      ]
+      ],
+      "title": "Ayatullah"
     },
     "Shaykh Fadhlalla Haeri": {
       "wikipedia": "Fadhlalla Haeri",
@@ -2559,7 +2573,8 @@
         "y0": 8.2,
         "x1": 78.5,
         "y1": 71.8
-      }
+      },
+      "title": "Ayatullah"
     },
     "Abbasali Amid Zanjani": {
       "wikipedia": "Abbasali Amid Zanjani",
@@ -2785,7 +2800,8 @@
       "wikipedia": null,
       "photo": null,
       "skipped": "checked by hand: not certain the Commons image is a photograph rather than a drawing",
-      "bioStatus": "from our data only"
+      "bioStatus": "from our data only",
+      "title": "Ayatullah"
     },
     "Abbas al-Abiri": {
       "bioStatus": "from our data only"
@@ -2905,7 +2921,8 @@
         "y0": 0,
         "x1": 70.6,
         "y1": 83.9
-      }
+      },
+      "title": "Ayatullah"
     },
     "Muhammad Mahdi al-Naraqi": {
       "bio": "Muhaqqiq Muhammad Mahdi Naraqi (1715–1795) was an 18th-century Shia scholar who studied in Iraq under Wahid Bihbahani and Yusuf al-Bahrani. His best-known work is Jami' al-sa'adat, a book on ethics.",
@@ -3520,7 +3537,8 @@
         "y0": 0.8,
         "x1": 82.3,
         "y1": 84.2
-      }
+      },
+      "title": "Ayatullah"
     },
     "Michael McClain": {
       "bioStatus": "from our data only"
@@ -3574,7 +3592,8 @@
       "bioStatus": "from our data only"
     },
     "Ayatullah Ali Nazari Munfarid": {
-      "bioStatus": "from our data only"
+      "bioStatus": "from our data only",
+      "title": "Ayatullah"
     },
     "Ibn Abi-l-Hadid Muqazzali": {
       "bio": "Ibn Abi l-Hadid, Abd al-Hamid ibn Hibat Allah (1190–after 1252), was a poet, man of letters and commentator on Nahj al-Balagha. He followed the Shafi'i school in law and the Mu'tazili school in theology.",
@@ -3642,7 +3661,8 @@
         "y0": 5,
         "x1": 77.1,
         "y1": 90.9
-      }
+      },
+      "title": "Ayatullah"
     },
     "Mohammed Namazi": {
       "bioStatus": "from our data only"
@@ -3817,7 +3837,8 @@
         "y0": 1.2,
         "x1": 67.2,
         "y1": 48.7
-      }
+      },
+      "title": "Ayatullah"
     },
     "S.S. Safavi": {
       "bioStatus": "from our data only"
@@ -3915,7 +3936,8 @@
       "bioStatus": "from our data only"
     },
     "Ayatollah Al-Shaheed Sayed Mohammad Redha Al-Shirazi": {
-      "bioStatus": "from our data only"
+      "bioStatus": "from our data only",
+      "title": "Ayatullah"
     },
     "Muhammad Iqbal Siddiqi": {
       "bioStatus": "from our data only"
@@ -3958,7 +3980,8 @@
       "bioStatus": "from our data only"
     },
     "Ayatullah Abu Talib Tajlil At-Tabrizi": {
-      "bioStatus": "from our data only"
+      "bioStatus": "from our data only",
+      "title": "Ayatullah"
     },
     "M. Taghipour": {
       "bioStatus": "from our data only"
@@ -4012,7 +4035,8 @@
       "bioStatus": "from our data only"
     },
     "Ayatollah Sayyid Muhammad Reza Mudarrisi Yazdi": {
-      "bioStatus": "from our data only"
+      "bioStatus": "from our data only",
+      "title": "Ayatullah"
     },
     "Hasan Zafar": {
       "bioStatus": "from our data only"

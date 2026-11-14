@@ -8,7 +8,7 @@ import subTopicTexts from "@data/subtopic-descriptions.json";
 import { setRefFor } from "./setIndex";
 import { categoryDescriptions, DISPLAY_NAMES, FEATURED_CATEGORIES, MORE_TO_EXPLORE } from "./categoryInfo";
 import { withBase } from "./paths";
-import { photoFor } from "./authorPhotos";
+import { displayName, hasTitle, photoFor } from "./authorPhotos";
 import type { CoverPhoto } from "@/components/ArchCover";
 
 export type Book = {
@@ -187,7 +187,7 @@ const isPersonCredit = (s: string) => /^(compiled|prepared|translated|edited|com
  * Author if known → otherwise the publisher → otherwise "Unknown".
  */
 export function creditLine(b: Pick<Book, "author" | "publisher">): string {
-  if (b.author) return b.author;
+  if (b.author) return shownCredit(b.author);
   if (b.publisher) return isPersonCredit(b.publisher) ? b.publisher : `Published by ${b.publisher}`;
   return "Unknown";
 }
@@ -413,7 +413,7 @@ export function shortDescription(d: Description, maxChars = 300): string {
 // /authors/<slug>/. A cell naming several people ("A & B", "A, B and C",
 // "X Translated by: Y") is split so each person gets their own link and page.
 
-export type Author = { name: string; slug: string; count: number; books: Book[] };
+export type Author = { name: string; display: string; slug: string; count: number; books: Book[] };
 /** A piece of a credit line: plain text (", ", "Compiled by: ") or a linked author name. */
 export type CreditPart = { text: string; slug?: string };
 
@@ -500,7 +500,7 @@ export const authors: Author[] = (() => {
     }
   }
   const list = [...groups.entries()]
-    .map(([name, books]) => ({ name, slug: slugify(name), count: books.length, books: books.sort(byTitle) }))
+    .map(([name, books]) => ({ name, display: displayName(name), slug: slugify(name), count: books.length, books: books.sort(byTitle) }))
     .sort((a, b) => collator.compare(surname(a.name), surname(b.name)) || collator.compare(a.name, b.name));
   const seen = new Map<string, string>();
   for (const a of list) {
@@ -529,7 +529,17 @@ export const getAuthorByName = (name: string) => byName.get(name);
 /** A book's credit line in pieces, with each author linked (a publisher shown instead is not linked). */
 export function creditParts(b: Pick<Book, "author" | "publisher">): CreditPart[] {
   if (!b.author) return [{ text: creditLine(b) }];
-  return splitCredit(b.author).map((p) => (p.name && byName.has(p.name) ? { text: p.text, slug: byName.get(p.name)!.slug } : { text: p.text }));
+  return splitCredit(b.author).map((p) => {
+    const text = p.name && hasTitle(p.name) ? displayName(p.name) : p.text;
+    return p.name && byName.has(p.name) ? { text, slug: byName.get(p.name)!.slug } : { text };
+  });
+}
+
+/** A credit line as shown on the site: authors with a title (e.g. Ayatullah) are written with it. */
+function shownCredit(author: string): string {
+  return splitCredit(author)
+    .map((p) => (p.name && hasTitle(p.name) ? displayName(p.name) : p.text))
+    .join("");
 }
 
 /** The author page for this book's author, when the book has exactly one author. */

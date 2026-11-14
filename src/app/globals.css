@@ -3644,7 +3644,8 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
   box-shadow: var(--shadow);
   border: 1px solid var(--gold);
 }
-.botm-card:hover .botm-more { text-decoration: underline; }
+.botm-card:hover { color: var(--card); }
+.botm-card:hover .botm-more { text-decoration: underline; color: var(--gold-light); }
 .botm-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 .botm-cover { width: 100%; height: auto; border-radius: 4px; box-shadow: 0 6px 18px rgb(0 0 0 / 0.35); }
 .botm-text { display: flex; flex-direction: column; gap: 6px; min-width: 0; }

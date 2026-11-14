@@ -37,7 +37,7 @@ export default function AuthorsPage() {
                 <Link href={`/authors/${a.slug}/`}>
                   <AuthorAvatar name={a.name} size={36} />
                   <span dir="auto" className="author-list-name">
-                    {a.name}
+                    {a.display}
                   </span>{" "}
                   <span className="chip-count">{a.count}</span>
                 </Link>

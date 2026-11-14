@@ -15,7 +15,6 @@ export default function BookOfTheMonthBanner() {
           </span>
           <span className="botm-author">{b.author}</span>
           <span className="botm-blurb">{b.description[0]}</span>
-          <span className="botm-note">Not in our library: read it free on {b.source}.</span>
           <span className="botm-more">Find out more →</span>
         </span>
       </Link>

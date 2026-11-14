@@ -27,7 +27,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const a = getAuthor((await params).slug);
-  return a ? { title: a.name, description: `${a.count === 1 ? "1 book" : `${a.count} books`} by ${a.name} in the Al-Zahra Islamic Library.` } : {};
+  return a ? { title: a.display, description: `${a.count === 1 ? "1 book" : `${a.count} books`} by ${a.display} in the Al-Zahra Islamic Library.` } : {};
 }
 
 export default async function AuthorPage({ params }: Props) {
@@ -60,11 +60,11 @@ export default async function AuthorPage({ params }: Props) {
 
   return (
     <div className="container page">
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Authors", href: "/authors/" }, { label: author.name }]} />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Authors", href: "/authors/" }, { label: author.display }]} />
       <header className="author-head">
         <AuthorPortrait name={author.name} />
         <div className="author-head-text">
-          <h1 dir="auto">{author.name}</h1>
+          <h1 dir="auto">{author.display}</h1>
           {bio && (
             <div className="author-bio">
               <p>{bio.text}</p>

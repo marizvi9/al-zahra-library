@@ -137,13 +137,16 @@ function fitTitle(title: string, maxW: number, maxH: number) {
   return { size, lines };
 }
 
-function fitAuthor(author: string, maxW: number) {
+function fitAuthor(author: string, maxW: number): { size: number; lines: string[] } {
   for (let size = 19; size >= 12; size -= 1) {
     const lines = wrap(author, size, maxW);
     if (lines.length <= 2) return { size, lines };
   }
+  // Too long even at the smallest size: write "Ayatullah" as "Ayt." before cutting the name off.
+  if (/\bAyatullah /.test(author)) return fitAuthor(author.replace(/\bAyatullah /g, "Ayt. "), maxW);
   const lines = wrap(author, 12, maxW).slice(0, 2);
-  lines[1] = (lines[1] ?? "").replace(/[\s,;:.-]*$/, "") + "…";
+  // don't end on a lone title ("…, Ayt…")
+  lines[1] = (lines[1] ?? "").replace(/[\s,;:.-]*(?:\bAyt\.?|\bAyatullah)?[\s,;:.-]*$/, "") + "…";
   return { size: 12, lines };
 }
 

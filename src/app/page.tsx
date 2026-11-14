@@ -122,7 +122,7 @@ export default function HomePage() {
                 <AuthorAvatar name={a.name} size={52} />
                 <span className="author-card-text">
                   <span className="author-card-name" dir="auto">
-                    {a.name}
+                    {a.display}
                   </span>
                   <span className="author-card-meta">
                     {a.count} books · {mainSubjects(a.books)}
