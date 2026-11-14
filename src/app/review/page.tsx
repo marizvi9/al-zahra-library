@@ -71,7 +71,7 @@ export default function ReviewPage() {
                   {f.coverNote ? ` (${f.coverNote})` : ""}
                 </p>
                 {f.note && <p className="small muted">Note: {f.note}</p>}
-                {f.searched && <p className="small muted">Searched: {f.searched.join(", ")}</p>}
+                {f.searched && f.searched.length > 0 && <p className="small muted">Searched: {f.searched.join(", ")}</p>}
               </div>
             </li>
           );
