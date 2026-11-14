@@ -6,7 +6,8 @@
     "Authors with no photo get a navy-and-gold badge with their initials.",
     "neverPhoto: the Prophet, the Imams, Lady Fatima and other members of the Ahlul-Bayt and holy figures, including books attributed to them. They NEVER get a photo or any picture, and are never searched for. The site enforces this even if a photo is added by mistake. Their bios are left for you to write.",
     "FOCUS: \"focus\" {x, y} is where the face is in the photo, in percent from the left and from the top (set by checking each photo by eye). Every size of the photo is cropped around this point. If a face looks cut off, nudge these numbers and rebuild. Optional \"zoom\" (e.g. 1.5) enlarges the photo around the face in the small round badges only, for photos taken from far away.",
-    "TITLES: \"title\": \"Ayatullah\" shows the author on the site as \"Ayatullah <name>\" (on covers, \"Ayt.\" when the full name would not fit). Given only where the catalogue or a sourced bio calls the person Ayatollah or marja'. Imam Khomeini keeps \"Imam\". The Google Sheet is never changed."
+    "TITLES: \"title\": \"Ayatullah\" shows the author on the site as \"Ayatullah <name>\" (on covers, \"Ayt.\" when the full name would not fit). Given only where the catalogue or a sourced bio calls the person Ayatollah or marja'. Imam Khomeini keeps \"Imam\". The Google Sheet is never changed.",
+    "FULL NAMES: \"fullName\" replaces a short catalogue name on the site (e.g. \"Ayatullah Gulpaygani\" -> \"Lutf Allah Safi Gulpaygani\", from his WikiShia article). The page address and the Google Sheet keep the catalogue name."
   ],
   "neverPhoto": [
     "Imam Ali Amir al-Mum'minin",
@@ -2330,7 +2331,8 @@
         "x1": 60.7,
         "y1": 52.6
       },
-      "title": "Ayatullah"
+      "title": "Ayatullah",
+      "fullName": "Lutf Allah Safi Gulpaygani"
     },
     "Ayatullah Ali Mishkini": {
       "wikipedia": "Ali Meshkini",

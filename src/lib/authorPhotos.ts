@@ -49,6 +49,9 @@ type Entry = Partial<AuthorPhoto> & {
   bioSources?: string[];
   /** A title shown before the name on the site (only "Ayatullah" for now). The Google Sheet is never changed. */
   title?: string;
+  /** The person's full name, when the catalogue only has a short form ("Ayatullah Gulpaygani"). Shown on the
+   *  site instead of the catalogue name; the page address and the Google Sheet keep the catalogue name. */
+  fullName?: string;
 };
 const file = data as unknown as { neverPhoto: string[]; authors: Record<string, Entry> };
 
@@ -106,13 +109,15 @@ const LEADING_TITLE = /^(?:(?:grand|al-uzma)\s+)?(?:ayat(?:u|o)llah?|ayt\.?|imam
 /** The name as shown on the site: with its title ("Ayatullah ...") when the author has one in authors.json.
  *  Page addresses and the Google Sheet keep the plain name. */
 export function displayName(name: string): string {
-  const t = file.authors[name]?.title;
-  if (!t || name === "Imam Khomeini") return name;
-  return `${t} ${name.replace(LEADING_TITLE, "")}`;
+  const e = file.authors[name];
+  const base = e?.fullName ?? name;
+  if (!e?.title || name === "Imam Khomeini") return base;
+  return `${e.title} ${base.replace(LEADING_TITLE, "")}`;
 }
 export const hasTitle = (name: string) => !!file.authors[name]?.title && name !== "Imam Khomeini";
 
 /** The name without its title, for the A–Z list ("Ayatullah Jawadi Amuli" -> "Jawadi Amuli"). */
 export function plainName(name: string): string {
-  return hasTitle(name) ? name.replace(LEADING_TITLE, "") : name;
+  const base = file.authors[name]?.fullName ?? name;
+  return hasTitle(name) ? base.replace(LEADING_TITLE, "") : base;
 }
