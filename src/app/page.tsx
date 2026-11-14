@@ -1,3 +1,4 @@
+import BookOfTheMonthBanner from "@/components/BookOfTheMonthBanner";
 import Link from "next/link";
 import Girih from "@/components/Girih";
 import Ornament from "@/components/Ornament";
@@ -61,6 +62,7 @@ export default function HomePage() {
       </section>
 
       <div className="container section">
+        <BookOfTheMonthBanner />
         <FeaturedSlider slides={featuredSlides} />
       </div>
 

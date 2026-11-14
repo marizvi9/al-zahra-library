@@ -1,0 +1,18 @@
+{
+ "_comment": "The Book of the Month on the home page and at /book-of-the-month/. It is NOT in the library: we point readers to Al-Islam.org, where it can be read free. To change it, edit these fields (and the cover in public/book-of-the-month/).",
+ "month": "November 2026",
+ "title": "Forty Hadith: An Exposition",
+ "edition": "Second revised edition",
+ "author": "Sayyid Ruhullah Musawi Khomeini",
+ "authorInCatalogue": "Imam Khomeini",
+ "translators": "Mahliqa Qara’i and Ali Quli Qara’i",
+ "publisher": "Ansariyan Publications, Qum",
+ "isbn": "964-438-363-X",
+ "description": [
+  "Detailed commentary on 40 selected traditions narrated through the Prophet (S) and his Ahl al-Bayt (a) on topics of ethics and spirituality, including jihad al-nafs.",
+  "Islamic scholars, motivated by a tradition from the Prophet Muhammad which promises Divine rewards for scholars who collect forty traditions, compile hadith narrations in groups of forty."
+ ],
+ "url": "https://al-islam.org/forty-hadith-exposition-second-revised-edition-sayyid-ruhullah-musawi-khomeini",
+ "source": "Al-Islam.org",
+ "cover": { "src": "/book-of-the-month/forty-hadith.webp", "small": "/book-of-the-month/forty-hadith-small.webp", "width": 560, "height": 795 }
+}

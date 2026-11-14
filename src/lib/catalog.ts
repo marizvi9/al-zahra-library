@@ -524,6 +524,7 @@ export function authorsByLetter(): Map<string, Author[]> {
 const bySlug = new Map(authors.map((a) => [a.slug, a]));
 const byName = new Map(authors.map((a) => [a.name, a]));
 export const getAuthor = (slug: string) => bySlug.get(slug);
+export const getAuthorByName = (name: string) => byName.get(name);
 
 /** A book's credit line in pieces, with each author linked (a publisher shown instead is not linked). */
 export function creditParts(b: Pick<Book, "author" | "publisher">): CreditPart[] {
