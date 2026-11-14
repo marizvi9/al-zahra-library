@@ -9,9 +9,13 @@
   ],
   "books": {
     "472": {
-      "searched": ["al-islam.org"],
+      "searched": [
+        "al-islam.org"
+      ],
       "description": {
-        "text": ["A detailed study of the life of Imam ʿAli ibn Musa al-Rida, the eighth Imam of the Prophet's Household. It covers his biography and the history of his life and death, looks at his works, debates and teachings on belief, gathers a selection of his wise sayings, and ends with his ziyarat and a short note on the benefits of reciting it."],
+        "text": [
+          "A detailed study of the life of Imam ʿAli ibn Musa al-Rida, the eighth Imam of the Prophet's Household. It covers his biography and the history of his life and death, looks at his works, debates and teachings on belief, gathers a selection of his wise sayings, and ends with his ziyarat and a short note on the benefits of reciting it."
+        ],
         "source": "Al-Islam.org",
         "url": "https://al-islam.org/life-imam-ali-bin-musa-al-ridha-baqir-sharif-al-qurashi",
         "confidence": "high"
@@ -20,9 +24,13 @@
       "needsReview": false
     },
     "494": {
-      "searched": ["al-islam.org"],
+      "searched": [
+        "al-islam.org"
+      ],
       "description": {
-        "text": ["An account of Imam Husayn's life from his birth to his martyrdom. It looks at his years with his mother, Lady Fatima, his father and his brother, and his part in events before he became Imam, and gives a careful narrative of what happened at Karbala."],
+        "text": [
+          "An account of Imam Husayn's life from his birth to his martyrdom. It looks at his years with his mother, Lady Fatima, his father and his brother, and his part in events before he became Imam, and gives a careful narrative of what happened at Karbala."
+        ],
         "source": "Al-Islam.org",
         "url": "https://al-islam.org/husayn-saviour-islam-sv-mir-ahmad-ali",
         "confidence": "high"
@@ -31,9 +39,13 @@
       "needsReview": false
     },
     "587": {
-      "searched": ["al-islam.org"],
+      "searched": [
+        "al-islam.org"
+      ],
       "description": {
-        "text": ["The first English translation of a work from the Twelver Shi'i tradition of medicine handed down from the Imams. It is meant both for readers studying the history of Islamic medicine and civilisation and for anyone who wants to know more about the Shi'i heritage and the practical side of the faith."],
+        "text": [
+          "The first English translation of a work from the Twelver Shi'i tradition of medicine handed down from the Imams. It is meant both for readers studying the history of Islamic medicine and civilisation and for anyone who wants to know more about the Shi'i heritage and the practical side of the faith."
+        ],
         "source": "Al-Islam.org",
         "url": "https://al-islam.org/islamic-medical-wisdom-tibb-al-aimma",
         "confidence": "high"
@@ -42,9 +54,13 @@
       "needsReview": false
     },
     "32": {
-      "searched": ["al-islam.org"],
+      "searched": [
+        "al-islam.org"
+      ],
       "description": {
-        "text": ["A study of the life of Imam Hasan, which the author says was full of events and lessons yet is often overlooked because so much attention goes to Imam Husayn. Chapters look at the oath of allegiance to him, his caliphate and the terms of his peace treaty."],
+        "text": [
+          "A study of the life of Imam Hasan, which the author says was full of events and lessons yet is often overlooked because so much attention goes to Imam Husayn. Chapters look at the oath of allegiance to him, his caliphate and the terms of his peace treaty."
+        ],
         "source": "Al-Islam.org",
         "url": "https://al-islam.org/imam-hasan-and-caliphate-qurrat-ul-ain-abidiy",
         "confidence": "high"
@@ -53,9 +69,15 @@
       "needsReview": false
     },
     "138": {
-      "searched": ["al-islam.org", "Google Books", "Open Library"],
+      "searched": [
+        "al-islam.org",
+        "Google Books",
+        "Open Library"
+      ],
       "description": {
-        "text": ["A short introduction to the Shi'i belief in Imam al-Mahdi: his occultation, his return, and why the anniversary of his birth is worth celebrating."],
+        "text": [
+          "A short introduction to the Shi'i belief in Imam al-Mahdi: his occultation, his return, and why the anniversary of his birth is worth celebrating."
+        ],
         "source": "Al-Islam.org",
         "url": "https://al-islam.org/inevitable-victory-mehdi-bazargan",
         "confidence": "high"
@@ -64,9 +86,13 @@
       "needsReview": false
     },
     "58": {
-      "searched": ["al-islam.org"],
+      "searched": [
+        "al-islam.org"
+      ],
       "description": {
-        "text": ["A concise outline of the beliefs, practices and history of Twelver Shi'a Islam. The author wrote it as a short summary, without long proofs, so that beginners and students could use it; it covers subjects such as prophethood and the Imamate."],
+        "text": [
+          "A concise outline of the beliefs, practices and history of Twelver Shi'a Islam. The author wrote it as a short summary, without long proofs, so that beginners and students could use it; it covers subjects such as prophethood and the Imamate."
+        ],
         "source": "Al-Islam.org",
         "url": "https://al-islam.org/faith-imamiyyah-shiah-muhammad-ridha-al-muzaffar",
         "confidence": "medium"
@@ -76,9 +102,13 @@
       "needsReview": false
     },
     "294": {
-      "searched": ["al-islam.org"],
+      "searched": [
+        "al-islam.org"
+      ],
       "description": {
-        "text": ["An introduction to three foundations of Islamic belief: God, His existence and His attributes; the Prophet Muhammad and prophethood; and the message of Islam."],
+        "text": [
+          "An introduction to three foundations of Islamic belief: God, His existence and His attributes; the Prophet Muhammad and prophethood; and the message of Islam."
+        ],
         "source": "Al-Islam.org",
         "url": "https://al-islam.org/revealer",
         "confidence": "medium"
@@ -88,7 +118,10 @@
       "needsReview": false
     },
     "764": {
-      "searched": ["al-islam.org", "Google Books"],
+      "searched": [
+        "al-islam.org",
+        "Google Books"
+      ],
       "description": {
         "text": [
           "Ayatullah al-Khu'i's introduction to the history and study of the Qur'an, first published in Arabic in 1974 and translated by Abdulaziz Sachedina. It discusses the Qur'an's inimitability and the Prophet's other miracles, the different readings, how the text was collected, abrogation and the principles of interpretation.",
@@ -108,9 +141,15 @@
       "needsReview": false
     },
     "729": {
-      "searched": ["al-islam.org", "Google Books", "publisher / bookstore"],
+      "searched": [
+        "al-islam.org",
+        "Google Books",
+        "publisher / bookstore"
+      ],
       "description": {
-        "text": ["Papers from an international seminar held in the United States that set out to rethink Islamic political theory in the light of present-day political realities. Contributors include Fathi Osman and Fazlur Rahman, and the topics include the principles of shura (consultation) and building a just social order in Islam."],
+        "text": [
+          "Papers from an international seminar held in the United States that set out to rethink Islamic political theory in the light of present-day political realities. Contributors include Fathi Osman and Fazlur Rahman, and the topics include the principles of shura (consultation) and building a just social order in Islam."
+        ],
         "source": "IslamicBookstore.com (publisher's description)",
         "url": "https://www.islamicbookstore.com/b3384.html",
         "confidence": "high"
@@ -120,9 +159,16 @@
       "needsReview": false
     },
     "677": {
-      "searched": ["al-islam.org", "Google Books", "Open Library", "library catalogues and reviews"],
+      "searched": [
+        "al-islam.org",
+        "Google Books",
+        "Open Library",
+        "library catalogues and reviews"
+      ],
       "description": {
-        "text": ["A collection of lectures by Ali Shariati, edited and annotated by Farhang Rajaee, with a foreword by John L. Esposito. Shariati argues that Muslims need an \"Islamic renaissance\" led by enlightened thinkers, and describes what such thinkers should be like and where they should begin."],
+        "text": [
+          "A collection of lectures by Ali Shariati, edited and annotated by Farhang Rajaee, with a foreword by John L. Esposito. Shariati argues that Muslims need an \"Islamic renaissance\" led by enlightened thinkers, and describes what such thinkers should be like and where they should begin."
+        ],
         "source": "Review in the International Journal of Islamic and Eastern Studies (IIUM)",
         "url": "https://journals.iium.edu.my/ijes/index.php/iejs/article/download/52/pdf_8/146",
         "confidence": "medium"
@@ -131,9 +177,16 @@
       "needsReview": false
     },
     "488": {
-      "searched": ["al-islam.org", "Google Books", "Open Library", "library catalogues"],
+      "searched": [
+        "al-islam.org",
+        "Google Books",
+        "Open Library",
+        "library catalogues"
+      ],
       "description": {
-        "text": ["A short booklet published by UNESCO in 1970 in its series \"The Race Question and Modern Thought\", which gave the views of different faiths on race. The author, a professor at Cairo University who was also a minister for religious endowments in Egypt, sets out Islam's position on race."],
+        "text": [
+          "A short booklet published by UNESCO in 1970 in its series \"The Race Question and Modern Thought\", which gave the views of different faiths on race. The author, a professor at Cairo University who was also a minister for religious endowments in Egypt, sets out Islam's position on race."
+        ],
         "source": "Texas A&M University Libraries catalogue",
         "url": "https://libcat.library.tamu.edu/Record/in00002544306/Description",
         "confidence": "medium"
@@ -142,21 +195,1251 @@
       "needsReview": false
     },
     "794": {
-      "searched": ["al-islam.org", "Google Books", "general web search"],
+      "searched": [
+        "al-islam.org",
+        "Google Books",
+        "general web search"
+      ],
       "note": "Only a rare-book seller's listing was found (a 27-page pamphlet, Tehran, 1981). It says nothing about the contents, so no description was written.",
       "needsReview": true
     },
     "118": {
-      "searched": ["al-islam.org", "general web search"],
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
       "note": "A book called 'Reunion with the Beloved' appears in a list of Imam Khomeini's works (his letters to his son), but nothing confirms it is this book or that Mansoor Limba translated it. Left empty.",
       "needsReview": true
     },
-    "182": { "searched": ["al-islam.org", "general web search"], "note": "No reliable source for this exact title (it may be an edition of Shariati's essays 'Man, Islam and Marxism'). Left empty.", "needsReview": false },
-    "525": { "searched": ["general web search"], "note": "Nothing found.", "needsReview": false },
-    "231": { "searched": ["general web search"], "note": "Nothing found.", "needsReview": false },
-    "674": { "searched": ["al-islam.org", "general web search"], "note": "Nothing found for this title by Yousuf N. Lalljee.", "needsReview": false },
-    "798": { "searched": ["general web search"], "note": "No translation by Salehe Salehpour found.", "needsReview": false },
-    "412": { "searched": ["al-islam.org", "general web search"], "note": "Nothing found.", "needsReview": false },
-    "811": { "searched": ["al-islam.org", "general web search"], "note": "Nothing found for this title by H&T Kassamali.", "needsReview": false }
+    "182": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No reliable source for this exact title (it may be an edition of Shariati's essays 'Man, Islam and Marxism'). Left empty.",
+      "needsReview": false
+    },
+    "525": {
+      "searched": [
+        "general web search"
+      ],
+      "note": "Nothing found.",
+      "needsReview": false
+    },
+    "231": {
+      "searched": [
+        "general web search"
+      ],
+      "note": "Nothing found.",
+      "needsReview": false
+    },
+    "674": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title by Yousuf N. Lalljee.",
+      "needsReview": false
+    },
+    "798": {
+      "searched": [
+        "general web search"
+      ],
+      "note": "No translation by Salehe Salehpour found.",
+      "needsReview": false
+    },
+    "412": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found.",
+      "needsReview": false
+    },
+    "811": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title by H&T Kassamali.",
+      "needsReview": false
+    },
+    "163": {
+      "searched": [
+        "al-islam.org",
+        "Google Books",
+        "library catalogues",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A lecture by Ali Shariati, translated by Homa Fardjadi, about art. Shariati sees art as humanity's attempt to ease its sense of alienation and to reach toward an ideal world beyond the one it lives in."
+        ],
+        "source": "Philosophy and Global Affairs (article on Shariati's idea of art)",
+        "url": "https://www.pdcnet.org/pga/content/pga_2022_0002_0001_0167_0179",
+        "confidence": "medium"
+      },
+      "note": "Free Islamic Literatures, Houston, 1980. The source is a study of Shariati's thinking on art, not a summary of this exact booklet.",
+      "needsReview": false
+    },
+    "175": {
+      "searched": [
+        "al-islam.org",
+        "library catalogues",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A lecture that Ali Shariati gave to university students in Iran, explaining what he means by three words: culture, civilisation and ideology. He separates culture from civilisation and treats both as belonging to all peoples, not only to the West."
+        ],
+        "source": "University of Arizona Center for Middle Eastern Studies library",
+        "url": "https://cmeslibrary.sbs.arizona.edu/node/5390",
+        "confidence": "high"
+      },
+      "note": "Free Islamic Literatures, Houston, 1980, 23 pages, translated by Fatollah Marjani.",
+      "needsReview": false
+    },
+    "672": {
+      "searched": [
+        "al-islam.org",
+        "library catalogues",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A lecture that Ali Shariati gave to university students in Iran, explaining what he means by three words: culture, civilisation and ideology. He separates culture from civilisation and treats both as belonging to all peoples, not only to the West."
+        ],
+        "source": "University of Arizona Center for Middle Eastern Studies library",
+        "url": "https://cmeslibrary.sbs.arizona.edu/node/5390",
+        "confidence": "high"
+      },
+      "note": "Second copy of the same title as book 175.",
+      "needsReview": false
+    },
+    "326": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Two essays by Ali Shariati printed together. In \"From Where Shall We Begin\" he argues that the first task of enlightened thinkers is to build a bridge between themselves and ordinary people. \"The Machine in the Captivity of Machinism\" describes machinism not as technology itself but as a social order built on ownership and monopoly."
+        ],
+        "source": "Shariati.com (English text)",
+        "url": "https://shariati.com/english/begin/begin1.html",
+        "confidence": "high"
+      },
+      "needsReview": false
+    },
+    "274": {
+      "searched": [
+        "al-islam.org",
+        "library catalogues",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A collection of lectures that Ali Shariati gave privately on different occasions, about the human being as Islam sees it compared with modern Western schools of thought. It was translated by Fatollah Marjani."
+        ],
+        "source": "Review in Iranian Studies (Cambridge University Press)",
+        "url": "https://cambridge.org/core/journals/iranian-studies/article/abs/man-and-islam-ali-shariati-translated-by-fatollah-marjani-houston-filing-1981-xxi-128-pp-495/58C3D8ECA6AE24475640C36326AB5DF2",
+        "confidence": "medium"
+      },
+      "note": "Houston, 1981, 128 pages. Earlier printed as 'Man, Islam and Western Schools of Thought'.",
+      "needsReview": false
+    },
+    "324": {
+      "searched": [
+        "al-islam.org",
+        "library catalogues",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Two lectures that Ali Shariati gave at the Husayniyah Irshad in Tehran in August 1970, translated by Laleh Bakhtiar. He argues that religion has two faces throughout history: a religion of revolution that stands up for people, and a religion of legitimation used to justify those in power."
+        ],
+        "source": "AbeBooks (book listing)",
+        "url": "https://www.abebooks.com/9781871031003/Religion-Vs-Ali-Shariati-1871031001/plp",
+        "confidence": "high"
+      },
+      "needsReview": false
+    },
+    "293": {
+      "searched": [
+        "al-islam.org",
+        "library catalogues",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Ali Shariati's outline of Islam as a complete school of thought and a guide for action, translated by Cyrus Bakhtiar. It was passed around widely among young Muslims in Iran in the 1970s."
+        ],
+        "source": "Marxists.org (Shariati's 'Islamology', which includes this text)",
+        "url": "https://www.Marxists.org/history/iran/1972/islamology.pdf",
+        "confidence": "medium"
+      },
+      "note": "Abjad, Albuquerque, 1972, 55 pages.",
+      "needsReview": false
+    },
+    "221": {
+      "searched": [
+        "al-islam.org",
+        "library catalogues",
+        "general web search"
+      ],
+      "note": "Only library records (Free Islamic Literatures, Houston, 1980, translated by Ali Asghar Ghassemy); nothing about the contents.",
+      "needsReview": false
+    },
+    "454": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A lecture by Ali Shariati about where religion is heading. He describes how, as a new educated class grows, faith fades among the educated and science starts to take its place as something to believe in, while religion lives on among ordinary people."
+        ],
+        "source": "Shariati.com (English text)",
+        "url": "https://shariati.com/english/tomorrow/tomorrow2.html",
+        "confidence": "medium"
+      },
+      "note": "Based on part of the lecture only.",
+      "needsReview": false
+    },
+    "456": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Two lectures in which Ali Shariati stresses that Islam is universal and has many sides, so scholars in different fields can each study it in their own way. As a sociologist, he shows how Islam's system and rules apply to society as a whole rather than only to individuals."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/approach-understanding-islam-ali-shariati",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard cover with the author's photo.",
+      "needsReview": false
+    },
+    "455": {
+      "searched": [
+        "al-islam.org",
+        "library catalogues",
+        "general web search"
+      ],
+      "note": "Only a library record (Sohof Publications, 1991); nothing about the contents.",
+      "needsReview": false
+    },
+    "453": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Lectures by Ali Shariati on the life of Lady Fatima al-Zahra, the daughter of the Prophet. He presents her as a symbol of the true direction of Islamic thought and as a role model for women everywhere, and notes that God gave the Prophet his finest descendants through his daughter, in a society that thought a man without sons had no heirs."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/fatima-fatima-ali-shariati",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard cover with the author's photo.",
+      "needsReview": false
+    },
+    "81": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A detailed study of the life of Imam ʿAli ibn Musa al-Rida, the eighth Imam of the Prophet's Household. It covers his biography and the history of his life and death, looks at his works, debates and teachings on belief, gathers a selection of his wise sayings, and ends with his ziyarat and a short note on the benefits of reciting it."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/life-imam-ali-bin-musa-al-ridha-baqir-sharif-al-qurashi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its generic drawn cover for this book, so our own drawn cover is used.",
+      "needsReview": false,
+      "note": "Same title as book 472."
+    },
+    "39": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A biography of Imam al-Hasan al-Mujtaba: his birth and upbringing, his marriage, and his part in the early years of Islam. Much of the book deals with his struggle with Mu'awiya, the choices he made in that difficult time and the politics that shaped it."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/life-imam-al-hasan-al-mujtaba-baqir-sharif-al-qurashi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "83": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A full biography and study of the life of the tenth Imam, ʿAli ibn Muhammad al-Hadi: his birth and upbringing, his knowledge and character, his forced stay in Samarra under the Abbasid rulers, and his death."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/life-imam-ali-al-hadi-study-and-analysis-baqir-shareef-al-qurashi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "41": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A full biography of Imam Musa al-Kazim, the seventh Imam. It highlights his patience and steadfastness through the hardships the rulers of his time put him through, and the guidance he left, which the author offers as a lesson for readers young and old in facing life's difficulties."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/life-imam-musa-bin-jafar-al-kazim-baqir-shareef-al-qurashi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "257": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Twenty-one talks by Allamah Tabataba'i on the spiritual side of Shi'ism and on other important subjects in Islam, translated by Abuzar Ahmadi."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/spirituality-shiism-and-other-discourses-sayyid-muhammad-husayn-tabatabai",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "541": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "The letter that Imam Khomeini sent to the Soviet leader Mikhail Gorbachev in 1989, calling him to belief in God. The book also tells the story of the letter: how it was received and kept quiet at first, then copied and spread, and how some of its predictions came true in the following years."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/call-divine-unity-letter-imam-khomeini-president-mikhail-gorbachev-imam-khomeini",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "537": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A guide for couples to marriage in Islam. It compares Western and Islamic views of sexual morality, explains how Islam sees marriage and women, and goes through the rules of marriage, the wedding night, contraception, abortion and having children."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/marriage-and-morals-islam-sayyid-muhammad-rizvi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "287": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A set of essays on central beliefs of Shi'a Islam, linked by the theme of the Imamate and wilayat (authority) of the Imams of the Ahlul Bayt. It includes a discussion of the event of Ghadir Khumm and what the word mawla means there."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/shiism-imamate-and-wilayat-sayyid-muhammad-rizvi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "425": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "An introduction to Islamic jurisprudence (fiqh) and its principles (usul al-fiqh): their history and sources, the great jurists, and the methods and rules used to work out Islamic law. Translated by Mohammad Salman Tawhidi."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/jurisprudence-and-its-principles-murtadha-mutahhari",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "288": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Short true stories about the Prophet, the Imams and other pious people of early Islam, chosen from Ayatullah Mutahhari's Persian collection Dastan-e Rastan. Each story carries a moral lesson."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/anecdotes-pious-men-murtadha-mutahhari",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "290": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Ayatullah Mutahhari explains the Islamic view of fate and destiny. He weighs the ideas about free will and predestination held by earlier schools such as the Mu'tazila and the Ash'aris, and uses the Qur'an and the teachings of the Ahlul Bayt to show where human free will truly stands."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/man-and-his-destiny-ayatullah-murtadha-mutahhari",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "40": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A detailed biography of the fifth Imam, Muhammad al-Baqir, known as the one who split open knowledge. It covers his birth and youth, his works and sayings, his family, the social and political conditions of his time, and his death."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/life-imam-muhammad-ibn-ali-al-baqir-baqir-shareef-al-qurashi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "5": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Part of Allamah Majlisi's three-volume Hayat al-Qulub (Life of the Hearts). Volume 1 tells the lives of the prophets before Prophet Muhammad, as known from the Qur'an and hadith."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/hayat-al-qulub-vol-1-stories-prophets-muhammad-baqir-majlisi",
+        "confidence": "low"
+      },
+      "note": "The library's copies are titled 'Succession to Muhammad' vol. 1–3, but al-islam.org's volumes 1 and 2 are about the earlier prophets and the Prophet's life; only volume 3 is about succession. A person should check what is inside the library's copy.",
+      "needsReview": true
+    },
+    "6": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Part of Allamah Majlisi's three-volume Hayat al-Qulub (Life of the Hearts). Volume 2 is a detailed biography of Prophet Muhammad, from his ancestry to the events just after his death."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/hayat-al-qulub-vol-2-muhammad-baqir-majlisi",
+        "confidence": "low"
+      },
+      "note": "The library's copies are titled 'Succession to Muhammad' vol. 1–3, but al-islam.org's volumes 1 and 2 are about the earlier prophets and the Prophet's life; only volume 3 is about succession. A person should check what is inside the library's copy.",
+      "needsReview": true
+    },
+    "7": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "The third volume of Allamah Majlisi's Hayat al-Qulub (Life of the Hearts), on the Imamate: how the Imam is appointed, the Imams' freedom from sin and the duty to obey them. It also gathers the Qur'anic verses that the hadith explain as referring to the Ahlul Bayt, so it works as a special commentary on the Qur'an."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/hayat-al-qulub-vol3-allamah-muhammad-baqir-al-majlisi",
+        "confidence": "medium"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "36": {
+      "searched": [
+        "al-islam.org",
+        "Islamic-Sources.com"
+      ],
+      "description": {
+        "text": [
+          "A biography of al-ʿAbbas ibn ʿAli written from the Shi'a tradition: his childhood in Medina, his family, and his loyalty to Imam Husayn as his standard-bearer at Karbala, where he was killed trying to bring water to the thirsty camp. It also looks at how his memory continues in Muharram mourning and pilgrimage."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/biography-of-abbas-bin-ali-a-s",
+        "confidence": "high"
+      },
+      "note": "Peermahomed Ebrahim Trust, 1987.",
+      "coverNote": "Islamic-Sources.com shows a cover, but its image server could not be reached.",
+      "needsReview": false
+    },
+    "142": {
+      "searched": [
+        "al-islam.org",
+        "Islamic-Sources.com"
+      ],
+      "description": {
+        "text": [
+          "A biography of al-ʿAbbas ibn ʿAli written from the Shi'a tradition: his childhood in Medina, his family, and his loyalty to Imam Husayn as his standard-bearer at Karbala, where he was killed trying to bring water to the thirsty camp. It also looks at how his memory continues in Muharram mourning and pilgrimage."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/biography-of-abbas-bin-ali-a-s",
+        "confidence": "high"
+      },
+      "note": "Peermahomed Ebrahim Trust, 1987.",
+      "coverNote": "Islamic-Sources.com shows a cover, but its image server could not be reached.",
+      "needsReview": false
+    },
+    "599": {
+      "searched": [
+        "al-islam.org",
+        "publisher",
+        "library catalogues"
+      ],
+      "description": {
+        "text": [
+          "Kalim Siddiqui's last book, finished shortly before his death in 1996. Looking beyond the events in Iran, he studies the Islamic Revolution as something that, like a scientific process, can be repeated elsewhere, and traces its stages starting with an 'intellectual revolution' in the Muslim world."
+        ],
+        "source": "The Other Press (publisher)",
+        "url": "https://ibtbooks.com/?p=4743",
+        "confidence": "high"
+      },
+      "needsReview": false
+    },
+    "506": {
+      "searched": [
+        "al-islam.org",
+        "library catalogues",
+        "general web search"
+      ],
+      "note": "Library records show 'Issues in the Islamic Movement' as yearly volumes edited by Kalim Siddiqui (Open Press, London), but say nothing about what is inside each one.",
+      "needsReview": false
+    },
+    "507": {
+      "searched": [
+        "al-islam.org",
+        "library catalogues",
+        "general web search"
+      ],
+      "note": "Library records show 'Issues in the Islamic Movement' as yearly volumes edited by Kalim Siddiqui (Open Press, London), but say nothing about what is inside each one.",
+      "needsReview": false
+    },
+    "508": {
+      "searched": [
+        "al-islam.org",
+        "library catalogues",
+        "general web search"
+      ],
+      "note": "Library records show 'Issues in the Islamic Movement' as yearly volumes edited by Kalim Siddiqui (Open Press, London), but say nothing about what is inside each one.",
+      "needsReview": false
+    },
+    "758": {
+      "searched": [
+        "al-islam.org",
+        "bookshops"
+      ],
+      "description": {
+        "text": [
+          "Volume two of Kauthar, a three-volume collection of Imam Khomeini's speeches compiled by his son Ahmad Khomeini, together with an account of the events of the Iranian revolution from 1962 to 1978."
+        ],
+        "source": "Blackwell's (publisher's description)",
+        "url": "https://blackwells.co.uk/bookshop/product/Kawthar-Volume-Two-An-Anthology-of-the-Speeches-of-Imam-Khomeini-r-Including-an-Account-of-the-Events-of-the-Revolution-1962-1978-by-Khomeini-Ruhollah/9780359393473",
+        "confidence": "high"
+      },
+      "needsReview": false
+    },
+    "760": {
+      "searched": [
+        "al-islam.org",
+        "bookshops"
+      ],
+      "description": {
+        "text": [
+          "Volume three of Kauthar, a three-volume collection of Imam Khomeini's speeches compiled by his son Ahmad Khomeini, together with an account of the events of the Iranian revolution from 1962 to 1978."
+        ],
+        "source": "Blackwell's (publisher's description)",
+        "url": "https://blackwells.co.uk/bookshop/product/Kawthar-Volume-Two-An-Anthology-of-the-Speeches-of-Imam-Khomeini-r-Including-an-Account-of-the-Events-of-the-Revolution-1962-1978-by-Khomeini-Ruhollah/9780359393473",
+        "confidence": "high"
+      },
+      "needsReview": false
+    },
+    "249": {
+      "searched": [
+        "al-islam.org",
+        "Wikipedia",
+        "reviews"
+      ],
+      "description": {
+        "text": [
+          "Allamah Tabataba'i's introduction to Shi'a Islam, written at the request of Western scholars and translated and edited by Seyyed Hossein Nasr. It was the first book on Shi'ism written by a senior Shi'a scholar for Western readers, and covers the history and origins of Shi'ism, its differences from other schools, its beliefs and the Imams."
+        ],
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Shi%27a_Islam_(book)",
+        "confidence": "medium"
+      },
+      "note": "Probably the 1975 SUNY Press translation 'Shi'ite Islam'; the library's copy is just titled 'Shi'a', so the edition is not certain.",
+      "needsReview": false
+    },
+    "383": {
+      "searched": [
+        "al-islam.org",
+        "Wikipedia",
+        "reviews"
+      ],
+      "description": {
+        "text": [
+          "Allamah Tabataba'i's introduction to Shi'a Islam, written at the request of Western scholars and translated and edited by Seyyed Hossein Nasr. It was the first book on Shi'ism written by a senior Shi'a scholar for Western readers, and covers the history and origins of Shi'ism, its differences from other schools, its beliefs and the Imams."
+        ],
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Shi%27a_Islam_(book)",
+        "confidence": "medium"
+      },
+      "note": "Probably the 1975 SUNY Press translation 'Shi'ite Islam'; the library's copy is just titled 'Shi'a', so the edition is not certain.",
+      "needsReview": false
+    },
+    "276": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Ayatullah Mutahhari clears up confusion about the many words built on the Arabic root w-l-y (such as wali and wilayah) used in the Qur'an and hadith, in both their everyday and religious meanings. He also explains how the Imamate differs from the caliphate and discusses relations between Muslims and non-Muslims."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/master-and-mastership-murtadha-mutahhari",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "405": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A guide to the rules of ritual purity in Islam and their spiritual meaning: impure things (najasat) and how to purify them, wudu, ghusl and tayammum. The last chapter moves from ritual purity to purity of the soul."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/15987",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "457": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A lecture by Ali Shariati about the place of culture in human life. He defines culture and barbarism and discusses them in the light of Islamic teaching, and explains alienation as forgetting or losing one's own self."
+        ],
+        "source": "Iran Chamber Society (English text)",
+        "url": "https://iranchamber.com/personalities/ashariati/works/reflections_of_humanity.php",
+        "confidence": "medium"
+      },
+      "needsReview": false
+    },
+    "463": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Seems to be Shariati's Persian poem usually called 'One and in Front of It Zeroes Without End', but no reliable source describes this English edition.",
+      "needsReview": false
+    },
+    "464": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Only the title and a 1982 Tehran translation (by Mohammad Salman Tawheedi) were found; nothing about the contents.",
+      "needsReview": false
+    },
+    "462": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Appears only in book lists; no description found.",
+      "needsReview": false
+    },
+    "307": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Probably Mutahhari's 'Insan dar Qur'an' (Man in the Qur'an), but no English edition with this title was found.",
+      "needsReview": false
+    },
+    "788": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title by Sayyid Muhammad Rizvi.",
+      "needsReview": false
+    },
+    "756": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No book with this title by Imam Khomeini found.",
+      "needsReview": false
+    },
+    "292": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No book with this title by Allamah Tabataba'i found.",
+      "needsReview": false
+    },
+    "401": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A study of the lives of the Imams that compares the different ways each one worked, the struggles he faced and the conditions of his time. Ayatullah Mutahhari argues that although their methods differed, all of them acted as God wished, and each would have acted as the others did in the same situation."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/survey-lives-infallible-imams-murtadha-mutahhari",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "451": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Two essays, by Ayatullah Baqir al-Sadr and Ayatullah Mutahhari, about the twelfth Imam, Imam al-Mahdi: his long life and return, answers to common objections about him, and the revolution he will lead. Mutahhari's part looks at the deeper meaning of his mission and corrects a common misunderstanding about when he will reappear."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/awaited-saviour-ayatullah-sayyid-muhammad-baqir-sadr-ayatullah-murtadha-mutahhari",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "772": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Ayatullah Mutahhari sets out the rights of women in Islam, focusing on marriage. Topics include proposal and engagement, temporary marriage, dowry, inheritance, divorce and polygyny, as well as how men and women differ and how this relates to modern ideas."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/rights-women-islam-murtadha-mutahhari",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "429": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Talks by Ayatullah Khamenei on patience (sabr), drawing on hadith, Islamic law and history. He explains the different fields of patience, such as in carrying out duties and in keeping away from sin, and its benefits and effects."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/discourses-patience-sayyid-ali-khamenei",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "note": "al-islam.org title: 'Discourses on Patience'.",
+      "needsReview": false
+    },
+    "694": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Lectures by Ayatullah Misbah Yazdi on supplication (du'a), given in Qum during Ramadan 1978. He explains that the emptiness people feel while chasing material things can only be filled by turning to God, and comments on three well-known supplications: Du'a al-Iftitah, Du'a Abu Hamzah al-Thumali and Du'a Makarim al-Akhlaq."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/presence-beloved-muhammad-taqi-misbah-yazdi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "219": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Allamah Saeed Akhtar Rizvi answers a question often asked today: why do people need religion? He explains what religion is, why human society needs laws given by God, and what qualities a true religion must have."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/need-religion-sayyid-saeed-akhtar-rizvi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "521": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A book on the importance of the family in Islam. The author compares the joint (extended) family with the nuclear family, explains each person's rights and duties within the family, and ends with advice on treating relatives and neighbours."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/islamic-family-life-sayyid-saeed-akhtar-rizvi",
+        "confidence": "medium"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "note": "al-islam.org title: 'Islamic Family Life'.",
+      "needsReview": false
+    },
+    "376": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A collection of 61 majalis (mourning gatherings) by Ayatullah Mutahhari that tell the tragic events of Karbala and the sacrifices the Ahlul Bayt made for God to preserve true Islam."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/maqtal-al-mutahhar-sufferings-prophets-descendants-murtadha-mutahhari",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "759": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "The political and religious will and testament of Imam Khomeini, leader of the Islamic Revolution and founder of the Islamic Republic of Iran, written for the nation and the Muslim world."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/39086",
+        "confidence": "medium"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "note": "'Imam's Final Discourse' is the title of the 1989 English translation of the will by Iran's Ministry of Guidance; al-islam.org calls it 'Imam Khomeini's Last Will and Testament'.",
+      "needsReview": false
+    },
+    "681": {
+      "searched": [
+        "al-islam.org",
+        "bookshops"
+      ],
+      "description": {
+        "text": [
+          "A shortened version of short talks on the daily prayer that Ayatullah Khamenei gave after the evening congregational prayers at the Karamat Mosque in Mashhad in 1972. Translated by Sayyid Hussain Alamdar."
+        ],
+        "source": "Imam Al-Khoei Islamic Store (book listing)",
+        "url": "https://shop.al-khoei.org/products/profoundities-of-prayers",
+        "confidence": "high"
+      },
+      "needsReview": false
+    },
+    "410": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title; it may be another edition of 'Profundities of the Prayer' (book 681), but that is not confirmed.",
+      "needsReview": false
+    },
+    "340": {
+      "searched": [
+        "al-islam.org",
+        "bookshops"
+      ],
+      "description": {
+        "text": [
+          "Ayatullah Misbah Yazdi explains the hadith of the Mi'raj, the Prophet's night ascension, looking at its spiritual and symbolic meaning. He presents the Mi'raj not only as a historical event but as a model for a believer's own spiritual growth. Translated by Sayyid Iraj Razzaqi."
+        ],
+        "source": "Babul Ilm library (book listing)",
+        "url": "https://babulilm.ksijdar.org/?p=434",
+        "confidence": "medium"
+      },
+      "note": "ABWA Publishing, 2010 (ISBN 9789645295729).",
+      "needsReview": false
+    },
+    "315": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Lectures by Ayatullah Misbah Yazdi, given in Qum, on how Imam ʿAli speaks about the Qur'an in Nahj al-Balaghah. They cover the Qur'an's place in a religious society and in daily life, who is qualified to interpret it, explaining the Qur'an by the Qur'an, and the dangers of misinterpretation. Translated by Mansoor Limba."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/42969",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "167": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Several books by this author on the Prophet exist; could not tell which one this is.",
+      "needsReview": false
+    },
+    "505": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Only cited by title (Islamic Seminary Publications, 1980); nothing about the contents.",
+      "needsReview": false
+    },
+    "584": {
+      "searched": [
+        "al-islam.org",
+        "Open Library",
+        "library catalogues",
+        "bookshops"
+      ],
+      "note": "Only library and shop records (Islamic Seminary, Karachi, 1982, 112 pages); nothing about the contents.",
+      "needsReview": false
+    },
+    "725": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title.",
+      "needsReview": false
+    },
+    "562": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title.",
+      "needsReview": false
+    },
+    "380": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title.",
+      "needsReview": false
+    },
+    "198": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "An introduction to three foundations of Islamic belief: God, His existence and His attributes; the Prophet Muhammad and prophethood; and the message of Islam."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/revealer",
+        "confidence": "medium"
+      },
+      "note": "Same work as book 294; al-islam.org hosts a different English translation, titled 'The Revealer, The Messenger, The Message'.",
+      "coverNote": "Different translation, so its cover is not used.",
+      "needsReview": false
+    },
+    "264": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Khurram Murad argues that Muslims in the West do almost no da'wah (inviting others to Islam) among non-Muslims, and that what little is done is not very effective. He asks whether the usual ideas and methods are right and suggests how they should change."
+        ],
+        "source": "IslamicStudies.info (English text)",
+        "url": "https://www.islamicstudies.info/literature/Dawah_among_Non_Muslims.htm",
+        "confidence": "high"
+      },
+      "note": "The Islamic Foundation, Leicester.",
+      "needsReview": false
+    },
+    "678": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Sayyid Abul A'la Mawdudi's Friday talks, originally given in Urdu to ordinary villagers, farmers and soldiers, edited in English by Khurram Murad. They explain the basics of Islam in simple words: faith, the meaning of Islam, prayer, fasting, zakat, hajj and jihad."
+        ],
+        "source": "Universiti Teknologi MARA library catalogue",
+        "url": "https://search.library.uitm.edu.my/Record/wils-149919/Details",
+        "confidence": "high"
+      },
+      "note": "The Islamic Foundation, 1985 (ISBN 9780860371571). The library lists Khurram Murad, who edited the book.",
+      "needsReview": false
+    },
+    "669": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A study by Maryam Jameelah of moral decline in Western civilisation and its consequences."
+        ],
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Maryam_Jameelah",
+        "confidence": "medium"
+      },
+      "note": "Only a one-line description was found.",
+      "needsReview": false
+    },
+    "55": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Maryam Jameelah, born Margaret Marcus in New York, tells how she discovered the Qur'an and came to accept Islam in 1961."
+        ],
+        "source": "Scribd (copy of the text)",
+        "url": "https://www.scribd.com/document/510162490/English-Why-I-Embraced-ISLAM",
+        "confidence": "medium"
+      },
+      "needsReview": false
+    },
+    "395": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Four lectures that Seyyed Hossein Nasr gave at the University of Chicago in 1966, first published in 1968. He argues that the environmental crisis is a sign of a deeper spiritual crisis: since the Renaissance the modern West has stopped seeing nature as sacred and treats it only as something to control and use."
+        ],
+        "source": "Traversing Tradition (review)",
+        "url": "https://traversingtradition.com/2020/02/10/the-spiritual-crisis-of-man-and-nature/",
+        "confidence": "high"
+      },
+      "needsReview": false
+    },
+    "594": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Seyyed Hossein Nasr explains the spiritual meaning of the Prophet Muhammad's life from the traditional Islamic point of view, helping readers understand why the Qur'an calls him the noble example for believers."
+        ],
+        "source": "Shafaqna",
+        "url": "https://en.shafaqna.com/305063/book-muhammad-man-of-allah-by-seyyed-hossein-nasr/",
+        "confidence": "high"
+      },
+      "note": "Muhammadi Trust, London, 1982.",
+      "needsReview": false
+    },
+    "14": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Seyyed Hossein Nasr explains the spiritual meaning of the Prophet Muhammad's life from the traditional Islamic point of view, helping readers understand why the Qur'an calls him the noble example for believers."
+        ],
+        "source": "Shafaqna",
+        "url": "https://en.shafaqna.com/305063/book-muhammad-man-of-allah-by-seyyed-hossein-nasr/",
+        "confidence": "high"
+      },
+      "note": "Muhammadi Trust, London, 1982.",
+      "needsReview": false
+    },
+    "438": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "The English translation of Ayatullah Mutahhari's Ashna'i ba 'Ulum-e Islami, an introduction to the traditional Islamic sciences."
+        ],
+        "source": "Message of Thaqalayn journal (Al-Islam.org)",
+        "url": "https://al-islam.org/message-thaqalayn/vol-13-no-2-summer-2012/introduction-islamic-sciences-1-rasoul-khoshkhu/introduction",
+        "confidence": "medium"
+      },
+      "note": "ICAS Press, London, 2000.",
+      "needsReview": false
+    },
+    "404": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A shortened English version of Imam Khomeini's Tawdih al-Masa'il, his manual of religious rulings (fatwas) on the practical laws of Islam for those who follow him."
+        ],
+        "source": "RelBib (University of Tübingen library catalogue)",
+        "url": "https://relbib.de/Record/1460010582",
+        "confidence": "medium"
+      },
+      "note": "Islamic Propagation Organization, Tehran, 1985.",
+      "needsReview": false
+    },
+    "259": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Only a reader's comment was found (that it criticises Zionism and the Christian church); not enough for a description. Taj Company, Delhi.",
+      "needsReview": false
+    },
+    "23": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "33": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "188": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "31": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "710": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "11": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "13": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "53": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "123": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "577": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for 'The Desert Chief'; the book already has a description.",
+      "needsReview": false
+    },
+    "583": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No cover found; the book already has a description.",
+      "needsReview": false
+    },
+    "552": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No book with this exact title found; Mutahhari writes about the finality of prophethood in 'Revelation and Prophethood' and 'Man and Universe', but this edition could not be identified.",
+      "needsReview": false
+    },
+    "2": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No book by Mustafa Zamani with this title found.",
+      "needsReview": false
+    },
+    "172": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No book by Mustafa Zamani with this title found.",
+      "needsReview": false
+    },
+    "586": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No book by Mustafa Zamani with this title found.",
+      "needsReview": false
+    }
   }
 }
