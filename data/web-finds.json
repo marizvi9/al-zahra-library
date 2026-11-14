@@ -751,30 +751,57 @@
       "needsReview": false
     },
     "506": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "library catalogues",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "general web search (title and author)"
       ],
-      "note": "Library records show 'Issues in the Islamic Movement' as yearly volumes edited by Kalim Siddiqui (Open Press, London), but say nothing about what is inside each one.",
+      "description": {
+        "text": [
+          "Volume 3 of a yearly series edited by Kalim Siddiqui (The Open Press). Each volume collects that year's articles from the news magazine Crescent International, in date order, on the Islamic movement and world events."
+        ],
+        "source": "CM Reviews (review of the series)",
+        "url": "https://www.cmreviews.ca/cm/cmarchive/vol11no1/issuesislamic.html",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "507": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "library catalogues",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "general web search (title and author)"
       ],
-      "note": "Library records show 'Issues in the Islamic Movement' as yearly volumes edited by Kalim Siddiqui (Open Press, London), but say nothing about what is inside each one.",
+      "description": {
+        "text": [
+          "Volume 5 of a yearly series edited by Kalim Siddiqui (The Open Press). Each volume collects that year's articles from the news magazine Crescent International, in date order, on the Islamic movement and world events."
+        ],
+        "source": "CM Reviews (review of the series)",
+        "url": "https://www.cmreviews.ca/cm/cmarchive/vol11no1/issuesislamic.html",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "508": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "library catalogues",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "general web search (title and author)"
       ],
-      "note": "Library records show 'Issues in the Islamic Movement' as yearly volumes edited by Kalim Siddiqui (Open Press, London), but say nothing about what is inside each one.",
+      "description": {
+        "text": [
+          "Volume 6 of a yearly series edited by Kalim Siddiqui (The Open Press). Each volume collects that year's articles from the news magazine Crescent International, in date order, on the Islamic movement and world events."
+        ],
+        "source": "CM Reviews (review of the series)",
+        "url": "https://www.cmreviews.ca/cm/cmarchive/vol11no1/issuesislamic.html",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "758": {
@@ -933,11 +960,22 @@
       "needsReview": false
     },
     "307": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "general web search (title and author)"
       ],
-      "note": "Probably Mutahhari's 'Insan dar Qur'an' (Man in the Qur'an), but no English edition with this title was found.",
+      "description": {
+        "text": [
+          "Ayatullah Morteza Mutahhari gathers the Qur'an's verses about human beings. He shows how high people can rise, even above the angels, and how low they can fall, below animals, and how their own free will decides which way they go."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/human-being-holy-quran-murtadha-mutahhari",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     },
     "788": {
@@ -1184,13 +1222,22 @@
       "needsReview": false
     },
     "584": {
+      "round": 2,
       "searched": [
         "al-islam.org",
+        "Google Books",
         "Open Library",
-        "library catalogues",
-        "bookshops"
+        "general web search (title and author)"
       ],
-      "note": "Only library and shop records (Islamic Seminary, Karachi, 1982, 112 pages); nothing about the contents.",
+      "description": {
+        "text": [
+          "Muhammad Baqir al-Sadr on the Islamic political system: where authority comes from in an Islamic government, ijtihad (scholarly reasoning where no clear text exists), how politics and religion relate, and the role of the Imams in rebuilding Islamic society."
+        ],
+        "source": "Al-Khoei Islamic Store (bookseller listing, seen in search results)",
+        "url": "https://shop.al-khoei.org/products/islamic-political-system",
+        "confidence": "medium"
+      },
+      "note": "Islamic Seminary, Karachi, 1982; 112 pages.",
       "needsReview": false
     },
     "725": {
@@ -2790,11 +2837,22 @@
       "note": "French edition of Ayatullah Mutahhari's 'The Rights of Women in Islam' (book 772)."
     },
     "781": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "general web search (title and author)"
       ],
-      "note": "Probably Mutahhari's 'Insan dar Qur'an' (Man in the Qur'an), but no English edition with this title was found.",
+      "description": {
+        "text": [
+          "Ayatullah Morteza Mutahhari gathers the Qur'an's verses about human beings. He shows how high people can rise, even above the angels, and how low they can fall, below animals, and how their own free will decides which way they go."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/human-being-holy-quran-murtadha-mutahhari",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     },
     "445": {
@@ -3071,11 +3129,22 @@
       "needsReview": false
     },
     "643": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "general web search (title and author)"
       ],
-      "note": "A book with this title exists (Tehran, 2nd edition 1995), but no source confirms the author or describes this volume.",
+      "description": {
+        "text": [
+          "Ayatullah Ibrahim Amini's illustrated series of lessons for children aged about 4 to 15. In simple language it covers the prophets and Imams, God's creation, basic beliefs and good conduct."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/the-childrens-book-on-islam-book-three",
+        "confidence": "medium"
+      },
+      "note": "A four-book series; the library's record does not say which book.",
       "needsReview": false
     },
     "29": {
@@ -3095,10 +3164,22 @@
       "needsReview": false
     },
     "663": {
+      "round": 2,
       "searched": [
-        "al-islam.org"
+        "al-islam.org",
+        "Google Books",
+        "Open Library",
+        "general web search (title and author)"
       ],
-      "note": "Not found under this title; it may be one of Mutahhari's 'Introduction to the World View of Islam' series.",
+      "description": {
+        "text": [
+          "Ayatullah Morteza Mutahhari's introduction to the Islamic world view: how Islam sees God, humanity and the world. It is part of a series he wrote in 1978."
+        ],
+        "source": "Library catalogue (Yogyakarta)",
+        "url": "https://search-jogjalib.jogjaprov.go.id/Record/uinsukalib-076713/Description",
+        "confidence": "medium"
+      },
+      "note": "Ansariyan, 2008.",
       "needsReview": false
     },
     "283": {
@@ -4081,19 +4162,40 @@
       "needsReview": false
     },
     "554": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "general web search (title and author)"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Jamal Badawi asks, as rationally as possible, whether Muhammad was a true prophet. He looks at the main objections critics have raised and how they have changed over time."
+        ],
+        "source": "IslamicBook.ws (copy of the essay)",
+        "url": "https://islamicbook.ws/english/english-089.pdf",
+        "confidence": "high"
+      },
+      "note": "Part of the WAMY Studies on Islam series.",
       "needsReview": false
     },
     "802": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "general web search (title and author)"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Hadith qudsi, sayings of the Prophet in which he reports God's words, taken from Sayyid Hasan Shirazi's collection Kalimat Allah and translated by S.M. Zaki Baqri."
+        ],
+        "source": "Hadith.net",
+        "url": "https://hadith.net/en/post/27977/what-is-the-holy-saying-hadith-qudsi/",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "20": {
@@ -5021,11 +5123,23 @@
       "needsReview": false
     },
     "775": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "general web search (title and author)"
       ],
-      "note": "No English book with this title found; it may be another edition of Naraqi's Jami' al-Sa'adat (see book 778).",
+      "description": {
+        "text": [
+          "Muhammad Mahdi al-Naraqi's classic work on Islamic ethics (Jamiʿ al-Saʿadat): the meaning of akhlaq, the moral virtues and vices, and how to treat the diseases of the soul."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/jami-al-saadat-collector-felicities-muhammad-mahdi-naraqi",
+        "confidence": "medium"
+      },
+      "note": "The library's English title differs ('A Textbook of Ethics'); it appears to be a translation of Jamiʿ al-Saʿadat.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     },
     "433": {
@@ -5068,11 +5182,22 @@
       "needsReview": false
     },
     "449": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "general web search (title and author)"
       ],
-      "note": "Only library records (compiled by Kamal Faghih Imani, Amir-ul-Mu'mineen Ali Library, Isfahan, 2008, 128 pages); nothing about the contents.",
+      "description": {
+        "text": [
+          "A book about Imam al-Mahdi by the scholar Shaykh ʿAbbas Qummi (Muhaddith Qummi, d. 1941), compiled by Kamal Faghih Imani."
+        ],
+        "source": "British Museum library catalogue",
+        "url": "https://library.britishmuseum.org/bib/159598",
+        "confidence": "medium"
+      },
+      "note": "Only catalogue details were found.",
       "needsReview": false
     },
     "391": {
@@ -5135,11 +5260,22 @@
       "needsReview": false
     },
     "646": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "general web search (title and author)"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Muhammad Abdul-Rauf's course for adult English speakers learning Arabic: 34 lessons with exercises and appendices, from beginner to advanced grammar."
+        ],
+        "source": "Jarir Bookstore USA (bookseller)",
+        "url": "https://jarirbooksusa.com/71066.html",
+        "confidence": "high"
+      },
+      "note": "First published in Cairo, 1972.",
       "needsReview": false
     },
     "300": {
@@ -5634,11 +5770,22 @@
       "needsReview": false
     },
     "647": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "general web search (title and author)"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A small cookbook from Prevention Health Books (Rodale) with 38 recipes using herbs, from starters to desserts."
+        ],
+        "source": "PaperbackSwap (book listing)",
+        "url": "https://www.paperbackswap.com/Recipes-Herbal-Kitchen-Prevention-Health-Books/book/61437/",
+        "confidence": "high"
+      },
+      "note": "Rodale, 2000; 64 pages.",
       "needsReview": false
     },
     "745": {
@@ -6318,11 +6465,22 @@
       "needsReview": false
     },
     "465": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "general web search (title and author)"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Talal Alie Turfe on patience (sabr) as a basic virtue in Islam, and how to practise it in daily life."
+        ],
+        "source": "Al-Khoei Islamic Store (bookseller listing, seen in search results)",
+        "url": "https://shop.al-khoei.org/products/patience-in-islam-sabr-by-talal-alie-turfe-p-b",
+        "confidence": "medium"
+      },
+      "note": "1996.",
       "needsReview": false
     },
     "812": {
@@ -7322,11 +7480,22 @@
       "needsReview": false
     },
     "777": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "general web search (title and author)"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Ayatullah Dastghaib Shirazi explains istiʿadha, seeking God's protection from Satan, through five aspects: piety, remembrance of God, acceptance of His will, sincerity, and humility in prayer."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/istiadha-seeking-allahs-protection-satan-ayatullah-sayyid-abdul-husayn-dastghaib-shirazi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
       "needsReview": false
     },
     "168": {
