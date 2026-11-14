@@ -205,30 +205,30 @@
         "https://en.wikishia.net/view/Sayyid_Ali_Husayni_Khamenei"
       ],
       "title": "Ayatullah",
-      "file": "7008.jpg",
-      "source": "https://english.khamenei.ir/news/4726/Women-and-men-are-different-in-some-cases-similar-in-others",
-      "creator": "khamenei.ir",
+      "file": "rahbar2.jpg",
+      "source": "https://english.khamenei.ir/",
+      "creator": "Leader.ir / khamenei.ir (Office of Ayatollah Khamenei)",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "imageDescription": "From the Office of Ayatollah Khamenei's website (english.khamenei.ir), whose content is published under CC BY 4.0; cropped to a portrait.",
+      "imageDescription": "Photo from the Office of Ayatollah Khamenei (watermarked Leader.ir), chosen by the site owner.",
       "photoSource": "khamenei.ir",
-      "photo": "/authors/ali-khamenei-3.jpg",
-      "photoLarge": "/authors/large/ali-khamenei-3.webp",
-      "largeWidth": 320,
-      "largeHeight": 427,
-      "lowRes": true,
-      "originalWidth": 320,
-      "originalHeight": 427,
+      "photo": "/authors/ali-khamenei-4.jpg",
+      "photoLarge": "/authors/large/ali-khamenei-4.webp",
+      "largeWidth": 640,
+      "largeHeight": 962,
+      "lowRes": false,
+      "originalWidth": 1065,
+      "originalHeight": 1600,
       "focus": {
-        "x": 48.0,
+        "x": 50.0,
         "y": 42.0,
-        "zoom": 0.85
+        "zoom": 1.0
       },
       "head": {
-        "x0": 11.0,
-        "y0": 4.0,
-        "x1": 85.0,
-        "y1": 81.0
+        "x0": 5.0,
+        "y0": 0.0,
+        "x1": 97.0,
+        "y1": 82.0
       }
     },
     "Seyyed Hossein Nasr": {
