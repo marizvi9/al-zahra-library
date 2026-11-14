@@ -4399,6 +4399,266 @@
       ],
       "note": "Nothing found for this title and author.",
       "needsReview": false
+    },
+    "179": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Dr Mehdi Golshani answers eight questions on whether science can be separated from religion: whether the two can live together, when the split between them began, and why he holds that science cannot do without religion."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/can-science-dispense-religion-mehdi-golshani",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "278": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Short accounts of young companions of the Prophet, mostly from the Ansar of Medina, who accepted Islam and stayed firm and sincere in their faith all their lives, with the hadith reports and sources for each. Translated by Kelvin Lembani."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/exemplary-youths-during-early-days-islam-muhammad-ali-chenarani",
+        "confidence": "high"
+      },
+      "note": "Ahl al-Bayt World Assembly, 2010.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "285": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A detailed explanation of istikhara (asking God for the best choice): what it really means and how to use it properly, drawing on the teachings of the Ahl al-Bayt. Translated by Saleem Bhimji."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/istikhara-seeking-best-allah-swt-muhammad-baqir-haideri",
+        "confidence": "high"
+      },
+      "note": "Islamic Humanitarian Service, Canada.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "618": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A short biography of Mirza Abu al-Qasim al-Qummi, a leading jurist of the 13th century AH known for his piety and for reviving the study of the principles of jurisprudence (usul al-fiqh). It covers his scholarly work and his students. From the 'Meeting the Pious' series; translated by Hasan M. al-Najafi."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/al-mirza-al-qummi-revivalist-ilm-al-usul-al-mirza-abu-al-qasim-al-qummi",
+        "confidence": "high"
+      },
+      "note": "Ansariyan Publications, Qum.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "166": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A short biography of Mirza Abu al-Qasim al-Qummi, a leading jurist of the 13th century AH known for his piety and for reviving the study of the principles of jurisprudence (usul al-fiqh). It covers his scholarly work and his students. From the 'Meeting the Pious' series; translated by Hasan M. al-Najafi."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/al-mirza-al-qummi-revivalist-ilm-al-usul-al-mirza-abu-al-qasim-al-qummi",
+        "confidence": "high"
+      },
+      "note": "Same title as book 618; Ansariyan Publications, Qum.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "246": {
+      "searched": [
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A general survey of the history and beliefs of Shi'a Islam, focusing on Twelver Shi'ism. It runs from the life of the Prophet through medieval and modern Shi'a history, the Imamate and the Twelfth Imam, to doctrine and religious practice, setting modern scholarship beside the traditional account."
+        ],
+        "source": "Yale University Press (publisher)",
+        "url": "https://yalebooks.yale.edu/book/9780300035315/introduction-shii-islam",
+        "confidence": "medium"
+      },
+      "note": "The library's title is 'Introduction to Shia Islam'; this matches Moojan Momen's 'An Introduction to Shi'i Islam' (Yale, 1985).",
+      "needsReview": false
+    },
+    "615": {
+      "searched": [
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A biography of the North African historian Ibn Khaldun by the Egyptian historian Mohammad Abdullah Enan. The first part tells the story of his life, including his political troubles; the second explains the ideas about society that Ibn Khaldun set out in his work."
+        ],
+        "source": "Muslim Heritage",
+        "url": "https://muslimheritage.com/ibn-khaldun-life-works/",
+        "confidence": "medium"
+      },
+      "needsReview": false
+    },
+    "61": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "note": "Only cited in another al-islam.org book (translated by Badr Shahin, Mowlood Kaaba Publications, Qum, 2000); no description of its contents.",
+      "needsReview": false
+    },
+    "778": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Jami' al-Sa'adat by Muhammad Mahdi al-Naraqi (d. 1795) is one of the best-known and most complete books on Islamic ethics. It explains the virtues to be gained and the vices to be avoided in building good character."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/11268",
+        "confidence": "medium"
+      },
+      "note": "The second sentence is a general summary of the subject; the source calls it one of the most comprehensive Islamic ethics books.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "775": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No English book with this title found; it may be another edition of Naraqi's Jami' al-Sa'adat (see book 778).",
+      "needsReview": false
+    },
+    "433": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Book 2 of the Islamic Reference Series by Dr Mohammad Ali Shomali. It discusses the image of God in the Qur'an and the Qur'anic proof for God's existence, answers atheist and materialist arguments with reasoned arguments for one God, and covers Shaykh al-Saduq's 'al-Tawhid', the ontological argument and divine justice."
+        ],
+        "source": "Shia Books Australia (book listing)",
+        "url": "https://www.shiabooks.com.au/products/god-existence-and-attributes-islamic-reference-series-book-2-m-a-shomali",
+        "confidence": "medium"
+      },
+      "needsReview": false
+    },
+    "282": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "542": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "44": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "449": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Only library records (compiled by Kamal Faghih Imani, Amir-ul-Mu'mineen Ali Library, Isfahan, 2008, 128 pages); nothing about the contents.",
+      "needsReview": false
+    },
+    "391": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "An English translation of the first part of Ayatullah Muhammad Baqir al-Sadr's Durus fi 'Ilm al-Usul, an introduction for beginners to the principles of jurisprudence that is widely taught in Shi'a seminaries. It covers what usul is, whether deriving rulings is allowed, and the kinds of evidence used. Translated by Arif Abdul Hussain."
+        ],
+        "source": "Islamic College (publisher)",
+        "url": "https://islamic-college.ac.uk/?p=8947",
+        "confidence": "high"
+      },
+      "note": "ICAS Press, London, 2003.",
+      "needsReview": false
+    },
+    "593": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "147": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "755": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "796": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "646": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "300": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A short introduction by Mehdi Bazargan to the Shi'a belief in Imam al-Mahdi: his occultation, his reappearance, and why the anniversary of his birth is worth celebrating."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/98269",
+        "confidence": "high"
+      },
+      "note": "Free Islamic Literatures, Houston, 1979, about 37 pages.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
     }
   }
 }
