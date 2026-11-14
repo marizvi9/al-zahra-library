@@ -8,7 +8,7 @@
     "FOCUS: \"focus\" {x, y} is where the face is in the photo, in percent from the left and from the top (set by checking each photo by eye). Every size of the photo is cropped around this point. If a face looks cut off, nudge these numbers and rebuild. Optional \"zoom\" (e.g. 1.5) enlarges the photo around the face in the small round badges only, for photos taken from far away.",
     "TITLES: \"title\": \"Ayatullah\" (or \"Shaheed Ayatullah\") shows the author on the site as \"Ayatullah <name>\" (on covers, \"Ayt.\" when the full name would not fit). Given only where the catalogue or a sourced bio calls the person Ayatollah or marja'. Imam Khomeini keeps \"Imam\". The Google Sheet is never changed.",
     "FULL NAMES: \"fullName\" replaces a short catalogue name on the site (e.g. \"Ayatullah Gulpaygani\" -> \"Lutf Allah Safi Gulpaygani\", from his WikiShia article). The page address and the Google Sheet keep the catalogue name.",
-    "\"coverZoom\" (optional) zooms the author photo on drawn book covers only, e.g. 0.78 = further out than the photo's own \"focus\" zoom."
+    "\"coverZoom\" (optional) zooms the author photo on drawn book covers only; it is never below 1, so the photo always fills the round frame without blurred edges."
   ],
   "neverPhoto": [
     "Imam Ali Amir al-Mum'minin",
@@ -30,7 +30,7 @@
       "bioSources": [
         "https://en.wikishia.net/view/Morteza_Motahhari"
       ],
-      "title": "Shaheed Ayatullah",
+      "title": "Ayatullah",
       "file": "mnew.webp",
       "source": "https://www.islamicinsights.com/religion/history/martyr-mutahhari.html",
       "creator": "Islamic Insights",
@@ -124,7 +124,7 @@
         "x1": 77,
         "y1": 76.1
       },
-      "title": "Shaheed Ayatullah"
+      "title": "Ayatullah"
     },
     "Muhammad Husayn Tabatabai": {
       "wikipedia": "Muhammad Husayn Tabatabai",
@@ -204,7 +204,7 @@
       "bioSources": [
         "https://en.wikishia.net/view/Sayyid_Ali_Husayni_Khamenei"
       ],
-      "title": "Shaheed Ayatullah",
+      "title": "Ayatullah",
       "file": "rahbar2.jpg",
       "source": "https://english.khamenei.ir/",
       "creator": "Leader.ir / khamenei.ir (Office of Ayatollah Khamenei)",
@@ -229,8 +229,7 @@
         "y0": 0.0,
         "x1": 97.0,
         "y1": 82.0
-      },
-      "coverZoom": 0.78
+      }
     },
     "Seyyed Hossein Nasr": {
       "wikipedia": "Seyyed Hossein Nasr",

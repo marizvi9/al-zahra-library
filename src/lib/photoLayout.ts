@@ -7,6 +7,20 @@ export type PhotoShape = { focus?: Focus; originalWidth?: number | null; origina
 const clamp = (v: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, v));
 
 /**
+ * The photo always fills its round frame (zoom at least 1), so no blurred edge is needed. When the stored
+ * framing was zoomed further out than that, keep the top of that wider frame (where the head is) and trim
+ * the sides and bottom instead, so turbans and foreheads are not cut off.
+ */
+export function filledFocus(f: Focus, W: number, H: number): Focus {
+  const want = f.zoom ?? 1;
+  if (want >= 1) return f;
+  const wide = Math.min(W, H) / want; // the frame the stored zoom asked for
+  const side = Math.min(W, H); // the largest frame the photo can fill
+  const top = Math.max(0, Math.min(H - side, (f.y / 100) * H - wide / 2));
+  return { x: f.x, y: ((top + side / 2) / H) * 100, zoom: 1 };
+}
+
+/**
  * Round badge: draws the photo so the head's centre sits in the middle of the circle, at the stored zoom.
  * When the circle reaches past the photo's edge ("padded"), the edge fades softly into a blurred copy of
  * the same photo instead of showing a hard border. All numbers are percentages of the badge.
@@ -15,9 +29,9 @@ export function circleLayout(p: PhotoShape): {
   fg: React.CSSProperties;
   padded: boolean;
 } {
-  const f = p.focus ?? { x: 50, y: 35, zoom: 1 };
   const W = p.originalWidth ?? 1;
   const H = p.originalHeight ?? 1;
+  const f = filledFocus(p.focus ?? { x: 50, y: 35, zoom: 1 }, W, H);
   const side = Math.min(W, H) / (f.zoom ?? 1); // the square of the photo that fills the badge
   const cx = (f.x / 100) * W;
   const cy = (f.y / 100) * H;
