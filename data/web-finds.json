@@ -2238,6 +2238,646 @@
       ],
       "note": "Nothing found for this title and author.",
       "needsReview": false
+    },
+    "797": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A study of the life of Lady Fatimah al-Zahra, the daughter of the Prophet. It describes her upbringing in the house of revelation, her knowledge, purity, patience and piety, and her simple, ascetic life with Imam ʿAli, presenting her as an ideal example for Muslim women and for all Muslims."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/life-fatimah-az-zahra-principal-all-women-study-and-analysis-baqir-sharif-al-qurashi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "353": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A collection of writings on the inner, spiritual side of Islam by Ayatullah Mutahhari, Allamah Tabataba'i and Imam Khomeini, including Mutahhari's introduction to irfan (Islamic mysticism) and Tabataba'i's account of the stages of the spiritual journey. Translated by Mustajab Ahmad Ansari."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/27477",
+        "confidence": "medium"
+      },
+      "note": "Islamic Seminary Publications, Karachi, 1991.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "523": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Ayatullah Mutahhari sets out the rights of women in Islam, focusing on marriage. Topics include proposal and engagement, temporary marriage, dowry, inheritance, divorce and polygyny, as well as how men and women differ and how this relates to modern ideas."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/rights-women-islam-murtadha-mutahhari",
+        "confidence": "medium"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false,
+      "note": "Probably the same book as 'The Rights of Women in Islam' (book 772); one source cites it under the title 'Woman and Her Rights'."
+    },
+    "572": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A lecture by Ali Shariati about where religion is heading. He describes how, as a new educated class grows, faith fades among the educated and science starts to take its place as something to believe in, while religion lives on among ordinary people."
+        ],
+        "source": "Shariati.com (English text)",
+        "url": "https://shariati.com/english/tomorrow/tomorrow2.html",
+        "confidence": "medium"
+      },
+      "note": "Same title as book 454, translated by Laleh Bakhtiar.",
+      "needsReview": false
+    },
+    "372": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Shaykh al-Saduq's classic collection of hadith from the Prophet and the Imams about the oneness of God (tawhid), His attributes and related questions of belief. Translated into English by Ali Adam as 'Kitab al-Tawhid: The Book of Divine Unity'."
+        ],
+        "source": "WikiShia",
+        "url": "https://en.wikishia.net/view/Kitab_al-Tawhid",
+        "confidence": "medium"
+      },
+      "note": "AMI Press, Birmingham, 2013 (if this is the library's edition).",
+      "needsReview": false
+    },
+    "578": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Imam ʿAli's famous letter to Malik al-Ashtar when he appointed him governor of Egypt, setting out how a just Islamic government should treat its people."
+        ],
+        "source": "WikiShia",
+        "url": "https://en.wikishia.net/view/Letter_of_Imam_%27Ali_(a)_to_Malik_al-Ashtar",
+        "confidence": "medium"
+      },
+      "note": "Describes the letter itself; the library's edition (by Ali Ansarian) may include a commentary that is not described here.",
+      "needsReview": false
+    },
+    "732": {
+      "searched": [
+        "general web search",
+        "reviews"
+      ],
+      "description": {
+        "text": [
+          "Ali Mohammadi and Muhammad Ahsan, both of Nottingham Trent University, argue that today's globalisation is a new form of Western colonisation of the developing world, especially Muslim countries. They compare Muslim and non-Muslim countries on development and end with a plan for how the Muslim world can respond."
+        ],
+        "source": "Review in the American Journal of Islamic Social Sciences",
+        "url": "https://ajis.org/index.php/ajiss/article/download/1832/1082",
+        "confidence": "high"
+      },
+      "note": "Ta-Ha Publishers, 2002.",
+      "needsReview": false
+    },
+    "606": {
+      "searched": [
+        "al-islam.org",
+        "bookshops"
+      ],
+      "description": {
+        "text": [
+          "Volume 3 of lectures by the late Allamah Rasheed Turabi on writing the biography of the Prophet."
+        ],
+        "source": "Imam Al-Khoei Islamic Store (book listing)",
+        "url": "https://shop.al-khoei.org/products/guideline-for-writing-the-biography-of-the-messenger",
+        "confidence": "medium"
+      },
+      "needsReview": false
+    },
+    "4": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Only a library record (Library of Islam, Des Plaines, 1993, 229 pages, foreword by Abdullah Omar Naseef); nothing about the contents.",
+      "needsReview": false
+    },
+    "719": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A phrase-by-phrase commentary by Husayn Ansariyan on Du'a Kumayl, the supplication that Imam ʿAli taught to his companion Kumayl ibn Ziyad. It includes the Arabic text with transliteration and an English translation. Translated by Hamideh Elahinia."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/30920",
+        "confidence": "high"
+      },
+      "note": "Ansariyan Publications, Qum, 2007.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "528": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "769": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "469": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "An abridged English version of Allamah Ali Naqi Naqvi's Urdu book Shaheed-e-Insaniyat, written in simple language to mark the 1300th anniversary of the tragedy of Karbala. It explains the aims of Imam Husayn's stand and sacrifice."
+        ],
+        "source": "StandWithDignity",
+        "url": "https://standwithdignity.org/al-hussain-a-paragon-of-human-justice/",
+        "confidence": "medium"
+      },
+      "note": "English translation by Ali Akhtar, Muhammadi Trust, London, 1986.",
+      "needsReview": false
+    },
+    "201": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "78": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Shaykh Muhammad Husayn Kashif al-Ghita's defence of the Shi'a faith (Asl al-Shi'a wa Usuluha), written to clear up misunderstandings between Sunnis and Shi'as and bring them closer. He argues that Shi'ism grew from within Islam itself, out of Muslims' special love for the Prophet and his family, and sets out its basic beliefs and laws as drawn from the Qur'an, hadith and the teachings of the Ahlul Bayt."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/shia-origin-and-faith-muhammad-husayn-kashif-al-ghita",
+        "confidence": "high"
+      },
+      "note": "al-islam.org title: 'The Shi'a Origin and Faith' (Islamic Seminary Publications, 1985).",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "62": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Shaykh Muhammad Husayn Kashif al-Ghita's defence of the Shi'a faith (Asl al-Shi'a wa Usuluha), written to clear up misunderstandings between Sunnis and Shi'as and bring them closer. He argues that Shi'ism grew from within Islam itself, out of Muslims' special love for the Prophet and his family, and sets out its basic beliefs and laws as drawn from the Qur'an, hadith and the teachings of the Ahlul Bayt."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/shia-origin-and-faith-muhammad-husayn-kashif-al-ghita",
+        "confidence": "medium"
+      },
+      "note": "The library lists the author as 'Allama Shaikh Mohammad Husain Aal-e-Khashif-ul-Ghita'; same work as book 78, perhaps another translation.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "235": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Listed among Ahmed Deedat's works, but no description found.",
+      "needsReview": false
+    },
+    "281": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "47": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "514": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "227": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "255": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Shaykh Muhammad Husayn Kashif al-Ghita's defence of the Shi'a faith (Asl al-Shi'a wa Usuluha), written to clear up misunderstandings between Sunnis and Shi'as and bring them closer. He argues that Shi'ism grew from within Islam itself, out of Muslims' special love for the Prophet and his family, and sets out its basic beliefs and laws as drawn from the Qur'an, hadith and the teachings of the Ahlul Bayt."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/shia-origin-and-faith-muhammad-husayn-kashif-al-ghita",
+        "confidence": "high"
+      },
+      "note": "Same work as book 78 ('The Shi'a Origin and Faith' on al-islam.org).",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "444": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Shaykh Muhammad Husayn Kashif al-Ghita's defence of the Shi'a faith (Asl al-Shi'a wa Usuluha), written to clear up misunderstandings between Sunnis and Shi'as and bring them closer. He argues that Shi'ism grew from within Islam itself, out of Muslims' special love for the Prophet and his family, and sets out its basic beliefs and laws as drawn from the Qur'an, hadith and the teachings of the Ahlul Bayt."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/shia-origin-and-faith-muhammad-husayn-kashif-al-ghita",
+        "confidence": "high"
+      },
+      "note": "Same work as book 78 ('The Shi'a Origin and Faith' on al-islam.org).",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "670": {
+      "searched": [
+        "al-islam.org",
+        "Wikipedia",
+        "reviews"
+      ],
+      "description": {
+        "text": [
+          "Allamah Tabataba'i's introduction to Shi'a Islam, written at the request of Western scholars and translated and edited by Seyyed Hossein Nasr. It was the first book on Shi'ism written by a senior Shi'a scholar for Western readers, and covers the history and origins of Shi'ism, its differences from other schools, its beliefs and the Imams."
+        ],
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Shi%27a_Islam_(book)",
+        "confidence": "medium"
+      },
+      "note": "Probably the 1975 SUNY Press translation 'Shi'ite Islam'; the library's copy is just titled 'Shi'a', so the edition is not certain.",
+      "needsReview": false
+    },
+    "131": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Ayatullah Mutahhari sets out the rights of women in Islam, focusing on marriage. Topics include proposal and engagement, temporary marriage, dowry, inheritance, divorce and polygyny, as well as how men and women differ and how this relates to modern ideas."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/rights-women-islam-murtadha-mutahhari",
+        "confidence": "medium"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false,
+      "note": "French edition of Ayatullah Mutahhari's 'The Rights of Women in Islam' (book 772)."
+    },
+    "781": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Probably Mutahhari's 'Insan dar Qur'an' (Man in the Qur'an), but no English edition with this title was found.",
+      "needsReview": false
+    },
+    "445": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Lectures by Allamah Sayyid Murtadha al-Askari on the main questions of true Islam. He argues that Islam's teachings were distorted after the Prophet, explains the causes of these distortions, and shows how the Imams of the Ahlul Bayt worked to revive the religion."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/role-holy-imams-revival-religion-vol-1-sayyid-murtadha-al-askari",
+        "confidence": "medium"
+      },
+      "note": "Described from volume 1 on al-islam.org; the library's copy does not say which volume.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "205": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Evidence for Shi'a beliefs and practices drawn from the Qur'an and from Sunni sources, such as hadith accepted by both schools."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/122347",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "59": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Shaykh Abu Talib al-Tabrizi collects and answers accusations that have been made against Shi'a Muslims through history, such as claims about the origin of Shi'ism, the infallibility of the Imams and asking the Prophet and Imams to intercede with God, often citing Sunni sources."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/spurious-arguments-about-shia-abu-talib-tabrizi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "310": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Short, simple lessons for young people on the basic beliefs of Islam: God, prophethood, the Imamate and the Day of Judgement. The author stresses that belief should rest on understanding the reasons, not on simply following others."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/fifty-lessons-on-principles-of-belief-for-youth-makarim-shirazi",
+        "confidence": "high"
+      },
+      "note": "al-islam.org title: 'Fifty Lessons on Principles of Belief for Youth'.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "321": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "An explanation of wilayat al-faqih, the authority of a qualified jurist to lead the Muslim community while the Imam is in occultation. It traces the idea to the Qur'an and hadith, sets out the qualities the jurist must have, and discusses the scope of his authority in government, law and public affairs."
+        ],
+        "source": "Al-Tawhid journal (Al-Islam.org)",
+        "url": "https://al-islam.org/al-tawhid/vol-3-n-1/wilayat-al-faqih-its-meaning-and-scope-ali-akbar-fayd-mishkini",
+        "confidence": "medium"
+      },
+      "needsReview": false
+    },
+    "804": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A collection of Qur'anic verses and more than 500 hadith about children, compiled by Ayatullah Reyshahri for parents, teachers and researchers. It covers preparing for a child before birth, care and naming after birth, and raising and training children from an Islamic point of view."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/children-quran-and-sunnah-muhammadi-reyshahri",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "783": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Talks given by Ayatullah Khamenei in 1974 that sketch the main outline of Islamic thought from verses of the Qur'an, covering subjects such as faith, monotheism and prayer."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/general-pattern-islamic-thought-quran-sayyid-ali-khamenei",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "207": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A summary of the teachings of Islam in fairly simple language by Allamah Tabataba'i, covering belief, ethics and practice."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/islamic-teachings-brief-sayyid-muhammad-husayn-tabatabai",
+        "confidence": "medium"
+      },
+      "note": "al-islam.org hosts a different translation, 'Islamic Teachings in Brief'; the library's 'Islamic Teachings: An Overview' was translated by R. Campbell (New York, 1989).",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "184": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Only a citation was found (an anthology of Taleqani's writings, translated by R. Campbell, edited by Hamid Algar, Mizan Press, 1982); nothing about the contents.",
+      "needsReview": false
+    },
+    "331": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No book with this title by Allamah Tabataba'i found.",
+      "needsReview": false
+    },
+    "80": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Allamah Tabataba'i discusses how Islam answers the questions of modern thought, covering the nature of the human being, philosophical and scientific problems, and creation and resurrection. Translated by Dawud Sodagar."
+        ],
+        "source": "Babul Ilm library (book listing)",
+        "url": "https://babulilm.ksijdar.org/product/islam-and-the-contemporary-man/",
+        "confidence": "high"
+      },
+      "note": "Ahl al-Bayt World Assembly (ISBN 978-964-529-660-3).",
+      "needsReview": false
+    },
+    "100": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Not found as a separate book; al-islam.org has a talk with a similar title inside 'Spirituality of Shi'ism and Other Discourses'.",
+      "needsReview": false
+    },
+    "46": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "note": "Not found on al-islam.org; a wider web search is still to do.",
+      "needsReview": false
+    },
+    "367": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Ayatullah Makarim Shirazi teaches the basic beliefs of Islam to young people in short, clear lessons on God, prophethood and the Prophet of Islam, divine justice, the Imamate and the resurrection. Translated by Laleh Bakhtiar."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/11013",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "414": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No book with this title found.",
+      "needsReview": false
+    },
+    "354": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "note": "Not found on al-islam.org; a wider web search is still to do.",
+      "needsReview": false
+    },
+    "197": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A detailed account of death and the stages that follow it, according to Islamic teachings, by Ayatullah Dastghaib Shirazi. Translated by Syed Athar Husain S.H. Rizvi."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/18590",
+        "confidence": "high"
+      },
+      "note": "Ansariyan Publications, Qum.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "448": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No book with this title found.",
+      "needsReview": false
+    },
+    "643": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "A book with this title exists (Tehran, 2nd edition 1995), but no source confirms the author or describes this volume.",
+      "needsReview": false
+    },
+    "29": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A study of the life of Imam ʿAli as a life filled with gnosis (spiritual knowledge of God), both in his outlook and in his practice."
+        ],
+        "source": "Shia Books Australia (book listing)",
+        "url": "https://shiabooks.com.au/products/life-of-gnosis-a-mystical-study-of-imam-alis-life",
+        "confidence": "medium"
+      },
+      "note": "Isra Publications. The listing does not name the author.",
+      "needsReview": false
+    },
+    "663": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "note": "Not found under this title; it may be one of Mutahhari's 'Introduction to the World View of Islam' series.",
+      "needsReview": false
+    },
+    "283": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A short presentation of the basic teachings of Islam, compiled by the Islamic Seminary in 1977 under the guidance of Ayatullah al-Khu'i. Topics include the role of religion in human life, worship, economics, and jihad and defence in Islam."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/126869",
+        "confidence": "medium"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "note": "Islamic Seminary Publications, Pakistan. The library lists Mutahhari and other scholars as authors.",
+      "needsReview": false
+    },
+    "218": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No book with this title by Ayatullah Beheshti found.",
+      "needsReview": false
+    },
+    "388": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A translation of a book by Ayatullah Beheshti about the daily prayer (salat): its importance, how to perform it and what it aims to achieve."
+        ],
+        "source": "IjtihadNet",
+        "url": "https://ijtihadnet.com/?p=13531",
+        "confidence": "high"
+      },
+      "note": "International Print and Publication Company, Iran, 2012.",
+      "needsReview": false
+    },
+    "771": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No book with this title found.",
+      "needsReview": false
     }
   }
 }
