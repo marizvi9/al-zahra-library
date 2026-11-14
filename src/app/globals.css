@@ -1740,27 +1740,12 @@ button:active,
   from {
     opacity: 0;
     transform: translateY(26px);
-    letter-spacing: 0.18em;
   }
 }
-.intro-skip {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  font: inherit;
-  font-family: var(--font-ui);
-  font-weight: 600;
-  padding: 8px 18px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: var(--card);
-  color: var(--navy);
-  cursor: pointer;
-}
-.intro-skip:hover,
-.intro-skip:focus-visible {
-  background: var(--navy-soft);
-  border-color: var(--navy);
+/* Held still until the emblem's font has loaded (see lib/intro.ts), so no letter changes shape mid-way. */
+.intro-wait .intro,
+.intro-wait .intro * {
+  animation-play-state: paused !important;
 }
 @keyframes intro-out {
   to {
@@ -2374,8 +2359,21 @@ button:active,
   .shelf-row {
     grid-auto-columns: 64%;
   }
+  /* Every cover in a row gets the same frame; a wide scan is shrunk to fit rather than filling it. */
+  .shelf-book-cover {
+    height: 180px;
+    place-items: center;
+  }
+  .shelf-book-cover img {
+    max-width: min(100%, 132px);
+    max-height: 180px;
+  }
   .featured-shelf-head {
     flex-wrap: wrap;
+  }
+  /* The name and its line get the full width beside the photo; "All … books" moves below. */
+  .featured-shelf-titles {
+    flex: 1 1 calc(100% - 96px);
   }
   .featured-shelf-head .see-all {
     align-self: auto;
@@ -2401,13 +2399,8 @@ button:active,
   display: block;
 }
 .author-avatar .avatar-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1.5);
-  filter: blur(6px) saturate(1.1);
+  /* placed by AvatarView (lined up with the photo, enlarged to cover the circle) */
+  filter: blur(4px) saturate(1.05);
 }
 .author-avatar-initials {
   background: linear-gradient(160deg, var(--navy), var(--ink));
@@ -2803,24 +2796,42 @@ button:active,
   outline-offset: 0;
   border-radius: 50%;
 }
+/* Phones: the cover sits centred above the text at a readable size, instead of squeezed beside it. */
 @media (max-width: 560px) {
   .slide-link {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     gap: 14px;
-    padding: 16px 40px;
-    align-items: flex-start;
+    padding: 20px 44px 18px;
   }
   .slide-cover {
-    width: 84px;
+    width: auto;
+    height: 200px;
+    display: grid;
+    place-items: center;
+  }
+  .slide-cover img {
+    width: auto;
+    height: auto;
+    max-width: min(100%, 220px);
+    max-height: 200px;
+  }
+  .slide-text {
+    width: 100%;
+    align-items: center;
+    text-align: center;
   }
   .slide-desc {
-    -webkit-line-clamp: 6;
-    line-clamp: 6;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
     font-size: 0.95rem;
   }
   .slider-arrow {
     width: 36px;
     height: 36px;
     font-size: 1.3rem;
+    top: 124px; /* beside the cover, clear of the title below it */
   }
   .slider-prev {
     left: 2px;
@@ -3702,3 +3713,38 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
 .author-filter .search-box { display: flex; gap: 8px; }
 .author-filter-count { min-height: 1.4em; margin: 6px 0 0; }
 .author-letter[hidden], .author-list li[hidden], .letter-jump[hidden] { display: none; }
+
+/* Book of the Month: a large centred heading above the card, with gold rules and diamonds */
+.botm-head { text-align: center; margin: 4px 0 18px; }
+.botm-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 0;
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(1.9rem, 4.6vw, 2.9rem);
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: var(--navy-deep);
+}
+.botm-orn { display: flex; align-items: center; gap: 4px; flex: 0 1 140px; min-width: 32px; color: var(--gold); }
+.botm-orn-line { flex: 1; height: 2px; background: currentColor; }
+.botm-diamond { width: 14px; height: 14px; flex: none; }
+.botm-month {
+  max-width: none;
+  text-align: center;
+  margin: 8px 0 0;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+}
+.botm .botm-card { box-shadow: var(--shadow), 0 0 0 4px var(--gold-soft); }
+@media (max-width: 560px) {
+  .botm-heading { gap: 10px; }
+  .botm-orn { flex-basis: 40px; }
+}

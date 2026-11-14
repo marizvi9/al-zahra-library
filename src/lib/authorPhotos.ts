@@ -29,6 +29,8 @@ export type AuthorPhoto = {
    * detected face (beard and chin included) by scripts/frame_author_photos.py.
    */
   focus?: { x: number; y: number; zoom?: number };
+  /** Zoom for the photo on drawn book covers only (else the focus zoom is used). */
+  coverZoom?: number;
 };
 
 export { circleLayout, frameStyle } from "./photoLayout";

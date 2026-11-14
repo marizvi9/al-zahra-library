@@ -8,7 +8,7 @@ import subTopicTexts from "@data/subtopic-descriptions.json";
 import { setRefFor } from "./setIndex";
 import { categoryDescriptions, DISPLAY_NAMES, FEATURED_CATEGORIES, MORE_TO_EXPLORE } from "./categoryInfo";
 import { withBase } from "./paths";
-import { displayName, hasTitle, photoFor } from "./authorPhotos";
+import { displayName, hasTitle, photoFor, type AuthorPhoto } from "./authorPhotos";
 import type { CoverPhoto } from "@/components/ArchCover";
 
 export type Book = {
@@ -203,7 +203,12 @@ export function coverPhotoFor(b: Book): CoverPhoto | undefined {
   const a = authorOf(b);
   const p = a ? photoFor(a.name) : null;
   if (!p) return undefined;
-  return { src: withBase(p.photoLarge ?? p.photo), focus: p.focus, originalWidth: p.originalWidth, originalHeight: p.originalHeight };
+  return { src: withBase(p.photoLarge ?? p.photo), focus: coverFocus(p), originalWidth: p.originalWidth, originalHeight: p.originalHeight };
+}
+
+/** The cover may use its own zoom ("coverZoom"); otherwise the photo's own framing is used. */
+function coverFocus(p: AuthorPhoto): AuthorPhoto["focus"] {
+  return p.focus && p.coverZoom ? { ...p.focus, zoom: p.coverZoom } : p.focus;
 }
 
 /** The small set of fields a book needs to appear in a list. */

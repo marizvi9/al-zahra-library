@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning /* the intro script may add a class before React loads */
     >
       <head>
-        <script dangerouslySetInnerHTML={{ __html: introScript }} />
+        <script dangerouslySetInnerHTML={{ __html: introScript(sans.style.fontFamily) }} />
       </head>
       <body>
         <Intro />

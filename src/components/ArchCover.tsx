@@ -11,7 +11,7 @@
 // It looks the same on the server and in the browser (it only depends on the title, author and slug).
 
 import { FLOWER_PATHS } from "./Emblem";
-import { circleLayout, type PhotoShape } from "@/lib/photoLayout";
+import { circleLayout, FADE, type PhotoShape } from "@/lib/photoLayout";
 
 /** An author photo to show on the cover (only real authors with a usable licence; see lib/authorPhotos). */
 export type CoverPhoto = PhotoShape & { src: string };
@@ -146,7 +146,7 @@ function fitAuthor(author: string, maxW: number): { size: number; lines: string[
   if (/\bAyatullah /.test(author)) return fitAuthor(author.replace(/\bAyatullah /g, "Ayt. "), maxW);
   const lines = wrap(author, 12, maxW).slice(0, 2);
   // don't end on a lone title ("…, Ayt…")
-  lines[1] = (lines[1] ?? "").replace(/[\s,;:.-]*(?:\bAyt\.?|\bAyatullah)?[\s,;:.-]*$/, "") + "…";
+  lines[1] = (lines[1] ?? "").replace(/[\s,;:.-]*(?:\b(?:Shaheed\s+)?(?:Ayt\.?|Ayatullah)|\bShaheed)?[\s,;:.-]*$/, "") + "…";
   return { size: 12, lines };
 }
 
@@ -193,13 +193,18 @@ function Pattern({ id, kind, stroke }: { id: string; kind: number; stroke: strin
 // ---------- The cover ----------
 
 /** The photo inside its round frame. Uses the same framing as the author badges (head centred, stored zoom);
- *  when the frame reaches past the photo's edge, a blurred copy of the photo fills the gap. */
+ *  when the frame reaches past the photo's side or bottom edge, a blurred copy of the photo fills the gap. */
 function PhotoCircle({ photo, cx, cy, r, id, ring }: { photo: CoverPhoto; cx: number; cy: number; r: number; id: string; ring: string }) {
-  const { fg, padded } = circleLayout(photo);
+  const { fg, padded, fades } = circleLayout(photo);
   const side = r * 2;
   const pct = (v: unknown) => parseFloat(String(v)) / 100;
   const x0 = cx - r, y0 = cy - r;
   const img = { x: x0 + pct(fg.left) * side, y: y0 + pct(fg.top) * side, w: pct(fg.width) * side, h: pct(fg.height) * side };
+  // The blurred fill: the same photo in the same place, enlarged from the circle's centre just enough to
+  // cover the circle, so its colours line up with the photo's edges.
+  const reach = (gap: number, have: number) => (have > 0.01 ? gap / have : 4);
+  const k = 1.08 * Math.max(1, reach(cx - x0, cx - img.x), reach(x0 + side - cx, img.x + img.w - cx), reach(cy - y0, cy - img.y), reach(y0 + side - cy, img.y + img.h - cy));
+  const bg = { x: cx - (cx - img.x) * k, y: cy - (cy - img.y) * k, w: img.w * k, h: img.h * k };
   return (
     <g>
       <defs>
@@ -211,23 +216,24 @@ function PhotoCircle({ photo, cx, cy, r, id, ring }: { photo: CoverPhoto; cx: nu
             <filter id={`${id}-b`} x="-20%" y="-20%" width="140%" height="140%">
               <feGaussianBlur stdDeviation={r / 6} />
             </filter>
+            {/* Only the edges with a gap fade (see FADE in lib/photoLayout). */}
             <linearGradient id={`${id}-gx`} x1="0" x2="1" y1="0" y2="0">
-              <stop offset="0" stopColor="#fff" stopOpacity="0" />
-              <stop offset="0.16" stopColor="#fff" />
-              <stop offset="0.84" stopColor="#fff" />
-              <stop offset="1" stopColor="#fff" stopOpacity="0" />
+              <stop offset="0" stopColor="#fff" stopOpacity={fades.left ? 0 : 1} />
+              <stop offset={fades.left ? FADE.side : 0} stopColor="#fff" />
+              <stop offset={fades.right ? 1 - FADE.side : 1} stopColor="#fff" />
+              <stop offset="1" stopColor="#fff" stopOpacity={fades.right ? 0 : 1} />
             </linearGradient>
             <linearGradient id={`${id}-gy`} x1="0" x2="0" y1="0" y2="1">
-              <stop offset="0" stopColor="#fff" stopOpacity="0" />
-              <stop offset="0.16" stopColor="#fff" />
-              <stop offset="0.84" stopColor="#fff" />
-              <stop offset="1" stopColor="#fff" stopOpacity="0" />
+              <stop offset="0" stopColor="#fff" stopOpacity={fades.top ? 0 : 1} />
+              <stop offset={fades.top ? FADE.top : 0} stopColor="#fff" />
+              <stop offset={fades.bottom ? 1 - FADE.bottom : 1} stopColor="#fff" />
+              <stop offset="1" stopColor="#fff" stopOpacity={fades.bottom ? 0 : 1} />
             </linearGradient>
             <mask id={`${id}-mx`} maskContentUnits="userSpaceOnUse">
-              <rect x={img.x} y={img.y} width={img.w} height={img.h} fill={img.w < side - 0.5 ? `url(#${id}-gx)` : "#fff"} />
+              <rect x={img.x} y={img.y} width={img.w} height={img.h} fill={fades.left || fades.right ? `url(#${id}-gx)` : "#fff"} />
             </mask>
             <mask id={`${id}-my`} maskContentUnits="userSpaceOnUse">
-              <rect x={img.x} y={img.y} width={img.w} height={img.h} fill={img.h < side - 0.5 ? `url(#${id}-gy)` : "#fff"} />
+              <rect x={img.x} y={img.y} width={img.w} height={img.h} fill={fades.top || fades.bottom ? `url(#${id}-gy)` : "#fff"} />
             </mask>
           </>
         )}
@@ -235,7 +241,7 @@ function PhotoCircle({ photo, cx, cy, r, id, ring }: { photo: CoverPhoto; cx: nu
       <circle cx={cx} cy={cy} r={r + 7} fill="none" stroke={ring} strokeWidth="1" opacity="0.8" />
       <g clipPath={`url(#${id}-c)`}>
         <rect x={x0} y={y0} width={side} height={side} fill="#1a1d24" />
-        {padded && <image href={photo.src} x={x0 - r * 0.25} y={y0 - r * 0.25} width={side * 1.5} height={side * 1.5} preserveAspectRatio="xMidYMid slice" filter={`url(#${id}-b)`} />}
+        {padded && <image href={photo.src} x={bg.x} y={bg.y} width={bg.w} height={bg.h} preserveAspectRatio="none" filter={`url(#${id}-b)`} />}
         <g mask={padded ? `url(#${id}-my)` : undefined}>
           <image href={photo.src} x={img.x} y={img.y} width={img.w} height={img.h} preserveAspectRatio="none" mask={padded ? `url(#${id}-mx)` : undefined} />
         </g>

@@ -8,7 +8,7 @@
 // - Otherwise CSS plays it (about 3 seconds) and fades it out by itself, even if
 //   JavaScript fails to load: the emblem's flower draws itself and blooms upward,
 //   the stars twinkle in, the letters settle into place, then it fades into the site.
-// - "Skip", a click anywhere, or the Escape key ends it early.
+// - A click or tap anywhere, or the Escape key, ends it early (there is no Skip button).
 
 import { useEffect } from "react";
 import { Emblem } from "./Emblem";
@@ -32,9 +32,6 @@ export default function Intro() {
       <div className="intro-inner">
         <Emblem animated className="intro-emblem" title="Welcome to the Al-Zahra Islamic Library" />
       </div>
-      <button type="button" className="intro-skip" onClick={skip}>
-        Skip
-      </button>
     </div>
   );
 }
