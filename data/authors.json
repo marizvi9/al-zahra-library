@@ -78,14 +78,14 @@
       "lowRes": true,
       "focus": {
         "x": 48.4,
-        "y": 50.0,
+        "y": 50,
         "zoom": 0.62
       },
       "head": {
         "x0": 0.4,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 96.5,
-        "y1": 100.0
+        "y1": 100
       }
     },
     "Muhammad Baqir al-Sadr": {
@@ -118,7 +118,7 @@
       "head": {
         "x0": 22.6,
         "y0": 6.4,
-        "x1": 77.0,
+        "x1": 77,
         "y1": 76.1
       }
     },
@@ -146,14 +146,14 @@
       "lowRes": true,
       "focus": {
         "x": 37.2,
-        "y": 50.0,
+        "y": 50,
         "zoom": 0.82
       },
       "head": {
         "x0": 6.9,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 67.4,
-        "y1": 100.0
+        "y1": 100
       }
     },
     "Imam Khomeini": {
@@ -179,15 +179,15 @@
       "originalHeight": 690,
       "lowRes": false,
       "focus": {
-        "x": 51.0,
-        "y": 50.0,
+        "x": 51,
+        "y": 50,
         "zoom": 0.64
       },
       "head": {
         "x0": 13.8,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 88.2,
-        "y1": 100.0
+        "y1": 100
       }
     },
     "Ali Khamenei": {
@@ -208,8 +208,8 @@
       "originalWidth": 1132,
       "originalHeight": 1440,
       "focus": {
-        "x": 55.0,
-        "y": 30.0,
+        "x": 55,
+        "y": 30,
         "zoom": 1.75
       },
       "previousPhoto": {
@@ -261,7 +261,7 @@
       },
       "head": {
         "x0": 31.4,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 73.3,
         "y1": 66.3
       }
@@ -307,7 +307,7 @@
       },
       "head": {
         "x0": 29.6,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 74.1,
         "y1": 87.4
       }
@@ -341,7 +341,7 @@
       },
       "head": {
         "x0": 21.6,
-        "y0": 12.0,
+        "y0": 12,
         "x1": 94.2,
         "y1": 99.6
       }
@@ -375,7 +375,7 @@
       },
       "head": {
         "x0": 13.8,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 95.8,
         "y1": 86.4
       }
@@ -522,7 +522,7 @@
       },
       "head": {
         "x0": 9.6,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 71.9,
         "y1": 97.7
       }
@@ -562,13 +562,13 @@
       "originalHeight": 395,
       "lowRes": false,
       "focus": {
-        "x": 40.0,
+        "x": 40,
         "y": 29.1,
         "zoom": 1.44
       },
       "head": {
         "x0": 28.8,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 51.2,
         "y1": 58.3
       }
@@ -597,14 +597,14 @@
       "lowRes": false,
       "focus": {
         "x": 62.1,
-        "y": 32.0,
+        "y": 32,
         "zoom": 1.07
       },
       "head": {
         "x0": 38.2,
-        "y0": 4.0,
+        "y0": 4,
         "x1": 86.1,
-        "y1": 60.0
+        "y1": 60
       }
     },
     "Sayyid Mujtaba Musavi Lari": {
@@ -631,14 +631,14 @@
       ],
       "focus": {
         "x": 46.8,
-        "y": 50.0,
+        "y": 50,
         "zoom": 0.62
       },
       "head": {
         "x0": 8.6,
-        "y0": 0.0,
-        "x1": 85.0,
-        "y1": 100.0
+        "y0": 0,
+        "x1": 85,
+        "y1": 100
       }
     },
     "Ibrahim Amini": {
@@ -762,7 +762,7 @@
       ],
       "head": {
         "x0": 28.1,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 81.4,
         "y1": 69.5
       }
@@ -895,7 +895,7 @@
       "head": {
         "x0": 25.5,
         "y0": 1.5,
-        "x1": 91.0,
+        "x1": 91,
         "y1": 83.4
       }
     },
@@ -923,12 +923,12 @@
       "lowRes": false,
       "focus": {
         "x": 51.5,
-        "y": 35.0,
+        "y": 35,
         "zoom": 0.8
       },
       "head": {
         "x0": 24.3,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 78.8,
         "y1": 69.9
       }
@@ -961,8 +961,8 @@
         "https://en.wikishia.net/view/Iqbal_Lahori"
       ],
       "head": {
-        "x0": 0.0,
-        "y0": 0.0,
+        "x0": 0,
+        "y0": 0,
         "x1": 71.8,
         "y1": 95.2
       }
@@ -986,7 +986,7 @@
       "originalHeight": 225,
       "focus": {
         "x": 56.5,
-        "y": 50.0,
+        "y": 50,
         "zoom": 0.84
       },
       "bio": "Sudanese novelist and journalist (1929–2009), one of the best-known Arab writers of the 20th century, author of Season of Migration to the North.",
@@ -996,9 +996,9 @@
       ],
       "head": {
         "x0": 25.1,
-        "y0": 0.0,
-        "x1": 88.0,
-        "y1": 100.0
+        "y0": 0,
+        "x1": 88,
+        "y1": 100
       }
     },
     "Akbar S. Ahmed": {
@@ -1030,22 +1030,22 @@
       ],
       "head": {
         "x0": 19.4,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 80.7,
         "y1": 84.6
       }
     },
     "Khurshid Ahmad": {
-      "wikipedia": "Khurshid Ahmad",
-      "wikipediaUrl": "https://en.wikipedia.org/wiki/Khurshid_Ahmed",
-      "description": "Topics referred to by the same term",
+      "wikipedia": "Khurshid Ahmad (scholar)",
       "photo": null,
-      "skipped": "the article has no free main image",
       "bioStatus": "other source",
       "bio": "Khurshid Ahmad (1932–2025) was a Pakistani economist, thinker and Islamic activist who helped establish Islamic economics as an academic field and co-founded The Islamic Foundation in Leicester, UK. A long-time member of the Jamaat-e-Islami, he chaired Pakistan's Planning Commission in the 1980s and served in the Senate of Pakistan from 2002 to 2012.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Khurshid_Ahmad_(scholar)"
-      ]
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Khurshid_Ahmad_(scholar)",
+      "description": "Pakistani economist, philosopher and politician (1932–2025)",
+      "skipped": "the article has no free main image"
     },
     "Maulana Wahiduddin Khan": {
       "wikipedia": "Wahiduddin Khan",
@@ -1148,13 +1148,13 @@
       "originalHeight": 213,
       "lowRes": true,
       "focus": {
-        "x": 46.0,
+        "x": 46,
         "y": 29.4,
         "zoom": 1.08
       },
       "head": {
         "x0": 25.3,
-        "y0": 2.0,
+        "y0": 2,
         "x1": 66.8,
         "y1": 56.7
       }
@@ -1178,15 +1178,15 @@
       "originalHeight": 688,
       "focus": {
         "x": 50.9,
-        "y": 50.0,
+        "y": 50,
         "zoom": 0.65
       },
       "bioStatus": "from our data only",
       "head": {
         "x0": 14.8,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 86.9,
-        "y1": 100.0
+        "y1": 100
       }
     },
     "George Jordac": {
@@ -1212,13 +1212,13 @@
       "originalHeight": 359,
       "lowRes": true,
       "focus": {
-        "x": 52.0,
+        "x": 52,
         "y": 31.8,
         "zoom": 0.97
       },
       "head": {
         "x0": 32.8,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 71.3,
         "y1": 63.6
       }
@@ -1252,8 +1252,8 @@
       ],
       "head": {
         "x0": 23.8,
-        "y0": 0.0,
-        "x1": 88.0,
+        "y0": 0,
+        "x1": 88,
         "y1": 97.4
       }
     },
@@ -1300,7 +1300,7 @@
       "originalHeight": 475,
       "focus": {
         "x": 53.3,
-        "y": 43.0,
+        "y": 43,
         "zoom": 0.98
       },
       "bio": "Palestinian-American journalist (born 1971) based in Chicago. He is known for advocating a single democratic state for Israelis and Palestinians, the subject of his book One Country.",
@@ -1310,7 +1310,7 @@
       ],
       "head": {
         "x0": 34.8,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 71.8,
         "y1": 85.9
       }
@@ -1334,7 +1334,7 @@
       "originalHeight": 1056,
       "focus": {
         "x": 46.9,
-        "y": 43.0,
+        "y": 43,
         "zoom": 0.7
       },
       "bio": "Bosnian politician, philosopher and author (1925–2003) who led Bosnia and Herzegovina from 1990 to 2000. His book Islam Between East and West sets out his philosophy.",
@@ -1344,7 +1344,7 @@
       ],
       "head": {
         "x0": 10.1,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 83.8,
         "y1": 86.1
       }
@@ -1380,7 +1380,7 @@
         "x0": 22.4,
         "y0": 3.8,
         "x1": 58.6,
-        "y1": 70.0
+        "y1": 70
       }
     },
     "Amir Taheri": {
@@ -1458,8 +1458,8 @@
       ],
       "head": {
         "x0": 30.8,
-        "y0": 0.0,
-        "x1": 62.0,
+        "y0": 0,
+        "x1": 62,
         "y1": 38.2
       }
     },
@@ -1491,7 +1491,7 @@
         "https://en.wikipedia.org/wiki/Gilles_Kepel"
       ],
       "head": {
-        "x0": 34.0,
+        "x0": 34,
         "y0": 2.7,
         "x1": 57.1,
         "y1": 45.6
@@ -1534,7 +1534,7 @@
       "originalHeight": 198,
       "focus": {
         "x": 45.9,
-        "y": 50.0,
+        "y": 50,
         "zoom": 0.84
       },
       "bio": "Iranian political scientist and translator (1932–1982), known for his studies of modern Islamic political thought.",
@@ -1543,10 +1543,10 @@
         "https://en.wikipedia.org/wiki/Hamid_Enayat"
       ],
       "head": {
-        "x0": 0.0,
-        "y0": 0.0,
+        "x0": 0,
+        "y0": 0,
         "x1": 91.8,
-        "y1": 100.0
+        "y1": 100
       }
     },
     "Hashimi Rafsanjani": {
@@ -1574,7 +1574,7 @@
       "bioStatus": "from our data only",
       "head": {
         "x0": 11.3,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 83.4,
         "y1": 98.5
       }
@@ -1617,8 +1617,8 @@
       "head": {
         "x0": 4.2,
         "y0": 13.3,
-        "x1": 100.0,
-        "y1": 100.0
+        "x1": 100,
+        "y1": 100
       }
     },
     "Jimmy Carter": {
@@ -1650,7 +1650,7 @@
       ],
       "head": {
         "x0": 23.4,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 73.1,
         "y1": 65.6
       }
@@ -1685,8 +1685,8 @@
       "originalWidth": 180,
       "originalHeight": 270,
       "focus": {
-        "x": 56.0,
-        "y": 35.0,
+        "x": 56,
+        "y": 35,
         "zoom": 0.8
       },
       "bio": "American political consultant (born 1950) who was senior adviser and deputy chief of staff to President George W. Bush.",
@@ -1696,7 +1696,7 @@
       ],
       "head": {
         "x0": 27.2,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 84.8,
         "y1": 70.1
       }
@@ -1726,9 +1726,9 @@
       "bioStatus": "from our data only",
       "head": {
         "x0": 25.7,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 75.5,
-        "y1": 65.0
+        "y1": 65
       }
     },
     "Majid Fakhry": {
@@ -1796,15 +1796,15 @@
       "originalHeight": 600,
       "focus": {
         "x": 49.7,
-        "y": 50.0,
+        "y": 50,
         "zoom": 0.62
       },
       "bioStatus": "from our data only",
       "head": {
         "x0": 0.4,
-        "y0": 0.0,
-        "x1": 99.0,
-        "y1": 100.0
+        "y0": 0,
+        "x1": 99,
+        "y1": 100
       }
     },
     "Mehdi Golshani": {
@@ -1860,8 +1860,8 @@
       ],
       "head": {
         "x0": 12.8,
-        "y0": 0.0,
-        "x1": 100.0,
+        "y0": 0,
+        "x1": 100,
         "y1": 91.2
       }
     },
@@ -1894,7 +1894,7 @@
       ],
       "head": {
         "x0": 31.4,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 63.4,
         "y1": 47.9
       }
@@ -1928,7 +1928,7 @@
       ],
       "head": {
         "x0": 18.9,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 77.4,
         "y1": 88.5
       }
@@ -1977,7 +1977,7 @@
       "focus": {
         "x": 45.9,
         "y": 46.8,
-        "zoom": 1.0
+        "zoom": 1
       },
       "bio": "Japanese scholar of comparative philosophy and mysticism (born 1943) and professor of religion and Asian studies at Stony Brook University.",
       "bioStatus": "other source",
@@ -1986,7 +1986,7 @@
       ],
       "head": {
         "x0": 32.2,
-        "y0": 5.0,
+        "y0": 5,
         "x1": 59.6,
         "y1": 88.6
       }
@@ -2019,8 +2019,8 @@
         "https://en.wikipedia.org/wiki/Strobe_Talbott"
       ],
       "head": {
-        "x0": 25.0,
-        "y0": 0.0,
+        "x0": 25,
+        "y0": 0,
         "x1": 75.4,
         "y1": 69.2
       }
@@ -2054,7 +2054,7 @@
       ],
       "head": {
         "x0": 6.4,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 69.5,
         "y1": 80.5
       }
@@ -2089,8 +2089,8 @@
       "originalWidth": 329,
       "originalHeight": 448,
       "focus": {
-        "x": 51.0,
-        "y": 50.0,
+        "x": 51,
+        "y": 50,
         "zoom": 0.62
       },
       "bio": "Wilferd Madelung (1930–2023) was a German scholar of Islam and Shia studies who wrote around 200 books and articles. The Succession to Muhammad is among his best-known works, and he did much to introduce Shi'ism to Western readers.",
@@ -2100,9 +2100,9 @@
       ],
       "head": {
         "x0": 7.2,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 94.7,
-        "y1": 100.0
+        "y1": 100
       }
     },
     "Ziba Mir-Hosseini": {
@@ -2160,7 +2160,7 @@
         "x0": 28.2,
         "y0": 2.6,
         "x1": 82.6,
-        "y1": 66.0
+        "y1": 66
       }
     },
     "Professor T.B. Irving": {
@@ -2217,8 +2217,8 @@
       "head": {
         "x0": 8.7,
         "y0": 0.6,
-        "x1": 88.0,
-        "y1": 100.0
+        "x1": 88,
+        "y1": 100
       }
     },
     "Ayatullah Sayyid Abu Al-Qasim Al-Musawi Al-Khu'i": {
@@ -2312,7 +2312,7 @@
       "originalHeight": 639,
       "lowRes": true,
       "focus": {
-        "x": 41.0,
+        "x": 41,
         "y": 27.7,
         "zoom": 1.14
       },
@@ -2387,7 +2387,7 @@
       "head": {
         "x0": 11.2,
         "y0": 10.5,
-        "x1": 81.0,
+        "x1": 81,
         "y1": 83.3
       }
     },
@@ -2416,20 +2416,44 @@
       "bioStatus": "from our data only",
       "head": {
         "x0": 28.3,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 60.6,
         "y1": 86.8
       }
     },
     "Imam Muhammad Shirazi": {
-      "wikipedia": "Muhammad al-Husayni al-Shirazi",
-      "photo": null,
-      "skipped": "no such Wikipedia article",
+      "wikipedia": "Mohammad al-Shirazi",
+      "photo": "/authors/imam-muhammad-shirazi.jpg",
       "bioStatus": "other source",
       "bio": "Grand Ayatollah Sayyid Muhammad al-Husayni al-Shirazi (1928–2001), commonly known as Imam Shirazi, was an Iraqi Shia marja' and political activist.",
       "bioSources": [
         "https://en.wikipedia.org/wiki/Mohammad_al-Shirazi"
-      ]
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mohammad_al-Shirazi",
+      "description": "Iranian-Iraqi Shia marja' and political activist (1928–2001)",
+      "file": "File:Muhammad al-Shirazi 2005.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Muhammad_al-Shirazi_2005.jpg",
+      "creator": "Hsjejehj",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "imageDescription": "محمد الشيرازي في صورة له",
+      "originalWidth": 717,
+      "originalHeight": 984,
+      "photoLarge": "/authors/large/imam-muhammad-shirazi.webp",
+      "largeWidth": 640,
+      "largeHeight": 878,
+      "lowRes": false,
+      "focus": {
+        "x": 56.0,
+        "y": 49.0,
+        "zoom": 1.1
+      },
+      "head": {
+        "x0": 21.0,
+        "y0": 8.0,
+        "x1": 92.0,
+        "y1": 90.0
+      }
     },
     "Hassan Shirazi": {
       "wikipedia": "Hassan al-Shirazi",
@@ -2456,7 +2480,7 @@
       "bioStatus": "other source",
       "head": {
         "x0": 30.4,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 68.3,
         "y1": 58.4
       },
@@ -2527,7 +2551,7 @@
       "lowRes": true,
       "focus": {
         "x": 56.1,
-        "y": 40.0,
+        "y": 40,
         "zoom": 1.08
       },
       "head": {
@@ -2568,7 +2592,7 @@
         "x0": 34.5,
         "y0": 1.8,
         "x1": 67.9,
-        "y1": 55.0
+        "y1": 55
       }
     },
     "Sherwood Eddy": {
@@ -2600,7 +2624,7 @@
       ],
       "head": {
         "x0": 23.3,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 75.6,
         "y1": 93.2
       }
@@ -2634,8 +2658,8 @@
       ],
       "head": {
         "x0": 27.7,
-        "y0": 0.0,
-        "x1": 67.0,
+        "y0": 0,
+        "x1": 67,
         "y1": 50.2
       }
     },
@@ -2832,8 +2856,8 @@
       "originalHeight": 585,
       "lowRes": true,
       "focus": {
-        "x": 47.0,
-        "y": 16.0,
+        "x": 47,
+        "y": 16,
         "zoom": 2.4
       },
       "head": {
@@ -2873,12 +2897,12 @@
       "lowRes": false,
       "focus": {
         "x": 42.1,
-        "y": 42.0,
+        "y": 42,
         "zoom": 0.78
       },
       "head": {
         "x0": 13.6,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 70.6,
         "y1": 83.9
       }
@@ -2910,7 +2934,7 @@
       "head": {
         "x0": 25.3,
         "y0": 4.3,
-        "x1": 72.0,
+        "x1": 72,
         "y1": 53.3
       }
     },
@@ -3004,7 +3028,7 @@
       "originalWidth": 4104,
       "originalHeight": 5670,
       "focus": {
-        "x": 49.0,
+        "x": 49,
         "y": 32.5,
         "zoom": 0.94
       },
@@ -3015,9 +3039,9 @@
       ],
       "head": {
         "x0": 27.9,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 70.1,
-        "y1": 65.0
+        "y1": 65
       }
     },
     "Dr. Muhammad Abdul Hai Aarfi": {
@@ -3487,7 +3511,7 @@
       "originalHeight": 715,
       "lowRes": false,
       "focus": {
-        "x": 58.0,
+        "x": 58,
         "y": 42.5,
         "zoom": 0.89
       },
@@ -3610,12 +3634,12 @@
       "lowRes": true,
       "focus": {
         "x": 52.5,
-        "y": 48.0,
+        "y": 48,
         "zoom": 0.93
       },
       "head": {
         "x0": 27.9,
-        "y0": 5.0,
+        "y0": 5,
         "x1": 77.1,
         "y1": 90.9
       }
@@ -3753,13 +3777,13 @@
       "originalHeight": 300,
       "lowRes": false,
       "focus": {
-        "x": 36.0,
+        "x": 36,
         "y": 44.5,
         "zoom": 0.94
       },
       "head": {
         "x0": 19.5,
-        "y0": 0.0,
+        "y0": 0,
         "x1": 52.5,
         "y1": 88.9
       }
@@ -3785,7 +3809,7 @@
       "lowRes": true,
       "focus": {
         "x": 49.5,
-        "y": 25.0,
+        "y": 25,
         "zoom": 1.25
       },
       "head": {
@@ -4030,7 +4054,7 @@
         "x0": 30.4,
         "y0": 10.7,
         "x1": 50.6,
-        "y1": 35.0
+        "y1": 35
       }
     }
   }
