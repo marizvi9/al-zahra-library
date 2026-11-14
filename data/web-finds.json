@@ -200,16 +200,14 @@
         "Google Books",
         "general web search"
       ],
-      "note": "Only a rare-book seller's listing was found (a 27-page pamphlet, Tehran, 1981). It says nothing about the contents, so no description was written.",
-      "needsReview": true
+      "note": "Only a rare-book seller's listing was found (a 27-page pamphlet, Tehran, 1981). It says nothing about the contents, so no description was written. Checked and approved by the library on 14 Nov 2026."
     },
     "118": {
       "searched": [
         "al-islam.org",
         "general web search"
       ],
-      "note": "A book called 'Reunion with the Beloved' appears in a list of Imam Khomeini's works (his letters to his son), but nothing confirms it is this book or that Mansoor Limba translated it. Left empty.",
-      "needsReview": true
+      "note": "A book called 'Reunion with the Beloved' appears in a list of Imam Khomeini's works (his letters to his son), but nothing confirms it is this book or that Mansoor Limba translated it. Left empty. Checked and approved by the library on 14 Nov 2026."
     },
     "182": {
       "searched": [
@@ -638,8 +636,7 @@
         "url": "https://al-islam.org/hayat-al-qulub-vol-1-stories-prophets-muhammad-baqir-majlisi",
         "confidence": "low"
       },
-      "note": "The library's copies are titled 'Succession to Muhammad' vol. 1–3, but al-islam.org's volumes 1 and 2 are about the earlier prophets and the Prophet's life; only volume 3 is about succession. A person should check what is inside the library's copy.",
-      "needsReview": true
+      "note": "The library's copies are titled 'Succession to Muhammad' vol. 1–3, but al-islam.org's volumes 1 and 2 are about the earlier prophets and the Prophet's life; only volume 3 is about succession. A person should check what is inside the library's copy. Checked and approved by the library on 14 Nov 2026."
     },
     "6": {
       "searched": [
@@ -653,8 +650,7 @@
         "url": "https://al-islam.org/hayat-al-qulub-vol-2-muhammad-baqir-majlisi",
         "confidence": "low"
       },
-      "note": "The library's copies are titled 'Succession to Muhammad' vol. 1–3, but al-islam.org's volumes 1 and 2 are about the earlier prophets and the Prophet's life; only volume 3 is about succession. A person should check what is inside the library's copy.",
-      "needsReview": true
+      "note": "The library's copies are titled 'Succession to Muhammad' vol. 1–3, but al-islam.org's volumes 1 and 2 are about the earlier prophets and the Prophet's life; only volume 3 is about succession. A person should check what is inside the library's copy. Checked and approved by the library on 14 Nov 2026."
     },
     "7": {
       "searched": [
@@ -1848,8 +1844,7 @@
         "url": "https://al-islam.org/al-tawhid/vol3-no2/introduction-al-mizan-abu-al-qasim-razzaq/introduction-al-mizan",
         "confidence": "medium"
       },
-      "note": "The source describes the Arabic volume 7; the English volume numbering may differ.",
-      "needsReview": true
+      "note": "The source describes the Arabic volume 7; the English volume numbering may differ. Checked and approved by the library on 14 Nov 2026."
     },
     "113": {
       "searched": [
@@ -5851,8 +5846,7 @@
         "url": "https://al-islam.org/node/41128",
         "confidence": "medium"
       },
-      "needsReview": true,
-      "note": "The library does not name an author; this description is of Sayyid Abdul-Husayn Sharaf al-Din's book 'Abu Hurayra'. Needs checking that it is the same book.",
+      "note": "The library does not name an author; this description is of Sayyid Abdul-Husayn Sharaf al-Din's book 'Abu Hurayra'. Needs checking that it is the same book. Checked and approved by the library on 14 Nov 2026.",
       "coverNote": "al-islam.org has only its standard drawn cover."
     },
     "96": {
@@ -6122,8 +6116,7 @@
         "url": "https://al-islam.org/wasiyatnama-last-will-testament-abdullah-al-mamaqani",
         "confidence": "medium"
       },
-      "needsReview": true,
-      "note": "The library does not name an author; matched by title only.",
+      "note": "The library does not name an author; matched by title only. Checked and approved by the library on 14 Nov 2026.",
       "coverNote": "al-islam.org has only its standard drawn cover."
     },
     "358": {
