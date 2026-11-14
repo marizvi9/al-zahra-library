@@ -210,11 +210,22 @@
       "note": "A book called 'Reunion with the Beloved' appears in a list of Imam Khomeini's works (his letters to his son), but nothing confirms it is this book or that Mansoor Limba translated it. Left empty. Checked and approved by the library on 14 Nov 2026."
     },
     "182": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "No reliable source for this exact title (it may be an edition of Shariati's essays 'Man, Islam and Marxism'). Left empty.",
+      "description": {
+        "text": [
+          "Ali Shariati argues that understanding the human being must come before every other kind of knowledge, and that modern schemes for saving humanity have failed because they forgot this. He sets the Marxist view of the human being against the Islamic one."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/man-marxism-and-islam",
+        "confidence": "medium"
+      },
+      "note": "Al-Hoda, Tehran, 1987.",
       "needsReview": false
     },
     "525": {
@@ -380,12 +391,22 @@
       "needsReview": false
     },
     "221": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "library catalogues",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Only library records (Free Islamic Literatures, Houston, 1980, translated by Ali Asghar Ghassemy); nothing about the contents.",
+      "description": {
+        "text": [
+          "Ali Shariati asks whether the twelve Imams were chosen by God or by the people, and what that means for legitimate leadership in Islam."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/selection-andor-election",
+        "confidence": "high"
+      },
+      "note": "Edited by Laleh Bakhtiar (Hamdami Foundation, 1979).",
       "needsReview": false
     },
     "454": {
@@ -862,19 +883,41 @@
       "needsReview": false
     },
     "464": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Only the title and a 1982 Tehran translation (by Mohammad Salman Tawheedi) were found; nothing about the contents.",
+      "description": {
+        "text": [
+          "Morteza Mutahhari on how Islam, especially the Qur'an, views life in this world. He argues that it does not call for withdrawal, but for responsible living within society."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/religion-and-the-world",
+        "confidence": "high"
+      },
+      "note": "Bonyad Be'that, 1982; translated by Mohammad Salman Tawheedi.",
       "needsReview": false
     },
     "462": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Appears only in book lists; no description found.",
+      "description": {
+        "text": [
+          "Morteza Mutahhari on the meaning of martyrdom in Islam: sincere intention, sacrifice for truth and justice, and the place of the martyr."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/the-martyr",
+        "confidence": "medium"
+      },
+      "note": "Great Islamic Library, 1980.",
       "needsReview": false
     },
     "307": {
@@ -1110,11 +1153,22 @@
       "needsReview": false
     },
     "505": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Only cited by title (Islamic Seminary Publications, 1980); nothing about the contents.",
+      "description": {
+        "text": [
+          "Muhammad Baqir al-Sadr compares Islamic economics with capitalism and socialism: property, freedom, the role of the state and the distribution of wealth."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/islam-and-schools-of-economics",
+        "confidence": "medium"
+      },
+      "note": "Bonyad Be'that, 1984.",
       "needsReview": false
     },
     "584": {
@@ -1136,19 +1190,41 @@
       "needsReview": false
     },
     "562": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title.",
+      "description": {
+        "text": [
+          "Masih Muhajeri on the ideas behind the Islamic Revolution in Iran: independence, justice and resistance to foreign control, presented as a model for other nations."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/islamic-revolution-future-path-of-the-nations",
+        "confidence": "medium"
+      },
+      "note": "Jihad-e-Sazandegi, 1982. Same book as #380.",
       "needsReview": false
     },
     "380": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title.",
+      "description": {
+        "text": [
+          "Masih Muhajeri on the ideas behind the Islamic Revolution in Iran: independence, justice and resistance to foreign control, presented as a model for other nations."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/islamic-revolution-future-path-of-the-nations",
+        "confidence": "medium"
+      },
+      "note": "Jihad-e-Sazandegi, 1982.",
       "needsReview": false
     },
     "198": {
@@ -1382,11 +1458,22 @@
       "needsReview": false
     },
     "123": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Short biographies of the tenth and eleventh Imams, ʿAli al-Naqi and Hasan al-ʿAskari: their upbringing, virtues and teaching, and the pressures they faced under Abbasid rule."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/biographies-of-imam-ali-bin-muhammad-al-naqi-and-imam-hasan-bin-ali-al-askari",
+        "confidence": "high"
+      },
+      "note": "P.E.T., 1998; written by Shamim Abbas Jessa and Hadi Husayn Sayyid, edited by Talib Hussain Zaidi.",
       "needsReview": false
     },
     "577": {
@@ -1879,11 +1966,21 @@
       "needsReview": false
     },
     "121": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "al-islam.org has a book called 'The Great Companion of the Prophet, Abu Dharr', probably the same, but its page has no summary.",
+      "description": {
+        "text": [
+          "A biography of Abu Dharr (Abuzar) al-Ghifari, a close companion of the Prophet, prepared by a group of scholars at the Islamic Seminary."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/abu-zar-the-great-companion-of-the-prophet-muhammad-pbuh",
+        "confidence": "high"
+      },
       "needsReview": false
     },
     "169": {
@@ -2178,11 +2275,22 @@
       "needsReview": false
     },
     "122": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A P.E.T. biography of Mukhtar ibn Abi ʿUbayda al-Thaqafi, starting with his birth in 9 AH, the year of the Tabuk expedition, and his upbringing as an orphan after his father died in battle."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/biography-of-amir-mukhtar-bin-abu-ubayda",
+        "confidence": "medium"
+      },
+      "note": "Islamic-Sources credits Shamim Abbas Jessa; Talib Hussain Zaidi edits this P.E.T. series.",
       "needsReview": false
     },
     "82": {
@@ -2243,11 +2351,22 @@
       "needsReview": false
     },
     "314": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "al-islam.org has other parts of Iqtisaduna, but this part (Volume 2, Part 1) was not found.",
+      "description": {
+        "text": [
+          "Part of Muhammad Baqir al-Sadr's major work on economics. He sets out an Islamic economic system built on justice and social responsibility, as an alternative to capitalism and socialism."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/iqtisaduna-our-economics-vol-2-part-1",
+        "confidence": "high"
+      },
+      "note": "WOFIS, 1994.",
       "needsReview": false
     },
     "149": {
@@ -2756,11 +2875,22 @@
       "needsReview": false
     },
     "331": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "No book with this title by Allamah Tabataba'i found.",
+      "description": {
+        "text": [
+          "Allamah Tabataba'i presents Islam as a complete religion for the material and spiritual needs of all people, and as being in harmony with reason."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/universality-of-islam",
+        "confidence": "medium"
+      },
+      "note": "Islamic Seminary Publications, 1985; translated by S.M.S. Hyder.",
       "needsReview": false
     },
     "80": {
@@ -2916,11 +3046,22 @@
       "needsReview": false
     },
     "218": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "No book with this title by Ayatullah Beheshti found.",
+      "description": {
+        "text": [
+          "Five pamphlets, first published in Persian and German by the Islamic Centre of Hamburg, mainly by Ayatullah Muhammad Husayn Beheshti, explaining Islamic beliefs for readers in Europe."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/scientific-survey-islamic-ideology",
+        "confidence": "medium"
+      },
+      "note": "Islamic Propagation Organization, 1986; translated by Shah Tariq Kamal.",
       "needsReview": false
     },
     "388": {
@@ -3351,11 +3492,22 @@
       "needsReview": false
     },
     "238": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Carol L. Anway's book about American women who became Muslim: how they came to Islam, and the challenges they and their families faced."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/daughters-of-another-path",
+        "confidence": "medium"
+      },
+      "note": "Ansariyan edition, 2007.",
       "needsReview": false
     },
     "10": {
@@ -3860,11 +4012,22 @@
       "needsReview": false
     },
     "247": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Abu Talib al-Tabrizi answers common criticisms of the Shia, which he sees as unfounded or misleading, and traces the disagreements back to the time after the Prophet's death."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/spurious-arguments-about-the-shia",
+        "confidence": "high"
+      },
+      "note": "Ansariyan, 2001; translated by Abdullah al-Shahin. The library's record has the title as 'Serious Arguments'.",
       "needsReview": false
     },
     "792": {
@@ -3908,11 +4071,22 @@
       "needsReview": false
     },
     "35": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Hasan Zafar Naqvi's book on Mukhtar ibn Abi ʿUbayd al-Thaqafi (d. 67 AH), translated by Durre-Shahwar Jafri. Mukhtar sheltered Muslim ibn ʿAqil in Kufa and was in prison at the time of Karbala. In 66 AH he rose up in Kufa to avenge Imam Husayn, and he ruled the city for about a year and a half before he was killed."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/amir-mukhtar-r-a",
+        "confidence": "medium"
+      },
+      "note": "Mahfooz Book Agency, 2002.",
       "needsReview": false
     },
     "582": {
@@ -4044,19 +4218,41 @@
       "needsReview": false
     },
     "86": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Only cited: a pamphlet by M. Hoda published by Iran's Ministry of Islamic Guidance, Tehran, April 1982. Nothing about its contents.",
+      "description": {
+        "text": [
+          "A tribute to Ayatullah Morteza Mutahhari, the scholar and writer assassinated in 1979, describing how he used his writing to oppose tyranny and spread Islamic thought."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/in-memory-of-martyr-mutahhari",
+        "confidence": "high"
+      },
+      "note": "Ministry of Islamic Guidance, 1982; translated by A. Atri.",
       "needsReview": false
     },
     "146": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Only cited in other al-islam.org books; no description of the book itself.",
+      "description": {
+        "text": [
+          "The life of Bilal, the African companion who was the first muezzin of Islam and later in charge of the treasury in Medina. The book also shows how Islam rejects racial discrimination."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/bilal-of-africa",
+        "confidence": "high"
+      },
+      "note": "Islamic Seminary, 1992; 143 pages.",
       "needsReview": false
     },
     "442": {
@@ -4076,11 +4272,21 @@
       "needsReview": false
     },
     "28": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A collection of one hundred hadith and historical reports on the virtues of Imam ʿAli, many going back to the early compiler Ibn Shadhan al-Qummi. They cover his generosity, courage, knowledge and humility, and his place as the Prophet's successor."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/one-hundred-virtues-of-ali-ibn-abi-talib-a-s",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "626": {
@@ -4342,19 +4548,41 @@
       "needsReview": false
     },
     "215": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Masih Muhajiri on the history and basis of Muslim unity: the Qur'an's call to unity, the beliefs Muslims share, the causes of division, and the need for dialogue and mutual respect."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/background-of-the-islamic-unity",
+        "confidence": "medium"
+      },
+      "note": "Islamic Propagation Organization, 1988.",
       "needsReview": false
     },
     "347": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Mansour Pahlavan on the Islamic belief in a saviour who will fill the world with justice: a short history of the belief and an introduction to the life of Imam al-Mahdi."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/the-savior-in-islam",
+        "confidence": "high"
+      },
+      "note": "Naba Cultural Organization.",
       "needsReview": false
     },
     "588": {
@@ -4641,10 +4869,22 @@
       "needsReview": false
     },
     "61": {
+      "round": 2,
       "searched": [
-        "al-islam.org"
+        "al-islam.org",
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Only cited in another al-islam.org book (translated by Badr Shahin, Mowlood Kaaba Publications, Qum, 2000); no description of its contents.",
+      "description": {
+        "text": [
+          "A short booklet by Mohammad Baqir Ansari Zanjani on the event of Ghadir Khumm. Using the Qur'an and hadith, it explains where and when the Prophet spoke, who heard him, the key words of the declaration, and how early Muslims understood it."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/what-happened-in-ghadir",
+        "confidence": "medium"
+      },
+      "note": "Ansariyan, translated by Badr Shahin.",
       "needsReview": false
     },
     "778": {
@@ -4957,11 +5197,22 @@
       "needsReview": false
     },
     "364": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Mushtaq Hussain Merchant's simplified rendering of the Qur'an, written for readers in the West who lack easy access to scholars, so that they understand it and do not only recite it."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/in-god-we-trust",
+        "confidence": "high"
+      },
+      "note": "1999.",
       "needsReview": false
     },
     "12": {
@@ -5210,11 +5461,22 @@
       "needsReview": false
     },
     "384": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Notes taken from the lectures of Maulana Sadiq Hasan, mainly on khums, and also on Hajj, prayer, and what is lawful and forbidden."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/khums-other-islamic-acts",
+        "confidence": "high"
+      },
+      "note": "Edited by Muhammad Ali F. Merchant, 2007.",
       "needsReview": false
     },
     "370": {
@@ -5470,11 +5732,22 @@
       "needsReview": false
     },
     "156": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A short work by Sayyid Rida Sadr on the saying that tradition holds as Imam ʿAli's life motto, with related sayings and short explanations."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/imam-alis-life-motto",
+        "confidence": "medium"
+      },
+      "note": "Islamic Research Foundation, Mashhad, 2002.",
       "needsReview": false
     },
     "91": {
@@ -5641,11 +5914,22 @@
       "needsReview": false
     },
     "76": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "A related book with a similar title is a reply to Shah Waliullah's Izalat al-Khafa, so it is unclear which book this is; nothing used.",
+      "description": {
+        "text": [
+          "A study by M.A.A. Sattar of a work by the 18th-century scholar Shah Waliullah Muhaddith Dehlavi on the caliphate: the leadership of the Muslim community after the Prophet."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/it-removes-the-misconception-about-caliphs-caliphate",
+        "confidence": "medium"
+      },
+      "note": "Islamic Educational Society, 1993.",
       "needsReview": false
     },
     "590": {
@@ -5879,11 +6163,21 @@
       "needsReview": false
     },
     "486": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "Selected passages from the Gulistan (Rose Garden) of the Persian poet Saadi (13th century), translated by Richard Jeffrey Newman: short stories and verses on justice, humility, generosity, greed, silence and good character."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/selections-from-saadis-gulistan",
+        "confidence": "high"
+      },
       "needsReview": false
     },
     "596": {
@@ -6152,11 +6446,22 @@
       "needsReview": false
     },
     "43": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A life of Imam Musa al-Kazim, the seventh Imam, drawn from hadith and biographical sources: his early life, his imprisonments and dealings with the Abbasid rulers, and his teaching."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/biography-of-imam-musa-bin-jafar-al-kazim-a-s",
+        "confidence": "medium"
+      },
+      "note": "Islamic-Sources lists it as compiled by Talib Hussain Zaidi (P.E.T., 1995). The library's record names no author.",
       "needsReview": false
     },
     "744": {
@@ -6192,11 +6497,21 @@
       "needsReview": false
     },
     "165": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A leaflet that briefly introduces the life of Ayatullah Khomeini and lists his writings and the collections of his speeches."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/biography-and-bibliography-of-the-founder-of-iran-imam-khomeini",
+        "confidence": "medium"
+      },
       "needsReview": false
     },
     "700": {
@@ -6208,11 +6523,22 @@
       "needsReview": false
     },
     "263": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "An Islamic Propagation Organization booklet on the origins of the Bahá'í movement. It argues, from a strongly critical political standpoint, that the movement served foreign imperial interests."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/bahaism-its-origin-and-its-role",
+        "confidence": "medium"
+      },
+      "note": "1987. Islamic-Sources stresses that these are the booklet's own claims.",
       "needsReview": false
     },
     "761": {
@@ -6523,11 +6849,22 @@
       "needsReview": false
     },
     "112": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A collection of tributes to Imam ʿAli from Muslim and non-Muslim writers and scholars of different periods, praising his justice, courage, eloquence and devotion."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/tributes-to-hazrat-ali-as",
+        "confidence": "medium"
+      },
+      "note": "Islamic-Sources lists Yousuf N. Lalljee as the compiler. The library's record names no author.",
       "needsReview": false
     },
     "637": {
@@ -6634,11 +6971,22 @@
       "needsReview": false
     },
     "241": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "al-islam.org has Thomas McElwain's 'Islam in the Bible', but that is a different title; not matched.",
+      "description": {
+        "text": [
+          "A booklet that compares Islam and Christianity using the Bible, hoping that better understanding of each other's views can bring their followers closer."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/islam-and-christianity-as-seen-in-the-bible",
+        "confidence": "medium"
+      },
+      "note": "Islamic-Sources lists the Muslim Educational Trust as publisher; the library's copy is from the Islamic Education Center.",
       "needsReview": false
     },
     "306": {
@@ -7123,20 +7471,42 @@
       "coverNote": "al-islam.org has only its standard drawn cover."
     },
     "540": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
-      "needsReview": false
+      "description": {
+        "text": [
+          "A book presenting Islam as a full guide to social life, covering the social system in Islam, belief in God, guidance from the Qur'an, hijab, and passages from Nahj al-Balagha."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/islam-a-code-of-social-life",
+        "confidence": "medium"
+      },
+      "needsReview": true,
+      "note": "Islamic-Sources has the Islamic Seminary edition by A.A. Aini and R.H. Rizwani. The library's copy is listed under the Al-Khoei Foundation, so please check it is the same book."
     },
     "743": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
-      "needsReview": false
+      "description": {
+        "text": [
+          "A book presenting Islam as a full guide to social life, covering the social system in Islam, belief in God, guidance from the Qur'an, hijab, and passages from Nahj al-Balagha."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/islam-a-code-of-social-life",
+        "confidence": "medium"
+      },
+      "needsReview": true,
+      "note": "Islamic-Sources has the Islamic Seminary edition by A.A. Aini and R.H. Rizwani. The library's record names no author or publisher, so please check it is the same book."
     },
     "385": {
       "searched": [
@@ -7155,11 +7525,22 @@
       "needsReview": false
     },
     "270": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title and author.",
+      "description": {
+        "text": [
+          "A booklet by Mujgan Jalali on the Qadiyani (Ahmadiyya) movement, which began in Punjab under British rule. It argues, from a critical standpoint, that the movement was linked to colonial interests."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/qadiyaniyyah",
+        "confidence": "medium"
+      },
+      "note": "Islamic Culture and Relations Organization, Tehran, 1997.",
       "needsReview": false
     },
     "500": {
@@ -7323,8 +7704,22 @@
       "needsReview": false
     },
     "233": {
-      "searched": [],
-      "note": "Not searched one by one yet (no author is recorded, so a match would be a guess). Left for the librarian.",
+      "round": 2,
+      "searched": [
+        "al-islam.org",
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
+      ],
+      "description": {
+        "text": [
+          "Letters between a young Muslim and a Christian correspondence institute, debating how reliable the Bible and other Christian scriptures are. They were published because the exchange may interest young Muslims and Christians alike."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/extracts-from-correspondence-between-a-muslim-and-a-christian",
+        "confidence": "high"
+      },
+      "note": "WOFIS, 1980; translated by Sayyid Saeed Akhtar Rizvi.",
       "needsReview": false
     },
     "701": {
@@ -7411,13 +7806,40 @@
       "needsReview": false
     },
     "556": {
-      "searched": [],
-      "note": "Not searched one by one yet (no author is recorded, so a match would be a guess). Left for the librarian.",
+      "round": 2,
+      "searched": [
+        "al-islam.org",
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
+      ],
+      "description": {
+        "text": [
+          "A short reference book from the Islamic Propagation Organization on countries with large Muslim populations: their geography, people, history, economy and culture."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/profiles-of-islamic-countries",
+        "confidence": "medium"
+      },
+      "note": "1989.",
       "needsReview": false
     },
     "392": {
-      "searched": [],
-      "note": "Not searched one by one yet (no author is recorded, so a match would be a guess). Left for the librarian.",
+      "round": 2,
+      "searched": [
+        "al-islam.org",
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
+      ],
+      "description": {
+        "text": [
+          "Famous sayings of Imam ʿAli, compiled by Anwar Husain Zaidi and arranged by subject."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/sayings-and-preachings-of-hazrat-ali-as",
+        "confidence": "high"
+      },
       "needsReview": false
     },
     "115": {
@@ -7426,11 +7848,22 @@
       "needsReview": false
     },
     "430": {
+      "round": 2,
       "searched": [
         "al-islam.org",
-        "general web search"
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
       ],
-      "note": "Nothing found for this title (same book as another copy already searched)."
+      "description": {
+        "text": [
+          "Selected passages from the Gulistan (Rose Garden) of the Persian poet Saadi (13th century), translated by Richard Jeffrey Newman: short stories and verses on justice, humility, generosity, greed, silence and good character."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/selections-from-saadis-gulistan",
+        "confidence": "high"
+      },
+      "needsReview": false
     },
     "628": {
       "searched": [],
@@ -7448,8 +7881,22 @@
       "needsReview": false
     },
     "302": {
-      "searched": [],
-      "note": "Not searched one by one yet (no author is recorded, so a match would be a guess). Left for the librarian.",
+      "round": 2,
+      "searched": [
+        "al-islam.org",
+        "Google Books",
+        "Open Library",
+        "islamic-sources.com"
+      ],
+      "description": {
+        "text": [
+          "Islamic guidance on refined manners and everyday conduct: cleanliness, family life, honesty, respect, generosity and patience."
+        ],
+        "source": "Islamic-Sources.com",
+        "url": "https://islamic-sources.com/books/tahdhib-ul-islam",
+        "confidence": "medium"
+      },
+      "note": "P.E.T., 2004; translated by Syed Ali Raza.",
       "needsReview": false
     },
     "727": {
