@@ -8,6 +8,18 @@
   "matchedTitle": "Jesus, Prophet of Islam",
   "matchedAuthor": "Muhammad Ata ur-Rahim, Ahmad Thomson"
  },
+ "4": {
+  "paragraphs": [
+   "A secondary-school textbook on the lives of thirty prophets, based on the Qur'an and Sunnah. It uses simple, controlled vocabulary and ends each prophet's story with a review."
+  ],
+  "source": "IQRA Book Center (bookseller)",
+  "url": "https://www.iqra.org/products/prophets-models-for-humanity",
+  "matchedTitle": "Prophets - Models for Humanity",
+  "matchedAuthor": "Alia N. Athar",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "5": {
   "paragraphs": [
    "Part of Allamah Majlisi's three-volume Hayat al-Qulub (Life of the Hearts). Volume 1 tells the lives of the prophets before Prophet Muhammad, as known from the Qur'an and hadith."
@@ -65,6 +77,18 @@
   "matchedTitle": "The Message",
   "matchedAuthor": "Ayatullah Ja'far Subhani"
  },
+ "10": {
+  "paragraphs": [
+   "A short biography of the Prophet Muhammad by Dr B. Salem Foad, highlighting the main events of his life for beginners. It gives special attention to explaining the idea of war in Islam and has a separate chapter on the Prophet's character."
+  ],
+  "source": "Google Books",
+  "url": "https://books.google.com/books?id=Ah66AAAACAAJ",
+  "matchedTitle": "The Seerah of Prophet Muhammad (pbuh)",
+  "matchedAuthor": "B. Salem Foad, M.D.",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "14": {
   "paragraphs": [
    "Seyyed Hossein Nasr explains the spiritual meaning of the Prophet Muhammad's life from the traditional Islamic point of view, helping readers understand why the Qur'an calls him the noble example for believers."
@@ -97,6 +121,30 @@
   "url": "https://al-islam.org/muhammad-s-last-prophet-sayyid-saeed-akhtar-rizvi",
   "matchedTitle": "Muhammad is the Last Prophet",
   "matchedAuthor": "Sayed Saeed Akhtar Rizvi",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "17": {
+  "paragraphs": [
+   "An easy-to-read life of the Prophet Muhammad for families, focusing on his kindness and mercy more than on dates and battles."
+  ],
+  "source": "Google Books",
+  "url": "https://books.google.com/books?id=5bIBEgAAQBAJ",
+  "matchedTitle": "The Life of Muhammad",
+  "matchedAuthor": "Tahia Al-Ismail",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "18": {
+  "paragraphs": [
+   "The life of the Prophet of Islam told in order, from the world before Islam, his birth and youth and his marriages, to the start of revelation, his public mission and the hardships he faced, the migration to Medina, the brotherhood he set up among Muslims, his battles, Ghadir and his character. By the Dar Rah Haqq institute."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/glance-life-holy-prophet-islam-dar-rah-haqq",
+  "matchedTitle": "A Glance at the Life of the Holy Prophet of Islam",
+  "matchedAuthor": "Translated by: N. Tawheedi",
   "confidence": "high",
   "paraphrased": true,
   "origin": "web"
@@ -134,6 +182,18 @@
   "matchedTitle": "Khadija Tul Kubra - a Short Story of Her Life",
   "matchedAuthor": "Syed A. A Syed A.A Razwy"
  },
+ "22": {
+  "paragraphs": [
+   "A biography of ʿAmmar ibn Yasir, a devoted companion of the Prophet, by Sadruddin Sharafuddin."
+  ],
+  "source": "Google Books",
+  "url": "https://books.google.com/books?id=ZV7dDwAAQBAJ",
+  "matchedTitle": "Ammar Yasir",
+  "matchedAuthor": "Sadruddin Sharafuddin",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "24": {
   "paragraphs": [
    "A biography of Lady Fatima al-Zahra: her titles, her birth and family life, the birth of her children, the verses of the Qur'an revealed in her honour, and events such as the Event of the Cloak."
@@ -167,6 +227,18 @@
   "matchedTitle": "POLARIZATION AROUND the CHARACTER of 'ALI IBN ABI TALIB",
   "matchedAuthor": "Ayatullah Murtada Ayatullah Murtada Mutahhari"
  },
+ "28": {
+  "paragraphs": [
+   "A collection of one hundred hadith and historical reports on the virtues of Imam ʿAli, many going back to the early compiler Ibn Shadhan al-Qummi. They cover his generosity, courage, knowledge and humility, and his place as the Prophet's successor."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/one-hundred-virtues-of-ali-ibn-abi-talib-a-s",
+  "matchedTitle": "One Hundred Virtues of Ali Ibn Abi Talib and His Sons, the Imams",
+  "matchedAuthor": "Ibn Shadhan",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "29": {
   "paragraphs": [
    "A study of the life of Imam ʿAli as a life filled with gnosis (spiritual knowledge of God), both in his outlook and in his practice."
@@ -197,6 +269,18 @@
   "matchedTitle": "Imam Hasan and Caliphate",
   "matchedAuthor": "Qurrat-ul-Ain Abidiy, Sibtul Hasan Hansvi",
   "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "35": {
+  "paragraphs": [
+   "Hasan Zafar Naqvi's book on Mukhtar ibn Abi ʿUbayd al-Thaqafi (d. 67 AH), translated by Durre-Shahwar Jafri. Mukhtar sheltered Muslim ibn ʿAqil in Kufa and was in prison at the time of Karbala. In 66 AH he rose up in Kufa to avenge Imam Husayn, and he ruled the city for about a year and a half before he was killed."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/amir-mukhtar-r-a",
+  "matchedTitle": "Amir Mukhtar (R.A)",
+  "matchedAuthor": "Hasan Zafar Naqvi, Durre-Shahwar Jafri",
+  "confidence": "medium",
   "paraphrased": true,
   "origin": "web"
  },
@@ -265,6 +349,42 @@
   "url": "https://al-islam.org/life-imam-musa-bin-jafar-al-kazim-baqir-shareef-al-qurashi",
   "matchedTitle": "The Life of Imam Musa Bin Ja'far Al-Kazim",
   "matchedAuthor": "Baqir Shareef Al-Qarashi",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "43": {
+  "paragraphs": [
+   "A life of Imam Musa al-Kazim, the seventh Imam, drawn from hadith and biographical sources: his early life, his imprisonments and dealings with the Abbasid rulers, and his teaching."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/biography-of-imam-musa-bin-jafar-al-kazim-a-s",
+  "matchedTitle": "Biography of Imam Musa Bin Jafar Al Kazim",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "46": {
+  "paragraphs": [
+   "Allamah Murtadha al-ʿAskari explains why following the teachings of the Ahl al-Bayt matters. He points to well-documented errors and distortions in early Islamic history, and compares material from other schools and from Jewish and Christian books, especially on the oneness of God (tawhid), arguing that the Ahl al-Bayt preserved its true meaning."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/role-ahl-ul-bayt-preserving-teachings-islam-sayyid-murtadha-al-askari",
+  "matchedTitle": "The Role of Ahlul Bait (A.S) in Preserving the Teachings of Islam",
+  "matchedAuthor": "Allamah Syed Murtadha Askari",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "48": {
+  "paragraphs": [
+   "Laila Bigelli's personal account of how she discovered and came to Islam."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/my-journey-islam-laila-bigelli",
+  "matchedTitle": "My Journey to Islam",
+  "matchedAuthor": "Laila Bigelli",
   "confidence": "high",
   "paraphrased": true,
   "origin": "web"
@@ -341,6 +461,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "61": {
+  "paragraphs": [
+   "A short booklet by Mohammad Baqir Ansari Zanjani on the event of Ghadir Khumm. Using the Qur'an and hadith, it explains where and when the Prophet spoke, who heard him, the key words of the declaration, and how early Muslims understood it."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/what-happened-in-ghadir",
+  "matchedTitle": "What Happened In Ghadir?",
+  "matchedAuthor": "Mohammad Baqer Ansari",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "62": {
   "paragraphs": [
    "Shaykh Muhammad Husayn Kashif al-Ghita's defence of the Shi'a faith (Asl al-Shi'a wa Usuluha), written to clear up misunderstandings between Sunnis and Shi'as and bring them closer. He argues that Shi'ism grew from within Islam itself, out of Muslims' special love for the Prophet and his family, and sets out its basic beliefs and laws as drawn from the Qur'an, hadith and the teachings of the Ahlul Bayt."
@@ -382,6 +514,18 @@
   "url": "https://books.google.com/books?id=_R3hjgEACAAJ",
   "matchedTitle": "The Faith of Shi'a Islam",
   "matchedAuthor": "Muhammad Rida Al Muzaffar - XKP"
+ },
+ "67": {
+  "paragraphs": [
+   "An introduction by the Al-Balagh Foundation to the Prophet's Household (Ahl al-Bayt). Drawing on the Qur'an, hadith and classical scholarship, it explains why they hold a special place in Islam, their spiritual authority and moral leadership, and how they preserved and handed on the Prophet's teachings."
+  ],
+  "source": "Islamic Sources (book page)",
+  "url": "https://islamic-sources.com/books/ahlul-bait-the-prophets-household-2",
+  "matchedTitle": "Ahlul Bayt - The Prophet's Household - Their Status, Manner and Course",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
  },
  "68": {
   "paragraphs": [
@@ -433,6 +577,18 @@
   "url": "https://books.google.com/books?id=53F-EAAAQBAJ",
   "matchedTitle": "DISCOVERING SHI‘I ISLAM",
   "matchedAuthor": "Mohammad Ali Shomali"
+ },
+ "76": {
+  "paragraphs": [
+   "A study by M.A.A. Sattar of a work by the 18th-century scholar Shah Waliullah Muhaddith Dehlavi on the caliphate: the leadership of the Muslim community after the Prophet."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/it-removes-the-misconception-about-caliphs-caliphate",
+  "matchedTitle": "It removes the misconception about Caliphs' Caliphate",
+  "matchedAuthor": "Shah Walyullah Muhaddith Dehlavi",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
  },
  "77": {
   "paragraphs": [
@@ -524,6 +680,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "86": {
+  "paragraphs": [
+   "A tribute to Ayatullah Morteza Mutahhari, the scholar and writer assassinated in 1979, describing how he used his writing to oppose tyranny and spread Islamic thought."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/in-memory-of-martyr-mutahhari",
+  "matchedTitle": "In Memory of Martyr Mutahhari",
+  "matchedAuthor": "M. Hoda",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "89": {
   "paragraphs": [
    "A short booklet on the main features of the life and thought of Sayyid Abul A'la Mawdudi, the founder of the Jamaat-e-Islami."
@@ -544,6 +712,18 @@
   "url": "https://al-islam.org/al-wahid-al-behbahani-man-intellect-abbas-al-abiri",
   "matchedTitle": "Al-Wahid al-Behbahani - Man of Intellect",
   "matchedAuthor": "Abbas al-Abiri",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "92": {
+  "paragraphs": [
+   "An account of the hardships Imam ʿAli faced during his life, and of his martyrdom."
+  ],
+  "source": "Google Books",
+  "url": "https://books.google.com/books?id=LteyswEACAAJ",
+  "matchedTitle": "The Sufferings of Amirol Mominin Ali ibn Abi Talib - Life and Martyrdom",
+  "matchedAuthor": "Majid Massoudi",
   "confidence": "high",
   "paraphrased": true,
   "origin": "web"
@@ -572,6 +752,30 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "95": {
+  "paragraphs": [
+   "Essays by Ali Shariati on the Prophet Muhammad, presenting him as a leader whose life showed justice, compassion and social change."
+  ],
+  "source": "Shafaqna (published the essays in parts)",
+  "url": "https://pakistan.shafaqna.com/EN/334754",
+  "matchedTitle": "The Visage of Muhammad",
+  "matchedAuthor": "Dr Ali Shariati",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "100": {
+  "paragraphs": [
+   "Allamah Tabataba'i's short work, translated by William Chittick and edited by Seyyed Hossein Nasr, on Islam and other religions, the importance of the individual, the Islamic world view, and the spiritual path."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/muhammad-in-the-mirror-of-islam-allamah-tabatabai",
+  "matchedTitle": "Muhammad in the Mirror of Islam",
+  "matchedAuthor": "Ayatollah Tabataba'i",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "103": {
   "paragraphs": [
    "A short biography of Ayatullah Muhammad Taqi al-Khonsari (1890–1953), from the 'Meeting the Pious' series. Translated by Abbas Abu Sa'eedi."
@@ -596,6 +800,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "109": {
+  "paragraphs": [
+   "A short study of the seventh Imam, Musa al-Kadhim, by the Al-Balagh Foundation: his life, his school and learning, the political and social conditions of his time and his dealings with the caliph Harun al-Rashid."
+  ],
+  "source": "Shiavault (contents of the Al-Balagh edition)",
+  "url": "https://www.shiavault.com/books/imam-al-kadhim-a-s/",
+  "matchedTitle": "Imam Al-Kadhim",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "111": {
   "paragraphs": [
    "This is a collection of 57 classic sayings of the Prophet Muhammad that speak about faith, God's mercy, the meaning of life and how best to live in this world. Fully illustrated with compelling graphics that accentuate the text."
@@ -604,6 +820,30 @@
   "url": "https://books.google.com/books?id=DQGEcgAACAAJ",
   "matchedTitle": "In the Path of the Holy Prophet: Classic Traditions for Contemplation",
   "matchedAuthor": "Yahiya Emerick"
+ },
+ "112": {
+  "paragraphs": [
+   "A collection of tributes to Imam ʿAli from Muslim and non-Muslim writers and scholars of different periods, praising his justice, courage, eloquence and devotion."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/tributes-to-hazrat-ali-as",
+  "matchedTitle": "Tributes to Hazrat Ali (as)",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "113": {
+  "paragraphs": [
+   "A biography of Ayatullah Husayn Borujerdi, the leading Shia religious authority of his time (d. 1961), with stories from his life that show his character and conduct."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/ayatullah-al-boroojerdi-great-leader-abbas-al-abeeri",
+  "matchedTitle": "Ayatullah Al-Boroojerdi - The Great Leader",
+  "matchedAuthor": "Abbas al-Abiri",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
  },
  "116": {
   "paragraphs": [
@@ -622,6 +862,66 @@
   "url": "https://al-islam.org/imam-khomeinis-last-will-and-testament",
   "matchedTitle": "Imam Khomeini's Last Will and Testament",
   "matchedAuthor": "",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "118": {
+  "paragraphs": [
+   "Letters from Imam Khomeini to his son, Hujjat al-Islam Sayyid Ahmad Khomeini."
+  ],
+  "source": "Leiden University bibliography",
+  "url": "https://scholarlypublications.universiteitleiden.nl/access/item%3A2855770/view",
+  "matchedTitle": "Reunion With the Beloved",
+  "matchedAuthor": "Mansoor L. Limba; Sayyed Taher Sari at-Panahi",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "120": {
+  "paragraphs": [
+   "Sayyid Muhammad Suhufi retells the stories of the prophets told in the Qur'an, from Adam to Muhammad."
+  ],
+  "source": "Al-Islam.org (book list)",
+  "url": "https://al-islam.org/shiite-encyclopedia/some-english-books-shia-beliefs",
+  "matchedTitle": "Stories from Quran",
+  "matchedAuthor": "Sayyid Muhammad Suhufi",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "121": {
+  "paragraphs": [
+   "A biography of Abu Dharr (Abuzar) al-Ghifari, a close companion of the Prophet, prepared by a group of scholars at the Islamic Seminary."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/abu-zar-the-great-companion-of-the-prophet-muhammad-pbuh",
+  "matchedTitle": "Abuzar - The Great Companion of The Prophet Muhammad (saww)",
+  "matchedAuthor": "A Group of Scholars",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "122": {
+  "paragraphs": [
+   "A P.E.T. biography of Mukhtar ibn Abi ʿUbayda al-Thaqafi, starting with his birth in 9 AH, the year of the Tabuk expedition, and his upbringing as an orphan after his father died in battle."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/biography-of-amir-mukhtar-bin-abu-ubayda",
+  "matchedTitle": "Biography of Amir Mukhtar Bin Abu Ubayda",
+  "matchedAuthor": "Talib Hussain Zaidi",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "123": {
+  "paragraphs": [
+   "Short biographies of the tenth and eleventh Imams, ʿAli al-Naqi and Hasan al-ʿAskari: their upbringing, virtues and teaching, and the pressures they faced under Abbasid rule."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/biographies-of-imam-ali-bin-muhammad-al-naqi-and-imam-hasan-bin-ali-al-askari",
+  "matchedTitle": "Biographies of Imam Ali Bin Muhammad Al Naqi (as) Imam Hasan Bin Ali Al Askari (as)",
+  "matchedAuthor": "Talib Hussain Zaidi",
   "confidence": "high",
   "paraphrased": true,
   "origin": "web"
@@ -755,6 +1055,42 @@
   "matchedTitle": "A Brief History of the Fourteen Infallibles",
   "matchedAuthor": "Wofis"
  },
+ "145": {
+  "paragraphs": [
+   "An introduction by the Al-Balagh Foundation to the Prophet's Household (Ahl al-Bayt). Drawing on the Qur'an, hadith and classical scholarship, it explains why they hold a special place in Islam, their spiritual authority and moral leadership, and how they preserved and handed on the Prophet's teachings."
+  ],
+  "source": "Islamic Sources (book page)",
+  "url": "https://islamic-sources.com/books/ahlul-bait-the-prophets-household-2",
+  "matchedTitle": "Ahlul Bait: Their Status, Manner and Course, The Prophet's Household",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "146": {
+  "paragraphs": [
+   "The life of Bilal, the African companion who was the first muezzin of Islam and later in charge of the treasury in Medina. The book also shows how Islam rejects racial discrimination."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/bilal-of-africa",
+  "matchedTitle": "Bilal of Africa",
+  "matchedAuthor": "Husayn Malika Ashtiyani",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "147": {
+  "paragraphs": [
+   "A question-and-answer book by Ayatullah Muhammad Sadiq Rohani about Lady Fatima al-Zahra. The first chapter covers her virtues and the second the hardships she suffered, including the dispute over Fadak."
+  ],
+  "source": "Duas.org (copy of the book)",
+  "url": "https://duas.org/downloads/Hadhrat%20Zahras%20Virtues%20and%20Miseries_ayt_Rohani.pdf",
+  "matchedTitle": "Hazrat Zahras (SA) Virtues and Miseries",
+  "matchedAuthor": "Mohammed Sadiq Rohani",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "148": {
   "paragraphs": [
    "A SERIES OF LECTURES ON THE AWAITED SAVIOR IMAM AL-MAHDI PRESENTED BY THE LATE AYATOLLAH SAYED MOHAMMAD REDHA AL-SHIRAZI"
@@ -788,6 +1124,30 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "152": {
+  "paragraphs": [
+   "A history of the Prophet Muhammad's life by the Al-Balagh Foundation, in two parts: his life before prophethood, the first call to Islam, the hardships in Mecca and the migration; then the community in Medina, his military policy, the conquest of Mecca, the Farewell Hajj, the pledge at Ghadir and his last will."
+  ],
+  "source": "Shiavault (contents of the Al-Balagh edition)",
+  "url": "https://www.shiavault.com/books/muhammad-the-messenger-of-allah/",
+  "matchedTitle": "Ahlul Bait - Muhammad The Messenger of Allah",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "153": {
+  "paragraphs": [
+   "A study of the poet and thinker Sir Muhammad Iqbal (1877–1938), focusing on his religious thought, by Muhammad Munawwar, with an introduction by Khalid M. Ishaque."
+  ],
+  "source": "Center for Research Libraries catalogue",
+  "url": "https://catalog.crl.edu/Record/f1cceecb-a78b-5084-8d0c-41b2bcb67d01",
+  "matchedTitle": "Iqbal: Poet-Philosopher of Islam",
+  "matchedAuthor": "Muhammad Munawwar",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "155": {
   "paragraphs": [
    "Short biographies of all the wives of the Prophet: their sacrifices, the hardships they went through, and their religious work. An English version of the author's Urdu book 'Ummat-e-Muslima ki Maayen'."
@@ -796,6 +1156,30 @@
   "url": "https://idara.com/?p=1018",
   "matchedTitle": "The Wives of The Prophet",
   "matchedAuthor": "Maulana Muhammad Ashiq Elahi",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "156": {
+  "paragraphs": [
+   "A short work by Sayyid Rida Sadr on the saying that tradition holds as Imam ʿAli's life motto, with related sayings and short explanations."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/imam-alis-life-motto",
+  "matchedTitle": "Imam Ali's Life Motto",
+  "matchedAuthor": "Sayyid Rida Sadr",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "157": {
+  "paragraphs": [
+   "A short survey of the life and work of the Prophet Muhammad by the scholar Muhammad Hamidullah."
+  ],
+  "source": "Center for Research Libraries catalogue",
+  "url": "https://catalog.crl.edu/Record/425a7297-63ae-598c-b1fa-c9b51f64502f",
+  "matchedTitle": "Muhammad Rasulullah: A concise survey of the life and work of the founder of Islam",
+  "matchedAuthor": "Dr. Muhammad Hamidullah",
   "confidence": "medium",
   "paraphrased": true,
   "origin": "web"
@@ -820,6 +1204,18 @@
   "url": "https://www.pdcnet.org/pga/content/pga_2022_0002_0001_0167_0179",
   "matchedTitle": "Art awaiting the saviour",
   "matchedAuthor": "Dr. Ali Shariati",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "165": {
+  "paragraphs": [
+   "A leaflet that briefly introduces the life of Ayatullah Khomeini and lists his writings and the collections of his speeches."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/biography-and-bibliography-of-the-founder-of-iran-imam-khomeini",
+  "matchedTitle": "Biography and Bibliography of the Founder of the Islamic Republic of Iran: Imam Khomeini",
+  "matchedAuthor": "",
   "confidence": "medium",
   "paraphrased": true,
   "origin": "web"
@@ -878,6 +1274,18 @@
   "matchedTitle": "Constitution of the Islamic Republic of Iran: Enriched edition. Foundational document of Islamic governance in modern Iran",
   "matchedAuthor": "Iranian provisional government of Mehdi Bazargan"
  },
+ "178": {
+  "paragraphs": [
+   "An issue of the American Journal of Islamic Social Sciences (AJISS), a peer-reviewed quarterly founded in 1984 and published by the International Institute of Islamic Thought, with research on many sides of Islam and the Muslim world: history, philosophy, politics, psychology, law and more."
+  ],
+  "source": "Google Books",
+  "url": "https://books.google.com/books?id=v3k5DwAAQBAJ",
+  "matchedTitle": "The American Journal of Islamic Social Sciences",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "179": {
   "paragraphs": [
    "Dr Mehdi Golshani answers eight questions on whether science can be separated from religion: whether the two can live together, when the split between them began, and why he holds that science cannot do without religion."
@@ -898,6 +1306,30 @@
   "url": "https://books.google.com/books?id=504qAQAAMAAJ",
   "matchedTitle": "Metaphysics in Islamic Philosophy",
   "matchedAuthor": "Fadlou Shehadi"
+ },
+ "182": {
+  "paragraphs": [
+   "Ali Shariati argues that understanding the human being must come before every other kind of knowledge, and that modern schemes for saving humanity have failed because they forgot this. He sets the Marxist view of the human being against the Islamic one."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/man-marxism-and-islam",
+  "matchedTitle": "Man, Marxism and Islam",
+  "matchedAuthor": "Dr. Ali Shariati",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "184": {
+  "paragraphs": [
+   "Writings and speeches of Ayatullah Sayyid Mahmud Taleghani on society and the economy in Islam, translated by R. Campbell with an introduction and notes by Hamid Algar. Taleghani, a leading scholar known for independent thought and his opposition to the Shah, chaired Iran's Revolutionary Council when he died in 1979."
+  ],
+  "source": "Google Books",
+  "url": "https://books.google.com/books?id=e9c1AAAAMAAJ",
+  "matchedTitle": "Society and Economics in Islam",
+  "matchedAuthor": "Ayatullah Sayyid Mahmud Taleghani",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
  },
  "185": {
   "paragraphs": [
@@ -920,6 +1352,18 @@
   "matchedTitle": "Death and Immortality",
   "matchedAuthor": "Josef Pieper",
   "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "189": {
+  "paragraphs": [
+   "A book in five parts on death and what follows it: the moment of death, life in the barzakh (the time between death and resurrection), the Day of Resurrection, and descriptions of Hell and Paradise."
+  ],
+  "source": "Google Books",
+  "url": "https://books.google.com/books?id=De-uGwAACAAJ",
+  "matchedTitle": "The Spectacle Of Death",
+  "matchedAuthor": "Khawaja Muhammad Islam",
+  "confidence": "high",
   "paraphrased": true,
   "origin": "web"
  },
@@ -1124,6 +1568,18 @@
   "matchedTitle": "The Sacred Foundations of Justice in Islam: The Teachings of ʻAlī Ibn Abī Ṭālib",
   "matchedAuthor": "Ali M. Lakhani, Reza Shah-Kazemi, Leonard Lewisohn"
  },
+ "215": {
+  "paragraphs": [
+   "Masih Muhajiri on the history and basis of Muslim unity: the Qur'an's call to unity, the beliefs Muslims share, the causes of division, and the need for dialogue and mutual respect."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/background-of-the-islamic-unity",
+  "matchedTitle": "Background of the Islamic Unity",
+  "matchedAuthor": "Masih Muhajiri",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "217": {
   "paragraphs": [
    "A widely read general introduction to Islam, written for both Muslims and non-Muslims in North America. It explains the basic beliefs, worship and way of life of Islam in a plain, factual style, with appendices on the Qur'an, the Prophet and the Islamic calendar."
@@ -1136,6 +1592,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "218": {
+  "paragraphs": [
+   "Five pamphlets, first published in Persian and German by the Islamic Centre of Hamburg, mainly by Ayatullah Muhammad Husayn Beheshti, explaining Islamic beliefs for readers in Europe."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/scientific-survey-islamic-ideology",
+  "matchedTitle": "Scientific Survey- Islamic Ideology",
+  "matchedAuthor": "Ayatullah S.M.H. Beheshti",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "219": {
   "paragraphs": [
    "Allamah Saeed Akhtar Rizvi answers a question often asked today: why do people need religion? He explains what religion is, why human society needs laws given by God, and what qualities a true religion must have."
@@ -1144,6 +1612,18 @@
   "url": "https://al-islam.org/need-religion-sayyid-saeed-akhtar-rizvi",
   "matchedTitle": "Need of Religion",
   "matchedAuthor": "Seyyid Saeed Akhtar Rizvi",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "221": {
+  "paragraphs": [
+   "Ali Shariati asks whether the twelve Imams were chosen by God or by the people, and what that means for legitimate leadership in Islam."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/selection-andor-election",
+  "matchedTitle": "Selection and/or Election",
+  "matchedAuthor": "Dr. Ali Shariati",
   "confidence": "high",
   "paraphrased": true,
   "origin": "web"
@@ -1181,6 +1661,30 @@
   "matchedTitle": "Christ in Islam",
   "matchedAuthor": "Ahmed Deedat"
  },
+ "232": {
+  "paragraphs": [
+   "Part of Ahmad von Denffer's series on dialogue between Christians and Muslims (Islamic Foundation). The series collects the resolutions and statements of the major Christian-Muslim dialogue meetings, with Part 3 giving those statements and resolutions."
+  ],
+  "source": "Google Books",
+  "url": "https://books.google.com/books?id=49WTSQAACAAJ",
+  "matchedTitle": "Dialogue Between Christians and Muslims Part 3 - Statements and Resolutions",
+  "matchedAuthor": "Ahmad Von Denffer",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "233": {
+  "paragraphs": [
+   "Letters between a young Muslim and a Christian correspondence institute, debating how reliable the Bible and other Christian scriptures are. They were published because the exchange may interest young Muslims and Christians alike."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/extracts-from-correspondence-between-a-muslim-and-a-christian",
+  "matchedTitle": "Extracts from Correspondence between Muslim and Christian",
+  "matchedAuthor": "",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "236": {
   "paragraphs": [
    "During his tenure as a college professor, Dr. Carrier taught political science and philosophy courses and travelled to over 30 different nations in Europe and East Asia. Now an author who has retired to North Carolina's Outer Banks, where he enjoys surf fishing and outrageous sunsets, Carrier also has delved into reading non-fiction. He particularly admires authors Flannery O'Connor, Anton Chekhov, and James Joyce, whose short stories often deal with religious themes. Fascinated with the universality of all religions, Carrier is a \"committed, but non-denominational Christian,\" who has been influenced by Catholic, Protestant, and Islamic worship. His encounters with Hinduism and Buddhism from his time as a Fulbright Scholar to India also have left a lasting impression. Readers of the Son of Man can glean the essence of Carrier's conclusions from a quote that Swiss Catholic priest, author, and theologian Hans Kung submitted at the request of Life magazine editors about the meaning of life. Kung's quote and those from other world leaders were later published in the book, The Meaning of Life (Friend and the Editors of Life, 1991, p. 105). Kung's quote references \"this Ultimate and First Reality,\" or what Carrier prefers to call \"the Divine Creator\": I have become convinced that in trusting this Ultimate and First Reality, I am also trusting that there is meaning to my life and death and to those of other human beings--even if this all-embracing meaning, in the face of an appalling amount of foolishness in the world, will often remain hidden. In short, . . . I trust, despite everything, that with my life and your life, ultimately something meaningful, good and reasonable is intended. From this perspective, you might say that self-realization is the meaning of life. We are here to realize ourselves in order to become true human beings. But I add from my own experience: My own self-realization must fail if it disregards the self-realization of others. My realization and others' realizations are meaningful only if they are borne and determined by something that is more than ourselves: Self-realization rooted in the reality of God Himself. This is promised us by the Judaic-Christian-Islamic tradition. Shouldn't this suffice? --Hans Kung, President of the Foundation for a Global Ethic; former Director of the Institute for Ecumenical Research, Tubingen, Germany"
@@ -1189,6 +1693,30 @@
   "url": "https://books.google.com/books?id=D_Q-DwAAQBAJ",
   "matchedTitle": "SON OF MAN: A Christian's Subversive Manifesto",
   "matchedAuthor": "Henry Carrier"
+ },
+ "237": {
+  "paragraphs": [
+   "Part of Ahmad von Denffer's series on dialogue between Christians and Muslims (Islamic Foundation). The series collects the resolutions and statements of the major Christian-Muslim dialogue meetings; Part 2 gives Christian guidelines for dialogue."
+  ],
+  "source": "Google Books",
+  "url": "https://books.google.com/books?id=49WTSQAACAAJ",
+  "matchedTitle": "Dialogue Between Christians and Muslims Part 2 - Christian Guidelines for Dialogue with Muslims",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "238": {
+  "paragraphs": [
+   "Carol L. Anway's book about American women who became Muslim: how they came to Islam, and the challenges they and their families faced."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/daughters-of-another-path",
+  "matchedTitle": "Daughters of Another Path",
+  "matchedAuthor": "Carol L. Anway",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
  },
  "239": {
   "paragraphs": [
@@ -1208,6 +1736,18 @@
   "matchedTitle": "Shared Religious Foundations of Education: Islam & Christianity",
   "matchedAuthor": "Hamid Reza Alavi"
  },
+ "241": {
+  "paragraphs": [
+   "A booklet that compares Islam and Christianity using the Bible, hoping that better understanding of each other's views can bring their followers closer."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/islam-and-christianity-as-seen-in-the-bible",
+  "matchedTitle": "Islam and Christianity as seen in The Bible",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "242": {
   "paragraphs": [
    "This annotated bibliography is intended for Muslims who wish to be informed about the Christian missionaries' approach to Islam."
@@ -1226,6 +1766,18 @@
   "matchedTitle": "Introduction to Shia Islam",
   "matchedAuthor": "Moojan Momen",
   "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "247": {
+  "paragraphs": [
+   "Abu Talib al-Tabrizi answers common criticisms of the Shia, which he sees as unfounded or misleading, and traces the disagreements back to the time after the Prophet's death."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/spurious-arguments-about-the-shia",
+  "matchedTitle": "Serious Arguments About the Shia Islam",
+  "matchedAuthor": "Abdullah Al Shanin",
+  "confidence": "high",
   "paraphrased": true,
   "origin": "web"
  },
@@ -1318,6 +1870,42 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "259": {
+  "paragraphs": [
+   "Maryam Jameelah presents Islam as submission to God through obedience to His law, and compares it with the beliefs of the 'People of the Book', Jews and Christians, in the past and today."
+  ],
+  "source": "Universiti Sultan Zainal Abidin library catalogue",
+  "url": "https://cendekia.unisza.edu.my/neuseal/Record/0000004669/Description",
+  "matchedTitle": "Islam Versus Ahl al-Kitab Past and Present",
+  "matchedAuthor": "Maryam Jameelah",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "261": {
+  "paragraphs": [
+   "A book from Life magazine's 1955 series on the world's great religions, expanded with extra material and selections from scripture. It covers Hinduism, Buddhism, the Chinese faiths, Islam, Judaism and Christianity, and compares them."
+  ],
+  "source": "Google Books",
+  "url": "https://books.google.com/books?id=6x7QrQEACAAJ",
+  "matchedTitle": "The World's Great Religions",
+  "matchedAuthor": "",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "263": {
+  "paragraphs": [
+   "An Islamic Propagation Organization booklet on the origins of the Bahá'í movement. It argues, from a strongly critical political standpoint, that the movement served foreign imperial interests."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/bahaism-its-origin-and-its-role",
+  "matchedTitle": "Bahaism: Its Origin and Its Role",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "264": {
   "paragraphs": [
    "Khurram Murad argues that Muslims in the West do almost no da'wah (inviting others to Islam) among non-Muslims, and that what little is done is not very effective. He asks whether the usual ideas and methods are right and suggests how they should change."
@@ -1330,6 +1918,30 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "265": {
+  "paragraphs": [
+   "Fathi Yakan's well-known book on the problems that anyone who invites others to Islam (da'wah) will face, both within the Muslim community and from outside it."
+  ],
+  "source": "Media Kita journal (study of the book)",
+  "url": "https://jurnalfuda.iainkediri.ac.id/index.php/mediakita/article/download/197/392/1137",
+  "matchedTitle": "Problems Faced by the Da'wah and the Da'iyah",
+  "matchedAuthor": "Fathi Yakan",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "267": {
+  "paragraphs": [
+   "A booklet from the Islamic Society of North America (1984). It argues that efforts to share Islam with Americans often fail because people do not understand how attitudes change or what Americans value, and it uses ideas from the psychology of persuasion to suggest better approaches."
+  ],
+  "source": "Muslim-Library.com (copy of the booklet)",
+  "url": "https://www.muslim-library.com/dl/books/English_Dawah_to_Americans_Theory_and_Practice.pdf",
+  "matchedTitle": "Da'wah to Americans: Theory and Practice",
+  "matchedAuthor": "Steve A. Johnson (Faruq Abdullah)",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "269": {
   "paragraphs": [
    "Ismail al-Faruqi explains what Islamic da'wah (inviting people to Islam) is and what it requires: it must be free of any pressure or coercion, must respect the free judgement of the person invited, and is meant for Muslims as much as for non-Muslims."
@@ -1338,6 +1950,18 @@
   "url": "https://ismailfaruqi.com/tag/dawah/",
   "matchedTitle": "Islamic Da'wah Its Nature and Demands",
   "matchedAuthor": "Ismail R. al-Faruqi",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "270": {
+  "paragraphs": [
+   "A booklet by Mujgan Jalali on the Qadiyani (Ahmadiyya) movement, which began in Punjab under British rule. It argues, from a critical standpoint, that the movement was linked to colonial interests."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/qadiyaniyyah",
+  "matchedTitle": "Qadiyaniyyah",
+  "matchedAuthor": "",
   "confidence": "medium",
   "paraphrased": true,
   "origin": "web"
@@ -1360,6 +1984,18 @@
   "matchedTitle": "Man and Islam",
   "matchedAuthor": "Dr. Ali Shariati",
   "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "275": {
+  "paragraphs": [
+   "A Muslim scholar's look at Western civilisation: its strengths and problems, what Islam has given the world, and how Islam can help with the social problems that materialism has brought to both East and West."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/western-civilization-through-muslim-eyes-sayyid-mujtaba-musawi-lari",
+  "matchedTitle": "Western Civilisation Through Muslim Eyes",
+  "matchedAuthor": "Sayid Mujtaba Rukni Musaqi Lari",
+  "confidence": "high",
   "paraphrased": true,
   "origin": "web"
  },
@@ -1552,6 +2188,18 @@
   "matchedTitle": "The REVEALER the MESSENGER the MESSAGE",
   "matchedAuthor": "Martyr Mohammad Martyr Mohammad Baqir As Sadr"
  },
+ "302": {
+  "paragraphs": [
+   "Islamic guidance on refined manners and everyday conduct: cleanliness, family life, honesty, respect, generosity and patience."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/tahdhib-ul-islam",
+  "matchedTitle": "Tahdhib ul Islam",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "303": {
   "paragraphs": [
    "Shaykh al-Saduq's classic work on the twelfth Imam, al-Mahdi: his identity, his occultation and everything connected with it, and the meaning of waiting for his return. English translation by Sayyid Athar Husayn Rizvi."
@@ -1560,6 +2208,30 @@
   "url": "https://al-islam.org/kamaaluddin-wa-tamaamun-nima-vol-1-shaykh-saduq",
   "matchedTitle": "Kamal Al-Din Wa-Tamam Al-Ni'mah",
   "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "307": {
+  "paragraphs": [
+   "Ayatullah Morteza Mutahhari gathers the Qur'an's verses about human beings. He shows how high people can rise, even above the angels, and how low they can fall, below animals, and how their own free will decides which way they go."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/human-being-holy-quran-murtadha-mutahhari",
+  "matchedTitle": "The Human Being in the Quran",
+  "matchedAuthor": "Murtaza Muthahheri",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "308": {
+  "paragraphs": [
+   "S. V. Mir Ahmed Ali's English translation of the Qur'an with commentary, with an introduction on English translations, the collection and recitations of the Qur'an and the basic beliefs of Islam."
+  ],
+  "source": "Shiavault (book contents)",
+  "url": "https://www.shiavault.com/books/a-commentary-on-the-holy-qur-an/",
+  "matchedTitle": "A Commentary On the Holy Quran",
+  "matchedAuthor": "S.V. Mir Ahmed Ali",
   "confidence": "medium",
   "paraphrased": true,
   "origin": "web"
@@ -1615,6 +2287,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "314": {
+  "paragraphs": [
+   "Part of Muhammad Baqir al-Sadr's major work on economics. He sets out an Islamic economic system built on justice and social responsibility, as an alternative to capitalism and socialism."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/iqtisaduna-our-economics-vol-2-part-1",
+  "matchedTitle": "Iqtisaduna - Our Economics (Volume 2, Part 1)",
+  "matchedAuthor": "Muhammad Baqir As-Sadr",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "315": {
   "paragraphs": [
    "Lectures by Ayatullah Misbah Yazdi, given in Qum, on how Imam ʿAli speaks about the Qur'an in Nahj al-Balaghah. They cover the Qur'an's place in a religious society and in daily life, who is qualified to interpret it, explaining the Qur'an by the Qur'an, and the dangers of misinterpretation. Translated by Mansoor Limba."
@@ -1635,6 +2319,18 @@
   "url": "https://books.google.com/books?id=lAcSjwEACAAJ",
   "matchedTitle": "Elements of Islamic Studies",
   "matchedAuthor": "Allamah Sayyid Sa'eed Akhtar Rizvi"
+ },
+ "317": {
+  "paragraphs": [
+   "A selection of a hundred short sayings of Imam ʿAli, together with a hundred sayings of Imam ʿAli al-Rida."
+  ],
+  "source": "Shiavault (book contents)",
+  "url": "https://www.shiavault.com/books/100-maximas-form-imam-ali-a-s-imam-ali-bin-musa-al-rida-a-s/",
+  "matchedTitle": "100 Maxims From Imam Ali (A.S) & Imam Ali Bin Musa Al-Riza",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
  },
  "318": {
   "paragraphs": [
@@ -1708,6 +2404,30 @@
   "matchedTitle": "The Qur'an in Islam: Its Impact & Influence on the Life of Muslims",
   "matchedAuthor": "Allama Sayyid Mh Tabatabai"
  },
+ "328": {
+  "paragraphs": [
+   "A criticism of modern 'religion reformers' who blame the earlier scholars and reject long-held beliefs and practices."
+  ],
+  "source": "Google Books",
+  "url": "https://books.google.com/books?id=tU9vAgAAQBAJ",
+  "matchedTitle": "Islam's Reformers",
+  "matchedAuthor": "M. Siddik Gumus",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "331": {
+  "paragraphs": [
+   "Allamah Tabataba'i presents Islam as a complete religion for the material and spiritual needs of all people, and as being in harmony with reason."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/universality-of-islam",
+  "matchedTitle": "Universality of Islam",
+  "matchedAuthor": "Allamah Sayyid M.H. Tabatabai",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "337": {
   "paragraphs": [
    "A book that delves into the several dimensions and depths of Tawhid (Oneness of God): the central and core concept of Islam. Starting from the basic definitions, it then moves onto how one's life and existence revolve around Tawhid."
@@ -1758,6 +2478,18 @@
   "matchedTitle": "The Foundations of Islamic Doctrine: God and his attributes",
   "matchedAuthor": "Mujtabá Mūsavī Lārī"
  },
+ "342": {
+  "paragraphs": [
+   "Part 2 of History of Islamic Philosophy, a large collection of essays by many specialists, edited by Seyyed Hossein Nasr and Oliver Leaman, tracing Islamic philosophy, its main thinkers and schools from the beginning to modern times. First published by Routledge in 1996 in its History of World Philosophies series."
+  ],
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/History_of_Islamic_Philosophy",
+  "matchedTitle": "History of Islamic Philosophy Part II",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "343": {
   "paragraphs": [
    "The Reconstruction of Religious Thought in Islam (1930) is Muhammad Iqbal's major philosophic work: a series of profound reflections on the perennial conflict among science, religion, and philosophy, culminating in new visions of the unity of human knowledge, of the human spirit, and of God. Iqbal's thought contributed significantly to the establishment of Pakistan, to the religious and political ideals of the Iranian Revolution, and to the survival of Muslim identity in parts of the former USSR. It now serves as new bridge between East and West and between Islam and the other Religions of the Book. With a new Introduction by Javed Majeed, this edition of The Reconstruction opens the teachings of Iqbal to the modern, Western reader. It will be essential reading for all those interested in Islamic intellectual history, the renewal of Islam in the modern world, and political theory of Islam's relationship to the West."
@@ -1775,6 +2507,18 @@
   "url": "https://books.google.com/books?id=pQ8wswEACAAJ",
   "matchedTitle": "Eternal Life (Life After Death)",
   "matchedAuthor": "Ayatullah Murtadha Mutahhari"
+ },
+ "347": {
+  "paragraphs": [
+   "Mansour Pahlavan on the Islamic belief in a saviour who will fill the world with justice: a short history of the belief and an introduction to the life of Imam al-Mahdi."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/the-savior-in-islam",
+  "matchedTitle": "Savior in Islam",
+  "matchedAuthor": "Mansour Pahlavan",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
  },
  "348": {
   "paragraphs": [
@@ -1884,6 +2628,18 @@
   "matchedTitle": "A History of Islamic Philosophy",
   "matchedAuthor": "Majid Fakhry"
  },
+ "364": {
+  "paragraphs": [
+   "Mushtaq Hussain Merchant's simplified rendering of the Qur'an, written for readers in the West who lack easy access to scholars, so that they understand it and do not only recite it."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/in-god-we-trust",
+  "matchedTitle": "In God We Trust",
+  "matchedAuthor": "Mushtaq Hussain Merchant",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "367": {
   "paragraphs": [
    "Ayatullah Makarim Shirazi teaches the basic beliefs of Islam to young people in short, clear lessons on God, prophethood and the Prophet of Islam, divine justice, the Imamate and the resurrection. Translated by Laleh Bakhtiar."
@@ -1962,6 +2718,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "380": {
+  "paragraphs": [
+   "Masih Muhajeri on the ideas behind the Islamic Revolution in Iran: independence, justice and resistance to foreign control, presented as a model for other nations."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/islamic-revolution-future-path-of-the-nations",
+  "matchedTitle": "Islamic Revolution- Future Path of the Nations",
+  "matchedAuthor": "Masih Muhajeri",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "381": {
   "paragraphs": [
    "Gilles Kepel is one of Europe's leading authorities on contemporary Islam. This new book is an outstanding account of the ways in which Islam is asserting its identity in the West today"
@@ -1995,6 +2763,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "384": {
+  "paragraphs": [
+   "Notes taken from the lectures of Maulana Sadiq Hasan, mainly on khums, and also on Hajj, prayer, and what is lawful and forbidden."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/khums-other-islamic-acts",
+  "matchedTitle": "Khums & Other Islamic Acts",
+  "matchedAuthor": "Maulana Sadiq Hasan",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "386": {
   "paragraphs": [
    "Khums is an issue every practicing Shi'ah must deal with once a year. The need for an easy to understand, yet comprehensive guide has been felt for years. Especially now more than ever, with the financial complexities of our world today. This book hopes to fill that void, since its first publication in 1984. The most popular aspect of this book is the khums calculation form, which provides easy to use, step-by-step instructions on calculating your khums for the year. This 4th edition includes numerous revisions and expansions, including: the history and usage of khums during the time of the Prophet and Imams, the moral and political aspects of khums, updated examples and rulings, practical and common issues for those living in the West, frequently raised questions, and much more. The book also reflects rulings based on various prominent maraji' in order to cater to as many muqallidin as possible. Previous versions of this book have been well received, as well as prompting insightful feedback from communities around the globe. It has been reprinted in Iran and Pakistan, translated into various languages, has had excerpts published in magazines, has been incorporated in other publications, and has been the basis for countless other seminars, booklets, and calculation forms. Some overall topics and features include: - Discussing the Islamic economic system - Khums in the Qur'an and history - Defining khums, income, surplus, expenses, etc - Various rulings and common situations - The distribution of khums - Some thoughts on khums and society - Calculation forms and guidelines Be sure to also check out the seminar and Q&A session on Khums, by Sayyid Muhammad Rizvi. It covers: - The meaning behind the concept of Khums - Items upon which khums is wajib - When do you pay khums? - What is surplus? What is profit? What is income? - What is exempt from khums? - What are savings? - What are allowable expenses? - What to do with debt? - Insurance premiums - Registered Retirement Savings Plan (RRSP) - Registered Education Savings Plan (RESP) - Tax Free Savings Account (TFSA) - Private Company Pension Plans - Life Insurance (Whole and Term) Premiums - Critical Illness Insurance Premiums - Saving for the future - Child allowance - Saving for a home - Home equity - Dowry - Unused items - Gifts - Business inventory and property - Division of Khums - Q&A session"
@@ -2003,6 +2783,18 @@
   "url": "https://books.google.com/books?id=o0QQEAAAQBAJ",
   "matchedTitle": "Khums - An Islamic Tax",
   "matchedAuthor": "Sayyid Muhammad Rizvi"
+ },
+ "387": {
+  "paragraphs": [
+   "A book on concentration in prayer: why it matters, whether it is possible, its levels, what gets in the way and practical ways to achieve it, with the meaning of prayer and stories of pious people."
+  ],
+  "source": "Shiavault (book contents)",
+  "url": "https://www.shiavault.com/books/soaring-to-the-only-beloved/",
+  "matchedTitle": "Soaring to the Only Beloved",
+  "matchedAuthor": "Abu Muhammad Zaynul 'Abidin",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
  },
  "388": {
   "paragraphs": [
@@ -2016,6 +2808,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "390": {
+  "paragraphs": [
+   "Islamic rulings in question-and-answer form, based on Ayatullah Sistani's fatwas: acts of worship, money matters and personal status such as marriage. Written by Abdul Hadi al-Hakim."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/jurisprudence-made-easy-ayatullah-ali-sistani",
+  "matchedTitle": "Jurisprudence Made Easy",
+  "matchedAuthor": "Abdul Hadi al-Hakim",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "391": {
   "paragraphs": [
    "An English translation of the first part of Ayatullah Muhammad Baqir al-Sadr's Durus fi 'Ilm al-Usul, an introduction for beginners to the principles of jurisprudence that is widely taught in Shi'a seminaries. It covers what usul is, whether deriving rulings is allowed, and the kinds of evidence used. Translated by Arif Abdul Hussain."
@@ -2024,6 +2828,18 @@
   "url": "https://islamic-college.ac.uk/?p=8947",
   "matchedTitle": "Principles of Islamic Jurisprudence According to Shi'i Law",
   "matchedAuthor": "Muhammad Baqir al-Sadr",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "392": {
+  "paragraphs": [
+   "Famous sayings of Imam ʿAli, compiled by Anwar Husain Zaidi and arranged by subject."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/sayings-and-preachings-of-hazrat-ali-as",
+  "matchedTitle": "Sayings and Preachings of Hazrat Ali (A.S.)",
+  "matchedAuthor": "",
   "confidence": "high",
   "paraphrased": true,
   "origin": "web"
@@ -2052,6 +2868,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "397": {
+  "paragraphs": [
+   "An introduction by the Al-Balagh Foundation to the Prophet's Household (Ahl al-Bayt). Drawing on the Qur'an, hadith and classical scholarship, it explains why they hold a special place in Islam, their spiritual authority and moral leadership, and how they preserved and handed on the Prophet's teachings."
+  ],
+  "source": "Islamic Sources (book page)",
+  "url": "https://islamic-sources.com/books/ahlul-bait-the-prophets-household-2",
+  "matchedTitle": "Ahlul-Bait - The Prophet's Household - Their Status, Manner, and Course",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "398": {
   "paragraphs": [
    "This text authored by Martyr Ayatullah Murtadha Mutahhari serves to present the Islamic approach to society and history. The author combined these two areas of study as the discussion of the problems that deal with society and history are closely related and this analysis reveals Islam's profoundness in dealing with various issues."
@@ -2069,6 +2897,18 @@
   "url": "https://books.google.com/books?id=5Vb7jgEACAAJ",
   "matchedTitle": "Martyrdom: Arise and Bear Witness",
   "matchedAuthor": "Ali Shariati"
+ },
+ "400": {
+  "paragraphs": [
+   "An Al-Balagh Foundation book on Islamic thought: what thought is, its main and secondary sources and features, its history, research methods and terms, and the problems facing Islamic thought today."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/islamic-thought",
+  "matchedTitle": "Islamic Thought (Part One and Two)",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
  },
  "401": {
   "paragraphs": [
@@ -2127,6 +2967,18 @@
   "matchedTitle": "The Ritual Ablutions for Women",
   "matchedAuthor": "Sayyid Muhammad Rizvi"
  },
+ "407": {
+  "paragraphs": [
+   "Abbasali Amid Zanjani on the rights of religious minorities under Islamic law and international law, including the 'dhimma' agreement with non-Muslim communities."
+  ],
+  "source": "Encyclopedia of Contemporary Jurisprudence",
+  "url": "https://ency.feqhemoaser.com/en/view/Rights_of_Minorities_(book)",
+  "matchedTitle": "Minority Rights",
+  "matchedAuthor": "Abbasali Amid Zanjani",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "408": {
   "paragraphs": [
    "Includes verses in the Qur'an that address Jihad (struggle in the way of God), legitimacy of Jihad, Islam and Peace, Defense vs. aggression, and human rights."
@@ -2145,6 +2997,30 @@
   "matchedTitle": "Summary of the Ahkam of Salat al-Jama'at (according to the rulings of Ayatullah Seestani)",
   "matchedAuthor": "Saleem Bhimji",
   "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "414": {
+  "paragraphs": [
+   "Short answers by Ayatullahs Makarim Shirazi and Ja'far Subhani to common questions about the reasons behind Islamic laws, for example why we follow a mujtahid, why prayers are in Arabic and face the Qibla, why five prayers at three times, and why some things are impure or forbidden."
+  ],
+  "source": "Shiavault (book contents)",
+  "url": "https://www.shiavault.com/books/logic-for-islamic-rules/",
+  "matchedTitle": "Logic for Islamic Rules",
+  "matchedAuthor": "Ayatullah Makarim Shirazi & Ayatullah Jafar Subhani",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "415": {
+  "paragraphs": [
+   "A simple guide to performing the daily prayer (salat), with pictures: the basic beliefs and practices, wudhu and tayammum, adhan and iqamah, the steps of the prayer and what makes it invalid."
+  ],
+  "source": "Shiavault (book contents)",
+  "url": "https://www.shiavault.com/books/method-of-salat-along-with-pictures/",
+  "matchedTitle": "Method of Salat (along with pictures)",
+  "matchedAuthor": "Sayyid Muhammad Qadi Mar'ashi",
+  "confidence": "medium",
   "paraphrased": true,
   "origin": "web"
  },
@@ -2298,6 +3174,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "430": {
+  "paragraphs": [
+   "Selected passages from the Gulistan (Rose Garden) of the Persian poet Saadi (13th century), translated by Richard Jeffrey Newman: short stories and verses on justice, humility, generosity, greed, silence and good character."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/selections-from-saadis-gulistan",
+  "matchedTitle": "Selections from Saadi's Gulistan",
+  "matchedAuthor": "",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "431": {
   "paragraphs": [
    "We live in a world where every Muslim is judged by the actions of what other so called Muslims do. It is a very difficult situation to constantly need to defend yourself from people who think all the Muslims think the same. The present book is a fresh breath for all of us, by giving us a clear picture of the main doctrines and religious injunctions of the Ja'fariyyah Imamite Shi'ah whose individuals live together with their brethren from the various Muslim sects. They are deeply concerned about maintaining the entity and dignity of the Muslims and are ready to sacrifice everything for it."
@@ -2379,6 +3267,30 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "439": {
+  "paragraphs": [
+   "Part 1 of History of Islamic Philosophy, a large collection of essays by many specialists, edited by Seyyed Hossein Nasr and Oliver Leaman, tracing Islamic philosophy, its main thinkers and schools from the beginning to modern times. First published by Routledge in 1996 in its History of World Philosophies series."
+  ],
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/History_of_Islamic_Philosophy",
+  "matchedTitle": "History of Islamic Philosophy- Part 1",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "440": {
+  "paragraphs": [
+   "Part 2 of History of Islamic Philosophy, a large collection of essays by many specialists, edited by Seyyed Hossein Nasr and Oliver Leaman, tracing Islamic philosophy, its main thinkers and schools from the beginning to modern times. First published by Routledge in 1996 in its History of World Philosophies series."
+  ],
+  "source": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/History_of_Islamic_Philosophy",
+  "matchedTitle": "History of Islamic Philosophy- Part 2",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "441": {
   "paragraphs": [
    "Man and faith, man and animals, knowledge and thought, monothesitic conception of the world, revelation and prophethood, man and the Holy Qur'an, society and history, Imamate and khilafat, and eternal life."
@@ -2442,6 +3354,18 @@
   "matchedTitle": "Al-Imam Al-Mahdi The Just Leader of Humanity",
   "matchedAuthor": "Ayatollah Ibrahim Amini",
   "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "449": {
+  "paragraphs": [
+   "A book about Imam al-Mahdi by the scholar Shaykh ʿAbbas Qummi (Muhaddith Qummi, d. 1941), compiled by Kamal Faghih Imani."
+  ],
+  "source": "British Museum library catalogue",
+  "url": "https://library.britishmuseum.org/bib/159598",
+  "matchedTitle": "The Promised Mahdi, the Deliverer of the Whole Mankind",
+  "matchedAuthor": "Muhaddith Qummi",
+  "confidence": "medium",
   "paraphrased": true,
   "origin": "web"
  },
@@ -2538,6 +3462,42 @@
   "url": "https://books.google.com/books?id=iSxlswEACAAJ",
   "matchedTitle": "Woman",
   "matchedAuthor": "Mahdi Mahdi Mahrizi"
+ },
+ "462": {
+  "paragraphs": [
+   "Morteza Mutahhari on the meaning of martyrdom in Islam: sincere intention, sacrifice for truth and justice, and the place of the martyr."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/the-martyr",
+  "matchedTitle": "The Martyr",
+  "matchedAuthor": "Morteza Mutahhari",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "464": {
+  "paragraphs": [
+   "Morteza Mutahhari on how Islam, especially the Qur'an, views life in this world. He argues that it does not call for withdrawal, but for responsible living within society."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/religion-and-the-world",
+  "matchedTitle": "Religion and the World",
+  "matchedAuthor": "Morteza Mutahhari",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "465": {
+  "paragraphs": [
+   "Talal Alie Turfe on patience (sabr) as a basic virtue in Islam, and how to practise it in daily life."
+  ],
+  "source": "Al-Khoei Islamic Store (bookseller listing, seen in search results)",
+  "url": "https://shop.al-khoei.org/products/patience-in-islam-sabr-by-talal-alie-turfe-p-b",
+  "matchedTitle": "Patience in Islam: Sabr",
+  "matchedAuthor": "Tallal Alie Turfe",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
  },
  "466": {
   "paragraphs": [
@@ -2686,6 +3646,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "486": {
+  "paragraphs": [
+   "Selected passages from the Gulistan (Rose Garden) of the Persian poet Saadi (13th century), translated by Richard Jeffrey Newman: short stories and verses on justice, humility, generosity, greed, silence and good character."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/selections-from-saadis-gulistan",
+  "matchedTitle": "Selections from Saadi's Gulistan",
+  "matchedAuthor": "Translated by: Richard Jeffrey Newman",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "487": {
   "paragraphs": [
    "Delve into the rich tapestry of Islamic culture in this insightful work by Marmaduke Pickthall, an English convert to Islam who gained renown for his esteemed English translation of the Quran. Through a series of engaging lectures, Pickthall sheds light on the diverse facets of Islamic civilization, encompassing its culture, literature, art, and social structures. He explores the profound impact of Islamic values and traditions on the lives of Muslims worldwide, offering a nuanced understanding of this vibrant and multifaceted cultural heritage."
@@ -2818,6 +3790,54 @@
   "matchedTitle": "Background of the Birth of Islam",
   "matchedAuthor": "Ayatollah Mohammad Ayatollah Mohammad Hosseini Beheshti"
  },
+ "505": {
+  "paragraphs": [
+   "Muhammad Baqir al-Sadr compares Islamic economics with capitalism and socialism: property, freedom, the role of the state and the distribution of wealth."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/islam-and-schools-of-economics",
+  "matchedTitle": "Islam and Schools of Economics",
+  "matchedAuthor": "Ayatullah Baqir al-Sadr",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "506": {
+  "paragraphs": [
+   "Volume 3 of a yearly series edited by Kalim Siddiqui (The Open Press). Each volume collects that year's articles from the news magazine Crescent International, in date order, on the Islamic movement and world events."
+  ],
+  "source": "CM Reviews (review of the series)",
+  "url": "https://www.cmreviews.ca/cm/cmarchive/vol11no1/issuesislamic.html",
+  "matchedTitle": "Issues in the Islamic Movement vol. 3",
+  "matchedAuthor": "Kalim Siddiqui",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "507": {
+  "paragraphs": [
+   "Volume 5 of a yearly series edited by Kalim Siddiqui (The Open Press). Each volume collects that year's articles from the news magazine Crescent International, in date order, on the Islamic movement and world events."
+  ],
+  "source": "CM Reviews (review of the series)",
+  "url": "https://www.cmreviews.ca/cm/cmarchive/vol11no1/issuesislamic.html",
+  "matchedTitle": "Issues in the Islamic Movement vol. 5",
+  "matchedAuthor": "Kalim Siddiqui",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "508": {
+  "paragraphs": [
+   "Volume 6 of a yearly series edited by Kalim Siddiqui (The Open Press). Each volume collects that year's articles from the news magazine Crescent International, in date order, on the Islamic movement and world events."
+  ],
+  "source": "CM Reviews (review of the series)",
+  "url": "https://www.cmreviews.ca/cm/cmarchive/vol11no1/issuesislamic.html",
+  "matchedTitle": "Issues in the Islamic Movement vol. 6",
+  "matchedAuthor": "Kalim Siddiqui",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "509": {
   "paragraphs": [
    "Dr Ali Muhammad Naqavi argues that Islam and nationalism are opposed at root: nationalism divides people into national units, while Islam aims at the unity of all people as brothers and servants of God."
@@ -2871,6 +3891,18 @@
   "url": "https://books.google.com/books?id=QhN5zwEACAAJ",
   "matchedTitle": "Why Islam Forbids Intoxicants and Gambling",
   "matchedAuthor": "MUHAMMAD IQBAL. SIDDIQI, Mustopha Olona Imran"
+ },
+ "514": {
+  "paragraphs": [
+   "Akram Zahoor's timeline-based history of Muslims and Islamic civilisation, with maps of the rise and fall of caliphates, empires and kingdoms across the Middle East, Africa, Spain, Europe and Asia."
+  ],
+  "source": "Google Books",
+  "url": "https://books.google.com/books?id=pko_0QEACAAJ",
+  "matchedTitle": "Muslim History (570 - 1950 C.E.)",
+  "matchedAuthor": "Akram Zahoor",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
  },
  "515": {
   "paragraphs": [
@@ -2968,6 +4000,18 @@
   "matchedTitle": "An Introduction to the Rights And Duties of Women in Islam",
   "matchedAuthor": "Ibrahim Amini",
   "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "526": {
+  "paragraphs": [
+   "Ayatullah Ibrahim Amini's guide for parents on raising children, starting before birth: the parents' role, setting an example through actions, and looking after the mother and baby during pregnancy and after birth."
+  ],
+  "source": "Shiavault (book contents)",
+  "url": "https://www.shiavault.com/books/the-codes-of-training/",
+  "matchedTitle": "The Codes of Training",
+  "matchedAuthor": "Ayatollah Ibrahim Amini",
+  "confidence": "medium",
   "paraphrased": true,
   "origin": "web"
  },
@@ -3136,6 +4180,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "551": {
+  "paragraphs": [
+   "Bediuzzaman Said Nursi on the miracles of the Prophet Muhammad: some of the extraordinary events of his time that supported his mission, as part of the many proofs of his prophethood."
+  ],
+  "source": "Google Books",
+  "url": "https://books.google.com/books?id=GBBRCwAAQBAJ",
+  "matchedTitle": "The Miracles of Muhammad",
+  "matchedAuthor": "Bediuzzaman Said Nursi",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "553": {
   "paragraphs": [
    "The author describes the first 40 years of the Islamic State, dealing with various events during the rules of the Four Caliphs with impartiality and objectivity. He carefully removes sectarian prejudices from the pages of history. This book is highly recommended as a text book on Islamic history in higher institutions."
@@ -3145,6 +4201,18 @@
   "matchedTitle": "The Pious Caliphs",
   "matchedAuthor": "Majid Ali Khan"
  },
+ "554": {
+  "paragraphs": [
+   "Jamal Badawi asks, as rationally as possible, whether Muhammad was a true prophet. He looks at the main objections critics have raised and how they have changed over time."
+  ],
+  "source": "IslamicBook.ws (copy of the essay)",
+  "url": "https://islamicbook.ws/english/english-089.pdf",
+  "matchedTitle": "Muhammad's Prophethood: An Analytical View",
+  "matchedAuthor": "Dr. Gamal A. Badawi",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "555": {
   "paragraphs": [
    "Amazing book with spirituality and presence of mind with the beautiful islamic perspective and solution in today's world"
@@ -3153,6 +4221,18 @@
   "url": "https://books.google.com/books?id=V3rCjgEACAAJ",
   "matchedTitle": "War, Peace and Non-Violence - An Islamic Perspective",
   "matchedAuthor": "Imam Muhammad Shirazi - XKP"
+ },
+ "556": {
+  "paragraphs": [
+   "A short reference book from the Islamic Propagation Organization on countries with large Muslim populations: their geography, people, history, economy and culture."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/profiles-of-islamic-countries",
+  "matchedTitle": "Profiles of Islamic Countries",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
  },
  "557": {
   "paragraphs": [
@@ -3183,6 +4263,18 @@
   "url": "https://books.google.com/books?id=QCLoPgAACAAJ",
   "matchedTitle": "The Palestine Diary: Britain's Involvement, 1914-1945",
   "matchedAuthor": "Robert John Hadawi"
+ },
+ "562": {
+  "paragraphs": [
+   "Masih Muhajeri on the ideas behind the Islamic Revolution in Iran: independence, justice and resistance to foreign control, presented as a model for other nations."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/islamic-revolution-future-path-of-the-nations",
+  "matchedTitle": "Islamic Revolution, Future Path of the Nations",
+  "matchedAuthor": "Masih Muhajeri",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
  },
  "565": {
   "paragraphs": [
@@ -3316,6 +4408,18 @@
   "matchedTitle": "Man and Faith",
   "matchedAuthor": "Ayatullah Murtada Mutahhari - XKP"
  },
+ "584": {
+  "paragraphs": [
+   "Muhammad Baqir al-Sadr on the Islamic political system: where authority comes from in an Islamic government, ijtihad (scholarly reasoning where no clear text exists), how politics and religion relate, and the role of the Imams in rebuilding Islamic society."
+  ],
+  "source": "Al-Khoei Islamic Store (bookseller listing, seen in search results)",
+  "url": "https://shop.al-khoei.org/products/islamic-political-system",
+  "matchedTitle": "Introduction to Islamic Political System",
+  "matchedAuthor": "Ayatullah Baqir al-Sadr",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "585": {
   "paragraphs": [
    "A collection of short sayings and pieces of advice by Imam Khomeini on many subjects, edited by Mansoor Limba and published by the official Institute for the Compilation and Publication of Imam Khomeini's Works."
@@ -3385,6 +4489,18 @@
   "matchedTitle": "Western Civilization Through Muslim Eyes",
   "matchedAuthor": "Sayyid Mujtaba Musawi Lari"
  },
+ "598": {
+  "paragraphs": [
+   "A history of the Prophet Muhammad's life by the Al-Balagh Foundation, in two parts: his life before prophethood, the first call to Islam, the hardships in Mecca and the migration; then the community in Medina, his military policy, the conquest of Mecca, the Farewell Hajj, the pledge at Ghadir and his last will."
+  ],
+  "source": "Shiavault (contents of the Al-Balagh edition)",
+  "url": "https://www.shiavault.com/books/muhammad-the-messenger-of-allah/",
+  "matchedTitle": "Muhammad The Messenger Of Allah PT 1,2",
+  "matchedAuthor": "Al Balagh Foundation",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "599": {
   "paragraphs": [
    "Kalim Siddiqui's last book, finished shortly before his death in 1996. Looking beyond the events in Iran, he studies the Islamic Revolution as something that, like a scientific process, can be repeated elsewhere, and traces its stages starting with an 'intellectual revolution' in the Muslim world."
@@ -3394,6 +4510,18 @@
   "matchedTitle": "Stages of Islamic Revolution",
   "matchedAuthor": "Kalim Siddiqui",
   "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "602": {
+  "paragraphs": [
+   "A collection of 560 hadith, forty from each of the Fourteen Infallibles (the Prophet, Lady Fatima and the twelve Imams), touching many sides of human life and today's problems. Compiled by Muhammad Muhammadi Ishtihardi and translated by Javed Iqbal Qazilbash."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/node/38971",
+  "matchedTitle": "Fascinating Discourses of the Fourteen Infallibles (A.S)",
+  "matchedAuthor": "",
+  "confidence": "medium",
   "paraphrased": true,
   "origin": "web"
  },
@@ -3408,13 +4536,13 @@
  },
  "605": {
   "paragraphs": [
-   "A biography of the Prophet Muhammad that aims to give a clear and positive account of his life and message."
+   "A clear account of the life, personality and mission of the Prophet Muhammad and his message, by Abdul Hameed Siddiqui."
   ],
-  "source": "Sound Vision (book listing)",
-  "url": "https://www.soundvision.com/node/2770",
+  "source": "Open Library",
+  "url": "https://openlibrary.org/works/OL6205866W",
   "matchedTitle": "The Life Of Muhammad",
   "matchedAuthor": "Abdul Hameed Siddiqui",
-  "confidence": "medium",
+  "confidence": "high",
   "paraphrased": true,
   "origin": "web"
  },
@@ -3472,6 +4600,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "613": {
+  "paragraphs": [
+   "A leaflet that briefly introduces the life of Ayatullah Khomeini and lists his writings and the collections of his speeches."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/biography-and-bibliography-of-the-founder-of-iran-imam-khomeini",
+  "matchedTitle": "Biography and Bibliography of the Founder of Islamic Republic of Iran Imam Khomeini",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "615": {
   "paragraphs": [
    "A biography of the North African historian Ibn Khaldun by the Egyptian historian Mohammad Abdullah Enan. The first part tells the story of his life, including his political troubles; the second explains the ideas about society that Ibn Khaldun set out in his work."
@@ -3520,6 +4660,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "620": {
+  "paragraphs": [
+   "A biography of Ayatullah Husayn Borujerdi, the leading Shia religious authority of his time (d. 1961), with stories from his life that show his character and conduct."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/ayatullah-al-boroojerdi-great-leader-abbas-al-abeeri",
+  "matchedTitle": "Ayatullah Al-Boroojerdi The Great Leader",
+  "matchedAuthor": "Abbas Al-'Abeeri",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "627": {
   "paragraphs": [
    "A short book by Ayatullah Vahid Khorasani, one of the leading teachers and maraji' of the Qum seminary, that looks at new sides of the life of Lady Fatima in a concise way."
@@ -3532,6 +4684,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "629": {
+  "paragraphs": [
+   "Short biographies of the tenth and eleventh Imams, ʿAli al-Naqi and Hasan al-ʿAskari: their upbringing, virtues and teaching, and the pressures they faced under Abbasid rule."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/biographies-of-imam-ali-bin-muhammad-al-naqi-and-imam-hasan-bin-ali-al-askari",
+  "matchedTitle": "Biographies of Imam Ali bin Muhammad al Naqi, Imam Hasan bin ali Al Askari",
+  "matchedAuthor": "Shamim Abbas Jessa, Hadi Husayn Sayyid",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "630": {
   "paragraphs": [
    "A short biography of Lady Fatimah, the daughter of the Prophet Muhammad, written for children aged about eight and up."
@@ -3541,6 +4705,18 @@
   "matchedTitle": "Fatimah Daughter of Muhammad",
   "matchedAuthor": "Azieza Hamid",
   "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "631": {
+  "paragraphs": [
+   "A short study of the seventh Imam, Musa al-Kadhim, by the Al-Balagh Foundation: his life, his school and learning, the political and social conditions of his time and his dealings with the caliph Harun al-Rashid."
+  ],
+  "source": "Shiavault (contents of the Al-Balagh edition)",
+  "url": "https://www.shiavault.com/books/imam-al-kadhim-a-s/",
+  "matchedTitle": "Ahlul Bait, Imam Al-Kadhim",
+  "matchedAuthor": "",
+  "confidence": "medium",
   "paraphrased": true,
   "origin": "web"
  },
@@ -3589,6 +4765,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "643": {
+  "paragraphs": [
+   "Ayatullah Ibrahim Amini's illustrated series of lessons for children aged about 4 to 15. In simple language it covers the prophets and Imams, God's creation, basic beliefs and good conduct."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/the-childrens-book-on-islam-book-three",
+  "matchedTitle": "The Children's Book on Islam",
+  "matchedAuthor": "Ayatullah Ibrahim Amini",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "645": {
   "paragraphs": [
    "A standard anthology of the essential writings of Karl Marx and Friedrich Engels, chosen as an introduction to Marxist thought and arranged to show how their ideas developed over time and by theme. Edited by Robert C. Tucker of Princeton University."
@@ -3597,6 +4785,30 @@
   "url": "https://wwnorton.co.uk/books/9780393090406-the-marx-engels-reader",
   "matchedTitle": "The Marx-Engels Reader second edition",
   "matchedAuthor": "Robert C. Tucker",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "646": {
+  "paragraphs": [
+   "Muhammad Abdul-Rauf's course for adult English speakers learning Arabic: 34 lessons with exercises and appendices, from beginner to advanced grammar."
+  ],
+  "source": "Jarir Bookstore USA (bookseller)",
+  "url": "https://jarirbooksusa.com/71066.html",
+  "matchedTitle": "Arabic for english speaking students",
+  "matchedAuthor": "Muhammad Abdul-Rauf, PH.D.",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "647": {
+  "paragraphs": [
+   "A small cookbook from Prevention Health Books (Rodale) with 38 recipes using herbs, from starters to desserts."
+  ],
+  "source": "PaperbackSwap (book listing)",
+  "url": "https://www.paperbackswap.com/Recipes-Herbal-Kitchen-Prevention-Health-Books/book/61437/",
+  "matchedTitle": "Recipes from the Herbal Kitchen",
+  "matchedAuthor": "Prevention Health Books",
   "confidence": "high",
   "paraphrased": true,
   "origin": "web"
@@ -3714,6 +4926,18 @@
   "url": "https://books.google.com/books?id=UWK6AAAACAAJ",
   "matchedTitle": "The Journey of the Self: A Sufi Guide to Personality",
   "matchedAuthor": "Fadhlalla Haeri"
+ },
+ "663": {
+  "paragraphs": [
+   "Ayatullah Morteza Mutahhari's introduction to the Islamic world view: how Islam sees God, humanity and the world. It is part of a series he wrote in 1978."
+  ],
+  "source": "Library catalogue (Yogyakarta)",
+  "url": "https://search-jogjalib.jogjaprov.go.id/Record/uinsukalib-076713/Description",
+  "matchedTitle": "An Introduction to the Islamic World View",
+  "matchedAuthor": "Ayatullah Murtaza Mutahheri",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
  },
  "664": {
   "paragraphs": [
@@ -3879,6 +5103,18 @@
   "matchedTitle": "Al-Kafi",
   "matchedAuthor": "Ash-Shaykh Abu Jafar Muhammad ibn Ya'Qub ibn Is'Haq Al-Kulayni Ar-Razi",
   "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "686": {
+  "paragraphs": [
+   "A guidebook answering the questions women have about the Hajj and Umrah pilgrimages, according to the rulings of Ayatullah Sistani, with explanations of the meaning behind the rituals. Compiled by Razia Batool Najafi."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/guidebook-women-rites-hajj-razia-batool-najafi",
+  "matchedTitle": "A Guidebook For Women on Rites of Hajj",
+  "matchedAuthor": "Ayatollah Ali Al-Husayni Al-Seestani",
+  "confidence": "high",
   "paraphrased": true,
   "origin": "web"
  },
@@ -4056,6 +5292,42 @@
   "matchedTitle": "The Gospel of Barnabas: The Biography of Jesus Christ, as Recounted in New Testament Apocrypha (Hardcover)",
   "matchedAuthor": "Lonsdale Ragg, Laura Ragg"
  },
+ "722": {
+  "paragraphs": [
+   "Ahmad von Denffer's collection of Muslim statements on Christian-Muslim dialogue."
+  ],
+  "source": "Google Books",
+  "url": "https://books.google.com/books?id=u0Y5AAAACAAJ",
+  "matchedTitle": "Some Reflections on dialogue between Christians and Muslims",
+  "matchedAuthor": "Ahmad Von Denffer",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "724": {
+  "paragraphs": [
+   "A reflective study, by the author Zakir, of the spiritual meaning of weeping for and remembering Imam Husayn. Using hadith, devotional writings and accounts of Ashura, it explains how sincere mourning renews faith and loyalty to the Ahl al-Bayt and keeps the message of Karbala alive."
+  ],
+  "source": "Islamic Sources (book page)",
+  "url": "https://islamic-sources.com/en/books/tears-and-tributes",
+  "matchedTitle": "Tears & Tributes",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "725": {
+  "paragraphs": [
+   "Masih Muhajeri on the ideas behind the Islamic Revolution in Iran: independence, justice and resistance to foreign control, presented as a model for other nations."
+  ],
+  "source": "Islamic-Sources.com",
+  "url": "https://islamic-sources.com/books/islamic-revolution-future-path-of-the-nations",
+  "matchedTitle": "Islamic Revolution Future Path of the Nations",
+  "matchedAuthor": "Masih Muhajeri",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "726": {
   "paragraphs": [
    "Works include: - Jihad in Islam - Understanding the Qur'an - The Religion of Truth - Islam and Ignorance - On Education - Towards Understanding Islam - The Process of Islamic Revolution - Biography of the Last Prophet"
@@ -4086,6 +5358,18 @@
   "matchedTitle": "Globalisation or Recolonisation?",
   "matchedAuthor": "Ali Mohammadi, Muhammad Absan",
   "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "735": {
+  "paragraphs": [
+   "Talks by Dr Muhammad Ibrahim Ayati on Imam Husayn's uprising: its causes, why it succeeded, jihad and martyrdom, and the role of the sermon and pulpit in keeping its message alive."
+  ],
+  "source": "Shiavault (book contents)",
+  "url": "https://www.shiavault.com/books/lectures-on-ashura/",
+  "matchedTitle": "Lectures on Ashura",
+  "matchedAuthor": "",
+  "confidence": "medium",
   "paraphrased": true,
   "origin": "web"
  },
@@ -4173,6 +5457,18 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "746": {
+  "paragraphs": [
+   "The English translation of Ayatullah Sistani's manual of Islamic rulings (Tawdih al-Masa'il), published by the World Federation of KSI Muslim Communities. The first edition (1994) was translated by Mulla Asgharali M. M. Jaffer."
+  ],
+  "source": "The World Federation of KSIMC",
+  "url": "https://archive.world-federation.org/news/book-review-islamic-laws",
+  "matchedTitle": "Islamic Laws, English Version of Taudhihul Masae'l",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "754": {
   "paragraphs": [
    "Explains in a clear language the special rules Muslim women must follow during their menstrual cycles and at other times to achieve ritual purity. It has as its strengths, a systematic layout that helps to chart the sometimes complicated territory that these rules have come to form. The copious use of examples and scenarios greatly helps to make the laws and rules accessible and understandable. Hence, this book goes a long way in filling the large vacuum and need that exists for practical guidance on this subject."
@@ -4223,6 +5519,18 @@
   "url": "https://blackwells.co.uk/bookshop/product/Kawthar-Volume-Two-An-Anthology-of-the-Speeches-of-Imam-Khomeini-r-Including-an-Account-of-the-Events-of-the-Revolution-1962-1978-by-Khomeini-Ruhollah/9780359393473",
   "matchedTitle": "Kauthar - Volume three",
   "matchedAuthor": "Imam Khomeini",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "761": {
+  "paragraphs": [
+   "An Al-Balagh Foundation booklet analysing how Islam deals with the economy: its concern for people's livelihood, common misunderstandings, the nature of the economic problem, and the general rules Islam sets for sharing out wealth."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/economic-distribution-islam",
+  "matchedTitle": "12 Economic Distribution In Islam",
+  "matchedAuthor": "",
   "confidence": "high",
   "paraphrased": true,
   "origin": "web"
@@ -4285,6 +5593,18 @@
   "matchedTitle": "MUSIC and ITS EFFECTS",
   "matchedAuthor": "AHMEd H. AHMEd H. SHERIFF"
  },
+ "770": {
+  "paragraphs": [
+   "Ayatullah Murtada Mutahhari's study of hijab: what the word means, the psychological, family and social reasons for it, the Qur'anic command to lower the gaze, and what the traditions and religious rulings say."
+  ],
+  "source": "Shiavault (book contents)",
+  "url": "https://www.shiavault.com/books/hijab-islamic-veil/",
+  "matchedTitle": "Hijab, Islamic Veil",
+  "matchedAuthor": "",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "772": {
   "paragraphs": [
    "Ayatullah Mutahhari sets out the rights of women in Islam, focusing on marriage. Topics include proposal and engagement, temporary marriage, dowry, inheritance, divorce and polygyny, as well as how men and women differ and how this relates to modern ideas."
@@ -4321,6 +5641,30 @@
   "paraphrased": true,
   "origin": "web"
  },
+ "775": {
+  "paragraphs": [
+   "Muhammad Mahdi al-Naraqi's classic work on Islamic ethics (Jamiʿ al-Saʿadat): the meaning of akhlaq, the moral virtues and vices, and how to treat the diseases of the soul."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/jami-al-saadat-collector-felicities-muhammad-mahdi-naraqi",
+  "matchedTitle": "A Textbook of Ethics",
+  "matchedAuthor": "Muhammad Mahdi ibn Abi Zarr al-Naraqi",
+  "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "777": {
+  "paragraphs": [
+   "Ayatullah Dastghaib Shirazi explains istiʿadha, seeking God's protection from Satan, through five aspects: piety, remembrance of God, acceptance of His will, sincerity, and humility in prayer."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/istiadha-seeking-allahs-protection-satan-ayatullah-sayyid-abdul-husayn-dastghaib-shirazi",
+  "matchedTitle": "Iste-aaza",
+  "matchedAuthor": "Shaheed E. Mehrab Ayatollah, Syed Abdul Hussain Dastghaib Shirazi",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
  "778": {
   "paragraphs": [
    "Jami' al-Sa'adat by Muhammad Mahdi al-Naraqi (d. 1795) is one of the best-known and most complete books on Islamic ethics. It explains the virtues to be gained and the vices to be avoided in building good character."
@@ -4350,6 +5694,18 @@
   "url": "https://books.google.com/books?id=X3VCtAEACAAJ",
   "matchedTitle": "Self-Recognition for Self-Improvement",
   "matchedAuthor": "Ayatullah Muhammad Taqi Misbah Yazdi"
+ },
+ "781": {
+  "paragraphs": [
+   "Ayatullah Morteza Mutahhari gathers the Qur'an's verses about human beings. He shows how high people can rise, even above the angels, and how low they can fall, below animals, and how their own free will decides which way they go."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/human-being-holy-quran-murtadha-mutahhari",
+  "matchedTitle": "The Human Being in the Qoran",
+  "matchedAuthor": "Ayatullah Morteza Mutahhari",
+  "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
  },
  "783": {
   "paragraphs": [
@@ -4393,6 +5749,18 @@
   "matchedTitle": "Introduction to the Quran",
   "matchedAuthor": "S. Maudoodi",
   "confidence": "medium",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "787": {
+  "paragraphs": [
+   "A selection of verses of the Qur'an arranged by subject, on God and His creation, the Prophet and his family, parents, human nature, the hereafter, charity, marriage and other parts of daily life. Compiled by Hasnain Sachedina."
+  ],
+  "source": "Al-Islam.org",
+  "url": "https://al-islam.org/excerpts-from-the-holy-quran-an-eternal-guidance-to-mankind",
+  "matchedTitle": "Excerpts from the Holy Quran- An Eternal Guidance to Mankind",
+  "matchedAuthor": "Hasnain Suchedina",
+  "confidence": "high",
   "paraphrased": true,
   "origin": "web"
  },
@@ -4471,6 +5839,18 @@
   "matchedTitle": "The Lantern of the Path",
   "matchedAuthor": "Imam Ja'far Al-Sadiq",
   "confidence": "high",
+  "paraphrased": true,
+  "origin": "web"
+ },
+ "802": {
+  "paragraphs": [
+   "Hadith qudsi, sayings of the Prophet in which he reports God's words, taken from Sayyid Hasan Shirazi's collection Kalimat Allah and translated by S.M. Zaki Baqri."
+  ],
+  "source": "Hadith.net",
+  "url": "https://hadith.net/en/post/27977/what-is-the-holy-saying-hadith-qudsi/",
+  "matchedTitle": "Al-Hadith Al-Qudsi A Word of Allah",
+  "matchedAuthor": "Hassan Shirazi",
+  "confidence": "medium",
   "paraphrased": true,
   "origin": "web"
  },
