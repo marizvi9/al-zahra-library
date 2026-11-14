@@ -42,6 +42,14 @@ const STAR_X = BLOCK_X + BLOCK_W + STAR_SPACE + STAR_R; // the two stars, one ab
 const W = STAR_X + STAR_R + 10;
 const stars = [H / 2 - STAR_R - STAR_GAP / 2, H / 2 + STAR_R + STAR_GAP / 2].map((y) => starPoints(STAR_X, y, STAR_R));
 
+// The traced "A" of ISLAMIC came out leaning, with a crossbar too thin to see; draw it with the "A" of
+// LIBRARY instead (same lettering), keeping its own place in the word.
+const LETTERS_FIXED = (() => {
+  const goodA = LIBRARY.filter((l) => l.ch === "A").at(-1)!;
+  const firstA = LIBRARY.findIndex((l) => l.ch === "A");
+  return LIBRARY.map((l, i) => (i === firstA ? { ...goodA, dx: l.dx } : l));
+})();
+
 export default function FooterLogo({ className = "" }: { className?: string }) {
   const flowerY = H / 2 - 4 * 217.5;
   return (
@@ -64,7 +72,7 @@ export default function FooterLogo({ className = "" }: { className?: string }) {
       <path fill={LETTERS} fillRule="evenodd" d={ZAHRA.d} transform={`translate(${BLOCK_X - ZAHRA.minx} ${zTop - ZAHRA.miny})`} />
 
       {/* ISLAMIC LIBRARY: the emblem's letters, straight */}
-      {LIBRARY.map((l, i) => (
+      {LETTERS_FIXED.map((l, i) => (
         <path
           key={i}
           fill={LETTERS}

@@ -13,6 +13,7 @@ import Credit from "@/components/Credit";
 import { photoFor } from "@/lib/authorPhotos";
 import {
   authorOf,
+  coverPhotoFor,
   books,
   booksInSubCategory,
   copiesText,
@@ -50,15 +51,25 @@ export default async function BookPage({ params }: Props) {
   const [lead, more] = splitDescription(description?.paragraphs ?? []);
   const bookSet = setOfBook(book.id);
   const sources: SourceItem[] = [];
-  if (description)
+  if (description) {
+    const from = description.url ? (
+      <a href={description.url} target="_blank" rel="noopener noreferrer">
+        {description.source}
+      </a>
+    ) : (
+      description.source
+    );
     sources.push({
       label: "Description",
-      content: (
-        <a href={description.url} target="_blank" rel="noopener noreferrer">
-          {description.source}
-        </a>
+      content: description.paraphrased ? (
+        <>summary by the library, based on {from}</>
+      ) : description.edited ? (
+        <>{from} (grammar lightly corrected)</>
+      ) : (
+        from
       ),
     });
+  }
   if (cover)
     sources.push({
       label: "Cover",
@@ -90,9 +101,10 @@ export default async function BookPage({ params }: Props) {
         <CoverGallery
           slug={book.slug}
           title={book.title}
-          author={book.author}
+          author={creditLine(book)}
           seed={bookSet?.slug}
           images={cover?.images ?? []}
+          photo={coverPhotoFor(book)}
         />
 
         <div className="book-detail-body">

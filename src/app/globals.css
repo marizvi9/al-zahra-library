@@ -3611,3 +3611,94 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
 .disclaimer-address { white-space: nowrap; }
 .address-link { text-underline-offset: 3px; }
 .shelf-address, .set-head-address { margin-top: 10px; }
+
+/* Review page for web covers and descriptions (/review/) */
+.review-list { list-style: none; padding: 0; margin: 16px 0; display: grid; gap: 12px; }
+.review-item { display: flex; gap: 16px; padding: 14px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+.review-item.is-flagged { border-left: 4px solid #b3261e; }
+.review-cover { flex: none; width: 72px; line-height: 0; }
+.review-cover img, .review-cover .generated-cover { width: 100%; height: auto; border-radius: 2px 4px 4px 2px; }
+.review-text p { margin: 0 0 6px; }
+.review-title { font-weight: 600; }
+.review-flag { color: #b3261e; font-weight: 600; }
+
+/* "Show all … authors" sits in the section heading row (in place of the old "All … authors" link). */
+.section-head .all-authors {
+  margin-top: 0;
+  border-top: 0;
+  padding-top: 0;
+}
+
+/* ---------- Book of the Month (home banner + its own page) ---------- */
+.botm { margin-bottom: 28px; }
+.botm-card {
+  display: grid;
+  grid-template-columns: minmax(110px, 170px) 1fr;
+  gap: 22px;
+  align-items: center;
+  padding: 20px;
+  border-radius: var(--radius);
+  background: var(--navy-deep);
+  color: var(--card);
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--gold);
+}
+.botm-card:hover { color: var(--card); }
+.botm-card:hover .botm-more { text-decoration: underline; color: var(--gold-light); }
+.botm-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.botm-cover { width: 100%; height: auto; border-radius: 4px; box-shadow: 0 6px 18px rgb(0 0 0 / 0.35); }
+.botm-text { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.botm-label {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin: 0;
+}
+.botm-title { font-family: var(--font-head); font-weight: 800; font-size: clamp(1.35rem, 3vw, 1.9rem); line-height: 1.2; }
+.botm-author { font-family: var(--font-head); font-size: 1.05rem; opacity: 0.92; }
+.botm-blurb { line-height: 1.5; opacity: 0.9; max-width: 60ch; }
+.botm-note { font-family: var(--font-ui); font-size: 0.85rem; color: var(--gold-light); }
+.botm-more { font-family: var(--font-ui); font-weight: 700; color: var(--gold-light); }
+@media (max-width: 560px) {
+  .botm-card { grid-template-columns: 96px 1fr; gap: 14px; padding: 14px; }
+  .botm-blurb { display: none; }
+}
+
+.botm-page-grid { display: grid; grid-template-columns: minmax(180px, 320px) 1fr; gap: 36px; align-items: start; margin-top: 12px; }
+.botm-page-cover img { width: 100%; height: auto; border-radius: 6px; box-shadow: var(--shadow); }
+.botm-page .botm-label { color: var(--gold-text); }
+.botm-page h1 { margin: 6px 0 4px; }
+.botm-page-author { font-size: 1.1rem; margin: 0 0 16px; }
+.botm-facts { display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; margin: 0 0 18px; font-size: 0.95rem; }
+.botm-facts dt { font-family: var(--font-ui); font-weight: 600; color: var(--muted); }
+.botm-facts dd { margin: 0; }
+.botm-desc { line-height: 1.65; max-width: 65ch; }
+.botm-read { margin: 22px 0; padding: 16px 18px; border-left: 4px solid var(--gold); background: var(--cream-deep); border-radius: 4px; }
+.botm-read p { margin: 0 0 12px; }
+.botm-button {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--navy-deep);
+  color: var(--card);
+  font-family: var(--font-ui);
+  font-weight: 700;
+  text-decoration: none;
+}
+.botm-button:hover { background: var(--navy); }
+.botm-button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+@media (max-width: 700px) {
+  .botm-page-grid { grid-template-columns: 1fr; gap: 20px; }
+  .botm-page-cover { max-width: 240px; }
+}
+
+/* Authors page: search box that filters the A–Z list */
+.author-filter { margin: 18px 0 8px; max-width: 520px; }
+.author-filter-label { display: block; font-family: var(--font-ui); font-weight: 600; margin-bottom: 6px; }
+.author-filter .search-box { display: flex; gap: 8px; }
+.author-filter-count { min-height: 1.4em; margin: 6px 0 0; }
+.author-letter[hidden], .author-list li[hidden], .letter-jump[hidden] { display: none; }

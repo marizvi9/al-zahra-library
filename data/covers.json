@@ -4267,6 +4267,25 @@
    }
   ]
  },
+ "764": {
+  "source": "Google Books",
+  "sourceUrl": "https://books.google.com/books?id=uu8RDAAAQBAJ",
+  "matchedTitle": "The Prolegomena to the Qur'an",
+  "matchedAuthor": "Ayatullah Sayyid Abu Al-Qasim Al-Musawi Al-Khu'i",
+  "images": [
+   {
+    "src": "/covers/764-web.webp",
+    "width": 488,
+    "height": 780,
+    "thumb": "/covers/764-web-thumb.webp",
+    "large": "/covers/764-web-lg.webp",
+    "largeWidth": 800,
+    "largeHeight": 1280
+   }
+  ],
+  "confidence": "high",
+  "origin": "web"
+ },
  "767": {
   "source": "Google Books",
   "sourceUrl": "http://books.google.com/books?id=ClKsk_j7FPEC&dq=intitle:%22Music+and+its+Effects%22&hl=&as_pt=BOOKS&source=gbs_api",

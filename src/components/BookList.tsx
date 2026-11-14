@@ -2,7 +2,7 @@ import { ViewTransition } from "react";
 import Link from "next/link";
 import SetLabel from "./SetLabel";
 import type { SetRef } from "@/lib/setIndex";
-import ArchCover from "./ArchCover";
+import ArchCover, { type CoverPhoto } from "./ArchCover";
 import Credit from "./Credit";
 import type { CreditPart } from "@/lib/catalog";
 
@@ -17,6 +17,8 @@ export type BookListItem = {
   thumb?: string;
   available?: boolean;
   set?: SetRef;
+  /** Author photo for the drawn cover, when the book has no cover image. */
+  coverPhoto?: CoverPhoto;
 };
 
 // Each row is a card: the title is the link to the book, stretched (with CSS) to cover the
@@ -43,7 +45,7 @@ export default function BookList({
                 {b.thumb ? (
                   <img src={b.thumb} alt="" loading="lazy" decoding="async" />
                 ) : (
-                  <ArchCover title={b.title} author={b.credit} seed={b.set?.slug ?? b.slug} size="small" />
+                  <ArchCover title={b.title} author={b.credit} seed={b.set?.slug ?? b.slug} size="small" photo={b.coverPhoto} />
                 )}
               </span>
             </ViewTransition>

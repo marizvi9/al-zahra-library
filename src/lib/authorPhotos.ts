@@ -20,7 +20,7 @@ export type AuthorPhoto = {
   license: string;
   licenseUrl: string | null;
   wikipediaUrl?: string;
-  /** "WikiShia" for photos from WikiShia's media library; otherwise Wikimedia Commons. */
+  /** Where a hand-added photo came from ("WikiShia", or a site such as "khamenei.ir"); empty = Wikimedia Commons. */
   photoSource?: string;
   /**
    * Where the head is (centre, in percent from the left and top) and how close to zoom. Zoom 1 = the photo's
@@ -34,7 +34,7 @@ export type AuthorPhoto = {
 export { circleLayout, frameStyle } from "./photoLayout";
 
 /** Where a photo came from, for its credit line. */
-export const photoVia = (p: Pick<AuthorPhoto, "photoSource">) => (p.photoSource === "WikiShia" ? "WikiShia" : "Wikimedia Commons");
+export const photoVia = (p: Pick<AuthorPhoto, "photoSource">) => p.photoSource || "Wikimedia Commons";
 
 /** ", via Wikimedia Commons" — left out when the creator already names the site (WikiShia photos). */
 export const viaSuffix = (p: Pick<AuthorPhoto, "photoSource" | "creator">) => (p.creator === photoVia(p) ? "" : `, via ${photoVia(p)}`);
@@ -47,6 +47,11 @@ type Entry = Partial<AuthorPhoto> & {
   bio?: string | null;
   bioStatus?: "WikiShia" | "other source" | "from our data only" | "needs review";
   bioSources?: string[];
+  /** A title shown before the name on the site (only "Ayatullah" for now). The Google Sheet is never changed. */
+  title?: string;
+  /** The person's full name, when the catalogue only has a short form ("Ayatullah Gulpaygani"). Shown on the
+   *  site instead of the catalogue name; the page address and the Google Sheet keep the catalogue name. */
+  fullName?: string;
 };
 const file = data as unknown as { neverPhoto: string[]; authors: Record<string, Entry> };
 
@@ -96,4 +101,23 @@ export function initials(name: string) {
   const first = words[0].replace(/^(al|as|at|an|ar|ash)-/i, "");
   const last = words[words.length - 1].replace(/^(al|as|at|an|ar|ash)-/i, "");
   return (words.length === 1 ? first[0] : first[0] + last[0]).toUpperCase();
+}
+
+// Honorifics at the start of a catalogue name that the shown title replaces ("Ayatollah X" -> "Ayatullah X").
+const LEADING_TITLE = /^(?:(?:grand|al-uzma)\s+)?(?:ayat(?:u|o)llah?|ayt\.?|imam)(?:\s+al-uzma)?\s+/i;
+
+/** The name as shown on the site: with its title ("Ayatullah ...") when the author has one in authors.json.
+ *  Page addresses and the Google Sheet keep the plain name. */
+export function displayName(name: string): string {
+  const e = file.authors[name];
+  const base = e?.fullName ?? name;
+  if (!e?.title || name === "Imam Khomeini") return base;
+  return `${e.title} ${base.replace(LEADING_TITLE, "")}`;
+}
+export const hasTitle = (name: string) => !!file.authors[name]?.title && name !== "Imam Khomeini";
+
+/** The name without its title, for the A–Z list ("Ayatullah Jawadi Amuli" -> "Jawadi Amuli"). */
+export function plainName(name: string): string {
+  const base = file.authors[name]?.fullName ?? name;
+  return hasTitle(name) ? base.replace(LEADING_TITLE, "") : base;
 }

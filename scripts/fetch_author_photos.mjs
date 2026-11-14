@@ -9,7 +9,7 @@
 //     ("wikipedia": article title). Nothing is searched for by name.
 //   - Only the article's main image is used, only if Wikipedia marks it as free, and only
 //     if it is hosted on Wikimedia Commons with a free licence (public domain, CC0, CC BY,
-//     CC BY-SA). Anything else is skipped, with the reason written to the file.
+//     CC BY-SA, UK OGL, Commons "Attribution"). Anything else is skipped, with the reason written to the file.
 //   - A small 240px-wide copy is saved in public/authors/ (for lists and cards), and a large copy
 //     of up to 640px wide in public/authors/large/ (for the portrait on the author's own page),
 //     never enlarged beyond the original. The original's size is recorded, so low-resolution
@@ -30,7 +30,8 @@ const LARGE = 640;
 const LOW_RES = 480;
 const OUT_DIR = "public/authors";
 const UA = "AlZahraLibraryCatalog/1.0 (static catalogue site; build script)";
-const FREE = /^(cc0|cc[ -]by(-sa)?[ -][\d.]+|public domain|pd\b|pd-)/i;
+// Also the UK Open Government Licence and Commons' plain "Attribution": free reuse with credit, like CC BY.
+const FREE = /^(cc0|cc[ -]by(-sa)?[ -][\d.]+|public domain|pd\b|pd-|ogl\b|attribution$)/i;
 const refresh = process.argv.includes("--refresh");
 
 const slugify = (s) =>
@@ -188,8 +189,8 @@ await fs.mkdir(OUT_DIR, { recursive: true });
 
 await fs.mkdir(path.join(OUT_DIR, "large"), { recursive: true });
 const todo = Object.entries(data.authors).filter(
-  // Photos taken from WikiShia ("photoSource": "WikiShia", added by hand) are never replaced here.
-  ([name, e]) => !never.has(name) && e.wikipedia && e.photoSource !== "WikiShia" && (refresh || (!e.photo && !e.skipped)),
+  // Photos added by hand (any "photoSource", e.g. WikiShia or khamenei.ir) are never replaced here.
+  ([name, e]) => !never.has(name) && e.wikipedia && !e.photoSource && (refresh || (!e.photo && !e.skipped)),
 );
 const results = await lookupAll([...new Set(todo.map(([, e]) => e.wikipedia))]);
 

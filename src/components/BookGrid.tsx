@@ -29,7 +29,7 @@ export default function BookGrid({ items, showCategory = false, paged = true }: 
                 {b.cover ? (
                   <img src={b.cover.src} alt="" width={b.cover.width} height={b.cover.height} loading="lazy" decoding="async" />
                 ) : (
-                  <ArchCover title={b.title} author={b.credit} seed={b.set?.slug ?? b.slug} size="large" />
+                  <ArchCover title={b.title} author={b.credit} seed={b.set?.slug ?? b.slug} size="large" photo={b.coverPhoto} />
                 )}
               </span>
               <span className="big-book-text">

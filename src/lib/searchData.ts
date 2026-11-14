@@ -13,9 +13,10 @@ export function authorRecords(): AuthorRecord[] {
     const p = photoFor(a.name);
     return {
       slug: a.slug,
-      name: a.name,
+      name: a.display,
       count: a.count,
-      spellings: (groups[a.name] ?? []).filter((s) => s !== a.name),
+      // the plain name stays searchable when the shown name has a title ("Ayatullah ...")
+      spellings: [...new Set([a.name, ...(groups[a.name] ?? [])])].filter((s) => s !== a.display),
       initials: initials(a.name),
       photo: p
         ? { src: p.photo, title: `Photo: ${p.creator.length > 60 ? p.creator.slice(0, 57).trimEnd() + "…" : p.creator}, ${p.license}${viaSuffix(p)}`, focus: p.focus, originalWidth: p.originalWidth, originalHeight: p.originalHeight }

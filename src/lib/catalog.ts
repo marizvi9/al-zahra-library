@@ -8,6 +8,8 @@ import subTopicTexts from "@data/subtopic-descriptions.json";
 import { setRefFor } from "./setIndex";
 import { categoryDescriptions, DISPLAY_NAMES, FEATURED_CATEGORIES, MORE_TO_EXPLORE } from "./categoryInfo";
 import { withBase } from "./paths";
+import { displayName, hasTitle, photoFor } from "./authorPhotos";
+import type { CoverPhoto } from "@/components/ArchCover";
 
 export type Book = {
   id: number;
@@ -185,7 +187,7 @@ const isPersonCredit = (s: string) => /^(compiled|prepared|translated|edited|com
  * Author if known → otherwise the publisher → otherwise "Unknown".
  */
 export function creditLine(b: Pick<Book, "author" | "publisher">): string {
-  if (b.author) return b.author;
+  if (b.author) return shownCredit(b.author);
   if (b.publisher) return isPersonCredit(b.publisher) ? b.publisher : `Published by ${b.publisher}`;
   return "Unknown";
 }
@@ -194,6 +196,15 @@ export function creditLine(b: Pick<Book, "author" | "publisher">): string {
 export const publisherLabel = (publisher: string) => (isPersonCredit(publisher) ? "Credit" : "Publisher");
 
 export const copiesText = (copies: number) => (copies === 1 ? "1 copy" : `${copies} copies`);
+
+/** The author photo for a book's drawn cover: only when the book has one author and that author has a
+ *  usable photo (holy figures never; see lib/authorPhotos). Otherwise the plain drawn cover is used. */
+export function coverPhotoFor(b: Book): CoverPhoto | undefined {
+  const a = authorOf(b);
+  const p = a ? photoFor(a.name) : null;
+  if (!p) return undefined;
+  return { src: withBase(p.photoLarge ?? p.photo), focus: p.focus, originalWidth: p.originalWidth, originalHeight: p.originalHeight };
+}
 
 /** The small set of fields a book needs to appear in a list. */
 export const toListItem = (b: Book) => ({
@@ -208,6 +219,7 @@ export const toListItem = (b: Book) => ({
   thumb: getThumb(b.id)?.thumb,
   available: b.available,
   set: setRefFor(b.id),
+  coverPhoto: getThumb(b.id) ? undefined : coverPhotoFor(b),
 });
 
 /** What a book card in the big Explore grid needs: a sharper cover and a short description. */
@@ -365,14 +377,25 @@ export function allShelfSections(): (ShelfSection & { tile: { number: string | n
 
 export type Description = {
   paragraphs: string[];
-  source: string; // "Google Books" or "Open Library"
-  url: string;
-  matchedTitle: string;
-  matchedAuthor: string;
+  source: string; // "Google Books", "Open Library", "Al-Islam.org" …
+  url?: string; // empty when the librarian wrote the description in the Google Sheet with no source
+  matchedTitle?: string;
+  matchedAuthor?: string;
+  /** True when the source had no usable blurb, so the text is the library's own summary of it. */
+  paraphrased?: boolean;
+  /** Set when the source's own wording was kept but spelling, grammar or punctuation was corrected. */
+  edited?: string;
+  confidence?: "high" | "medium" | "low";
+  origin?: "web" | "sheet"; // "sheet": edited in the librarian's Google Sheet (scripts/sync_sheet.mjs)
+  /** "Needs Review" = yes in the Google Sheet: kept, but not shown until someone clears it. */
+  hidden?: boolean;
 };
 
 const descriptions = rawDescriptions as Record<string, Description>;
-export const getDescription = (id: number): Description | undefined => descriptions[String(id)];
+export const getDescription = (id: number): Description | undefined => {
+  const d = descriptions[String(id)];
+  return d && !d.hidden ? d : undefined;
+};
 
 /** The start of a description, cut at a sentence or word, for small spaces like the slider. */
 export function shortDescription(d: Description, maxChars = 300): string {
@@ -390,7 +413,7 @@ export function shortDescription(d: Description, maxChars = 300): string {
 // /authors/<slug>/. A cell naming several people ("A & B", "A, B and C",
 // "X Translated by: Y") is split so each person gets their own link and page.
 
-export type Author = { name: string; slug: string; count: number; books: Book[] };
+export type Author = { name: string; display: string; slug: string; count: number; books: Book[] };
 /** A piece of a credit line: plain text (", ", "Compiled by: ") or a linked author name. */
 export type CreditPart = { text: string; slug?: string };
 
@@ -477,7 +500,7 @@ export const authors: Author[] = (() => {
     }
   }
   const list = [...groups.entries()]
-    .map(([name, books]) => ({ name, slug: slugify(name), count: books.length, books: books.sort(byTitle) }))
+    .map(([name, books]) => ({ name, display: displayName(name), slug: slugify(name), count: books.length, books: books.sort(byTitle) }))
     .sort((a, b) => collator.compare(surname(a.name), surname(b.name)) || collator.compare(a.name, b.name));
   const seen = new Map<string, string>();
   for (const a of list) {
@@ -501,11 +524,22 @@ export function authorsByLetter(): Map<string, Author[]> {
 const bySlug = new Map(authors.map((a) => [a.slug, a]));
 const byName = new Map(authors.map((a) => [a.name, a]));
 export const getAuthor = (slug: string) => bySlug.get(slug);
+export const getAuthorByName = (name: string) => byName.get(name);
 
 /** A book's credit line in pieces, with each author linked (a publisher shown instead is not linked). */
 export function creditParts(b: Pick<Book, "author" | "publisher">): CreditPart[] {
   if (!b.author) return [{ text: creditLine(b) }];
-  return splitCredit(b.author).map((p) => (p.name && byName.has(p.name) ? { text: p.text, slug: byName.get(p.name)!.slug } : { text: p.text }));
+  return splitCredit(b.author).map((p) => {
+    const text = p.name && hasTitle(p.name) ? displayName(p.name) : p.text;
+    return p.name && byName.has(p.name) ? { text, slug: byName.get(p.name)!.slug } : { text };
+  });
+}
+
+/** A credit line as shown on the site: authors with a title (e.g. Ayatullah) are written with it. */
+function shownCredit(author: string): string {
+  return splitCredit(author)
+    .map((p) => (p.name && hasTitle(p.name) ? displayName(p.name) : p.text))
+    .join("");
 }
 
 /** The author page for this book's author, when the book has exactly one author. */

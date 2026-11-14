@@ -21,7 +21,7 @@ export type HomeSection = {
   type: "author" | "theme";
   heading: string;
   intro: string;
-  author?: { name: string; slug: string; count: number };
+  author?: { name: string; display: string; slug: string; count: number };
   books: ShelfBook[];
 };
 
@@ -38,7 +38,7 @@ export const homeSections: HomeSection[] = (config.sections as Raw[]).map((s) =>
   if (s.type === "author") {
     const a = getAuthor(slugifyName(s.author ?? "")) ?? authors.find((x) => x.name === s.author);
     if (!a) fail(`no author page for "${s.author}" (use the name as shown on the site)`);
-    author = { name: a!.name, slug: a!.slug, count: a!.count };
+    author = { name: a!.name, display: a!.display, slug: a!.slug, count: a!.count };
   } else if (!s.heading) fail("a theme section needs a heading");
 
   const list = s.books.map((id) => {
@@ -65,7 +65,7 @@ export const homeSections: HomeSection[] = (config.sections as Raw[]).map((s) =>
     id: s.id,
     placement: s.placement as HomeSection["placement"],
     type: s.type as HomeSection["type"],
-    heading: s.type === "author" ? author!.name : s.heading!,
+    heading: s.type === "author" ? author!.display : s.heading!,
     intro:
       s.type === "author"
         ? `${author!.count} of ${author!.name.split(" ").pop()}'s books are in our library. Here are a few to start with.`
@@ -76,7 +76,7 @@ export const homeSections: HomeSection[] = (config.sections as Raw[]).map((s) =>
 });
 
 // ---------- Featured Authors (large portraits) ----------
-export type FeaturedAuthor = { name: string; slug: string; count: number };
+export type FeaturedAuthor = { name: string; display: string; slug: string; count: number };
 
 const fa = (config as { featuredAuthors?: { heading: string; intro?: string; authors: string[] } }).featuredAuthors;
 if (fa && fa.authors.length > 6) throw new Error("data/home-featured-sections.json: please keep featuredAuthors to 6 names at most.");
@@ -89,7 +89,7 @@ export const featuredAuthors = fa
         const name = authorName(raw);
         const a = authors.find((x) => x.name === name) ?? getAuthor(slugifyName(raw));
         if (!a) throw new Error(`data/home-featured-sections.json, featuredAuthors: no author page for "${raw}" (use a spelling from the catalogue)`);
-        return { name: a.name, slug: a.slug, count: a.count };
+        return { name: a.name, display: a.display, slug: a.slug, count: a.count };
       }),
     }
   : null;

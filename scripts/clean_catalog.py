@@ -10,12 +10,15 @@ The private/ folder and the original CSV are kept off GitHub (see .gitignore).
 
 Run it again any time the spreadsheet is updated:
     python3 scripts/clean_catalog.py
+or, to read the librarian's Google Sheet instead of the CSV:
+    npm run sync-sheet          (see scripts/sync_sheet.mjs)
 """
 
 import csv
 import io
 import json
 import re
+import sys
 import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -43,6 +46,13 @@ CANONICAL_CATEGORIES = [
     "Duas, Ziyarat & Amaal", "Ethics",
 ]
 
+# Category names in the sheet that mean an existing category. "History & Major Islamic Events" was typed
+# for five Imam Hussein books that the old catalogue had under History (Life of the Imams); they are shown
+# under History until the librarian confirms. Their shelf numbers are not filled in (the sheet says "Not Found").
+CATEGORY_RENAMES = {
+    "History & Major Islamic Events": "History",
+}
+
 # Sub-categories that are clearly the same thing written differently.
 SUBCATEGORY_MERGES = {
     "Ahl-Bayt & Imams": "Ahl al-Bayt & Imams",
@@ -52,6 +62,26 @@ SUBCATEGORY_MERGES = {
     "Modern And Contemporary period": "Modern & Contemporary Period",
     "miscellaneous": "Miscellaneous",
 }
+
+def name_key(value: str) -> str:
+    """A loose key for category names, so spellings that only differ in capitals, accents,
+    "&" vs "and", hyphens/spaces or a plural "s" count as the same name.
+    e.g. "Usul-al-din" = "Usul al-Din", "Stories & Reflection" = "Stories & Reflections"."""
+    value = unicodedata.normalize("NFKD", value)
+    value = "".join(c for c in value if not unicodedata.combining(c)).lower().replace("&", " and ")
+    words = re.findall(r"[a-z0-9]+", value)
+    return "".join(w[:-1] if len(w) > 3 and w.endswith("s") else w for w in words)
+
+
+def choose_spellings(names: list[str], preferred: list[str]) -> dict[str, str]:
+    """For each loose key, pick one spelling: a preferred (known) one if it matches, otherwise
+    the spelling used most often in the spreadsheet."""
+    chosen = {name_key(p): p for p in preferred}
+    counts = Counter(n for n in names if n)
+    for name, _ in counts.most_common():
+        chosen.setdefault(name_key(name), name)
+    return chosen
+
 
 # The French and Italian books (all had no category in the spreadsheet).
 # Each language is its own category. Keys are the titles exactly as typed in the
@@ -140,16 +170,37 @@ def slugify(text: str) -> str:
     return text[:60].rstrip("-") or "book"
 
 
-def main() -> None:
+def read_source() -> tuple[str, list[str], list[tuple[int, int, list[str]]]]:
+    """Return (source name, header, [(book id, spreadsheet row, 11 cells)]).
+
+    Normally reads the CSV. With  --sheet FILE  it reads the copy of the librarian's Google Sheet
+    that scripts/sync_sheet.mjs saved (private/sheet/catalog.json), where every book has a fixed
+    Website ID, so book links stay the same even if rows are moved or added in the sheet.
+    """
+    if "--sheet" in sys.argv:
+        path = Path(sys.argv[sys.argv.index("--sheet") + 1])
+        sheet = json.loads(path.read_text(encoding="utf-8"))
+        return (f"Google Sheet “{sheet['title']}” (tab “{sheet['tab']}”), read {sheet['readAt']}",
+                sheet["header"], [(r["id"], r["sheetRow"], r["cells"]) for r in sheet["rows"]])
     # The file is Windows-1252 ("cp1252"), not UTF-8. Read bytes, decode properly.
     raw_text = SOURCE.read_bytes().decode("cp1252")
     rows = list(csv.reader(io.StringIO(raw_text)))
-    header, data = rows[0], rows[1:]
+    return (f"`{SOURCE.name}` (read-only, Windows-1252 encoding, converted to UTF-8)",
+            (rows[0] + [""] * 11)[:11], [(i, i + 1, r) for i, r in enumerate(rows[1:], start=1)])
+
+
+def main() -> None:
+    source_name, header, data = read_source()
 
     log = defaultdict(list)      # change type -> list of descriptions
     whitespace_cells = 0
     books = []
-    canonical_lookup = {c.lower(): c for c in CANONICAL_CATEGORIES}
+    clean = lambda v: re.sub(r"\s+", " ", v).strip()
+    cat_spelling = choose_spellings([clean((r + [""] * 6)[4]) for _, _, r in data], CANONICAL_CATEGORIES)
+    sub_spelling = choose_spellings(
+        [SUBCATEGORY_MERGES.get(clean((r + [""] * 6)[5]), clean((r + [""] * 6)[5])) for _, _, r in data],
+        list(SUBCATEGORY_MERGES.values()),
+    )
 
     def tidy(value: str, row_no: int, field: str) -> str:
         nonlocal whitespace_cells
@@ -162,8 +213,7 @@ def main() -> None:
                 log["lost_letters"].append(f"Row {row_no} ({field}): “{bad}” → “{good}”")
         return cleaned
 
-    for index, r in enumerate(data, start=1):
-        row_no = index + 1  # spreadsheet row number (row 1 is the header)
+    for index, row_no, r in data:  # index = the book's fixed id; row_no = its spreadsheet row
         r = (r + [""] * 11)[:11]
         title, author, publisher, copies, cat, sub, cat_no, sub_no, book_no, comment, comment2 = (
             tidy(v, row_no, header[i] or "extra") for i, v in enumerate(r)
@@ -191,7 +241,8 @@ def main() -> None:
 
         # --- category ---
         if cat:
-            fixed = canonical_lookup.get(cat.lower(), cat)
+            fixed = cat_spelling.get(name_key(cat), cat)
+            fixed = next((v for k, v in CATEGORY_RENAMES.items() if name_key(k) == name_key(fixed)), fixed)
             if fixed != r[4]:
                 log["category"].append(f"Row {row_no}: “{r[4]}” → “{fixed}”")
             cat = fixed
@@ -208,11 +259,14 @@ def main() -> None:
             sub = SUBCATEGORY_MERGES[sub]
         elif sub != r[5] and sub:
             pass  # only whitespace / lost-letter changes, already counted
+        if sub and sub_spelling.get(name_key(sub), sub) != sub:
+            log["subcategory"].append(f"Row {row_no}: “{sub}” → “{sub_spelling[name_key(sub)]}”")
+            sub = sub_spelling[name_key(sub)]
         if not sub:
             sub = NO_SUBCATEGORY
             log["no_subcategory"].append(row_no)
 
-        # --- call number (Book # is empty in the whole file) ---
+        # --- call number (Book # was empty in the old CSV; the Google Sheet has it) ---
         cat_digits = cat_no if cat_no.isdigit() else None
         sub_digits = sub_no if sub_no.isdigit() else None
         call_number = " · ".join(p for p in (cat_digits, sub_digits, book_no or None) if p) or None
@@ -287,7 +341,7 @@ def main() -> None:
     lines = [
         "# Catalogue cleaning report",
         "",
-        f"Source: `{SOURCE.name}` (read-only, Windows-1252 encoding, converted to UTF-8).",
+        f"Source: {source_name}.",
         f"Books in spreadsheet: **{len(books)}** · shown on the website: **{len(shown)}** "
         f"· hidden (removed): **{len(books) - len(shown)}**",
         f"Cells with extra/double spaces tidied: **{whitespace_cells}**",

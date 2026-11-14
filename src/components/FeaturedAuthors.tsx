@@ -42,7 +42,7 @@ export default function FeaturedAuthors({ heading, intro, authors }: { heading: 
               </span>
               <Link href={`/authors/${a.slug}/`} className="portrait-name card-link" dir="auto">
                 {/* Keep hyphenated words together ("al-Sadr") when the name wraps. */}
-                {a.name.split(" ").map((w, i) => (
+                {a.display.split(" ").map((w, i) => (
                   <span key={i}>
                     {i > 0 && " "}
                     {w.includes("-") ? <span className="nowrap">{w}</span> : w}
