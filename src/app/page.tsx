@@ -12,6 +12,7 @@ import { featuredAuthors, homeSections } from "@/lib/homeSections";
 import FeaturedAuthors from "@/components/FeaturedAuthors";
 import FeaturedShelf from "@/components/FeaturedShelf";
 import AuthorAvatar from "@/components/AuthorAvatar";
+import { IecLink } from "@/components/LibraryLinks";
 import {
   authors,
   books,
@@ -20,7 +21,6 @@ import {
   moreToExplore,
   shelves,
   topAuthors,
-  authorsByLetter,
   type Book,
 } from "@/lib/catalog";
 
@@ -47,7 +47,9 @@ export default function HomePage() {
               <h1 id="hero-title">
                 Welcome to the <span className="nowrap">Al-Zahra</span> Islamic Library
               </h1>
-              <p className="hero-sub">at the Islamic Education Center of Houston</p>
+              <p className="hero-sub">
+                at the <IecLink />
+              </p>
               <Ornament className="hero-ornament" />
               <p className="hero-lede">
                 Peace be upon you! Explore {books.length} books on faith, history, law, thought and more.
@@ -100,7 +102,7 @@ export default function HomePage() {
       {featuredAuthors && <FeaturedAuthors {...featuredAuthors} />}
 
       {/* Every author in the library. The authors with the most books come first as cards
-          (featured authors included, so they show here as well as above), then the full A–Z list. */}
+          (featured authors included, so they show here as well as above), then a button to the Authors page (the full A–Z list). */}
       <section className="container section" aria-labelledby="authors-title">
         <div className="section-head">
           <h2 id="authors-title">Authors in our collection</h2>
@@ -125,24 +127,11 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
-        <details className="all-authors">
-          <summary>Show all {authors.length} authors, A to Z</summary>
-          {[...authorsByLetter()].map(([letter, list]) => (
-            <div key={letter} className="all-authors-letter">
-              <h3>{letter}</h3>
-              <ul>
-                {list.map((a) => (
-                  <li key={a.slug}>
-                    <Link href={`/authors/${a.slug}/`} dir="auto">
-                      {a.name}
-                    </Link>{" "}
-                    <span className="all-authors-count">({a.count})</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </details>
+        <p className="all-authors-link">
+          <Link href="/authors/" className="button-secondary">
+            Show all {authors.length} authors A to Z <span aria-hidden="true">→</span>
+          </Link>
+        </p>
       </section>
 
       {homeSections

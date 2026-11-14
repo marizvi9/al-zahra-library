@@ -3598,3 +3598,14 @@ a.pager-btn:hover { border-color: var(--navy); background: var(--navy-soft); }
 a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 .pager-btn.is-disabled { opacity: 0.45; }
 .arch-band > p { margin-inline: auto; }
+
+/* Home: the button to the full A–Z author list (on the Authors page) */
+.all-authors-link { margin: 20px 0 0; text-align: center; }
+.all-authors-link .button-secondary { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding-inline: 22px; text-decoration: none; }
+/* Links to the IEC website and the library's address */
+.footer-name .iec-link { color: inherit; text-decoration: underline; text-decoration-color: var(--gold-light); text-underline-offset: 3px; }
+.footer-name .iec-link:hover { color: var(--gold-light); }
+.hero-sub .iec-link { color: inherit; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; }
+.disclaimer-address { white-space: nowrap; }
+.address-link { text-underline-offset: 3px; }
+.shelf-address, .set-head-address { margin-top: 10px; }
