@@ -53,7 +53,14 @@ export default async function BookPage({ params }: Props) {
   if (description)
     sources.push({
       label: "Description",
-      content: (
+      content: description.paraphrased ? (
+        <>
+          summary by the library, based on{" "}
+          <a href={description.url} target="_blank" rel="noopener noreferrer">
+            {description.source}
+          </a>
+        </>
+      ) : (
         <a href={description.url} target="_blank" rel="noopener noreferrer">
           {description.source}
         </a>

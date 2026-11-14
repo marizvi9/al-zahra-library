@@ -3611,3 +3611,13 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
 .disclaimer-address { white-space: nowrap; }
 .address-link { text-underline-offset: 3px; }
 .shelf-address, .set-head-address { margin-top: 10px; }
+
+/* Review page for web covers and descriptions (/review/) */
+.review-list { list-style: none; padding: 0; margin: 16px 0; display: grid; gap: 12px; }
+.review-item { display: flex; gap: 16px; padding: 14px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+.review-item.is-flagged { border-left: 4px solid #b3261e; }
+.review-cover { flex: none; width: 72px; line-height: 0; }
+.review-cover img, .review-cover .generated-cover { width: 100%; height: auto; border-radius: 2px 4px 4px 2px; }
+.review-text p { margin: 0 0 6px; }
+.review-title { font-weight: 600; }
+.review-flag { color: #b3261e; font-weight: 600; }

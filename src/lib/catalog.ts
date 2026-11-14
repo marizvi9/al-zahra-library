@@ -365,10 +365,14 @@ export function allShelfSections(): (ShelfSection & { tile: { number: string | n
 
 export type Description = {
   paragraphs: string[];
-  source: string; // "Google Books" or "Open Library"
+  source: string; // "Google Books", "Open Library", "Al-Islam.org" …
   url: string;
   matchedTitle: string;
   matchedAuthor: string;
+  /** From data/web-finds.json: written in our own words from the source (see scripts/apply_web_finds.mjs). */
+  paraphrased?: boolean;
+  confidence?: "high" | "medium" | "low";
+  origin?: "web";
 };
 
 const descriptions = rawDescriptions as Record<string, Description>;
