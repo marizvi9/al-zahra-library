@@ -127,11 +127,12 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
-        <p className="all-authors-link">
-          <Link href="/authors/" className="button-secondary">
-            Show all {authors.length} authors A to Z <span aria-hidden="true">→</span>
+        {/* Looks like the old fold-out line, but goes to the Authors page. */}
+        <div className="all-authors">
+          <Link href="/authors/" className="all-authors-summary">
+            <span className="all-authors-marker" aria-hidden="true">▸</span> Show all {authors.length} authors, A to Z
           </Link>
-        </p>
+        </div>
       </section>
 
       {homeSections
