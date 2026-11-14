@@ -4096,6 +4096,309 @@
       },
       "note": "Based on his 1976 essay 'On the Nature of Islamic Da'wah'; the library's booklet (19 pages) is probably the same text.",
       "needsReview": false
+    },
+    "124": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Ayatullah Mutahhari examines the fact that the Prophet never went to school or was taught to read and write, discussing the meaning of the word 'ummi', the Prophet's scribes, the treaty of Hudaybiyya, and the question of his literacy."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/unschooled-prophet-ayatullah-murtadha-mutahhari",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "348": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A collection of lectures given on many occasions by Ayatullah Beheshti, a close helper of Imam Khomeini in the Iranian revolution, on subjects such as Islamic unity, Islamic politics and Islamic life. Translated by Majid Nekoodas."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/lectures-martyred-ayatollah-beheshti-sayyid-muhammad-husayni-beheshti",
+        "confidence": "high"
+      },
+      "note": "Islamic Propagation Organization, 1986.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "803": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Explains true ethics through the example of the Fourteen Infallibles: their wisdom, chastity, courage and justice, and how these showed in their knowledge, worship, patience, humility and forgiveness, told through real events and debates from their lives. Translated by Sayyid Athar Husayn Rizvi."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/9238",
+        "confidence": "high"
+      },
+      "note": "Ansariyan Publications.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "369": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Ayatullah Mutahhari's study of Nahj al-Balagha, the collection of Imam ʿAli's sermons, letters and sayings. It looks at the book's literary beauty and range, its ideas about God and the world compared with those of Muslim theologians and philosophers, and its teachings on worship, government and social justice, and ethics."
+        ],
+        "source": "Al-Islam.org (Al-Tawhid journal)",
+        "url": "https://al-islam.org/al-tawhid/general-al-tawhid/selection-glimpses-nahj-al-balaghah-mutahhari/introduction",
+        "confidence": "medium"
+      },
+      "note": "al-islam.org has a selection from the book; the full book also has a section on the caliphate and the Ahl al-Bayt.",
+      "needsReview": false
+    },
+    "8": {
+      "searched": [
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A well-known biography of the Prophet by the British scholar Martin Lings, built on the earliest Arabic biographies (sira) of the 8th and 9th centuries, with his own English translations of many key passages. It is praised for its readable, dignified style and was named the best English biography of the Prophet at the National Seerat Conference in Islamabad in 1983."
+        ],
+        "source": "Islamic Texts Society (publisher)",
+        "url": "https://its.org.uk/catalogue/muhammad-his-life-based-on-the-earliest-sources/",
+        "confidence": "high"
+      },
+      "needsReview": false
+    },
+    "350": {
+      "searched": [
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Maulana Wahiduddin Khan compares the place of women in Islam and in Western society. He argues that men and women are equal in rights and reward but have different roles, favouring a division of work between the sexes, and that Muslim society's problems come from not living by its principles while the West's come from principles that clash with reality."
+        ],
+        "source": "CPS International (publisher's full text)",
+        "url": "https://cpsglobal.org/sites/default/files/2025-04/Woman-Between-Islam-and-Western-Society.pdf",
+        "confidence": "high"
+      },
+      "needsReview": false
+    },
+    "155": {
+      "searched": [
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Short biographies of all the wives of the Prophet: their sacrifices, the hardships they went through, and their religious work. An English version of the author's Urdu book 'Ummat-e-Muslima ki Maayen'."
+        ],
+        "source": "Idara Isha'at-e-Diniyat (publisher)",
+        "url": "https://idara.com/?p=1018",
+        "confidence": "medium"
+      },
+      "needsReview": false
+    },
+    "92": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Listed on al-islam.org (Ansariyan, 2008) but no description of the contents was found.",
+      "needsReview": false
+    },
+    "254": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "685": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "389": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "215": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "347": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "588": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "591": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "328": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Only an Apple Books listing with no description; nothing about the contents.",
+      "needsReview": false
+    },
+    "671": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "733": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "580": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Nahj al-Balagha is the collection of sermons, letters and sayings of Imam ʿAli gathered by al-Sharif al-Radi in the late 4th century AH, chosen for their eloquence. This English edition, 'Peak of Eloquence', was translated by Sayed Ali Reza with an introduction by Sayed Mohammed Askari Jafery."
+        ],
+        "source": "WikiShia",
+        "url": "https://en.wikishia.net/view/List_of_the_English_Translations_of_Nahj_al-balagha",
+        "confidence": "medium"
+      },
+      "note": "Tahrike Tarsile Qur'an, New York.",
+      "needsReview": false
+    },
+    "679": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "William C. Chittick's English translation of al-Sahifa al-Sajjadiyya, the collection of supplications and intimate prayers of Imam ʿAli ibn al-Husayn Zayn al-ʿAbidin, the fourth Imam, with an introduction and notes."
+        ],
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Sahifa_al-Sajjadiyya",
+        "confidence": "medium"
+      },
+      "needsReview": false
+    },
+    "199": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Only library records (Islamic Publications, Lahore; 41 pages); nothing about the contents.",
+      "needsReview": false
+    },
+    "808": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "106": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "189": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "154": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "641": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "48": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "625": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "98": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "753": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
     }
   }
 }
