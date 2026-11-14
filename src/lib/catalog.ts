@@ -366,17 +366,22 @@ export function allShelfSections(): (ShelfSection & { tile: { number: string | n
 export type Description = {
   paragraphs: string[];
   source: string; // "Google Books", "Open Library", "Al-Islam.org" …
-  url: string;
-  matchedTitle: string;
-  matchedAuthor: string;
+  url?: string; // empty when the librarian wrote the description in the Google Sheet with no source
+  matchedTitle?: string;
+  matchedAuthor?: string;
   /** From data/web-finds.json: written in our own words from the source (see scripts/apply_web_finds.mjs). */
   paraphrased?: boolean;
   confidence?: "high" | "medium" | "low";
-  origin?: "web";
+  origin?: "web" | "sheet"; // "sheet": edited in the librarian's Google Sheet (scripts/sync_sheet.mjs)
+  /** "Needs Review" = yes in the Google Sheet: kept, but not shown until someone clears it. */
+  hidden?: boolean;
 };
 
 const descriptions = rawDescriptions as Record<string, Description>;
-export const getDescription = (id: number): Description | undefined => descriptions[String(id)];
+export const getDescription = (id: number): Description | undefined => {
+  const d = descriptions[String(id)];
+  return d && !d.hidden ? d : undefined;
+};
 
 /** The start of a description, cut at a sentence or word, for small spaces like the slider. */
 export function shortDescription(d: Description, maxChars = 300): string {

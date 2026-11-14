@@ -50,22 +50,19 @@ export default async function BookPage({ params }: Props) {
   const [lead, more] = splitDescription(description?.paragraphs ?? []);
   const bookSet = setOfBook(book.id);
   const sources: SourceItem[] = [];
-  if (description)
+  if (description) {
+    const from = description.url ? (
+      <a href={description.url} target="_blank" rel="noopener noreferrer">
+        {description.source}
+      </a>
+    ) : (
+      description.source
+    );
     sources.push({
       label: "Description",
-      content: description.paraphrased ? (
-        <>
-          summary by the library, based on{" "}
-          <a href={description.url} target="_blank" rel="noopener noreferrer">
-            {description.source}
-          </a>
-        </>
-      ) : (
-        <a href={description.url} target="_blank" rel="noopener noreferrer">
-          {description.source}
-        </a>
-      ),
+      content: description.paraphrased ? <>summary by the library, based on {from}</> : from,
     });
+  }
   if (cover)
     sources.push({
       label: "Cover",
