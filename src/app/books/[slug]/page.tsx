@@ -60,7 +60,13 @@ export default async function BookPage({ params }: Props) {
     );
     sources.push({
       label: "Description",
-      content: description.paraphrased ? <>summary by the library, based on {from}</> : from,
+      content: description.paraphrased ? (
+        <>summary by the library, based on {from}</>
+      ) : description.edited ? (
+        <>{from} (grammar lightly corrected)</>
+      ) : (
+        from
+      ),
     });
   }
   if (cover)

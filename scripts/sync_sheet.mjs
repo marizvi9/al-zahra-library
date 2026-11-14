@@ -170,14 +170,17 @@ async function main() {
   const covers = readJson("data/covers.json");
   const finds = existsSync(join(ROOT, "data/web-finds.json")) ? readJson("data/web-finds.json").books : {};
   const WRITTEN_FILE = join(SHEET_DIR, "written.json");
-  const written = existsSync(WRITTEN_FILE) ? JSON.parse(readFileSync(WRITTEN_FILE, "utf8")) : {}; // { websiteId: { column: value, _pink: bool } }
+  const written = existsSync(WRITTEN_FILE) ? JSON.parse(readFileSync(WRITTEN_FILE, "utf8")) : {}; // { websiteId: { column: value, _pink: { field: original colour } } }
   const descText = (d) => (d?.paragraphs ?? []).join("\n\n");
   const parseSource = (s) => {
     const url = (s.match(/https?:\/\/\S+/) ?? [""])[0];
-    const label = s.replace(url, "").replace(/[\s—–-]+$/, "").trim();
+    const label = s.replace(url, "").replace(/^Summary based on\s+/i, "").replace(/\s*\(grammar lightly corrected\)/i, "").replace(/[\s—–-]+$/, "").trim();
     return { url, label: label || (url ? new URL(url).hostname.replace(/^www\./, "") : "") };
   };
   const ours = (key, name) => written[key]?.[name];
+  // How the Description Source box reads: says whether the text is the source's own words or our summary.
+  const srcText = (source, url, paraphrased, edited) =>
+    `${paraphrased && url ? "Summary based on " : ""}${source ?? ""}${!paraphrased && edited ? " (grammar lightly corrected)" : ""}${url ? ` — ${url}` : ""}`;
   const isYes = (v) => /^\s*yes\b/i.test(String(v ?? ""));
   let edited = 0, hidden = 0, confirmed = 0;
   for (const r of dataRows) {
@@ -258,8 +261,10 @@ async function main() {
   };
 
   const today = readAt.slice(0, 10);
-  const pinkRows = [];
-  const unpinkRows = [];
+  // Pink marks only the box that is unsure (e.g. the Description cell, or the Author cell), nothing else.
+  const fieldCol = (f) => ({ Title: core[0], Author: core[1], Publisher: core[2] })[f] ?? newCol[f];
+  const pinkCells = []; // {row, key, col, field}
+  const unpinkCells = [];
   const wanted = (r) => {
     const key = String(r.id);
     const b = bookById.get(r.id);
@@ -276,14 +281,14 @@ async function main() {
       "Cover URL": img?.src ? `${SITE}${img.large ?? img.src}` : "",
       Description: shown ? descText(shown) : draft ? (draft.description?.text ?? []).join("\n\n") : "",
       "Cover Source": img && c.sourceUrl ? `${c.source} — ${c.sourceUrl}` : "",
-      "Description Source": shown ? (shown.url ? `${shown.source} — ${shown.url}` : shown.source ?? "") : draft?.description ? `${draft.description.source} — ${draft.description.url}` : "",
+      "Description Source": shown ? srcText(shown.source, shown.url, shown.paraphrased, shown.edited) : draft?.description ? srcText(draft.description.source, draft.description.url, !draft.description.quoted, draft.description.edited) : "",
       "Author Photo URL": p ? `${SITE}${p.photo}` : "",
       "Photo Credit": p ? `${p.creator}, ${p.license} — ${p.source}` : "",
       Confidence: draft ? "NOT CONFIRMED" : conf,
       "Needs Review": draft
         ? `Yes: NOT shown on the website and NOT confirmed. A librarian needs to check: ${draft.toConfirm ?? "that this information matches the book"} (To confirm, check the book, correct anything in this row, then clear this cell.)`
         : "",
-      _pink: Boolean(draft),
+      _pink: draft ? draft.unsureFields ?? ["Description"] : [],
     };
   };
   for (const r of dataRows) {
@@ -307,17 +312,19 @@ async function main() {
         rowWrites.push({ col: newCol["Last Updated"], row: r.sheetRow, value: today, key, name: "Last Updated" });
     }
     writes.push(...rowWrites);
-    if (w._pink && !written[key]?._pink) pinkRows.push({ row: r.sheetRow, key });
-    if (!w._pink && written[key]?._pink) unpinkRows.push({ row: r.sheetRow, key });
+    const was = written[key]?._pink ?? {}; // { field: original background colour or null }
+    for (const f of w._pink) if (!(f in was) && fieldCol(f) >= 0) pinkCells.push({ row: r.sheetRow, key, col: fieldCol(f), field: f });
+    for (const f of Object.keys(was)) if (!w._pink.includes(f)) unpinkCells.push({ row: r.sheetRow, key, col: fieldCol(f), field: f, restore: was[f] });
   }
 
   const perCol = Object.fromEntries(NEW_COLUMNS.map((n) => [n, writes.filter((w) => w.col === newCol[n]).length]));
   console.log(`\n${DRY_RUN ? "DRY RUN: nothing will be written." : "Writing to the sheet."}`);
-  console.log(`  Matching rows by Website ID (column ${colLetter(newCol["Website ID"])}). Columns A–${colLetter(firstProgramCol - 1)} are not touched.`);
+  console.log(`  Matching rows by Website ID (column ${colLetter(newCol["Website ID"])}). No text in columns A–${colLetter(firstProgramCol - 1)} is changed.`);
   for (const h of headerWrites) console.log(`  New column ${colLetter(h.col)}: "${h.value}"`);
   for (const n of NEW_COLUMNS) console.log(`  ${n.padEnd(19)} column ${colLetter(newCol[n])}: ${perCol[n]} cells to fill`);
-  console.log(`  Rows to highlight pink (information NOT confirmed, NOT shown on the website): ${pinkRows.length}${pinkRows.length ? " → sheet rows " + pinkRows.map((p) => p.row).join(", ") : ""}`);
-  if (unpinkRows.length) console.log(`  Rows to clear pink (now confirmed): ${unpinkRows.map((p) => p.row).join(", ")}`);
+  console.log(`  Boxes to highlight pink (unsure, NOT shown on the website): ${pinkCells.length}${pinkCells.length ? " → " + pinkCells.map((p) => `${colLetter(p.col)}${p.row} (${p.field})`).join(", ") : ""}`);
+  console.log("  (Only the colour of those boxes changes; no text in the librarian's columns is changed.)");
+  if (unpinkCells.length) console.log(`  Boxes to clear pink (now confirmed): ${unpinkCells.map((p) => `${colLetter(p.col)}${p.row}`).join(", ")}`);
   const rowsTouched = new Set(writes.map((w) => w.row));
   console.log(`  Rows that get at least one new cell: ${rowsTouched.size}`);
   const sample = (row) => {
@@ -327,11 +334,11 @@ async function main() {
     for (const w of ws) console.log(`      ${colLetter(w.col)}${w.row} ${w.name}: ${String(w.value).replace(/\s+/g, " ").slice(0, 150)}`);
   };
   console.log("  Examples:");
-  const exampleRows = [...new Set([...writes.filter((w) => w.name === "Author Photo URL").slice(0, 1), ...writes.filter((w) => w.name === "Cover URL").slice(0, 1)].map((w) => w.row)), ...pinkRows.slice(0, 2).map((p) => p.row)];
+  const exampleRows = [...new Set([...writes.filter((w) => w.name === "Author Photo URL").slice(0, 1), ...writes.filter((w) => w.name === "Cover URL").slice(0, 1)].map((w) => w.row)), ...[...new Set(pinkCells.map((p) => p.row))].slice(0, 2)];
   for (const row of exampleRows) sample(row);
   const all = [...headerWrites, ...writes];
-  if (DRY_RUN || (all.length === 0 && !pinkRows.length && !unpinkRows.length)) {
-    console.log(all.length || pinkRows.length ? "Run again without --dry-run to write these." : "Nothing to fill in.");
+  if (DRY_RUN || (all.length === 0 && !pinkCells.length && !unpinkCells.length)) {
+    console.log(all.length || pinkCells.length ? "Run again without --dry-run to write these." : "Nothing to fill in.");
     return;
   }
 
@@ -352,23 +359,29 @@ async function main() {
     for (const w of all.slice(i, i + 500)) if (w.key) (written[w.key] ??= {})[w.name] = w.value;
     writeFileSync(WRITTEN_FILE, JSON.stringify(written, null, 1));
   }
-  // Pink highlight on the program's own cells only (never on the librarian's columns).
-  const colour = (rows, rgb) =>
-    rows.map((p) => ({
+  // Pink on the unsure boxes only. Before colouring, remember each box's own colour so it can be put back
+  // exactly as it was once a librarian confirms the information.
+  if (pinkCells.length || unpinkCells.length) {
+    const before = {};
+    if (pinkCells.length) {
+      const ranges = pinkCells.map((p) => `ranges=${encodeURIComponent(`${q()}!${colLetter(p.col)}${p.row}`)}`).join("&");
+      const g = await sheetsApi(token, `?${ranges}&fields=sheets.data.rowData.values.userEnteredFormat.backgroundColor`);
+      (g.sheets?.[0]?.data ?? []).forEach((d, i) => (before[i] = d.rowData?.[0]?.values?.[0]?.userEnteredFormat?.backgroundColor ?? null));
+    }
+    const box = (p, rgb) => ({
       repeatCell: {
-        range: { sheetId: props.sheetId, startRowIndex: p.row - 1, endRowIndex: p.row, startColumnIndex: firstProgramCol, endColumnIndex: lastProgramCol + 1 },
-        cell: { userEnteredFormat: { backgroundColor: rgb } },
+        range: { sheetId: props.sheetId, startRowIndex: p.row - 1, endRowIndex: p.row, startColumnIndex: p.col, endColumnIndex: p.col + 1 },
+        cell: { userEnteredFormat: rgb ? { backgroundColor: rgb } : {} },
         fields: "userEnteredFormat.backgroundColor",
       },
-    }));
-  const requests = [...colour(pinkRows, { red: 0.98, green: 0.8, blue: 0.87 }), ...colour(unpinkRows, { red: 1, green: 1, blue: 1 })];
-  if (requests.length) {
+    });
+    const requests = [...pinkCells.map((p) => box(p, { red: 0.98, green: 0.8, blue: 0.87 })), ...unpinkCells.map((p) => box(p, p.restore))];
     await sheetsApi(token, ":batchUpdate", { method: "POST", body: JSON.stringify({ requests }) });
-    for (const p of pinkRows) (written[p.key] ??= {})._pink = true;
-    for (const p of unpinkRows) delete written[p.key]._pink;
+    pinkCells.forEach((p, i) => (((written[p.key] ??= {})._pink ??= {})[p.field] = before[i] ?? null));
+    for (const p of unpinkCells) delete written[p.key]._pink[p.field];
     writeFileSync(WRITTEN_FILE, JSON.stringify(written, null, 1));
   }
-  console.log(`Wrote ${all.length} cells and coloured ${pinkRows.length} rows pink. A backup of the sheet from before this run is in private/sheet/backups/${stamp}-cataloged-books.json`);
+  console.log(`Wrote ${all.length} cells and coloured ${pinkCells.length} boxes pink. A backup of the sheet from before this run is in private/sheet/backups/${stamp}-cataloged-books.json`);
 }
 
 main().catch((e) => {

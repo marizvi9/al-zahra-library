@@ -369,8 +369,10 @@ export type Description = {
   url?: string; // empty when the librarian wrote the description in the Google Sheet with no source
   matchedTitle?: string;
   matchedAuthor?: string;
-  /** From data/web-finds.json: written in our own words from the source (see scripts/apply_web_finds.mjs). */
+  /** True when the source had no usable blurb, so the text is the library's own summary of it. */
   paraphrased?: boolean;
+  /** Set when the source's own wording was kept but spelling, grammar or punctuation was corrected. */
+  edited?: string;
   confidence?: "high" | "medium" | "low";
   origin?: "web" | "sheet"; // "sheet": edited in the librarian's Google Sheet (scripts/sync_sheet.mjs)
   /** "Needs Review" = yes in the Google Sheet: kept, but not shown until someone clears it. */

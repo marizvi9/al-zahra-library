@@ -1,5 +1,6 @@
 // Puts the covers and descriptions from data/web-finds.json onto the site.
-//   - Descriptions (our own wording) go into data/descriptions.json, marked "paraphrased".
+//   - Descriptions go into data/descriptions.json. "quoted" ones keep the source's own wording (with
+//     grammar fixed where marked "edited"); the rest are the library's summary, marked "paraphrased".
 //   - Covers are downloaded ONCE and saved in public/covers/ in three sizes (list thumbnail, book page,
 //     enlarged view), so the site never depends on another website staying online; data/covers.json
 //     records where each came from.
@@ -48,7 +49,7 @@ for (const [id, f] of Object.entries(finds)) {
 
   const d = f.description;
   if (d?.text?.length && !d.needsReview && (!descriptions[id] || descriptions[id].origin === "web")) {
-    descriptions[id] = { paragraphs: d.text, source: d.source, url: d.url, matchedTitle: book.title, matchedAuthor: book.author ?? "", confidence: d.confidence, paraphrased: true, origin: "web" };
+    descriptions[id] = { paragraphs: d.text, source: d.source, url: d.url, matchedTitle: book.title, matchedAuthor: book.author ?? "", confidence: d.confidence, paraphrased: !d.quoted, ...(d.edited ? { edited: d.edited } : {}), origin: "web" };
     nd++;
   }
 
