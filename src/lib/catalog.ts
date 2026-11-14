@@ -206,7 +206,7 @@ export function coverPhotoFor(b: Book): CoverPhoto | undefined {
   return { src: withBase(p.photoLarge ?? p.photo), focus: coverFocus(p), originalWidth: p.originalWidth, originalHeight: p.originalHeight };
 }
 
-/** The cover may use its own zoom ("coverZoom"); the round frame then fills itself (lib/photoLayout). */
+/** The cover may use its own zoom ("coverZoom"); otherwise the photo's own framing is used. */
 function coverFocus(p: AuthorPhoto): AuthorPhoto["focus"] {
   return p.focus && p.coverZoom ? { ...p.focus, zoom: p.coverZoom } : p.focus;
 }
