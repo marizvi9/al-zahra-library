@@ -111,3 +111,8 @@ export function displayName(name: string): string {
   return `${t} ${name.replace(LEADING_TITLE, "")}`;
 }
 export const hasTitle = (name: string) => !!file.authors[name]?.title && name !== "Imam Khomeini";
+
+/** The name without its title, for the A–Z list ("Ayatullah Jawadi Amuli" -> "Jawadi Amuli"). */
+export function plainName(name: string): string {
+  return hasTitle(name) ? name.replace(LEADING_TITLE, "") : name;
+}

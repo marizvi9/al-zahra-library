@@ -5,6 +5,7 @@ import { authors, authorsByLetter } from "@/lib/catalog";
 import AuthorAvatar from "@/components/AuthorAvatar";
 import AuthorFilter from "@/components/AuthorFilter";
 import { foldName } from "@/lib/foldName";
+import { plainName } from "@/lib/authorPhotos";
 import authorNames from "@data/author-names.json";
 
 const spellings = (authorNames as { groups: Record<string, string[]> }).groups;
@@ -24,7 +25,7 @@ export default function AuthorsPage() {
       <h1>Authors</h1>
       <p className="lede">
         All {authors.length} authors in the library, A to Z by surname. Different
-        spellings of the same name are listed together.
+        spellings of the same name are listed together, and titles such as Ayatullah are left out here.
       </p>
       <AuthorFilter listId="author-index" total={authors.length} />
       <nav className="letter-jump" aria-label="Jump to a letter">
@@ -44,7 +45,7 @@ export default function AuthorsPage() {
                 <Link href={`/authors/${a.slug}/`}>
                   <AuthorAvatar name={a.name} size={36} />
                   <span dir="auto" className="author-list-name">
-                    {a.display}
+                    {plainName(a.name)}
                   </span>{" "}
                   <span className="chip-count">{a.count}</span>
                 </Link>
