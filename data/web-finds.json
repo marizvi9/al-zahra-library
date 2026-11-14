@@ -5114,6 +5114,259 @@
       ],
       "note": "Nothing found for this title and author.",
       "needsReview": false
+    },
+    "16": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Allamah Sayyid Saeed Akhtar Rizvi shows from the Qur'an and hadith that prophethood ended with the Prophet Muhammad, in reply to the Ahmadiyya (Qadiani) claim that Mirza Ghulam Ahmad was a prophet, and rejects attempts to link Imam al-Mahdi with him."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/muhammad-s-last-prophet-sayyid-saeed-akhtar-rizvi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "546": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A dialogue between a father and son about why religion matters, written to help parents and children understand each other and close the gap between generations."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/how-bridge-generation-gap-sayyid-muhammad-taqi-al-hakim",
+        "confidence": "high"
+      },
+      "note": "First printed 1964.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "742": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Islamic rulings on how men and women should relate to each other, such as covering, looking at others, socialising, and marriage and wedding customs, according to the verdicts of eight leading Shi'a maraji'."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/code-ethics-muslim-men-and-women",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "515": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Two essays on the awaited Twelfth Imam, al-Mahdi. Ayatullah Baqir al-Sadr answers doubts and objections about his existence, his role, his becoming Imam as a child and his occultation; Ayatullah Mutahhari discusses the deeper meaning of his mission and revolution."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/awaited-saviour-ayatullah-sayyid-muhammad-baqir-sadr-ayatullah-murtadha-mutahhari",
+        "confidence": "high"
+      },
+      "note": "The library lists only al-Sadr as author.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "248": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Allamah Sayyid Saeed Akhtar Rizvi explains the meaning of Imamate and caliphate (khilafah) and compares Shi'a and Sunni views on whether an Imam is necessary, on infallibility, and on consultation (shura)."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/imamate-the-viceregency-of-the-prophet-sayyid-akhtar-rizvi",
+        "confidence": "high"
+      },
+      "note": "WOFIS, Tehran, 1985.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "611": {
+      "searched": [
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Seyyed Hossein Nasr examines the meeting of Islam with the modern world, written for both Muslims and Westerners. He discusses the spiritual and intellectual crisis of modern people, the effects of materialism and secularism, Sufism and the balance of contemplation and action, and the situation of Muslims today. The revised edition adds chapters on Islam at the start of the third millennium and on Islam and the West."
+        ],
+        "source": "Islamic Texts Society (publisher)",
+        "url": "https://its.org.uk/catalogue/islam-and-the-plight-of-modern-man-paperback",
+        "confidence": "high"
+      },
+      "needsReview": false
+    },
+    "683": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Probably an English version of Sayyid Muhammad Husayn Jalali's 'Sharh al-Arba'in al-Nabawiyyah'; no description of this English book found.",
+      "needsReview": false
+    },
+    "298": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Not found under this title; it may be related to Lari's 'God and His Attributes', but that could not be confirmed.",
+      "needsReview": false
+    },
+    "275": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "774": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Sayyid Mujtaba Musavi Lari writes about the human struggle for perfection: people's spiritual needs, their duties, and the road to true success, arguing that Islamic education aims at both material and spiritual growth. Translated by Ali Quli Qarai."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/9409",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "420": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A simple introduction to Islamic laws (fiqh) for young people and religious-school students, following the verdicts of Grand Ayatullah Sayyid Muhammad Saeed al-Hakim. It is the second book in a series that begins with 'Islamic Belief System in Ten Lessons'."
+        ],
+        "source": "Imam Al-Khoei Islamic Store (book listing)",
+        "url": "https://shop.al-khoei.org/products/lessons-in-islamic-laws",
+        "confidence": "medium"
+      },
+      "note": "Search-result snippet only; the store's page was not opened because it limits automated visits.",
+      "needsReview": false
+    },
+    "402": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "A question-and-answer collection of Ayatullah Khamenei's rulings (Ajwibat al-Istifta'at) is published in English, but no description of this edition was found.",
+      "needsReview": false
+    },
+    "712": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "A question-and-answer collection of Ayatullah Khamenei's rulings (Ajwibat al-Istifta'at) is published in English, but no description of this edition was found.",
+      "needsReview": false
+    },
+    "322": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "415": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "120": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "156": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "91": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "452": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "504": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Lectures given by Ayatullah Beheshti at the Islamic Centre in Hamburg in 1966–67, describing the social, political and religious conditions in Arabia and the lands around it when Islam began. Translated by Alaedin Pazargadi."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/44116",
+        "confidence": "high"
+      },
+      "note": "International Publishing Co.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "344": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "371": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "601": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
     }
   }
 }
