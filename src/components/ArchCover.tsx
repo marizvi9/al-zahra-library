@@ -146,7 +146,7 @@ function fitAuthor(author: string, maxW: number): { size: number; lines: string[
   if (/\bAyatullah /.test(author)) return fitAuthor(author.replace(/\bAyatullah /g, "Ayt. "), maxW);
   const lines = wrap(author, 12, maxW).slice(0, 2);
   // don't end on a lone title ("…, Ayt…")
-  lines[1] = (lines[1] ?? "").replace(/[\s,;:.-]*(?:\bAyt\.?|\bAyatullah)?[\s,;:.-]*$/, "") + "…";
+  lines[1] = (lines[1] ?? "").replace(/[\s,;:.-]*(?:\b(?:Shaheed\s+)?(?:Ayt\.?|Ayatullah)|\bShaheed)?[\s,;:.-]*$/, "") + "…";
   return { size: 12, lines };
 }
 

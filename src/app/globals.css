@@ -3702,3 +3702,38 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
 .author-filter .search-box { display: flex; gap: 8px; }
 .author-filter-count { min-height: 1.4em; margin: 6px 0 0; }
 .author-letter[hidden], .author-list li[hidden], .letter-jump[hidden] { display: none; }
+
+/* Book of the Month: a large centred heading above the card, with gold rules and diamonds */
+.botm-head { text-align: center; margin: 4px 0 18px; }
+.botm-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 0;
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(1.9rem, 4.6vw, 2.9rem);
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: var(--navy-deep);
+}
+.botm-orn { display: flex; align-items: center; gap: 4px; flex: 0 1 140px; min-width: 32px; color: var(--gold); }
+.botm-orn-line { flex: 1; height: 2px; background: currentColor; }
+.botm-diamond { width: 14px; height: 14px; flex: none; }
+.botm-month {
+  max-width: none;
+  text-align: center;
+  margin: 8px 0 0;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+}
+.botm .botm-card { box-shadow: var(--shadow), 0 0 0 4px var(--gold-soft); }
+@media (max-width: 560px) {
+  .botm-heading { gap: 10px; }
+  .botm-orn { flex-basis: 40px; }
+}

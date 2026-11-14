@@ -203,7 +203,7 @@ export function coverPhotoFor(b: Book): CoverPhoto | undefined {
   const a = authorOf(b);
   const p = a ? photoFor(a.name) : null;
   if (!p) return undefined;
-  return { src: withBase(p.photoLarge ?? p.photo), focus: p.focus, originalWidth: p.originalWidth, originalHeight: p.originalHeight };
+  return { src: withBase(p.photoLarge ?? p.photo), focus: p.focus && p.coverZoom ? { ...p.focus, zoom: p.coverZoom } : p.focus, originalWidth: p.originalWidth, originalHeight: p.originalHeight };
 }
 
 /** The small set of fields a book needs to appear in a list. */

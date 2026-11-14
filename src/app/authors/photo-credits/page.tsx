@@ -17,7 +17,7 @@ export default function PhotoCreditsPage() {
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Authors", href: "/authors/" }, { label: "Photo credits" }]} />
       <h1>Author photo credits</h1>
       <p className="lede">
-        The {list.length} author photos on this site come from Wikimedia Commons, each under a free licence that allows reuse with credit,{fromWs > 0 && ` and from WikiShia (${fromWs}), whose copyright policy allows reuse with the source credited`}{others.length > 0 && `, and ${others.length === 1 ? "one" : others.length} from ${[...new Set(others.map((x) => x.photo.photoSource))].join(", ")} under ${[...new Set(others.map((x) => x.photo.license))].join(", ")}`}. Authors without a verified photo are shown with their initials.
+        The {list.length} author photos on this site come from Wikimedia Commons, each under a free licence that allows reuse with credit,{fromWs > 0 && ` and from WikiShia (${fromWs}), whose copyright policy allows reuse with the source credited`}{others.length > 0 && `, and from other websites: ${others.map((x) => `${x.photo.photoSource} (${x.photo.license.toLowerCase().startsWith("cc") ? x.photo.license : x.photo.license.toLowerCase()})`).join(", ")}`}. Authors without a verified photo are shown with their initials.
       </p>
       <ul className="credit-list">
         {list.map(({ name, photo }) => (

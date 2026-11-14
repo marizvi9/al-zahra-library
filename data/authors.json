@@ -6,8 +6,9 @@
     "Authors with no photo get a navy-and-gold badge with their initials.",
     "neverPhoto: the Prophet, the Imams, Lady Fatima and other members of the Ahlul-Bayt and holy figures, including books attributed to them. They NEVER get a photo or any picture, and are never searched for. The site enforces this even if a photo is added by mistake. Their bios are left for you to write.",
     "FOCUS: \"focus\" {x, y} is where the face is in the photo, in percent from the left and from the top (set by checking each photo by eye). Every size of the photo is cropped around this point. If a face looks cut off, nudge these numbers and rebuild. Optional \"zoom\" (e.g. 1.5) enlarges the photo around the face in the small round badges only, for photos taken from far away.",
-    "TITLES: \"title\": \"Ayatullah\" shows the author on the site as \"Ayatullah <name>\" (on covers, \"Ayt.\" when the full name would not fit). Given only where the catalogue or a sourced bio calls the person Ayatollah or marja'. Imam Khomeini keeps \"Imam\". The Google Sheet is never changed.",
-    "FULL NAMES: \"fullName\" replaces a short catalogue name on the site (e.g. \"Ayatullah Gulpaygani\" -> \"Lutf Allah Safi Gulpaygani\", from his WikiShia article). The page address and the Google Sheet keep the catalogue name."
+    "TITLES: \"title\": \"Ayatullah\" (or \"Shaheed Ayatullah\") shows the author on the site as \"Ayatullah <name>\" (on covers, \"Ayt.\" when the full name would not fit). Given only where the catalogue or a sourced bio calls the person Ayatollah or marja'. Imam Khomeini keeps \"Imam\". The Google Sheet is never changed.",
+    "FULL NAMES: \"fullName\" replaces a short catalogue name on the site (e.g. \"Ayatullah Gulpaygani\" -> \"Lutf Allah Safi Gulpaygani\", from his WikiShia article). The page address and the Google Sheet keep the catalogue name.",
+    "\"coverZoom\" (optional) zooms the author photo on drawn book covers only, e.g. 0.78 = further out than the photo's own \"focus\" zoom."
   ],
   "neverPhoto": [
     "Imam Ali Amir al-Mum'minin",
@@ -24,38 +25,37 @@
   "authors": {
     "Murtaza Mutahhari": {
       "wikipedia": "Morteza Motahhari",
-      "wikipediaUrl": "https://en.wikipedia.org/wiki/Morteza_Motahhari",
-      "description": "Iranian politician (1919–1979)",
-      "file": "File:Morteza Motahhari (1659).jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Morteza_Motahhari_(1659).jpg",
-      "creator": "varesoon.ir",
-      "license": "Public domain",
-      "licenseUrl": null,
-      "imageDescription": "Morteza Motahhari - probably in the 1940s",
-      "photo": "/authors/murtaza-mutahhari.jpg",
-      "photoLarge": "/authors/large/murtaza-mutahhari.webp",
-      "largeWidth": 640,
-      "largeHeight": 789,
-      "lowRes": false,
-      "originalWidth": 821,
-      "originalHeight": 1012,
-      "focus": {
-        "x": 49.7,
-        "y": 48.1,
-        "zoom": 0.76
-      },
       "bio": "Ayatollah Murtaza Mutahhari (1920–1979) was a prominent Shia jurist, philosopher, theologian and writer of the 20th century. A student of Allama Tabataba'i and Imam Khomeini, he was one of the most influential Iranian clerics in explaining Islamic teachings for his time. He was one of the founders of the Husayniyya Irshad in Tehran and is regarded as an intellectual leader of the Islamic Revolution.",
       "bioStatus": "WikiShia",
       "bioSources": [
         "https://en.wikishia.net/view/Morteza_Motahhari"
       ],
-      "head": {
-        "x0": 19.1,
-        "y0": 3.2,
-        "x1": 80.3,
-        "y1": 92.9
+      "title": "Shaheed Ayatullah",
+      "file": "mnew.webp",
+      "source": "https://www.islamicinsights.com/religion/history/martyr-mutahhari.html",
+      "creator": "Islamic Insights",
+      "license": "Used with credit",
+      "licenseUrl": null,
+      "imageDescription": "From the Islamic Insights article 'Martyr Mutahhari', chosen by the site owner; cropped to a portrait.",
+      "photoSource": "Islamic Insights",
+      "photo": "/authors/murtaza-mutahhari-2.jpg",
+      "photoLarge": "/authors/large/murtaza-mutahhari-2.webp",
+      "largeWidth": 390,
+      "largeHeight": 470,
+      "lowRes": true,
+      "originalWidth": 390,
+      "originalHeight": 470,
+      "focus": {
+        "x": 49.0,
+        "y": 40.0,
+        "zoom": 0.85
       },
-      "title": "Ayatullah"
+      "head": {
+        "x0": 15.0,
+        "y0": 0.0,
+        "x1": 83.0,
+        "y1": 76.0
+      }
     },
     "Ali Shariati": {
       "wikipedia": "Ali Shariati",
@@ -124,7 +124,7 @@
         "x1": 77,
         "y1": 76.1
       },
-      "title": "Ayatullah"
+      "title": "Shaheed Ayatullah"
     },
     "Muhammad Husayn Tabatabai": {
       "wikipedia": "Muhammad Husayn Tabatabai",
@@ -204,7 +204,7 @@
       "bioSources": [
         "https://en.wikishia.net/view/Sayyid_Ali_Husayni_Khamenei"
       ],
-      "title": "Ayatullah",
+      "title": "Shaheed Ayatullah",
       "file": "rahbar2.jpg",
       "source": "https://english.khamenei.ir/",
       "creator": "Leader.ir / khamenei.ir (Office of Ayatollah Khamenei)",
@@ -229,7 +229,8 @@
         "y0": 0.0,
         "x1": 97.0,
         "y1": 82.0
-      }
+      },
+      "coverZoom": 0.78
     },
     "Seyyed Hossein Nasr": {
       "wikipedia": "Seyyed Hossein Nasr",
