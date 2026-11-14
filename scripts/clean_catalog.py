@@ -46,6 +46,13 @@ CANONICAL_CATEGORIES = [
     "Duas, Ziyarat & Amaal", "Ethics",
 ]
 
+# Category names in the sheet that mean an existing category. "History & Major Islamic Events" was typed
+# for five Imam Hussein books that the old catalogue had under History (Life of the Imams); they are shown
+# under History until the librarian confirms. Their shelf numbers are not filled in (the sheet says "Not Found").
+CATEGORY_RENAMES = {
+    "History & Major Islamic Events": "History",
+}
+
 # Sub-categories that are clearly the same thing written differently.
 SUBCATEGORY_MERGES = {
     "Ahl-Bayt & Imams": "Ahl al-Bayt & Imams",
@@ -235,6 +242,7 @@ def main() -> None:
         # --- category ---
         if cat:
             fixed = cat_spelling.get(name_key(cat), cat)
+            fixed = next((v for k, v in CATEGORY_RENAMES.items() if name_key(k) == name_key(fixed)), fixed)
             if fixed != r[4]:
                 log["category"].append(f"Row {row_no}: “{r[4]}” → “{fixed}”")
             cat = fixed
