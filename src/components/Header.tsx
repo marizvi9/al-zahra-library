@@ -1,5 +1,6 @@
 "use client";
-// The site header: one tidy row — brand on the left, then the tabs, then a search bar.
+// The site header: a thin bar of practical links (address, hours, contact), then one tidy row —
+// brand on the left, then the tabs, then a search bar.
 //
 // Wide screens: everything in one row.
 // Tablets (under 1000px): the search bar folds into a magnifying-glass button that opens it.
@@ -16,6 +17,7 @@ import { FlowerMark } from "./Emblem";
 import MainNav from "./MainNav";
 import SearchBox from "./SearchBox";
 import Girih from "./Girih";
+import { AddressLink } from "./LibraryLinks";
 
 export default function Header() {
   const pathname = usePathname();
@@ -50,6 +52,22 @@ export default function Header() {
       {/* The same star pattern as the footer, behind the bar. */}
       <div className="header-pattern" aria-hidden="true">
         <Girih className="girih-footer" />
+      </div>
+      {/* A thin bar of practical links on top, as library websites have (hidden on phones; the menu has them). */}
+      <div className="header-utility">
+        <div className="container header-utility-inner">
+          <span className="header-utility-address">
+            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false">
+              <path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" fill="none" stroke="currentColor" strokeWidth="2" />
+            </svg>
+            <AddressLink />
+          </span>
+          <span className="header-utility-links">
+            <Link href="/visit/">Hours &amp; location</Link>
+            <Link href="/faq/">FAQ</Link>
+            <Link href="/contact/">Contact</Link>
+          </span>
+        </div>
       </div>
       <div
         className="container header-inner"
