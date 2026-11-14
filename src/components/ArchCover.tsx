@@ -11,6 +11,10 @@
 // It looks the same on the server and in the browser (it only depends on the title, author and slug).
 
 import { FLOWER_PATHS } from "./Emblem";
+import { circleLayout, type PhotoShape } from "@/lib/photoLayout";
+
+/** An author photo to show on the cover (only real authors with a usable licence; see lib/authorPhotos). */
+export type CoverPhoto = PhotoShape & { src: string };
 
 type Props = {
   title: string;
@@ -20,6 +24,8 @@ type Props = {
   seed?: string;
   size?: "large" | "small";
   className?: string;
+  /** The author's photo, drawn in a round frame like al-islam.org's covers. Leave out for the plain cover. */
+  photo?: CoverPhoto | null;
 };
 
 // ---------- Colour ----------
@@ -183,7 +189,61 @@ function Pattern({ id, kind, stroke }: { id: string; kind: number; stroke: strin
 
 // ---------- The cover ----------
 
-export default function ArchCover({ title, author, seed, size = "large", className = "" }: Props) {
+/** The photo inside its round frame. Uses the same framing as the author badges (head centred, stored zoom);
+ *  when the frame reaches past the photo's edge, a blurred copy of the photo fills the gap. */
+function PhotoCircle({ photo, cx, cy, r, id, ring }: { photo: CoverPhoto; cx: number; cy: number; r: number; id: string; ring: string }) {
+  const { fg, padded } = circleLayout(photo);
+  const side = r * 2;
+  const pct = (v: unknown) => parseFloat(String(v)) / 100;
+  const x0 = cx - r, y0 = cy - r;
+  const img = { x: x0 + pct(fg.left) * side, y: y0 + pct(fg.top) * side, w: pct(fg.width) * side, h: pct(fg.height) * side };
+  return (
+    <g>
+      <defs>
+        <clipPath id={`${id}-c`}>
+          <circle cx={cx} cy={cy} r={r} />
+        </clipPath>
+        {padded && (
+          <>
+            <filter id={`${id}-b`} x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation={r / 6} />
+            </filter>
+            <linearGradient id={`${id}-gx`} x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stopColor="#fff" stopOpacity="0" />
+              <stop offset="0.16" stopColor="#fff" />
+              <stop offset="0.84" stopColor="#fff" />
+              <stop offset="1" stopColor="#fff" stopOpacity="0" />
+            </linearGradient>
+            <linearGradient id={`${id}-gy`} x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stopColor="#fff" stopOpacity="0" />
+              <stop offset="0.16" stopColor="#fff" />
+              <stop offset="0.84" stopColor="#fff" />
+              <stop offset="1" stopColor="#fff" stopOpacity="0" />
+            </linearGradient>
+            <mask id={`${id}-mx`} maskContentUnits="userSpaceOnUse">
+              <rect x={img.x} y={img.y} width={img.w} height={img.h} fill={img.w < side - 0.5 ? `url(#${id}-gx)` : "#fff"} />
+            </mask>
+            <mask id={`${id}-my`} maskContentUnits="userSpaceOnUse">
+              <rect x={img.x} y={img.y} width={img.w} height={img.h} fill={img.h < side - 0.5 ? `url(#${id}-gy)` : "#fff"} />
+            </mask>
+          </>
+        )}
+      </defs>
+      <circle cx={cx} cy={cy} r={r + 7} fill="none" stroke={ring} strokeWidth="1" opacity="0.8" />
+      <g clipPath={`url(#${id}-c)`}>
+        <rect x={x0} y={y0} width={side} height={side} fill="#1a1d24" />
+        {padded && <image href={photo.src} x={x0 - r * 0.25} y={y0 - r * 0.25} width={side * 1.5} height={side * 1.5} preserveAspectRatio="xMidYMid slice" filter={`url(#${id}-b)`} />}
+        <g mask={padded ? `url(#${id}-my)` : undefined}>
+          <image href={photo.src} x={img.x} y={img.y} width={img.w} height={img.h} preserveAspectRatio="none" mask={padded ? `url(#${id}-mx)` : undefined} />
+        </g>
+      </g>
+      <circle cx={cx} cy={cy} r={r} fill="none" stroke={ring} strokeWidth="3" />
+    </g>
+  );
+}
+
+export default function ArchCover({ title, author, seed, size = "large", className = "", photo }: Props) {
+  if (photo) return <PhotoCover title={title} author={author} seed={seed} size={size} className={className} photo={photo} />;
   const key = seed || title;
   const c = scheme(key);
   const kind = (hash(key + "p") >>> 3) % 3;
@@ -223,8 +283,8 @@ export default function ArchCover({ title, author, seed, size = "large", classNa
           ))}
         </g>
       </svg>
-      <text x="150" y="108" textAnchor="middle" fontSize="9.5" letterSpacing="3" fill={c.accent} style={{ fontFamily: "var(--font-ui), sans-serif", fontWeight: 700 }}>
-        AL-ZAHRA LIBRARY
+      <text x="150" y="108" textAnchor="middle" fontSize="9.5" letterSpacing="2.6" fill={c.accent} style={{ fontFamily: "var(--font-ui), sans-serif", fontWeight: 700 }}>
+        AL-ZAHRA ISLAMIC LIBRARY
       </text>
 
       {/* title panel */}
@@ -259,6 +319,72 @@ export default function ArchCover({ title, author, seed, size = "large", classNa
         direction={RTL.test(who) ? "rtl" : "ltr"}
         style={{ fontFamily: "var(--font-head), Georgia, serif", fontWeight: 600 }}
       >
+        {a.lines.map((l, i) => (
+          <tspan key={i} x="150" dy={i === 0 ? a.size * 0.35 : a.size * 1.2}>
+            {l}
+          </tspan>
+        ))}
+      </text>
+    </svg>
+  );
+}
+
+// ---------- The cover with an author photo ----------
+// Same look as the plain cover, rearranged: emblem and title at the top, the author's photo in a round
+// frame in the middle, and the author's name underneath.
+function PhotoCover({ title, author, seed, size, className, photo }: Props & { photo: CoverPhoto }) {
+  const key = seed || title;
+  const c = scheme(key);
+  const kind = (hash(key + "p") >>> 3) % 3;
+  const pid = `gc-${hash(key).toString(36)}`;
+  const rtl = RTL.test(title);
+  const t = fitTitle(title.trim() || "Untitled", 224, 112);
+  const who = author && !/^published by/i.test(author) && author.trim() ? author.trim() : "Unknown";
+  const a = fitAuthor(who, 224);
+  const titleH = t.lines.length * t.size * 1.18;
+  const titleTop = 92 + (124 - titleH) / 2; // centred in the panel (y 92–216)
+  const authorTop = 398 - ((a.lines.length - 1) * a.size * 1.2) / 2;
+  return (
+    <svg
+      className={`generated-cover generated-cover-${size} ${className}`}
+      viewBox="0 0 300 440"
+      role="img"
+      aria-label={`Cover drawn by the library: ${title}, ${who}`}
+      focusable="false"
+    >
+      <defs>
+        <Pattern id={pid} kind={kind} stroke={c.accent} />
+      </defs>
+      <rect width="300" height="440" rx="6" fill={c.bg} />
+      <rect width="300" height="440" rx="6" fill={`url(#${pid})`} opacity="0.3" />
+      <rect x="10" y="10" width="280" height="420" rx="3" fill="none" stroke={c.accent} strokeWidth="3" />
+      <rect x="18" y="18" width="264" height="404" rx="2" fill="none" stroke={c.accent} strokeWidth="1" opacity="0.8" />
+
+      <svg x="122" y="26" width="56" height="44" viewBox="-8 0 582 432" aria-hidden="true">
+        <g fill="none" stroke={c.accent} strokeWidth="24" strokeLinejoin="miter" strokeLinecap="butt">
+          {Object.entries(FLOWER_PATHS).map(([name, d]) => (
+            <path key={name} d={d} />
+          ))}
+        </g>
+      </svg>
+      <text x="150" y="83" textAnchor="middle" fontSize="8.5" letterSpacing="2.4" fill={c.accent} style={{ fontFamily: "var(--font-ui), sans-serif", fontWeight: 700 }}>
+        AL-ZAHRA ISLAMIC LIBRARY
+      </text>
+
+      <rect x="30" y="92" width="240" height="124" rx="8" fill={c.panel} opacity="0.86" />
+      <text x="150" y={titleTop} textAnchor="middle" direction={rtl ? "rtl" : "ltr"} fill={c.title} fontSize={t.size} style={{ fontFamily: "var(--font-head), Georgia, serif", fontWeight: 800 }}>
+        {t.lines.map((l, i) => (
+          <tspan key={i} x="150" dy={i === 0 ? t.size * 0.95 : t.size * 1.18}>
+            {l}
+          </tspan>
+        ))}
+      </text>
+
+      <PhotoCircle photo={photo} cx={150} cy={292} r={56} id={`${pid}-ph`} ring={c.accent} />
+
+      <path d="M70 368H138M162 368H230" stroke={c.accent} strokeWidth="1.5" />
+      <path d="M150 361L157 368L150 375L143 368Z" fill={c.accent} />
+      <text x="150" y={authorTop} textAnchor="middle" fill={c.ink} fontSize={a.size} direction={RTL.test(who) ? "rtl" : "ltr"} style={{ fontFamily: "var(--font-head), Georgia, serif", fontWeight: 600 }}>
         {a.lines.map((l, i) => (
           <tspan key={i} x="150" dy={i === 0 ? a.size * 0.35 : a.size * 1.2}>
             {l}

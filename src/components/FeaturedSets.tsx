@@ -3,7 +3,7 @@
 // (overlapping a little, in order) with large covers, the set name, author, which volumes the library holds, and a link.
 import Link from "next/link";
 import ArchCover from "./ArchCover";
-import { getCover } from "@/lib/catalog";
+import { coverPhotoFor, getCover } from "@/lib/catalog";
 import { withBase } from "@/lib/paths";
 import type { VolumeSet } from "@/lib/sets";
 
@@ -29,7 +29,7 @@ export default function FeaturedSets({ sets, total }: { sets: VolumeSet[]; total
                     {img ? (
                       <img src={withBase(img.large ?? img.src)} alt="" width={img.width} height={img.height} loading="lazy" decoding="async" />
                     ) : (
-                      <ArchCover title={b.title} author={b.author} seed={s.slug} />
+                      <ArchCover title={b.title} author={b.author} seed={s.slug} photo={coverPhotoFor(b)} />
                     )}
                   </span>
                 );

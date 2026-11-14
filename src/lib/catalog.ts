@@ -8,6 +8,8 @@ import subTopicTexts from "@data/subtopic-descriptions.json";
 import { setRefFor } from "./setIndex";
 import { categoryDescriptions, DISPLAY_NAMES, FEATURED_CATEGORIES, MORE_TO_EXPLORE } from "./categoryInfo";
 import { withBase } from "./paths";
+import { photoFor } from "./authorPhotos";
+import type { CoverPhoto } from "@/components/ArchCover";
 
 export type Book = {
   id: number;
@@ -195,6 +197,15 @@ export const publisherLabel = (publisher: string) => (isPersonCredit(publisher) 
 
 export const copiesText = (copies: number) => (copies === 1 ? "1 copy" : `${copies} copies`);
 
+/** The author photo for a book's drawn cover: only when the book has one author and that author has a
+ *  usable photo (holy figures never; see lib/authorPhotos). Otherwise the plain drawn cover is used. */
+export function coverPhotoFor(b: Book): CoverPhoto | undefined {
+  const a = authorOf(b);
+  const p = a ? photoFor(a.name) : null;
+  if (!p) return undefined;
+  return { src: withBase(p.photoLarge ?? p.photo), focus: p.focus, originalWidth: p.originalWidth, originalHeight: p.originalHeight };
+}
+
 /** The small set of fields a book needs to appear in a list. */
 export const toListItem = (b: Book) => ({
   slug: b.slug,
@@ -208,6 +219,7 @@ export const toListItem = (b: Book) => ({
   thumb: getThumb(b.id)?.thumb,
   available: b.available,
   set: setRefFor(b.id),
+  coverPhoto: getThumb(b.id) ? undefined : coverPhotoFor(b),
 });
 
 /** What a book card in the big Explore grid needs: a sharper cover and a short description. */

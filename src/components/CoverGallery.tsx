@@ -9,6 +9,7 @@ import { useCallback, useRef, useState, ViewTransition } from "react";
 import ArchCover from "./ArchCover";
 import ZoomViewer from "./ZoomViewer";
 import type { CoverImage } from "@/lib/catalog";
+import type { CoverPhoto } from "./ArchCover";
 
 type Props = {
   slug: string;
@@ -18,13 +19,15 @@ type Props = {
   /** Colour seed for the drawn cover: the set's slug for a volume of a set, so every volume matches. */
   seed?: string;
   images: CoverImage[];
+  /** Author photo for the drawn cover (when there is no cover image). */
+  photo?: CoverPhoto;
 };
 
 // Neutral captions: Open Library doesn't say which image is front, back or title page.
 const labelFor = (images: CoverImage[], i: number) =>
   images.length > 1 ? `Image ${i + 1} of ${images.length}` : "Cover image";
 
-export default function CoverGallery({ slug, title, author, seed, images }: Props) {
+export default function CoverGallery({ slug, title, author, seed, images, photo }: Props) {
   const [index, setIndex] = useState(0);
   const [leaving, setLeaving] = useState<{ index: number; dir: 1 | -1 } | null>(null);
   const [turnDir, setTurnDir] = useState<1 | -1 | null>(null); // direction of the last turn
@@ -63,7 +66,7 @@ export default function CoverGallery({ slug, title, author, seed, images }: Prop
       <div className="gallery">
         <ViewTransition name={`cover-${slug}`} share="morph" default="none">
           <div>
-            <ArchCover title={title} author={author} seed={seed ?? slug} />
+            <ArchCover title={title} author={author} seed={seed ?? slug} photo={photo} />
           </div>
         </ViewTransition>
         <p className="gallery-caption muted small">No cover image yet</p>

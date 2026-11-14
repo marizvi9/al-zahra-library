@@ -13,6 +13,7 @@ import Credit from "@/components/Credit";
 import { photoFor } from "@/lib/authorPhotos";
 import {
   authorOf,
+  coverPhotoFor,
   books,
   booksInSubCategory,
   copiesText,
@@ -103,6 +104,7 @@ export default async function BookPage({ params }: Props) {
           author={book.author}
           seed={bookSet?.slug}
           images={cover?.images ?? []}
+          photo={coverPhotoFor(book)}
         />
 
         <div className="book-detail-body">

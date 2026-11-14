@@ -168,6 +168,8 @@ async function main() {
   //    there (private/sheet/written.json). The librarian's version always wins.
   const descriptions = readJson("data/descriptions.json");
   const covers = readJson("data/covers.json");
+  // The library's own drawn covers (scripts/render_drawn_covers.mjs), for books with no real cover picture.
+  const drawn = existsSync(join(ROOT, "data/drawn-covers.json")) ? readJson("data/drawn-covers.json") : {};
   const finds = existsSync(join(ROOT, "data/web-finds.json")) ? readJson("data/web-finds.json").books : {};
   const WRITTEN_FILE = join(SHEET_DIR, "written.json");
   const written = existsSync(WRITTEN_FILE) ? JSON.parse(readFileSync(WRITTEN_FILE, "utf8")) : {}; // { websiteId: { column: value, _pink: { field: original colour } } }
@@ -278,9 +280,9 @@ async function main() {
     return {
       "Website ID": r.id,
       "Website Link": b ? `${SITE}/books/${b.slug}/` : "",
-      "Cover URL": img?.src ? `${SITE}${img.large ?? img.src}` : "",
+      "Cover URL": img?.src ? `${SITE}${img.large ?? img.src}` : drawn[key] ? `${SITE}${drawn[key]}` : "",
       Description: shown ? descText(shown) : draft ? (draft.description?.text ?? []).join("\n\n") : "",
-      "Cover Source": img && c.sourceUrl ? `${c.source} — ${c.sourceUrl}` : "",
+      "Cover Source": img && c.sourceUrl ? `${c.source} — ${c.sourceUrl}` : drawn[key] ? "Drawn by the Al-Zahra Library (no cover picture found)" : "",
       "Description Source": shown ? srcText(shown.source, shown.url, shown.paraphrased, shown.edited) : draft?.description ? srcText(draft.description.source, draft.description.url, !draft.description.quoted, draft.description.edited) : "",
       "Author Photo URL": p ? `${SITE}${p.photo}` : "",
       "Photo Credit": p ? `${p.creator}, ${p.license} — ${p.source}` : "",
