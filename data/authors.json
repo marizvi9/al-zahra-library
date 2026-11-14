@@ -3020,7 +3020,11 @@
       "bioStatus": "from our data only"
     },
     "Saleem Bhimji": {
-      "bioStatus": "from our data only"
+      "bioStatus": "other source",
+      "bio": "Shaykh Saleem Bhimji was born and raised in Canada. After studying at the Northern Alberta Institute of Technology, he trained at the Imam al-Asr Theological Seminary in Medina, New York, and then at the seminary in Qum. He has translated more than 40 books into English.",
+      "bioSources": [
+        "https://al-islam.org/person/shaykh-saleem-bhimji"
+      ]
     },
     "Sayyid Mahdi as-Sadr": {
       "bioStatus": "from our data only"
@@ -3455,7 +3459,11 @@
       "bioStatus": "from our data only"
     },
     "Dr. Abdul Aziz Kamel": {
-      "bioStatus": "from our data only"
+      "bioStatus": "other source",
+      "bio": "Dr. Abd al-Aziz Kamel (1919–1991) was an Egyptian author and professor of human geography. Under President Nasser he became Deputy Prime Minister for Religious Affairs and Minister of Religious Endowments (Awqaf), and in 1968 he was also given responsibility for al-Azhar.",
+      "bioSources": [
+        "https://ar.wikipedia.org/wiki/عبد_العزيز_كامل"
+      ]
     },
     "Rida Kardan": {
       "bioStatus": "from our data only"
@@ -3514,7 +3522,11 @@
       "bioStatus": "from our data only"
     },
     "Leonard Lewisohn": {
-      "bioStatus": "from our data only"
+      "bioStatus": "other source",
+      "bio": "Leonard Lewisohn (1953–2018) was an American author, translator and lecturer in Islamic studies, specialising in Persian Sufi literature. He was a member of the Institute of Arab and Islamic Studies at the University of Exeter and edited the Mawlana Rumi Review.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Leonard_Lewisohn_(Islamic_studies_scholar)"
+      ]
     },
     "Mansoor L. Limba": {
       "bioStatus": "from our data only"
@@ -3603,7 +3615,11 @@
       "bioStatus": "from our data only"
     },
     "Abbas Mirakhor": {
-      "bioStatus": "from our data only"
+      "bioStatus": "other source",
+      "bio": "Abbas Mirakhor is an Iranian economist whose research covers conventional and Islamic economics and finance. In 2010 he joined INCEIF, the Global University of Islamic Finance in Malaysia, as Distinguished Scholar and the first holder of its Chair in Islamic Finance.",
+      "bioSources": [
+        "https://en.wikipedia.org/wiki/Abbas_Mirakhor"
+      ]
     },
     "Seddighe Mirghanbari": {
       "bioStatus": "from our data only"
@@ -3950,7 +3966,11 @@
       "bioStatus": "from our data only"
     },
     "Badr Shahin": {
-      "bioStatus": "from our data only"
+      "bioStatus": "other source",
+      "bio": "Badr Shahin is a translator of Islamic books who lives and works in Iran. He studied language, interpretation and translation at the University of Mosul, graduating in 1996.",
+      "bioSources": [
+        "https://al-islam.org/person/badr-shahin"
+      ]
     },
     "Abdullah Al Shanin": {
       "bioStatus": "from our data only"
@@ -3959,7 +3979,35 @@
       "bioStatus": "from our data only"
     },
     "Sadruddin Sharafuddin": {
-      "bioStatus": "from our data only"
+      "bioStatus": "other source",
+      "bio": "Sayyid Sadr al-Din Sharaf al-Din (1912–1969), a son of Sayyid Abd al-Husayn Sharaf al-Din, was an Iraqi-Lebanese poet, journalist and teacher. He studied at the seminary in Najaf, taught in Iraq and published a newspaper in Baghdad and magazines in Lebanon; his books include a biography of 'Ammar ibn Yasir.",
+      "bioSources": [
+        "https://ar.wikipedia.org/wiki/صدر_الدين_شرف_الدين"
+      ],
+      "file": "File:صدر الدين شرف الدين.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:%D8%B5%D8%AF%D8%B1_%D8%A7%D9%84%D8%AF%D9%8A%D9%86_%D8%B4%D8%B1%D9%81_%D8%A7%D9%84%D8%AF%D9%8A%D9%86.jpg",
+      "creator": "Unknown author",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "imageDescription": "Sadr al-Din Sharaf al-Din (Wikimedia Commons, public domain)",
+      "photo": "/authors/sadruddin-sharafuddin.jpg",
+      "photoLarge": "/authors/large/sadruddin-sharafuddin.webp",
+      "largeWidth": 260,
+      "largeHeight": 320,
+      "lowRes": true,
+      "originalWidth": 260,
+      "originalHeight": 320,
+      "focus": {
+        "x": 55.0,
+        "y": 40.0,
+        "zoom": 1.9
+      },
+      "head": {
+        "x0": 42.0,
+        "y0": 26.0,
+        "x1": 68.0,
+        "y1": 56.0
+      }
     },
     "Zakiuddin Sharfi": {
       "bioStatus": "from our data only"
@@ -4024,7 +4072,12 @@
       "bioStatus": "from our data only"
     },
     "Najmuddin Tabasi": {
-      "bioStatus": "from our data only"
+      "bioStatus": "other source",
+      "bio": "Ayatollah Najmuddin Tabasi was born in Najaf, the son of Grand Ayatollah Muhammad Reza Tabasi Najafi. He specialises in Islamic jurisprudence, Quranic commentary, theology, comparative hadith studies and questions about Imam al-Mahdi.",
+      "bioSources": [
+        "https://al-islam.org/person/najmuddin-tabasi"
+      ],
+      "title": "Ayatullah"
     },
     "Ayatullah Abu Talib Tajlil At-Tabrizi": {
       "bioStatus": "from our data only",
