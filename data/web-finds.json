@@ -2878,6 +2878,448 @@
       ],
       "note": "No book with this title found.",
       "needsReview": false
+    },
+    "470": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A full biography and study of the life of the tenth Imam, ʿAli ibn Muhammad al-Hadi: his birth and upbringing, his knowledge and character, his forced stay in Samarra under the Abbasid rulers, and his death."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/life-imam-ali-al-hadi-study-and-analysis-baqir-shareef-al-qurashi",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false,
+      "note": "Same title as book 83."
+    },
+    "809": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Volume 2 of a guide to the beliefs and practice of Twelver Shi'a Islam, translated from selected parts of the Urdu book Tuhfat al-Awwam. This volume contains the prayers, supplications, rites and ceremonies performed through the Muslim year."
+        ],
+        "source": "Imam Al-Khoei Islamic Store (book listing)",
+        "url": "https://shop.al-khoei.org/products/a-manual-of-islamic-beliefs-and-practices-vol-2",
+        "confidence": "high"
+      },
+      "note": "Same title as book 695.",
+      "needsReview": false
+    },
+    "471": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A biography of Lady Fatima al-Zahra: her titles, her birth and family life, the birth of her children, the verses of the Qur'an revealed in her honour, and events such as the Event of the Cloak."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/fatima-gracious-abu-muhammad-ordoni",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false,
+      "note": "Same title as book 24; the library lists Odeh A. Muhawesh as compiler."
+    },
+    "185": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Lectures that Imam Khomeini gave in Najaf in early 1970 on the governance of the jurist (wilayat al-faqih). He argues that Islamic political power is needed to carry out Islam's aims and laws, that religious scholars have a duty to bring about an Islamic state, and sets out a programme for doing so, including reform within the religious establishment. Translated by Hamid Algar."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/islamic-government-governance-jurist-sayyid-ruhullah-musawi-khomeini",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "693": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A short guide to the rules of hajj according to the rulings of Ayatullah Khamenei: when hajj becomes obligatory, the rites of hajj and umrah, and what is required and forbidden in each."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/manasik-rituals-hajj-brief-sayyid-ali-khamenei",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "421": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "The English version of Ayatullah Sistani's manual of religious rulings (Tawdih al-Masa'il), covering cleanliness, prayer, fasting, hajj, business dealings, marriage and other subjects."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/node/18660",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "799": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A classic collection of hadith from the Prophet and the Imams, gathered by Ibn Shu'ba al-Harrani in the 10th century. It contains their teachings on the principles and practices of the faith, on morals, and many of their wise sayings and exhortations. Translated by Badr Shahin."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/tuhaf-al-uqul-ibn-shuba-al-harrani",
+        "confidence": "high"
+      },
+      "note": "Ansariyan Publications, 2001.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "38": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A full account of the life of al-ʿAbbas ibn ʿAli, with a short look at the historical circumstances that made him one of the great heroes of Islam and of humanity."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/al-abbas",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "686": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No English book with this title found; Ayatullah Sistani's hajj rulings exist in English under other titles.",
+      "needsReview": false
+    },
+    "627": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A short book by Ayatullah Vahid Khorasani, one of the leading teachers and maraji' of the Qum seminary, that looks at new sides of the life of Lady Fatima in a concise way."
+        ],
+        "source": "Al-Buraq (book listing)",
+        "url": "https://reach.dog/shop/al-buraq/products/the-broken-bead-reflections-on-the-life-of-hazrat-fatema-as",
+        "confidence": "medium"
+      },
+      "needsReview": false
+    },
+    "60": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A collection of essays on the event of Ghadir Khumm, where the Prophet declared Imam ʿAli his successor, by Ayatullah Baqir al-Sadr, Abdulaziz Sachedina, Sayyid Muhammad Rizvi and Husein Khimjee. Chapters include how orientalists have treated Ghadir and its theological meaning."
+        ],
+        "source": "Al-Hassanain library",
+        "url": "https://new.alhassanain.org/td/library/download/3333/pdf/Ghadir",
+        "confidence": "high"
+      },
+      "note": "Ansariyan Publications, Qum.",
+      "needsReview": false
+    },
+    "532": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A guide to leadership and management based on Islamic ethics: 30 moral foundations for developing the leader within you, plus 41 short tips for successful management, drawn from the Qur'an, hadith and the sayings of Imam ʿAli and Imam al-Sadiq. Translated by Saleem Bhimji."
+        ],
+        "source": "Islamic Insights (review)",
+        "url": "https://islamicinsights.com/books/moral-management.html",
+        "confidence": "high"
+      },
+      "note": "Islamic Publishing House (ISBN 9780980948738).",
+      "needsReview": false
+    },
+    "407": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "720": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A study of how the Qur'an speaks of the covenant between God and people, which the author presents as the key to the unity of the verses within each surah. It analyses the different words the Qur'an uses for covenant, gives their historical setting, and examines ten surahs in the order they were revealed."
+        ],
+        "source": "Shia Books Australia (book listing)",
+        "url": "https://www.shiabooks.com.au/products/the-covenant-in-the-qur-an-the-key-to-unity-of-the-verses-contained-in-qur-anic-surahs",
+        "confidence": "medium"
+      },
+      "note": "The listing does not name the author; Abd al-Karim Biazar wrote a McGill thesis on the Qur'anic idea of covenant.",
+      "needsReview": false
+    },
+    "382": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A history of the struggles of Iran's religious scholars (ulama) against oppression over about a hundred years, with chapters on figures such as Shaykh Fazlollah Noori, Ayatullah Borujerdi and Imam Khomeini, as well as reformers such as Shaykh Muhammad Abduh. Translated by Alaeddin Pazargadi."
+        ],
+        "source": "RelBib (University of Tübingen library catalogue)",
+        "url": "https://relbib.de/Record/1460110463/Details",
+        "confidence": "medium"
+      },
+      "note": "Islamic Propagation Organization, Tehran, 1985, 281 pages.",
+      "needsReview": false
+    },
+    "604": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "654": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "535": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "346": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "776": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "260": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "3": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "549": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "277": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "763": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Volume 2 of Sayyid Abul A'la Mawdudi's English translation and commentary on the Qur'an, covering Surat Al 'Imran and Surat al-Nisa' (the third and fourth parts of the Qur'an) with the translation alongside detailed notes. Translated by Muhammad Akbar."
+        ],
+        "source": "Biblio (bookseller listing)",
+        "url": "https://biblio.co.uk/bookstore/page-one-too-antiquarian-books-albuquerque/islam-hinduism-buddhism/2409351",
+        "confidence": "medium"
+      },
+      "note": "Islamic Publications, Lahore, 1971.",
+      "needsReview": false
+    },
+    "684": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Al-Kafi, compiled by Shaykh al-Kulayni in the 10th century, is the most important collection of Shi'a hadith. It has three parts: Usul al-Kafi on knowledge, belief, history, ethics, supplication and the Qur'an; Furu' al-Kafi on practical and legal matters; and Rawdat al-Kafi, a collection of miscellaneous traditions."
+        ],
+        "source": "Al-Serat journal (Al-Islam.org)",
+        "url": "https://al-islam.org/al-serat/vol-2-1976/great-shii-works-al-kafi-al-kulayni-ian-keith-anderson-howard",
+        "confidence": "medium"
+      },
+      "note": "Describes the whole work; the library's copy may be one volume.",
+      "needsReview": false
+    },
+    "93": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A selection of sermons, letters and sayings of Imam ʿAli from Nahj al-Balagha, the collection made by al-Sharif al-Radi, translated by Ali A. Behzadnia and Salwa Denny."
+        ],
+        "source": "Texas A&M University Libraries catalogue",
+        "url": "https://libcat.library.tamu.edu/Record/in00000096459/Details",
+        "confidence": "medium"
+      },
+      "needsReview": false
+    },
+    "387": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "805": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "814": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "373": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "551": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "238": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "10": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "226": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "26": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "564": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Only cited by title (Arabic–English, Al-Zahra International); nothing about the contents.",
+      "needsReview": false
+    },
+    "357": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "782": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "242": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "No cover found; the book already has a description.",
+      "needsReview": false
     }
   }
 }
