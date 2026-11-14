@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AddressLink } from "@/components/LibraryLinks";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -137,6 +138,9 @@ export default async function BookPage({ params }: Props) {
             {!book.available && (
               <p className="small">This book was not on the shelf at the last check. Please ask at the library desk.</p>
             )}
+            <p className="small shelf-address">
+              <strong>Al-Zahra Islamic Library:</strong> <AddressLink />
+            </p>
           </section>
 
           <dl className="details">

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Girih from "./Girih";
 import FooterLogo from "./FooterLogo";
+import { IecLink } from "./LibraryLinks";
 
 export default function Footer() {
   return (
@@ -13,7 +14,9 @@ export default function Footer() {
         </Link>
         {/* Two halves that each stay on one line, so on small screens the text wraps neatly at the dash. */}
         <p className="footer-name">
-          <span>Al-Zahra Islamic Library -</span> <span>Islamic Education Center of Houston TX © 2026</span>
+          <span>Al-Zahra Islamic Library -</span> <span>
+            <IecLink>Islamic Education Center of Houston TX</IecLink> © 2026
+          </span>
         </p>
       </div>
     </footer>

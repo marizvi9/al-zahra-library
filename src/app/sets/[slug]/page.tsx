@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AddressLink } from "@/components/LibraryLinks";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -39,6 +40,9 @@ export default async function SetPage({ params }: Props) {
         {set.author && <p className="set-head-author" dir="auto">by {set.author}</p>}
         <p className="set-head-count">{heldText}</p>
         {set.description && <p className="set-head-desc">{set.description}</p>}
+        <p className="set-head-address small">
+          <strong>Find it at the Al-Zahra Islamic Library:</strong> <AddressLink />
+        </p>
         {set.missing && (
           <p className="set-gap" role="note">
             <strong>Not in the catalogue:</strong> {set.missing}. {series ? "" : "Ask at the library desk if you need it."}
