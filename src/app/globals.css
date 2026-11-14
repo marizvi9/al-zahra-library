@@ -3695,3 +3695,10 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
   .botm-page-grid { grid-template-columns: 1fr; gap: 20px; }
   .botm-page-cover { max-width: 240px; }
 }
+
+/* Authors page: search box that filters the A–Z list */
+.author-filter { margin: 18px 0 8px; max-width: 520px; }
+.author-filter-label { display: block; font-family: var(--font-ui); font-weight: 600; margin-bottom: 6px; }
+.author-filter .search-box { display: flex; gap: 8px; }
+.author-filter-count { min-height: 1.4em; margin: 6px 0 0; }
+.author-letter[hidden], .author-list li[hidden], .letter-jump[hidden] { display: none; }

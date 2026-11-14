@@ -3,6 +3,11 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { authors, authorsByLetter } from "@/lib/catalog";
 import AuthorAvatar from "@/components/AuthorAvatar";
+import AuthorFilter from "@/components/AuthorFilter";
+import { foldName } from "@/lib/foldName";
+import authorNames from "@data/author-names.json";
+
+const spellings = (authorNames as { groups: Record<string, string[]> }).groups;
 
 export const metadata: Metadata = {
   title: "Authors",
@@ -21,6 +26,7 @@ export default function AuthorsPage() {
         All {authors.length} authors in the library, A to Z by surname. Different
         spellings of the same name are listed together.
       </p>
+      <AuthorFilter listId="author-index" total={authors.length} />
       <nav className="letter-jump" aria-label="Jump to a letter">
         {letters.map((l) => (
           <a key={l} href={`#letter-${l}`}>
@@ -28,12 +34,13 @@ export default function AuthorsPage() {
           </a>
         ))}
       </nav>
+      <div id="author-index">
       {letters.map((l) => (
         <section key={l} id={`letter-${l}`} className="author-letter" aria-labelledby={`h-${l}`}>
           <h2 id={`h-${l}`}>{l}</h2>
           <ul className="author-list">
             {byLetter.get(l)!.map((a) => (
-              <li key={a.slug}>
+              <li key={a.slug} data-search={foldName([a.display, a.name, ...(spellings[a.name] ?? [])].join(" "))}>
                 <Link href={`/authors/${a.slug}/`}>
                   <AuthorAvatar name={a.name} size={36} />
                   <span dir="auto" className="author-list-name">
@@ -46,6 +53,7 @@ export default function AuthorsPage() {
           </ul>
         </section>
       ))}
+      </div>
       <p className="small muted photo-credits-link">
         Author photos are from Wikimedia Commons (free licences) and WikiShia (used with credit).{" "}
         <Link href="/authors/photo-credits/">See every photo&rsquo;s credit and licence</Link>.
