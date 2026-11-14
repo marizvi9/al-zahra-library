@@ -46,7 +46,7 @@ export default function ReviewPage() {
                 <p className="review-title">
                   <Link href={`/books/${book.slug}/`}>{book.title}</Link> <span className="muted">· #{id} · {creditLine(book)}</span>
                 </p>
-                {f.needsReview && <p className="review-flag">Needs review: not shown on the site yet.</p>}
+                {f.needsReview && <p className="review-flag">Needs review: the book is on the site, but nothing new from the web is added to it until a person checks.</p>}
                 {f.description ? (
                   <p>
                     <strong>Description</strong> ({f.description.confidence}) from{" "}
