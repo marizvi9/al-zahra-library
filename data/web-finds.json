@@ -6030,6 +6030,297 @@
       ],
       "note": "Nothing found for this title and author.",
       "needsReview": false
+    },
+    "108": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Imam ʿAli's famous letter of instructions to Malik al-Ashtar when he appointed him governor of Egypt, the longest set of instructions in Nahj al-Balagha, on how a just ruler should govern and treat the people."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/richest-treasure-imam-ali",
+        "confidence": "medium"
+      },
+      "note": "Matched to the al-islam.org edition 'The Richest Treasure'; the library's copy may be a different translation.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "303": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Shaykh al-Saduq's classic work on the twelfth Imam, al-Mahdi: his identity, his occultation and everything connected with it, and the meaning of waiting for his return. English translation by Sayyid Athar Husayn Rizvi."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/kamaaluddin-wa-tamaamun-nima-vol-1-shaykh-saduq",
+        "confidence": "medium"
+      },
+      "note": "The library record does not say which volume or translation.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "117": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "The full text of the political and religious will of Imam Khomeini, leader of the Iranian revolution and founder of the Islamic Republic of Iran."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/imam-khomeinis-last-will-and-testament",
+        "confidence": "high"
+      },
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "360": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "A book by Mohammad Ali Shomali on knowing oneself as the first step to knowing God, built around the saying \"He who knows himself knows his Lord\". It discusses the benefits of self-knowledge, the spirit, human good qualities, free will and the human role as God's representative on earth."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/self-knowledge-mohammad-ali-shomali",
+        "confidence": "medium"
+      },
+      "note": "The library does not name an author; matched by title to Shomali's book.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "661": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "Thirty short lessons explaining the roots of religion (usul al-din): God, prophethood, imamate, death and the Day of Judgement, written simply enough to be used as a textbook for young people."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/roots-religion",
+        "confidence": "high"
+      },
+      "note": "Dar Rah-e Haqq, Qum, 1982.",
+      "coverNote": "al-islam.org has only its standard drawn cover.",
+      "needsReview": false
+    },
+    "791": {
+      "searched": [
+        "al-islam.org"
+      ],
+      "description": {
+        "text": [
+          "The last will of Ayatullah ʿAbdullah al-Mamaqani to his children, relatives and friends, with advice on reaching higher spiritual levels."
+        ],
+        "source": "Al-Islam.org",
+        "url": "https://al-islam.org/wasiyatnama-last-will-testament-abdullah-al-mamaqani",
+        "confidence": "medium"
+      },
+      "needsReview": true,
+      "note": "The library does not name an author; matched by title only.",
+      "coverNote": "al-islam.org has only its standard drawn cover."
+    },
+    "358": {
+      "searched": [
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A collection of essays introducing Islam as a whole way of life: its beliefs, culture, worship, social justice, the place of women, political theory and economic aims. Edited by Khurshid Ahmad, with a foreword by Salem Azzam."
+        ],
+        "source": "Institute of Policy Studies, Islamabad (publisher page)",
+        "url": "https://www.ips.org.pk/islam-its-meaning-and-message/",
+        "confidence": "medium"
+      },
+      "note": "The Islamic Foundation, about 284 pages. The library does not name an editor; matched by title.",
+      "needsReview": false
+    },
+    "478": {
+      "searched": [
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "Letters exchanged between Maulana Abul A'la Maududi and Maryam Jameelah, the American convert to Islam, written around 1960–62, before and after she moved to Pakistan."
+        ],
+        "source": "UiTM Library catalogue",
+        "url": "https://search.library.uitm.edu.my/Record/wils-64045",
+        "confidence": "medium"
+      },
+      "note": "Lahore, 1969.",
+      "needsReview": false
+    },
+    "355": {
+      "searched": [
+        "general web search"
+      ],
+      "description": {
+        "text": [
+          "A collection of essays on Islamic economics (iqtisad), inspired by the work of Sayyid Muhammad Baqir al-Sadr. Edited by Baqir al-Hassani and Abbas Mirakhor."
+        ],
+        "source": "UiTM Library catalogue",
+        "url": "https://search.library.uitm.edu.my/Record/wils-415749",
+        "confidence": "medium"
+      },
+      "needsReview": false
+    },
+    "602": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "224": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "296": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "692": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "574": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "297": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "658": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "97": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "633": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "723": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "330": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "112": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "637": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "747": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "99": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "173": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "489": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "717": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
+    },
+    "268": {
+      "searched": [
+        "al-islam.org",
+        "general web search"
+      ],
+      "note": "Nothing found for this title and author.",
+      "needsReview": false
     }
   }
 }
