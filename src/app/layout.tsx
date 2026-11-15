@@ -6,8 +6,10 @@ import Footer from "@/components/Footer";
 import Disclaimer from "@/components/Disclaimer";
 import Intro from "@/components/Intro";
 import { introScript } from "@/lib/intro";
+import { contentHead, contentText } from "./fonts";
 import "./globals.css";
 
+// The page content (between header and footer) uses its own pair, set in ./fonts.ts.
 // Two font families, downloaded at build time and served with the site (no requests to Google,
 // no layout shift; next/font sizes a matching fallback while they load):
 // - Literata: headings and reading text. A serif designed for long reading on screens, with
@@ -51,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       // straight to the top when moving to a new page, instead of opening it at the old scroll
       // position and gliding up (which briefly showed the bottom of the new page).
       data-scroll-behavior="smooth"
-      className={`${serif.variable} ${sans.variable}`}
+      className={`${serif.variable} ${sans.variable} ${contentHead.variable} ${contentText.variable}`}
       suppressHydrationWarning /* the intro script may add a class before React loads */
     >
       <head>

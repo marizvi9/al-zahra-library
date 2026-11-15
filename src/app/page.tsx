@@ -1,7 +1,5 @@
 import BookOfTheMonthBanner from "@/components/BookOfTheMonthBanner";
 import Link from "next/link";
-import Girih from "@/components/Girih";
-import Ornament from "@/components/Ornament";
 import SearchBox from "@/components/SearchBox";
 import VisitInfo from "@/components/VisitInfo";
 import FeaturedSets from "@/components/FeaturedSets";
@@ -47,33 +45,39 @@ const TASKS = [
 export default function HomePage() {
   return (
     <>
-      <section className="hero" aria-labelledby="hero-title">
-        <div className="hero-arch">
-          <Girih className="girih-hero" />
-          <div className="hero-content">
+      {/* Welcome banner, laid out like the title page of a printed catalogue: flat parchment between
+          gold rules, the emblem in a bookplate frame, and a plainly labelled catalogue search. */}
+      <section className="hero catalogue-head" aria-labelledby="hero-title">
+        <div className="ch-frame">
+          <div className="ch-plate">
             <Emblem className="hero-emblem" />
-            <div className="hero-text">
-              <h1 id="hero-title">
-                Welcome to the <span className="nowrap">Al-Zahra</span> Islamic Library
-              </h1>
-              <p className="hero-sub">
-                at the <IecLink />
-              </p>
-              <Ornament className="hero-ornament" />
-              <p className="hero-lede">
-                {/* Rounded down to the hundred, so "over" stays true as books are added. */}
-                Search the catalogue for a diverse selection of over {Math.floor((books.length - 1) / 100) * 100} books.
-              </p>
-              <SearchBox large />
-              <p className="hero-facts">
-                <span>{books.length} books</span>
-                <span>{authors.length} authors</span>
-                <span>{categories.length} subjects</span>
-                <span>{volumeSets.length} multi-volume sets</span>
-              </p>
-
-            </div>
           </div>
+          <div className="ch-main">
+            <h1 id="hero-title">
+              Welcome to the <span className="nowrap">Al-Zahra</span> Islamic Library
+            </h1>
+            <p className="hero-sub">
+              at the <IecLink />
+            </p>
+            <p className="hero-lede">
+              {/* Rounded down to the hundred, so "over" stays true as books are added. */}
+              Search the catalogue for a diverse selection of over {Math.floor((books.length - 1) / 100) * 100} books.
+            </p>
+            <SearchBox
+              large
+              label={
+                <>
+                  Catalogue search <span className="search-label-hint">title, author or subject</span>
+                </>
+              }
+            />
+          </div>
+          <dl className="hero-facts" aria-label="The collection">
+            <div><dt>Books</dt><dd>{books.length}</dd></div>
+            <div><dt>Authors</dt><dd>{authors.length}</dd></div>
+            <div><dt>Subjects</dt><dd>{categories.length}</dd></div>
+            <div><dt>Multi-volume sets</dt><dd>{volumeSets.length}</dd></div>
+          </dl>
         </div>
       </section>
 

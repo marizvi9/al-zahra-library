@@ -4073,3 +4073,200 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
   .brand-name { font-size: 1rem; white-space: normal; line-height: 1.1; }
   .brand-name-rest { display: block; font-size: 0.82em; }
 }
+
+/* =====================================================================
+   Redesign 2 (branch library-redesign-2): the page content made more print-like.
+   Everything here is scoped to <main>, so the dark blue header and footer (and the
+   opening animation) keep their own fonts and styles exactly as they were.
+   ===================================================================== */
+main {
+  /* Content fonts (src/app/fonts.ts). Arabic letters still fall back to IBM Plex Sans Arabic. */
+  --font-head: var(--font-content-head), var(--font-sans), Georgia, serif;
+  --font-body: var(--font-content-text), var(--font-sans), system-ui, sans-serif;
+  --font-ui: var(--font-content-text), var(--font-sans), system-ui, sans-serif;
+  /* Flatter, printed look: smaller corners, no soft drop shadows on panels and cards. */
+  --radius: 6px;
+  --shadow: none;
+  font-family: var(--font-body);
+  font-size: 1.06em; /* Alegreya Sans is a little smaller on the eye than Literata */
+  background: none; /* was a soft glow at the top of every page */
+}
+main h1,
+main h2,
+main h3 {
+  font-weight: 700;
+  letter-spacing: 0.002em;
+}
+main :is(h1, h2, h3, h4, p, li, dd) { font-variant-numeric: lining-nums; }
+
+/* ---------- Welcome banner: a catalogue title page ---------- */
+.catalogue-head {
+  padding: 18px var(--gutter) 0;
+}
+.ch-frame {
+  position: relative;
+  z-index: 20; /* the search suggestions hang over what follows */
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: clamp(20px, 3.5vw, 40px);
+  max-width: 1080px;
+  margin-inline: auto;
+  padding: 22px clamp(18px, 3vw, 34px) 0;
+  background: var(--card);
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+  /* a second, finer rule just inside the first: the double frame of a printed title page */
+  box-shadow: inset 0 0 0 4px var(--card), inset 0 0 0 5px rgb(172 133 33 / 0.45);
+}
+/* The emblem in a small bookplate: a ruled square on the geometric pattern. */
+.ch-plate {
+  align-self: start;
+  padding: 12px;
+  background: var(--cream) var(--pattern) center / 64px;
+  border: 1px solid var(--gold);
+  outline: 1px solid rgb(172 133 33 / 0.45);
+  outline-offset: 3px;
+}
+.catalogue-head .hero-emblem {
+  width: clamp(130px, 15vw, 162px);
+  animation: none;
+}
+.ch-main {
+  min-width: 0;
+  padding-bottom: 4px;
+}
+.catalogue-head h1 {
+  margin: 0;
+  font-size: clamp(1.65rem, 3.4vw, 2.3rem);
+  line-height: 1.12;
+  text-wrap: balance;
+}
+.catalogue-head .hero-sub {
+  max-width: none;
+  margin: 4px 0 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  font-size: clamp(1rem, 2.6vw, 1.15rem);
+}
+.catalogue-head .hero-lede {
+  margin: 12px 0 14px;
+  max-width: none;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+/* The catalogue search: wide, plain and labelled. */
+.catalogue-head .search-box { flex-wrap: wrap; row-gap: 6px; gap: 6px 0; }
+.search-label {
+  flex: 0 0 100%;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.search-label-hint {
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--muted);
+}
+.search-label-hint::before { content: "· "; color: var(--gold); }
+main .search-box input {
+  border: 1px solid var(--navy);
+  border-radius: 3px 0 0 3px;
+  background: #fffdf7;
+}
+main .search-box input:focus { box-shadow: 0 0 0 2px var(--gold-soft); }
+main .search-box > button {
+  border-width: 1px;
+  border-radius: 0 3px 3px 0;
+  letter-spacing: 0.02em;
+}
+/* The collection's holdings, as on the foot of a catalogue card. */
+.catalogue-head .hero-facts {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 18px calc(-1 * clamp(18px, 3vw, 34px)) 0;
+  padding: 0 5px;
+  border-top: 1px solid var(--line);
+  font-weight: 400;
+}
+.hero-facts > div {
+  padding: 9px 14px 11px;
+  text-align: center;
+}
+.hero-facts > div + div { border-left: 1px solid var(--line); }
+.hero-facts dt {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.hero-facts dd {
+  margin: 0;
+  font-family: var(--font-head);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.hero + .section { padding-top: 24px; }
+
+@media (max-width: 680px) {
+  .ch-frame {
+    grid-template-columns: 78px minmax(0, 1fr);
+    column-gap: 14px;
+    padding: 16px 16px 0;
+  }
+  .ch-main { display: contents; } /* emblem beside the heading; the rest full width below */
+  .ch-plate { grid-row: 1 / span 2; padding: 6px; outline-offset: 2px; }
+  .catalogue-head .hero-emblem { width: 100%; }
+  .catalogue-head h1 { grid-column: 2; align-self: end; font-size: clamp(1.35rem, 5.6vw, 1.7rem); }
+  .catalogue-head .hero-sub { grid-column: 2; align-self: start; border-bottom: 0; padding-bottom: 0; }
+  .catalogue-head .hero-lede,
+  .catalogue-head .search-box { grid-column: 1 / -1; }
+  .catalogue-head .hero-lede { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .catalogue-head .search-box { position: relative; z-index: 20; }
+  .catalogue-head .hero-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-inline: -16px;
+  }
+  .hero-facts > div:nth-child(3) { border-left: 0; }
+  .hero-facts > div:nth-child(n + 3) { border-top: 1px solid var(--line); }
+  .search-label-hint { display: block; margin-left: 0; }
+  .search-label-hint::before { content: none; }
+}
+
+/* ---------- Cards and panels: flat parchment with thin rules ---------- */
+main :is(.category-card, .slide-link, .author-book, .big-book, .book-row, .task-tile, .author-result a):hover {
+  box-shadow: none;
+  border-color: var(--gold);
+}
+main .author-result a:hover { box-shadow: none; }
+.botm .botm-card { box-shadow: none; outline: 1px solid var(--gold); outline-offset: 3px; }
+/* Covers are books, so they keep one tight shadow, not a floating glow. */
+main :is(.generated-cover, .author-book-cover img, .slide-cover img, .shelf-book-cover img, .botm-cover,
+  .set-volume-cover .generated-cover, .set-card-cover img, .set-card-cover .generated-cover,
+  .featured-set-cover .generated-cover, .big-book-cover img, .big-book-cover .generated-cover) {
+  box-shadow: 0 1px 2px rgb(4 20 46 / 0.22), 0 2px 6px rgb(4 20 46 / 0.08);
+}
+main .author-portrait img { box-shadow: 0 0 0 1px var(--gold); }
+main .author-portrait-initials { box-shadow: inset 0 0 0 6px var(--ink), inset 0 0 0 7px var(--gold-light); }
+main .slider-arrow { box-shadow: none; border: 1px solid var(--line); }
+/* Rounded "pill" shapes become small printed labels. */
+main :is(.chip, .tag, .scope-option, .status, .recent-chip, .set-vol, .search-within, .set-label,
+  .set-panel-here, .botm-button, .type-label, .set-card-count, .pager-btn) {
+  border-radius: 3px;
+}
+main .chip-count { border-radius: 2px; }
+/* Section headings sit on a thin rule, as in a printed catalogue. */
+main .section-head {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
