@@ -4297,3 +4297,14 @@ main .search-box:not(:has(> button)) input { border-radius: 3px; }
 .section:has(#featured-authors-title) { padding-bottom: 0; }
 .section:has(#featured-authors-title) + .section { padding-top: 14px; }
 .section:has(#featured-authors-title) + .section::before { display: none; }
+/* Compact footer: same content, less empty space around and between its parts. */
+.site-footer .footer-inner { padding-block: 24px 18px; gap: 14px; }
+.footer-top { gap: 18px 48px; }
+.footer-cols { row-gap: 14px; }
+.footer-col-title { margin-bottom: 4px; }
+.footer-col ul { gap: 2px; }
+.footer-col p { margin-bottom: 3px; }
+.site-footer .footer-name { padding-top: 12px; }
+@media (max-width: 760px) {
+  .site-footer .footer-inner { padding-block: 22px 16px; gap: 14px; }
+}
