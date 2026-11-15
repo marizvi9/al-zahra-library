@@ -30,6 +30,9 @@ const lib = (() => {
   return { k, mid: (left + right) / 2, height: Math.max(...LIBRARY.map((l) => l.maxy - l.miny)) * k };
 })();
 
+const CAP_HEIGHT = 0.698; // IBM Plex Sans Arabic: capital letters are 0.698 of the font size
+const LIB_SIZE = lib.height / CAP_HEIGHT; // capitals exactly as tall as the traced ones
+
 const zTop = 0;
 const zBottom = zTop + (ZAHRA.maxy - ZAHRA.miny);
 const lTop = zBottom + GAP_LINES;
@@ -41,14 +44,6 @@ const PAD = 310; // empty room above and below, so the logo shows at the same si
 const STAR_X = BLOCK_X + BLOCK_W + STAR_SPACE + STAR_R; // the two stars, one above the other, to the right of the words
 const W = STAR_X + STAR_R + 10;
 const stars = [H / 2 - STAR_R - STAR_GAP / 2, H / 2 + STAR_R + STAR_GAP / 2].map((y) => starPoints(STAR_X, y, STAR_R));
-
-// The traced "A" of ISLAMIC came out leaning, with a crossbar too thin to see; draw it with the "A" of
-// LIBRARY instead (same lettering), keeping its own place in the word.
-const LETTERS_FIXED = (() => {
-  const goodA = LIBRARY.filter((l) => l.ch === "A").at(-1)!;
-  const firstA = LIBRARY.findIndex((l) => l.ch === "A");
-  return LIBRARY.map((l, i) => (i === firstA ? { ...goodA, dx: l.dx } : l));
-})();
 
 export default function FooterLogo({ className = "" }: { className?: string }) {
   const flowerY = H / 2 - 4 * 217.5;
@@ -71,16 +66,21 @@ export default function FooterLogo({ className = "" }: { className?: string }) {
       {/* AL-ZAHRA */}
       <path fill={LETTERS} fillRule="evenodd" d={ZAHRA.d} transform={`translate(${BLOCK_X - ZAHRA.minx} ${zTop - ZAHRA.miny})`} />
 
-      {/* ISLAMIC LIBRARY: the emblem's letters, straight */}
-      {LETTERS_FIXED.map((l, i) => (
-        <path
+      {/* ISLAMIC LIBRARY: each letter stays exactly where the emblem's traced letter was (same centre,
+          same line, same height), but is drawn in the emblem's lettering font so it stands upright. */}
+      {LIBRARY.map((l, i) => (
+        <text
           key={i}
+          x={MID + (l.dx - lib.mid) * lib.k}
+          y={lBottom}
+          textAnchor="middle"
           fill={LETTERS}
-          fillRule="evenodd"
-          d={l.d}
-          // each letter stands on the same line (its own bottom edge sits at lBottom), centred where it was on the arc
-          transform={`translate(${MID + (l.dx - lib.mid) * lib.k} ${lBottom}) scale(${lib.k}) translate(${-l.cx} ${-l.maxy})`}
-        />
+          fontFamily="var(--font-brand), sans-serif"
+          fontWeight="500"
+          fontSize={LIB_SIZE}
+        >
+          {l.ch}
+        </text>
       ))}
 
       {/* IEC-HOUSTON */}
