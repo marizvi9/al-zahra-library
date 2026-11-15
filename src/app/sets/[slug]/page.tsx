@@ -45,7 +45,7 @@ export default async function SetPage({ params }: Props) {
         </p>
         {set.missing && (
           <p className="set-gap" role="note">
-            <strong>Not in the catalogue:</strong> {set.missing}. {series ? "" : "Ask at the library desk if you need it."}
+            <strong>Not in the catalog:</strong> {set.missing}. {series ? "" : "Ask at the library desk if you need it."}
           </p>
         )}
       </header>

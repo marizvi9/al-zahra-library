@@ -33,7 +33,7 @@ export type AuthorRecord = {
   slug: string;
   name: string;
   count: number;
-  /** Every other way the catalogue spells this person's name. */
+  /** Every other way the catalog spells this person's name. */
   spellings: string[];
   initials: string;
   photo?: {

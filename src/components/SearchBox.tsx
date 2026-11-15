@@ -25,7 +25,7 @@ const MAX_SUGGESTIONS = 7;
 const MAX_AUTHORS = 3;
 const MAX_SETS = 2;
 
-/** Placeholder text for each search scope (the catalogue search on the home page has scope tabs). */
+/** Placeholder text for each search scope (the catalog search on the home page has scope tabs). */
 const PLACEHOLDER: Record<SearchScope, string> = {
   all: "Search by title, author or category",
   title: "Search book titles",

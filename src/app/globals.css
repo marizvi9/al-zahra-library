@@ -4099,8 +4099,8 @@ main h3 {
 }
 main :is(h1, h2, h3, h4, p, li, dd) { font-variant-numeric: lining-nums; }
 
-/* ---------- Welcome banner: a catalogue title page ---------- */
-.catalogue-head {
+/* ---------- Welcome banner: a catalog title page ---------- */
+.catalog-head {
   padding: 18px var(--gutter) 0;
 }
 .ch-frame {
@@ -4127,35 +4127,35 @@ main :is(h1, h2, h3, h4, p, li, dd) { font-variant-numeric: lining-nums; }
   outline: 1px solid rgb(172 133 33 / 0.45);
   outline-offset: 3px;
 }
-.catalogue-head .hero-emblem {
-  width: clamp(130px, 15vw, 162px);
+.catalog-head .hero-emblem {
+  width: clamp(150px, 18vw, 202px); /* a little bigger (was up to 162px) */
   animation: none;
 }
 .ch-main {
   min-width: 0;
   padding-bottom: 4px;
 }
-.catalogue-head h1 {
+.catalog-head h1 {
   margin: 0;
   font-size: clamp(1.65rem, 3.4vw, 2.3rem);
   line-height: 1.12;
   text-wrap: balance;
 }
-.catalogue-head .hero-sub {
+.catalog-head .hero-sub {
   max-width: none;
   margin: 4px 0 0;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--line);
   font-size: clamp(1rem, 2.6vw, 1.15rem);
 }
-.catalogue-head .hero-lede {
+.catalog-head .hero-lede {
   margin: 12px 0 14px;
   max-width: none;
   font-size: 1.05rem;
   color: var(--text);
 }
-/* The catalogue search: wide, plain and labelled. */
-.catalogue-head .search-box { flex-wrap: wrap; row-gap: 6px; gap: 6px 0; }
+/* The catalog search: wide, plain and labelled. */
+.catalog-head .search-box { flex-wrap: wrap; row-gap: 6px; gap: 6px 0; }
 .search-label {
   flex: 0 0 100%;
   font-family: var(--font-ui);
@@ -4176,8 +4176,8 @@ main .search-box > button {
   border-radius: 0 3px 3px 0;
   letter-spacing: 0.02em;
 }
-/* The collection's holdings, as on the foot of a catalogue card. */
-.catalogue-head .hero-facts {
+/* The collection's holdings, as on the foot of a catalog card. */
+.catalog-head .hero-facts {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -4212,20 +4212,20 @@ main .search-box > button {
 
 @media (max-width: 680px) {
   .ch-frame {
-    grid-template-columns: 78px minmax(0, 1fr);
+    grid-template-columns: 96px minmax(0, 1fr);
     column-gap: 14px;
     padding: 16px 16px 0;
   }
   .ch-main { display: contents; } /* emblem beside the heading; the rest full width below */
   .ch-plate { grid-row: 1 / span 2; padding: 6px; outline-offset: 2px; }
-  .catalogue-head .hero-emblem { width: 100%; }
-  .catalogue-head h1 { grid-column: 2; align-self: end; font-size: clamp(1.35rem, 5.6vw, 1.7rem); }
-  .catalogue-head .hero-sub { grid-column: 2; align-self: start; border-bottom: 0; padding-bottom: 0; }
-  .catalogue-head .hero-lede,
-  .catalogue-head .search-box { grid-column: 1 / -1; }
-  .catalogue-head .hero-lede { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
-  .catalogue-head .search-box { position: relative; z-index: 20; }
-  .catalogue-head .hero-facts {
+  .catalog-head .hero-emblem { width: 100%; }
+  .catalog-head h1 { grid-column: 2; align-self: end; font-size: clamp(1.35rem, 5.6vw, 1.7rem); }
+  .catalog-head .hero-sub { grid-column: 2; align-self: start; border-bottom: 0; padding-bottom: 0; }
+  .catalog-head .hero-lede,
+  .catalog-head .search-box { grid-column: 1 / -1; }
+  .catalog-head .hero-lede { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .catalog-head .search-box { position: relative; z-index: 20; }
+  .catalog-head .hero-facts {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-inline: -16px;
   }
@@ -4255,7 +4255,7 @@ main :is(.chip, .tag, .scope-option, .status, .recent-chip, .set-vol, .search-wi
   border-radius: 3px;
 }
 main .chip-count { border-radius: 2px; }
-/* Section headings sit on a thin rule, as in a printed catalogue. */
+/* Section headings sit on a thin rule, as in a printed catalog. */
 main .section-head {
   padding-bottom: 8px;
   border-bottom: 1px solid var(--line);

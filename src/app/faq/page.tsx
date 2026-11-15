@@ -6,7 +6,7 @@ import { HoursList } from "@/components/VisitInfo";
 import { CONTACT_EMAIL } from "@/lib/library";
 import { books, categories } from "@/lib/catalog";
 
-export const metadata: Metadata = { title: "FAQ", description: "Frequently asked questions about the Al-Zahra Islamic Library and its catalogue." };
+export const metadata: Metadata = { title: "FAQ", description: "Frequently asked questions about the Al-Zahra Islamic Library and its catalog." };
 
 // Only facts the library has confirmed. Anything not decided yet (such as hours or borrowing)
 // says so and points to Contact Us, rather than guessing.
@@ -36,7 +36,7 @@ export default function FaqPage() {
       q: "How do I find a book on the shelves?",
       a: (
         <p>
-          Look the book up in the catalogue, note its shelf number (for example 500 · 10 · 1 means shelf 500, section 10, book 1), then go to that shelf.{" "}
+          Look the book up in the catalog, note its shelf number (for example 500 · 10 · 1 means shelf 500, section 10, book 1), then go to that shelf.{" "}
           <Link href="/visit/">More on the Visit page</Link>.
         </p>
       ),
@@ -71,7 +71,7 @@ export default function FaqPage() {
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "FAQ" }]} />
       <header className="page-head arch-band">
         <h1>FAQ</h1>
-        <p className="lede">Answers to common questions about the library and this catalogue.</p>
+        <p className="lede">Answers to common questions about the library and this catalog.</p>
       </header>
       <div className="faq-list">
         {faqs.map((f) => (

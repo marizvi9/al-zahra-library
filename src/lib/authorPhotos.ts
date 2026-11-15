@@ -51,8 +51,8 @@ type Entry = Partial<AuthorPhoto> & {
   bioSources?: string[];
   /** A title shown before the name on the site (only "Ayatullah" for now). The Google Sheet is never changed. */
   title?: string;
-  /** The person's full name, when the catalogue only has a short form ("Ayatullah Gulpaygani"). Shown on the
-   *  site instead of the catalogue name; the page address and the Google Sheet keep the catalogue name. */
+  /** The person's full name, when the catalog only has a short form ("Ayatullah Gulpaygani"). Shown on the
+   *  site instead of the catalog name; the page address and the Google Sheet keep the catalog name. */
   fullName?: string;
 };
 const file = data as unknown as { neverPhoto: string[]; authors: Record<string, Entry> };
@@ -105,7 +105,7 @@ export function initials(name: string) {
   return (words.length === 1 ? first[0] : first[0] + last[0]).toUpperCase();
 }
 
-// Honorifics at the start of a catalogue name that the shown title replaces ("Ayatollah X" -> "Ayatullah X").
+// Honorifics at the start of a catalog name that the shown title replaces ("Ayatollah X" -> "Ayatullah X").
 const LEADING_TITLE = /^(?:(?:grand|al-uzma)\s+)?(?:ayat(?:u|o)llah?|ayt\.?|imam)(?:\s+al-uzma)?\s+/i;
 
 /** The name as shown on the site: with its title ("Ayatullah ...") when the author has one in authors.json.

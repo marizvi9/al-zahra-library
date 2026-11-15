@@ -36,7 +36,7 @@ function mainSubjects(list: Book[]) {
 
 /** "What would you like to do?" tiles, as on the big library sites. Line icons only. */
 const TASKS = [
-  { href: "/search/", title: "Search the catalogue", text: "Find a book by title, author or subject.", icon: "M10.5 17a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Z M15.5 15.5 21 21" },
+  { href: "/search/", title: "Search the catalog", text: "Find a book by title, author or subject.", icon: "M10.5 17a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Z M15.5 15.5 21 21" },
   { href: "/explore/", title: "Browse by subject", text: "From Quran and Hadith to history and fiqh.", icon: "M4 5h6a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4z M20 5h-6a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h6z" },
   { href: "/shelves/", title: "Find a shelf", text: "See the books as they stand, shelf by shelf.", icon: "M4 4h16 M4 12h16 M4 20h16 M7 4v8 M10 4v8 M15 12v8 M18 12v8" },
   { href: "/visit/", title: "Visit us", text: "Location, hours and how to find a book.", icon: "M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z M12 12.2a2.6 2.6 0 1 0 0-5.2 2.6 2.6 0 0 0 0 5.2Z" },
@@ -45,9 +45,9 @@ const TASKS = [
 export default function HomePage() {
   return (
     <>
-      {/* Welcome banner, laid out like the title page of a printed catalogue: flat parchment between
-          gold rules, the emblem in a bookplate frame, and a plainly labelled catalogue search. */}
-      <section className="hero catalogue-head" aria-labelledby="hero-title">
+      {/* Welcome banner, laid out like the title page of a printed catalog: flat parchment between
+          gold rules, the emblem in a bookplate frame, and a plainly labelled catalog search. */}
+      <section className="hero catalog-head" aria-labelledby="hero-title">
         <div className="ch-frame">
           <div className="ch-plate">
             <Emblem className="hero-emblem" />
@@ -61,11 +61,11 @@ export default function HomePage() {
             </p>
             <p className="hero-lede">
               {/* Rounded down to the hundred, so "over" stays true as books are added. */}
-              Search our catalog of over {Math.floor((books.length - 1) / 100) * 100} books!
+              Search our diverse catalog of over {Math.floor((books.length - 1) / 100) * 100} books!
             </p>
             <SearchBox
               large
-              label="Catalogue search"
+              label="Catalog search"
             />
           </div>
           <dl className="hero-facts" aria-label="The collection">

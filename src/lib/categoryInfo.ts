@@ -1,4 +1,4 @@
-// How some names are SHOWN on the site. The catalogue spreadsheet is not changed;
+// How some names are SHOWN on the site. The catalog spreadsheet is not changed;
 // web addresses stay the same. (Spelling "Ahlul-Bayt" chosen by the library.)
 export const DISPLAY_NAMES: Record<string, string> = {
   "Hadith & Ahlal Bayt Teachings": "Hadith & Ahlul-Bayt Teachings",

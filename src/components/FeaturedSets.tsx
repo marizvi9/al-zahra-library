@@ -42,7 +42,7 @@ export default function FeaturedSets({ sets, total }: { sets: VolumeSet[]; total
               </h3>
               {s.author && <p className="featured-set-author" dir="auto">{s.author}</p>}
               <p className="featured-set-vols">{s.volumes.map((v) => v.label).join(" · ")}</p>
-              {s.missing && <p className="small muted">Not in the catalogue: {s.missing}</p>}
+              {s.missing && <p className="small muted">Not in the catalog: {s.missing}</p>}
               <Link href={`/sets/${s.slug}/`} className="featured-set-more">
                 See the set →
               </Link>

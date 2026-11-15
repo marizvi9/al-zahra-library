@@ -14,7 +14,7 @@ import type { CoverPhoto } from "./ArchCover";
 type Props = {
   slug: string;
   title: string;
-  /** The author as catalogued (for the drawn cover). */
+  /** The author as cataloged (for the drawn cover). */
   author?: string | null;
   /** Colour seed for the drawn cover: the set's slug for a volume of a set, so every volume matches. */
   seed?: string;

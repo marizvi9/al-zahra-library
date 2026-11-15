@@ -29,7 +29,7 @@ export default function SetPanel({ set, bookId }: { set: VolumeSet; bookId: numb
           </li>
         ))}
       </ol>
-      {set.missing && <p className="small muted set-panel-missing">Not in the catalogue: {set.missing}.</p>}
+      {set.missing && <p className="small muted set-panel-missing">Not in the catalog: {set.missing}.</p>}
       <p className="set-panel-steps">
         {prev ? (
           <Link href={`/books/${prev.books[0].slug}/`} rel="prev">

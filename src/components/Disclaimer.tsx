@@ -5,9 +5,9 @@ import { AddressLink } from "./LibraryLinks";
 // wording here changes it everywhere. It used to be inside the footer.
 export default function Disclaimer() {
   return (
-    <aside className="disclaimer" aria-label="About this catalogue">
+    <aside className="disclaimer" aria-label="About this catalog">
       <p className="container muted small">
-        This catalogue lists the books the library holds. Please ask at the library about borrowing.{" "}
+        This catalog lists the books the library holds. Please ask at the library about borrowing.{" "}
         <span className="disclaimer-address">
           Library address: <AddressLink />
         </span>
