@@ -3,6 +3,7 @@ import Link from "next/link";
 import Girih from "@/components/Girih";
 import Ornament from "@/components/Ornament";
 import SearchBox from "@/components/SearchBox";
+import VisitInfo from "@/components/VisitInfo";
 import FeaturedSets from "@/components/FeaturedSets";
 import { homeFeaturedSets, volumeSets } from "@/lib/sets";
 import CategoryCard from "@/components/CategoryCard";
@@ -20,7 +21,6 @@ import {
   categories,
   featuredCategories,
   moreToExplore,
-  shelves,
   topAuthors,
   type Book,
 } from "@/lib/catalog";
@@ -35,6 +35,14 @@ function mainSubjects(list: Book[]) {
     .map(([c]) => c)
     .join(", ");
 }
+
+/** "What would you like to do?" tiles, as on the big library sites. Line icons only. */
+const TASKS = [
+  { href: "/search/", title: "Search the catalogue", text: "Find a book by title, author or subject.", icon: "M10.5 17a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Z M15.5 15.5 21 21" },
+  { href: "/explore/", title: "Browse by subject", text: "From Quran and Hadith to history and fiqh.", icon: "M4 5h6a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4z M20 5h-6a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h6z" },
+  { href: "/shelves/", title: "Find a shelf", text: "See the books as they stand, shelf by shelf.", icon: "M4 4h16 M4 12h16 M4 20h16 M7 4v8 M10 4v8 M15 12v8 M18 12v8" },
+  { href: "/visit/", title: "Visit us", text: "Location, hours and how to find a book.", icon: "M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z M12 12.2a2.6 2.6 0 1 0 0-5.2 2.6 2.6 0 0 0 0 5.2Z" },
+];
 
 export default function HomePage() {
   return (
@@ -53,9 +61,17 @@ export default function HomePage() {
               </p>
               <Ornament className="hero-ornament" />
               <p className="hero-lede">
-                Explore {books.length} books on faith, history, law, thought and more.
+                {/* Rounded down to the hundred, so "over" stays true as books are added. */}
+                Search the catalogue for a diverse selection of over {Math.floor((books.length - 1) / 100) * 100} books.
               </p>
               <SearchBox large />
+              <p className="hero-facts">
+                <span>{books.length} books</span>
+                <span>{authors.length} authors</span>
+                <span>{categories.length} subjects</span>
+                <span>{volumeSets.length} multi-volume sets</span>
+              </p>
+
             </div>
           </div>
         </div>
@@ -64,6 +80,22 @@ export default function HomePage() {
       <div className="container section">
         <BookOfTheMonthBanner />
         <FeaturedSlider slides={featuredSlides} />
+        {/* Quick tasks, as the big library sites have. */}
+        <ul className="task-tiles" aria-label="What would you like to do?">
+          {TASKS.map((t) => (
+            <li key={t.href}>
+              <Link href={t.href} className="task-tile">
+                <svg className="task-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d={t.icon} fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <span className="task-text">
+                  <span className="task-title">{t.title}</span>
+                  <span className="task-desc">{t.text}</span>
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
 
       {/* Extra featured sections, set in data/home-featured-sections.json */}
@@ -143,24 +175,15 @@ export default function HomePage() {
       {/* Three multi-volume sets, shown big (chosen in data/multi-volume-sets.json). */}
       <FeaturedSets sets={homeFeaturedSets} total={volumeSets.length} />
 
-      {/* Browse by shelf number: as the books stand in the library. */}
-      <section className="container section" aria-labelledby="shelves-title">
+      {/* Practical visitor information, as every library site has (details in src/lib/library.ts). */}
+      <section className="container section visit-band" aria-labelledby="visit-title">
         <div className="section-head">
-          <h2 id="shelves-title">Browse by shelf number</h2>
-          <Link href="/shelves/" className="see-all">
-            All shelves
+          <h2 id="visit-title">Visit us</h2>
+          <Link href="/visit/" className="see-all">
+            How to find a book
           </Link>
         </div>
-        <ul className="shelf-strip">
-          {shelves.map((sh) => (
-            <li key={sh.slug}>
-              <Link href={`/shelves/${sh.slug}/`} className="shelf-chip">
-                <span className="shelf-chip-no">{sh.number ?? "—"}</span>
-                <span className="shelf-chip-name">{sh.number ? sh.categories.join(", ") : "No shelf number"}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <VisitInfo />
       </section>
     </>
   );

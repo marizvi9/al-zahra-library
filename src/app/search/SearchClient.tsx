@@ -22,7 +22,11 @@ type Props = { records: SearchRecord[]; authors: AuthorRecord[]; sets: SetRecord
 export default function SearchClient({ records, authors, sets, categories }: Props) {
   const params = useSearchParams();
   const [query, setQuery] = useState(params.get("q") ?? "");
-  const [scope, setScope] = useState<SearchScope>("all");
+  // ?in=title|author|category (from the home page's catalogue tabs) starts the search in that scope.
+  const [scope, setScope] = useState<SearchScope>(() => {
+    const v = params.get("in") as SearchScope | null;
+    return v && SCOPES.some((s) => s.value === v) ? v : "all";
+  });
   // ?category=fiqh (from a "Search this shelf" link) starts the search inside that category.
   const [category, setCategory] = useState(() => {
     const c = params.get("category") ?? "";
@@ -69,6 +73,7 @@ export default function SearchClient({ records, authors, sets, categories }: Pro
     const qs = new URLSearchParams();
     if (query) qs.set("q", query);
     if (category) qs.set("category", category);
+    if (scope !== "all") qs.set("in", scope);
     const url = qs.size ? `?${qs}` : window.location.pathname;
     window.history.replaceState(null, "", url);
     setShown(PAGE_SIZE);

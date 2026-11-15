@@ -18,14 +18,22 @@ import { useRouter } from "next/navigation";
 import ArchCover from "./ArchCover";
 import { withBase } from "@/lib/paths";
 import AvatarView from "./AvatarView";
-import { buildAuthorIndex, buildIndex, buildSetIndex, searchAuthors, searchSets, suggest, type Indexed, type SearchData, type SearchRecord, type SetRecord } from "@/lib/search";
+import { buildAuthorIndex, buildIndex, buildSetIndex, searchAuthors, searchSets, suggest, type Indexed, type SearchData, type SearchRecord, type SearchScope, type SetRecord } from "@/lib/search";
 import { addRecent, clearRecent, getRecent, onRecentChange, removeRecent } from "@/lib/recentSearches";
 
 const MAX_SUGGESTIONS = 7;
 const MAX_AUTHORS = 3;
 const MAX_SETS = 2;
 
-export default function SearchBox({ large = false, compact = false }: { large?: boolean; compact?: boolean }) {
+/** Placeholder text for each search scope (the catalogue search on the home page has scope tabs). */
+const PLACEHOLDER: Record<SearchScope, string> = {
+  all: "Search by title, author or category",
+  title: "Search book titles",
+  author: "Search author names",
+  category: "Search subjects, e.g. Fiqh or Karbala",
+};
+
+export default function SearchBox({ large = false, compact = false, scope = "all" }: { large?: boolean; compact?: boolean; /** search only titles, authors or subjects (from CatalogSearch's tabs) */ scope?: SearchScope }) {
   const router = useRouter();
   const uid = useId().replace(/:/g, "");
   const inputId = `search-${uid}`;
@@ -83,7 +91,7 @@ export default function SearchBox({ large = false, compact = false }: { large?: 
   const ready = trimmed.length >= 2;
   const showList = open && ready && records !== null;
   const showRecent = open && !ready && recent.length > 0;
-  const seeAllHref = `/search/?q=${encodeURIComponent(trimmed)}`;
+  const seeAllHref = `/search/?q=${encodeURIComponent(trimmed)}${scope !== "all" ? `&in=${scope}` : ""}`;
   const rowCount = rows.length + 1; // + the "See all results" row
 
   useEffect(() => setActive(-1), [query]);
@@ -176,15 +184,16 @@ export default function SearchBox({ large = false, compact = false }: { large?: 
       }}
     >
       <label htmlFor={inputId} className="visually-hidden">
-        Search by title, author or category
+        {PLACEHOLDER[scope]}
       </label>
+      {scope !== "all" && <input type="hidden" name="in" value={scope} />}
       <input
         id={inputId}
         ref={inputRef}
         type="search"
         name="q"
         dir="auto"
-        placeholder="Search by title, author or category"
+        placeholder={PLACEHOLDER[scope]}
         autoComplete="off"
         value={query}
         role="combobox"
