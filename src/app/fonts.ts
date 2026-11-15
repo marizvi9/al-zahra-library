@@ -1,7 +1,6 @@
-// Fonts for the PAGE CONTENT (everything between the dark blue header and footer).
-// The header, the footer, the opening animation and the emblem lettering keep the site's original
-// fonts (Literata and IBM Plex Sans Arabic, loaded in layout.tsx), so they look exactly as before.
-// Arabic, Persian and Urdu letters anywhere still use IBM Plex Sans Arabic.
+// The site's fonts for headings, text, menus and labels, header and footer included.
+// The opening animation and the emblem lettering keep IBM Plex Sans Arabic (loaded in layout.tsx),
+// and Arabic, Persian and Urdu letters anywhere still use it too.
 //
 // Fonts are downloaded at build time and served with the site (no requests to Google).
 //

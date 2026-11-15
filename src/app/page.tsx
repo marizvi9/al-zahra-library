@@ -65,11 +65,7 @@ export default function HomePage() {
             </p>
             <SearchBox
               large
-              label={
-                <>
-                  Catalogue search <span className="search-label-hint">title, author or subject</span>
-                </>
-              }
+              label="Catalogue search"
             />
           </div>
           <dl className="hero-facts" aria-label="The collection">
