@@ -1136,7 +1136,7 @@ a:hover {
 }
 .footer-logo svg {
   display: block;
-  height: 112px;
+  height: 119px;
   width: auto;
 }
 .footer-logo:focus-visible {
@@ -1168,7 +1168,7 @@ a:hover {
     gap: 22px;
   }
   .footer-logo svg {
-    height: 100px;
+    height: 106px;
     max-width: 88vw;
   }
   .footer-name {

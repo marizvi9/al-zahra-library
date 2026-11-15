@@ -20,7 +20,7 @@ const MID = BLOCK_X + BLOCK_W / 2; // the middle of the words
 const STAR_R = 135; // small
 const STAR_GAP = 90; // space between the two stars
 const STAR_SPACE = 260; // words ↔ stars
-const GAP_LINES = 160; // between lines of words
+const GAP_LINES = 215; // between lines of words (a little airier than the emblem, to balance the flower)
 
 // ISLAMIC LIBRARY, scaled so the line is as wide as AL-ZAHRA, letters spaced as they were on the arc.
 const lib = (() => {
@@ -32,6 +32,12 @@ const lib = (() => {
 
 const CAP_HEIGHT = 0.698; // IBM Plex Sans Arabic: capital letters are 0.698 of the font size
 const LIB_SIZE = lib.height / CAP_HEIGHT; // capitals exactly as tall as the traced ones
+// Where each word sat in the emblem: ISLAMIC is the first 7 traced letters, LIBRARY the rest.
+const LIB_WORDS = [LIBRARY.slice(0, 7), LIBRARY.slice(7)].map((ls) => {
+  const left = Math.min(...ls.map((l) => MID + (l.dx - lib.mid - (l.cx - l.minx)) * lib.k));
+  const right = Math.max(...ls.map((l) => MID + (l.dx - lib.mid + (l.maxx - l.cx)) * lib.k));
+  return { text: ls.map((l) => l.ch).join(""), left, width: right - left };
+});
 
 const zTop = 0;
 const zBottom = zTop + (ZAHRA.maxy - ZAHRA.miny);
@@ -66,20 +72,22 @@ export default function FooterLogo({ className = "" }: { className?: string }) {
       {/* AL-ZAHRA */}
       <path fill={LETTERS} fillRule="evenodd" d={ZAHRA.d} transform={`translate(${BLOCK_X - ZAHRA.minx} ${zTop - ZAHRA.miny})`} />
 
-      {/* ISLAMIC LIBRARY: each letter stays exactly where the emblem's traced letter was (same centre,
-          same line, same height), but is drawn in the emblem's lettering font so it stands upright. */}
-      {LIBRARY.map((l, i) => (
+      {/* ISLAMIC LIBRARY: each word covers exactly the width it had in the emblem (from the left edge of
+          its first traced letter to the right edge of its last), with its letters evenly spaced inside
+          that width, in the emblem's lettering font so every letter stands upright. */}
+      {LIB_WORDS.map((w) => (
         <text
-          key={i}
-          x={MID + (l.dx - lib.mid) * lib.k}
+          key={w.text}
+          x={w.left}
           y={lBottom}
-          textAnchor="middle"
+          textLength={w.width}
+          lengthAdjust="spacing"
           fill={LETTERS}
           fontFamily="var(--font-brand), sans-serif"
           fontWeight="500"
           fontSize={LIB_SIZE}
         >
-          {l.ch}
+          {w.text}
         </text>
       ))}
 
