@@ -4022,29 +4022,6 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
   .header-inner:not([data-ready]) .nav-list > li { flex: none; }
 }
 
-/* ---------- Home: what the library holds, under the search bar ---------- */
-.hero-facts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 0;
-  margin: 12px 0 0;
-  max-width: none;
-  font-family: var(--font-ui);
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--muted);
-}
-.hero-facts span + span::before {
-  content: "·";
-  margin: 0 10px;
-  color: var(--gold);
-}
-@media (max-width: 700px) {
-  .hero-facts { justify-content: center; }
-}
-@media (max-width: 480px) {
-  .hero-facts span:nth-child(4) { display: none; } /* three counts fit on one line */
-}
 
 /* Phones, dark header: the opened menu's "More" links and the current-page highlight were drawn for
    the light drop-down (dark ink on cream), so on navy they were invisible or unreadable. */
@@ -4186,12 +4163,22 @@ main .search-box > button {
   border-top: 1px solid var(--line);
   font-weight: 400;
 }
-.hero-facts > div {
+.catalog-head .hero-facts { list-style: none; max-width: none; font-family: var(--font-ui); }
+.hero-facts > li { min-width: 0; }
+.hero-facts a {
+  display: block;
+  height: 100%;
   padding: 9px 14px 11px;
   text-align: center;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
 }
-.hero-facts > div + div { border-left: 1px solid var(--line); }
-.hero-facts dt {
+.hero-facts a:hover { background: var(--navy-soft); }
+.hero-facts a:hover .hf-num { text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 4px; }
+.hero-facts a:focus-visible { outline: 2px solid var(--navy); outline-offset: -3px; }
+.hero-facts > li + li { border-left: 1px solid var(--line); }
+.hf-label {
+  display: block;
   font-family: var(--font-ui);
   font-size: 0.8rem;
   font-weight: 700;
@@ -4199,8 +4186,8 @@ main .search-box > button {
   text-transform: uppercase;
   color: var(--muted);
 }
-.hero-facts dd {
-  margin: 0;
+.hf-num {
+  display: block;
   font-family: var(--font-head);
   font-size: 1.35rem;
   font-weight: 700;
@@ -4229,8 +4216,8 @@ main .search-box > button {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-inline: -16px;
   }
-  .hero-facts > div:nth-child(3) { border-left: 0; }
-  .hero-facts > div:nth-child(n + 3) { border-top: 1px solid var(--line); }
+  .hero-facts > li:nth-child(3) { border-left: 0; }
+  .hero-facts > li:nth-child(n + 3) { border-top: 1px solid var(--line); }
 }
 
 /* ---------- Cards and panels: flat parchment with thin rules ---------- */

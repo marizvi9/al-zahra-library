@@ -68,12 +68,22 @@ export default function HomePage() {
               label="Catalog search"
             />
           </div>
-          <dl className="hero-facts" aria-label="The collection">
-            <div><dt>Books</dt><dd>{books.length}</dd></div>
-            <div><dt>Authors</dt><dd>{authors.length}</dd></div>
-            <div><dt>Subjects</dt><dd>{categories.length}</dd></div>
-            <div><dt>Multi-volume sets</dt><dd>{volumeSets.length}</dd></div>
-          </dl>
+          {/* The collection's holdings; each count opens the page that lists them. */}
+          <ul className="hero-facts" aria-label="The collection">
+            {[
+              { href: "/shelves/", label: "Books", n: books.length },
+              { href: "/authors/", label: "Authors", n: authors.length },
+              { href: "/explore/", label: "Subjects", n: categories.length },
+              { href: "/sets/", label: "Multi-volume sets", n: volumeSets.length },
+            ].map((f) => (
+              <li key={f.href}>
+                <Link href={f.href}>
+                  <span className="hf-label">{f.label}</span>
+                  <span className="hf-num">{f.n}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
