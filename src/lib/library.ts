@@ -13,3 +13,8 @@ export const IEC_PHONE_HREF = "tel:+17137875000";
 // row, e.g. [["Monday – Friday", "5:00 pm – 9:00 pm"], ["Sunday", "10:00 am – 2:00 pm"]].
 // While this is empty, every page says the hours are not published yet and how to ask.
 export const LIBRARY_HOURS: [days: string, times: string][] = [];
+
+/** Shifts the Islamic (Hijri) date in the top bar by whole days, so it can match the centre's own
+ *  calendar (month starts depend on the moon sighting). 0 = Umm al-Qura as calculated; 1 = a day
+ *  later; -1 = a day earlier. */
+export const HIJRI_ADJUST_DAYS = 0;

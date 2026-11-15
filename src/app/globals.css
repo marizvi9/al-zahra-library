@@ -4295,3 +4295,31 @@ main .search-box:not(:has(> button)) input { border-radius: 3px; }
 @media (max-width: 760px) {
   .site-footer .footer-inner { padding-block: 22px 16px; gap: 14px; }
 }
+/* Today's date and the Islamic date, at the right of the top bar, set off from the links by a thin rule. */
+.header-dates {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 16px;
+  margin-right: 2px;
+  border-right: 1px solid rgb(255 255 255 / 0.22);
+  white-space: nowrap;
+  font-variant-numeric: lining-nums;
+}
+.header-dates:empty { display: none; }
+.header-hijri { color: var(--gold-light); }
+.header-hijri::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: var(--gold);
+  transform: rotate(45deg); /* a small gold diamond between the two dates */
+}
+/* Narrower screens: the Hijri date stays, the weekday-long Gregorian date gives way first. */
+@media (max-width: 1000px) {
+  .header-dates time { display: none; }
+  .header-hijri::before { display: none; }
+}
