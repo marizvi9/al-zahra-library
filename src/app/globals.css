@@ -4319,3 +4319,9 @@ main .search-box:not(:has(> button)) input { border-radius: 3px; }
   .header-dates time { display: none; }
   .header-hijri::before { display: none; }
 }
+/* Welcome emblem centred in its space: the same room on its left (banner edge) and right (text),
+   and above (banner top) and below (counts row). Phones centre it beside the heading instead. */
+@media (min-width: 681px) {
+  .ch-frame { column-gap: clamp(18px, 3vw, 34px); } /* equal to the banner's side padding */
+  .ch-plate { position: relative; top: -3px; }      /* the counts row sits 6px closer below */
+}
