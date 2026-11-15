@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import VisitInfo from "@/components/VisitInfo";
-import { books, shelves } from "@/lib/catalog";
+import { books } from "@/lib/catalog";
 
 export const metadata: Metadata = {
-  title: "Visit the Library",
+  title: "Visit Us",
   description: "Where to find the Al-Zahra Islamic Library, opening hours, and how to find a book on its shelves.",
 };
 
@@ -13,12 +13,11 @@ export const metadata: Metadata = {
 const example = books.find((b) => b.callNumber === "500 · 10 · 1") ?? books.find((b) => b.callNumber);
 
 export default function VisitPage() {
-  const numbered = shelves.filter((s) => s.number);
   return (
     <div className="container page">
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Visit" }]} />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Visit us" }]} />
       <header className="page-head arch-band">
-        <h1>Visit the Library</h1>
+        <h1>Visit Us</h1>
         <p className="lede">The Al-Zahra Islamic Library is at the Islamic Education Center of Houston. Everyone is welcome to look up books here first, then find them on the shelves.</p>
       </header>
 
@@ -63,33 +62,6 @@ export default function VisitPage() {
         </ol>
       </section>
 
-      <section className="section" aria-labelledby="shelf-guide-title">
-        <h2 id="shelf-guide-title">Shelf guide</h2>
-        <table className="subject-index">
-          <thead>
-            <tr>
-              <th scope="col">Shelf</th>
-              <th scope="col">Subjects</th>
-              <th scope="col" className="num">
-                Books
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {numbered.map((s) => (
-              <tr key={s.slug}>
-                <td>
-                  <Link href={`/shelves/${s.slug}/`} className="subject-index-shelf">
-                    {s.number}
-                  </Link>
-                </td>
-                <td>{s.categories.join(", ")}</td>
-                <td className="num">{s.count}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </section>
     </div>
   );
 }

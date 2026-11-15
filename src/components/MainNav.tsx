@@ -1,5 +1,5 @@
 "use client";
-// The site's main tabs: Explore, Authors, Shelves, Visit, and a "More" drop-down that holds Book of the Month, Multi-Volume Sets, FAQ and Contact Us.
+// The site's main tabs: Explore, Authors, Visit us, and a "More" drop-down that holds Shelves, Book of the Month, Multi-Volume Sets, FAQ and Contact Us.
 // The gold underline marks where you are (on "More" too, when you are on a page inside it).
 //
 // The drop-down is a native <details>, so it opens and closes even without JavaScript. The code
@@ -14,11 +14,11 @@ type Tab = { href: string; label: string; also: string[] };
 export const TABS: Tab[] = [
   { href: "/explore/", label: "Explore", also: ["/categories"] }, // old /categories/ links forward to /explore/
   { href: "/authors/", label: "Authors", also: [] },
-  { href: "/shelves/", label: "Shelves", also: [] },
-  { href: "/visit/", label: "Visit", also: [] },
+  { href: "/visit/", label: "Visit us", also: [] },
 ];
 // Tucked away under "More".
 export const MORE: Tab[] = [
+  { href: "/shelves/", label: "Shelves", also: [] },
   { href: "/book-of-the-month/", label: "Book of the Month", also: [] },
   { href: "/sets/", label: "Multi-Volume Sets", also: [] },
   { href: "/faq/", label: "FAQ", also: [] },

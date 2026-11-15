@@ -47,6 +47,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="en"
       dir="ltr"
+      // Smooth scrolling is on for links within a page (globals.css). This tells Next.js to jump
+      // straight to the top when moving to a new page, instead of opening it at the old scroll
+      // position and gliding up (which briefly showed the bottom of the new page).
+      data-scroll-behavior="smooth"
       className={`${serif.variable} ${sans.variable}`}
       suppressHydrationWarning /* the intro script may add a class before React loads */
     >

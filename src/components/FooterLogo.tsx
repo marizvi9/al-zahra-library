@@ -1,7 +1,7 @@
 // The footer's horizontal logo, drawn as SVG with a transparent background (sharp at any size).
 // The lettering is the emblem's OWN lettering: AL-ZAHRA, ISLAMIC LIBRARY and IEC-HOUSTON were
 // cut out of public/brand/emblem.png and traced to vector outlines (scripts/trace_lettering.mjs →
-// lettering.ts). ISLAMIC LIBRARY keeps its letter shapes and spacing but is laid in a straight line.
+// lettering.ts). ISLAMIC LIBRARY is set in the emblem's lettering font (as on the round emblem), upright.
 // The flower and stars are the emblem's too (Emblem.tsx): two stars stand one above the other to the right of the words. The footer is dark navy, so the emblem's
 // navy letters are drawn in parchment white here; gold stays gold.
 import { FLOWER_PATHS, starPoints } from "./Emblem";
@@ -21,6 +21,7 @@ const STAR_R = 135; // small
 const STAR_GAP = 90; // space between the two stars
 const STAR_SPACE = 260; // words ↔ stars
 const GAP_LINES = 160; // between lines of words
+const CAP_HEIGHT = 0.698; // IBM Plex Sans Arabic: capital letters are 0.698 of the font size
 
 // ISLAMIC LIBRARY, scaled so the line is as wide as AL-ZAHRA, letters spaced as they were on the arc.
 const lib = (() => {
@@ -29,6 +30,12 @@ const lib = (() => {
   const k = BLOCK_W / (right - left);
   return { k, mid: (left + right) / 2, height: Math.max(...LIBRARY.map((l) => l.maxy - l.miny)) * k };
 })();
+
+const LIB_SIZE = Math.round(lib.height / CAP_HEIGHT);
+// Letter spacing for ISLAMIC LIBRARY. The 14 capitals average 0.586 of the font size wide in this font
+// (measured in the browser). The spacing T is chosen so that both words plus a word gap of about 2.6 T
+// (a natural word space) span exactly the width of AL-ZAHRA: width = letters + 12 T + 2.6 T + T.
+const LIB_TRACK = Math.round((BLOCK_W - 14 * 0.586 * LIB_SIZE) / 15.6);
 
 const zTop = 0;
 const zBottom = zTop + (ZAHRA.maxy - ZAHRA.miny);
@@ -41,14 +48,6 @@ const PAD = 310; // empty room above and below, so the logo shows at the same si
 const STAR_X = BLOCK_X + BLOCK_W + STAR_SPACE + STAR_R; // the two stars, one above the other, to the right of the words
 const W = STAR_X + STAR_R + 10;
 const stars = [H / 2 - STAR_R - STAR_GAP / 2, H / 2 + STAR_R + STAR_GAP / 2].map((y) => starPoints(STAR_X, y, STAR_R));
-
-// The traced "A" of ISLAMIC came out leaning, with a crossbar too thin to see; draw it with the "A" of
-// LIBRARY instead (same lettering), keeping its own place in the word.
-const LETTERS_FIXED = (() => {
-  const goodA = LIBRARY.filter((l) => l.ch === "A").at(-1)!;
-  const firstA = LIBRARY.findIndex((l) => l.ch === "A");
-  return LIBRARY.map((l, i) => (i === firstA ? { ...goodA, dx: l.dx } : l));
-})();
 
 export default function FooterLogo({ className = "" }: { className?: string }) {
   const flowerY = H / 2 - 4 * 217.5;
@@ -71,16 +70,23 @@ export default function FooterLogo({ className = "" }: { className?: string }) {
       {/* AL-ZAHRA */}
       <path fill={LETTERS} fillRule="evenodd" d={ZAHRA.d} transform={`translate(${BLOCK_X - ZAHRA.minx} ${zTop - ZAHRA.miny})`} />
 
-      {/* ISLAMIC LIBRARY: the emblem's letters, straight */}
-      {LETTERS_FIXED.map((l, i) => (
-        <path
-          key={i}
+      {/* ISLAMIC LIBRARY: set in the emblem's own lettering font (as on the round emblem), so every
+          letter stands upright. Each word is spaced on its own: ISLAMIC starts at the left edge of
+          AL-ZAHRA, LIBRARY ends at its right edge, with a clear word gap between them. */}
+      {(["ISLAMIC", "LIBRARY"] as const).map((word, i) => (
+        <text
+          key={word}
+          x={i === 0 ? BLOCK_X : BLOCK_X + BLOCK_W}
+          y={lBottom}
+          textAnchor={i === 0 ? "start" : "end"}
           fill={LETTERS}
-          fillRule="evenodd"
-          d={l.d}
-          // each letter stands on the same line (its own bottom edge sits at lBottom), centred where it was on the arc
-          transform={`translate(${MID + (l.dx - lib.mid) * lib.k} ${lBottom}) scale(${lib.k}) translate(${-l.cx} ${-l.maxy})`}
-        />
+          fontFamily="var(--font-brand), sans-serif"
+          fontWeight="500"
+          fontSize={LIB_SIZE}
+          letterSpacing={LIB_TRACK}
+        >
+          {word}
+        </text>
       ))}
 
       {/* IEC-HOUSTON */}

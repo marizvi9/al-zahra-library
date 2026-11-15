@@ -3799,79 +3799,7 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
   .header-utility { display: none; } /* the Menu button has Visit, FAQ and Contact */
 }
 
-/* ---------- Home: catalogue search with scope tabs ---------- */
-.catalog-search { width: 100%; }
-.catalog-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  margin: 0 0 8px;
-}
-.catalog-tab {
-  font: inherit;
-  font-family: var(--font-ui);
-  font-weight: 600;
-  font-size: 0.92rem;
-  padding: 6px 14px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--card);
-  color: var(--navy);
-  cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
-}
-.catalog-tab:hover { border-color: var(--gold); }
-.catalog-tab.is-active {
-  background: var(--navy-deep);
-  border-color: var(--navy-deep);
-  color: var(--card);
-}
-.catalog-tab:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
-.hero-facts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 0;
-  margin: 12px 0 0;
-  max-width: none;
-  font-family: var(--font-ui);
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--muted);
-}
-.hero-facts span + span::before {
-  content: "·";
-  margin: 0 10px;
-  color: var(--gold);
-}
-@media (max-width: 700px) {
-  .catalog-tabs { justify-content: center; }
-  .hero-facts { justify-content: center; }
-}
-
-/* ---------- Home: popular topics and task tiles ---------- */
-.popular-topics {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px 10px;
-  margin: 22px 0 0;
-}
-.popular-topics-label {
-  font-family: var(--font-ui);
-  font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--gold-text);
-}
-.popular-topics ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+/* ---------- Home: task tiles (under Book of the Month) ---------- */
 .task-tiles {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -3915,55 +3843,8 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
   .task-desc { font-size: 0.85rem; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .task-tile, .catalog-tab { transition: none; }
+  .task-tile { transition: none; }
   .task-tile:hover { transform: none; }
-}
-
-/* ---------- Subject index (home) and shelf guide (Visit page) ---------- */
-.subject-index {
-  width: 100%;
-  border-collapse: collapse;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  overflow: hidden;
-  font-size: 0.98rem;
-}
-.subject-index th {
-  font-family: var(--font-ui);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  text-align: left;
-  color: var(--card);
-  background: var(--navy-deep);
-  padding: 10px 14px;
-}
-.subject-index td {
-  padding: 9px 14px;
-  border-top: 1px solid var(--line);
-  vertical-align: top;
-}
-.subject-index tbody tr:nth-child(even) td { background: rgb(4 20 46 / 0.025); }
-.subject-index tbody tr:hover td { background: var(--gold-soft); }
-.subject-index .num { text-align: right; font-variant-numeric: tabular-nums; width: 5.5em; }
-.subject-index-shelf {
-  font-family: var(--font-ui);
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-  color: var(--gold-text);
-  width: 5.5em;
-}
-.subject-index td a { color: var(--ink); text-decoration: none; font-weight: 600; }
-.subject-index td a:hover { text-decoration: underline; }
-.subject-index-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; align-items: start; }
-@media (max-width: 760px) {
-  /* Phones: the two halves read as one table. */
-  .subject-index-cols { grid-template-columns: 1fr; }
-  .subject-index-cols .subject-index:first-child { border-bottom: 0; border-radius: var(--radius) var(--radius) 0 0; }
-  .subject-index-cols .subject-index + .subject-index { border-top: 0; border-radius: 0 0 var(--radius) var(--radius); }
-  .subject-index-head-2 { display: none; }
 }
 
 /* ---------- Visit information (home band, Visit page, footer) ---------- */
@@ -4136,22 +4017,59 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
   }
   .header-inner:not([data-ready]) .nav-list > li { flex: none; }
 }
-/* Phones: popular topics on one line that scrolls sideways. */
+
+/* ---------- Home: what the library holds, under the search bar ---------- */
+.hero-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 0;
+  margin: 12px 0 0;
+  max-width: none;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.hero-facts span + span::before {
+  content: "·";
+  margin: 0 10px;
+  color: var(--gold);
+}
 @media (max-width: 700px) {
-  .popular-topics { flex-wrap: nowrap; align-items: center; }
-  .popular-topics ul {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x proximity;
-    margin-right: calc(-1 * var(--gutter));
-    padding: 2px var(--gutter) 6px 0;
-    scrollbar-width: none;
-  }
-  .popular-topics li { flex: none; scroll-snap-align: start; }
-  .popular-topics-label { flex: none; }
+  .hero-facts { justify-content: center; }
 }
 @media (max-width: 480px) {
-  .catalog-tabs { flex-wrap: nowrap; gap: 3px; }
-  .catalog-tab { font-size: 0.84rem; padding: 5px 10px; }
   .hero-facts span:nth-child(4) { display: none; } /* three counts fit on one line */
+}
+
+/* Phones, dark header: the opened menu's "More" links and the current-page highlight were drawn for
+   the light drop-down (dark ink on cream), so on navy they were invisible or unreadable. */
+@media (max-width: 699px) {
+  .site-header .header-inner[data-ready] .nav-more-list a { color: var(--card); }
+  .site-header .header-inner[data-ready] .nav-more-list a:hover,
+  .site-header .header-inner[data-ready] .nav-more-list a[aria-current="page"] { background: rgb(255 255 255 / 0.12); color: var(--card); }
+  .site-header .header-inner[data-ready] .nav-more-list { border-left-color: var(--gold); }
+  .site-header .header-inner[data-ready] .nav-list a[aria-current="page"],
+  .site-header .header-inner[data-ready] .nav-more-details > summary[data-current] {
+    background: rgb(255 255 255 / 0.12);
+    color: var(--card);
+  }
+}
+/* Phones: the name and the search/menu buttons fit on one row (they wrapped by a few pixels). */
+@media (max-width: 699px) {
+  .header-inner { column-gap: 8px; }
+  .brand { gap: 8px; }
+  .brand-name { font-size: 1.05rem; }
+}
+@media (max-width: 420px) {
+  .brand-name { font-size: 1rem; }
+  .header-buttons { gap: 4px; }
+}
+@media (max-width: 540px) {
+  .header-btn-label { display: none; } /* the icon alone (it has a hidden label for screen readers) */
+}
+@media (max-width: 374px) {
+  /* very narrow phones: "Islamic Library" on a second line under "Al-Zahra" */
+  .brand-name { font-size: 1rem; white-space: normal; line-height: 1.1; }
+  .brand-name-rest { display: block; font-size: 0.82em; }
 }

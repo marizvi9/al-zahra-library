@@ -63,7 +63,7 @@ export default function Header() {
             <AddressLink />
           </span>
           <span className="header-utility-links">
-            <Link href="/visit/">Hours &amp; location</Link>
+            <Link href="/visit/">Hours</Link>
             <Link href="/faq/">FAQ</Link>
             <Link href="/contact/">Contact</Link>
           </span>

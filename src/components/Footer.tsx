@@ -3,7 +3,6 @@ import Girih from "./Girih";
 import FooterLogo from "./FooterLogo";
 import { AddressLink, IecLink } from "./LibraryLinks";
 import { HoursList } from "./VisitInfo";
-import { CONTACT_EMAIL } from "@/lib/library";
 
 // Library-style footer: the logo, then three short columns of practical links (as library
 // websites have), then the name line.
@@ -19,7 +18,7 @@ export default function Footer() {
           </Link>
           <nav className="footer-cols" aria-label="Footer">
             <div className="footer-col">
-              <h2 className="footer-col-title">Visit</h2>
+              <h2 className="footer-col-title">Visit us</h2>
               <p>
                 <AddressLink />
               </p>
@@ -34,8 +33,6 @@ export default function Footer() {
                 <li><Link href="/search/">Search</Link></li>
                 <li><Link href="/explore/">Browse by subject</Link></li>
                 <li><Link href="/authors/">Authors A–Z</Link></li>
-                <li><Link href="/shelves/">Shelves</Link></li>
-                <li><Link href="/sets/">Multi-volume sets</Link></li>
                 <li><Link href="/book-of-the-month/">Book of the Month</Link></li>
               </ul>
             </div>
@@ -44,7 +41,6 @@ export default function Footer() {
               <ul>
                 <li><Link href="/faq/">FAQ</Link></li>
                 <li><Link href="/contact/">Contact us</Link></li>
-                <li><a href={`mailto:${CONTACT_EMAIL}`} className="break-anywhere">{CONTACT_EMAIL}</a></li>
                 <li><Link href="/authors/photo-credits/">Photo credits</Link></li>
               </ul>
             </div>
