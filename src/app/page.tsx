@@ -61,7 +61,7 @@ export default function HomePage() {
             </p>
             <p className="hero-lede">
               {/* Rounded down to the hundred, so "over" stays true as books are added. */}
-              Search the catalogue for a diverse selection of over {Math.floor((books.length - 1) / 100) * 100} books.
+              Search our catalog of over {Math.floor((books.length - 1) / 100) * 100} books!
             </p>
             <SearchBox
               large
