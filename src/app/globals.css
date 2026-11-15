@@ -5,7 +5,7 @@
 :root {
   /* Palette taken from the Al-Zahra emblem: parchment, deep navy and antique gold.
      All text colours meet WCAG AA contrast on the parchment backgrounds. */
-  --cream: #f2ecdf;        /* page background (parchment; lightened a little from #ece3ce) */
+  --cream: #ece3ce;        /* page background (parchment) */
   --cream-deep: #e2d6ba;   /* bands, hover */
   /* Faint eight-pointed-star tessellation laid over every parchment surface.
      It is a tiny inline SVG (under 1 KB), so it costs no extra download. */
