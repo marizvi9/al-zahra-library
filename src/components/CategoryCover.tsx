@@ -199,17 +199,15 @@ const MOTIFS: Record<string, (id: string) => ReactNode> = {
       <path d="M-15 44 Q0 26 15 44 Z" fill={GOLD} fillOpacity="0.55" stroke="none" />
     </>
   ),
-  "stories-and-reflections": (id) => (
+  "stories-and-reflections": () => (
     <>
-      <mask id={`${id}-moon`}>
-        <rect x="-80" y="-80" width="160" height="160" fill="black" />
-        <circle cx="-8" cy="0" r="40" fill="white" />
-        <circle cx="8" cy="-10" r="34" fill="black" />
-      </mask>
-      <rect x="-60" y="-50" width="80" height="100" fill={GOLD} stroke="none" mask={`url(#${id}-moon)`} />
-      <polygon points={star(34, -26, 9)} fill={GOLD} stroke="none" />
-      <polygon points={star(48, 8, 6)} fill={GOLD} stroke="none" />
-      <polygon points={star(22, 30, 5)} fill={GOLD} stroke="none" />
+      {/* a crescent, drawn as one clean shape: the outer circle (centre -10,0, r 40) less an inner
+          circle (centre 6,-8, r 33); its horns are where the two circles cross */}
+      <path d="M-3.79 -39.51 A40 40 0 1 0 25.34 18.74 A33 33 0 1 1 -3.79 -39.51 Z" fill={GOLD} stroke="none" />
+      {/* three stars on an arc in the crescent's opening, evenly spaced, the largest in the middle */}
+      <polygon points={star(19, -50, 6)} fill={GOLD} stroke="none" />
+      <polygon points={star(41.7, -26.3, 9)} fill={GOLD} stroke="none" />
+      <polygon points={star(47.7, 6.1, 6)} fill={GOLD} stroke="none" />
     </>
   ),
   biography: () => (
@@ -263,7 +261,8 @@ const MOTIFS: Record<string, (id: string) => ReactNode> = {
       <circle r="44" strokeOpacity="0.5" />
       <polygon points={star(0, 0, 36, 4, 0.3)} transform="rotate(45)" strokeOpacity="0.8" />
       <polygon points={star(0, 0, 58, 4, 0.17)} fill={GOLD} fillOpacity="0.2" />
-      <polygon points="0,-58 9.9,-9.9 -9.9,-9.9" fill={GOLD} stroke="none" />
+      {/* the north needle, slim */}
+      <polygon points="0,-56 4.5,-9 0,-4 -4.5,-9" fill={GOLD} stroke="none" />
       <circle r="5" fill={GOLD} stroke="none" />
     </>
   ),
