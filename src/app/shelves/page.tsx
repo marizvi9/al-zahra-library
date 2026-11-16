@@ -24,7 +24,7 @@ export default function ShelvesPage() {
       <section className="shelf-band" aria-labelledby="band-title">
         <h2 id="band-title">All shelves</h2>
         <p>
-          {books.length} books on {shelves.length} shelves, in catalogue order: by shelf number, then by section number (300 · 10, 300 · 20 …). Click a section to see just its books, or use the filter.
+          {books.length} books on {shelves.length} shelves, in catalog order: by shelf number, then by section number (300 · 10, 300 · 20 …). Click a section to see just its books, or use the filter.
         </p>
       </section>
       <ShelfClient sections={sections} scope="all shelves" chipLabel="Sections" />

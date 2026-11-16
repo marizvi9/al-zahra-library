@@ -43,7 +43,7 @@ export const homeSections: HomeSection[] = (config.sections as Raw[]).map((s) =>
 
   const list = s.books.map((id) => {
     const book = books.find((b) => b.id === id);
-    if (!book) return fail(`book ${id} is not in the catalogue`);
+    if (!book) return fail(`book ${id} is not in the catalog`);
     const name = `book ${id} ("${book.title}")`;
     if (!book.author) fail(`${name} has no author`);
     const cover = getCover(id)?.images[0];
@@ -88,7 +88,7 @@ export const featuredAuthors = fa
       authors: fa.authors.map((raw): FeaturedAuthor => {
         const name = authorName(raw);
         const a = authors.find((x) => x.name === name) ?? getAuthor(slugifyName(raw));
-        if (!a) throw new Error(`data/home-featured-sections.json, featuredAuthors: no author page for "${raw}" (use a spelling from the catalogue)`);
+        if (!a) throw new Error(`data/home-featured-sections.json, featuredAuthors: no author page for "${raw}" (use a spelling from the catalog)`);
         return { name: a.name, display: a.display, slug: a.slug, count: a.count };
       }),
     }

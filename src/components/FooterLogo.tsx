@@ -20,7 +20,6 @@ const MID = BLOCK_X + BLOCK_W / 2; // the middle of the words
 const STAR_R = 135; // small
 const STAR_GAP = 90; // space between the two stars
 const STAR_SPACE = 260; // words ↔ stars
-const GAP_LINES = 160; // between lines of words
 const CAP_HEIGHT = 0.698; // IBM Plex Sans Arabic: capital letters are 0.698 of the font size
 
 // ISLAMIC LIBRARY, scaled so the line is as wide as AL-ZAHRA, letters spaced as they were on the arc.
@@ -37,6 +36,8 @@ const LIB_SIZE = Math.round(lib.height / CAP_HEIGHT);
 // (a natural word space) span exactly the width of AL-ZAHRA: width = letters + 12 T + 2.6 T + T.
 const LIB_TRACK = Math.round((BLOCK_W - 14 * 0.586 * LIB_SIZE) / 15.6);
 
+const GAP_LINES = 290; // between lines of words (open)
+
 const zTop = 0;
 const zBottom = zTop + (ZAHRA.maxy - ZAHRA.miny);
 const lTop = zBottom + GAP_LINES;
@@ -44,13 +45,17 @@ const lBottom = lTop + lib.height;
 const hTop = lBottom + GAP_LINES;
 const hBottom = hTop + (HOUSTON.maxy - HOUSTON.miny);
 const H = hBottom;
-const PAD = 310; // empty room above and below, so the logo shows at the same size as before the stars moved
+// The words and stars sit this much lower than the flower's middle (a slightly lower block reads as
+// centred beside the flower's tall petals).
+const WORDS_DROP = 120;
+const PAD = 180; // empty room above and below (310 - 130, so the wider line gaps keep the logo the same size)
 const STAR_X = BLOCK_X + BLOCK_W + STAR_SPACE + STAR_R; // the two stars, one above the other, to the right of the words
 const W = STAR_X + STAR_R + 10;
 const stars = [H / 2 - STAR_R - STAR_GAP / 2, H / 2 + STAR_R + STAR_GAP / 2].map((y) => starPoints(STAR_X, y, STAR_R));
 
 export default function FooterLogo({ className = "" }: { className?: string }) {
-  const flowerY = H / 2 - 4 * 217.5;
+  // + 7: the flower's drawn middle sat 7 units above the middle of the words and stars (measured); this centres them.
+  const flowerY = H / 2 - 4 * 217.5 + 7;
   return (
     <svg className={className} viewBox={`0 ${-PAD} ${Math.round(W)} ${Math.round(H + 2 * PAD)}`} role="img" aria-label="Al-Zahra Islamic Library, IEC Houston" focusable="false">
       {/* the flower, on the left */}
@@ -60,6 +65,8 @@ export default function FooterLogo({ className = "" }: { className?: string }) {
         ))}
       </g>
 
+      {/* the words and the two stars, lowered a little (WORDS_DROP) beside the flower */}
+      <g transform={`translate(0 ${WORDS_DROP})`}>
       {/* two stars, one above the other, to the right of the words */}
       <g fill={GOLD}>
         {stars.map((p, i) => (
@@ -96,6 +103,7 @@ export default function FooterLogo({ className = "" }: { className?: string }) {
         d={HOUSTON.d}
         transform={`translate(${MID - (HOUSTON.minx + HOUSTON.maxx) / 2} ${hTop - HOUSTON.miny})`}
       />
+      </g>
     </svg>
   );
 }

@@ -10,6 +10,7 @@
 // The home page has no header search (its big search bar is right there in the welcome
 // section), and neither does the search results page (it has its own box).
 
+import TodayDates from "./TodayDates";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -63,6 +64,7 @@ export default function Header() {
             <AddressLink />
           </span>
           <span className="header-utility-links">
+            <TodayDates />
             <Link href="/visit/">Hours</Link>
             <Link href="/faq/">FAQ</Link>
             <Link href="/contact/">Contact</Link>

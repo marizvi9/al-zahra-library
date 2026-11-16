@@ -28,7 +28,7 @@ export default function Footer() {
               </p>
             </div>
             <div className="footer-col">
-              <h2 className="footer-col-title">Catalogue</h2>
+              <h2 className="footer-col-title">Catalog</h2>
               <ul>
                 <li><Link href="/search/">Search</Link></li>
                 <li><Link href="/explore/">Browse by subject</Link></li>

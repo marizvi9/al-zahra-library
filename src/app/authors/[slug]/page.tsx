@@ -80,7 +80,7 @@ export default async function AuthorPage({ params }: Props) {
             ))}
             .
           </p>
-          {spellings.length > 0 && <p className="small muted">Also spelled in the catalogue: {spellings.join("; ")}.</p>}
+          {spellings.length > 0 && <p className="small muted">Also spelled in the catalog: {spellings.join("; ")}.</p>}
         </div>
       </header>
       <SourcesNote items={sources} />

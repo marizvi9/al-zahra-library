@@ -18,7 +18,7 @@ export type CoverPhoto = PhotoShape & { src: string };
 
 type Props = {
   title: string;
-  /** The author as written in the catalogue (or "Unknown"). */
+  /** The author as written in the catalog (or "Unknown"). */
   author?: string | null;
   /** Anything stable and unique for the book (its slug); it picks the colours and pattern. */
   seed?: string;

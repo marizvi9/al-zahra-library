@@ -22,7 +22,7 @@ type Props = { records: SearchRecord[]; authors: AuthorRecord[]; sets: SetRecord
 export default function SearchClient({ records, authors, sets, categories }: Props) {
   const params = useSearchParams();
   const [query, setQuery] = useState(params.get("q") ?? "");
-  // ?in=title|author|category (from the home page's catalogue tabs) starts the search in that scope.
+  // ?in=title|author|category (from the home page's catalog tabs) starts the search in that scope.
   const [scope, setScope] = useState<SearchScope>(() => {
     const v = params.get("in") as SearchScope | null;
     return v && SCOPES.some((s) => s.value === v) ? v : "all";

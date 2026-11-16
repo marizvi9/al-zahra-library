@@ -1,4 +1,4 @@
-// Builds what the search needs (books and authors) from the catalogue. Runs at build time only.
+// Builds what the search needs (books and authors) from the catalog. Runs at build time only.
 import authorNames from "@data/author-names.json";
 import { authors, books, toListItem } from "./catalog";
 import { initials, photoFor, viaSuffix } from "./authorPhotos";

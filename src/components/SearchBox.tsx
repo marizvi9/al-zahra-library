@@ -13,7 +13,7 @@
 // The book data (/search-index.json) is downloaded once, the first time the bar is used.
 // Built as an accessible "combobox": screen readers announce the list and the highlighted row.
 
-import { Fragment, useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
+import { Fragment, type ReactNode, useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import ArchCover from "./ArchCover";
 import { withBase } from "@/lib/paths";
@@ -25,7 +25,7 @@ const MAX_SUGGESTIONS = 7;
 const MAX_AUTHORS = 3;
 const MAX_SETS = 2;
 
-/** Placeholder text for each search scope (the catalogue search on the home page has scope tabs). */
+/** Placeholder text for each search scope (the catalog search on the home page has scope tabs). */
 const PLACEHOLDER: Record<SearchScope, string> = {
   all: "Search by title, author or category",
   title: "Search book titles",
@@ -33,7 +33,19 @@ const PLACEHOLDER: Record<SearchScope, string> = {
   category: "Search subjects, e.g. Fiqh or Karbala",
 };
 
-export default function SearchBox({ large = false, compact = false, scope = "all" }: { large?: boolean; compact?: boolean; /** search only titles, authors or subjects (from CatalogSearch's tabs) */ scope?: SearchScope }) {
+export default function SearchBox({
+  large = false,
+  compact = false,
+  scope = "all",
+  label,
+}: {
+  large?: boolean;
+  compact?: boolean;
+  /** search only titles, authors or subjects */
+  scope?: SearchScope;
+  /** a visible label above the bar (otherwise the label is for screen readers only) */
+  label?: ReactNode;
+}) {
   const router = useRouter();
   const uid = useId().replace(/:/g, "");
   const inputId = `search-${uid}`;
@@ -183,8 +195,8 @@ export default function SearchBox({ large = false, compact = false, scope = "all
         if (!rootRef.current?.contains(e.relatedTarget as Node)) setOpen(false);
       }}
     >
-      <label htmlFor={inputId} className="visually-hidden">
-        {PLACEHOLDER[scope]}
+      <label htmlFor={inputId} className={label ? "search-label" : "visually-hidden"}>
+        {label ?? PLACEHOLDER[scope]}
       </label>
       {scope !== "all" && <input type="hidden" name="in" value={scope} />}
       <input

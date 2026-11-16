@@ -58,7 +58,7 @@ export default function SetsClient({ sets }: { sets: SetCard[] }) {
               </Link>
               {s.author && <span className="set-card-author" dir="auto">{s.author}</span>}
               <span className="set-card-vols">{s.volumes.join(" · ")}</span>
-              {s.missing && <span className="small muted">Not in the catalogue: {s.missing}</span>}
+              {s.missing && <span className="small muted">Not in the catalog: {s.missing}</span>}
             </span>
           </li>
         ))}

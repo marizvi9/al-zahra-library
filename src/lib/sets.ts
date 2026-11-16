@@ -1,5 +1,5 @@
 // Multi-volume sets, ready for pages: each set with its volumes in order, the books behind them,
-// which volume numbers are missing from the catalogue, and a cover. Data: data/multi-volume-sets.json.
+// which volume numbers are missing from the catalog, and a cover. Data: data/multi-volume-sets.json.
 
 import raw from "@data/multi-volume-sets.json";
 import { books, getCover, type Book } from "./catalog";
@@ -14,7 +14,7 @@ export type VolumeSet = {
   notes: string;
   totalVolumes: number | null;
   volumes: SetVolume[];
-  /** Volume (or part) numbers that the catalogue does not hold, e.g. "Volume 1" or "Volumes 4–5". Empty for a series. */
+  /** Volume (or part) numbers that the catalog does not hold, e.g. "Volume 1" or "Volumes 4–5". Empty for a series. */
   missing: string | null;
   /** The book whose cover stands for the set (volume 1 if it has one, else the first volume with a cover). */
   coverBook: Book | undefined;
@@ -40,7 +40,7 @@ function build(s: RawSet): VolumeSet {
     note: (v as { note?: string }).note,
     books: v.books.map((id) => {
       const b = byId.get(id);
-      if (!b) throw new Error(`data/multi-volume-sets.json: set "${s.name}" lists book id ${id}, which is not in the catalogue.`);
+      if (!b) throw new Error(`data/multi-volume-sets.json: set "${s.name}" lists book id ${id}, which is not in the catalog.`);
       return b;
     }),
   }));

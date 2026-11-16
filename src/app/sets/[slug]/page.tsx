@@ -35,17 +35,18 @@ export default async function SetPage({ params }: Props) {
         items={[{ label: "Home", href: "/" }, { label: "Multi-Volume Sets", href: "/sets/" }, { label: set.name }]}
       />
       <header className="set-head">
-        <p className="eyebrow">{series ? "Series of issues" : "Multi-volume set"}</p>
         <h1 dir="auto">{set.name}</h1>
         {set.author && <p className="set-head-author" dir="auto">by {set.author}</p>}
-        <p className="set-head-count">{heldText}</p>
+        <p className="set-head-count">
+          {series ? "Series of issues" : "Multi-volume set"} · {heldText}
+        </p>
         {set.description && <p className="set-head-desc">{set.description}</p>}
         <p className="set-head-address small">
           <strong>Find it at the Al-Zahra Islamic Library:</strong> <AddressLink />
         </p>
         {set.missing && (
           <p className="set-gap" role="note">
-            <strong>Not in the catalogue:</strong> {set.missing}. {series ? "" : "Ask at the library desk if you need it."}
+            <strong>Not in the catalog:</strong> {set.missing}. {series ? "" : "Ask at the library desk if you need it."}
           </p>
         )}
       </header>

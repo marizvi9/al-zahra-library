@@ -33,7 +33,7 @@ export default function VisitPage() {
             <div>
               <h3>Look it up</h3>
               <p>
-                <Link href="/search/">Search the catalogue</Link> by title, author or subject, or browse by <Link href="/explore/">subject</Link>.
+                <Link href="/search/">Search the catalog</Link> by title, author or subject, or browse by <Link href="/explore/">subject</Link>.
               </p>
             </div>
           </li>

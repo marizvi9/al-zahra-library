@@ -30,9 +30,10 @@
 
   /* Two families only (loaded in layout.tsx). Arabic-script letters in any text are drawn by
      IBM Plex Sans Arabic, because Literata has none and the browser falls through to it. */
-  --font-body: var(--font-serif), var(--font-sans), Georgia, serif;   /* reading text */
-  --font-head: var(--font-serif), var(--font-sans), Georgia, serif;   /* headings */
-  --font-ui: var(--font-sans), system-ui, sans-serif;                 /* menus, buttons, labels */
+  /* Site fonts (src/app/fonts.ts). Arabic letters fall back to IBM Plex Sans Arabic. */
+  --font-body: var(--font-content-text), var(--font-sans), system-ui, sans-serif; /* reading text */
+  --font-head: var(--font-content-head), var(--font-sans), Georgia, serif;        /* headings */
+  --font-ui: var(--font-content-text), var(--font-sans), system-ui, sans-serif;   /* menus, buttons, labels */
   --font-arabic: var(--font-sans);
   --font-brand: var(--font-sans);                                     /* emblem lettering */
 }
@@ -45,6 +46,9 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  /* The site's text scale. 100% suits Fira Sans (src/app/fonts.ts); Alegreya Sans, used before,
+     ran small and needed 112.5%. */
+  font-size: 100%;
 }
 
 body {
@@ -201,12 +205,12 @@ a:hover {
   color: var(--muted);
 }
 .small {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-weight: 600;
   color: var(--navy);
   margin-bottom: 0.4em;
@@ -666,7 +670,7 @@ a:hover {
 }
 .category-card-count {
   margin-top: 10px;
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--gold-text);
 }
@@ -692,7 +696,7 @@ a:hover {
     font-size: 1.05rem;
   }
   .category-card-desc {
-    font-size: 0.88rem;
+    font-size: 0.95rem;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -706,7 +710,7 @@ a:hover {
 .category-card-compact .category-card-body { padding: 8px 12px 10px; }
 .category-card-compact .category-card-name { font-size: 1rem; margin-bottom: 3px; }
 .category-card-compact .category-card-desc {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -714,7 +718,7 @@ a:hover {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.category-card-compact .category-card-count { margin-top: 6px; font-size: 0.8rem; }
+.category-card-compact .category-card-count { margin-top: 6px; font-size: 0.875rem; }
 @media (max-width: 559px) {
   .category-card-compact .category-card-cover { aspect-ratio: auto; min-height: 72px; width: 30%; max-width: 110px; }
   .category-card-compact .category-card-name { font-size: 0.98rem; }
@@ -798,7 +802,7 @@ a:hover {
   color: var(--card);
 }
 .chip-count {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-weight: 600;
   padding: 1px 8px;
   border-radius: 999px;
@@ -835,7 +839,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--muted);
 }
 .breadcrumbs li:not(:last-child)::after {
@@ -932,12 +936,12 @@ a:hover {
   color: var(--muted);
 }
 .book-row-cat {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--navy);
 }
 .call-badge {
   flex: none;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
   padding: 4px 10px;
@@ -993,7 +997,7 @@ a:hover {
 }
 .tag {
   display: inline-block;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
   padding: 2px 10px;
   border-radius: 999px;
@@ -1304,7 +1308,7 @@ button:active,
   background: var(--cream-deep);
 }
 .status-text {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-style: italic;
   color: var(--muted);
 }
@@ -1323,7 +1327,7 @@ button:active,
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
   padding: 2px 12px;
   border-radius: 999px;
@@ -1403,7 +1407,7 @@ button:active,
 }
 .gallery-caption {
   margin: 6px 0 0;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--ink);
 }
@@ -1813,7 +1817,7 @@ button:active,
   white-space: nowrap;
 }
 .shelf-tab-count {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 .shelf-section-heading {
   font-size: 1.1rem;
@@ -1913,11 +1917,11 @@ button:active,
   overflow-wrap: anywhere;
 }
 .suggest-meta {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--muted);
 }
 .suggest-cat {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: var(--navy);
 }
 .suggest-all {
@@ -1958,7 +1962,7 @@ button:active,
   justify-content: space-between;
   align-items: center;
   padding: 4px 10px 6px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--muted);
 }
@@ -1972,7 +1976,7 @@ button:active,
   color: var(--navy);
 }
 .recent-clear {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   text-decoration: underline;
   text-decoration-color: var(--gold);
   text-underline-offset: 3px;
@@ -2019,7 +2023,7 @@ button:active,
 }
 .recent-note {
   margin: 4px 10px 2px;
-  font-size: 0.78rem;
+  font-size: 0.875rem;
   color: var(--muted);
 }
 
@@ -2036,7 +2040,7 @@ button:active,
   list-style: none;
 }
 .recent-chips-label {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--muted);
 }
@@ -2162,7 +2166,7 @@ button:active,
   color: var(--ink);
 }
 .author-card-meta {
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   color: var(--muted);
 }
 /* Multi-volume sets */
@@ -2201,7 +2205,7 @@ button:active,
   padding: 4px 12px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--navy);
   text-decoration: none;
@@ -2317,7 +2321,7 @@ button:active,
   color: var(--ink);
 }
 .shelf-book-author {
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   color: var(--muted);
 }
 .shelf-book-desc {
@@ -2325,7 +2329,7 @@ button:active,
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   overflow: hidden;
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   line-height: 1.45;
   color: var(--muted);
 }
@@ -2417,7 +2421,7 @@ button:active,
 }
 .photo-credit {
   margin: 2px 0 0;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.35;
   color: var(--muted);
 }
@@ -2485,7 +2489,7 @@ button:active,
 }
 .author-bio .author-bio-source {
   margin-top: 6px;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: var(--muted);
 }
 .author-bio-source a {
@@ -2711,7 +2715,7 @@ button:active,
   text-align: left;
 }
 .slide-cat {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -2898,7 +2902,7 @@ button:active,
 /* Browse: tab labels with number + subject */
 .shelf-tab-name {
   max-width: 8.5rem;
-  font-size: 0.78rem;
+  font-size: 0.875rem;
   line-height: 1.2;
   text-align: center;
   white-space: normal;
@@ -3087,7 +3091,7 @@ button:active,
 .shelf-tile-count {
   margin-top: auto;
   padding-top: 4px;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-weight: 600;
   color: var(--gold-text);
 }
@@ -3102,7 +3106,7 @@ button:active,
   font-weight: 700;
 }
 .shelf-tile-desc {
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   color: var(--muted);
   line-height: 1.4;
   display: -webkit-box;
@@ -3211,7 +3215,7 @@ button:active,
 }
 .portrait-count {
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--muted);
 }
 .portrait-card:has(.card-link:focus-visible) {
@@ -3313,7 +3317,7 @@ button:active,
 }
 .author-book-cat {
   font-family: var(--font-ui);
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   color: var(--navy);
 }
 .author-book-meta {
@@ -3328,7 +3332,7 @@ button:active,
   padding-top: 8px;
   font-family: var(--font-ui);
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: 0.97rem;
   color: var(--navy);
 }
 .author-book:hover .author-book-more span {
@@ -3380,15 +3384,15 @@ button:active,
 }
 
 /* ---------- Author results in search ---------- */
-.suggest-section { margin: 0; padding: 6px 14px 2px; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted, #6b5f4a); list-style: none; }
+.suggest-section { margin: 0; padding: 6px 14px 2px; font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted, #6b5f4a); list-style: none; }
 .suggest-author-row .suggest-cover { display: flex; align-items: center; justify-content: center; width: 36px; }
-.type-label { display: inline-block; margin-right: 6px; padding: 1px 7px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid var(--gold, #b8923a); border-radius: 999px; color: var(--navy, #14213d); background: rgba(184, 146, 58, 0.14); vertical-align: middle; }
-.search-hint { margin: 4px 0 12px; font-size: 0.92rem; color: var(--muted, #6b5f4a); }
+.type-label { display: inline-block; margin-right: 6px; padding: 1px 7px; font-size: 0.875rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid var(--gold, #b8923a); border-radius: 999px; color: var(--navy, #14213d); background: rgba(184, 146, 58, 0.14); vertical-align: middle; }
+.search-hint { margin: 4px 0 12px; font-size: 0.97rem; color: var(--muted, #6b5f4a); }
 .author-results { list-style: none; margin: 8px 0 20px; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
 .author-result a { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border: 1px solid rgba(184, 146, 58, 0.45); border-radius: 12px; background: #fbf6ea; text-decoration: none; color: inherit; }
 .author-result a:hover, .author-result a:focus-visible { border-color: var(--gold, #b8923a); box-shadow: 0 2px 8px rgba(20, 33, 61, 0.12); }
 .author-result .name { display: block; font-weight: 700; }
-.author-result .meta { display: block; font-size: 0.86rem; color: var(--muted, #6b5f4a); }
+.author-result .meta { display: block; font-size: 0.9rem; color: var(--muted, #6b5f4a); }
 .results-heading { margin: 18px 0 6px; font-size: 1.1rem; }
 
 /* ---------- Sources note (book and author pages only) ---------- */
@@ -3400,14 +3404,14 @@ button:active,
   background: rgb(255 255 255 / 0.35);
   border-radius: 0 8px 8px 0;
   font-family: var(--font-ui);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   color: var(--muted);
 }
 .sources-note .sources-title {
   margin: 0 0 2px;
   font-family: var(--font-ui);
-  font-size: 0.74rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -3447,7 +3451,7 @@ button:active,
   margin-top: 3px;
   padding: 1px 9px 1px 6px;
   font-family: var(--font-ui);
-  font-size: 0.74rem;
+  font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.5;
   color: var(--gold-text);
@@ -3482,13 +3486,13 @@ button:active,
   display: inline-block;
   padding: 2px 11px;
   font-family: var(--font-ui);
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: var(--card);
 }
 .set-panel-here { background: var(--navy); border-color: var(--navy); color: var(--card); font-weight: 600; }
-.set-panel-steps { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-family: var(--font-ui); font-size: 0.9rem; }
+.set-panel-steps { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-family: var(--font-ui); font-size: 0.95rem; }
 
 /* ---------- Multi-volume set pages ---------- */
 .set-head { margin: 4px 0 18px; max-width: 46rem; }
@@ -3516,18 +3520,18 @@ button:active,
 .set-card-cover { position: relative; display: grid; place-items: center; padding: 18px 18px 8px; background: var(--cream-deep); }
 .set-card-cover img, .set-card-cover .generated-cover { width: min(160px, 60%); height: auto; border-radius: 3px 6px 6px 3px; box-shadow: 0 2px 4px rgb(4 20 46 / 18%), 0 10px 24px rgb(4 20 46 / 16%); }
 .set-card-cover .generated-cover-large { width: min(160px, 60%); }
-.set-card-count { margin-top: 10px; padding: 1px 10px; font-family: var(--font-ui); font-size: 0.78rem; font-weight: 700; color: var(--card); background: var(--navy); border-radius: 999px; }
+.set-card-count { margin-top: 10px; padding: 1px 10px; font-family: var(--font-ui); font-size: 0.875rem; font-weight: 700; color: var(--card); background: var(--navy); border-radius: 999px; }
 .set-card-text { display: flex; flex-direction: column; gap: 4px; padding: 12px 16px 16px; }
 .set-card-title { font-family: var(--font-head); font-size: 1.15rem; font-weight: 600; color: var(--ink); line-height: 1.3; }
-.set-card-author { color: var(--muted); font-size: 0.92rem; }
-.set-card-vols { font-family: var(--font-ui); font-size: 0.84rem; color: var(--gold-text); }
+.set-card-author { color: var(--muted); font-size: 0.97rem; }
+.set-card-vols { font-family: var(--font-ui); font-size: 0.9rem; color: var(--gold-text); }
 
 /* ---------- Home page: bigger headings and sub headings ---------- */
 main:has(.hero) .section h2 { font-size: clamp(1.7rem, 4.6vw, 2.2rem); line-height: 1.2; }
 main:has(.hero) .section-subhead { font-size: clamp(1.25rem, 3.4vw, 1.5rem); }
 main:has(.hero) .section-lede { font-size: 1.15rem; }
 main:has(.hero) .featured-shelf-titles .eyebrow,
-main:has(.hero) .featured-sets .eyebrow { font-size: 0.85rem; }
+main:has(.hero) .featured-sets .eyebrow { font-size: 0.9rem; }
 
 /* ---------- Home page: featured multi-volume sets ---------- */
 .featured-sets-grid { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 24px; }
@@ -3600,8 +3604,8 @@ main:has(.hero) .featured-sets .eyebrow { font-size: 0.85rem; }
 .big-book-credit { font-size: 0.98rem; color: var(--muted); position: relative; z-index: 1; }
 .big-book-credit .author-link { position: relative; z-index: 1; }
 .big-book-blurb { font-size: 0.95rem; line-height: 1.5; color: var(--text); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-.big-book-shelf { font-size: 0.88rem; color: var(--navy); }
-.big-book-more { padding-top: 2px; font-family: var(--font-ui); font-weight: 600; font-size: 0.92rem; color: var(--gold-text); }
+.big-book-shelf { font-size: 0.95rem; color: var(--navy); }
+.big-book-more { padding-top: 2px; font-family: var(--font-ui); font-weight: 600; font-size: 0.97rem; color: var(--gold-text); }
 .big-grid-status { margin-top: 18px; text-align: center; }
 .big-grid-more { text-align: center; margin: 8px 0 0; }
 .big-grid-more button { min-height: 48px; padding-inline: 24px; }
@@ -3667,7 +3671,7 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
 .botm-text { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
 .botm-label {
   font-family: var(--font-ui);
-  font-size: 0.78rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -3677,7 +3681,7 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
 .botm-title { font-family: var(--font-head); font-weight: 800; font-size: clamp(1.35rem, 3vw, 1.9rem); line-height: 1.2; }
 .botm-author { font-family: var(--font-head); font-size: 1.05rem; opacity: 0.92; }
 .botm-blurb { line-height: 1.5; opacity: 0.9; max-width: 60ch; }
-.botm-note { font-family: var(--font-ui); font-size: 0.85rem; color: var(--gold-light); }
+.botm-note { font-family: var(--font-ui); font-size: 0.9rem; color: var(--gold-light); }
 .botm-more { font-family: var(--font-ui); font-weight: 700; color: var(--gold-light); }
 @media (max-width: 560px) {
   .botm-card { grid-template-columns: 96px 1fr; gap: 14px; padding: 14px; }
@@ -3742,7 +3746,7 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
   text-align: center;
   margin: 8px 0 0;
   font-family: var(--font-ui);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -3764,8 +3768,8 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
   position: relative;
   border-bottom: 1px solid rgb(255 255 255 / 0.12);
   font-family: var(--font-ui);
-  font-size: 0.82rem;
-  color: rgb(255 255 255 / 0.78);
+  font-size: 0.9rem;
+  color: rgb(255 255 255 / 0.88);
 }
 .header-utility-inner {
   display: flex;
@@ -3835,12 +3839,12 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
 }
 .task-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .task-title { font-family: var(--font-head); font-weight: 700; font-size: 1.05rem; color: var(--ink); line-height: 1.25; }
-.task-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.4; }
+.task-desc { font-size: 0.95rem; color: var(--muted); line-height: 1.4; }
 @media (max-width: 960px) { .task-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 480px) {
   .task-tiles { gap: 10px; }
   .task-tile { flex-direction: column; gap: 8px; padding: 14px; }
-  .task-desc { font-size: 0.85rem; }
+  .task-desc { font-size: 0.9rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   .task-tile { transition: none; }
@@ -3876,7 +3880,7 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
 .visit-label {
   margin: 2px 0 6px;
   font-family: var(--font-ui);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -3947,14 +3951,14 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
   gap: 20px 48px;
   text-align: left;
   font-family: var(--font-ui);
-  font-size: 0.93rem;
-  color: rgb(255 255 255 / 0.82);
+  font-size: 0.97rem;
+  color: rgb(255 255 255 / 0.9);
 }
 .footer-col { max-width: 17rem; min-width: 0; }
 .footer-col-title {
   margin: 0 0 8px;
   font-family: var(--font-ui);
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -3964,7 +3968,7 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
 .footer-col p { margin: 0 0 6px; }
 .footer-col a { color: var(--card); text-decoration: none; }
 .footer-col a:hover, .footer-col a:focus-visible { color: var(--gold-light); text-decoration: underline; }
-.footer-col .hours-pending { color: rgb(255 255 255 / 0.7); font-size: 0.88rem; }
+.footer-col .hours-pending { color: rgb(255 255 255 / 0.82); font-size: 0.95rem; }
 .site-footer .footer-name {
   max-width: none;
   text-align: center;
@@ -4018,29 +4022,6 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
   .header-inner:not([data-ready]) .nav-list > li { flex: none; }
 }
 
-/* ---------- Home: what the library holds, under the search bar ---------- */
-.hero-facts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 0;
-  margin: 12px 0 0;
-  max-width: none;
-  font-family: var(--font-ui);
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--muted);
-}
-.hero-facts span + span::before {
-  content: "·";
-  margin: 0 10px;
-  color: var(--gold);
-}
-@media (max-width: 700px) {
-  .hero-facts { justify-content: center; }
-}
-@media (max-width: 480px) {
-  .hero-facts span:nth-child(4) { display: none; } /* three counts fit on one line */
-}
 
 /* Phones, dark header: the opened menu's "More" links and the current-page highlight were drawn for
    the light drop-down (dark ink on cream), so on navy they were invisible or unreadable. */
@@ -4073,3 +4054,325 @@ a.pager-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px;
   .brand-name { font-size: 1rem; white-space: normal; line-height: 1.1; }
   .brand-name-rest { display: block; font-size: 0.82em; }
 }
+
+/* =====================================================================
+   Redesign 2 (branch library-redesign-2): the page content made more print-like.
+   The fonts apply site-wide (:root); the header and footer get the same flat, ruled
+   treatment at the end of this section. The opening animation and the emblem lettering
+   keep IBM Plex Sans Arabic (--font-brand).
+   ===================================================================== */
+main {
+  /* Flatter, printed look: smaller corners, no soft drop shadows on panels and cards. */
+  --radius: 6px;
+  --shadow: none;
+  font-family: var(--font-body);
+  background: none; /* was a soft glow at the top of every page */
+}
+main h1,
+main h2,
+main h3 {
+  font-weight: 700;
+  letter-spacing: 0.002em;
+}
+main :is(h1, h2, h3, h4, p, li, dd) { font-variant-numeric: lining-nums; }
+
+/* ---------- Welcome banner: a catalog title page ---------- */
+.catalog-head {
+  padding: 18px var(--gutter) 0;
+}
+.ch-frame {
+  position: relative;
+  z-index: 20; /* the search suggestions hang over what follows */
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: clamp(20px, 3.5vw, 40px);
+  max-width: 1080px;
+  margin-inline: auto;
+  padding: 22px clamp(18px, 3vw, 34px) 0;
+  background: var(--card);
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+  /* a second, finer rule just inside the first: the double frame of a printed title page */
+  box-shadow: inset 0 0 0 4px var(--card), inset 0 0 0 5px rgb(172 133 33 / 0.45);
+}
+/* The emblem in a small bookplate: a ruled square on the geometric pattern. */
+.ch-plate {
+  align-self: center; /* centred beside the heading, lede and search */
+  padding: 0; /* the emblem sits straight on the banner, with no box behind it */
+}
+.catalog-head .hero-emblem {
+  width: clamp(150px, 18vw, 202px); /* a little bigger (was up to 162px) */
+  animation: none;
+}
+.ch-main {
+  min-width: 0;
+  padding-bottom: 4px;
+}
+.catalog-head h1 {
+  margin: 0;
+  font-size: clamp(1.65rem, 3.4vw, 2.3rem);
+  line-height: 1.12;
+  text-wrap: balance;
+}
+.catalog-head .hero-sub {
+  max-width: none;
+  margin: 4px 0 0;
+  font-size: clamp(1rem, 2.6vw, 1.15rem);
+}
+.catalog-head .hero-lede {
+  margin: 12px 0 14px;
+  max-width: none;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+/* The catalog search: wide, plain and labelled. */
+.catalog-head .search-box { flex-wrap: wrap; row-gap: 6px; gap: 6px 0; }
+.search-label {
+  flex: 0 0 100%;
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+main .search-box input {
+  border: 1px solid var(--navy);
+  border-radius: 3px 0 0 3px;
+  background: #fffdf7;
+}
+main .search-box input:focus { box-shadow: 0 0 0 2px var(--gold-soft); }
+main .search-box > button {
+  border-width: 1px;
+  border-radius: 0 3px 3px 0;
+  letter-spacing: 0.02em;
+}
+/* The collection's holdings, as on the foot of a catalog card. */
+.catalog-head .hero-facts {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 18px calc(-1 * clamp(18px, 3vw, 34px)) 0;
+  padding: 0 5px;
+  border-top: 1px solid var(--line);
+  font-weight: 400;
+}
+.catalog-head .hero-facts { list-style: none; max-width: none; font-family: var(--font-ui); }
+.hero-facts > li { min-width: 0; }
+.hero-facts a {
+  display: block;
+  height: 100%;
+  padding: 9px 14px 11px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+.hero-facts a:hover { background: var(--navy-soft); }
+.hero-facts a:hover .hf-num { text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 4px; }
+.hero-facts a:focus-visible { outline: 2px solid var(--navy); outline-offset: -3px; }
+.hero-facts > li + li { border-left: 1px solid var(--line); }
+.hf-label {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.hf-num {
+  display: block;
+  font-family: var(--font-head);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.hero + .section { padding-top: 24px; }
+
+@media (max-width: 680px) {
+  .ch-frame {
+    grid-template-columns: 96px minmax(0, 1fr);
+    column-gap: 14px;
+    padding: 16px 16px 0;
+  }
+  .ch-main { display: contents; } /* emblem beside the heading; the rest full width below */
+  .ch-plate { grid-row: 1 / span 2; }
+  .catalog-head .hero-emblem { width: 100%; }
+  .catalog-head h1 { grid-column: 2; align-self: end; font-size: clamp(1.35rem, 5.6vw, 1.7rem); }
+  .catalog-head .hero-sub { grid-column: 2; align-self: start; border-bottom: 0; padding-bottom: 0; }
+  .catalog-head .hero-lede,
+  .catalog-head .search-box { grid-column: 1 / -1; }
+  .catalog-head .hero-lede { margin-top: 14px; }
+  .catalog-head .search-box { position: relative; z-index: 20; }
+  .catalog-head .hero-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-inline: -16px;
+  }
+  .hero-facts > li:nth-child(3) { border-left: 0; }
+  .hero-facts > li:nth-child(n + 3) { border-top: 1px solid var(--line); }
+}
+
+/* ---------- Cards and panels: flat parchment with thin rules ---------- */
+main :is(.category-card, .slide-link, .author-book, .big-book, .book-row, .task-tile, .author-result a):hover {
+  box-shadow: none;
+  border-color: var(--gold);
+}
+main .author-result a:hover { box-shadow: none; }
+.botm .botm-card { box-shadow: none; outline: 1px solid var(--gold); outline-offset: 3px; }
+/* Covers are books, so they keep one tight shadow, not a floating glow. */
+main :is(.generated-cover, .author-book-cover img, .slide-cover img, .shelf-book-cover img, .botm-cover,
+  .set-volume-cover .generated-cover, .set-card-cover img, .set-card-cover .generated-cover,
+  .featured-set-cover .generated-cover, .big-book-cover img, .big-book-cover .generated-cover) {
+  box-shadow: 0 1px 2px rgb(4 20 46 / 0.22), 0 2px 6px rgb(4 20 46 / 0.08);
+}
+main .author-portrait img { box-shadow: 0 0 0 1px var(--gold); }
+main .author-portrait-initials { box-shadow: inset 0 0 0 6px var(--ink), inset 0 0 0 7px var(--gold-light); }
+main .slider-arrow { box-shadow: none; border: 1px solid var(--line); }
+/* Rounded "pill" shapes become small printed labels. */
+main :is(.chip, .tag, .scope-option, .status, .recent-chip, .set-vol, .search-within, .set-label,
+  .set-panel-here, .botm-button, .type-label, .set-card-count, .pager-btn) {
+  border-radius: 3px;
+}
+main .chip-count { border-radius: 2px; }
+/* Section headings sit on a thin rule, as in a printed catalog. */
+main .section-head {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+/* ---------- Header and footer in the same printed style ---------- */
+/* A single gold line under the header and over the footer. */
+.site-header { border-bottom: 3px solid var(--gold); } /* single gold line, as on the earlier header */
+.site-footer {
+  border-radius: 0; /* straight top edge (was a gentle arch) */
+  border-top: 3px solid var(--gold); /* single gold line, matching the header */
+}
+/* Square, printed-label corners instead of rounded ones. */
+.site-header :is(.nav-list a, .nav-more-details > summary, .header-btn) { border-radius: 3px; }
+.nav-more-list {
+  border-radius: 3px;
+  box-shadow: 0 2px 0 rgb(4 20 46 / 0.08); /* a flat edge, not a floating shadow */
+}
+/* Search bars: the field and its button joined into one ruled bar. */
+:is(main, .site-header) .search-box:has(> button) { column-gap: 0; }
+.site-header .search-box input { border: 1px solid transparent; border-radius: 3px 0 0 3px; }
+.site-header .search-box > button { border-width: 1px; border-radius: 0 3px 3px 0; }
+main .search-box:not(:has(> button)) input { border-radius: 3px; }
+/* The new text font is a touch smaller on the eye: the menu keeps its old visual size. */
+
+/* Featured authors: names large enough to read at a glance. */
+.portrait-name { font-size: 1.25rem; }
+.portrait-count { font-size: 0.97rem; }
+/* Search previews: square, ruled box like the search bar above it (was rounded and floating). */
+.suggest-list {
+  border-radius: 3px;
+  border-color: var(--navy);
+  box-shadow: 0 2px 0 rgb(4 20 46 / 0.08), 0 8px 18px rgb(4 20 46 / 0.08);
+}
+.suggest-row { border-radius: 2px; }
+.suggest-all { border-radius: 0 0 2px 2px; }
+.recent-chip { border-radius: 3px; }
+/* Featured authors and "Authors in our collection" belong together: no divider, little space. */
+.section:has(#featured-authors-title) { padding-bottom: 0; }
+.section:has(#featured-authors-title) + .section { padding-top: 14px; }
+.section:has(#featured-authors-title) + .section::before { display: none; }
+/* Compact footer: same content, less empty space around and between its parts. */
+.site-footer .footer-inner { padding-block: 24px 18px; gap: 14px; }
+.footer-top { gap: 18px 48px; }
+.footer-cols { row-gap: 14px; }
+.footer-col-title { margin-bottom: 4px; }
+.footer-col ul { gap: 2px; }
+.footer-col p { margin-bottom: 3px; }
+.site-footer .footer-name { padding-top: 12px; }
+@media (max-width: 760px) {
+  .site-footer .footer-inner { padding-block: 22px 16px; gap: 14px; }
+}
+/* Today's date and the Islamic date, at the right of the top bar, set off from the links by a thin rule. */
+.header-dates {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 16px;
+  margin-right: 2px;
+  border-right: 1px solid rgb(255 255 255 / 0.22);
+  white-space: nowrap;
+  font-variant-numeric: lining-nums;
+}
+.header-dates:empty { display: none; }
+.header-hijri { color: var(--gold-light); }
+.header-hijri::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: var(--gold);
+  transform: rotate(45deg); /* a small gold diamond between the two dates */
+}
+/* Narrower screens: the Hijri date stays, the weekday-long Gregorian date gives way first. */
+@media (max-width: 1000px) {
+  .header-dates time { display: none; }
+  .header-hijri::before { display: none; }
+}
+/* Welcome emblem centred in its space: the same room on its left (banner edge) and right (text),
+   and above (banner top) and below (counts row). Phones centre it beside the heading instead. */
+@media (min-width: 681px) {
+  .ch-frame { column-gap: clamp(18px, 3vw, 34px); } /* equal to the banner's side padding */
+  .ch-plate { position: relative; top: -3px; }      /* the counts row sits 6px closer below */
+}
+/* Phones: "Book of the Month" stays on one line in Vollkorn, which is wider than the old font. */
+@media (max-width: 480px) {
+  .botm-heading { font-size: clamp(1.45rem, 6.6vw, 1.85rem); gap: 8px; white-space: nowrap; }
+  .botm-orn { flex-basis: 28px; }
+}
+/* Very narrow phones: the address line in the notice above the footer may wrap, rather than run off the screen. */
+@media (max-width: 400px) {
+  .disclaimer-address { white-space: normal; }
+}
+/* Featured theme and featured author rows: book text large and dark enough to read comfortably. */
+.shelf-book-title { font-size: 1.12rem; }
+.shelf-book-author { font-size: 1rem; }
+.shelf-book-desc {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--text);
+  -webkit-line-clamp: 5;
+}
+
+/* ---------- Clean-up after the design scan ---------- */
+/* No thick coloured edge on rounded cards: each of these now has a thin gold rule all round,
+   like the banner's frame (it was a 3-4px gold top or left edge). */
+.slide-link,
+.featured-set,
+.shelf-tile,
+.author-card,
+.explore-guide-part,
+.sources-note,
+.set-panel,
+.set-gap,
+.botm-read {
+  border: 1px solid var(--gold);
+}
+.nav-more-list { border: 1px solid var(--gold); } /* the More drop-down */
+.review-item.is-flagged { border: 1px solid #b3261e; background: #fbeeec; } /* internal review page */
+
+/* Labels that used to sit above headings, now beneath them. */
+.featured-set-count {
+  margin: 4px 0 0;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.slide-text .slide-cat { margin: 2px 0 0; }
+.set-head-count { margin-top: 6px; }
+
+/* No single word left alone on the last line of a paragraph. */
+p, li, dd, figcaption, blockquote, .lede, .section-lede { text-wrap: pretty; }
+/* Search placeholders dark enough to read (the browser default grey was 4.2:1; this is about 6:1). */
+.search-box input::placeholder,
+.browse-filter input::placeholder { color: #5b6272; opacity: 1; }
+/* Author pages: the line listing the author's subjects kept to a comfortable reading width. */
+.author-data-line { max-width: 34rem; } /* about 75 characters a line */

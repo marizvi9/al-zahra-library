@@ -1,5 +1,5 @@
-// Which catalogue books belong to a multi-volume set (from data/multi-volume-sets.json).
-// Kept tiny and free of the rest of the catalogue so lists, cards and search can all use it.
+// Which catalog books belong to a multi-volume set (from data/multi-volume-sets.json).
+// Kept tiny and free of the rest of the catalog so lists, cards and search can all use it.
 
 import raw from "@data/multi-volume-sets.json";
 

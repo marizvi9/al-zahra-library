@@ -413,7 +413,7 @@ export function shortDescription(d: Description, maxChars = 300): string {
 }
 
 // ---------- Authors ----------
-// Many authors are spelled several ways in the catalogue. data/author-names.json lists,
+// Many authors are spelled several ways in the catalog. data/author-names.json lists,
 // for each person, the name to show and every spelling used. Every author has a page at
 // /authors/<slug>/. A cell naming several people ("A & B", "A, B and C",
 // "X Translated by: Y") is split so each person gets their own link and page.
