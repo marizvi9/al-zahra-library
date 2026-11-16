@@ -47,7 +47,7 @@ const hBottom = hTop + (HOUSTON.maxy - HOUSTON.miny);
 const H = hBottom;
 // The words and stars sit this much lower than the flower's middle (a slightly lower block reads as
 // centred beside the flower's tall petals).
-const WORDS_DROP = 45;
+const WORDS_DROP = 95;
 const PAD = 180; // empty room above and below (310 - 130, so the wider line gaps keep the logo the same size)
 const STAR_X = BLOCK_X + BLOCK_W + STAR_SPACE + STAR_R; // the two stars, one above the other, to the right of the words
 const W = STAR_X + STAR_R + 10;
