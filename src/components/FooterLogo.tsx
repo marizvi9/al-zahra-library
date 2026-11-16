@@ -36,7 +36,7 @@ const LIB_SIZE = Math.round(lib.height / CAP_HEIGHT);
 // (a natural word space) span exactly the width of AL-ZAHRA: width = letters + 12 T + 2.6 T + T.
 const LIB_TRACK = Math.round((BLOCK_W - 14 * 0.586 * LIB_SIZE) / 15.6);
 
-const GAP_LINES = 160; // between lines of words
+const GAP_LINES = 230; // between lines of words (a little open)
 
 const zTop = 0;
 const zBottom = zTop + (ZAHRA.maxy - ZAHRA.miny);
@@ -45,7 +45,7 @@ const lBottom = lTop + lib.height;
 const hTop = lBottom + GAP_LINES;
 const hBottom = hTop + (HOUSTON.maxy - HOUSTON.miny);
 const H = hBottom;
-const PAD = 310; // empty room above and below, so the logo shows at the same size as before the stars moved
+const PAD = 240; // empty room above and below (310 - 70, so the wider line gaps keep the logo the same size)
 const STAR_X = BLOCK_X + BLOCK_W + STAR_SPACE + STAR_R; // the two stars, one above the other, to the right of the words
 const W = STAR_X + STAR_R + 10;
 const stars = [H / 2 - STAR_R - STAR_GAP / 2, H / 2 + STAR_R + STAR_GAP / 2].map((y) => starPoints(STAR_X, y, STAR_R));
