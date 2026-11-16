@@ -4243,8 +4243,8 @@ main .section-head {
 }
 
 /* ---------- Header and footer in the same printed style ---------- */
-/* A double gold rule under the header and over the footer, like the banner's frame. */
-.site-header { border-bottom: 5px double var(--gold); }
+/* A single gold line under the header; a double gold rule over the footer, like the banner's frame. */
+.site-header { border-bottom: 3px solid var(--gold); } /* single gold line, as on the earlier header */
 .site-footer {
   border-radius: 0; /* straight top edge (was a gentle arch) */
   border-top: 5px double var(--gold);
