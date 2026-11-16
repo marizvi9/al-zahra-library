@@ -20,7 +20,6 @@ const MID = BLOCK_X + BLOCK_W / 2; // the middle of the words
 const STAR_R = 135; // small
 const STAR_GAP = 90; // space between the two stars
 const STAR_SPACE = 260; // words ↔ stars
-const GAP_LINES = 160; // between lines of words
 const CAP_HEIGHT = 0.698; // IBM Plex Sans Arabic: capital letters are 0.698 of the font size
 
 // ISLAMIC LIBRARY, scaled so the line is as wide as AL-ZAHRA, letters spaced as they were on the arc.
@@ -37,6 +36,13 @@ const LIB_SIZE = Math.round(lib.height / CAP_HEIGHT);
 // (a natural word space) span exactly the width of AL-ZAHRA: width = letters + 12 T + 2.6 T + T.
 const LIB_TRACK = Math.round((BLOCK_W - 14 * 0.586 * LIB_SIZE) / 15.6);
 
+// The flower's height from its top petal tip to the bottom of its bowl (measured in the browser).
+// The three lines of words are spaced so they fill exactly that height: AL-ZAHRA's top lines up with
+// the flower's top and IEC-HOUSTON's bottom with the flower's base.
+const FLOWER_H = 1844;
+const WORDS_H = ZAHRA.maxy - ZAHRA.miny + lib.height + (HOUSTON.maxy - HOUSTON.miny);
+const GAP_LINES = (FLOWER_H - WORDS_H) / 2; // between lines of words
+
 const zTop = 0;
 const zBottom = zTop + (ZAHRA.maxy - ZAHRA.miny);
 const lTop = zBottom + GAP_LINES;
@@ -44,7 +50,7 @@ const lBottom = lTop + lib.height;
 const hTop = lBottom + GAP_LINES;
 const hBottom = hTop + (HOUSTON.maxy - HOUSTON.miny);
 const H = hBottom;
-const PAD = 310; // empty room above and below, so the logo shows at the same size as before the stars moved
+const PAD = 12; // a little room above and below for the flower's outline (the words now fill the flower's height)
 const STAR_X = BLOCK_X + BLOCK_W + STAR_SPACE + STAR_R; // the two stars, one above the other, to the right of the words
 const W = STAR_X + STAR_R + 10;
 const stars = [H / 2 - STAR_R - STAR_GAP / 2, H / 2 + STAR_R + STAR_GAP / 2].map((y) => starPoints(STAR_X, y, STAR_R));
