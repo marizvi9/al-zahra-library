@@ -84,11 +84,15 @@ export default async function SubCategoryPage({ params }: Props) {
         ]}
       />
       <header className="page-head arch-band">
+        {cat.number && (
+          <p className="eyebrow">
+            Shelf {cat.number}
+            {sub.number ? ` · ${sub.number}` : ""}
+          </p>
+        )}
         <h1>{sub.name}</h1>
         <p className="lede">
-          {cat.name}
-          {cat.number ? ` · Shelf ${cat.number}${sub.number ? ` · ${sub.number}` : ""}` : ""} · {list.length}{" "}
-          {list.length === 1 ? "book" : "books"}
+          {cat.name} · {list.length} {list.length === 1 ? "book" : "books"}
         </p>
         <p>{subTopicText(cat, sub)}</p>
       </header>
