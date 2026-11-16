@@ -36,10 +36,10 @@ export default function FeaturedSets({ sets, total }: { sets: VolumeSet[]; total
               })}
             </Link>
             <div className="featured-set-text">
-              <p className="eyebrow">{s.volumes.length} {s.kind === "series" ? "issues" : "volumes"} in the library</p>
               <h3 className="featured-set-title" dir="auto">
                 <Link href={`/sets/${s.slug}/`}>{s.name}</Link>
               </h3>
+              <p className="featured-set-count">{s.volumes.length} {s.kind === "series" ? "issues" : "volumes"} in the library</p>
               {s.author && <p className="featured-set-author" dir="auto">{s.author}</p>}
               <p className="featured-set-vols">{s.volumes.map((v) => v.label).join(" · ")}</p>
               {s.missing && <p className="small muted">Not in the catalog: {s.missing}</p>}

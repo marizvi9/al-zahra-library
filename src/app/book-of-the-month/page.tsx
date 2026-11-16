@@ -20,12 +20,12 @@ export default function BookOfTheMonthPage() {
           <img src={withBase(b.cover.src)} alt={`Cover of ${b.title}`} width={b.cover.width} height={b.cover.height} />
         </a>
         <div className="botm-page-body">
-          <p className="botm-label">Book of the Month · {b.month}</p>
           <h1>{b.title}</h1>
           <p className="botm-page-author">
             by{" "}
             {b.authorSlug ? <Link href={`/authors/${b.authorSlug}/`}>{b.author}</Link> : b.author}
           </p>
+          <p className="botm-label">Book of the Month · {b.month}</p>
           <dl className="botm-facts">
             <dt>Edition</dt>
             <dd>{b.edition}</dd>

@@ -4341,3 +4341,39 @@ main .search-box:not(:has(> button)) input { border-radius: 3px; }
   color: var(--text);
   -webkit-line-clamp: 5;
 }
+
+/* ---------- Clean-up after the design scan ---------- */
+/* No thick coloured edge on rounded cards: each of these now has a thin gold rule all round,
+   like the banner's frame (it was a 3-4px gold top or left edge). */
+.slide-link,
+.featured-set,
+.shelf-tile,
+.author-card,
+.explore-guide-part,
+.sources-note,
+.set-panel,
+.set-gap,
+.botm-read {
+  border: 1px solid var(--gold);
+}
+.nav-more-list { border: 1px solid var(--gold); } /* the More drop-down */
+.review-item.is-flagged { border: 1px solid #b3261e; background: #fbeeec; } /* internal review page */
+
+/* Labels that used to sit above headings, now beneath them. */
+.featured-set-count {
+  margin: 4px 0 0;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.slide-text .slide-cat { margin: 2px 0 0; }
+.botm-page-body .botm-label { margin: 6px 0 14px; }
+.set-head-count { margin-top: 6px; }
+
+/* No single word left alone on the last line of a paragraph. */
+p, li, dd, figcaption, blockquote, .lede, .section-lede { text-wrap: pretty; }
+/* Search placeholders dark enough to read (the browser default grey was 4.2:1; this is about 6:1). */
+.search-box input::placeholder,
+.browse-filter input::placeholder { color: #5b6272; opacity: 1; }
+/* Author pages: the line listing the author's subjects kept to a comfortable reading width. */
+.author-data-line { max-width: 34rem; } /* about 75 characters a line */
