@@ -23,6 +23,7 @@ import {
   getCategory,
   getCover,
   getDescription,
+  getReadOnline,
   publisherLabel,
   toListItem,
 } from "@/lib/catalog";
@@ -47,6 +48,7 @@ export default async function BookPage({ params }: Props) {
   const author = authorOf(book);
   const authorPhoto = author ? photoFor(author.name) : null;
   const description = getDescription(book.id);
+  const readOnline = getReadOnline(book.id);
   // Long descriptions: show the first part, with "Read more" for the rest.
   const [lead, more] = splitDescription(description?.paragraphs ?? []);
   const bookSet = setOfBook(book.id);
@@ -119,6 +121,11 @@ export default async function BookPage({ params }: Props) {
               {book.available ? "Available" : "Not available"}
             </span>
             {book.booklet && <span className="tag">Booklet</span>}
+            {readOnline && (
+              <a className="tag tag-online" href="#read-online-title">
+                Free to read online
+              </a>
+            )}
           </p>
 
           {bookSet && <SetPanel set={bookSet} bookId={book.id} />}
@@ -154,6 +161,30 @@ export default async function BookPage({ params }: Props) {
               <strong>Al-Zahra Islamic Library:</strong> <AddressLink />
             </p>
           </section>
+
+          {readOnline && (
+            <section className="read-online" aria-labelledby="read-online-title">
+              <svg className="read-online-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                {/* an open book */}
+                <path d="M24 13c-4-3-10-4-17-3v25c7-1 13 0 17 3 4-3 10-4 17-3V10c-7-1-13 0-17 3Z" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinejoin="round" />
+                <path d="M24 13v25" fill="none" stroke="currentColor" strokeWidth="2.4" />
+                <path d="M11 17c3.5-.4 6.6 0 9 1.2M11 23c3.5-.4 6.6 0 9 1.2M28 18.2c2.4-1.2 5.5-1.6 9-1.2M28 24.2c2.4-1.2 5.5-1.6 9-1.2" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" opacity="0.7" />
+              </svg>
+              <div className="read-online-text">
+                <h2 id="read-online-title">Read it online</h2>
+                <p>
+                  {readOnline.sameEdition
+                    ? "This book is free to read on Al-Islam.org, an online library of Islamic texts."
+                    : "Another edition or translation of this work is free to read on Al-Islam.org. It may differ a little from the copy in our library."}
+                </p>
+              </div>
+              <a className="read-online-link" href={readOnline.url} target="_blank" rel="noopener noreferrer">
+                Read on Al-Islam.org
+                <span aria-hidden="true"> ↗</span>
+                <span className="visually-hidden"> (opens in a new tab)</span>
+              </a>
+            </section>
+          )}
 
           <dl className="details">
             <div>

@@ -4385,3 +4385,41 @@ p, li, dd, figcaption, blockquote, .lede, .section-lede { text-wrap: pretty; }
   main .search-box input { font-size: 1rem; padding-left: 12px; padding-right: 8px; }
   main .search-box > button { font-size: 1rem; padding-left: 12px; padding-right: 12px; }
 }
+
+/* ---------- Book page: "Read it online" (Al-Islam.org) ---------- */
+.read-online {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px 18px;
+  margin: 18px 0;
+  padding: 16px 18px;
+  background: var(--card);
+  border: 1px solid var(--gold);
+  border-radius: var(--radius);
+}
+.read-online-icon { width: 44px; height: 44px; color: var(--gold-text); }
+.read-online-text h2 { margin: 0 0 2px; font-size: 1.2rem; }
+.read-online-text p { margin: 0; color: var(--text); }
+.read-online-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 11px 16px;
+  border-radius: 3px;
+  background: var(--navy-deep);
+  color: var(--card);
+  font-family: var(--font-ui);
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.read-online-link:hover { background: var(--navy); color: #fff; }
+.read-online-link:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.tag-online { text-decoration: none; border-color: var(--gold); color: var(--gold-text); }
+.tag-online:hover { background: var(--gold-soft); }
+@media (max-width: 620px) {
+  .read-online { grid-template-columns: auto minmax(0, 1fr); align-items: start; }
+  .read-online-icon { width: 36px; height: 36px; margin-top: 2px; }
+  .read-online-link { grid-column: 1 / -1; justify-content: center; }
+}

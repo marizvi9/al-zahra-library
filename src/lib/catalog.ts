@@ -402,6 +402,28 @@ export const getDescription = (id: number): Description | undefined => {
   return d && !d.hidden ? d : undefined;
 };
 
+// ---------- Read online (Al-Islam.org) ----------
+// Al-Islam.org is a free online library. When the book's description came from its page on
+// Al-Islam.org, readers can read the book there too. Only the site's own book pages count: matches
+// to a journal article, a book list, a foreword or a passing mention are not offered.
+//   high confidence   = that page is this book
+//   medium confidence = the same work, in another edition, translation or volume (said so on the page)
+export type ReadOnline = { url: string; sameEdition: boolean };
+export const getReadOnline = (id: number): ReadOnline | undefined => {
+  const d = descriptions[String(id)];
+  if (!d || d.hidden || !d.url || d.source !== "Al-Islam.org") return undefined;
+  let host = "";
+  try {
+    host = new URL(d.url).hostname.replace(/^www\./, "");
+  } catch {
+    return undefined;
+  }
+  if (host !== "al-islam.org") return undefined;
+  if (d.confidence === "high") return { url: d.url, sameEdition: true };
+  if (d.confidence === "medium") return { url: d.url, sameEdition: false };
+  return undefined;
+};
+
 /** The start of a description, cut at a sentence or word, for small spaces like the slider. */
 export function shortDescription(d: Description, maxChars = 300): string {
   const text = d.paragraphs.join(" ");
