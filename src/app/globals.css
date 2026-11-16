@@ -4334,3 +4334,12 @@ main .search-box:not(:has(> button)) input { border-radius: 3px; }
 @media (max-width: 400px) {
   .disclaimer-address { white-space: normal; }
 }
+/* Featured theme and featured author rows: book text large and dark enough to read comfortably. */
+.shelf-book-title { font-size: 1.12rem; }
+.shelf-book-author { font-size: 1rem; }
+.shelf-book-desc {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--text);
+  -webkit-line-clamp: 5;
+}
