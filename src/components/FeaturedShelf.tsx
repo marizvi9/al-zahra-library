@@ -14,7 +14,6 @@ export default function FeaturedShelf({ section }: { section: HomeSection }) {
       <div className="featured-shelf-head">
         {section.author && <AuthorAvatar name={section.author.name} size={64} />}
         <div className="featured-shelf-titles">
-          <p className="eyebrow">{section.type === "author" ? "Featured author" : "Featured theme"}</p>
           <h2 id={headingId} dir="auto">
             {section.heading}
           </h2>

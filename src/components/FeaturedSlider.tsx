@@ -164,13 +164,13 @@ export default function FeaturedSlider({ slides }: { slides: FeaturedSlide[] }) 
                   />
                 </span>
                 <span className="slide-text">
-                  <span className="slide-cat">{s.category}</span>
                   <Link href={`/books/${s.slug}/`} className="slide-title card-link" dir="auto">
                     {s.title}
                   </Link>
                   <span className="slide-author" dir="auto">
                     <Credit parts={s.creditParts} />
                   </span>
+                  <span className="slide-cat">{s.category}</span>
                   <span className="slide-desc" dir="auto">
                     {s.description}
                   </span>
