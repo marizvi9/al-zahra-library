@@ -4117,8 +4117,6 @@ main :is(h1, h2, h3, h4, p, li, dd) { font-variant-numeric: lining-nums; }
 .catalog-head .hero-sub {
   max-width: none;
   margin: 4px 0 0;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--line);
   font-size: clamp(1rem, 2.6vw, 1.15rem);
 }
 .catalog-head .hero-lede {
@@ -4206,7 +4204,7 @@ main .search-box > button {
   .catalog-head .hero-sub { grid-column: 2; align-self: start; border-bottom: 0; padding-bottom: 0; }
   .catalog-head .hero-lede,
   .catalog-head .search-box { grid-column: 1 / -1; }
-  .catalog-head .hero-lede { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .catalog-head .hero-lede { margin-top: 14px; }
   .catalog-head .search-box { position: relative; z-index: 20; }
   .catalog-head .hero-facts {
     grid-template-columns: repeat(2, minmax(0, 1fr));
