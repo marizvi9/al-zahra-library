@@ -45,6 +45,9 @@ const lBottom = lTop + lib.height;
 const hTop = lBottom + GAP_LINES;
 const hBottom = hTop + (HOUSTON.maxy - HOUSTON.miny);
 const H = hBottom;
+// The words and stars sit this much lower than the flower's middle (a slightly lower block reads as
+// centred beside the flower's tall petals).
+const WORDS_DROP = 45;
 const PAD = 180; // empty room above and below (310 - 130, so the wider line gaps keep the logo the same size)
 const STAR_X = BLOCK_X + BLOCK_W + STAR_SPACE + STAR_R; // the two stars, one above the other, to the right of the words
 const W = STAR_X + STAR_R + 10;
@@ -62,6 +65,8 @@ export default function FooterLogo({ className = "" }: { className?: string }) {
         ))}
       </g>
 
+      {/* the words and the two stars, lowered a little (WORDS_DROP) beside the flower */}
+      <g transform={`translate(0 ${WORDS_DROP})`}>
       {/* two stars, one above the other, to the right of the words */}
       <g fill={GOLD}>
         {stars.map((p, i) => (
@@ -98,6 +103,7 @@ export default function FooterLogo({ className = "" }: { className?: string }) {
         d={HOUSTON.d}
         transform={`translate(${MID - (HOUSTON.minx + HOUSTON.maxx) / 2} ${hTop - HOUSTON.miny})`}
       />
+      </g>
     </svg>
   );
 }
