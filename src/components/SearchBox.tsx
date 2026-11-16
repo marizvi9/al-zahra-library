@@ -32,6 +32,14 @@ const PLACEHOLDER: Record<SearchScope, string> = {
   author: "Search author names",
   category: "Search subjects, e.g. Fiqh or Karbala",
 };
+// Shorter hints for phones and the small search bar in the header, where the full ones are cut off.
+const PLACEHOLDER_SHORT: Record<SearchScope, string> = {
+  all: "Title, author or subject",
+  title: "Book titles",
+  author: "Author names",
+  category: "Subjects, e.g. Fiqh",
+};
+const NARROW = "(max-width: 520px)";
 
 export default function SearchBox({
   large = false,
@@ -55,6 +63,15 @@ export default function SearchBox({
   const [data, setData] = useState<SearchData | null>(null);
   const records = data?.books ?? null;
   const [open, setOpen] = useState(false);
+  // Phones get the short hint (worked out in the browser; the built page has the full one).
+  const [narrow, setNarrow] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia(NARROW);
+    const update = () => setNarrow(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
   const [active, setActive] = useState(-1); // highlighted row, -1 = none
   const loading = useRef(false);
   const rootRef = useRef<HTMLFormElement>(null);
@@ -205,7 +222,7 @@ export default function SearchBox({
         type="search"
         name="q"
         dir="auto"
-        placeholder={PLACEHOLDER[scope]}
+        placeholder={compact && scope === "all" ? "Search the catalog" : narrow || compact ? PLACEHOLDER_SHORT[scope] : PLACEHOLDER[scope]}
         autoComplete="off"
         value={query}
         role="combobox"

@@ -170,29 +170,30 @@
       "bioSources": [
         "https://en.wikishia.net/view/Sayyid_Ruhollah_Musavi_Khomeini"
       ],
-      "photoSource": "WikiShia",
-      "file": "File:امام خمینی.jpg",
-      "source": "http://commons.wikishia.net/common/File:%D8%A7%D9%85%D8%A7%D9%85_%D8%AE%D9%85%DB%8C%D9%86%DB%8C.jpg",
-      "creator": "WikiShia",
-      "license": "used with credit",
-      "licenseUrl": "https://fa.wikishia.net/view/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D8%B4%DB%8C%D8%B9%D9%87:%D8%AD%D9%82_%D8%AA%DA%A9%D8%AB%DB%8C%D8%B1",
-      "photo": "/authors/imam-khomeini.jpg",
-      "photoLarge": "/authors/large/imam-khomeini.webp",
-      "largeWidth": 525,
-      "largeHeight": 690,
-      "originalWidth": 525,
-      "originalHeight": 690,
+      "photoSource": "imam-khomeini.ir",
+      "file": "imamsmiling.jpg",
+      "source": "http://ar.imam-khomeini.ir/en/c103_19066/egallery/Portraits",
+      "creator": "imam-khomeini.ir, Portraits gallery",
+      "license": "Used with credit",
+      "licenseUrl": null,
+      "imageDescription": "Portrait from the Portraits gallery on imam-khomeini.ir, chosen and supplied by the site owner (file imamsmiling.jpg).",
+      "photo": "/authors/imam-khomeini-2.jpg",
+      "photoLarge": "/authors/large/imam-khomeini-2.webp",
+      "largeWidth": 362,
+      "largeHeight": 500,
+      "originalWidth": 362,
+      "originalHeight": 500,
       "lowRes": false,
       "focus": {
-        "x": 51,
-        "y": 50,
-        "zoom": 0.64
+        "x": 55.5,
+        "y": 49.5,
+        "zoom": 0.63
       },
       "head": {
-        "x0": 13.8,
-        "y0": 0,
-        "x1": 88.2,
-        "y1": 100
+        "x0": 12.0,
+        "y0": 1.0,
+        "x1": 99.0,
+        "y1": 98.0
       }
     },
     "Ali Khamenei": {
