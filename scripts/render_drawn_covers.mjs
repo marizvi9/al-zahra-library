@@ -21,7 +21,7 @@ if (!process.env.FONTCONFIG_FILE) {
   const media = path.join(ROOT, ".next/static/media");
   for (const f of fs.readdirSync(media).filter((f) => f.endsWith(".woff2"))) {
     const fam = execFileSync("fc-scan", ["--format", "%{family[0]}", path.join(media, f)]).toString();
-    if (/^(Alegreya|IBM Plex Sans Arabic)/.test(fam)) fs.copyFileSync(path.join(media, f), path.join(FONT_DIR, f));
+    if (/^(Vollkorn|Fira Sans|IBM Plex Sans Arabic)/.test(fam)) fs.copyFileSync(path.join(media, f), path.join(FONT_DIR, f));
   }
   const conf = path.join(FONT_DIR, "fonts.conf");
   fs.writeFileSync(conf, `<?xml version="1.0"?><!DOCTYPE fontconfig SYSTEM "fonts.dtd"><fontconfig><include ignore_missing="yes">/etc/fonts/fonts.conf</include><dir>${FONT_DIR}</dir><cachedir>${FONT_DIR}/cache</cachedir></fontconfig>`);
@@ -60,8 +60,8 @@ for (const b of books) {
   let svg = await inlinePhotos(m[0]);
   svg = svg
     .replace("<svg ", '<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="1526" ')
-    .replace(/var\(--font-head\)/g, "Alegreya")
-    .replace(/var\(--font-ui\)/g, "Alegreya Sans")
+    .replace(/var\(--font-head\)/g, "Vollkorn")
+    .replace(/var\(--font-ui\)/g, "Fira Sans")
     .replace(/&amp;/g, "&amp;"); // already escaped in the page
   const file = path.join(OUT_DIR, `${b.id}.webp`);
   await sharp(Buffer.from(svg)).resize(520, 763).webp({ quality: 86 }).toFile(file);

@@ -46,9 +46,9 @@
 
 html {
   -webkit-text-size-adjust: 100%;
-  /* Alegreya and Alegreya Sans look smaller than most fonts at the same size, so the whole site's
-     text scale is raised by an eighth (body text: 19px on phones, 20px on wider screens). */
-  font-size: 112.5%;
+  /* The site's text scale. 100% suits Fira Sans (src/app/fonts.ts); Alegreya Sans, used before,
+     ran small and needed 112.5%. */
+  font-size: 100%;
 }
 
 body {
@@ -4324,4 +4324,9 @@ main .search-box:not(:has(> button)) input { border-radius: 3px; }
 @media (min-width: 681px) {
   .ch-frame { column-gap: clamp(18px, 3vw, 34px); } /* equal to the banner's side padding */
   .ch-plate { position: relative; top: -3px; }      /* the counts row sits 6px closer below */
+}
+/* Phones: "Book of the Month" stays on one line in Vollkorn, which is wider than the old font. */
+@media (max-width: 480px) {
+  .botm-heading { font-size: clamp(1.45rem, 6.6vw, 1.85rem); gap: 8px; white-space: nowrap; }
+  .botm-orn { flex-basis: 28px; }
 }
